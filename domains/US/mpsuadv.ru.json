@@ -6,7 +6,12 @@
     ],
     "prevalence": 0.0000204,
     "sites": 3,
-    "subdomains": [],
+    "subdomains": [
+        "s1",
+        "s3",
+        "v2",
+        "v1"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -16,22 +21,69 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.product": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "06539dc5e268c34b33a6d3f854bf2a89953fb1de4277873eb6fab20379ace040"
+                "b3130349f3dae2dd40bb6640a2ff2d76f3e3d8a3fc313ab71e54e4747cc13324"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lyrsense.com",
-                "tvkinoradio.ru"
+                "tvkinoradio.ru",
+                "www.life-sex.ru"
+            ]
+        },
+        {
+            "rule": "mpsuadv\\.ru\\/sbor",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s1",
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvkinoradio.ru",
+                "www.life-sex.ru"
+            ]
+        },
+        {
+            "rule": "mpsuadv\\.ru\\/event\\/page_load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2",
+                "v1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvkinoradio.ru",
+                "www.life-sex.ru"
             ]
         }
     ],
@@ -45,14 +97,16 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns2.beget.com",
-        "ns1.beget.com",
+        "ns1.beget.ru",
         "ns1.beget.pro",
-        "ns2.beget.pro",
+        "ns2.beget.com",
         "ns2.beget.ru",
-        "ns1.beget.ru"
+        "ns1.beget.com",
+        "ns2.beget.pro"
     ]
 }

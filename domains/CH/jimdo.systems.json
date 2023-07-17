@@ -4,16 +4,46 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "at.prod"
+        "at.prod",
+        "account.prod",
+        "feature-flags-proxy.prod"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "account.e.jimdo.com",
+            "resolved": "account.prod.jimdo.systems"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "jimdo\\.systems\\/anon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "at.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "account.e.jimdo.com",
+                "www.jimdo.com"
+            ]
+        },
+        {
+            "rule": "jimdo\\.systems\\/rich",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -31,7 +61,56 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jimdo.com",
-                "account.e.jimdo.com"
+                "www.jimdo.com"
+            ]
+        },
+        {
+            "rule": "jimdo\\.systems\\/openid\\/authorize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "account.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "account.e.jimdo.com",
+                    "resolved": "account.prod.jimdo.systems"
+                }
+            ],
+            "responseHashes": [
+                "0be637f4a23272e396b59734652830545d52a9cc5ea00616428b1800ff3b6116"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "www.jimdo.com"
+            ]
+        },
+        {
+            "rule": "jimdo\\.systems\\/feature-flags",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feature-flags-proxy.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "90e461598cd5f09a96ffc0e49c056d8ad8e45cbdfca99360b816ec0a692c05a4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "www.jimdo.com"
             ]
         }
     ],
@@ -40,17 +119,23 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.6842105263157895
+        },
+        {
             "domain": "jimstatic.com",
-            "prevalence": 1
+            "prevalence": 0.3157894736842105
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 5,
+        "Document": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-538.awsdns-03.net",
         "ns-1558.awsdns-02.co.uk",
-        "ns-297.awsdns-37.com",
-        "ns-1278.awsdns-31.org"
+        "ns-538.awsdns-03.net",
+        "ns-1278.awsdns-31.org",
+        "ns-297.awsdns-37.com"
     ]
 }

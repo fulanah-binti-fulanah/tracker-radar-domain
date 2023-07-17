@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "edge.api"
+        "edge.api",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -17,11 +18,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "edge.api"
+                "edge.api",
+                "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -29,7 +31,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pella.com",
-                "www.pella.com"
+                "www.pella.com",
+                "www.preflightairportparking.com",
+                "www.shapr3d.com"
             ]
         },
         {
@@ -44,7 +48,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "72e3e2a6aef6f1072bdd811a9c67916d2c6978abb698ec8014eeeb15f0d5aec8"
+                "c187fa40cbcc965230d6dbee5f5d7a66ec4aeb049120c516cde29015074b6447"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -52,6 +56,31 @@
             "exampleSites": [
                 "pella.com",
                 "www.pella.com"
+            ]
+        },
+        {
+            "rule": "flagsmith\\.com\\/api\\/v1\\/flags\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "977d50cf44ffadb75ff16ad3126b0ab2301e270c19f2dafac4cc8de495e1f2b9",
+                "2b6f83e6c66c33e8f7fb8f24e5a353f3f8c2ab460b865b241681f80413189af7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "preflightairportparking.com",
+                "www.preflightairportparking.com",
+                "www.shapr3d.com"
             ]
         }
     ],
@@ -65,13 +94,14 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 2,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-1401.awsdns-47.org",
         "ns-47.awsdns-05.com",
-        "ns-864.awsdns-44.net",
-        "ns-1757.awsdns-27.co.uk"
+        "ns-1401.awsdns-47.org",
+        "ns-1757.awsdns-27.co.uk",
+        "ns-864.awsdns-44.net"
     ]
 }

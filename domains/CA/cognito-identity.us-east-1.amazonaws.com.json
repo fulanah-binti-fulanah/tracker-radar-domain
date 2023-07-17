@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.000906,
+    "sites": 9,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,36 +21,30 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "904e1728d9f161fc4ac8a7024202a1d6b899a1caa2812938c7883d4ae1d870c8",
-                "d1b442e8c8b6c002b11d8962b7f6491e44d6d237971ea6a8e0f3bb7de0386956",
-                "e0df8563877ec4cde8d6cbf38b362557dbdd7e8b9d5b347c87ba7e5afb592c77",
-                "082e0b4395e1f2f21abf3be6c7e48741a5f4e7229ff25f98366b749aae9e3554",
-                "dd6bb25981af211cbeec7ef6bb4e342c7ea1486c919d15fdd5d91cb945ac4665",
-                "915a954ab48863db9c9b7ce257d829335628885dae41c2ac096de40ebd433817",
-                "326d57058e25d1156333145742b83347523e05fc94cae71825843f15715ae281",
-                "00ede1508d871b858c50909ebe8f5700f30cbcc1c39025bce7d7bd7ca38b088e",
-                "739e0a41170c63ee08c6c0484b2ac8ccc310e8663cb86ed75d2d8e42e4e621fb"
+                "aa3b501a4dba9431919829103ce2c99c198a676b82391ebffd7ac1235d3d46d2",
+                "ba3170563024fd7f46d0a13641167d12d8f353f49e09193c389b0d0f87e2118d",
+                "9d739d270c3ee7bb579126ce23c2ea9bca207b7f4016d00a3e6d105499256738",
+                "d3c8b151191f5fc802698b155e3a6810d75eb512288652c0c3c05239cb5d1cbf",
+                "29d78054be49950aa6dbc37a49a1686bc01601d90670e9a49c39a337bbb8bf1f",
+                "311c2b442240cac63b4fd5b23ab22b836014dc339d73a070240041d5df15dbae",
+                "030f2f2921aeb21ff4baffd041d00bfd228e44da4e2a7b039b92684e62aeffa8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "247sports.com",
-                "blog.playstation.com",
-                "carbuzz.com",
                 "vimeo.com",
                 "www.banffjaspercollection.com",
                 "www.cbssports.com",
                 "www.cn.ca",
                 "www.dndbeyond.com",
                 "www.lonelyplanet.com",
-                "www.remax.ca",
-                "www.toro.com"
+                "www.remax.ca"
             ]
         },
         {
@@ -59,8 +53,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 9,
+            "prevalence": 0.000906,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -68,16 +62,34 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "247sports.com",
-                "blog.playstation.com",
-                "carbuzz.com",
                 "vimeo.com",
                 "www.banffjaspercollection.com",
                 "www.cbssports.com",
                 "www.cn.ca",
+                "www.dexcom.com",
                 "www.dndbeyond.com",
                 "www.lonelyplanet.com",
-                "www.remax.ca",
-                "www.toro.com"
+                "www.remax.ca"
+            ]
+        },
+        {
+            "rule": "cognito-identity\\.us-east-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e9bf681d78824ba91be86b1602eef731a5c387826266ffbc968c5d3c3cc0cb9e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexcom.com",
+                "www.dexcom.com"
             ]
         }
     ],
@@ -89,29 +101,30 @@
     "topInitiators": [
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.45454545454545453
-        },
-        {
-            "domain": "hypemarks.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "vimeocdn.com",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.2222222222222222
         },
         {
-            "domain": "first party",
-            "prevalence": 0.09090909090909091
+            "domain": "hypemarks.com",
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "botcopy.com",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Fetch": 11,
-        "Preflight": 11
+        "Fetch": 8,
+        "Preflight": 9,
+        "XHR": 2
     },
     "nameservers": [
+        "ns-1031.awsdns-00.org",
         "ns-1600.awsdns-08.co.uk",
         "ns-689.awsdns-22.net",
-        "ns-467.awsdns-58.com",
-        "ns-1031.awsdns-00.org"
+        "ns-467.awsdns-58.com"
     ]
 }

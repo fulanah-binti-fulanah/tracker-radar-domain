@@ -13,7 +13,6 @@
     "sites": 6,
     "subdomains": [
         "events.api",
-        "digitalcare",
         "csp",
         "gui-ipv6"
     ],
@@ -21,10 +20,6 @@
         {
             "original": "csp.godaddy.com",
             "resolved": "csp.godaddy.com.edgekey.net"
-        },
-        {
-            "original": "digitalcare.godaddy.com",
-            "resolved": "digitalcare.godaddy.com.edgekey.net"
         },
         {
             "original": "events.api.godaddy.com",
@@ -35,7 +30,7 @@
             "resolved": "gui-ipv6.godaddy.com.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/image\\.aspx",
@@ -57,8 +52,62 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pathway": 0.000013611924045463826
+                "pathway": 0.000006807583648184077
             },
+            "exampleSites": [
+                "godaddy.com",
+                "community.godaddy.com",
+                "email.godaddy.com",
+                "sso.godaddy.com"
+            ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "csp.godaddy.com",
+                    "resolved": "csp.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "community.godaddy.com",
+                "email.godaddy.com",
+                "sso.godaddy.com"
+            ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "csp.godaddy.com",
+                    "resolved": "csp.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "godaddy.com",
                 "community.godaddy.com",
@@ -88,172 +137,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pathway": 0.000013611924045463826
-            },
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com",
-                "email.godaddy.com",
-                "sso.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/dc-apis\\/messaging-bundle\\/bundle\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "digitalcare"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "digitalcare.godaddy.com",
-                    "resolved": "digitalcare.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d28cf8fadb52a9827409a018572ed5271a8da20fa57a850476a31a8547cf41ea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "csp"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [
-                {
-                    "original": "csp.godaddy.com",
-                    "resolved": "csp.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com",
-                "email.godaddy.com",
-                "sso.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "csp"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [
-                {
-                    "original": "csp.godaddy.com",
-                    "resolved": "csp.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com",
-                "email.godaddy.com",
-                "sso.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/dc-apis\\/customer-engagement\\/config",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "digitalcare"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "digitalcare.godaddy.com",
-                    "resolved": "digitalcare.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "10a76f3567315c18bd8b78426b7ebb671fd600d490c7b6e0cc2a8e2ed69415c7"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/dc-apis\\/customer-engagement\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "digitalcare"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "digitalcare.godaddy.com",
-                    "resolved": "digitalcare.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "community.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/pageEvents\\.aspx",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [
-                {
-                    "original": "events.api.godaddy.com",
-                    "resolved": "events.api.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "pathway": 0.000013611924045463826,
-                "_ga": 0.00004083577213639148
+                "pathway": 0.000006807583648184077
             },
             "exampleSites": [
                 "godaddy.com",
@@ -289,6 +173,34 @@
                 "email.godaddy.com",
                 "sso.godaddy.com"
             ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/pageEvents\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "events.api.godaddy.com",
+                    "resolved": "events.api.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "email.godaddy.com",
+                "sso.godaddy.com"
+            ]
         }
     ],
     "categories": [],
@@ -296,23 +208,17 @@
     "cookies": 0.0000408,
     "topInitiators": [
         {
-            "domain": "wsimg.com",
-            "prevalence": 0.5094339622641509
-        },
-        {
             "domain": "unpkg.com",
-            "prevalence": 0.4528301886792453
+            "prevalence": 0.5833333333333334
         },
         {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.03773584905660377
+            "domain": "wsimg.com",
+            "prevalence": 0.4166666666666667
         }
     ],
     "types": {
-        "Fetch": 19,
-        "Script": 2,
-        "Preflight": 6,
-        "XHR": 2
+        "Fetch": 18,
+        "Preflight": 4
     },
     "nameservers": []
 }

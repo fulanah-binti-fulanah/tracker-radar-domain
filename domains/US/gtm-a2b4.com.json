@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
         "gtm-cn-tl32pap9m04",
         "gtm-cn-tl32nemt203",
-        "gtm-cn-2r4256jlb02"
+        "gtm-cn-2r4256jlb02",
+        "gtm-cn-4590x3tmp04"
     ],
     "cnames": [
         {
@@ -23,9 +24,13 @@
         {
             "original": "famisafeapp.wondershare.com",
             "resolved": "gtm-cn-2r4256jlb02.gtm-a2b4.com"
+        },
+        {
+            "original": "i.wondershare.com",
+            "resolved": "gtm-cn-4590x3tmp04.gtm-a2b4.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "gtm-a2b4\\.com\\/api\\/v1\\/chatbot\\/zendesk\\/bot-key",
@@ -52,8 +57,8 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "srcSite": 0.00003402981011365957,
-                "IR_gbd": 0.00003402981011365957
+                "IR_gbd": 0.000034037918240920386,
+                "srcSite": 0.000034037918240920386
             },
             "exampleSites": [
                 "wondershare.com",
@@ -110,39 +115,94 @@
                 }
             ],
             "responseHashes": [
-                "5d9835d468748a7f69b2221866f00fa626450dd61b5ed89d8163dd1dce81cee3"
+                "295fa6732f9905c12c8332947cf906c0c88f6221982101fbe0cea132a005e6e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "srcSite": 0.000013611924045463826
+                "srcSite": 0.000013615167296368154
             },
             "exampleSites": [
                 "wondershare.com",
                 "famisafe.wondershare.com"
             ]
+        },
+        {
+            "rule": "gtm-a2b4\\.com\\/api\\/v1\\/geoip\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm-cn-4590x3tmp04"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "i.wondershare.com",
+                    "resolved": "gtm-cn-4590x3tmp04.gtm-a2b4.com"
+                }
+            ],
+            "responseHashes": [
+                "603e0fd1223e753906c208abfcaca8dbdaf5c977caf2635b2bd9f5faf3186bfd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wondershare.com",
+                "www.wondershare.com"
+            ]
+        },
+        {
+            "rule": "gtm-a2b4\\.com\\/api\\/v2\\/articles\\/10096652\\/ratings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm-cn-4590x3tmp04"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "i.wondershare.com",
+                    "resolved": "gtm-cn-4590x3tmp04.gtm-a2b4.com"
+                }
+            ],
+            "responseHashes": [
+                "58a3853d21fa409ac9283a50b61221ef104a1abafb0cd886cbbe10b8996e7ec6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wondershare.com",
+                "mobiletrans.wondershare.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000476,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "wondershare.cc",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5555555555555556
         },
         {
             "domain": "allstatics.com",
-            "prevalence": 0.26666666666666666
+            "prevalence": 0.3888888888888889
         },
         {
             "domain": "bdimg.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
         "Fetch": 5,
-        "Script": 7
+        "Script": 7,
+        "XHR": 4
     },
     "nameservers": [
         "vip1.alidns.com",

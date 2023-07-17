@@ -8,7 +8,9 @@
     "sites": 9,
     "subdomains": [
         "sdk",
-        "wp-thumbnail"
+        "wp-thumbnail",
+        "captions",
+        "cdn32"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,7 +26,7 @@
                 "Navigator.prototype.userAgent": 4,
                 "Navigator.prototype.platform": 4,
                 "MediaSource.isTypeSupported": 4,
-                "window.localStorage": 4,
+                "window.localStorage": 5,
                 "Screen.prototype.width": 4,
                 "Screen.prototype.height": 4,
                 "Screen.prototype.availWidth": 4,
@@ -41,7 +43,7 @@
             "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "96f24d15ba997eeb016d996eac9536bcfcb1e11f045af18c6d13e651f89c6ccf"
+                "e742fa6fd5508976d9f0f78e39d5dcc7396e7f7bb5b3fc321d5e4c8ef03a5a9a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -62,7 +64,7 @@
                 "wp-thumbnail"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 1
             },
             "sites": 4,
             "prevalence": 0.0000272,
@@ -79,6 +81,50 @@
                 "www.linksmagazine.com",
                 "www.nationalclubgolfer.com"
             ]
+        },
+        {
+            "rule": "parone\\.io\\/aba933ac7d\\/captions\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "captions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd54eca9846b6583888da968f3a805797198cfc9e6eac87faa1a67dad346e448"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golftec.com",
+                "www.golftec.com"
+            ]
+        },
+        {
+            "rule": "parone\\.io\\/aba933ac7d\\/aba933ac7d\\.m3u8",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn32"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa78e1b4741a38f652ac93ef8a5248dfa4bb66111d1fba125c4a42505f435d3b"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golftec.com",
+                "www.golftec.com"
+            ]
         }
     ],
     "categories": [],
@@ -87,11 +133,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 9
+        "Script": 9,
+        "Fetch": 2,
+        "Media": 2
     },
     "nameservers": [
         "jake.ns.cloudflare.com",

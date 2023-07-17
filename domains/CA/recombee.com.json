@@ -4,14 +4,36 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
-        "client-rapi-missav"
+        "client-rapi-mediavine",
+        "client-rapi-missav",
+        "client-rapi"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "recombee\\.com\\/mediavine-prod\\/detailviews\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-rapi-mediavine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "happymuncher.com",
+                "www.mustdocanada.com"
+            ]
+        },
         {
             "rule": "recombee\\.com\\/missav-default\\/batch\\/",
             "cookies": 0,
@@ -44,7 +66,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4dce73fe70751eda0eba76a62e18bc39685c290729250c58fc0eb06ccccc4f35"
+                "292065953dfa78b518192303ca44cc3d2a2c596208b8fca06f738d89e16b6ee7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -52,6 +74,28 @@
             "exampleSites": [
                 "missav.com",
                 "njavtv.com"
+            ]
+        },
+        {
+            "rule": "recombee\\.com\\/cms-cms3-prod\\/recomms\\/users\\/tef6vsjnurk4d7sv3jregjt164\\/items\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-rapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0d1694c0e8fa922f24becf31cae50107f48f47481b57bd7a7284df4a117d1d0a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmsnl.com",
+                "www.cmsnl.com"
             ]
         }
     ],
@@ -61,19 +105,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6
         },
         {
             "domain": "grow.me",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4
         }
     ],
     "types": {
+        "Fetch": 2,
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
-        "kia.ns.cloudflare.com",
-        "jobs.ns.cloudflare.com"
+        "jobs.ns.cloudflare.com",
+        "kia.ns.cloudflare.com"
     ]
 }

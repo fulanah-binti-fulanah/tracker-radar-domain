@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00191,
-    "sites": 19,
+    "prevalence": 0.00211,
+    "sites": 21,
     "subdomains": [
         "ads"
     ],
@@ -17,18 +17,18 @@
     "resources": [
         {
             "rule": "servebom\\.com\\/hybrid_id",
-            "cookies": 0.000602,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "ads"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
+            "sites": 19,
+            "prevalence": 0.00191,
             "cnames": [],
             "responseHashes": [
-                "2d8584b947080c8cc5281bfc6abe9057ed667ddccdb6ae047f9c1f820c918991",
-                "8aa3d079ca752ff6ff2d4435a9ed1a61559bf9d9d2f48d359742fed81abec931"
+                "217c9ecf79a1570069e4508295b0a38ab2b79e932f897b133fced204441494d4",
+                "1f4f22180a5572bd3680b800ae9466bf2d47081da79749f714329279d5896ab2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -48,33 +48,72 @@
                 "www.marieclaire.com",
                 "www.musicradar.com",
                 "www.pcgamer.com",
+                "www.space.com",
                 "www.techradar.com",
                 "www.techspot.com",
                 "www.whathifi.com",
                 "www.windowscentral.com"
             ]
+        },
+        {
+            "rule": "servebom\\.com\\/tmnhead\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b4398faa77554112a2e2a498c9e8da03633c7a04ea4436bc9599c8b2e132ac6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cmp_choice": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.0002014098690835851,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamepressure.com",
+                "www.gamepressure.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000702,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "futurecdn.net",
-            "prevalence": 0.9473684210526315
+            "prevalence": 0.9047619047619048
         },
         {
             "domain": "first party",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.09523809523809523
         }
     ],
     "types": {
-        "Fetch": 18
+        "Fetch": 19,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1295.awsdns-33.org",
-        "ns-1624.awsdns-11.co.uk",
+        "ns-678.awsdns-20.net",
         "ns-468.awsdns-58.com",
-        "ns-678.awsdns-20.net"
+        "ns-1624.awsdns-11.co.uk",
+        "ns-1295.awsdns-33.org"
     ]
 }

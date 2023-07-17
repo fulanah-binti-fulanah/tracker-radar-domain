@@ -7,17 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000476,
-    "sites": 7,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "cdn-aitg",
         "astg",
         "adtg",
         "cdp-web",
-        "altg"
+        "altg",
+        "ax-tg"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "widerplanet\\.com\\/js\\/adr\\.js",
@@ -27,16 +28,17 @@
                 "cdn-aitg"
             ],
             "apis": {
+                "Date.prototype.getTime": 4,
                 "Navigator.prototype.userAgent": 3,
                 "window.localStorage": 3,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.language": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "90db70e496ef140375f9fabdf16ef7e78b59707d9e41d181c2687583a31a52f7"
+                "90db70e496ef140375f9fabdf16ef7e78b59707d9e41d181c2687583a31a52f7",
+                "69294d9eabf85578b0fe43bfaffacd0c7342f14d7d02892c31b9e5af6219b44f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,6 +46,7 @@
             "exampleSites": [
                 "donga.com",
                 "pann.nate.com",
+                "www.etoland.co.kr",
                 "www.yna.co.kr"
             ]
         },
@@ -55,10 +58,10 @@
                 "astg"
             ],
             "apis": {
-                "window.localStorage": 1
+                "window.localStorage": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "e270f53080812a5da2b2e937ce48dbc794f3442b872f1f2003e3bdd2d2d901dc"
@@ -70,6 +73,7 @@
                 "donga.com",
                 "pann.nate.com",
                 "www.airasia.com",
+                "www.etoland.co.kr",
                 "www.yna.co.kr"
             ]
         },
@@ -85,7 +89,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "002060467f20543f1f439c9025c65ff2b36c06aa2b8937773696ccfbb0c1d456"
+                "87f8855e9ec00bf0b587459c17a734b71304987306edcff46671fc9b6b547365"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -138,14 +142,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "764121bdf2d9c7995ae7a51a110e7037fcab60d391755dbc8620c8e886298c06"
+                "12db8bc4a1af754700e36667c89099a70a93e7cd858febd01c609caae3537774"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_wp_uid": {
-                    "ttl": 31536017,
+                    "ttl": 31536018,
                     "length": 76,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000013615167296368154,
                     "uniqueness": 1
                 }
             },
@@ -172,7 +176,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4528f5465ba2d2f2e84cd60c4707841c1d80554cdd9c9e3a55d897ffdbfa316c"
+                "406cec239fcad5df51ac4223f3b24eaf0430ff7d999f46dedd8f3d4e2879394c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -224,7 +228,7 @@
             "exampleSites": [
                 "airasia.com",
                 "www.airasia.com",
-                "www.dcinside.com"
+                "www.etoland.co.kr"
             ]
         },
         {
@@ -247,30 +251,7 @@
             "exampleSites": [
                 "airasia.com",
                 "www.airasia.com",
-                "www.dcinside.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wpg_a\\.php",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "astg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airasia.com",
-                "www.airasia.com",
-                "www.dcinside.com"
+                "www.etoland.co.kr"
             ]
         },
         {
@@ -293,49 +274,126 @@
             "exampleSites": [
                 "airasia.com",
                 "www.airasia.com",
-                "www.dcinside.com"
+                "www.etoland.co.kr"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/wpg_a\\.php",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "astg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airasia.com",
+                "www.airasia.com",
+                "www.etoland.co.kr"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ax-tg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "529739cebf5e9649909e74dcc1309be48ec885900f10265a98d5203b907de024",
+                "817117b6ab494444b264f3c864811f9524b75a2b15451c799f4e050587fddd10"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006807583648184077
+            },
+            "exampleSites": [
+                "etoland.co.kr",
+                "www.etoland.co.kr",
+                "www.yna.co.kr"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ax-tg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006807583648184077
+            },
+            "exampleSites": [
+                "etoland.co.kr",
+                "www.etoland.co.kr",
+                "www.yna.co.kr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000476,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.2222222222222222
+            "domain": "ednplus.com",
+            "prevalence": 0.21428571428571427
+        },
+        {
+            "domain": "wisenut.co.kr",
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "mathtag.com",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "toast.com",
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "adpnut.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.07142857142857142
         },
         {
-            "domain": "daumcdn.net",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "ednplus.com",
-            "prevalence": 0.1111111111111111
+            "domain": "first party",
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Script": 11,
-        "Document": 4,
-        "XHR": 2,
-        "Image": 12
+        "Script": 12,
+        "Document": 5,
+        "XHR": 5,
+        "Image": 12,
+        "Preflight": 3
     },
     "nameservers": [
+        "ns-1687.awsdns-18.co.uk",
         "ns-409.awsdns-51.com",
         "ns-854.awsdns-42.net",
-        "ns-1687.awsdns-18.co.uk",
         "ns-1063.awsdns-04.org"
     ]
 }

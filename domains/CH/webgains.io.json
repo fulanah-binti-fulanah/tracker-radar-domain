@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
-        "analytics"
+        "analytics",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -23,12 +24,12 @@
                 "analytics"
             ],
             "apis": {
-                "window.localStorage": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7
+                "window.localStorage": 11,
+                "Navigator.prototype.userAgent": 11,
+                "Date.prototype.getTime": 11
             },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "47894039fc59be2ba0436706963667cb535aa6be1f5576475d71789d7c953565"
@@ -39,38 +40,86 @@
             "exampleSites": [
                 "wondershare.de",
                 "kb.paessler.com",
+                "ledlenser.com",
                 "mobiletrans.wondershare.com",
-                "www.catphones.com",
+                "pdf.wondershare.de",
+                "planner5d.com",
+                "recoverit.wondershare.de",
                 "www.carhartt-wip.com",
-                "www.expondo.ch",
-                "www.fc-moto.de"
+                "www.paessler.com",
+                "www.pkwteile.ch",
+                "www.teile-direkt.ch"
+            ]
+        },
+        {
+            "rule": "webgains\\.io\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "promiflash.de",
+                "www.promiflash.de"
+            ]
+        },
+        {
+            "rule": "webgains\\.io\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "promiflash.de",
+                "www.promiflash.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.75
+            "prevalence": 0.5833333333333334
         },
         {
             "domain": "first party",
-            "prevalence": 0.125
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "webgains.com",
-            "prevalence": 0.125
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 11,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1526.awsdns-62.org",
-        "ns-1983.awsdns-55.co.uk",
         "ns-525.awsdns-01.net",
-        "ns-9.awsdns-01.com"
+        "ns-1526.awsdns-62.org",
+        "ns-9.awsdns-01.com",
+        "ns-1983.awsdns-55.co.uk"
     ]
 }

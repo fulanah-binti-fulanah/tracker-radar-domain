@@ -8,11 +8,15 @@
     "sites": 13,
     "subdomains": [
         "naouzqe",
-        "mk4e428",
         "hn2roq5",
-        "c5wg5ik"
+        "c5wg5ik",
+        "7spqe6l"
     ],
     "cnames": [
+        {
+            "original": "api.sans.org",
+            "resolved": "7spqe6l.impervadns.net"
+        },
         {
             "original": "apis.airtransat.com",
             "resolved": "hn2roq5.impervadns.net"
@@ -24,10 +28,6 @@
         {
             "original": "login.accor.com",
             "resolved": "naouzqe.impervadns.net"
-        },
-        {
-            "original": "mediaassets.airbus.com",
-            "resolved": "mk4e428.impervadns.net"
         }
     ],
     "fingerprinting": 2,
@@ -58,33 +58,6 @@
             ]
         },
         {
-            "rule": "impervadns\\.net\\/medias\\/domain38\\/media101851\\/555343-axnfdce994-whr\\.jpg",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mk4e428"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "mediaassets.airbus.com",
-                    "resolved": "mk4e428.impervadns.net"
-                }
-            ],
-            "responseHashes": [
-                "c27ef4d10755c17c7e8fbc561287205d6149abf564578e8229e1c5b0d79c6cf9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airbus.com",
-                "www.airbus.com"
-            ]
-        },
-        {
             "rule": "impervadns\\.net\\/client\\/Persistence\\/UpdateCookies\\/",
             "cookies": 0.000201,
             "fingerprinting": 1,
@@ -101,12 +74,12 @@
                 }
             ],
             "responseHashes": [
-                "c5db79412d5b74ffbea250e5204955c0ef2f6a9cf204b985b832827789281c9a"
+                "d85ee470ee497a6fce6a2d34a80269787809d9574d8de8423f5531c3c3e4e92a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000502209722780233
+                "_ga": 0.0006042904622822037
             },
             "exampleSites": [
                 "airtransat.com",
@@ -115,7 +88,7 @@
         },
         {
             "rule": "impervadns\\.net\\/_Incapsula_Resource",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 3,
             "subdomains": [
                 "hn2roq5"
@@ -130,10 +103,17 @@
                 }
             ],
             "responseHashes": [
-                "d67ac8ff41b3547a59f44172831a642fadac44422d8b03a6948e598ec00d4d07"
+                "c4d461eb7717674d246956f3cdc4c2834f2adba9a24d3a7dc60718ec4796fd5c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "___utmvc": {
+                    "ttl": 34,
+                    "length": 2974,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "airtransat.com",
@@ -216,6 +196,33 @@
                 "cineplex.com",
                 "www.cineplex.com"
             ]
+        },
+        {
+            "rule": "impervadns\\.net\\/event-stream\\/collect\\/snowplow\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "7spqe6l"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.sans.org",
+                    "resolved": "7spqe6l.impervadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sans.org",
+                "www.sans.org"
+            ]
         }
     ],
     "categories": [],
@@ -224,22 +231,27 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.4
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4
+        },
+        {
+            "domain": "livehelpnow.net",
+            "prevalence": 0.2
         }
     ],
     "types": {
         "Document": 4,
-        "Image": 4,
         "Script": 2,
-        "Font": 4
+        "Image": 2,
+        "Font": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.impervadns.net",
+        "ns3.impervadns.net",
         "ns2.impervadns.net",
-        "ns3.impervadns.net"
+        "ns1.impervadns.net"
     ]
 }

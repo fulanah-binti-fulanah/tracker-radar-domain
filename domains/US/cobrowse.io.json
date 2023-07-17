@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
         "js",
         "api"
@@ -21,20 +21,20 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "Navigator.prototype.language": 5,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
-                "Navigator.prototype.platform": 5,
-                "Navigator.prototype.languages": 5,
-                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "Navigator.prototype.language": 8,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 8,
+                "Navigator.prototype.platform": 8,
+                "Navigator.prototype.languages": 8,
+                "Date.prototype.getTime": 7,
                 "Document.cookie setter": 3
             },
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "f230d62397ff4b0bef35ae70452e45824a2c1ad9368171c14f92cacd1351e3be"
+                "f2c64b69d0b495156fd51c4b9c289cffb66a731c0926058c05cc3492ab66bd98"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,9 +42,12 @@
             "exampleSites": [
                 "americanstandard-us.com",
                 "auth.tiaa.org",
+                "theworknumber.com",
                 "www.americanstandard-us.com",
                 "www.delonghi.com",
+                "www.envelopes.com",
                 "www.grohe.us",
+                "www.jampaper.com",
                 "www.tiaa.org"
             ]
         },
@@ -60,8 +63,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "ccdb18180d8b5b6eb839dfd3b9f3cef204529a5405ee038e3c1e10c9fae2c268",
-                "9bfcb06a23c52443621eee5f72677f2909bcd76c0cbfa602f325ca986896d918"
+                "90566de1f047829500aef44eab44109bf3d886bdb6f5c9ed21f580409df1852e",
+                "ff1931963f50a61ad2b6479c6548aa15696338af732ef588bfd05e2f0f50621c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -101,8 +104,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -110,9 +113,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "americanstandard-us.com",
+                "theworknumber.com",
                 "www.americanstandard-us.com",
                 "www.delonghi.com",
-                "www.grohe.us"
+                "www.envelopes.com",
+                "www.grohe.us",
+                "www.jampaper.com"
             ]
         },
         {
@@ -123,8 +129,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "51b2cbb0c77c1095237c19e603599f09419e34a7880a81ac8ac42ed455d47068"
@@ -134,7 +140,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "auth.tiaa.org"
+                "auth.tiaa.org",
+                "theworknumber.com"
             ]
         },
         {
@@ -143,10 +150,11 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "83bc22b4bfe0667a819eeb4f7a3df30f6c2b60d95eab6828bc1f4df1cf935489"
@@ -156,7 +164,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "auth.tiaa.org"
+                "auth.tiaa.org",
+                "theworknumber.com"
+            ]
+        },
+        {
+            "rule": "cobrowse\\.io\\/api\\/1\\/devices\\/6b802684-55c3-4e99-a4de-3534bee02f96",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3807566c75f664205cf0fce323fdbdc052331a7d36c27dc41f98173114d0e3fa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "envelopes.com",
+                "www.envelopes.com"
             ]
         }
     ],
@@ -166,28 +197,36 @@
     "topInitiators": [
         {
             "domain": "do5nkkzntcenb.cloudfront.net",
-            "prevalence": 0.75
+            "prevalence": 0.5769230769230769
         },
         {
             "domain": "first party",
-            "prevalence": 0.175
+            "prevalence": 0.28846153846153844
         },
         {
             "domain": "d2tnd5rm3qyjbv.cloudfront.net",
-            "prevalence": 0.075
+            "prevalence": 0.057692307692307696
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.057692307692307696
+        },
+        {
+            "domain": "zdassets.com",
+            "prevalence": 0.019230769230769232
         }
     ],
     "types": {
-        "Script": 8,
-        "Fetch": 3,
+        "Script": 12,
+        "Fetch": 5,
         "Preflight": 3,
-        "WebSocket": 4,
-        "Document": 2
+        "WebSocket": 7,
+        "Document": 3
     },
     "nameservers": [
-        "ns-3.awsdns-00.com",
-        "ns-521.awsdns-01.net",
         "ns-1467.awsdns-55.org",
-        "ns-1914.awsdns-47.co.uk"
+        "ns-1914.awsdns-47.co.uk",
+        "ns-3.awsdns-00.com",
+        "ns-521.awsdns-01.net"
     ]
 }

@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00201,
+    "sites": 20,
     "subdomains": [
-        "as.com.data",
+        "commerce",
+        "tomg1ddovp.data",
         "elpais.com.data",
+        "automobilwoche.de.data",
         "douglas.de.data",
         "kaspersky.de.data",
         "miles-and-more.com.data",
@@ -21,7 +23,7 @@
         "science.org.data",
         "sony.com.data",
         "wieistmeineip.de.data",
-        "commerce"
+        "edge"
     ],
     "cnames": [
         {
@@ -41,8 +43,8 @@
             "resolved": "sony.com.data.adobedc.net"
         },
         {
-            "original": "smetrics.as.com",
-            "resolved": "as.com.data.adobedc.net"
+            "original": "smetrics.automobilwoche.de",
+            "resolved": "automobilwoche.de.data.adobedc.net"
         },
         {
             "original": "smetrics.elpais.com",
@@ -59,17 +61,66 @@
         {
             "original": "smetrics.science.org",
             "resolved": "science.org.data.adobedc.net"
+        },
+        {
+            "original": "sstats.paloaltonetworks.com",
+            "resolved": "tomg1ddovp.data.adobedc.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "adobedc\\.net\\/id",
-            "cookies": 0.000903,
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
-                "as.com.data",
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dildoking.de",
+                "www.motea.com",
+                "www.vaude.com"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dildoking.de",
+                "www.motea.com",
+                "www.vaude.com"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/id",
+            "cookies": 0.00101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tomg1ddovp.data",
                 "elpais.com.data",
+                "automobilwoche.de.data",
                 "douglas.de.data",
                 "kaspersky.de.data",
                 "miles-and-more.com.data",
@@ -79,16 +130,20 @@
                 "wieistmeineip.de.data"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000903,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [
                 {
-                    "original": "smetrics.as.com",
-                    "resolved": "as.com.data.adobedc.net"
+                    "original": "sstats.paloaltonetworks.com",
+                    "resolved": "tomg1ddovp.data.adobedc.net"
                 },
                 {
                     "original": "smetrics.elpais.com",
                     "resolved": "elpais.com.data.adobedc.net"
+                },
+                {
+                    "original": "smetrics.automobilwoche.de",
+                    "resolved": "automobilwoche.de.data.adobedc.net"
                 },
                 {
                     "original": "adtd.douglas.de",
@@ -120,21 +175,23 @@
                 }
             ],
             "responseHashes": [
-                "81987a8737368c1a5b1d81d38559f6618fb1dedd365baa4291144c1dc2ec1a2b",
-                "27dbb59010c686c06ffa83231d56b7ed090c7b45d27a644442ca34bd0692ad07",
-                "bcd61deb81b2b4186a5d664e92c3d30912c1498dbc703789edd169f12cf1da40",
-                "f17f6c38e49f66d8004928f4fddefc72a1cff9b84a32675fa19cfc854d46f710",
-                "e11805357cbf29960e9e10d860479a70c9db676e80ba45e1dd000706aad0dc16",
-                "53143c7dfb850803bf6799727c1f23c1483480d51601f9a49d948a52dfb0b8e3",
-                "986838db9d93c4b8b00bb21b2110f4bdb24a4141f5ae5ef37153e0bc66c305e7",
-                "eb8cd6c9f13ce2046942dcd9018fd33d0f534d2fd0bb324a87a7e49aeb3c9891"
+                "ea746d98330248a2cab8840740018284572ab4b59960ccddc05c42fd571578f1",
+                "1f59e88eca9fb344cfb06de02732ecbe3ec8004eb361befc335d4ac1da0ddfcb",
+                "5ced40a67fc9f2195cab8854086b4f7f422e5baeca65b3a5696f42e2a28704e7",
+                "227151b07c40ff244c23082dce85d35bfd6e0eba7355b928d26a0cb26f49e58f",
+                "c674344473652faa26df5876d4c6162033cc44369621940261477d2d4b786bdb",
+                "bf54e21c0736d6cc85642602b26343b783f95a9d6f613e0daaac0ef76aa04614",
+                "6733c77c0a016d5cbeb8ace32ee8df495dcf4c72406a32c619324f53ae536ba6",
+                "165b88bb4a9dce6a4116fd544fed87265a8ecc7611bd3e7832025357899893cc",
+                "6e862f7e8ee3a65b6d88d7bdcbd5b3293727a5d900382dd72a110e0c176144a7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "as.com",
+                "paloaltonetworks.com",
                 "elpais.com",
+                "www.automobilwoche.de",
                 "www.douglas.de",
                 "www.kaspersky.de",
                 "www.miles-and-more.com",
@@ -145,90 +202,73 @@
             ]
         },
         {
-            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "rule": "adobedc\\.net\\/ee\\/irl1\\/v1\\/interact",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "commerce"
+                "edge"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dildoking.de",
-                "www.motea.com",
-                "www.vaude.com"
-            ]
-        },
-        {
-            "rule": "adobedc\\.net\\/collector\\/tp2",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "commerce"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+                "c232cf7ee55272634f8c34a0442c6d1196f64038d9d60793f5177d1fb91bcfef"
             ],
-            "type": "Ping",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dildoking.de",
-                "www.motea.com",
-                "www.vaude.com"
+                "delta.com",
+                "www.delta.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0013,
+    "cookies": 0.00131,
     "topInitiators": [
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.5666666666666667
+            "prevalence": 0.48484848484848486
         },
         {
             "domain": "unpkg.com",
-            "prevalence": 0.2
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.12121212121212122
         },
         {
             "domain": "kaspersky.com",
-            "prevalence": 0.1
+            "prevalence": 0.09090909090909091
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.06060606060606061
         },
         {
             "domain": "usercentrics.eu",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.030303030303030304
         },
         {
             "domain": "asadcdn.com",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "XHR": 9,
+        "Ping": 3,
         "Preflight": 3,
-        "Ping": 3
+        "XHR": 10,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns203.adobe.net",
-        "ns206.adobe.net",
+        "ns201.adobe.net",
         "ns202.adobe.net",
-        "ns205.adobe.net",
+        "ns203.adobe.net",
         "ns204.adobe.net",
-        "ns201.adobe.net"
+        "ns205.adobe.net",
+        "ns206.adobe.net"
     ]
 }

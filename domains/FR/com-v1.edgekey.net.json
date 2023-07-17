@@ -9,15 +9,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00211,
-    "sites": 21,
+    "prevalence": 0.00192,
+    "sites": 19,
     "subdomains": [
-        "jsso.indiatimes",
         "creas.prismamediadigital",
-        "static-dm.ubisoft",
-        "geo.cnbc"
+        "geo.cnbc",
+        "api.foxnews"
     ],
     "cnames": [
+        {
+            "original": "api.foxnews.com",
+            "resolved": "api.foxnews.com-v1.edgekey.net"
+        },
         {
             "original": "creas.prismamediadigital.com",
             "resolved": "creas.prismamediadigital.com-v1.edgekey.net"
@@ -25,70 +28,10 @@
         {
             "original": "geo.cnbc.com",
             "resolved": "geo.cnbc.com-v1.edgekey.net"
-        },
-        {
-            "original": "jsso.indiatimes.com",
-            "resolved": "jsso.indiatimes.com-v1.edgekey.net"
-        },
-        {
-            "original": "static-dm.ubisoft.com",
-            "resolved": "static-dm.ubisoft.com-v1.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jsso.indiatimes"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "jsso.indiatimes.com",
-                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "ddfd865e7f12769fb2bda5bcaa84657980cae7117acc679be6877a2d318909b5"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "timesofindia.com",
-                "timesofindia.indiatimes.com"
-            ]
-        },
-        {
-            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jsso.indiatimes"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "jsso.indiatimes.com",
-                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "timesofindia.com",
-                "timesofindia.indiatimes.com"
-            ]
-        },
         {
             "rule": "com-v1\\.edgekey\\.net\\/feminin\\/logos\\/cac_logo\\.svg",
             "cookies": 0,
@@ -98,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "creas.prismamediadigital.com",
@@ -117,96 +60,15 @@
             ]
         },
         {
-            "rule": "com-v1\\.edgekey\\.net\\/feminin\\/logos\\/fac_logo\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "creas.prismamediadigital"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "creas.prismamediadigital.com",
-                    "resolved": "creas.prismamediadigital.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "535bd3af89711043fee9ce84c666860dea0ab9acfa7d582c9f786536d8384f65"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "femmeactuelle.fr",
-                "www.femmeactuelle.fr"
-            ]
-        },
-        {
-            "rule": "com-v1\\.edgekey\\.net\\/global\\/prod\\/fonts\\/ubisoftsans-bold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-dm.ubisoft"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static-dm.ubisoft.com",
-                    "resolved": "static-dm.ubisoft.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "8fd2c407bc1e4121c2412c13497c651513559956bfcd64414e247335e4825d7b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ubisoft.com",
-                "www.ubisoft.com"
-            ]
-        },
-        {
-            "rule": "com-v1\\.edgekey\\.net\\/global\\/prod\\/fonts\\/ubisoftsans-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-dm.ubisoft"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static-dm.ubisoft.com",
-                    "resolved": "static-dm.ubisoft.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "616f5dd6f8c39bf245e2d792532e3642bfccd18a370622d759dfc48ce54552e1"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ubisoft.com",
-                "www.ubisoft.com"
-            ]
-        },
-        {
             "rule": "com-v1\\.edgekey\\.net\\/info\\/",
-            "cookies": 0.000402,
+            "cookies": 0.000404,
             "fingerprinting": 0,
             "subdomains": [
                 "geo.cnbc"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000404,
             "cnames": [
                 {
                     "original": "geo.cnbc.com",
@@ -225,39 +87,68 @@
                 "www.nbcnews.com",
                 "www.today.com"
             ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/v3\\/video-player\\/6189191231001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.foxnews"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "api.foxnews.com",
+                    "resolved": "api.foxnews.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ce38b9fd2e0b5cd503796b21686b82774f7693fa046b567b0573e4a0ccebc507"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000703,
+    "cookies": 0.000605,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8055555555555556
-        },
-        {
-            "domain": "toiimg.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.7941176470588235
         },
         {
             "domain": "cnbcfm.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.058823529411764705
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "toiimg.com",
+            "prevalence": 0.029411764705882353
         },
         {
             "domain": "knotch-cdn.com",
-            "prevalence": 0.027777777777777776
+            "prevalence": 0.029411764705882353
+        },
+        {
+            "domain": "akamaihd.net",
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2,
-        "Image": 4,
-        "Font": 4,
-        "Fetch": 4
+        "Image": 2,
+        "Fetch": 4,
+        "Script": 2
     },
     "nameservers": []
 }

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000908,
+    "sites": 9,
     "subdomains": [
         "cdn",
         "sync"
@@ -18,29 +18,80 @@
     "resources": [
         {
             "rule": "transcend\\.io\\/cm\\/f2747157-cf59-4ef1-8703-018defe51764\\/airgap\\.js",
-            "cookies": 0,
+            "cookies": 0.000202,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.languages": 2,
-                "Navigator.prototype.doNotTrack": 2,
                 "BroadcastChannel.prototype.constructor": 2,
+                "CookieStore.prototype.getAll": 2,
+                "Document.cookie setter": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "1628d2b6162b608b08cd63c9e4b515436f515f1bce484ef1fff9c44e1f2e61d3"
+                "1c06ee0e51ff9275924f9e49d24d681a6949aae0149cbefce79b8c8515be2eb0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "django_timezone": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "_dd_s": {
+                    "ttl": 911,
+                    "length": 3,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "_ga": {
+                    "ttl": 63072003,
+                    "length": 27,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                },
+                "_gid": {
+                    "ttl": 86403,
+                    "length": 27,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                },
+                "cookies.js": {
+                    "ttl": 2,
+                    "length": 9,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "_gat": {
+                    "ttl": 65,
+                    "length": 1,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "ebGAClientId": {
+                    "ttl": 31622405,
+                    "length": 21,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                },
+                "_fbp": {
+                    "ttl": 7776006,
+                    "length": 29,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eventbrite.com",
@@ -58,10 +109,10 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "f03ebf6e7b00f68bab0b27e9c0cb3354c52e866a5072aa7f620e75270f4f5b93"
+                "4629229ce8cce904879c02139add107e72a0abae7ae569a2428c2533c1757de3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -80,7 +131,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "67042ecb09a9f201dd298c4bb1b29f3493f5028b181e03792bc5c18c626e6b3a"
@@ -102,10 +153,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c26bc6fe30790ad12a5e6fb7d87865014f60e27c0acc958528ca8f19a4f18153"
+                "2e872231ac0befc060b8301a69d7195aec54bae7262ca197c54f38a84ca2f032"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -124,7 +175,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "f3b947d7d01cd4ddb4e4e1510f882a6448dc8ce3e2edb346d0f8be9edc341de3"
@@ -145,15 +196,16 @@
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.doNotTrack": 1,
                 "Navigator.prototype.cookieEnabled": 1,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "1d5c2d41fad846091603665618e97aa80195da069f10aaf97f248a355b90efad"
+                "bf16350c37903e990c66b4b241ac1d782f4c37cc8a18477eb35cf2b080a11ff9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -166,15 +218,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000706,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8181818181818182
+            "prevalence": 0.8421052631578947
         },
         {
             "domain": "evbstatic.com",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
@@ -184,9 +240,9 @@
         "Document": 2
     },
     "nameservers": [
-        "ns-519.awsdns-00.net",
-        "ns-1554.awsdns-02.co.uk",
         "ns-120.awsdns-15.com",
-        "ns-1502.awsdns-59.org"
+        "ns-1502.awsdns-59.org",
+        "ns-1554.awsdns-02.co.uk",
+        "ns-519.awsdns-00.net"
     ]
 }

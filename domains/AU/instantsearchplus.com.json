@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
+        "shopify",
         "magento",
         "bigcommerce"
     ],
@@ -14,12 +15,11 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "instantsearchplus\\.com\\/js\\/acp-magento\\.js",
+            "rule": "instantsearchplus\\.com\\/js\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "magento",
-                "bigcommerce"
+                "shopify"
             ],
             "apis": {
                 "window.localStorage": 2
@@ -34,8 +34,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "petalandpup.com.au",
+                "www.nutritionwarehouse.com.au"
+            ]
+        },
+        {
+            "rule": "instantsearchplus\\.com\\/js\\/acp-magento\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "magento",
+                "bigcommerce",
+                "shopify"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "a4c74bd53e4683d0e9933ebe599923d3c67886e166847597020f276e7fc5bb3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "everten.com.au",
-                "www.myfurniturestore.com.au"
+                "www.myfurniturestore.com.au",
+                "www.nutritionwarehouse.com.au"
             ]
         }
     ],
@@ -49,12 +76,12 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 5
     },
     "nameservers": [
-        "ns-1548.awsdns-01.co.uk",
+        "ns-777.awsdns-33.net",
         "ns-453.awsdns-56.com",
         "ns-1155.awsdns-16.org",
-        "ns-777.awsdns-33.net"
+        "ns-1548.awsdns-01.co.uk"
     ]
 }

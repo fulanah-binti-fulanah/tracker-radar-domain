@@ -12,38 +12,64 @@
     "prevalence": 0.00171,
     "sites": 17,
     "subdomains": [
+        "browser.pipe.aria",
         "us-mobile.events.data",
         "browser.events.data",
-        "browser.pipe.aria",
+        "ajax",
         "edge-auth",
-        "analyticspixel",
+        "wcpstatic",
         "c1"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.pipe.aria"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000705,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "my.clevelandclinic.org",
+                "www.gotransit.com",
+                "www.leatherman.com",
+                "www.lethbridge.ca",
+                "www.metrolinx.com",
+                "www.oaken.com"
+            ]
+        },
+        {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "us-mobile.events.data",
                 "browser.events.data"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "246ee9d72533e4cc874962b484bac5a032e414933936f66bfb87a4025ed0c0aa",
-                "39a037a032cce2fd124f8ae7b5ea829066edaa6bdb11bfd7d1a08553a2248a11",
+                "5f442af2df529b655917ea9118b323ce010c47ad2b222882948ac6eb9f7f6cc0",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "canada.ca",
                 "woodbine.com",
                 "www.minecraft.net",
                 "www.trekbikes.com"
@@ -58,43 +84,38 @@
                 "browser.events.data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "canada.ca",
                 "woodbine.com",
                 "www.minecraft.net"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
+            "rule": "microsoft\\.com\\/ajax\\/jquery\\.validate\\/1\\.7\\/jquery\\.validate\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "browser.pipe.aria"
+                "ajax"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "4bcce205f04604ce7c10ea64d84730110c5872df2ac2c3699f15f337bd8c5a02"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clevelandclinic.org",
-                "www.auroramedical.com",
-                "www.gotransit.com",
-                "www.lethbridge.ca",
-                "www.metrolinx.com",
-                "www.oaken.com"
+                "austinchronicle.com",
+                "www.salonbergeron.ca"
             ]
         },
         {
@@ -109,7 +130,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3baeff6de22c80f8891d9fc080fc77a82d67fa7fb4374bf27265a3bc8ffe233d"
+                "ca51fd614f01533949cc36632afe148d5a8e9ffc47941cca669c61fac6e1345a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -120,25 +141,36 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/aid\\/imp",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
             "subdomains": [
-                "analyticspixel"
+                "wcpstatic"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSCC": {
+                    "ttl": 86403,
+                    "length": 2,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "epicurious.com",
-                "www.epicurious.com"
+                "flightsimulator.com",
+                "www.minecraft.net"
             ]
         },
         {
@@ -171,47 +203,43 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4074074074074074
+            "prevalence": 0.4375
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.25925925925925924
+            "prevalence": 0.375
         },
         {
             "domain": "powerapps.com",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.07407407407407407
+            "prevalence": 0.0625
         },
         {
             "domain": "azure.com",
-            "prevalence": 0.07407407407407407
+            "prevalence": 0.0625
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.03125
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.03125
         }
     ],
     "types": {
         "XHR": 10,
-        "Preflight": 3,
-        "Script": 2,
-        "Image": 4
+        "Preflight": 2,
+        "Script": 6,
+        "Image": 2
     },
     "nameservers": [
-        "ns1-39.azure-dns.com",
+        "ns3-39.azure-dns.org",
         "ns2-39.azure-dns.net",
-        "ns4-39.azure-dns.info",
-        "ns3-39.azure-dns.org"
+        "ns1-39.azure-dns.com",
+        "ns4-39.azure-dns.info"
     ]
 }

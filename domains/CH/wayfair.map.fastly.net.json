@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "t"
@@ -26,35 +26,6 @@
     ],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "wayfair\\.map\\.fastly\\.net\\/b\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "t.wayfair.com",
-                    "resolved": "t.wayfair.map.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "695c89d918186f814b304e3e0f8bff5928df9bbb5c8afa277f1dfef9efaeca86"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020078305391024997
-            },
-            "exampleSites": [
-                "wayfair.com",
-                "www.wayfair.com"
-            ]
-        },
         {
             "rule": "wayfair\\.map\\.fastly\\.net\\/events\\/single",
             "cookies": 0,
@@ -108,7 +79,7 @@
             ]
         },
         {
-            "rule": "wayfair\\.map\\.fastly\\.net\\/imp\\.php",
+            "rule": "wayfair\\.map\\.fastly\\.net\\/b\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -126,9 +97,11 @@
             "responseHashes": [
                 "695c89d918186f814b304e3e0f8bff5928df9bbb5c8afa277f1dfef9efaeca86"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00020106564793405046
+            },
             "exampleSites": [
                 "wayfair.com",
                 "www.wayfair.com"
@@ -146,22 +119,17 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "wfcdn.com",
-            "prevalence": 0.9968354430379747
-        },
-        {
-            "domain": "adnxs.com",
-            "prevalence": 0.0031645569620253164
+            "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 2,
         "Preflight": 2,
         "Ping": 2,
-        "Image": 2
+        "XHR": 2
     },
     "nameservers": []
 }

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
         "api-ap-southeast-2-production",
         "api"
@@ -25,18 +25,64 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "79f55e3813d31c56ae7b49eb53c0ed4d3e6d506cce348f6f8d91382f944869a6"
+                "870819667210d2e16978af88448e10ca75136350aab8d52e6fd25696e7feb5a1",
+                "d982058783f2bc9e8ff0e289ed7d6063fcde934cca66b76e729ac9eb36b26621"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cebupacificair.com",
+                "www.emirates.com",
                 "www.qatarairways.com"
+            ]
+        },
+        {
+            "rule": "boxever\\.com\\/v2\\/getBucket",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ap-southeast-2-production",
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "fd5c5e27c8f03ce26d653153e7216413a9be1128d882eb60c561f8570d0c1712"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cebupacificair.com",
+                "www.emirates.com"
+            ]
+        },
+        {
+            "rule": "boxever\\.com\\/v2\\/getBucket",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ap-southeast-2-production",
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cebupacificair.com",
+                "www.emirates.com"
             ]
         },
         {
@@ -47,18 +93,47 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "3288e2ec4430a55ec5ac941878eff5f20dfa9465240efdf1d87a89bd18649b52"
+                "eaec2a17d340aef64dbe068e218209c990da6815d328e495dd71da9509f37ac7",
+                "7b9fda9308aa83c8f67108c4edbf62b331dc2480a5b39613fa991b4fa5b32f67"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "bid_ek2Zx82tZTOPkQhPaE41UTJEwbPdudQu": 0.0002018774603815484,
+                "_criteo_ref": 0.0002018774603815484
+            },
             "exampleSites": [
-                "qatarairways.com",
+                "emirates.com",
+                "www.emirates.com",
                 "www.qatarairways.com"
+            ]
+        },
+        {
+            "rule": "boxever\\.com\\/v1\\.2\\/event\\/create\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "69878b27f040a0ff2229f49e79f4c785923c0e392d83ed029f85bffe23b00a68"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bid_ek2Zx82tZTOPkQhPaE41UTJEwbPdudQu": 0.0002018774603815484
+            },
+            "exampleSites": [
+                "emirates.com",
+                "www.emirates.com"
             ]
         }
     ],
@@ -68,20 +143,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.5
+        },
+        {
+            "domain": "ekstatic.net",
+            "prevalence": 0.4375
         },
         {
             "domain": "d1mj578wat5n4o.cloudfront.net",
-            "prevalence": 0.2
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 8,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-622.awsdns-13.net",
         "ns-389.awsdns-48.com",
         "ns-1198.awsdns-21.org",
-        "ns-1858.awsdns-40.co.uk"
+        "ns-1858.awsdns-40.co.uk",
+        "ns-622.awsdns-13.net"
     ]
 }

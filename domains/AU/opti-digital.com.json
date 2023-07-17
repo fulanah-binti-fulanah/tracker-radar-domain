@@ -7,14 +7,40 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
+        "optiyield",
         "scripts"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "opti-digital\\.com\\/pfc\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "optiyield",
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5eeec745e3208aa14debe070ab3ff6e1496361d5fc39a1a752ca0e78fd37a9b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "exploringyourmind.com",
+                "www.tokyvideo.com"
+            ]
+        },
         {
             "rule": "opti-digital\\.com\\/js\\/presync\\.html",
             "cookies": 0,
@@ -25,8 +51,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "25093d54f3e8a04acf01a434da994d3b5ffc080f35d50a3726ffc4523e7aad66"
@@ -36,7 +62,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greenwichmeantime.com",
-                "segmentnext.com"
+                "segmentnext.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "opti-digital\\.com\\/tags\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9505d32261050a37000dcf3f9dc92d4ef4a1e9868581b06139ffdcc989c2e80b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tokyvideo.com",
+                "www.tokyvideo.com"
             ]
         }
     ],
@@ -46,18 +100,27 @@
     "topInitiators": [
         {
             "domain": "adapex.io",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "consentframework.com",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Document": 2
+        "Script": 4,
+        "Document": 3
     },
     "nameservers": [
-        "sean.ns.cloudflare.com",
-        "aida.ns.cloudflare.com"
+        "aida.ns.cloudflare.com",
+        "sean.ns.cloudflare.com"
     ]
 }

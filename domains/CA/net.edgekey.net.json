@@ -9,13 +9,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00191,
-    "sites": 19,
+    "prevalence": 0.00252,
+    "sites": 25,
     "subdomains": [
+        "ssl2.tiles.virtualearth",
         "star.cdn.nintendo",
         "int-qbo.intuitcdn",
         "lib.intuitcdn",
-        "api.wsj"
+        "api.wsj",
+        "site-cdn.onenote"
     ],
     "cnames": [
         {
@@ -27,16 +29,51 @@
             "resolved": "api.wsj.net.edgekey.net"
         },
         {
+            "original": "ecn.dev.virtualearth.net",
+            "resolved": "ssl2.tiles.virtualearth.net.edgekey.net"
+        },
+        {
             "original": "lib.intuitcdn.net",
             "resolved": "lib.intuitcdn.net.edgekey.net"
         },
         {
             "original": "plugin.intuitcdn.net",
             "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+        },
+        {
+            "original": "site-cdn.onenote.net",
+            "resolved": "site-cdn.onenote.net.edgekey.net"
         }
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "net\\.edgekey\\.net\\/REST\\/v1\\/Imagery\\/Map\\/RoadVibrant\\/46\\.8120,-71\\.2157\\/13",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl2.tiles.virtualearth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ecn.dev.virtualearth.net",
+                    "resolved": "ssl2.tiles.virtualearth.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4be11faae428bf92164b6f3d2fa420645deb5f29907cc4ce4851f0a218a17852"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bing.com",
+                "www.bing.com"
+            ]
+        },
         {
             "rule": "net\\.edgekey\\.net\\/v1\\/js\\/account_en_USA\\.js",
             "cookies": 0,
@@ -73,7 +110,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -101,7 +138,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -121,7 +158,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/simple-sign-in-cf9459d0\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/simple-sign-in-7ab5360e\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -129,7 +166,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -137,7 +174,7 @@
                 }
             ],
             "responseHashes": [
-                "6b31f1503bc1f413bae894863ced27f6478d555e7b22e45f54acb32ba7ea8bf8"
+                "b8b6c33d359fef0a018b0fe23ef65bc1cdcb9738f0ba01aff92b59b84eeca0c1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -157,7 +194,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -185,7 +222,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -213,7 +250,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -241,7 +278,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -269,7 +306,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -297,7 +334,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -325,7 +362,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -345,7 +382,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/6837-5ecdd837\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/6837-6990fa81\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -353,7 +390,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -361,7 +398,7 @@
                 }
             ],
             "responseHashes": [
-                "adbb99d5982c66d6c5648bbb1573e8d4044e16dfe03a4ebf5a60b8cbf7827f15"
+                "319b8381ff4dccc931a1597d494e6882dbb09920ced9662394015baa8a35ab4a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -381,7 +418,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -409,7 +446,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -437,7 +474,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "plugin.intuitcdn.net",
@@ -781,7 +818,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/1\\.646\\.1-apr\\.4323\\.b\\.1\\/signin-signup\\.preload\\.manifest\\.json",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/1\\.663\\.7\\/signin-signup\\.preload\\.manifest\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -797,7 +834,7 @@
                 }
             ],
             "responseHashes": [
-                "0d84657e9dcd0497e06490527a02c99896dba4c2a8be437e55b049be07672c87"
+                "df8390bd8be8c5afb0c5f6c29148e7933cc7d1131f0c3d8cfdff2dd0539e1ef3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -808,7 +845,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/36071\\.ed2fd5daf740fe664d3fa55c7adc\\.css",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/36071\\.8f512970cc38183bb145d8aec453\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -824,7 +861,7 @@
                 }
             ],
             "responseHashes": [
-                "8f0f10e91fe4ee2219710e19aa38ccbd1cf93b2290660a3568847fb990209eda"
+                "9641924a0c140dae1d66cccf2353503a734226735e177cd4e86eade773b8c1d1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -835,7 +872,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/86766\\.83a8fb8ab44dceb2d0b9a55c7adc\\.css",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/86766\\.4c3b0fc9ff2aeff6cd48d8aec453\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -851,7 +888,7 @@
                 }
             ],
             "responseHashes": [
-                "3aac16537e235194a70bd364950d70c4b6faf393d64892e13cf4d3e1e06f5206"
+                "85a483c690a6c637324308e6608488ba40023d7e425e7f3a173c22997f9a72d4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -862,7 +899,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/137\\.2ab91ca3f6f0b617df53a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/74917\\.123fe6e571490c2e48a3d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -878,7 +915,7 @@
                 }
             ],
             "responseHashes": [
-                "a714168d1efec8c2ccd6e7a9155cbdf937946c5f90142d7ef7dcecc2a80df6f9"
+                "ed499b2b95548fbcbec2ff4116010fe8a8df498a8910fb6e77e4051b88eda534"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -889,7 +926,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/54441\\.e2752501875bb9fd999aa55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/85197\\.1072c31de5e61d14861dd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -905,7 +942,7 @@
                 }
             ],
             "responseHashes": [
-                "7b149a8707c0108c68631672f0408b24fea1d1074a3d091e629bf64f50a06488"
+                "a15e976807497c540e867abb9873dbe9d0ba1207766fc98eee9ac7011c28b97d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -916,7 +953,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/98234\\.ee696217311768191851a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/54441\\.ca897822b62170710fccd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -932,7 +969,7 @@
                 }
             ],
             "responseHashes": [
-                "f1bb5bb470c84d73bd9e1136970ce0c914594944fdbc4f8f7f297ab29194a8cb"
+                "c50a09f24fc820ea08de20af7b91b5455fbc82af7be9082b9847c50787547f11"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -943,7 +980,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/85197\\.a2c99b81d68e720ad09da55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/98234\\.fc5f00c5d8d4565af98fd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -959,7 +996,7 @@
                 }
             ],
             "responseHashes": [
-                "9a0bba417b38c051f0912d40edb52a9c74712cca6e2ff5097f67f121311fd70e"
+                "c23071a3512a39fe3d3a68cff678a8d4e6d4a13280b8fd39dc6caf095e2c42f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -970,7 +1007,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/31270\\.46be3513d9502f1858cda55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/61112\\.d914c84f0ad14edffee1d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -986,7 +1023,7 @@
                 }
             ],
             "responseHashes": [
-                "7c0e4b3b85ef9d999da94f7dd4f45b0a40c7a21e20a4bb4def787547f38da23b"
+                "cbc437eeb820b70b1f77f4936a1518fbf96d60fd24331debca462af628e0edb4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -997,7 +1034,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/55024\\.0c220af9c8bd6626de27a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/55024\\.048d3fe6d6affc673a3ed8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1013,7 +1050,7 @@
                 }
             ],
             "responseHashes": [
-                "d1b84e949668d280df64e38016ad5c42c6314e2c43b0b73975e6aa2075308e43"
+                "8ee357ac38c4db0d0548f71aeabcba3587d4d5bc8970f4f0f01e2f5de8c97a20"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1024,7 +1061,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/55772\\.5b2c6aecb1ba33068b97a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/84817\\.bbefe5d989b11d31d7bbd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1040,7 +1077,7 @@
                 }
             ],
             "responseHashes": [
-                "6a2bf50c1f865b6087c7db7952af0470c750d2f9badf85baeea447cc34d0d8d0"
+                "ef3ba945d8d9eb3200d521e67e178cf8239af63188fa8a9026d8f8ab93e4c93e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1051,7 +1088,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/49284\\.190a2ac563a05943bb01a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/66893\\.2431d76474bfba01363fd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1067,7 +1104,7 @@
                 }
             ],
             "responseHashes": [
-                "c5191d4fd1dfeb781194762ec8fefe53067597063dc35c826c90f6518b6dd2f4"
+                "a18c58b9213f297d4cc72bd2594b3d7b80d005df5387c8b2a8d9aa5144059719"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1078,7 +1115,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/74968\\.5a546a7ee1af16f55bb6a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/32025\\.5c5a16d75731d5debfd3d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1094,7 +1131,7 @@
                 }
             ],
             "responseHashes": [
-                "37c7a6e911e44eca27780e5ae7d129654d522ba69bf6b339027a32a1df6231cc"
+                "4075bdd591cf423df1b83e5eca9c1466fc9310e42db0da4a39d441764771c905"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1105,7 +1142,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/74713\\.3d617abb22f43cea66bca55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/74968\\.cd261552c6a94e3d6b7dd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1121,7 +1158,7 @@
                 }
             ],
             "responseHashes": [
-                "c4e2ae061dd402b9eadacc32337cbda6b8768560f7b5455e4623e48a1fa24cbe"
+                "36e537b56831bceb778dab6c986bd14b951135d8f5be66a15b39919fa2249faa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1132,7 +1169,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/37497\\.14a8995fabe38a439669a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/74713\\.1a9b4c53280391c824b3d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1148,7 +1185,7 @@
                 }
             ],
             "responseHashes": [
-                "9206b999ae77dae75cb49ae87f8304c3397ec3e90a5a91a90aac6be6c96521d1"
+                "d6c40e737d65a415685447c466fddecca37513055e85dd68020a70c134f9c4b6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1159,7 +1196,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/83294\\.1ff12c95ce4ac6bbf8bfa55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/5610\\.63d41535e8511c09afefd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1175,7 +1212,7 @@
                 }
             ],
             "responseHashes": [
-                "84e98e68f6b586e7d4e67ffa45f3a09a89bef1e208e1430b44d8466fd61579bd"
+                "22859de31da964e2724b0dcff2e21dd4e14dca5e41762252ed2e0099b5e87f84"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1186,7 +1223,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/20923\\.23c94ed94d0d217451e5a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/66379\\.9af382e7e40eb97b9405d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1202,7 +1239,7 @@
                 }
             ],
             "responseHashes": [
-                "e05ee544dce91bc241dbc58bda5d6c1e65ab2b6bd57e9f1f2e80088f8c81aca7"
+                "f0e699b10ffd64964f5fa53f11349828f6b416f89b4ebebd890b8171b205c050"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1213,7 +1250,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/13362\\.41abc21e1d1a6d6ac96aa55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/19328\\.53e832836ec0eb349821d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1229,7 +1266,7 @@
                 }
             ],
             "responseHashes": [
-                "459befc8772a4f7884d629b6ff0d05668133c91576c33c7c32b4941f1160e011"
+                "23ba4044b3d621a677af021a729134338611e0cd8de4298c2bd79bb799557733"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1240,7 +1277,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/4657\\.642364488d5b718d79d8a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/13362\\.df8b4e700654258af3b6d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1256,7 +1293,7 @@
                 }
             ],
             "responseHashes": [
-                "13a0d042ba2c3abe0c5d3b4b8f77187fed69ea39fa7e9632089453e0ffed4849"
+                "43eb2a222b9c5c9859b700479e85e3b7c74e4786ee3c0582d37f7013327996e5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1267,7 +1304,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/16514\\.b6306479d8079a1a47fea55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/81263\\.cd654eba3748853defa1d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1283,7 +1320,7 @@
                 }
             ],
             "responseHashes": [
-                "9e3d4d666bb909f5930a177e76a424cbb854463a7b407eece026fccc3db4b7c0"
+                "069246f29f3126e3818cea9dbe641007fd42c6a43524b42f87864c618428b17c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1294,7 +1331,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/93956\\.dca8e86e7fbbceb59a47a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/16514\\.a560a96aa809b44d80f7d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1310,7 +1347,7 @@
                 }
             ],
             "responseHashes": [
-                "845f790fcf77676fbcf109d71e1bc05e8ef4b91c88f88091ecc2eac1e6c3f1c4"
+                "8977ed959b7a136e0f2db00efb0df73314c283e9f990de0517ffa57b2cbce2cc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1321,7 +1358,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/53907\\.77826d58bc53902c58bda55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/93956\\.5dc7a072a4e4ad6f0f11d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1337,7 +1374,7 @@
                 }
             ],
             "responseHashes": [
-                "f252fb390ca2abf088de9c5bd9fea7e88346ace19a6fc4f57b533616a948d298"
+                "e2c8e667572effc4fe5f697c084e1365103ba00a11462bc2790ac14fcb96b19e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1348,7 +1385,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/20667\\.10ae34aa79797c7b2a4ba55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/53907\\.7ae363b1889687c300f7d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1364,7 +1401,7 @@
                 }
             ],
             "responseHashes": [
-                "bfc89a7ab0e789ff00ec61061a9e85cb1895057564b0b8fdaa66a3ecde95e008"
+                "c27144965af540317056fa304fdd162b06027d84df55dfadbb21a89127f295f6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1375,7 +1412,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/79658\\.11dc484df8c269cdececa55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/20667\\.1ac83e930a52c88f690ed8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1391,7 +1428,7 @@
                 }
             ],
             "responseHashes": [
-                "0bc5cf4142ba1a94fafd898d46f780f7e6605f45ba27d640adcd895f80753428"
+                "2dba284e9c8f85ca135478ae4a7d50523df310b2369fcc9e23a043987b0cbd21"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1402,7 +1439,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/79239\\.910e261f3b4907d3b413a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/79658\\.6cec8bd18182915521aad8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1418,7 +1455,7 @@
                 }
             ],
             "responseHashes": [
-                "0702f8a1c2317d7a52b4367a14705c860b15e1585870998ad1e5b04d3301febb"
+                "ce264ca8774867f6676465be6dfe0078fb3f15848077d9a29174a42683f01e20"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1429,7 +1466,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/63961\\.7a4352c8e95f1081dca2a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/56503\\.cbd869689b85e294c1e3d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1445,7 +1482,7 @@
                 }
             ],
             "responseHashes": [
-                "30363d5e0d61de92219d85d16426372f7d82aae95c995da00af6f9f4dd486470"
+                "a7790e1935bb277d2f217ef4ffe8d89d52fbd0de180c3d8f75cc8342f8760a59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1456,7 +1493,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/83687\\.03e1ea601e5a62521266a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/63961\\.73188a537940b68c2ecad8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1472,7 +1509,7 @@
                 }
             ],
             "responseHashes": [
-                "23324e7a695ba4c8a91f1f40486f5b68506d37be3c9aed36af19eaa0168bb1c4"
+                "7d7cce554aa7bed7d2c9e44788b9270bd1edfb9b92a0d778b7568c2727e35ab9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1483,7 +1520,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/11634\\.b00301f7921929750a66a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/36787\\.1cf78fc148db81fd6772d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1499,7 +1536,7 @@
                 }
             ],
             "responseHashes": [
-                "d50a369d3facb01f62ef98d10fefc76fb326268ab6c0206cfdd377d0647e2b94"
+                "ab90faaa664d00b333fedc436126089be4b63cf44ba4a974a2575e126849aa04"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1510,7 +1547,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/25194\\.5fecb39642d80ca74e9ba55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/11634\\.d874cc2bf614a14446fcd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1526,7 +1563,7 @@
                 }
             ],
             "responseHashes": [
-                "5aae53a01e0d36ba6c4dea13c5d128a98a83e79d551ae3232121ad472d5f8099"
+                "541d2ded776b692ce01beb49142d934a4190ec88e03e999e62219b2e5c6e1fda"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1537,7 +1574,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/11684\\.48d47762d8a0b9faacf6a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/25194\\.fa9d50c3e7197d89e57ed8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1553,7 +1590,7 @@
                 }
             ],
             "responseHashes": [
-                "384cac9b3a340ef801d5e94e3ef818b829cf96465b175f29716b944da6651497"
+                "dc0452fb3fbcb4538b865398c7c92112d67abf27ac249a156e76e6878cf37a75"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1564,7 +1601,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/identity-authn-core-ui\\/sign-in\\.ecd1da284a3c224fd595a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/99361\\.4787dffc5d4570711db8d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1580,7 +1617,7 @@
                 }
             ],
             "responseHashes": [
-                "69c9b240fc0cdf6cdee8ddfb11d33b4449d4ad867a73ebd9456dbc797c98120e"
+                "a35776645f3377756e918fd96c26433ae964e3e384a186bb1fc0734fad1856ee"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1591,7 +1628,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/76222\\.219a982dc1c3a92cff6aa55c7adc\\.css",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/identity-authn-core-ui\\/sign-in\\.7e77e8bcb6e7219a60f8d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1607,7 +1644,7 @@
                 }
             ],
             "responseHashes": [
-                "80340178856546deaabffa2b795cd21a44e071fa40570ccbb4a690b2f2b76534"
+                "d385a32c42792fc0cd45956174ed82bce0025f8886fa4f2f89b55399904b4b9c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1618,7 +1655,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/67702\\.24f9bb4b404fb75a4ce4a55c7adc\\.css",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/76222\\.4e09cbb93276d27098d8d8aec453\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1634,7 +1671,7 @@
                 }
             ],
             "responseHashes": [
-                "6857db91280685f290becf2d72fded2abd6bcd43995467b8fdc8fe1ba7dba377"
+                "fb484abecb4fcd156f67bf1b28112ff795fb9a4ce5c31ca3a9a730241c31109f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1645,7 +1682,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/83233\\.050106a1e485e82f6d8ba55c7adc\\.css",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/67702\\.562e80dabac74d5fd489d8aec453\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1661,7 +1698,7 @@
                 }
             ],
             "responseHashes": [
-                "907637b5b049aa2e56d550bfdd67085a7e7a607deef9b3b6cc66437630a5e1b1"
+                "75cd3da3aeed946bc4c512b9409cfd4bc56684de4fefdfcccfd41f71a2b37366"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1672,7 +1709,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8193\\.7ab340d52b13774d284ba55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/83233\\.b1ffbe1561fe708a72c7d8aec453\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1688,7 +1725,7 @@
                 }
             ],
             "responseHashes": [
-                "1c7d434b5fc58bad256ce60552dae4b9446904b487cf16b2e6155e29e636a118"
+                "93b130c89a67b2fbcb566d251205812f4e6d8ba87b7ef7ac2a49934635ff0a12"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1699,7 +1736,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/58034\\.26f53acc6d25eaafc54da55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8193\\.d8ebc648ca502fd161e3d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1715,7 +1752,7 @@
                 }
             ],
             "responseHashes": [
-                "bb44a1c2946fe64430f1daa23e3ff302a54347d10bd40f5f9425e2c9486e56fc"
+                "3726f3508245e00444282e1205062d55f86477e06d6a1ff371ee536c56e36db5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1726,7 +1763,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/14689\\.af0968fe08159d35328ca55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/58034\\.ce5569fa6330e5bb7781d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1742,7 +1779,7 @@
                 }
             ],
             "responseHashes": [
-                "a84eaf43135897e3f9e384709d62ee267e45264b175266eb9fe8fc6f4b259f16"
+                "22fb36265c8d7555fd1b911dd27f9c0a2097f6fbf5f428c17da5333d3ff2f909"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1753,7 +1790,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/13679\\.13ef354da93232c0038ea55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/14689\\.e531fea4f3004e1ee3dcd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1769,7 +1806,7 @@
                 }
             ],
             "responseHashes": [
-                "f34c09981a6598c9419dcfc7ac7bf2eed7f086552bfa43a2e18b486bc4e6e9c6"
+                "ef928241e85d8927978b8396a72a83055e35b5461137266d3af8131aa132fbe2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1780,7 +1817,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/19311\\.5090a3e61c02ee722b97a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/13679\\.7ae6536bab59ef624b3dd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1796,7 +1833,7 @@
                 }
             ],
             "responseHashes": [
-                "01298c120e3cef0df22a8ec814e3000574aea44f679c1a1c6dc5a0496fc7a5cc"
+                "bbb0653977ce32919483089b2c46dd5b5572060e575b79d937c0a788d0468bb6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1807,7 +1844,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/95299\\.89c09bdaafea9bfce6f6a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/19311\\.3e609e09c8a3413af1ddd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1823,7 +1860,7 @@
                 }
             ],
             "responseHashes": [
-                "5353d8e5ac9347935881da46a4024d5455474df01d37a626e8d6259aaf6da92e"
+                "1396f89adc8ba8baaa2cc4679985f3123ba97ca49a71a5ccd5a4270ce7342350"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1834,7 +1871,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/17873\\.10760f219af803904317a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/95299\\.1179d2b628ecfdcc43afd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1850,7 +1887,7 @@
                 }
             ],
             "responseHashes": [
-                "e38a3a5002063615e1d88211d04d00518a45a4e9dbd4bc3c934a1da05ee40bbd"
+                "293bf68b7be8052ddbf4b1d8bd9eb74cd6151e5e10b32f51dac80522ceb756a7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1861,7 +1898,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/47037\\.3cd50dd079d78e1dd651a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/17873\\.f161548a0fed55cc63ccd8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1877,7 +1914,7 @@
                 }
             ],
             "responseHashes": [
-                "ecfa312cd4f21876994f19c8fa1f0850e2ac5c02d55c7b442241c5661bb371eb"
+                "9838055efb41f8ba47973d3b7dbab01d26e6241a430f9c3a9f1f64c3d4d9bbd9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1888,7 +1925,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/59129\\.ad1c723dcfcd73f13197a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/47037\\.fa75d9c0b5376ea368f8d8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1904,7 +1941,7 @@
                 }
             ],
             "responseHashes": [
-                "c00d15899f272da1318f2aec3d281cd1d83dd56ff89196d9f554688f250f6f58"
+                "84bd0078e5116957f79c7a5178a534e2839666b698a4a5641eab0ad62bc3e013"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1915,7 +1952,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/identity-authn-core-ui\\/sign-up\\.7f4f55e1e50b31ce67b8a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/59129\\.95ee4c65a8c5a8d9447ad8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1931,7 +1968,7 @@
                 }
             ],
             "responseHashes": [
-                "8932786408234189b254beb7e17ad938325bff4404f832300bea77faedb664c8"
+                "6ffee05107a20ab9021559402ec347f14be28f9143a062814f87c461e0519156"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1942,7 +1979,7 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/19755\\.f1f2256dd45fc8c4ba44a55c7adc\\.js",
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/identity-authn-core-ui\\/sign-up\\.cc2c29e40fb86ee78daed8aec453\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1958,7 +1995,34 @@
                 }
             ],
             "responseHashes": [
-                "85a2cd421eab9d6f75c33f06b7d19e137e35ec9de573a8f92611637ee885800d"
+                "0b96ad7940ab77bd3fab3f62d1d5ab52fef63d2fa599c24a054ef4fe72d10842"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.ca",
+                "turboimpot.intuit.ca"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/19755\\.47dab8f8ef96f1bf14f4d8aec453\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d145503236372441013ff603402dcf7158dd8414c4fb5343ef38417bb85141b4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2002,7 +2066,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "api.wsj.net",
@@ -2010,7 +2074,8 @@
                 }
             ],
             "responseHashes": [
-                "72d8db12b66539f434862cad704e3883cf8f392d0b695a4dcb8b7bd457ccb1db"
+                "e94d446353ca63a8c18c76901d8cce02c1004db0575f6669e41bcf7c0693681d",
+                "548737393dc251f457cfb7f400a7d933f135f544d7377422e376563d8d6bd5b0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2020,45 +2085,103 @@
                 "www.barrons.com",
                 "www.wsj.com"
             ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/161671040458_Scripts\\/CommonDiagnostics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "site-cdn.onenote"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "site-cdn.onenote.net",
+                    "resolved": "site-cdn.onenote.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "773a678845579e6334f19d4e62f29446e7898bd816359c74574e37884503f909"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onenote.com",
+                "www.onenote.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/161671040458_Scripts\\/DefaultSignIn\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-cdn.onenote"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "site-cdn.onenote.net",
+                    "resolved": "site-cdn.onenote.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "107f056a45cb04eb4410c30e9f81c6ba58fa18d2f55a4564509175f3690d79f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onenote.com",
+                "www.onenote.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4925373134328358
+            "prevalence": 0.5284738041002278
         },
         {
             "domain": "quickbooks.com",
-            "prevalence": 0.2736318407960199
+            "prevalence": 0.2505694760820046
         },
         {
             "domain": "intuit.com",
-            "prevalence": 0.21890547263681592
+            "prevalence": 0.20501138952164008
         },
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.004975124378109453
+            "domain": "msn.com",
+            "prevalence": 0.004555808656036446
         },
         {
             "domain": "comcast.com",
-            "prevalence": 0.004975124378109453
+            "prevalence": 0.004555808656036446
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.0024875621890547263
+            "prevalence": 0.002277904328018223
         },
         {
-            "domain": "stmllc.wpenginepowered.com",
-            "prevalence": 0.0024875621890547263
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.002277904328018223
+        },
+        {
+            "domain": "aspnetcdn.com",
+            "prevalence": 0.002277904328018223
         }
     ],
     "types": {
-        "Script": 130,
+        "Image": 12,
+        "Script": 136,
         "Font": 14,
-        "Image": 10,
         "Fetch": 5,
         "Preflight": 2
     },

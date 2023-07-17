@@ -7,17 +7,22 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
         "global-prod",
         "eu1-prod",
+        "us1-prod",
         "eu1-prod-images"
     ],
     "cnames": [
         {
             "original": "eu1-prod-direct.discoveryplus.com",
             "resolved": "eu1-prod.disco-api.com"
+        },
+        {
+            "original": "us1-prod-direct.motortrend.com",
+            "resolved": "us1-prod.disco-api.com"
         }
     ],
     "fingerprinting": 0,
@@ -31,10 +36,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "2992af8f83b5c892f9bfa15185fc9043b3c93eef5c8889c4a4d170ae930f33ae"
+                "580c587b75176a5b0cd70af0ae1dae0698042e1245549478f56ea279d1d1b712"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -42,6 +47,36 @@
             "exampleSites": [
                 "discoveryplus.com",
                 "www.discoveryplus.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/users\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod",
+                "us1-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "eu1-prod-direct.discoveryplus.com",
+                    "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "us1-prod-direct.motortrend.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.motortrend.com"
             ]
         },
         {
@@ -53,7 +88,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -80,7 +115,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -88,7 +123,7 @@
                 }
             ],
             "responseHashes": [
-                "4e058a56329fd06f219022ccf6ca34a60a6b41c8d982c559ae5836113c74400e"
+                "5d0adafcac2c023166b9c3471514696bad53809b18e9631b314cd3d1aeb7c16b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -107,7 +142,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -134,7 +169,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -142,7 +177,7 @@
                 }
             ],
             "responseHashes": [
-                "95d46197720442d34c2e0863a7a5692370d00f69c2190cba029e451570ee08e1"
+                "a1efd585c4f5bb8d3113a068331d8376d08f2e4f688dce90bc3a45737f582a59"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -154,14 +189,14 @@
         },
         {
             "rule": "disco-api\\.com\\/token",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "eu1-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -169,7 +204,7 @@
                 }
             ],
             "responseHashes": [
-                "821e1ffc1c8c3f97d655dca2d0cfd349c88f9ef9c2ff854206b3c4919cf5f4c9"
+                "8ee9ce2bbf96307cd9158347fe486d43872b276abb65ae62a17ab44e6b42774e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -184,15 +219,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod"
+                "eu1-prod",
+                "us1-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "us1-prod-direct.motortrend.com",
+                    "resolved": "us1-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -201,11 +241,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discoveryplus.com"
+                "www.discoveryplus.com",
+                "www.motortrend.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/users\\/me\\/profiles\\/PROFILEIDa87ef217-c40f-4443-9a4c-5facf0cf3633",
+            "rule": "disco-api\\.com\\/users\\/me\\/profiles\\/PROFILEID92b18573-f9a3-42d7-aa6c-f7900c9ed70a",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -213,7 +254,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -221,7 +262,7 @@
                 }
             ],
             "responseHashes": [
-                "44c3ab91e87664b91afa750f1c979258a6b69e89e4281dccbf35875187c11967"
+                "08aa57e896686e336d3c1c904e5800e8825dcdc1cb78ae0db788de50fb361828"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -232,7 +273,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/users\\/me\\/customAttributes\\/player_PROFILEIDa87ef217-c40f-4443-9a4c-5facf0cf3633",
+            "rule": "disco-api\\.com\\/users\\/me\\/customAttributes\\/player_PROFILEID92b18573-f9a3-42d7-aa6c-f7900c9ed70a",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -240,7 +281,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
@@ -248,7 +289,7 @@
                 }
             ],
             "responseHashes": [
-                "7d62ce928ebaffa547d77cc3135fbf77f9d287a44ef5753c9b739d8319d7e684"
+                "dd06be3758fa04fa60e35bde306319cfa765f6054754bfbb319eac49a2f4f234"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -259,7 +300,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/2\\/18\\/e9accebf-808e-4b6e-aa51-9cfecf5dc641\\.png",
+            "rule": "disco-api\\.com\\/2023\\/07\\/03\\/f86e386c-4699-499f-bdab-ac95c2c62e82\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -267,10 +308,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "ceb23344260d3defb42cbc1e75eeb58566dd5b66fb93fb3f8909fa22efed528b"
+                "96c2a8596a92fcb0829bc3084df85a7228480de85f135e5d6c817b2b8da7bb20"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -281,31 +322,86 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/11\\/07\\/b0baddf9-56cd-4b3f-aa46-ce18d8e263cd\\.jpeg",
+            "rule": "disco-api\\.com\\/users\\/me",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod-images"
+                "us1-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "24eb40051bd2f02a43bb3294d9c2988b5cb30f9f44ee604f3b8b4be65fc60b04"
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "us1-prod-direct.motortrend.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
             ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com"
+                "motortrend.com",
+                "www.motortrend.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/cms\\/collections\\/user-menu-lithium-web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us1-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "us1-prod-direct.motortrend.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "motortrend.com",
+                "www.motortrend.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/token",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us1-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "us1-prod-direct.motortrend.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
+            ],
+            "responseHashes": [
+                "99025eb8be9fb42c71f13c5660a8f4d277dee63776d540f3cbf8d23813d13447"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "motortrend.com",
+                "www.motortrend.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
@@ -314,14 +410,14 @@
     ],
     "types": {
         "Fetch": 14,
-        "Preflight": 2,
-        "XHR": 2,
-        "Image": 4
+        "Preflight": 5,
+        "XHR": 8,
+        "Image": 2
     },
     "nameservers": [
-        "ns-235.awsdns-29.com",
-        "ns-722.awsdns-26.net",
+        "ns-1277.awsdns-31.org",
         "ns-1647.awsdns-13.co.uk",
-        "ns-1277.awsdns-31.org"
+        "ns-235.awsdns-29.com",
+        "ns-722.awsdns-26.net"
     ]
 }

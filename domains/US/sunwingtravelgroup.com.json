@@ -9,10 +9,11 @@
     "subdomains": [
         "assets",
         "aff.widgets",
-        "svhandlerapi"
+        "svhandlerapi",
+        "infoservice"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "sunwingtravelgroup\\.com\\/image\\/upload\\/f_svg\\/v1645820017\\/selloffvacations-prod\\/sov-logo-en\\.svg",
@@ -136,7 +137,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c9498486231ff02d6da159a2f9a394e0cd9a4ce1ce0a63cd6164f59dda1b0a07"
+                "3278ded48957cff5e65966ea2465b87c60e32fc9faf9dce2edf3d91db9139abb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -148,27 +149,7 @@
         },
         {
             "rule": "sunwingtravelgroup\\.com\\/gateways\\/sov\\/en",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "svhandlerapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "selloffvacations.com",
-                "www.selloffvacations.com"
-            ]
-        },
-        {
-            "rule": "sunwingtravelgroup\\.com\\/gateways\\/sov\\/en",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
                 "svhandlerapi"
@@ -207,6 +188,28 @@
                 "selloffvacations.com",
                 "www.selloffvacations.com"
             ]
+        },
+        {
+            "rule": "sunwingtravelgroup\\.com\\/search\\/gateway\\/group",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "infoservice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e3aadd0846c776f2202122ca5ba3aed973711da5fb2de66a535a577eb8c3daf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunwing.ca",
+                "www.sunwing.ca"
+            ]
         }
     ],
     "categories": [],
@@ -215,14 +218,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8064516129032258
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.1935483870967742
         }
     ],
     "types": {
         "Image": 12,
         "Script": 2,
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4
     },
     "nameservers": [
         "elma.ns.cloudflare.com",

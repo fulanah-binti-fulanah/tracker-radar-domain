@@ -4,33 +4,34 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "de",
-        "en"
+        "es",
+        "en",
+        "de"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "russiatoday\\.com\\/static\\/js\\/libs\\/lazysizes\\.min\\.js",
+            "rule": "russiatoday\\.com\\/static\\/js\\/libs\\/lazyall\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "de",
+                "es",
                 "en"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fa2f121ec9dd0d5b0d523ff61e37089fdeb595c2d4ebe34be4e67d8bee6a7e25"
+                "1420f87ff3d4e3f0a504fdeca92e448bb437bc09311f8f8ccab5540021f0195c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,10 +42,41 @@
             ]
         },
         {
-            "rule": "russiatoday\\.com\\/static\\/css\\/template\\.min\\.css",
+            "rule": "russiatoday\\.com\\/static\\/js\\/libs\\/lazysizes\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "es",
+                "de",
+                "en"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "df7c8f2ccad4d7f74ef40cd01c9e8888ebd24513f4a53b1cc717084107f28e75",
+                "fa2f121ec9dd0d5b0d523ff61e37089fdeb595c2d4ebe34be4e67d8bee6a7e25"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rt.com",
+                "de.rt.com",
+                "www.rt.com"
+            ]
+        },
+        {
+            "rule": "russiatoday\\.com\\/static\\/js\\/pushes\\/notification\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "es",
                 "en"
             ],
             "apis": {},
@@ -52,9 +84,9 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "59a17cf4b36a5d37288612d4218ccf37d7ac1c38d1ee3c570b0ff5ab64ab467f"
+                "6827ac528ded78425f584499a25ac85e6103451fb13e2e5a0a39d745081c7049"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -73,11 +105,10 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Stylesheet": 2
+        "Script": 7
     },
     "nameservers": [
-        "ns2.cdnmgf.megafon.ru",
-        "ns1.cdnmgf.megafon.ru"
+        "ns1.cdnmgf.megafon.ru",
+        "ns2.cdnmgf.megafon.ru"
     ]
 }

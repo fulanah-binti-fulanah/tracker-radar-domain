@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000906,
+    "sites": 9,
     "subdomains": [
+        "bundles",
         "apps"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "boldapps\\.net\\/js\\/bundles\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bundles"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "136751a21e149c9d6ef9e75dfeed89ce14102e7cc9ef63a2d45a7048d6ceaec0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadianpreparedness.com",
+                "hush.ca"
+            ]
+        },
         {
             "rule": "boldapps\\.net\\/pricerules\\/staples-canada\\.myshopify\\.com\\/enabled",
             "cookies": 0.000201,
@@ -36,18 +62,18 @@
         },
         {
             "rule": "boldapps\\.net\\/pricerules\\/staples-canada\\.myshopify\\.com\\/rulesets",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "apps"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "fe16d02301bb292974e49fb2a31eb1b32d85acf4f7211564f55f116fe67afc2e",
-                "2f2a7df85ae4e93f12178762151be9e8007a7a38fcd0d3742a309f45221aba2f"
+                "f82f4f29ea79dbdf5852ae44282ea11def21a9be3b470e2bff443b50f4708aed",
+                "fe16d02301bb292974e49fb2a31eb1b32d85acf4f7211564f55f116fe67afc2e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -70,7 +96,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2f2a7df85ae4e93f12178762151be9e8007a7a38fcd0d3742a309f45221aba2f"
+                "9f9f7036226cf14bf949adcf5b7e3a5364823e3395444945f6c9135212552f79"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -83,27 +109,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000906,
     "topInitiators": [
         {
-            "domain": "shopify.com",
-            "prevalence": 0.5714285714285714
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.8260869565217391
         },
         {
             "domain": "boldcommerce.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.08695652173913043
+        },
+        {
+            "domain": "canadianpreparedness.ca",
+            "prevalence": 0.043478260869565216
+        },
+        {
+            "domain": "shopifyorderlimits.s3.amazonaws.com",
+            "prevalence": 0.043478260869565216
         }
     ],
     "types": {
+        "Script": 2,
         "Fetch": 5,
         "XHR": 2
     },
     "nameservers": [
-        "walt.ns.cloudflare.com",
-        "uma.ns.cloudflare.com"
+        "uma.ns.cloudflare.com",
+        "walt.ns.cloudflare.com"
     ]
 }

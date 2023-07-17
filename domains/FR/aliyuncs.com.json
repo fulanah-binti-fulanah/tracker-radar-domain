@@ -7,10 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
-        "wx-analytics.cn-hongkong.log"
+        "wx-analytics.cn-hongkong.log",
+        "retcode-us-west-1.arms",
+        "arms-retcode-sg",
+        "arms-retcode"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,20 +26,72 @@
                 "wx-analytics.cn-hongkong.log"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gitmind.com",
+                "picwish.com",
+                "www.apowersoft.fr"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/r\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "retcode-us-west-1.arms",
+                "arms-retcode-sg",
+                "arms-retcode"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00010046212577858148
+                "Hm_lvt_960ef17df44dacb2a038ecfdc57c6bf5": 0.00010088781275221953,
+                "Hm_lpvt_960ef17df44dacb2a038ecfdc57c6bf5": 0.00010088781275221953,
+                "_bl_uid": 0.0003026634382566586
+            },
+            "exampleSites": [
+                "gitmind.com",
+                "picwish.com",
+                "www.bilibili.tv",
+                "www.insta360.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/r\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "retcode-us-west-1.arms",
+                "arms-retcode"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_bl_uid": 0.00020177562550443906
             },
             "exampleSites": [
                 "picwish.com",
-                "www.apowersoft.fr"
+                "www.insta360.com"
             ]
         }
     ],
@@ -46,19 +101,24 @@
     "topInitiators": [
         {
             "domain": "alicdn.com",
-            "prevalence": 0.8
+            "prevalence": 0.7777777777777778
         },
         {
             "domain": "aoscdn.com",
-            "prevalence": 0.2
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "bstarstatic.com",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 5,
+        "Fetch": 4
     },
     "nameservers": [
         "ns5.aliyun.com",
-        "ns3.aliyun.com",
-        "ns4.aliyun.com"
+        "ns4.aliyun.com",
+        "ns3.aliyun.com"
     ]
 }

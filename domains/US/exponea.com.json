@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00131,
-    "sites": 192,
+    "prevalence": 0.00115,
+    "sites": 169,
     "subdomains": [
         "api.us1",
-        "api.uk",
         "rozetka-api",
-        "api.eu1",
         "api",
+        "api.uk",
+        "api-cis",
+        "api.eu1",
         "amway-api",
         "api-bho",
         "api-bho-boohooman",
@@ -30,7 +31,6 @@
         "api-o2-cz",
         "fcg-api",
         "sofology-api",
-        "tpl-api",
         "api-bho-wallis",
         "custom-eng-api-0.uk"
     ],
@@ -54,10 +54,6 @@
         {
             "original": "api-exponea.o2.cz",
             "resolved": "api-o2-cz.exponea.com"
-        },
-        {
-            "original": "api-exponea.t-mobile.pl",
-            "resolved": "tpl-api.exponea.com"
         },
         {
             "original": "api.e.boohoo.com",
@@ -104,14 +100,15 @@
     "resources": [
         {
             "rule": "exponea\\.com\\/js\\/exponea\\.min\\.js",
-            "cookies": 0.00064,
+            "cookies": 0.000762,
             "fingerprinting": 2,
             "subdomains": [
                 "api.us1",
-                "api.uk",
                 "rozetka-api",
-                "api.eu1",
                 "api",
+                "api.uk",
+                "api-cis",
+                "api.eu1",
                 "amway-api",
                 "api-bho",
                 "api-bho-boohooman",
@@ -127,23 +124,23 @@
                 "api-o2-cz",
                 "fcg-api",
                 "sofology-api",
-                "tpl-api",
                 "api-bho-wallis",
                 "custom-eng-api-0.uk"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 84,
-                "Navigator.prototype.vendor": 84,
-                "window.indexedDB": 81,
-                "window.localStorage": 82,
-                "window.sessionStorage": 81,
-                "Document.cookie getter": 76,
-                "Date.prototype.getTime": 85,
-                "Document.cookie setter": 80,
-                "window.innerWidth": 1
+                "Navigator.prototype.userAgent": 103,
+                "Navigator.prototype.vendor": 101,
+                "window.indexedDB": 91,
+                "window.localStorage": 92,
+                "window.sessionStorage": 91,
+                "Document.cookie getter": 89,
+                "Date.prototype.getTime": 104,
+                "Navigator.prototype.maxTouchPoints": 53,
+                "Document.cookie setter": 98,
+                "Notification.permission": 1
             },
-            "sites": 104,
-            "prevalence": 0.000708,
+            "sites": 121,
+            "prevalence": 0.000824,
             "cnames": [
                 {
                     "original": "api-analytics.rozetka.com.ua",
@@ -198,10 +195,6 @@
                     "resolved": "sofology-api.exponea.com"
                 },
                 {
-                    "original": "api-exponea.t-mobile.pl",
-                    "resolved": "tpl-api.exponea.com"
-                },
-                {
                     "original": "api.e.wallis.co.uk",
                     "resolved": "api-bho-wallis.exponea.com"
                 },
@@ -211,79 +204,85 @@
                 }
             ],
             "responseHashes": [
-                "e87824a54293bacbfba3fe04919d5c0b4f999b3219e029d6611dd7d5cd6f4f0b",
-                "9d40cbf33414e683f3a09b68fc684b227fd23a737d7982ce52acb222d8dcd5ae",
-                "777d554fc9b6c74689c8707f99c863891abae1e7ec16e845963e83834dd7b77d",
-                "57e4dc4ffefc51aa99445850e25e94af90179530b47fefe7c5f40fd610142d5f",
-                "5aeb5be7b3e0a1f445f4a697c35187717f11887a667926ea1b855472a567ad57",
-                "f2d809d5984d6600eda7d933b3445b307a15ba4b15a985f708beb7df9bc5ab85",
-                "4fb27649566818e2a027254f6a38a2b041f8969426168ef1c2be197f23c20414",
-                "131640895927dca824597954bf22673ba080c91f3790009e16535db655d6420d",
-                "ffb16f2809ab85baabe7ce8f0223a35808ff44acd4a3e7ed3faf57288cd37864",
-                "a124538bfafb45bb8a1697c537a7bb3bafbabdf9c4b8ce8a0b276ff782068d5e",
-                "8d97f0749b631830dcf5c4f1d205d030db2b0145040bde676e2b581c7fcb3d6b",
-                "45d2faef80bb27aac293ea30561ef447bd367552fb6242bb42a45eb09568e56f",
-                "acee2ec2321c3944d1fde01586713c1d789e3150d014af6d8594e7973d0cd36c",
-                "09231e61e5e62ba10a6798f1c4fff0265547107d7e3ea39d1a850577e81de2cc",
-                "a7081ebda5cbf3de781d19164c9348babf066da1ec85596da5631adc0bba5410",
-                "91170fa8234e18e9c54e32032afa754761fc8c2b61d21a5e095c3cd18a68f033",
-                "8c24336eb7b2015d0ad3986c08ac63bf16c49bb301a4f26632770ca06bdf2205"
+                "a911194d3412c23d2d9262658e5b2050a18d2c5f924cbfc36c10de4248501e6d",
+                "07852cb68b437c243775fc4d4589b66e23f31cc631949dfb2e03473bf929fd72",
+                "1a5f04532c01087d19565b502591d03ee8cbca60cac3a02d6c8e8ad347268678",
+                "d23cc74db612e23bb06a124d77920e436d793a022093e124bcf9038ec29f33fc",
+                "4227721950f066abbe4bafbd80a5d6254bedc7e6ea268f73b9956c0d5ce97a9b",
+                "1770fbfe23b2ea907fc5d38cef331bee226d1f1d36ce681f502cadfd409a697c",
+                "3b146ab331f1c68d29cd6db3155e48bee8c3fbcd3cb7f564c0dcf590c51033d3",
+                "797095dcf35371fa9cb394806ac1c6c20417da0c74bb6f8904a7d706265230bf",
+                "df0c5f5bf855c45a1ee5e3fbab7b5fad624cc856e7efd51aab025192f00aed0f",
+                "d667e9fd7dd2b7d03274195c8a52669900c9bf78628a4d2ca59008bc0fc64cd3",
+                "5ca2ec45de70a842eb1309b682a085b4596ccbd5d2ecc3c66557445a38a254c9",
+                "feb8ee72e33a75769247d8503f61fdf308ee36f82af5a74acd8ab566f172f1e6",
+                "bf1ca5a131c42864428d39c1e6846d1fed1a9f1631b7be726673d0a6be3fce7a",
+                "e5864f5e82b21d869c20b9eec408ed312de2052774e088331df2dbed5c82a5fa",
+                "f87da0d2d67114aa9e443c73c8981cfd851ae7a732d9b43c739dda10375d1749",
+                "7679f3cd429a65c890eb9d6fc26396c73ad97f21f099a249373a6bad777ca88c",
+                "75a4008bc51d8adadb98779ec4e0c8356ffbb6be5ae8ea3bd2ac977b69c9c3e4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__exponea_etc__": {
                     "ttl": 94608004,
                     "length": 36,
-                    "prevalence": 0.0005376709997958212,
+                    "prevalence": 0.0006603356138738555,
                     "uniqueness": 1
                 },
                 "__exponea_time2__": {
                     "ttl": 3604,
                     "length": 19,
-                    "prevalence": 0.0005376709997958212,
+                    "prevalence": 0.0006603356138738555,
                     "uniqueness": 1
                 },
                 "PJEsegment": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000006805962022731913,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                },
+                "__exponea_device__": {
+                    "ttl": 630720004,
+                    "length": 13,
+                    "prevalence": 0.000006807583648184077,
                     "uniqueness": 1
                 },
                 "marketing": {
                     "ttl": 31536005,
                     "length": 6,
-                    "prevalence": 0.000006805962022731913,
+                    "prevalence": 0.000006807583648184077,
                     "uniqueness": 1
                 },
                 "analytics": {
                     "ttl": 31536005,
                     "length": 6,
-                    "prevalence": 0.000006805962022731913,
+                    "prevalence": 0.000006807583648184077,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
-                "www.olx.co.id",
-                "www.eddiebaueroutlet.com",
-                "www.brompton.com",
-                "www.wob.com",
-                "www.mall.cz",
-                "www.mintvelvet.co.uk",
-                "www.winsornewton.com",
-                "reservationdesk.com",
-                "www.allivet.com",
-                "www.californiapsychics.com",
-                "fahertybrand.com",
-                "www.amway.com",
-                "www.refurbed.de",
-                "www.altardstate.com",
-                "www.dnb.com",
-                "www.olx.in",
-                "www.laptopsdirect.co.uk",
                 "www.ftadviser.com",
-                "www.michiganlottery.com"
+                "www.appliancesdirect.co.uk",
+                "www.hss.com",
+                "www.meaningfulbeauty.com",
+                "www.olx.co.id",
+                "neimanmarcus.com",
+                "www.hollywoodfeed.com",
+                "www.cosabella.com",
+                "reservationdesk.com",
+                "www.scrapbook.com",
+                "www.dierbergs.com",
+                "www.laptopsdirect.co.uk",
+                "www.rapha.cc",
+                "www.positivegrid.com",
+                "www.brompton.com",
+                "www.webuyanycarusa.com",
+                "us.brompton.com",
+                "www.altitude-sports.com",
+                "www.mall.hr"
             ]
         },
         {
@@ -294,11 +293,11 @@
                 "api.us1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "a33e065424f8bf50acc583e0f8c6a432641042601bb18969220f8da96098a0d4"
+                "38b8457fd08af14ee2e170ad3aa2fdc74cad33a4b4552e42f8a9172b0ad7e73f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -306,19 +305,21 @@
             "exampleSites": [
                 "greatergood.com",
                 "blog.theanimalrescuesite.greatergood.com",
-                "theanimalrescuesite.greatergood.com"
+                "theanimalrescuesite.greatergood.com",
+                "thehungersite.greatergood.com"
             ]
         },
         {
             "rule": "exponea\\.com\\/bulk",
-            "cookies": 0.000681,
+            "cookies": 0.000796,
             "fingerprinting": 0,
             "subdomains": [
                 "api.us1",
-                "api.uk",
                 "rozetka-api",
-                "api.eu1",
                 "api",
+                "api.uk",
+                "api-cis",
+                "api.eu1",
                 "amway-api",
                 "api-bho",
                 "api-bho-boohooman",
@@ -333,13 +334,12 @@
                 "nay-api",
                 "api-o2-cz",
                 "fcg-api",
-                "tpl-api",
                 "api-bho-wallis",
                 "custom-eng-api-0.uk"
             ],
             "apis": {},
-            "sites": 100,
-            "prevalence": 0.000681,
+            "sites": 118,
+            "prevalence": 0.000803,
             "cnames": [
                 {
                     "original": "api-analytics.rozetka.com.ua",
@@ -388,10 +388,6 @@
                 {
                     "original": "api-exponea.o2.cz",
                     "resolved": "api-o2-cz.exponea.com"
-                },
-                {
-                    "original": "api-exponea.t-mobile.pl",
-                    "resolved": "tpl-api.exponea.com"
                 },
                 {
                     "original": "api.e.wallis.co.uk",
@@ -403,130 +399,147 @@
                 }
             ],
             "responseHashes": [
-                "3e59b0e3fa13f80711d91f7e14223573318a5acc02cea56242ba515d20ecc610",
-                "30079a1d2e0a53f52ef68b4f236fadba6af0dc44ff313c29c97823b724a722fa",
-                "fee3f2c5fbd4d55df7cf19cd9934b48bf45348ab954f0c1c6dca2ff6a86e8c7a",
-                "1c62621cdf6d15b88337c5a15c4816885d13fecf57ac63c91b6b457028753e20",
-                "6c7e4ba5c15326a562545e57b8da3ca58b5d3d32ffa7f1a13cbaaff846aaf76d",
-                "17799b8a693c2ba6c2da8109c5d461667e89b118ca7c4cdd4999a791b1cad47f",
-                "a84554838aab192442fdee93e1da4d3c4235c6fd867fb8530151546b20d61bcd",
-                "71ac3c02ef622924eba97cc123403ff310e1d73b8c5dfe51494cf5bcac278909",
-                "c24b9eabfd3a6794aa45892294c34059a828ecfa9da6a275cdc9a0169acc76d1",
-                "9f1963b6f999473e1366a28ec41898bc4c26c6102b7390f5270ccc91156de8dc",
-                "2b646be845216bd9ab4373e169098695d500871bdf6d41bc9b09ae34eee0cefc",
-                "85c38dd396c8c587c5e629b484ace122e9682230c6c06f409592af93a81de0f1",
-                "e2935dcbf1df1265dbb3260e48adfac84c3b4c60dd22d3c973bc83e2e8139cd9",
-                "11067f8e416d4f46a9330a8d2bfe491d11cac54f21ff86d06fde810f482e3789",
-                "f6b8b8aebcecb64009dc69881bc6cf5d04d3ce116822cf769671f0fb0692aee2",
-                "f79d136ca52727b201af21da76a945f86bda30d7e4cbafbba68db4beca23fccc",
-                "66e0653bc7356acea1771f0b7cf07827a319e5db23c2aa057cec1be260cd40c2",
-                "00bf7a8b5e43bdd53cb03803652b8720810cb5368f7c158c5280515bc554b5b7",
-                "ff8a9b3f94ae53f23d12c785de5bf816fe5990055e9b54d678763861c53fa246",
-                "4dac8faa5db34fd7863e81806612091a59f5a01b665f07d0af7adae325339113",
-                "048ceeb9269322d5a038b28bb54ba780fda303fb7d50b00aeaf83df20a9e045f",
-                "52aeceea7b0de8b53e84676cebfddbafc3dbb9b7e590d91a08f28af671f3fe12",
-                "0ef74b8b777a4b115df1aa9df6e0e89462bd69105cbf6ef4b72e7dd7c5026a8a",
-                "c9adcd69037789dcf47bdf5db2179f9061aa46cd24e105084d1a8cba014832a4",
-                "b6da758296a1c981d53223a431f60a9f0698fe351b8ca509d89fe61167ad50bd",
-                "4854f1521b9e7a86edfc006e34061fcd50599353d9f99f2144f025f817fe7107",
-                "a8ccd337156bd2d01a646c0a9ca4dc41af8113302d2590118b9794853ae88586",
-                "240a45fb4c0fd42fefa8728dbd4b89a25e504f008a57bc56b292d80549f15613",
-                "b898a64cf91a1e14af3f3ad1c9a604f998c4e27235c39dcd610ab320ff4616ab",
-                "0d7e7cf67bfa94fd6f1c4dea6393701c085a8c11d4c515060ec4ade4f8c31fca",
-                "f442dd330cb5e07c950f70faff73804864d10bce20683fb4aa57c4896f43b068",
-                "cf7de62a55688e602df132aa2ae700050817968f232e774cce19e7c3e361b22a",
-                "bcfad58ccaa7c1691db0f2a9dcb6a025e39a96962b32094ef18d57c815649374",
-                "bc7f009030b3e9987c987939d66aa7aa8a3e6a78524f2b412b450a2813628b8a",
-                "41be6ebbec745a702d3d405e99261b5e181a0fbc6742242c28f85dc1d87a0860",
-                "60ff48cbd6d92616f7237d7b1e211e38f64f79b7a5079d4a37fb27a9774856cb",
-                "3f2bcf1f226f1c869b23bd02fb384b62a54d0081175dab0f774fe310046aabdb",
-                "4a223083791aa9d0640cc63765eef72bb246d9d1a539ff9b99fd59aaeaa17bb4",
-                "813d19823c7c23db573a96194d90b8d43dd02b3a671fe8d9b7ed415c607242cd",
-                "ad4a614cb07e0f549e1921cee257e2c9a720ff7aea69388a94d1b165567e45ad",
-                "f7006e9920e7becf52cb1cc192352b0227fa7a9226c9bcd2a049598808d65569",
-                "6b0cc92c08a290438b4696ba505b3359451769d02cb844a6b8d4c893efb7cb31",
-                "93e50bb762caab2f0f1b94337fe822525cd627f2440f1d7c87f5be2d5ce98c2e",
-                "48431f48e9e064317113581f6b459bc496783ad0309c6199650c799d3ad43bed",
-                "318af0b8052362b9cee24de2aa8d029ec4155488575cf67e749610b01e495bae",
-                "934fe9b9f90b146c26bd57a56518d0e783d0dc4fdc393c245aebf45c027de0cf",
-                "a9c9acb5acaa5b80dd2e5612e6f1c646dcf5e55206b6c2f13064282f4f2489c8",
-                "3dfed7f3efb4eb782efbf7e9c08669b825881e5b0e1d108be33abe809f390ccb",
-                "59aa4596ffa66db2eb2420039561e3cdaacde2484223b66b463ab6bc760af1ab",
-                "5838c051b1e0cf61e32a5f7075366f6a2fe15749a9f7295f9fb754bfabba26ee",
-                "948d9c72b562bfcee16badfab2adce05e9287377a1e6ed07ef15083dcc9e9406",
-                "914bd6d62c9aac46bc84e7689e0cc8770b0f5334d2b1b3b80ae06cf3cd3de92b",
-                "640de97625428c99b4c8c6cf289cd0183657403e60df85f7be1e30eed09440fb",
-                "da22ec48f5c51f1b8acfd8deac56ec93da0357354a3b13f97f91f040185ceaca",
-                "3dd670df8ddbd4538c6ff66ea07e437d410b8dfb995d39d70cc27a6893951b42",
-                "d9315051e506512b38266ed12668b738f153481f2a2d09f4134e97bac2e7523d",
-                "d3f57fe89ff6c432cf4c99643b8334868ea2c3efe01df494ce9eb2abde9b5269",
-                "452b6c0f62ef2fef99d499d69a9641b3ac21d1feb694b9758d92bedc12295b76",
-                "c6776c97bb0f0dac33c7221773bbf744612932480e1f4dfc3634e86012525adb",
-                "8139809357626f73e8fe185205a4c2f854407d954ba0dd63639fa194e761d5ce",
-                "b161d6cf27cfc315ceb3d9bd30a7b3d05ef3ebb15946910f7446fd503d995842",
-                "84b168a16ffa365e486f292151a3d99046787dd267d537081d0355ad03032810",
-                "3a4017ad1fb720e9d8120006caec3a64ba969c4946819d5649d0f089f7df2a33",
-                "1e3b5d8e906e11695e1d569cb9bfc2bcd519422c5f9387b2b7b1f0fb40ff8a44",
-                "15eacdad303cf5524fad5d4d70719e3584ce07feb48491ab83282c409cc78ac2",
-                "815f6b4b70261a1fac91f4752458c114f8e7c2aa8fb5e6fab06c1c512ee2bef6",
-                "06c7bf7ffbbcda1bcaa22dcfe0f4bbd265a5a3cdab71f51f3fb2898c7425e24c",
-                "3e69c010211223df9c4e3b0cf3c0a7e1d3bcca7125dd09ad0d54ce18e929399e",
-                "f10c4a226e710d9300b77d2fc6cfcf8942cc5a4f09a90aa2a2fdbe85863670a1",
-                "a26912ca6c411236f26a4b2189d3109a1bed1af6776eacd7ea7e858d3ba8346e",
-                "f30d9e2d84b16b92519b6047697b8e28469f32e8e782f142f476ec277cce6320",
-                "8ed2cc0f98ad93822ec6f9ceec50f6c334403c5c498dcc5f16cbd0ddf3b3cb6f",
-                "01846a9bc63229d44350aedea37d4e9cdd42f0c918f9add1c192d2a46dd3755e",
-                "3ea3de275a789ab886882fe3a2af180db02d364922311ef038fb8dac478b0127",
-                "89326089feb52932dd7e11b678a31cabd88148eed519c6c09eb9ce9ff8c645d1",
-                "28df6230ea3358381589e8e17fac48f460c262822e105fd4c10419b0c7b0f65a",
-                "ae3aa22830dde5bc0358b40a017cb22f0f92efb8d47f75d1501a09b2028ef5da",
-                "036a98a2e6bad04202be39dd38b6c7876fc6f954c4c3271358709a14be647bcf",
-                "bec411d571a8ef092def31d995375e120518618f651c1ff7b195b4ac148556b9",
-                "61fc07d88bd9d2a767750287c3f80e78ad2f5a4317fbaa440407bfb139787f00",
-                "ae4ba8ef47e8b18888807c0e4456549a6e35163d37fee1b3fa8e293006816e92",
-                "c89a83b8da03f4379d940700565540c8b4c1a8fb95264a5725d299fc141b2e44",
-                "a5dcf62dc4f356a3692e7bd77fc183eb4b632032ba764c6103f83ed73d7cbc89",
-                "44c34e681c1fbbfc3543af4a93bb4ce796e0c3b522b899274b50ae226469c8ab",
-                "87396996f462ed79c2214d8f03a11508b1fcf1a00f8cd5d70d72fe4fddc21893",
-                "809fda22866950b960446ba4603d7b40213ec093858656c3f52c7caddbe6f9b3",
-                "9fee04fa868d92b8e2f75af9281395af1d08590391c190ca31270e66c2a950a3",
-                "488f2d19cb5ddbe5fc96dd0417146b1a1177ec1073fd7c741e760d1a74d08fe0",
-                "5400a7d61d4f7ce3d1c477344856c8213dfdf0f0e71b3f846782dd46c07cf0a1",
-                "ce1013c2147bfa95b072467086d531782f69da5105c6b2099642d1410c5a7d33",
-                "f1dfb38de4fdd008fcb457d406c28f916080bd29752d8b0c8a675b2bfe66f2a4",
-                "2ca031966f849efef169abb6d50419daf8da452f42dae66ef7405058fcd4ab84",
-                "933c8f492739b9494c838b05a39b0ca227a5f7ff8b5f41c32e9301aad32d0aa0",
-                "bcce07cfd65625b6428b2c29b93f8f9b0e7ce86aad935f22d7190269d329c665",
-                "658290f2f20d5591f8842db7f6cf3d724201bdbcb9dd7bf40d46e7bb3a97ba26",
-                "457f5ea62ea0d76e4a83d37fcd04d7d3e82271e280c9bd702e7c08804fb56f03",
-                "b38da15a4c0611b22c28f17c50ad39992488c760b21299db90a25539e139f542",
-                "3855040b772a253ff8121fc87a27d51c4de228b2cc9d9adc34fe9f9f2c16a08a",
-                "e6af17bd6ce93c29cafd45d382ed8888fdee1166ea7ce42245e6c0a1c27e5943"
+                "099bef63e008cddf9c237889a9abc08fc650232aad9aa984e052f305a52c2493",
+                "3db052665c2b23774813f3d48d8b7244ea6da982e54c5b050e5ea1c3707e9d37",
+                "4c81427fd0499d6bbc50c21a548c4f5fb7f3da5a1ab2f9344612db4968d96e3a",
+                "6a6d6400c69b3feb22945a50e7c1d7f8203a1570dbd60edfc5fe6e2f63d3413d",
+                "f554f112ca4a7e75540ed78cb4ffbd8f2a73da21d66208a6bdf6169d2bcb2079",
+                "26e09fb0bab038b15561311b987f8d3f79a89190faa532ec2f454598c57a320b",
+                "c1a27bb005048948ec912c791fba822e1121610e477d6f1cc4b478de60c18383",
+                "682cfafa02b95b02de33a3f63e9ff9bd30fca35b2b2b10afa16de6ae005c64c9",
+                "1d4296863c7872c9ea0e2243376f349d1ca31195897be0f1a2ba3a5a51e81247",
+                "fea6b9a6faf9112fbbb8a6bbb8c36fe998ccc1ee632aafe7a61435e321e42026",
+                "693df7ae5be06c965ed93dcbbf79977b08bdbf6cb45fc3cf0831a2806d789dca",
+                "9e9f6325ff7e90456a2f8de0f342f7d3d13909bb3a1d98f193f10faec1b25332",
+                "9d3af3195c0bd7c5ac10adebac0150924e5d28541cabcef6bcbf87a21f9dca7f",
+                "7ab009180c0c065bc670f40a020b8e5325bee1a4dc3c521ed30115363b2feef2",
+                "67d75548e2487aa633cc9a1e5115f5363201634ae566abe921767cf0c91fa6cf",
+                "d03ca98f6cafcbcd4f6333af9d6d85c9747974fed5f03d85a39897a62f4c8571",
+                "bceee87a9969051f9423d54bf7dde3127c08954207e15e513bab31b1b3911f50",
+                "4815e412792e96bbe38f17e1a7235028736548baac1d1cdc2a58fcbf6b835bca",
+                "2ee757aeace0fc73b0d7fa73d2c43c6b776f8834a1710028ce25d9c750deb0e2",
+                "2016bffc59a7765b245ea5f007a1276743c3977350abc4b697d5917f442deb73",
+                "16c95ff9f395112f75cd7460a2b50fbdb4743e6e4619e9f48c08e3edc22fd2a5",
+                "11eb5ebaaa75de6c56cd02698921069032788c40b210b073d1253dcb48b5ddce",
+                "c6dfbdfb1c7bdb41a24168fb7185be02457212981a737c8af797445e8fde7b8d",
+                "a32caf130bbcbcf2e1b38b59b75a5e0654a839d18297ff1ebc1f43341068f695",
+                "4e2d6f7072879407480d6464afaaf77510e4667309068093db001a4cc3cf808b",
+                "03d190c709803fafd842a17fb02de5dca3a89699bbebf5e058dfa36379798bbb",
+                "12df52d70b07ab434d2796349d842c765fa9b966827e76a68492d2ab6de4bd77",
+                "7b35ab5c2fa24758cb229661392daa492dca52a6702ff710fed88a95fc758c26",
+                "f582a54f8424c3f880a896a0c79ddd0dba7e43ab042c3bfe27d0c6b0a3e91ec5",
+                "9b0d450c723df36923387e3e3694ce3ca13a8a5f35a4d76d72113cf5412ebabb",
+                "bda56c77540a6da147ae9d682128549725890a6616285266f38a9996155ed5df",
+                "0562bc6f91a502f154bccdd0efde5b9f7574e6921b9c80ab76898d5267faf630",
+                "95c4232bb75cd0c944f65ac2c6cd90fc4594a23505ce492d97d854d34d2730ba",
+                "e3cf6c1d645e2fa959e6119db3a194331a2d28f912114b2a72b9b5e9a1178f9c",
+                "55ee20fb116201a60bae3a15b0628ff3ce0ca1c0e3c8de417c2e7220fb9790b7",
+                "ebe308b737f98569f52a730bbe8853bdbfd99acb0633199fb944db149ca4cac0",
+                "5207f1cf52f4ebc45f6280c99ed58acb448bcba6d7d60416732a7028276fc84f",
+                "6c4a07967563d08ba2f822fe52d3bc59976cb5565ebcbc7b5381275b9d19b8aa",
+                "53d7cb0ee2e69e45fc015129cd5de5e8690a52800b39e19a3aa1332200f8e13a",
+                "d93f2f84162c9350c1538889b0ce50f506293db6598fed53c15960c6da5eea87",
+                "e8e4458fd807338a012bafc506e0345fdeb64b0df38c1e3cdde7ca7112bfe2eb",
+                "f725f22fc5f7bffb445e39a24aef6179b4a064ba1240d45182e80fe6d2f9051d",
+                "c011f695d75ae8f09b394be64a222fd99ee225305d0c4ed139d46f100edcd49c",
+                "5e7be0f9546181454ec73113b04d764b87cb46505abf0a76e06dfd0baf418513",
+                "ec100faaf3be38a7fb77ad5312a921cebd249ce9b428cb569a316aa0393ef0ad",
+                "8a7407031c9471f311c3f4566b102a26a32273c583f22cd94e725045d2dd977a",
+                "2c6a68b7007a08fbad51b0b5b9ce24167e01fdae91352a089ad4c3c58cbfb769",
+                "315b4b10afdbd1d9d355ed01703ac920e499b88495f0f5a1aa7451fb08a48ae9",
+                "b015b572b8122af6fe3d2526999f760e5a6bbc6b1517325d791f46d04c136808",
+                "a5b4ab669fb92d1cfc3cc82d74bfc0ed5a23c59544313b8fa551e4c8bcd4c698",
+                "880d35c404dac6ea82227bcac4adde28c13179dd81d822abcff1bf4f132d8bb7",
+                "3b47f78181ce449e84ad708a994ecb664cac942dfcf7f83856502e3381fc233a",
+                "594be17db5b19e4e28fdb5568d1befda8f237611761ba3c0c987ba17cc5b81c3",
+                "b8e7e9733fcbd3ea52fb06f1236f894d79640595b185ff079fb36fbd169d09af",
+                "7af5b335f68bce1bccfbbd408453ce979bc1c439af5c4e164fdb31c5d8359c01",
+                "e1692169bb7bfef6ff07a78815642326196ea52ee8e65c857c8ce0826dc61158",
+                "a524ba6e1b9ef7bb8412040d3706c6bddc2c088901e5d06d3b32f4201b6ce100",
+                "c5d2b99a618d0dc3ffa20861c5e68ada7d3eb8620ecf0e149e260b7884cc2635",
+                "e326f67738cb20752b2b9026a4e4c7c4c05f1b95b2659dbda3f6bb6879e52788",
+                "d47d20cfca226f30c9d2515fc81384b097922357f81e726c36fc2d2e05a1bb5b",
+                "40055d87e07e6412796d685c3ba97a6593851d64aae93e3b9fc264ba53c21fe3",
+                "8f7e9cd2611f001d1e2a3c854620c9ee053291a240e4ebb183bef719b468a1d7",
+                "e124be996f9a88eab2e5f2ff4304065a0c422cd631c051c8b1c68743f4516e1b",
+                "e050f8e3ea2fa524a1034ab3e310818601d3336c639419cc1b0604e1a78e5b39",
+                "799640e4d0119b04c64aeed52973202452852ef428eab70390893332f2f3d033",
+                "325117876fa18a919e917c2a630c06036a9d7f16f577a3fbda328c37851ace39",
+                "70f8a2ab30fdcf4991918610908245c515cb0251a42a772c20725c018fe96b10",
+                "6a747e1336dd1e383713eb5088ef64e7124f4d5db0ca21a4435376d29feea83e",
+                "62e20fd817e5bcea1b8f2916f0165bf1354af189b6a1186039b6a13d43028c05",
+                "789eb81db49417852b8b961e9d50fdbef584f9ed09af9dba3b5fe4a013bf7c4b",
+                "ae2b165d80f2ab8c3c9a900ea56f7ec227bcbfa7f418084a8c4622891f3857f2",
+                "377b4d30b1f29d9df264335a9e9a8434bff398c5a7c60ceeb3ddda002ff0e5ca",
+                "d8ba16d101ef0bf2530893bf686b4a6ed5c12e4b6d786b82ea9a67e9dd6fcb4c",
+                "60d711893b73d88d8b4c144acd5b7792e98dad91f06efae0d45169ee2ea6edf8",
+                "10ffb5a7d225f5c9cbb831bed61695515d26faeffc8c849284a6a45bc3991175",
+                "f6ebabcecf72cdd81bc926350f6ad3a41e0ef2f3d1b24875587e319a3476ae7a",
+                "09933fbf7f67aa69c4953d62f83a95e57c64daf3894d458014e738a9d240deab",
+                "a45d54046be1f26a235872761f6300ea5f0bcc570e3b40ed2cab61f3573b6e8e",
+                "aa511579bbc307cc2c725f91624663ac94bad1c74545a2b66d53761ebf72163c",
+                "a8339298e69b66be0497799aab1a0318dd64bc2c2fb7532442c015fda2da2eee",
+                "2e72f3dd6bc3b8636f9c7e3e84267a337701a33d372140df1411a3f05bddc382",
+                "636d5f2a9d0e52a781be33fc95fccf83c86f978580adcf914587ee5aa6816cfc",
+                "572b06d1dacdc35f5f448067c1da0832c059a8df4a64768d1a41793f83c16471",
+                "f89ffc089e2b7f19d64dbd0b84114c0009af3eae75060f6a6b973210ee0d07e1",
+                "e998fc74d5403f77c21991d0d7e07059914339408dcaecbe207efa38307b0322",
+                "9e45b4fc97b3d187ef1718171b88a5687f7af184c0cf88d2db470307867fa2d8",
+                "3f817a67fe37d5baeab8f061b0793db19b02d38949b0407b67853c6a578b84b4",
+                "3d8d69fb1e5825ef99f769679c9e1b0cf2f22ee0392fad2acb6f747ba6039364",
+                "768c625a20b0d41eeb7709d8fe468d466bbf719d6902570f206ad09be30683d7",
+                "c19e581b088afb50adb620fdf342e665e3262312412d27b17b003109afcd415f",
+                "266c6dd6b154cfd79afd25c4856bea06e5358787570889a012cc78b0c3810664",
+                "a53a840fc1ba834a73c0192f2396baca5a3dcf261e519b5c1777a32bfb300bb7",
+                "cc0427679620afda54055971ac12d5243be124e899e987c6f11aa1dbc1051ff5",
+                "f56ce1ab114e426b7dfcb1f725a958b63c3ca2c5bcb47f9553ad95823277b3b8",
+                "69f4c1809e52e2a252ea90b5894763424452c19ccfdb93dd5e4a047ade5512ce",
+                "60ca06619061116325b405bf23c30bb963e3916b61cdbf67e11569e9d6963a80",
+                "cdff54760e1ee454d538d34a146affc91702a5f9e6a0a2770e011d59e2cd72ae",
+                "d5eb6f366a50c071e1520ade2976921d83f99fcd73fa78865676aae5950afc99",
+                "1ac58dc045e46455ffe0ff177f1f9b8686f21af470e066c6836bdd4821411ae5",
+                "4e96db77c670160fd357ae79e2643154f83c8f88864b12f43dbcb22634071ac9",
+                "9db0c9f97459d0ec4adbd00ce716c0dd45cf31e96a4e489aa0136fda16c0eb5c",
+                "a3bf322144d7a49d5612215e0984bc89beeafcf43cc02b567c122c397802ded9",
+                "626db13054d18641f6336d3fbcb622162546b41c94c67c4a0543244d286d567c",
+                "b4b360c2f72fd71fbf37f4a4e91e2446dbb734cf8ea16215bf95d839a058c58a",
+                "a01060ec9f34283b50cc7cf781a6b3ca7b114e254ede7af0ee69e1b4f09ece23",
+                "720a509b58d11122fa8709caa7115db08d1e83ae416d452070ea9c112506ca5b",
+                "b207c1a9e01899bac535dbd2d9a851c2412648cbe6b37c61fd3b2ddbb90590eb",
+                "fa772e866f822a3e29d2582259621ce290bdaa014ed948e41c1a6a623c6cd6fa",
+                "7d03dfb9617f3f22bdeb039e83eeeaaf0bde6ff9b9d5b0501e974a6e27fd33fb",
+                "e1306e99a08ffbd0b5ee636e961ac658448f8063a7f498c07052bcb863a0a586",
+                "4fb0660dda1e067d573e53d7545ef40650b8fe8a1d932f6d9e37b3efd165e56b",
+                "20d5df6abd353f0f1601ffb2c7af688088e9f40746fbb578de784319f1135184",
+                "014d9350884a93138636ebca75a068e1e5c070212bfafa48186fc5d2d55b7e48",
+                "ee33867c79c44e2da09294139fe84d923ff23b39b96912db4c29c0c79dbbff9f",
+                "c81588edddc72a80979272ff0160ae09ef43774a2a2d70e1f707e3dab334754e",
+                "fa39548161126e5e51860c9eb78b63cccfd3862ff31504028a91f2d74880424d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
-                "www.thepaperstore.com",
-                "www.meaningfulbeauty.com",
-                "www.gobrightline.com",
-                "www.nastygal.com",
-                "www.neimanmarcus.com",
-                "www.oliverbonas.com",
-                "www.mimovrste.com",
-                "www.fitflop.com",
-                "www.whitestuff.com",
-                "www.altitude-sports.com",
-                "www.altardstate.com",
-                "greatergood.com",
-                "www.fairphone.com",
+                "www.sheetmusicdirect.com",
                 "finisterre.com",
-                "www.homecenter.com.co",
-                "www.artfinder.com",
-                "www.sheetmusicplus.com",
-                "www.tommeetippee.com",
-                "www.mall.cz"
+                "www.euroclinix.net",
+                "theanimalrescuesite.greatergood.com",
+                "stores.neimanmarcus.com",
+                "www.winsornewton.com",
+                "www.raymourflanigan.com",
+                "langehair.com",
+                "www.horchow.com",
+                "www.phase-eight.com",
+                "www.mimovrste.com",
+                "www.dierbergs.com",
+                "raymourflanigan.com",
+                "www.kfzteile24.de",
+                "www.mall.cz",
+                "www.eddiebaueroutlet.com",
+                "blog.theanimalrescuesite.greatergood.com",
+                "www.cosabella.com",
+                "www.laptopsdirect.co.uk"
             ]
         },
         {
@@ -535,10 +548,11 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api.us1",
-                "api.uk",
                 "rozetka-api",
-                "api.eu1",
                 "api",
+                "api.uk",
+                "api-cis",
+                "api.eu1",
                 "amway-api",
                 "api-bho",
                 "api-bho-boohooman",
@@ -553,13 +567,12 @@
                 "nay-api",
                 "api-o2-cz",
                 "fcg-api",
-                "tpl-api",
                 "api-bho-wallis",
                 "custom-eng-api-0.uk"
             ],
             "apis": {},
-            "sites": 100,
-            "prevalence": 0.000681,
+            "sites": 117,
+            "prevalence": 0.000796,
             "cnames": [
                 {
                     "original": "api-analytics.rozetka.com.ua",
@@ -608,10 +621,6 @@
                 {
                     "original": "api-exponea.o2.cz",
                     "resolved": "api-o2-cz.exponea.com"
-                },
-                {
-                    "original": "api-exponea.t-mobile.pl",
-                    "resolved": "tpl-api.exponea.com"
                 },
                 {
                     "original": "api.e.wallis.co.uk",
@@ -624,23 +633,25 @@
             ],
             "responseHashes": [
                 "ef51cee56d3dde41e94db0c99f36260c49143a2c05e85bcfed40e3a8f0edc1fe",
-                "3a793706e83df0aa208b912f121a692ef2eeff7a92836ac7b202cbde2b10e909",
-                "3a89453b5ee5673164180625ea9a874d360d1e61905ed2ed3ea2a29aec40ff0f",
-                "aae87b285dc7b150d7af96f827ddc2ceeb779f263fca0c0c7d0fefd4c1f05856",
                 "60b338887dcc9fe7473e9c2dfab62686f0d0883e375b2fa74346fbf216d5a57c",
+                "aef43da15b23cd5c89a40555492a0e7ae290a26f4c6ab972a03ce2bd59de6075",
+                "c38a065071602faf3f3b9302c3843a9985645873b110a439605cba34f4c7a761",
+                "d091f5a60a11087f4c44a37270a5b67e9f059ef00a113cf06404517e618abcfc",
+                "cbd43853435a7eb3df0d94c81c1795f69d6f361055d8e4a586aca7d2663b5044",
+                "3a89453b5ee5673164180625ea9a874d360d1e61905ed2ed3ea2a29aec40ff0f",
+                "216fcbebd043c08279b580360b43f510ffa76a8d6cc00aa778d47dc5a9f576ab",
                 "331c0fd0639fa8463307217e0f5e6dc71987702f42aa1335b2822b0a77a8a9aa",
                 "a2af7717127024362f200413688fa86c9bfd160576d18823d57e992c7de48e23",
                 "d584c23cbadde4d0ddb13f1018a02411a739291567db9af5480db81a27233cf5",
                 "ca8a3eab5c53e1e822b4d64d7b012998387fb02d16ec4558fe49220839f39ffe",
                 "96d41efe31c5fd2afcf9dff0804dcdac5091d191dd18287ad653d8f0574067fc",
-                "3eeafbed2ca26283cc85b7dcd242ed0a8b5bc342156ea366b0210efcf6588264",
                 "236709f47152ffed2c95cb1fe82d12eb464a897918ed08180ac8b223262a15f8",
-                "6d63dbbe57403822508b0ce17caf52948a7559cee3390c0fbc7cef6c1d816e57",
-                "9ea2945a05832ab455633a527068721cf963ce1a557d88ae496e3d2ef479dd9d",
+                "22458cee9b0e8d1cf4534463c987a1036cb6867039fffbadaa4333bcc8abefc3",
+                "307595b68444404475a0cf002b4273ec376056a8502f7e698d19c1be42301662",
                 "f1c0292231c0ab580bdf2a22f9ef7df57aabe90c99233a9840639794c24ae027",
-                "11eee32de85a69eb17c86fba6de4753dc8ed84df5afdf21000738df0fd422abe",
+                "14573d1db103c78c7c951a75b10dd11a51c450fdcc828505d2c104eda225c5e2",
                 "f865f1d8253ee74759c24c99b61511728e4b38f10dc55366ba12e3bac0167455",
-                "79f009d47b17060f4f15c3f8263a073ca6ca3fc474d79d7179e26258422b43d2",
+                "c489de8b16b83c0f428f73f262b8df136fd98c49fe51e4e4d91494816605fcff",
                 "70b46363921379fd028173aeebd0defd3e6a5a32e460cf6f35b23cfc18774aa7"
             ],
             "type": "Fetch",
@@ -648,25 +659,25 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
-                "www.kfzteile24.de",
-                "de.brompton.com",
-                "reservationdesk.com",
-                "www.gobrightline.com",
-                "www.reebok.com",
-                "www.boohooman.com",
-                "www.phase-eight.com",
-                "www.jensonusa.com",
-                "www.homecenter.com.co",
-                "www.oliverbonas.com",
-                "www.superdry.com",
-                "www.tommeetippee.com",
+                "www.analuisa.com",
                 "www.my-jewellery.com",
+                "www.hsamuel.co.uk",
+                "www.o2.cz",
+                "www.sheetmusicplus.com",
+                "www.liquitex.com",
+                "www.hollywoodbowl.co.uk",
+                "www.walmartpetrx.com",
+                "www.nastygal.com",
                 "www.altitude-sports.com",
-                "www.euroclinix.net",
-                "www.hobbycraft.co.uk",
-                "www.livingspaces.com",
-                "www.nay.sk",
-                "www.mintvelvet.co.uk"
+                "www.nativeshoes.com",
+                "www.fairphone.com",
+                "www.kravet.com",
+                "www.ftadviser.com",
+                "www.tommeetippee.com",
+                "stores.neimanmarcus.com",
+                "www.neimanmarcus.com",
+                "www.brompton.com",
+                "ostrovok.ru"
             ]
         },
         {
@@ -675,26 +686,25 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api.us1",
-                "api.uk",
                 "rozetka-api",
+                "api.uk",
+                "api-cis",
                 "api.eu1",
                 "api",
                 "api-bho",
                 "api-bho-boohooman",
                 "hpt-api-datart-cz",
                 "custom-api",
-                "api-bho-dorothyperkins",
                 "api.ftspecialist",
                 "mallgroup-api",
                 "msl-api.us",
                 "api-bho-nastygal",
                 "nay-api",
-                "api-o2-cz",
-                "tpl-api"
+                "api-o2-cz"
             ],
             "apis": {},
-            "sites": 60,
-            "prevalence": 0.000408,
+            "sites": 65,
+            "prevalence": 0.000442,
             "cnames": [
                 {
                     "original": "api-analytics.rozetka.com.ua",
@@ -717,10 +727,6 @@
                     "resolved": "custom-api.exponea.com"
                 },
                 {
-                    "original": "api.e.dorothyperkins.com",
-                    "resolved": "api-bho-dorothyperkins.exponea.com"
-                },
-                {
                     "original": "exponea-api.michiganlottery.com",
                     "resolved": "msl-api.us.exponea.com"
                 },
@@ -739,53 +745,51 @@
                 {
                     "original": "api-exponea.o2.cz",
                     "resolved": "api-o2-cz.exponea.com"
-                },
-                {
-                    "original": "api-exponea.t-mobile.pl",
-                    "resolved": "tpl-api.exponea.com"
                 }
             ],
             "responseHashes": [
                 "212b846735b1607fa80f96564b84ac6842eb64ca978538fc734a042375365728",
+                "6bebcc424054f17442b2b070a0595b4366d4ee0dd80865073ee3bb8103daf16c",
                 "2230347fe9d4557138a61a622397d3c3a4bfe267bb964bcc77caff84ef4e68c4",
                 "6947cd58ed1f9eda2da77b1209acd235107b38458bc47e9352ad5fa7d3eca8d4",
+                "46d163f1e40e717498d6b2bd3fd77731b2e8ca1b0c7b7c88912126fe12fa961f",
+                "9be325c3f332207e2241172523f771dae180e996a78face138bc05099e1156dc",
                 "f5c1388868f22487ce09932804f0203ff0e4821dc325963da6337358b3c6274f",
-                "48edd3e14901d54f2fe7bc6c2d6bef0dc297164cb4d1accf1a679d7a9176ce6e",
-                "32ae47dffcf89420ae0996a86025f48deac0316e2839f4d4325705c30dd92dc9",
-                "b341a40b38534be68bd2b7e2a067c6baca52fcacfae1d7e0023c5f188adc112a",
+                "429b680571076422abcca9c4f3c47efcf66d1fa17fda9113691141579d8c4fd9",
                 "f2e0a6b290caa8a982628ef56c4e8b4af1406e8d8a3bb0544e0d139c43f5f5e9",
-                "679ca34a7c9753b540fd58a6d5f1c5158d394e77272f9f168916cba866310d7e",
-                "b1336d478be83454825606d8dc830c2a84ac8848829824593a54ac93fcd7aa54",
+                "614ea1e6c491b6e1b8feb88b75e9d7b412af4d2dc8a505038b7f473150125b77",
+                "1f5e8dc77a6632bd8e00947b101b0bd60c75dbf38b78771a816dfbff6e25802c",
                 "d9c23f53683731a3025336e9abeb6fd535f060f9f1cd7b236f469916e0dc7301",
-                "643a3c9a23c6b21ec016c2a422ea1662aaba9668a2572e269842cf10de6d7cc0",
-                "49a07fcccd6535d1d4340063e5c006fb66dc2bffe11c19165f8b4fd54763a211",
-                "13b57380cd91d3b16d60699368899983a0c00d3d818b0fdc590632409581cb87",
+                "6fb36d0197bd786d20e11f9ede2d99424e3976b1eaeecae327bfb5595121d980",
+                "f7202a78c765462c73ecbc384c60b4635f69f427087a02cc27a29842d2203bc6",
                 "acd936e5403be960df7747fc9e4e686be89ed298bfe67edde0a7fa47ad97c618",
-                "06953fc95b79dc2043bf2427e6da172c78c954c300c35af3a34a5251c8baef29",
+                "79df38d00c726b75cb3c900614ef69e9683537f320022b517b571bc7662db6fe",
+                "61ab40ad815429f70a9238dfb1d9b58dabebce117e54d8cd8306f0e186dffa27",
                 "9d71a8385c37ffb94c1bd58d6d4d78a0c1193a4a604a779c80b49a4c86d478e0",
-                "b07023121bc6ff565ff0a7ce20b390a55065004e6f22df43aac3588dc7907eb0",
-                "ea4581ab379dc2af8f7bea108c8957de21004ecd66f3a2ea0b70d28bd5a6d6a4",
-                "b7910221056dc1daa2578b0e8fdc25a79f87fbe38c12b5156361aeb2ce0f12a2",
-                "178e330230456bfc8f7ddf08365607d693af9b395c480b97be943489ac909550",
-                "aa07c2465e204223dcff957400bfa3be5c6a2291a488dcb698826da797a3ba70",
-                "3be5f195f6c98e515b06a7a26ce4bbe615c4e61e6a6da8e03495559cb98c8e12",
-                "a81e2974e6ac6dcf9b62494fb520b1b48a2d5e0665a7d6a27b66767dd530d464",
-                "be623ff795d4fb4805a5fd952fbcb1384a77aeabcf0adb56eb8b72f5bace6206",
+                "e03c37752369c1a006ca32f2c434ee69a43a0ab4ed7a41bac7b121b9cb200bcc",
+                "371cbab2cc366138b7dd6a9c0f65b6cd6599908f5e6001e762c87ea56d277f49",
+                "4e6100825192594f104c0af8afe87bfeb827dae09a758ec39d789fe3eeef7d11",
+                "0fbae15d40f038809cb617ed28962930f95a3e192a917fee866880602bf5c3c1",
+                "43c9544eed1b6a3c3d620df80c63615385b8d5b88113c61372056afe88415787",
+                "dc56c2bf840c00de6d46f508d8b5fd5eff1a97afb2ac32b08f70557260a9ea8a",
+                "5150876a5cac539df50e540cb77be3ba1cfb1fc03eebfd7c25b784e9072f0d84",
+                "02800cd050dc8fdc6665d4a81bb07a9a1424ceb4ce9c3f95697566686ce971bd",
                 "d12e061ccada88e832e3c6c84bacc677a08a740e0178b838b50e6c08c4904ca6",
-                "8f0b6c31c0bb34f324a4f8cadb452a22d5209357a919990c5af9cd15e23a93b7",
-                "04f3798e96bd20c1010b7d47d893b2d4163e1510f4a7e14ecca1853acd652612",
-                "ee8d9588d042218f3c7b7d40df190a67b42fa8621ea5ecc762c395e62f5616b1",
+                "66bd5b1a462e5fa8059fef090104eea245aaf40b2384606b1d6d44ea8077dc25",
+                "03699b4646d5e38ecbe685b0e9cb0a3423b23c1441e432c277c6c21a2494f006",
+                "a800b4bfb71eef97658d66ae7b1620cd93c727b0be569c0b90d01540f45d87f7",
                 "708c9d89568ec264a01e14346f752a9f7b08fea95e4c99da67e0e18a27bada57",
                 "cd4d856531ca507650cc6523a293013832db5f84423de8137e3bb46007221497",
-                "579609bd1e089378d588dbf052101052f46bf7d2d1e0c1ec921817cadb29d49e",
-                "4e22418b92545cc2fb5e893c6ee759dcfc6a1544df6584a0638d414ad7776987",
+                "fea1be1607c23ab280f8453d3b364977cc5397cd188a5c63c935972a9b27ada4",
+                "09c3fb3f48d87af5b92763ffc840e3aee21ba82bb29e9b98d865a99d7cdac40a",
+                "621d6f13c669ce980a7b2979ef8d8f0f8ab394c3206da7d5be15d052a342ce57",
                 "080a9d673ffee66055d706d930624597feaef5cdb529fc946d10fc2872f8da72",
                 "3597eb6e666c869362ae4e1bbf5205bd11ce354a053216db9ef3592e0d47e21c",
-                "f7c0a97d15a33537d4786ffd4a6c2ed98bbfd3a4e8e432a30759fe0f39a7ffde",
-                "2122dc67242b72f505a5acb8c1b0699e75991b867d28a3113556cb82a71b8a49",
+                "addd6bb7ce33753bb2340d68cfcae148d1c0edce4279ffd30d859f35ef31032c",
+                "e0650862ffe55593be18f41327881109f307268896eb7944b7e0aa3d345b73a2",
                 "bc9031f454d033b311507edb432778ebfe12cf08a74464828edb18f6879702f7",
-                "f69f03f8f533b29c63538ff167aa4746e5ae5dcd9f262661935a032b5c02a273",
-                "0315aa50ccc657eebfc40aa60956108bc7ebc0c13303ca75680db1def740622e",
+                "eb824f58a338bdd21a1670b34937940c4aa2a423330e0427defb6b1e5ee19abf",
+                "da2488f34a3f9c4350ab4f8ace7c6cd1602a36ded77b484986f707c30c489cb7",
                 "3e61c4a356b61016712b429c3945721ead09cc9add7f83b39fc86948e05ebcb7"
             ],
             "type": "Fetch",
@@ -793,25 +797,25 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
-                "www.appliancesdirect.co.uk",
-                "www.mintvelvet.co.uk",
-                "www.laptopsdirect.co.uk",
-                "www.my-jewellery.com",
-                "www.dorothyperkins.com",
-                "www.californiapsychics.com",
-                "www.litter-robot.com",
-                "www.positivegrid.com",
-                "www.t-mobile.pl",
-                "www.o2.cz",
-                "www.regatta.com",
+                "www.allivet.com",
+                "www.boohooman.com",
+                "www.thelasthunt.com",
+                "www.nastygal.com",
+                "www.ernestjones.co.uk",
+                "www.joebrowns.co.uk",
+                "www.jparkers.co.uk",
                 "www.nay.sk",
-                "www.kitces.com",
                 "www.ftadviser.com",
-                "www.sheetmusicdirect.com",
-                "www.altardstate.com",
+                "www.positivegrid.com",
+                "greatergood.com",
+                "www.litter-robot.com",
+                "shop.fairphone.com",
+                "ostrovok.ru",
                 "www.altitude-sports.com",
-                "www.michiganlottery.com",
-                "www.thepaperstore.com"
+                "www.mintvelvet.co.uk",
+                "www.my-jewellery.com",
+                "www.livingspaces.com",
+                "www.musicmagpie.co.uk"
             ]
         },
         {
@@ -833,8 +837,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brompton.com",
-                "de.brompton.com",
+                "us.brompton.com",
                 "www.brompton.com"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/cdfa07d2-90b2-11eb-b9b6-867564e6537c\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae4812f207dfe95d906ff54f88a3ca6cfbbb2cdf7521304a406e36b8be47c776"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globalhealing.com",
+                "explore.globalhealing.com"
             ]
         },
         {
@@ -842,18 +868,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.uk"
+                "api.uk",
+                "api.eu1",
+                "api.us1"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
+                "623460cb54c162fa9fbfa562e4ab6127886f859e1c6b2bef034c10d0c5ba3f29",
+                "ac8a4c5f81dd1636eeaa7bc9905b0d1ea2bc0d866179c39e3d98473c8704102c",
                 "ef51cee56d3dde41e94db0c99f36260c49143a2c05e85bcfed40e3a8f0edc1fe",
-                "2498a974098f08a6b2c464d05a86ba44f2625d3afb40ce2a714b0e6c4bed486b",
-                "c1d5f2b28caf4bc7a8b63dea836d58bc51d5b675113a593de7d322d0a661c9dc",
-                "7b7dcd47e977e8d30045313d4f2fcc4fca776b0f1562be0111c8de1eea597af2",
-                "8a9f8ae8922ae4561b246842b19f765c2e8b46c9dafe8161b5da6b360ccc09c7"
+                "289a4c4896a8ae7989909d7fa5c1d90872aad5c36c7bcc1a3f20f90fedb9892c",
+                "18ed02906723e30d2b8d6f8eb415c4f24051d2569162cd0bb49c6b0ebab69866"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -861,10 +889,33 @@
             "exampleSites": [
                 "finisterre.com",
                 "www.appliancesdirect.co.uk",
-                "www.craghoppers.com",
+                "www.bauhaus.fi",
+                "www.hollywoodfeed.com",
+                "www.jparkers.co.uk",
                 "www.laptopsdirect.co.uk",
-                "www.mintvelvet.co.uk",
-                "www.regatta.com"
+                "www.mintvelvet.co.uk"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/3045931e-69a4-11ec-93bd-7a503d07b36f\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6eb2085f3bea090faea1db2781e537211e3fe7209a8e4306b9081f9f527490eb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livingspaces.com",
+                "www.livingspaces.com"
             ]
         },
         {
@@ -875,8 +926,8 @@
                 "api.us1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
@@ -886,6 +937,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "neimanmarcus.com",
+                "stores.neimanmarcus.com",
                 "www.horchow.com",
                 "www.neimanmarcus.com"
             ]
@@ -898,8 +950,8 @@
                 "api.us1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -907,36 +959,57 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__exponea_etc__": 0.000013611924045463826
+                "__exponea_etc__": 0.00002042275094455223
             },
             "exampleSites": [
                 "neimanmarcus.com",
+                "stores.neimanmarcus.com",
                 "www.neimanmarcus.com"
             ]
         },
         {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/8614d4b8-72f9-11ec-839b-7e7c51594c2c\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "raymourflanigan.com",
+                "www.raymourflanigan.com"
+            ]
+        },
+        {
             "rule": "exponea\\.com\\/webxp\\/script\\/4ac19f62-4a6d-11ed-baa7-06f052a58d3f\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "api.eu1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0178b11ac85e689366ed8b03fd20ebd5448e8af332e89f2f923f5f50f4ecaa0c",
-                "533747912a46060ad65ddf5640949d568fc4df88704373906df092905c5067ed"
+                "2be107e90fac998561c99b527dbaef6972abc07e950ab93cc17246be015fdd21"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "shop.fairphone.com",
                 "www.fairphone.com"
             ]
         },
@@ -948,35 +1021,32 @@
                 "api.eu1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "35bb3bf847312243e7d01de57ad121f675def634bfa1a1a2d4d7afa719a06260"
+                "e026b29c4ddf4df7f18c58b85f6ef964742b3a8f48c62014a5a4f2a846902063"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "shop.fairphone.com",
                 "www.fairphone.com"
             ]
         },
         {
             "rule": "exponea\\.com\\/js\\/service-worker\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "api",
                 "api.uk",
                 "custom-api"
             ],
-            "apis": {
-                "window.indexedDB": 1
-            },
-            "sites": 12,
-            "prevalence": 0.0000817,
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
             "cnames": [
                 {
                     "original": "exp-api.my-jewellery.com",
@@ -984,14 +1054,13 @@
                 }
             ],
             "responseHashes": [
-                "0e4bc48d36049740c33df8de75f5e68b2be9ae87daf9c4f244bd8debf2e82c1b"
+                "71c42774022808c64f3127b3a51a8fcf141f53ce3e0eac7d3b165722d17d50f4"
             ],
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "shop.fairphone.com",
                 "talkingparents.com",
                 "www.bauhaus.fi",
                 "www.craghoppers.com",
@@ -1002,28 +1071,6 @@
                 "www.my-jewellery.com",
                 "www.regatta.com",
                 "www.sportisimo.cz"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/ddad9698-b583-11ec-819e-d6d79428b6e5\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "aaca5ab1485cd3af18480f76b0ce17987453aaf5e6950aceddd8ccaa38518912"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hornby.com",
-                "uk.hornby.com"
             ]
         },
         {
@@ -1038,7 +1085,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fa10dbd408e8e7791c51e326c74884a5ac2d7fb29a903e62b039f762c0f6125e"
+                "293ee7820fd837aa1109103b50707fad83894f97e5814142447e6a5506ca29d9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1053,15 +1100,19 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.us1"
+                "api.us1",
+                "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "ef51cee56d3dde41e94db0c99f36260c49143a2c05e85bcfed40e3a8f0edc1fe",
-                "ce83a477ee6d3c583b644b21f51e4fb7eec06d434e9b313c14f17c120d67f10d"
+                "ccbf245bc03dac24b175d50c26dd1b102e55b21c4c1b6b8437d6c15731ec530d",
+                "bae42a50cc693a9fb84fe6925845667529734eff7845e31168df6d33f026cc29",
+                "fd7f20cfa862cbbe8504753f9461588861b49a2b6b55c31c7fb040bc2013f3e6",
+                "9defaac83312b9bfc10be9faceeed328a35985fc551bbca1b3dd9b3117e3508d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1069,7 +1120,10 @@
             "exampleSites": [
                 "allivet.com",
                 "www.allivet.com",
-                "www.litter-robot.com"
+                "www.ernestjones.co.uk",
+                "www.hsamuel.co.uk",
+                "www.hss.com",
+                "www.wildtangent.com"
             ]
         },
         {
@@ -1084,7 +1138,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eea58ed2fb20c04f965ee1f9a4762315e693dec3ab597573dd981888a5904930"
+                "270e61eab952d381bd2183fbcf17fabcb363d72bdd3bfedefea0a8aae089227f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1106,7 +1160,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bcef031ed6d0dad7df418715412a18f7a1fc63575be77bfdbaf822634880f7af"
+                "4941b475d7349e6ea42fae3d0be9d8c1490081b681a16be12f510a7a78bd453b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1114,6 +1168,28 @@
             "exampleSites": [
                 "altitude-sports.com",
                 "www.altitude-sports.com"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/5ded3af4-ef42-11ed-bd68-0e31e3531630\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.eu1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.cz",
+                "www.alza.cz"
             ]
         },
         {
@@ -1146,8 +1222,8 @@
                 "api.uk"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c3a723e1422bb8ea588088de6cf5fe7744d62cb2828aca5147331565b764e9a9"
@@ -1157,7 +1233,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "appliancesdirect.co.uk",
-                "www.appliancesdirect.co.uk",
                 "www.laptopsdirect.co.uk"
             ]
         },
@@ -1206,57 +1281,79 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/script\\/bae6c690-92e1-11eb-b702-f6c634eb685d\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api-bho"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.e.boohoo.com",
-                    "resolved": "api-bho.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "79f4a0e757a4e21fff56b1a884f54e09a894c70e5250328dd314a02f8751c7c6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boohoo.com",
-                "www.boohoo.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/bae6c690-92e1-11eb-b702-f6c634eb685d\\/bundle",
+            "rule": "exponea\\.com\\/webxp\\/projects\\/3a5be8de-6ba4-11eb-8460-3e2ddb228fc3\\/bundle",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-bho"
+                "api.eu1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.e.boohoo.com",
-                    "resolved": "api-bho.exponea.com"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [
-                "d19b789078d04e69f13349ce39bbf4858653ae36b28bd58997a03d5efe65e1f4"
+                "8d9c32bd1b90e115f229295c5077d94ac082f23568152f4409fafc34d4c566aa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "boohoo.com",
-                "www.boohoo.com"
+                "bauhaus.fi",
+                "www.bauhaus.fi"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/script\\/c91f6ae6-92e1-11eb-879a-f6c634eb685d\\/new\\/modifications\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api-bho-boohooman"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.e.boohooman.com",
+                    "resolved": "api-bho-boohooman.exponea.com"
+                }
+            ],
+            "responseHashes": [
+                "09d78322d33d078c3f843f5c8e55e75fe141b74509a4dcbdcac9236fff7b0e40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boohooman.com",
+                "www.boohooman.com"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/c91f6ae6-92e1-11eb-879a-f6c634eb685d\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-bho-boohooman"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.e.boohooman.com",
+                    "resolved": "api-bho-boohooman.exponea.com"
+                }
+            ],
+            "responseHashes": [
+                "9353ff0c4ea29aadb25478ca979b1e8139277f7b7fd716f5da11340f1b9ae4e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boohooman.com",
+                "www.boohooman.com"
             ]
         },
         {
@@ -1271,7 +1368,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6a3be35d81bad98bc705a3a7832fef54248ee949d5c9c5e1d43c6e5ddb2efa62"
+                "2767d919724695d408579379c3dc15279c6ae517d6af3005479c5b01b0a865db"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1301,74 +1398,6 @@
             "exampleSites": [
                 "cheaperthandirt.com",
                 "www.cheaperthandirt.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/def7915a-17e5-11e9-900e-0a580a204109\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b21aedb3ee172a990af9ef53d78d098c407d49fe34ae1ca4a66c0352d302ec6c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cote.co.uk",
-                "www.cote.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/218dee22-8f2c-11ec-83f9-2a4d6392ec09\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a784e8eaa21139452a7811bba3f46185313552fb930f96556aefbc0834070bce"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "craghoppers.com",
-                "www.craghoppers.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/218dee22-8f2c-11ec-83f9-2a4d6392ec09\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "69ace8ff98647ae4d3a653ab54349bd61540cb6250ec3d4ed829fe77daf8d417"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "craghoppers.com",
-                "www.craghoppers.com"
             ]
         },
         {
@@ -1410,7 +1439,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
+                "448afe5c2ded6270e699eeb00d359bcb84adebdf5e9974e4429bc0dd778b90aa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1421,38 +1450,12 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/script\\/e1e7e8da-92d4-11eb-b027-6a5239aabcf4\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api-bho-dorothyperkins"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.e.dorothyperkins.com",
-                    "resolved": "api-bho-dorothyperkins.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "d1d7e13a8eaeae68937bcc73b2c3fe1f06d58152e4828186b6458571faab5777"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dorothyperkins.com",
-                "www.dorothyperkins.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/e1e7e8da-92d4-11eb-b027-6a5239aabcf4\\/bundle",
+            "rule": "exponea\\.com\\/webxp\\/projects\\/32af3b60-df63-11ed-99db-feca6fcda980\\/bundle",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-bho-dorothyperkins"
+                "api-bho-dorothyperkins",
+                "api-bho-wallis"
             ],
             "apis": {},
             "sites": 2,
@@ -1461,17 +1464,21 @@
                 {
                     "original": "api.e.dorothyperkins.com",
                     "resolved": "api-bho-dorothyperkins.exponea.com"
+                },
+                {
+                    "original": "api.e.wallis.co.uk",
+                    "resolved": "api-bho-wallis.exponea.com"
                 }
             ],
             "responseHashes": [
-                "93fea96a965c8237a46d00c5fa5b01e8d351b91f0a33890b2dad17b407c759bf"
+                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dorothyperkins.com",
-                "www.dorothyperkins.com"
+                "www.wallis.co.uk"
             ]
         },
         {
@@ -1534,32 +1541,12 @@
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__exponea_etc__": 0.000006807583648184077
+            },
             "exampleSites": [
                 "eddiebaueroutlet.com",
                 "www.eddiebaueroutlet.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/63c9e2be-b0b2-11ea-b9e3-3af835c8f71c\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3145ea8834327e8bb83c5353d1fd863797cce1ff1d35ecbab5dace84e43e4deb"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ernestjones.co.uk",
-                "www.ernestjones.co.uk"
             ]
         },
         {
@@ -1570,13 +1557,13 @@
                 "api"
             ],
             "apis": {
-                "window.indexedDB": 2
+                "window.indexedDB": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0e4bc48d36049740c33df8de75f5e68b2be9ae87daf9c4f244bd8debf2e82c1b"
+                "71c42774022808c64f3127b3a51a8fcf141f53ce3e0eac7d3b165722d17d50f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1598,7 +1585,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "702510dc4282ee34f258e7a98844f74efd81e15d30ceb63da5ffd45c2fc4ce56"
+                "e536b3883f25546c1c2ebc2adf4fdc1d8ec69a49959fd3fdd36bcfa4a6d6c59b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1609,33 +1596,11 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/178dc424-9ba8-11eb-8921-3a6139411b0f\\/bundle",
+            "rule": "exponea\\.com\\/webxp\\/projects\\/91953024-a777-11eb-9054-7a74f13130f5\\/bundle",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.ftspecialist"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "91844f52e043d4abc320d918f6d74f3694033ac78cf2dd4855858e9baa04fe6d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ftadviser.com",
-                "www.ftadviser.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/257f6bc2-4f78-11eb-80b3-16dcb0591634\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
+                "api.us1"
             ],
             "apis": {},
             "sites": 2,
@@ -1648,74 +1613,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hobbs.com",
-                "www.hobbs.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/77b2271e-6534-11eb-872d-6689d76d50df\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hobbycraft.co.uk",
-                "www.hobbycraft.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/9191200e-b0b2-11ea-ad2a-8afcbfbc1b77\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "853a9bd9d07a78ccc7e8d5c7e0a9359f9f6ec3b6940a5bd96392efa0640e6816"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hsamuel.co.uk",
-                "www.hsamuel.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/7786f4da-a06b-11e8-9b4e-0a580a203c77\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "13553b9d22a07a6370b406b5e8ff04a66d3705799d36e16c911c4681bdaac56a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hss.com",
-                "www.hss.com"
+                "gobrightline.com",
+                "www.gobrightline.com"
             ]
         },
         {
@@ -1741,95 +1640,28 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/c4b25a74-9d02-11eb-a9db-8edf3ba68c81\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7257cef5f55cba6e0098f793e7dbceac914c293e090c955318db0bd59253863c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jparkers.co.uk",
-                "www.jparkers.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/d162c57e-3f1a-11eb-b7db-3a398123897d\\/new\\/modifications\\.min\\.js",
+            "rule": "exponea\\.com\\/webxp\\/script\\/1df202ec-ef0b-11eb-bbc3-463be42152ad\\/new\\/modifications\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "api.us1"
             ],
             "apis": {
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f9758e4ce1082369a358c3f6c197b522fd87d18ef12b425e9f3bab211eb552b4"
+                "b51c586b564fac43fc06a57d979394b2fe4c864e91b11a1dfea977275327c74a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013611924045463826
-            },
-            "exampleSites": [
-                "kfzteile24.de",
-                "www.kfzteile24.de"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/d162c57e-3f1a-11eb-b7db-3a398123897d\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "59427d3a1e5a8305ed84b20980c5326a969aa525590489eb4774f6f3db73cbcb"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kfzteile24.de",
-                "www.kfzteile24.de"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/b59db11e-e4c9-11eb-a9c2-f203e23dca9e\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e8e095764f7deb90e24e4dbbce53aa8350371c6240432df9655b26a328c67077"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kitces.com",
-                "www.kitces.com"
+                "litter-robot.com",
+                "www.litter-robot.com"
             ]
         },
         {
@@ -1844,7 +1676,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "86d642ebebe2df3b19636b2d65262e6664381f47fbd5365b5cdeecdefb6303ac"
+                "c9f5749a490f12abb8e390b1afd64966e3fa2275a9709f855390b5600bee2c36"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1852,120 +1684,6 @@
             "exampleSites": [
                 "litter-robot.com",
                 "www.litter-robot.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/3045931e-69a4-11ec-93bd-7a503d07b36f\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6eb2085f3bea090faea1db2781e537211e3fe7209a8e4306b9081f9f527490eb"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "livingspaces.com",
-                "www.livingspaces.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script-async\\/afdf80c0-8fa4-11ea-bbb7-66ef9e1e82a7\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "mallgroup-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "93e9319a0c8aec22b7fc631981ef15d8344a335168500e2c2345447dba74e1ad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mall.hr",
-                "www.mall.hr"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/afdf80c0-8fa4-11ea-bbb7-66ef9e1e82a7\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mallgroup-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d9adf9e04c702674077bc72841bba1492ace01c5bf663b467a5b3dc89e3c2405"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mall.hr",
-                "www.mall.hr"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script-async\\/f7b273c6-5d2c-11ea-93ea-c66d979392f8\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "mallgroup-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e0a5782eced97bae3e563540f1780b4f06a15000639eaf3309c517b5da331b81"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mall.sk",
-                "www.mall.sk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/f7b273c6-5d2c-11ea-93ea-c66d979392f8\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mallgroup-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "53451c06c15d860e8dbfe20b8d6a78af8e33142ea0251f8b75d246b822df8eab"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mall.sk",
-                "www.mall.sk"
             ]
         },
         {
@@ -2002,7 +1720,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0d36989d2b059de057fb6a4c2cac50c2cc182e29cb9cd5fcd3d5f1213b1bd87c"
+                "b54e792e45fe3302d27ca21e3b256451d6aeb458432c404c66f3d9426480e4e4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2029,7 +1747,7 @@
                 }
             ],
             "responseHashes": [
-                "677a98ca2fff203490447210429c21f85402cf1a343c0fd1a2ca665590ff5b2e"
+                "15936ec9e0a916df45870b767937de3510e99c39b0c5beea8378a132a92c6978"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2056,7 +1774,7 @@
                 }
             ],
             "responseHashes": [
-                "8f31d9b82b83288142b4edadeda734bac21568cbd30b7b6158030a595bee3f07"
+                "f85c72cfe14e8db16a7f5633872b25d97a8d29fb9aac0eb6e261bf755969348c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2064,28 +1782,6 @@
             "exampleSites": [
                 "michiganlottery.com",
                 "www.michiganlottery.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/6e86ec90-a53b-11ec-82c9-f210506d1cf3\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7bb0a7127a7f9e8a77a3925c8358d1cc23e1549ba2d1758a32bc170835d5e0f8"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mintvelvet.co.uk",
-                "www.mintvelvet.co.uk"
             ]
         },
         {
@@ -2111,253 +1807,6 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/0a41d4a8-abfe-11ea-9e05-4ab38004f506\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "custom-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "analytics-api.musicmagpie.co.uk",
-                    "resolved": "custom-api.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "10930796add6e106247ed37a47d0a32d8ba386c1b28f58ce1e8ed62a019d720f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "musicmagpie.co.uk",
-                "www.musicmagpie.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/393ef2ce-c701-11e8-9f34-0a580a204b4a\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "custom-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "exp-api.my-jewellery.com",
-                    "resolved": "custom-api.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "b0eea627b6a0bbd3fdb9d0166cb2e64756f65026fe848f60c2a91c47595abccd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "my-jewellery.com",
-                "www.my-jewellery.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/393ef2ce-c701-11e8-9f34-0a580a204b4a\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "custom-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "exp-api.my-jewellery.com",
-                    "resolved": "custom-api.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "c61a2f82a4a1b797ce9b8a4b988790fc3f5cc2fc149d9ee7b3784867abf554e9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "my-jewellery.com",
-                "www.my-jewellery.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/e7ecdd48-60ed-11e7-81eb-141877340e97\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nay-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2e0484c0ad0bfa96b2dbbaf07ffd9512663a55d77e1b855a74ef1b02170b106d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nay.sk",
-                "www.nay.sk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/integrations\\/adform\\/webhook",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nay-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "__exponea_etc__": 0.000013611924045463826
-            },
-            "exampleSites": [
-                "nay.sk",
-                "www.nay.sk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/5851ab46-b9d8-11e9-beef-92ec88286fd6\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api-o2-cz"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api-exponea.o2.cz",
-                    "resolved": "api-o2-cz.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "4b08a9ac983815fd77b6bac59ec4dd0aee7773be3e9ecddcfa5da241ff509096"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "o2.cz",
-                "www.o2.cz"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/5851ab46-b9d8-11e9-beef-92ec88286fd6\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-o2-cz"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api-exponea.o2.cz",
-                    "resolved": "api-o2-cz.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "66362a68d43897cabe2d126ac32f28e37fe56b172e57de891cb80be18bc55c76"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "o2.cz",
-                "www.o2.cz"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/bac44d98-d736-11ea-8d3a-dada637ed2e7\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f113a6f4e271818aa0ac8b278bd84d552ce4d10122590faacfd8fc07ca3a4bc6"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oliverbonas.com",
-                "www.oliverbonas.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/5204680a-daae-11ed-87f2-1267abd258e9\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onthebeach.co.uk",
-                "www.onthebeach.co.uk"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/4b669990-4f79-11eb-9ec6-16dcb0591634\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "phase-eight.com",
-                "www.phase-eight.com"
-            ]
-        },
-        {
             "rule": "exponea\\.com\\/webxp\\/projects\\/70793ed4-a764-11eb-a388-92825d567adf\\/bundle",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2369,7 +1818,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9821ce3ab06e7cdb71623d8507557bea57f96cfdaff21cb4c7f4729a2e1fb807"
+                "1eb3958f688879746eb9439721271a24089bd3f9c7436aacbe67e601d2765d00"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2391,7 +1840,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c36cd2c8ece2d1da5665351f1640f16f2dd50bd73e93fa7cd0d0aa3a30e13731"
+                "7bbc2b46f64753de4e0b41f88795f7e1edd38c4e59f388ebaa95b95f0f412eef"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2402,11 +1851,11 @@
             ]
         },
         {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/8614d4b8-72f9-11ec-839b-7e7c51594c2c\\/bundle",
+            "rule": "exponea\\.com\\/webxp\\/projects\\/979a1692-9cb7-11ed-bc40-5ef7339fc687\\/bundle",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.us1"
+                "api.uk"
             ],
             "apis": {},
             "sites": 2,
@@ -2419,98 +1868,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raymourflanigan.com",
-                "www.raymourflanigan.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/51d1aa44-bc65-11ed-a273-6aa4791ef9f3\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "reebok.com",
-                "www.reebok.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/c5b1f71a-8f2b-11ec-8a62-2a4d6392ec09\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7da4353b11c6b5be4584f393497d3a96cd94b2eb145c8c09d533441b5d3c1f30"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "regatta.com",
-                "www.regatta.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/c5b1f71a-8f2b-11ec-8a62-2a4d6392ec09\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ceb083d5b8f6fae6e9b3cb877fc2a997b5d634151956a083f5731e4178d8cf4c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "regatta.com",
-                "www.regatta.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/1bc1d1aa-9bf8-11ed-883d-3a06796770a2\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "bba32127a316aa51994a2d46dba849416497feca11e884d45a186bbd465d4774"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schweppes.de",
-                "www.schweppes.de"
+                "relionbattery.com",
+                "www.relionbattery.com"
             ]
         },
         {
@@ -2525,7 +1884,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c247aae2e9ca9f5b5d07185400203bd39bf10f608dc2863da5264be5d6acbae4"
+                "ce99d8e8150db453074e531983f4bcdaa3d411ee6d9a8566016a1fc7eae76a36"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2552,11 +1911,33 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__exponea_etc__": 0.000013611924045463826
+                "__exponea_etc__": 0.000013615167296368154
             },
             "exampleSites": [
                 "scrapbook.com",
                 "www.scrapbook.com"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/5ecc4afa-dabd-11eb-9bcf-a2a41a4e8acb\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "167960b882660df7ee1538f0e8672d8c0da0841175c8f381d43890149ccd423c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheetmusicplus.com",
+                "www.sheetmusicplus.com"
             ]
         },
         {
@@ -2579,28 +1960,6 @@
             "exampleSites": [
                 "sheetmusicdirect.com",
                 "www.sheetmusicdirect.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/5ecc4afa-dabd-11eb-9bcf-a2a41a4e8acb\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0794eb5fc8fe671b15e87200d3c8fcf504e677b9d39c59b6f744b17683bd2765"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheetmusicplus.com",
-                "www.sheetmusicplus.com"
             ]
         },
         {
@@ -2637,7 +1996,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1839aa4ef0b28811257b1caa2f5918b8f084fed068c51e56d2458638bcb3d350"
+                "f363b443d00a85e37195c1060c11344e7797670bc3b85bc7ab401bb70e3695c2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2645,99 +2004,6 @@
             "exampleSites": [
                 "superdry.com",
                 "www.superdry.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/e9c1b65c-6bb6-11eb-863b-faf28002051e\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tpl-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api-exponea.t-mobile.pl",
-                    "resolved": "tpl-api.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "5b85cca69734781304d3faef1f822d6d7bba8edea7977a3ac368f409d22d7200"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-mobile.pl",
-                "www.t-mobile.pl"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/8515b1a2-9a60-11ec-b7f7-22007208bd1d\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "653b7593b6e9733b0c6300ae0bd383971bcf04615a507de6527a007331afda77"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thelasthunt.com",
-                "www.thelasthunt.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/56cdbf52-d2f4-11ec-b01b-de46655720f1\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.us1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9b478a3de84a133aaa685e34d02f5d14bc234a17bc478dc1412b5743010d1a42"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepaperstore.com",
-                "www.thepaperstore.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/fe1bde44-7c75-11ed-b8d7-3ac1b7875579\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tommeetippee.com",
-                "www.tommeetippee.com"
             ]
         },
         {
@@ -2760,33 +2026,6 @@
             "exampleSites": [
                 "tractorsupplyrx.com",
                 "www.tractorsupplyrx.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/32af3b60-df63-11ed-99db-feca6fcda980\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-bho-wallis"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.e.wallis.co.uk",
-                    "resolved": "api-bho-wallis.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wallis.co.uk",
-                "www.wallis.co.uk"
             ]
         },
         {
@@ -2829,30 +2068,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "webuyanycar.com",
+                "webuyanycarusa.com",
                 "www.webuyanycar.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/9884a730-4f79-11eb-9da4-ea6074831d5a\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whistles.com",
-                "www.whistles.com"
             ]
         },
         {
@@ -2867,7 +2084,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "221c4d4200f3a16abc3024a4b6e273bfcb26621cca4372551e515f6fb78ec57e"
+                "6baf3425dc1f06df025381a3ba519842b358b3370180d59e81bfde661305d29a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2889,7 +2106,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "007eef6a8f67e9be6085c93a4708ef434a26befd458d82b3c38edc3fd6ba9b13"
+                "fa2b2198336eb0d4b889be4fa68e84fb2fb28cee1e4f81d71e0a814fdd750ff6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2898,90 +2115,62 @@
                 "wob.com",
                 "www.wob.com"
             ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/projects\\/3fc6372e-549c-11ed-82a1-ba52c9eca5d5\\/bundle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "custom-eng-api-0.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "analytics.yeovalley.co.uk",
-                    "resolved": "custom-eng-api-0.uk.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "ab30f84e46a8b11bb67a479056a7475f947e501894b8c8528e308f262acabc4d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yeovalley.co.uk",
-                "www.yeovalley.co.uk"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00122,
+    "cookies": 0.0011,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5790322580645161
+            "prevalence": 0.6643109540636042
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.12903225806451613
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.07741935483870968
+            "prevalence": 0.11484098939929328
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.037096774193548385
+            "prevalence": 0.03356890459363958
         },
         {
             "domain": "btttag.com",
-            "prevalence": 0.03387096774193549
-        },
-        {
-            "domain": "trackjs.com",
-            "prevalence": 0.025806451612903226
-        },
-        {
-            "domain": "noibu.com",
-            "prevalence": 0.024193548387096774
-        },
-        {
-            "domain": "bigcommerce.com",
-            "prevalence": 0.02258064516129032
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.01129032258064516
+            "prevalence": 0.026501766784452298
         },
         {
             "domain": "azure.com",
-            "prevalence": 0.00967741935483871
+            "prevalence": 0.019434628975265017
+        },
+        {
+            "domain": "trackjs.com",
+            "prevalence": 0.019434628975265017
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.0176678445229682
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.015901060070671377
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.014134275618374558
+        },
+        {
+            "domain": "worldota.net",
+            "prevalence": 0.0088339222614841
         }
     ],
     "types": {
-        "Script": 129,
-        "Fetch": 424,
-        "Other": 12,
-        "Image": 2
+        "Script": 131,
+        "Fetch": 415,
+        "Other": 11
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e3.googledomains.com",
         "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e4.googledomains.com"
     ]
 }

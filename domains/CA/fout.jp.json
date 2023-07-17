@@ -7,41 +7,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "sync.dmp",
         "js",
         "sync"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "fout\\.jp\\/serve\\/",
-            "cookies": 0.000502,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sync.dmp"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vmware.com",
-                "docs.vmware.com",
-                "kb.vmware.com",
-                "www.ana.co.jp",
-                "www.vmware.com"
-            ]
-        },
         {
             "rule": "fout\\.jp\\/segmentation\\.js",
             "cookies": 0,
@@ -68,17 +42,12 @@
         },
         {
             "rule": "fout\\.jp\\/beacon\\.html",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "js"
             ],
-            "apis": {
-                "Document.cookie getter": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie setter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -86,28 +55,6 @@
                 "31a9529db59aaa77b2af5f3a786f3f8c834ed4848636b04a29435db0211c9254"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hinative.com",
-                "www.ana.co.jp"
-            ]
-        },
-        {
-            "rule": "fout\\.jp\\/report",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sync"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,42 +83,64 @@
                 "hinative.com",
                 "www.ana.co.jp"
             ]
+        },
+        {
+            "rule": "fout\\.jp\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hinative.com",
+                "www.ana.co.jp"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000603,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "demdex.net",
-            "prevalence": 0.625
-        },
-        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.125
+            "prevalence": 0.25
         },
         {
             "domain": "first party",
-            "prevalence": 0.125
+            "prevalence": 0.25
+        },
+        {
+            "domain": "demdex.net",
+            "prevalence": 0.25
         },
         {
             "domain": "yjtag.jp",
-            "prevalence": 0.125
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Image": 9,
         "Script": 2,
-        "Document": 2
+        "Document": 2,
+        "Image": 4
     },
     "nameservers": [
-        "use1.akam.net",
-        "asia1.akam.net",
-        "use9.akam.net",
-        "ns1-162.akam.net",
         "eur2.akam.net",
-        "ns1-28.akam.net",
+        "use1.akam.net",
+        "usw1.akam.net",
         "use5.akam.net",
-        "usw1.akam.net"
+        "use9.akam.net",
+        "asia1.akam.net",
+        "ns1-162.akam.net",
+        "ns1-28.akam.net"
     ]
 }

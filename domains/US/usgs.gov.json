@@ -7,15 +7,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
+        "dashboard.waterdata",
         "gis1",
         "waterwatch"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "usgs\\.gov\\/service\\/cwis\\/1\\.0\\/odata\\/CurrentConditions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dashboard.waterdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e84ed170d8760c24da441aae092bb6c921e2e332dcd31345a1cf57a22e7a67f7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ca.gov",
+                "cww.water.ca.gov"
+            ]
+        },
         {
             "rule": "usgs\\.gov\\/arcgis\\/rest\\/services\\/padus3\\/Manager_Name\\/MapServer\\/legend",
             "cookies": 0,
@@ -28,7 +51,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bbadbb60aff59ac3c619c2417dba6f6e30520c070b76c9751f20e97581b9f2cc"
+                "1b2f83da11a597ef5c8d539af22983db509735fed7a2f66ae03eafc3ee3e19d2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,7 +73,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9f50976de2df1fb2abbf4e6ffca6273f7ef1a83a6c733e5ef4cb267b1e98fe2c"
+                "46236acc5a4ae5234f2e091b4a2aceb5453b8f4bf198dca6b670bd3fd1ee042d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -71,11 +94,12 @@
         }
     ],
     "types": {
+        "XHR": 2,
         "Script": 2,
         "Image": 2
     },
     "nameservers": [
-        "chin.ns.cloudflare.com",
-        "ram.ns.cloudflare.com"
+        "ram.ns.cloudflare.com",
+        "chin.ns.cloudflare.com"
     ]
 }

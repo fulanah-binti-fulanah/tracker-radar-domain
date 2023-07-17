@@ -4,36 +4,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "customer"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "cludo\\.com\\/css\\/375\\/5886\\/cludo-search\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "customer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "d966c3a04388b25d459519e5cf83656b4250a4d2c4890077e2a37796dc7c6549"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "avogel-company.ch",
-                "www.avogel.ch"
-            ]
-        },
         {
             "rule": "cludo\\.com\\/scripts\\/bundles\\/search-script\\.min\\.js",
             "cookies": 0,
@@ -57,9 +35,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "avogel.ch",
-                "www.avogel-company.ch",
                 "www.avogel.ch",
+                "www.pluralsight.com",
                 "www.ratp.fr"
+            ]
+        },
+        {
+            "rule": "cludo\\.com\\/scripts\\/bundles\\/search-script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "customer"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "00f7b1c95d34ae707d0b5a46f93e3d922c2c2b6b9b39deb0c8526b3ca0d8ba1d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trendmicro.com",
+                "www.visitscotland.com"
             ]
         }
     ],
@@ -69,21 +73,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.8181818181818182
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.2
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Stylesheet": 2,
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
-        "ns-676.awsdns-20.net",
-        "ns-399.awsdns-49.com",
+        "ns-1467.awsdns-55.org",
         "ns-1957.awsdns-52.co.uk",
-        "ns-1467.awsdns-55.org"
+        "ns-399.awsdns-49.com",
+        "ns-676.awsdns-20.net"
     ]
 }

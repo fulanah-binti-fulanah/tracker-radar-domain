@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "segments",
+        "redir",
         "sync"
     ],
     "cnames": [],
@@ -29,7 +30,9 @@
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "42e2bdfb6f2641ab97b6a586c31e591246a5240bc86e504d6ec02c616aeb8e4e"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -40,57 +43,84 @@
             ]
         },
         {
+            "rule": "adap\\.tv\\/redir\\/javascript\\/lightintegration\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "redir"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e15f65bcef05f2ea9f54e051da9bf7e6fc9eb00a669905c9ed33f4fd7ba26f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltn.com.tw",
+                "www.daily.co.jp"
+            ]
+        },
+        {
             "rule": "adap\\.tv\\/demdex_user_sync",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "sync"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000476,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "afr.com",
                 "www.afr.com",
+                "www.fox.com",
                 "www.foxbusiness.com",
                 "www.foxnews.com",
-                "www.searshomeservices.com",
-                "www.searspartsdirect.com",
-                "www.vox.com"
+                "www.shopyourway.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "demdex.net",
-            "prevalence": 0.5263157894736842
+            "prevalence": 0.5
         },
         {
             "domain": "crsspxl.com",
-            "prevalence": 0.42105263157894735
+            "prevalence": 0.35714285714285715
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.07142857142857142
         },
         {
             "domain": "first party",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Image": 10
+        "Image": 9,
+        "Script": 2
     },
     "nameservers": [
-        "ns-578.awsdns-08.net",
-        "ns-1346.awsdns-40.org",
         "ns-1719.awsdns-22.co.uk",
+        "ns-1346.awsdns-40.org",
+        "ns-578.awsdns-08.net",
         "ns-350.awsdns-43.com"
     ]
 }

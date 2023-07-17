@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,10 +28,10 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "99dba230b7d79e9f8dae923b099c57cc863991618fa9d24e706de82ea51a9cee"
+                "a65d3cc3a0cb41b6ace19e3221d429895ebd8824892c6ccec27f46d1d96b5910"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -40,6 +41,48 @@
                 "reverb.com",
                 "webflow.com"
             ]
+        },
+        {
+            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/ef88dab9-ce32-4cde-a57e-41291c678b63\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cb2a91840ee8e696a3dcbe36749ca3352396c03fb4cc9306c9dcbe248816e7de"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com"
+            ]
+        },
+        {
+            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/ef88dab9-ce32-4cde-a57e-41291c678b63\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com"
+            ]
         }
     ],
     "categories": [],
@@ -48,19 +91,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
-        },
-        {
-            "domain": "nyt.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.8235294117647058
         },
         {
             "domain": "reverb-assets.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.11764705882352941
+        },
+        {
+            "domain": "userleap.com",
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 3,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1076.awsdns-06.org",

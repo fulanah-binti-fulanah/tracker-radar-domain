@@ -9,22 +9,34 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000374,
-    "sites": 55,
+    "prevalence": 0.000327,
+    "sites": 48,
     "subdomains": [
+        "7zat78927l.execute-api",
         "rkkck31tec.execute-api",
-        "sqs",
         "fraaws-public-slb-ec53ddffde80b088.elb",
+        "n3k5k32e00.execute-api",
         "cognito-identity",
         "3mgwwwklgg.execute-api",
         "xrw5bc93v0.execute-api",
+        "2e8mp31zr0.execute-api",
+        "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb",
+        "dataplane.rum",
+        "v957ap1x34.execute-api",
         "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
         "marxy-loadb-1cliaiz2fmbra-ebfbbb46c39c8b69.elb",
-        "sdx7nmjqg7.execute-api",
-        "d-27lyv9kpda.execute-api",
-        "3qas14kvni.execute-api"
+        "rd-fk-k8s01-a-internet-4cceb2b5b606b4d9.elb",
+        "d-27lyv9kpda.execute-api"
     ],
     "cnames": [
+        {
+            "original": "a.staging.tech.esquire.de",
+            "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+        },
+        {
+            "original": "a.staging.tech.harpersbazaar.de",
+            "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+        },
         {
             "original": "api.cloud.tui.com",
             "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
@@ -36,10 +48,36 @@
         {
             "original": "mg-marxy.mall.cz",
             "resolved": "marxy-loadb-1cliaiz2fmbra-ebfbbb46c39c8b69.elb.eu-central-1.amazonaws.com"
+        },
+        {
+            "original": "ncsi-fk.niu.com",
+            "resolved": "rd-fk-k8s01-a-internet-4cceb2b5b606b4d9.elb.eu-central-1.amazonaws.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/thumbnailer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "7zat78927l.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prusa3d.com",
+                "blog.prusa3d.com"
+            ]
+        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/v1\\/beacon",
             "cookies": 0,
@@ -52,44 +90,20 @@
             "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "c7340acb8c95fa3c1f8d927efe0af59a164b34b62188d95332eb5bfb9e54eae0",
-                "f63fc09b24f846e9dcef550dd357287957a79102705e8c631ee6bc3c5647d58c",
-                "8469a75f71a420e8ee3a088a173d51fb0c1340a4b039e7f3ff88b4d965abf7ac",
-                "f0bb0132f5fffa20f98bb29d6ccd402e563c134f5fb0a2f09cdc215ac50d5952"
+                "950b3c2e5acaf061873e114e77443e9676109c47dc1b54241c4790df20f8abeb",
+                "02efa4b0b4e156a08f9c176747b9f6905dadbb7626b7aa36f6d438cc7ffc30db",
+                "d2239af2633cf0c3a1c0e06a128f898ed683de93c8baac098787d6ff9be9df56",
+                "b1089c53e633c3dc496b9de7c5d808247c4db91ae27c7fe34e906c22c683cb95"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dundle.com",
-                "www.cameranu.nl",
                 "www.ekster.com",
-                "www.loopearplugs.com",
-                "www.simyo.nl"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/930473608394\\/adtechanalytics-poc-7ihBT4gLcN-A2kRy",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sqs"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "5a9ea28aff585450ad8a03606cbe95eb739089c9e5d15c1a0cfe2a9d479aec7a",
-                "8d23df5457342f980bd7a1cf33e7314ad1657c1a7f9222ec8db239837e5d837f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvn.pl",
-                "dziendobry.tvn.pl",
-                "tvn24.pl"
+                "www.emanualonline.com",
+                "www.kurufootwear.com",
+                "www.praxis.nl"
             ]
         },
         {
@@ -109,9 +123,9 @@
                 }
             ],
             "responseHashes": [
-                "daab8f8249b285f2b3604f3107e7ea927a2a30b661ab0469f8231b010b8c375e",
-                "396f456bdc468b22661957319ed6547b4e476c9bb3b1ea1d6784bd913495abab",
-                "0cd16267490e5c31b8e1b0df80c4d317c986cd14b6fbdc230d1d731612f894c5"
+                "ac11a54e453e72459dbb5061f7fe839e4d634ad1479e07f9049da7c22fcde2c1",
+                "5d4c9838d2ecf13d8b4b7dc225e7fe70e94a6389da82ab902e6674d57d4166cf",
+                "df891b23478ca899a9d439cbe6eff2c769338e3137d5d0dc70196edecfb55e80"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,6 +138,28 @@
             ]
         },
         {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/userinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "n3k5k32e00.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6512f368133af534f1c8f8f0e83e50ea90034235c4fd29397cde196e977743ab"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paessler.com",
+                "www.paessler.com"
+            ]
+        },
+        {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -131,22 +167,23 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pvcvoordeel.nl",
                 "sensiseeds.com",
+                "www.drogist.nl",
+                "www.essent.nl",
                 "www.medpets.de",
                 "www.medpets.nl",
                 "www.nationsphotolab.com",
                 "www.petsplace.nl",
-                "www.shadestation.co.uk",
                 "www.shogun.nl",
+                "www.toolnation.nl",
                 "www.vetostore.com"
             ]
         },
@@ -163,29 +200,29 @@
             "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "5645498d13e7a1f951f35edd0decc6eb836de73e2e6d109e51145b4b0e8e3ae4",
-                "b65584bbaf36645cef5aa62bb10b83bfe1798fcbab4179be408eec74114ee4b3",
-                "d0154c81e0957ba38bb05535f2fcea321bbedd1e92c703aa73dd888732012c4d",
-                "34a8535ea842dd2ac7c81c2b24628c48909cf68b075719b492ea0a5231d5402a",
-                "e454db1cce4a12df26f83da3ef29e97ae219bec4f019cb0085522c0ad8f5728e",
-                "4988cb670a1b632157e5f55285a4a12e07d9c6096ba15f27cc461f9998a64f77",
-                "271fe6a68736dd43f869b019309e01a0c0b86636b287e32a7b68ac17a8b86196",
-                "311331e1da203d11b2ce9647f8f3e3ef5561b8eb6778849e528d497d1059db73",
-                "019bfc1d3a6827c823af75f59219385f2ce6c34ebcfa41d08614a6bd8df9c33d"
+                "b011306bb173cb5edd64d9c3b54c4462ceec01020083097909f8c1cdd3304911",
+                "5dbb03d5b18746ea7c6b80815fc980dab3beb48d9a9632e3f95f9e92eafc1a44",
+                "759c5fd4b2c630a4aafa71fc6c6547e259d4c0702c0f9e1b7cd3418e14f0a155",
+                "fa0f7a30e744f0793cb326cf9b828cfa0890b4394de8430e404e18015d3c8b29",
+                "ae023ac2a1568d232acc7679d5aa594e176a4cda37828f8de6eb51ec006c2e86",
+                "bf2fdcfb239a08a2a8b02e4cb6140adb496291e42cfac316f49039dd4351b820",
+                "216d557d7c3f56bbbecfcf9a0d3e124bdb3b2e85ff45dced27190616bf6d3b11",
+                "bbd3033cba783c31b45d1fbd63d8cf847588f6a65997574df460cd322d3e0920",
+                "442502b22ef9796c416d7f18062baa8567fd7230ed57ea94941bbc144e2e0c2a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pvcvoordeel.nl",
                 "sensiseeds.com",
+                "www.drogist.nl",
                 "www.medpets.de",
                 "www.medpets.nl",
                 "www.mondoconv.it",
                 "www.nationsphotolab.com",
                 "www.petsplace.nl",
-                "www.shadestation.co.uk",
                 "www.shogun.nl",
+                "www.toolnation.nl",
                 "www.vetostore.com"
             ]
         },
@@ -200,15 +237,131 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "c62acbd64e08903725106451d5916e9f5902ece6cbd5babf7c3820eb4bdfa981"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "der-postillon.com",
                 "www.der-postillon.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "2e8mp31zr0.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutschebankpark.de",
+                "www.deutschebankpark.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/g\\/collect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "a.staging.tech.esquire.de",
+                    "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+                },
+                {
+                    "original": "a.staging.tech.harpersbazaar.de",
+                    "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000034037918240920386,
+                "lotame_domain_check": 0.000027230334592736308
+            },
+            "exampleSites": [
+                "esquire.de",
+                "www.harpersbazaar.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ceadae9c009b5dd688bb0de186b269f2163409b6881f0748914ddaca1ce5908d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "essent.nl",
+                "www.essent.nl"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/appmonitors\\/36faac17-be19-4c55-ab1e-8e264b83f40b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dataplane.rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "essent.nl",
+                "www.essent.nl"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/resize\\/s3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v957ap1x34.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "interaquaristik.de",
+                "www.interaquaristik.de"
             ]
         },
         {
@@ -281,27 +434,30 @@
             ]
         },
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/prod\\/api\\/FlightOffers",
+            "rule": "eu-central-1\\.amazonaws\\.com\\/sat\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sdx7nmjqg7.execute-api"
+                "rd-fk-k8s01-a-internet-4cceb2b5b606b4d9.elb"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c7b2530de0420b3f995ae9082575047c178e4a23f3ebb912a7cb4c7c38e78524",
-                "f9691f94a73ce8c7f09ac670cd2259c941f3061451916a62397ee2a832223f5a"
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ncsi-fk.niu.com",
+                    "resolved": "rd-fk-k8s01-a-internet-4cceb2b5b606b4d9.elb.eu-central-1.amazonaws.com"
+                }
             ],
-            "type": "Fetch",
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tui.nl",
-                "www.tui.nl",
-                "www.tuifly.be"
+                "niu.com",
+                "www.niu.com"
             ]
         },
         {
@@ -325,7 +481,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tui.com",
+                "tuifly.com",
                 "www.tui.com"
             ]
         },
@@ -352,12 +508,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tui.com",
+                "tuifly.com",
                 "www.tui.com"
             ]
         },
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/hotel-best-offer\\/current\\/search\\/TUICOM\\/786694",
+            "rule": "eu-central-1\\.amazonaws\\.com\\/hotel-best-offer\\/current\\/search\\/TUICOM\\/1263463",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -382,7 +538,7 @@
             ]
         },
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/hotel-best-offer\\/current\\/search\\/TUICOM\\/786694",
+            "rule": "eu-central-1\\.amazonaws\\.com\\/hotel-best-offer\\/current\\/search\\/TUICOM\\/1263463",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -398,7 +554,7 @@
                 }
             ],
             "responseHashes": [
-                "f74a639ee844bb0c7e7c472d158e7a1200075a560b8976f1233a41ec1d98aeba"
+                "1bcdd4bd2618c752974ff60fb5aed5a92ea80d0dba6bfa3397d919e093a2347c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -407,91 +563,71 @@
                 "tui.com",
                 "www.tui.com"
             ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/prod\\/clid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3qas14kvni.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a74ca7b2c6d663aee6c1338062d79e15bac91e0108bd4185ac8693b38f831894"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vodafone.es",
-                "www.vodafone.es"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000544,
+    "cookies": 0.0000613,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4157303370786517
+            "prevalence": 0.41379310344827586
         },
         {
             "domain": "sooqr.com",
-            "prevalence": 0.2696629213483146
+            "prevalence": 0.20689655172413793
         },
         {
             "domain": "tripcdn.com",
-            "prevalence": 0.06741573033707865
+            "prevalence": 0.06896551724137931
         },
         {
-            "domain": "shopify.com",
-            "prevalence": 0.06741573033707865
+            "domain": "googletagmanager.com",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "unpkg.com",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "plentymarkets.com",
+            "prevalence": 0.034482758620689655
+        },
+        {
+            "domain": "trengo.eu",
+            "prevalence": 0.022988505747126436
         },
         {
             "domain": "steadycdn.com",
-            "prevalence": 0.033707865168539325
+            "prevalence": 0.022988505747126436
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.033707865168539325
+            "prevalence": 0.022988505747126436
         },
         {
-            "domain": "d5yoctgpv4cpx.cloudfront.net",
-            "prevalence": 0.02247191011235955
-        },
-        {
-            "domain": "figpii.com",
-            "prevalence": 0.02247191011235955
-        },
-        {
-            "domain": "noibu.com",
-            "prevalence": 0.02247191011235955
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.02247191011235955
+            "domain": "niucache.com",
+            "prevalence": 0.022988505747126436
         }
     ],
     "types": {
+        "Image": 6,
         "Fetch": 15,
         "XHR": 20,
-        "Preflight": 15,
-        "Document": 2
+        "Preflight": 16,
+        "Document": 2,
+        "WebSocket": 2
     },
     "nameservers": [
-        "ns2.amzndns.com",
-        "ns2.amzndns.co.uk",
-        "ns2.amzndns.org",
-        "ns1.amzndns.net",
-        "ns1.amzndns.org",
         "ns2.amzndns.net",
         "ns1.amzndns.com",
+        "ns1.amzndns.net",
+        "ns2.amzndns.com",
+        "ns2.amzndns.org",
+        "ns1.amzndns.org",
+        "ns2.amzndns.co.uk",
         "ns1.amzndns.co.uk"
     ]
 }

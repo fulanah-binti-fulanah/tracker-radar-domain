@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000749,
-    "sites": 11,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
         "direct",
         "direct-collect"
@@ -21,8 +21,8 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -34,7 +34,10 @@
                 "skims.com",
                 "www.allbirds.com",
                 "www.carters.com",
-                "www.nespresso.com"
+                "www.glassesusa.com",
+                "www.nespresso.com",
+                "www.primary.com",
+                "www.rhone.com"
             ]
         },
         {
@@ -45,13 +48,14 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "96243ba5da7134e4d03ac99ede767c8fc09f279c7fbbff3484e0542f9ddf88d8",
-                "33eccfe4072425708abe992635f92fa2f79d3f60cc6bdd1afc7c6020e622358c",
-                "9ad243e6f7ca809d9288734945741109d5cc2e9178af22235227c5e9de4ddc86"
+                "87056198b2fa32458445b7a9c63962afd67ce5eb5076f445c164ddcfacb849fe",
+                "b87e0ce79d35d2b0a981e644b5eafd2cfb0d2fdd3672a290af0c11acb34e364e",
+                "7c2c4ec48994fff5adf1240561bb02b128a81bee6b87c35ea396f58b6c88e634",
+                "838e1293884eabdf5c0f959e779ffd21b85e77230f2f6f3860aec8e6adef10db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -61,6 +65,27 @@
                 "securelogin.synchronybank.com",
                 "skims.com",
                 "www.allbirds.com",
+                "www.carters.com",
+                "www.glassesusa.com"
+            ]
+        },
+        {
+            "rule": "dy-api\\.com\\/v2\\/collect\\/user\\/engagement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct-collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carters.com",
                 "www.carters.com"
             ]
         },
@@ -87,26 +112,6 @@
             ]
         },
         {
-            "rule": "dy-api\\.com\\/v2\\/collect\\/user\\/engagement",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "direct-collect"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carters.com",
-                "www.carters.com"
-            ]
-        },
-        {
             "rule": "dy-api\\.com\\/v2\\/serve\\/user\\/choose",
             "cookies": 0,
             "fingerprinting": 0,
@@ -114,18 +119,22 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "403acd2e1fa1283305b5afe6d2e7384f2a3ea4d680b2e9ba07ac6296b44bd7cc"
+                "12aec170e2841d0f9155eed9c032552699159b911814e51bd2f17612a44bdf77",
+                "40d3fecd3c5ba4cac2fbd99a75f527dfdc69c759b98193c1f37b0680db5e81b3",
+                "7629d5bd3345a090bf66a5c218e50d5d92a2abda2d4ed20b6ceb28f11cb73c3a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nespresso.com",
-                "www.nespresso.com"
+                "www.nespresso.com",
+                "www.primary.com",
+                "www.rhone.com"
             ]
         }
     ],
@@ -135,25 +144,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5185185185185185
+            "prevalence": 0.5588235294117647
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.25925925925925924
+            "prevalence": 0.20588235294117646
         },
         {
             "domain": "yottaa.net",
-            "prevalence": 0.14814814814814814
+            "prevalence": 0.17647058823529413
         },
         {
             "domain": "trackjs.com",
-            "prevalence": 0.07407407407407407
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Preflight": 8,
-        "XHR": 7,
-        "Fetch": 2
+        "Preflight": 11,
+        "XHR": 8,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-687.awsdns-21.net",

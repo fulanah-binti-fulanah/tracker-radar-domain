@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "t"
@@ -26,33 +26,6 @@
     ],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "wayfair\\.map\\.fastly\\.net\\/b\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "t.wayfair.com",
-                    "resolved": "t.wayfair.map.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "695c89d918186f814b304e3e0f8bff5928df9bbb5c8afa277f1dfef9efaeca86"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wayfair.com",
-                "www.wayfair.com"
-            ]
-        },
         {
             "rule": "wayfair\\.map\\.fastly\\.net\\/events\\/single",
             "cookies": 0,
@@ -94,10 +67,64 @@
                     "resolved": "t.wayfair.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "36486f6f8ea9c0ede9e0b7fa48630f2a837c376efa25adc78efac2a0a2068665"
-            ],
+            "responseHashes": [],
             "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wayfair.com",
+                "www.wayfair.com"
+            ]
+        },
+        {
+            "rule": "wayfair\\.map\\.fastly\\.net\\/b\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "t.wayfair.com",
+                    "resolved": "t.wayfair.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "695c89d918186f814b304e3e0f8bff5928df9bbb5c8afa277f1dfef9efaeca86"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00020126798832645668
+            },
+            "exampleSites": [
+                "wayfair.com",
+                "www.wayfair.com"
+            ]
+        },
+        {
+            "rule": "wayfair\\.map\\.fastly\\.net\\/imp\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "t.wayfair.com",
+                    "resolved": "t.wayfair.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "695c89d918186f814b304e3e0f8bff5928df9bbb5c8afa277f1dfef9efaeca86"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -117,17 +144,22 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "wfcdn.com",
-            "prevalence": 1
+            "prevalence": 0.994413407821229
+        },
+        {
+            "domain": "adnxs.com",
+            "prevalence": 0.00558659217877095
         }
     ],
     "types": {
-        "XHR": 2,
         "Preflight": 2,
-        "Ping": 2
+        "Ping": 2,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": []
 }

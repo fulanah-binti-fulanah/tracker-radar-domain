@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
@@ -13,11 +13,13 @@
         {
             "rule": "superonclick\\.com\\/script\\/native_render\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7965b4334f08b3c398843d721ab3b5535461f4183ec6bb0923d1ae092b9cfd51"
@@ -27,58 +29,48 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "filmpalast.to",
-                "fulldp.co",
-                "www.liveomg.com",
-                "www45.liveomg.com"
+                "www.3movs.com"
             ]
         },
         {
             "rule": "superonclick\\.com\\/script\\/native_server\\.js",
-            "cookies": 0.000301,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
-                "Date.prototype.getTime": 3,
-                "window.localStorage": 3,
-                "Document.cookie setter": 3
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e282545f9f7c4117db91f8a2c33e5a1dad31f3c6edbe74b9776c1f8b85c166bd"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "adcashufpv3": {
-                    "ttl": 5184003,
-                    "length": 29,
-                    "prevalence": 0.0003009328919650918,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "filmpalast.to",
-                "fulldp.co",
-                "www.liveomg.com",
-                "www45.liveomg.com"
+                "www.3movs.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "onclickalgo.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 4
     },
     "nameservers": [
         "hank.ns.cloudflare.com",

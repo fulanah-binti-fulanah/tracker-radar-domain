@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00211,
+    "prevalence": 0.00212,
     "sites": 21,
     "subdomains": [
-        "s3"
+        "s3",
+        "srv"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,10 +26,10 @@
                 "s3"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "1ff5c8042a24f2d373e46c2a3e7f6ddcc7819cf5e5e7a79ac98106219ee39ca3"
@@ -37,35 +38,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lowendtalk.com",
                 "osxdaily.com",
-                "ourcodeworld.com",
                 "www.petenetlive.com"
             ]
         },
         {
-            "rule": "buysellads\\.com\\/ac\\/pro\\.js",
+            "rule": "buysellads\\.com\\/ads\\/CKYI62JI\\.json",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "s3"
+                "srv"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "86a2b0cd69afae8f700d7b2ab69f408f1db709d72567e5e994e0bf2efa18ed84"
+                "cb9477f8072975dae632725792de2e363d7ea96b39acb922a854ddb0c153aa20"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lowendtalk.com",
-                "osxdaily.com"
+                "diffchecker.com",
+                "www.diffchecker.com"
             ]
         }
     ],
@@ -77,19 +73,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7209302325581395
+            "prevalence": 0.8192771084337349
         },
         {
             "domain": "buysellads.net",
-            "prevalence": 0.1744186046511628
+            "prevalence": 0.1566265060240964
         },
         {
             "domain": "servedby-buysellads.com",
-            "prevalence": 0.10465116279069768
+            "prevalence": 0.024096385542168676
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "dns4.easydns.info",

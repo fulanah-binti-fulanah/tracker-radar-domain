@@ -11,7 +11,7 @@
         "front"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "wavescdn\\.com\\/fonts\\/roboto\\/roboto\\.css",
@@ -69,7 +69,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d1ee251ab1e6612ba7cfb1d9bc075b66b5cdca44c8e3b6722c92acb7f1af0d08"
+                "d680021e38d9503d70f72e1e01741d3b31e50dc8ec6d56ebe3b1c397953f4954"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -124,18 +124,23 @@
             ]
         },
         {
-            "rule": "wavescdn\\.com\\/js\\/jscssver5\\/site-header-min\\.js",
+            "rule": "wavescdn\\.com\\/js\\/jscssver9\\/site-header-min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "front"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "window.innerWidth": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a6c9b77227a0e3f659cf21f4fdbbeb49129616a1b519e75833de6f6611e43511"
+                "067934b5746d9afdc58b6c6bf686dc5b0fb74b6576c0a7f7bffc9c2bee82bf7e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -146,7 +151,7 @@
             ]
         },
         {
-            "rule": "wavescdn\\.com\\/js\\/jscssver25\\/waves-min\\.js",
+            "rule": "wavescdn\\.com\\/js\\/jscssver27\\/waves-min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -154,13 +159,16 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ff435f42cb086059e4a43edc9da552ed14b52551b4f2a90fd815dd00511e77cc"
+                "181347ac3ccb97427f886df3a146b815b190956916db403cd26d0846e411d06a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -200,8 +208,9 @@
                 "front"
             ],
             "apis": {
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -210,28 +219,6 @@
                 "e76fb8d9f216898822b92b5be7fc0b3085b9a3685b14089d64a10935e83a08c5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "waves.com",
-                "www.waves.com"
-            ]
-        },
-        {
-            "rule": "wavescdn\\.com\\/fonts\\/roboto\\/roboto-v29-latin-700\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c039da2477a00e6c4f4f94be655f95caea42d00a877cb37ca92546253c7ed3fc"
-            ],
-            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -252,6 +239,28 @@
             "cnames": [],
             "responseHashes": [
                 "81d931a8c973b5bc8f9ded86a3440bd247a58e592b3897bf755c1a5d8390d763"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waves.com",
+                "www.waves.com"
+            ]
+        },
+        {
+            "rule": "wavescdn\\.com\\/fonts\\/roboto\\/roboto-v29-latin-700\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c039da2477a00e6c4f4f94be655f95caea42d00a877cb37ca92546253c7ed3fc"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -321,9 +330,9 @@
         "Font": 8
     },
     "nameservers": [
-        "ns-1067.awsdns-05.org",
         "ns-696.awsdns-23.net",
         "ns-1697.awsdns-20.co.uk",
-        "ns-13.awsdns-01.com"
+        "ns-13.awsdns-01.com",
+        "ns-1067.awsdns-05.org"
     ]
 }

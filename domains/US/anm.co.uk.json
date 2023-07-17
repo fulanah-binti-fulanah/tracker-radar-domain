@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "hulkprod",
-        "idsync"
+        "idsync",
+        "secure.iad"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -22,16 +23,17 @@
             ],
             "apis": {
                 "window.sessionStorage": 5,
-                "window.localStorage": 4,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.platform": 3,
-                "Notification.permission": 3
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.platform": 4,
+                "Notification.permission": 4
             },
             "sites": 6,
             "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "59747b1b7f61918ba508495a0d6b9f140801f11d993aa78e0a9f6b4a538f7984"
+                "59747b1b7f61918ba508495a0d6b9f140801f11d993aa78e0a9f6b4a538f7984",
+                "66393219e0d7a8df535b4806e492f5d03e27f7236d82d14af75331f8e262c964"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,17 +49,14 @@
         },
         {
             "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/static\\/latest\\/mol-fe-web-push-browser-register\\/crossOrgInlinedMin\\.html",
-            "cookies": 0.0000204,
-            "fingerprinting": 1,
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
             "subdomains": [
                 "hulkprod"
             ],
-            "apis": {
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "3b7ca10c7dca1563a2358bae9965d9dc6f7f313e196ed2b4964b5c690da78520"
@@ -67,6 +66,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "inews.co.uk",
+                "metro.co.uk",
                 "www.dailymail.co.uk",
                 "www.dailymail.com"
             ]
@@ -118,6 +118,28 @@
             ]
         },
         {
+            "rule": "anm\\.co\\.uk\\/house\\/1x1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure.iad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe736c331cb0af1c8060077715b3b1f5e9ddbab556b7d6586bab0d770a979ba4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metro.co.uk",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
             "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/organisation\\/mol\\/subscription\\/publicKey",
             "cookies": 0.0000204,
             "fingerprinting": 0,
@@ -157,8 +179,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
             ]
         },
         {
@@ -180,29 +202,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
-            ]
-        },
-        {
-            "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/organisation\\/mol\\/analytics\\/track\\/prompt\\/click",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hulkprod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
             ]
         },
         {
@@ -224,48 +225,70 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
+            ]
+        },
+        {
+            "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/organisation\\/mol\\/analytics\\/track\\/prompt\\/click",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hulkprod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.co.uk",
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5454545454545454
-        },
-        {
-            "domain": "quantummetric.com",
-            "prevalence": 0.22727272727272727
+            "prevalence": 0.66
         },
         {
             "domain": "dailymail.co.uk",
-            "prevalence": 0.1590909090909091
+            "prevalence": 0.2
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.08
         },
         {
             "domain": "confiant-integrations.net",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.04
         },
         {
             "domain": "metro.co.uk",
-            "prevalence": 0.022727272727272728
+            "prevalence": 0.02
         }
     ],
     "types": {
         "Script": 6,
-        "Document": 3,
+        "Document": 4,
         "Fetch": 13,
-        "Preflight": 10
+        "Preflight": 10,
+        "Image": 2
     },
     "nameservers": [
-        "a6-64.akam.net",
-        "a1-204.akam.net",
-        "a24-65.akam.net",
         "a4-67.akam.net",
+        "a6-64.akam.net",
         "a7-66.akam.net",
-        "a16-67.akam.net"
+        "a1-204.akam.net",
+        "a16-67.akam.net",
+        "a24-65.akam.net"
     ]
 }

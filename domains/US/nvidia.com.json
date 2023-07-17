@@ -17,7 +17,7 @@
         "prod.otel.kaizen"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nvidia\\.com\\/etc\\/designs\\/nvidiaGDC\\/clientlibs_global\\.min\\.b243c64690c148f97cfe5cdf3c7e0827\\.css",
@@ -31,7 +31,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "237bfb709b2ba54cf93337f7d0531319b9141d4969ba0c6aa5434f8325ae0605"
+                "0ea7287069d0090ea9e76521b99f546508633e03c8b753d897ad9d03fa3c1c8c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -77,7 +77,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cf386a353ad8459b7a249e70b963efd8aaded27cc36533081f1daa7d7ce4ed90"
+                "a23c445873e93108d4207dc1094e2d3214255cb1cb322be3ec1ae9153ee1ddfb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -200,16 +200,19 @@
         {
             "rule": "nvidia\\.com\\/assets\\/starfleet-auth\\/starfleet\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "640f1b26ed019e385525a56f9451f4d028fb9020ebe12a62139f902dcb3ca078"
+                "171f51dd055efd5cfe825a288033c6bcfe85ec5305c6a303c365a799bd8fef71"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -227,8 +230,7 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -237,6 +239,26 @@
                 "f4f8862e95609c9c5741d71dfd482af3d296091d3721e4a27241b27263362647"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geforcenow.com",
+                "play.geforcenow.com"
+            ]
+        },
+        {
+            "rule": "nvidia\\.com\\/cloudvariables\\/v3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gx-target-experiments-frontend-api.gx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -267,26 +289,6 @@
             ]
         },
         {
-            "rule": "nvidia\\.com\\/cloudvariables\\/v3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gx-target-experiments-frontend-api.gx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geforcenow.com",
-                "play.geforcenow.com"
-            ]
-        },
-        {
             "rule": "nvidia\\.com\\/rconfig\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -318,7 +320,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8fb4075e0e6225b477fd33f541d3f8858422e3a4c6d63d621a4da6f688e66cab"
+                "4106dd84e3e92f2292a52bff1c3c7e48bff42a987473c5fe91989fcfcb8ee120"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -385,14 +387,14 @@
         "Image": 4,
         "Font": 4,
         "Document": 2,
-        "XHR": 6,
-        "Preflight": 6
+        "Preflight": 6,
+        "XHR": 6
     },
     "nameservers": [
         "ns5.dnsmadeeasy.com",
         "ns6.dnsmadeeasy.com",
-        "dns1.p09.nsone.net",
         "ns7.dnsmadeeasy.com",
+        "dns1.p09.nsone.net",
         "dns2.p09.nsone.net"
     ]
 }

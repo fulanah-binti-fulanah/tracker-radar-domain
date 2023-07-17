@@ -9,10 +9,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [],
     "cnames": [
+        {
+            "original": "apps.ign.com",
+            "resolved": "ign.map.fastly.net"
+        },
         {
             "original": "mollusk.apis.ign.com",
             "resolved": "ign.map.fastly.net"
@@ -21,8 +25,8 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "ign\\.map\\.fastly\\.net\\/graphql",
-            "cookies": 0.0001,
+            "rule": "ign\\.map\\.fastly\\.net\\/video-player\\/fonts\\/Inter\\.var-subset\\.woff2",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
@@ -30,20 +34,47 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
+                    "original": "apps.ign.com",
+                    "resolved": "ign.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c8383586297d5a668bb38ed2c229ef8c9994269621edf82b5fd8ba4ec9e3c0c9"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "ign\\.map\\.fastly\\.net\\/graphql",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
                     "original": "mollusk.apis.ign.com",
                     "resolved": "ign.map.fastly.net"
                 }
             ],
             "responseHashes": [
+                "4b4ace138ea1803de39bd1af4a74249c284154bfe818318971a7ac1b64e835f9",
                 "162bfcd9bc787330ea56289830b0bc468e6f128ae2713c6dfeccf4cd20b7405f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__li_idex_cache_e30": 0.00010029084344599338
+                "__li_idex_cache_e30": 0.00020126798832645668
             },
             "exampleSites": [
                 "ign.com",
+                "au.ign.com",
                 "www.ign.com"
             ]
         },
@@ -53,8 +84,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "mollusk.apis.ign.com",
@@ -65,10 +96,11 @@
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__li_idex_cache_e30": 0.00010029084344599338
+                "__li_idex_cache_e30": 0.00020126798832645668
             },
             "exampleSites": [
                 "ign.com",
+                "au.ign.com",
                 "www.ign.com"
             ]
         }
@@ -84,16 +116,21 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "ignimgs.com",
-            "prevalence": 1
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Font": 2,
+        "Fetch": 3,
+        "Preflight": 3
     },
     "nameservers": []
 }

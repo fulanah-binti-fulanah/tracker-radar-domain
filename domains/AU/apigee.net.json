@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
+        "cisco-dsc-prod",
         "adsk-prod",
         "bgl-web-prod",
         "costco-prd",
@@ -34,10 +35,41 @@
         {
             "original": "developer.api.autodesk.com",
             "resolved": "adsk-prod.apigee.net"
+        },
+        {
+            "original": "dsc.cisco.com",
+            "resolved": "cisco-dsc-prod.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/v1\\/netid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cisco-dsc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dsc.cisco.com",
+                    "resolved": "cisco-dsc-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "b6d517e113673d472e0a31195347df8bcabd7ced4915e33376176c93095ed6d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cisco.com",
+                "www.cisco.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
             "cookies": 0.000201,
@@ -80,7 +112,7 @@
                 }
             ],
             "responseHashes": [
-                "cbaa27bd1d55b6055379e1820984ddb00e2dfafa1305e74c7aab2487f3ef3efb"
+                "83a155ba528724750c44ec6e3326a5bd2016bd2260e39281e3492fc94bf52f38"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -132,7 +164,7 @@
                 }
             ],
             "responseHashes": [
-                "2056b8f526341ca6f8f2a1efec21f849fd75045168ae071d227f654729147fc7"
+                "152cc5a6d0f3aa8841d5421cc21cd99a3f294e3e7599c886dd154bc62dc61684"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -183,8 +215,10 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "d2ea7513631697df0843e910d54ee399c4e43cee44099116cad96f67428a456d"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -208,10 +242,8 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "df2d2add41f23b06042bbc52c27006c01d47e9758557e87142a67f221cb96b6f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -308,7 +340,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "be5bbaba25b74e37ec12c264e4d3c4d61529bd2fa4c2808b32a6c677f80792be"
+                "075db4578c6402a6662732f34aa745b0dc1f6df3613b212b59824cef8d350d21"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -330,7 +362,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "161fd1f46df6dfdfae15c5b0c19691695345e1002cde0669b49a33facb0be60e"
+                "b2a2f6759f1c6b293dcb4612755dc49fab7327309097981c2adac013bf775d2c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -345,7 +377,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000501,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "first party",
@@ -353,7 +385,11 @@
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.375
+            "prevalence": 0.3125
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.125
         },
         {
             "domain": "mparticle.com",
@@ -362,13 +398,10 @@
         {
             "domain": "cookielaw.org",
             "prevalence": 0.0625
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.0625
         }
     ],
     "types": {
+        "Script": 2,
         "Document": 2,
         "XHR": 14,
         "Preflight": 8

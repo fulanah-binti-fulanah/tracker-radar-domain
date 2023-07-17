@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "laweekly.engine",
         "tomorrowland.engine",
+        "traceparts.engine",
         "laweekly.cdn"
     ],
     "cnames": [
@@ -19,6 +20,10 @@
         {
             "original": "engine.laweekly.com",
             "resolved": "laweekly.engine.adglare.net"
+        },
+        {
+            "original": "engine.traceparts.com",
+            "resolved": "traceparts.engine.adglare.net"
         }
     ],
     "fingerprinting": 2,
@@ -29,7 +34,8 @@
             "fingerprinting": 2,
             "subdomains": [
                 "laweekly.engine",
-                "tomorrowland.engine"
+                "tomorrowland.engine",
+                "traceparts.engine"
             ],
             "apis": {
                 "window.devicePixelRatio": 1,
@@ -41,17 +47,22 @@
                 "Date.prototype.getTime": 1,
                 "window.localStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "engine.laweekly.com",
                     "resolved": "laweekly.engine.adglare.net"
+                },
+                {
+                    "original": "engine.traceparts.com",
+                    "resolved": "traceparts.engine.adglare.net"
                 }
             ],
             "responseHashes": [
-                "6d8d12f6da5b8e3c71657f105eb983c25fc7292a8e9fef2cad24d686d95124c1",
-                "4e21118bf9e9318352a40f52f16f4f1befa6ec591c720f5325ea44913dfa2385"
+                "05592f1ea4cf23ac2ba2be2223ac8a5c8e2103cd46f5b0574ff8b77de89e7201",
+                "6c14c08378cfe62f93a897cdda80e4c61938e433607e98dbe64b2dc4276a8855",
+                "635d4f25ea57eae2cb96b1756012e3858717dd2d4ac99961a760c8e9d91cd92e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -59,7 +70,8 @@
             "exampleSites": [
                 "laweekly.com",
                 "www.laweekly.com",
-                "www.tomorrowland.com"
+                "www.tomorrowland.com",
+                "www.traceparts.com"
             ]
         },
         {
@@ -150,11 +162,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 3,
+        "Script": 4,
         "Ping": 2,
         "Image": 4
     },

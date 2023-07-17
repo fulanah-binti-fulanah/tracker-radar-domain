@@ -23,8 +23,8 @@
                 "sso"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -64,12 +64,15 @@
         },
         {
             "rule": "world\\.rugby\\/auth\\/realms\\/WorldRugby\\/protocol\\/openid-connect\\/3p-cookies\\/step2\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [
                 "sso"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -119,9 +122,9 @@
         "Document": 6
     },
     "nameservers": [
+        "ns1.get.rugby",
         "ns3.get.rugby",
         "ns4.get.rugby",
-        "ns1.get.rugby",
         "ns2.get.rugby"
     ]
 }

@@ -10,7 +10,8 @@
         "cdn",
         "pixel",
         "v2track",
-        "vtrack"
+        "vtrack",
+        "v2analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,13 +27,14 @@
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.vendor": 1,
                 "Navigator.prototype.language": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
                 "Navigator.prototype.doNotTrack": 2,
@@ -44,32 +46,32 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a80062707cc3ef209c957294e8610f0b02569b54709ed3d1615aedd957a5f99c"
+                "1433cfb97e325660b32998e6936673e2dabcc2e93ff8d8fd688ab444c7e32e1e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592018,
+                    "ttl": 2592021,
                     "length": 16,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "sharedid": {
-                    "ttl": 2419218,
+                    "ttl": 2419213,
                     "length": 36,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "cto_bundle": {
-                    "ttl": 33696017,
-                    "length": 252,
-                    "prevalence": 0.0001004419445560466,
+                    "ttl": 33696018,
+                    "length": 271,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696017,
-                    "length": 188,
-                    "prevalence": 0.0001004419445560466,
+                    "ttl": 33696018,
+                    "length": 207,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 }
             },
@@ -111,7 +113,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -119,7 +121,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0003013258336681398
+                "lotame_domain_check": 0.00030214523114110184
             },
             "exampleSites": [
                 "picnob.com",
@@ -135,8 +137,8 @@
                 "v2track"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -144,8 +146,102 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0002008838891120932
+                "lotame_domain_check": 0.00030214523114110184
             },
+            "exampleSites": [
+                "picnob.com",
+                "www.picnob.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/qimad-full2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6752c4401334bfb0d1be6d582278624df46fa7bf64b8fff3da60294856a0d5a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picnob.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picnob.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picnob.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/qimad-full2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "14859e1be6cc3562a3b7c06b3cf4204be1b55ce5319ed5ee49a0ef9d8793d6bc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "picnob.com",
                 "www.whatismyip.com"
@@ -162,9 +258,7 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "8cf791b600d0acc2f51fceff9e9b4dd93d1cdae2056c03bdb24ad822022c4ec8"
-            ],
+            "responseHashes": [],
             "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -179,14 +273,20 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
+            "domain": "uniconsent.com",
+            "prevalence": 0.8181818181818182
+        },
+        {
             "domain": "doubleclick.net",
-            "prevalence": 1
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2,
-        "Image": 5,
+        "Script": 4,
+        "XHR": 4,
+        "Image": 6,
+        "Preflight": 2,
+        "Stylesheet": 2,
         "Media": 2
     },
     "nameservers": [

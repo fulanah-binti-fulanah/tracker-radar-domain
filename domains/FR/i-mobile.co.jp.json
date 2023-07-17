@@ -7,15 +7,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
         "imp-adedge",
         "ssp-bidapi",
-        "spnativeapi-tls"
+        "spnativeapi-tls",
+        "spdmg",
+        "spdmg-backend",
+        "xid"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "i-mobile\\.co\\.jp\\/script\\/v1\\/spot\\.js",
@@ -25,21 +28,22 @@
                 "imp-adedge"
             ],
             "apis": {
-                "window.name": 2,
-                "Navigator.prototype.userAgent": 2
+                "window.name": 3,
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "9379c125fb939f2997ae3c352e44d6667acd31418d083c6e119d7aa5f506ea85"
+                "4e8c621a4762455817e8ae8a4a39e3a14d4ebea7d45e849228f1b5f8b62244fd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eroterest.net",
-                "anime.eroterest.net"
+                "anime.eroterest.net",
+                "ero-gazou.jp"
             ]
         },
         {
@@ -50,18 +54,20 @@
                 "ssp-bidapi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "a107d3e22041b018fcafbb03931df6512f67c2f4f5b21432954146fccce77608"
+                "ce64b113bed9c901b432b894622034c582a77fd826fca277f63389367eaace6e",
+                "4a90bc339275815c9a6a73436454bd4b7bce212f756cb58ecf67dbaabe4beb0c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eroterest.net",
-                "anime.eroterest.net"
+                "anime.eroterest.net",
+                "ero-gazou.jp"
             ]
         },
         {
@@ -72,33 +78,222 @@
                 "spnativeapi-tls"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "4a4360e1df1ede7948685bfaf4bcd5ed9f518bb4da1ca68f336a39bff363cf16"
+                "d5c07bab2195349a1d19b2a7708cabafc5cf2934940035515ba204ed7dace937"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eroterest.net",
-                "anime.eroterest.net"
+                "anime.eroterest.net",
+                "ero-gazou.jp"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/script\\/dg_gateway\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "bbda98f79e9bd08ea96d625cc358c075f8b73700632ddac313b1cda3bec094ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/adv\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg-backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "673096f0246f4004cea18abae50ab5ffe1251d940d03064bfc2367ed34a0047b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/script\\/dgcore\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spdmg"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b81de6356b7fa0aed3892a34e9c9c45eb809f99e582675a78826bf6e63761bd6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/script\\/adSiteVisit\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0a1fd41c734d5f0dccc4f4c3828f6d4c2b1e7aaabbee9161cfc89f779434eb4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/tr_xid\\.ashx",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg-backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2dcb3e533abedf1a3555c6631bfcae18cde012c45c5b34b41e0917f5040059da"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/tr_adv\\.ashx",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg-backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "xid": 0.00010088781275221953
+            },
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/script\\/sync\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spdmg-backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "fc7f0912225dc8f01fd76015543b549fa7f90a1e0f0369f9b733058f899c12b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/SaveXidToLocalStorage\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlsite.com",
+                "www.dlsite.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "okbp.xyz",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 2
+        "Script": 14,
+        "XHR": 7,
+        "Document": 4
     },
     "nameservers": [
         "ns-2000.awsdns-58.co.uk",

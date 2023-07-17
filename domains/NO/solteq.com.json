@@ -4,26 +4,53 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "dvap.deepvision.cloud",
+        "dvapk01.deepvision.cloud",
+        "dvnsend2.deepvision.cloud",
+        "atea.deepvision.cloud",
         "sj.deepvision.cloud"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "solteq\\.com\\/TealeafTarget\\.php",
+            "rule": "solteq\\.com\\/DiscoverUIPost\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dvap.deepvision.cloud",
-                "sj.deepvision.cloud"
+                "dvapk01.deepvision.cloud",
+                "dvnsend2.deepvision.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "bcf35752add87d05b8bbc3975ee6107cd1f639a2d1e2de583e178077d7b90ddf",
+                "8865e75ad0be9929272bdfc0aaf71593e089a8533d1d69dd06c4c4b00f995463"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.apotek1.no",
+                "www.norskstaal.no"
+            ]
+        },
+        {
+            "rule": "solteq\\.com\\/DiscoverUIPost\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dvapk01.deepvision.cloud",
+                "dvnsend2.deepvision.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -31,6 +58,28 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "apotek1.no",
+                "www.apotek1.no",
+                "www.norskstaal.no"
+            ]
+        },
+        {
+            "rule": "solteq\\.com\\/TealeafTarget\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atea.deepvision.cloud",
+                "sj.deepvision.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atea.no",
                 "www.sj.se"
             ]
         },
@@ -39,21 +88,21 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dvap.deepvision.cloud",
+                "atea.deepvision.cloud",
                 "sj.deepvision.cloud"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "f049d120c6b25ac9ba56311a4068fd20274ac64d084ce6971db27b1889a42734"
+                "8013946ddd666fe0f2592418e4569d807b854f54a2cb60bfec38229878529f32"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "apotek1.no",
+                "atea.no",
                 "www.sj.se"
             ]
         }
@@ -64,11 +113,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "solteq.solutions",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Preflight": 2,
+        "XHR": 3,
+        "Preflight": 5,
         "Fetch": 2
     },
     "nameservers": [

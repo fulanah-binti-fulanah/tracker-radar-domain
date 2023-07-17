@@ -12,10 +12,10 @@
     "prevalence": 0.00201,
     "sites": 20,
     "subdomains": [
-        "production-klarna-il-shopify-osm.s3",
         "cognito-identity",
-        "web-chat-tag-cdn.s3",
-        "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb"
+        "production-klarna-il-shopify-osm.s3",
+        "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb",
+        "dataplane.rum"
     ],
     "cnames": [
         {
@@ -26,6 +26,52 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c6395973e1fa206ae916f1a0b7fb7218c81f2aa96ae85d33cf209f47605d89eb",
+                "805b22f4e43284927f3a735b171003e452f617d265faf3ab53c76331f3e4763a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "classiccars.com",
+                "ca.eufy.com",
+                "www.datacamp.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "classiccars.com",
+                "ca.eufy.com",
+                "www.datacamp.com",
+                "www.siemens.com"
+            ]
+        },
+        {
             "rule": "eu-west-1\\.amazonaws\\.com\\/c6f201ec5831ece50b964563a71f27f2850784a9\\/258\\.index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -34,7 +80,7 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.000804,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
                 "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
@@ -43,8 +89,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tommyguns.com",
-                "ca.tilley.com",
+                "tilley.com",
+                "ca.frankandoak.com",
                 "frankiesbikinis.com",
                 "reebok.ca",
                 "suzyshier.com",
@@ -65,7 +111,7 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 8,
-            "prevalence": 0.000804,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
                 "2a9b3f702607965b68845d30e68378497922a32d923b15533e244615620e874f"
@@ -74,128 +120,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tommyguns.com",
-                "ca.tilley.com",
+                "tilley.com",
+                "ca.frankandoak.com",
                 "frankiesbikinis.com",
                 "reebok.ca",
                 "suzyshier.com",
                 "urban-planet.com",
                 "www.rockport.ca",
                 "www.tiptop.ca"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ddfd5212c7a4ef27a3fa326a2a8c5f8eb976cac5338a03bfa177fdf2ce046192"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "classiccars.com",
-                "www.sunglasshut.com"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "classiccars.com",
-                "www.sunglasshut.com"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/live\\/chat-live\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "web-chat-tag-cdn.s3"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "0baf6cd58201aa38350c5d1415951289930a2666bede8d535e70db168c1a6513"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chefsplate.com",
-                "www.hellofresh.ca"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/live\\/602\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web-chat-tag-cdn.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "174ff92fb7b592b2fd52bf19f95808b5246c19b8d91ec406804e9643d7b30283"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chefsplate.com",
-                "www.hellofresh.ca"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/live\\/core-bubble\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web-chat-tag-cdn.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "d06141ec275947347b74c779418a8aebaa00e4c3228ea6c0fbfdfc4f72ddd7a2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chefsplate.com",
-                "www.hellofresh.ca"
             ]
         },
         {
@@ -215,7 +147,7 @@
                 }
             ],
             "responseHashes": [
-                "48e9861e3d65556966a4b04266306880ff13c6cbab8a679026b8e636d135f376"
+                "1556053ac62d0b83279d1d5848006d343b4d3d58a6311363755e9219319ee5b8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -224,52 +156,99 @@
                 "classicfm.com",
                 "www.smoothradio.com"
             ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "43c42cce2e64c9c808e435a3ccc1cc430e166ae7d30a33af5ba7a6c4379b6168"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "siemens.com",
+                "www.siemens.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/appmonitors\\/6247ffd7-d333-47b4-9fa3-e35ee7237f65\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dataplane.rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "siemens.com",
+                "www.siemens.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.48717948717948717
+            "prevalence": 0.55
+        },
+        {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.125
         },
         {
             "domain": "smct.io",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.075
         },
         {
             "domain": "global-e.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.075
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.07692307692307693
-        },
-        {
-            "domain": "investisdigital.com",
-            "prevalence": 0.05128205128205128
+            "prevalence": 0.075
         },
         {
             "domain": "d5zu2f4xvqanl.cloudfront.net",
-            "prevalence": 0.02564102564102564
+            "prevalence": 0.025
         },
         {
             "domain": "d3odp2r1osuwn0.cloudfront.net",
-            "prevalence": 0.02564102564102564
+            "prevalence": 0.025
+        },
+        {
+            "domain": "savills.co.uk",
+            "prevalence": 0.025
         },
         {
             "domain": "uqd.io",
-            "prevalence": 0.02564102564102564
+            "prevalence": 0.025
         }
     ],
     "types": {
-        "Script": 22,
-        "XHR": 2,
-        "Preflight": 2,
-        "Image": 2
+        "XHR": 3,
+        "Preflight": 4,
+        "Script": 16,
+        "Image": 2,
+        "Fetch": 4
     },
     "nameservers": [
         "ns1.amzndns.co.uk",

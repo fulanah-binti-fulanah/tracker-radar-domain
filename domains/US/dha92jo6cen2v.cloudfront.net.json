@@ -60,11 +60,9 @@
         {
             "rule": "dha92jo6cen2v\\.cloudfront\\.net\\/scripts\\/mefi\\/pageload092414\\.mod\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
@@ -83,18 +81,37 @@
         {
             "rule": "dha92jo6cen2v\\.cloudfront\\.net\\/scripts\\/mefi\\/libscript20230117\\.1411\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.mimeTypes": 1
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6f4957322fb4f6ce0a907b63a350c542d29ca5afa84af700a86e0e3c6e34025d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metafilter.com",
+                "ask.metafilter.com",
+                "www.metafilter.com"
+            ]
+        },
+        {
+            "rule": "dha92jo6cen2v\\.cloudfront\\.net\\/scripts\\/mefi\\/members20230117\\.1411\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "df2176fcad0dafc475bd760ee4611c3e95150d7e6bb8b7468ec5216762037b4c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -125,51 +142,6 @@
                 "ask.metafilter.com",
                 "www.metafilter.com"
             ]
-        },
-        {
-            "rule": "dha92jo6cen2v\\.cloudfront\\.net\\/scripts\\/mefi\\/members20230117\\.1411\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "df2176fcad0dafc475bd760ee4611c3e95150d7e6bb8b7468ec5216762037b4c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metafilter.com",
-                "ask.metafilter.com",
-                "www.metafilter.com"
-            ]
-        },
-        {
-            "rule": "dha92jo6cen2v\\.cloudfront\\.net\\/images\\/mefi\\/mefisprite091911\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "28992e7060a3a8623af308746785ab664c0853070fcd42086b74c6cc995311b5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metafilter.com",
-                "www.metafilter.com"
-            ]
         }
     ],
     "categories": [
@@ -186,13 +158,12 @@
     "types": {
         "Stylesheet": 6,
         "Script": 9,
-        "XHR": 3,
-        "Image": 2
+        "XHR": 3
     },
     "nameservers": [
-        "ns-1410.awsdns-48.org",
-        "ns-2014.awsdns-59.co.uk",
         "ns-47.awsdns-05.com",
+        "ns-2014.awsdns-59.co.uk",
+        "ns-1410.awsdns-48.org",
         "ns-602.awsdns-11.net"
     ]
 }

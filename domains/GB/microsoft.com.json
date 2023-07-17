@@ -9,17 +9,46 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "eu-mobile.events.data",
         "browser.events.data",
         "browser.pipe.aria",
-        "edge-auth"
+        "wcpstatic"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu-mobile.events.data",
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [],
+            "responseHashes": [
+                "7adb96d986062d2133193a563723db06ff28bb8572405daf7e1b15160322eb4c",
+                "b43d76c4b92338d9a770dbc4cf5ce9b288a0bac655b618dd8c7650286b10273a",
+                "19bcad7b94c0269c3583e5b4a3baa2581b83f73d577fd5b1ee93f6eb9ed80001",
+                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hmrc.gov.uk",
+                "faq.nhsbsa.nhs.uk",
+                "www.colchester.gov.uk",
+                "www.minecraft.net",
+                "www.trekbikes.com"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
             "cookies": 0,
@@ -29,8 +58,8 @@
                 "browser.events.data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -39,34 +68,8 @@
             "exampleSites": [
                 "hmrc.gov.uk",
                 "faq.nhsbsa.nhs.uk",
+                "www.colchester.gov.uk",
                 "www.minecraft.net"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu-mobile.events.data",
-                "browser.events.data"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "7379ebadf0120c90cf7b89b10e92d42fc08204da7e509973eb5d32023f345964",
-                "45b974b7ba77fab5643f186db82ff89feb7321a83049f4743264e82ae32a9a58",
-                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hmrc.gov.uk",
-                "faq.nhsbsa.nhs.uk",
-                "www.minecraft.net",
-                "www.trekbikes.com"
             ]
         },
         {
@@ -98,7 +101,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -115,25 +118,27 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "edge-auth"
+                "wcpstatic"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3baeff6de22c80f8891d9fc080fc77a82d67fa7fb4374bf27265a3bc8ffe233d"
+                "c688d3f2135b6b51617a306a0b1a665324402a00a6bceba475881af281503ad9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "benzinga.com",
-                "www.salon.com"
+                "microsoft.github.io",
+                "www.minecraft.net"
             ]
         }
     ],
@@ -144,35 +149,43 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000402,
     "topInitiators": [
         {
             "domain": "azureedge.net",
-            "prevalence": 0.36363636363636365
+            "prevalence": 0.38461538461538464
         },
         {
             "domain": "first party",
-            "prevalence": 0.36363636363636365
+            "prevalence": 0.2692307692307692
         },
         {
             "domain": "powerapps.com",
-            "prevalence": 0.22727272727272727
+            "prevalence": 0.23076923076923078
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.038461538461538464
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.038461538461538464
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.038461538461538464
         }
     ],
     "types": {
-        "Preflight": 3,
-        "XHR": 9,
+        "XHR": 10,
+        "Preflight": 4,
         "Ping": 2,
         "Script": 2
     },
     "nameservers": [
         "ns1-39.azure-dns.com",
         "ns2-39.azure-dns.net",
-        "ns4-39.azure-dns.info",
-        "ns3-39.azure-dns.org"
+        "ns3-39.azure-dns.org",
+        "ns4-39.azure-dns.info"
     ]
 }

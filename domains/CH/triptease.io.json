@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "targeted-messages",
-        "messages.guest-experience"
+        "messages.guest-experience",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,16 +17,18 @@
         {
             "rule": "triptease\\.io\\/static\\/storageIframe\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "targeted-messages"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "83cbca9f3312d3c2edef8ca6753132338968809c4dceb94854402d4a00a18e10"
+                "44967af7d7413422ff93ef8e795f138ffa16e64d705bf2fcdbb164145e7d651f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -46,8 +49,32 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "681e58a393e327d60d16963864d2662683ed437854fa9408e0ec28a41ff06d70"
+            ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bauraulac.ch",
+                "www.bauraulac.ch"
+            ]
+        },
+        {
+            "rule": "triptease\\.io\\/zappy\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -58,7 +85,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
@@ -67,12 +94,13 @@
     ],
     "types": {
         "Document": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a3.googledomains.com",
-        "ns-cloud-a1.googledomains.com"
+        "ns-cloud-a2.googledomains.com",
+        "ns-cloud-a4.googledomains.com"
     ]
 }

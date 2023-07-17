@@ -4,36 +4,57 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "notifpush\\.com\\/scripts\\/adsblocker\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "notifpush\\.com\\/scripts\\/nadz-sdk\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3cc5fa159308dd3630af55dd21eb2603612db2e95a23f5c82652019fc5f77e3e"
+                "03b8f5f57d08fdbeed4ca24249b5de9058abded60c9e42e957809151a8b3448d"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "nadz_dailyVisits": {
+                    "ttl": 146530,
+                    "length": 1,
+                    "prevalence": 0.00020149103364900262,
+                    "uniqueness": 0.5
+                },
+                "SA": {
+                    "ttl": 86402,
+                    "length": 1,
+                    "prevalence": 0.00010074551682450131,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "paroles.net",
+                "francesoir.fr",
                 "www.paroles.net"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -44,7 +65,7 @@
         "Script": 2
     },
     "nameservers": [
-        "bob.ns.cloudflare.com",
-        "melinda.ns.cloudflare.com"
+        "melinda.ns.cloudflare.com",
+        "bob.ns.cloudflare.com"
     ]
 }

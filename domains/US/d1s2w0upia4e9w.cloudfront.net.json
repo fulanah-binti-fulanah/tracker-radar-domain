@@ -16,7 +16,7 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/runtime\\.2483226f3656b2a04108\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/runtime\\.15c064f69d42898c4474\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -25,7 +25,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bfe03a2b5d38a367f16aad5ea839b77835cb870dd1d0a2b6bf35a25bfa0af7e8"
+                "8fcc9e54384f7878673a03ae26b568d8413c1071e0402d7f6aea3cd7782c058d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,7 +41,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Event.prototype.timeStamp": 1
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -80,9 +80,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/framework-f95d418a\\.1267f021cdaec681a258\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -98,16 +100,18 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-d5e02c16\\.7e1a1b2cb33d12363f68\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-d5e02c16\\.5a19d99643f39b924409\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e215468b085e674ff9a3601a4a7c1ed243470faf7a66b3fde658798959f37b59"
+                "b5e800fad0a535ad1e0f653431ac4e4eeea1741423d33c1deca5d5dbd815eeb9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -138,7 +142,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-1a7d68c1\\.01b752f254a99878dff3\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-1a7d68c1\\.8fad2befea43b9177b51\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -147,7 +151,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c9fa46dd71eb7aec15c67de1693752917f3e3127ec588108275aadd31a256e61"
+                "9bfd6b9d1eb5c63dc1f60bf352cf09f4a757c8aa137c96f6e61222098a8c9c4c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -158,7 +162,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-8935f517\\.bbd8ee7c08c8008d1b7e\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-framework-8935f517\\.931857051ea7a2c2a42f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -167,7 +171,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b71af8631c86d40b07107a45c921d52ece32952e1568afac1d54b52f53e4f3cc"
+                "f93e6617e366a3327e9cd4056203b2e0ca22324cf16a4c11d8dcc0fcff0d6d40"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -259,11 +263,15 @@
         },
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-cdd60c62\\.6c1a557d06a200f54823\\.js",
-            "cookies": 0,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -272,7 +280,14 @@
                 "2c208e7e6e3c5cbe52e340c2f22cb0876899a2ebd5497947c675640b97d5d233"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 0,
+                    "length": 9,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "artsy.net",
@@ -285,7 +300,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -304,9 +319,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-dce06a4b\\.09d46de98d8e13b4a085\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -344,9 +361,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-efdee510\\.5905c8d7b51fe5140dfe\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -364,9 +383,14 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-f82e0cd2\\.3d158a0e6d1f5e911194\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -584,9 +608,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-49ceb22a\\.2f226cb617521ca4f31b\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -667,7 +693,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -686,9 +713,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-229eafb5\\.fc0598e4b8f23dc4c805\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -724,7 +753,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-eecb279d\\.2d502ed6cd8cd19f2e54\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-eecb279d\\.258ce78bbc5cd0e9472d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -733,7 +762,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "864a0aab449b4db2b154bacbd35bc7fbf3366124259f31b3fac57b8b4390f5ce"
+                "72784f0f841fc61c2267b9279c0ac25dc8705f3f7ae745c5887d96bc7b652b1a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -744,7 +773,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-44aeebbc\\.88eba195be120885ce3b\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-44aeebbc\\.8713c661d27c79ca7e90\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -753,7 +782,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a31b4b6bdf3ef939320cb000717eb8f518f2754321230061c8a56fac7a179519"
+                "6f6b8b9f9908799176722b6e804c51fe1544c2ee3e0f857d450034fa1879a42a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -764,7 +793,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-ffdcc48e\\.48c2b204f147d3b3bf8f\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-ffdcc48e\\.d63b23641f5ccf0d69f5\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -773,7 +802,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2337e79154e4e866bcee68a4414f14517022fc7eafc101e565120d7d0b330ba2"
+                "7c960833537c7baffa51eccaa0850084fa477de70e40a3fc57bc94238e359188"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -784,7 +813,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-5a723197\\.4ee1cccf29640231f291\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-5a723197\\.9525732ab8cdcb4ac191\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -793,7 +822,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1c9dba8507f498754e5a94dc78166aadf9a37edac50a380da109a4c9069a5784"
+                "e7fd63f133bb109b8d78e8e4b4207d65b201d53e41725c2b94932d89df9a7629"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -804,7 +833,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-4f064d56\\.12f62a031af2a212f3e7\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-4f064d56\\.397b247c58214cda91f3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -813,7 +842,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3bb20a9b54657ccfddc21ad283a30718ea4bf85905f56fc0dccbf8afa58c1867"
+                "b7496cfceeaab2c32ae5ebb97a95e57300f557cda0f0be03514d3ffbd54ef2c5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -824,7 +853,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-2539c76c\\.fdd244167c3c5101902e\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-2539c76c\\.95617891be740c1fef21\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
@@ -835,7 +864,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c69e0df95f19a28cffee8459af8c1de313c77e143730d2b676bb2525eaadd5e6"
+                "1be884e90dd64b1cb2f286ee264313282d1df6b7d3ddb174e335767dd6b4c94c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -846,7 +875,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-03b3b6fd\\.5148ea49107da9541345\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-66dff54d\\.8ead36f6f1c73628693d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -855,7 +884,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cf3a3b48a440d8bd23fe22bdda3ec983345ee07cf1a88a957ca95ceab88c61f7"
+                "2bbd6375a20f599bf8452d513d842662a2c741658344d752ccfd65e616215df6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -866,16 +895,18 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-2e90501a\\.8bd7b03dee57c096ad90\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-2e90501a\\.e4cb3d7ad4e031defe90\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "29b2033dcb2fb319495bb760c1fab4d2323c4ca18d5d6a7452be603510e16887"
+                "c0d24d29ad61bba37f4533f1650ba8dc42481c33ab3ed6feeae1114fc07dec0b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -886,7 +917,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-d1995432\\.bd4c04c0ebc5d291993a\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-d1995432\\.a8116ddf2e5528e2eb67\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
@@ -897,7 +928,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f3b642dfa2759035ce27d253c58a16f084e56754eeac8437dc35b7f1a9025f13"
+                "a636e249782160be58ea7e0ac3e07fc09b616d138408e48af9bba9ad64ded4b1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -910,9 +941,11 @@
         {
             "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-d5a2c771\\.f5b75127e6fbc2285695\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -928,7 +961,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-960914ab\\.99ce946a535c7815c68c\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-960914ab\\.1b2a60003a3250d2f50d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -937,7 +970,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "39dc0bf9655ba9d07196928a320bedb0ed33cd938de7268fde58e532cf318a21"
+                "0be6ee32ac104192b6b05e6e0af9a628e981956494a58ef9f63b7dc0fceb98c3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -948,7 +981,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-215471a9\\.aed4c3928132b8532613\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-a429b6c9\\.c7f185aaec00f1f385a6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -957,7 +990,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "66731af2b09cde9d7eb6423d64afd16014a9d7e9b6d48e372066cd4a105ad64c"
+                "b321535094ef5806da3331e33b5396988b2a620892a02236e2451eba1b1f0e4d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -968,7 +1001,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-9f8ae290\\.e5446ffcc765f0cca816\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-7f0ae57c\\.9d4b701aa4edc2034a93\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -977,7 +1010,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2d5174cef22e9901b4a08a805d5d9c25d50c30b62b57c19f3dec6601c61758ca"
+                "f3ef7a011c75cdf76cfa8326e380cd359c6b3999bbb27ce8b34094fff7fddc5d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -988,7 +1021,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-7f0ae57c\\.586b74db9f6db1101bb5\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-16055b36\\.77e289c51d3172386b63\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -997,27 +1030,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1e61ee5f83fa3679c384270eadbd426a2cca631b791484394912a5c8bc9608d0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "artsy.net",
-                "www.artsy.net"
-            ]
-        },
-        {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-16055b36\\.5a51d94298c48f0632d3\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c3db0607743285699ee0c78fa05491a6571f1345bd86b7210f5e3a60839d8618"
+                "f3befb628ce27216ec9f84933bb35ddda9e8f3b624aa1c5f3cb976c39b5e07aa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1128,7 +1141,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-91f5fc91\\.c00a649ee4fe403aac1f\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-91f5fc91\\.af0f37258bc8025b521b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -1137,7 +1150,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4dce5f8feb8991729dae928316d554a51b78bfbe95a5e196dd008c557a5d4ce2"
+                "51fa1c300bd2bc9689f8c1589130fdb3130eadbf9ccfc0d7573c859fa1f58624"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1148,7 +1161,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-97c6e61c\\.80dc612539327780b368\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-97c6e61c\\.19a78b3832d870c0f1a3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -1157,7 +1170,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2390c10d3a3638efefbde67ebaef75204915834b9a3fbca5935fc63d40b2ee92"
+                "3ec7ed028e75fb254a413c92661d706d6e5625a8d3e27412ceda74812e55604d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1168,7 +1181,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-ee0d0da9\\.815d584fcda2c94369a7\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-ee0d0da9\\.eeb6d2282b30a67ffaf6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -1177,7 +1190,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6a77cf4e92b9ffa9e7c01562d81758051cb8c6e4784077f6862864e92fdc2020"
+                "13b993604ff46197da5b185cab3fbdaccd592e2c1aa0fdbde4bcea34ab5c524b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1188,7 +1201,7 @@
             ]
         },
         {
-            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-a2dee9c7\\.3afebbc583deba39889a\\.js",
+            "rule": "d1s2w0upia4e9w\\.cloudfront\\.net\\/assets\\/artsy-entry-a2dee9c7\\.086bf678093c25fa72e1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -1197,7 +1210,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "58ba4677cf1d5bad2370ce1f27d52eced86782ddd8c54dc81b9e67cc2dca6956"
+                "703b58ac83c5490304efe44a1a80714329e1026bc69aa27670df89184d03c18e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1212,7 +1225,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "first party",
@@ -1220,12 +1233,12 @@
         }
     ],
     "types": {
-        "Script": 118
+        "Script": 116
     },
     "nameservers": [
-        "ns-1425.awsdns-50.org",
-        "ns-364.awsdns-45.com",
         "ns-819.awsdns-38.net",
-        "ns-2023.awsdns-60.co.uk"
+        "ns-364.awsdns-45.com",
+        "ns-2023.awsdns-60.co.uk",
+        "ns-1425.awsdns-50.org"
     ]
 }

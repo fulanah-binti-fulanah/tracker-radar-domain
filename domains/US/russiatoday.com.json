@@ -4,13 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000749,
-    "sites": 11,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "es",
         "en",
-        "de",
-        "ru"
+        "de"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -40,11 +39,13 @@
         {
             "rule": "russiatoday\\.com\\/static\\/build\\/js\\/28\\.ccc62715\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "es"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -89,9 +90,9 @@
                 "es"
             ],
             "apis": {
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -138,9 +139,9 @@
                 "en"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.devicePixelRatio": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -168,9 +169,9 @@
                 "en"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
                 "window.innerWidth": 6,
-                "window.innerHeight": 6
+                "window.innerHeight": 6,
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 6,
             "prevalence": 0.0000408,
@@ -532,7 +533,7 @@
                 "es"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -727,29 +728,6 @@
             ]
         },
         {
-            "rule": "russiatoday\\.com\\/static\\/v1\\/web\\/js\\/JS-Podcasts\\.f1039832\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "de"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "446bdc138ef3133483cb6d5372ebdf6b1d20c0fc156e9485c116b8bcfb5b33b7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rt.com",
-                "pressefreiheit.rtde.tech",
-                "test.rtde.me"
-            ]
-        },
-        {
             "rule": "russiatoday\\.com\\/static\\/v1\\/web\\/js\\/JS-PopularBoxWidget\\.b8960a26\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -757,7 +735,7 @@
                 "de"
             ],
             "apis": {
-                "window.innerWidth": 3
+                "window.innerWidth": 2
             },
             "sites": 4,
             "prevalence": 0.0000272,
@@ -950,7 +928,6 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ru",
                 "en"
             ],
             "apis": {},
@@ -958,7 +935,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "59a17cf4b36a5d37288612d4218ccf37d7ac1c38d1ee3c570b0ff5ab64ab467f"
+                "4ae6c454a262263a69bc765f349dc24c3fa9c9467f6b86f42f909bfa40b271b3"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -970,20 +947,18 @@
         },
         {
             "rule": "russiatoday\\.com\\/static\\/js\\/common\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [
-                "ru",
                 "en"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.maxTouchPoints": 1,
                 "window.localStorage": 2,
-                "Event.prototype.timeStamp": 1,
-                "window.innerWidth": 1,
-                "Navigator.prototype.platform": 1
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -992,7 +967,20 @@
                 "009149c57a4e17ab7efbee65e223fd85f9decb42d423358543ad495b163f0f6c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "podcast-volume": {
+                    "ttl": 157680003,
+                    "length": 3,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                },
+                "podcast-muted": {
+                    "ttl": 157680003,
+                    "length": 5,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rt.com",
@@ -1105,7 +1093,7 @@
     ],
     "types": {
         "Stylesheet": 24,
-        "Script": 85,
+        "Script": 82,
         "Font": 12,
         "Image": 2
     },

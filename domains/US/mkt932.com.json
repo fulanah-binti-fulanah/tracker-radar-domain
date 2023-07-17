@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000885,
-    "sites": 13,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "contentz"
     ],
@@ -19,20 +19,44 @@
     "resources": [
         {
             "rule": "mkt932\\.com\\/lp\\/static\\/js\\/iMAWebCookie\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [
                 "contentz"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 7,
-            "prevalence": 0.0000476,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "27a1e80167055f562f0ddda38620ec1f5a354c5ab795c75da16874f4095520f3"
+                "e0447961a33816f0c4e3857863982dbc864a67748c596b78678a7622a8f69282"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "com.silverpop.iMAWebCookie": {
+                    "ttl": 86400007,
+                    "length": 36,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                },
+                "com.silverpop.iMA.page_visit": {
+                    "ttl": 1207,
+                    "length": 3,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                },
+                "com.silverpop.iMA.session": {
+                    "ttl": 1207,
+                    "length": 36,
+                    "prevalence": 0.000006807583648184077,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "finescale.com",
@@ -40,7 +64,7 @@
                 "cs.trains.com",
                 "thousandtrails.com",
                 "www.mtbuller.com.au",
-                "www.rossstores.com",
+                "www.reynoldslakeoconee.com",
                 "www.snowbird.com"
             ]
         }
@@ -51,20 +75,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7692307692307693
+            "prevalence": 0.9090909090909091
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
         "Script": 7
     },
     "nameservers": [
-        "ns3.acoustic-adm.com",
         "ns1.acoustic-adm.com",
         "ns2.acoustic-adm.com",
+        "ns3.acoustic-adm.com",
         "ns4.acoustic-adm.com"
     ]
 }

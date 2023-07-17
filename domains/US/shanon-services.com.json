@@ -7,7 +7,8 @@
     "prevalence": 0.0000272,
     "sites": 4,
     "subdomains": [
-        "tracker"
+        "tracker",
+        "webwidget"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,62 +21,21 @@
                 "tracker"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "d8fb0d233c3f0b40848b04991a5ab13e5c22eae23b92285725abde4705fab99f"
+                "521c1c35eda09bc5cadec28e2cf95385629bb61bb83b3a249384919c2e57dd05",
+                "d2c14999948a1f9fd2f8bed197fb394dbe4e261bd712cb2df612dde59eb583ac",
+                "29c49aa416c0f0a2dec5544ae55a813bea4d7f231cc3560aaf0f6c180edab308"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gentosha-go.com",
-                "www.zeiri4.com"
-            ]
-        },
-        {
-            "rule": "shanon-services\\.com\\/static\\/js\\/cam3\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tracker"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b00d3cff0f9a9463c17075bcc29b9808101597167e5db40d310efcfc451539fb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "__CAMVID": {
-                    "ttl": 31536003,
-                    "length": 12,
-                    "prevalence": 0.000013611924045463826,
-                    "uniqueness": 1
-                },
-                "__CAMSID": {
-                    "ttl": 1803,
-                    "length": 16,
-                    "prevalence": 0.000013611924045463826,
-                    "uniqueness": 1
-                },
-                "__CAMINFO": {
-                    "ttl": 31536003,
-                    "length": 37,
-                    "prevalence": 0.000013611924045463826,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "zeiri4.com",
+                "www.brother.co.jp",
+                "www.pwc.com",
                 "www.zeiri4.com"
             ]
         },
@@ -87,8 +47,8 @@
                 "tracker"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -96,36 +56,89 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__CAMVID": 0.000013611924045463826,
-                "__CAMSID": 0.000013611924045463826,
-                "__CAMINFO": 0.000013611924045463826
+                "__CAMVID": 0.00002042275094455223,
+                "__CAMSID": 0.00002042275094455223,
+                "__CAMINFO": 0.00002042275094455223
             },
             "exampleSites": [
-                "zeiri4.com",
+                "brother.co.jp",
+                "www.pwc.com",
                 "www.zeiri4.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/public\\/widgets",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webwidget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "67244d12481519231f3b1b68d9c7474dcb9d2fe6202a6124bb6793bb4ef2e56b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__CAMVID": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "pwc.com",
+                "www.pwc.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/public\\/widgets",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webwidget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__CAMVID": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "pwc.com",
+                "www.pwc.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "smartseminar.jp",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5833333333333334
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 7,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-668.awsdns-19.net",
-        "ns-1613.awsdns-09.co.uk",
+        "ns-1500.awsdns-59.org",
         "ns-508.awsdns-63.com",
-        "ns-1500.awsdns-59.org"
+        "ns-1613.awsdns-09.co.uk",
+        "ns-668.awsdns-19.net"
     ]
 }

@@ -9,108 +9,245 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00201,
-    "sites": 20,
+    "prevalence": 0.00242,
+    "sites": 24,
     "subdomains": [
+        "cdn",
         "st",
         "st-eu",
-        "cdn",
         "async-px",
+        "px",
         "cdn-eu",
-        "rcom",
-        "px"
+        "rcom"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "dynamicyield\\.com\\/api\\/8771388\\/api_static\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "Document.cookie setter": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8e3b896dc8fe55c5776ab98d1ac281d66d6f28c95031cb319938665030f9fb9c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_dyjsession": {
+                    "ttl": 1800,
+                    "length": 32,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "dy_fs_page": {
+                    "ttl": -742854161,
+                    "length": 19,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dy_csc_ses": {
+                    "ttl": 2400,
+                    "length": 32,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dy_soct": {
+                    "ttl": 31536002,
+                    "length": 369,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dycnst": {
+                    "ttl": 2592001,
+                    "length": 2,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dyid": {
+                    "ttl": 2592002,
+                    "length": 19,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dyfs": {
+                    "ttl": -742854161,
+                    "length": 13,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dycst": {
+                    "ttl": 2592002,
+                    "length": 10,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dy_geo": {
+                    "ttl": 2592002,
+                    "length": 29,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dy_df_geo": {
+                    "ttl": 2592002,
+                    "length": 19,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "_dy_toffset": {
+                    "ttl": 2592002,
+                    "length": 2,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "GeoRedirect": {
+                    "ttl": -742854161,
+                    "length": 5,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "511tactical.com",
+                "www.511tactical.com"
+            ]
+        },
+        {
+            "rule": "dynamicyield\\.com\\/api\\/8771388\\/api_dynamic\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "254ea7ea2b2d2abee3b15a2d6dcde8f9d76abe80ba6a129bd76991624fb4daa1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "511tactical.com",
+                "www.511tactical.com"
+            ]
+        },
+        {
             "rule": "dynamicyield\\.com\\/st",
-            "cookies": 0.00191,
+            "cookies": 0.00242,
             "fingerprinting": 0,
             "subdomains": [
                 "st",
                 "st-eu"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.00191,
+            "sites": 24,
+            "prevalence": 0.00242,
             "cnames": [],
             "responseHashes": [
-                "d6b761b27a3066502c647ff8c1178d044fcec272b63204dcf6d522521c30ae3f",
-                "798f01881aaf401ae545bdfc8f6df1020d25665a0859dabaa0d136481ce6b0f3",
-                "7180520440e2ad1a031f3f1bb4e97b8e1bf59913d5ab989feeac7d2e8f10f0aa",
-                "2850df745277c2bd72d1ad3907838738d5f6bf0d5860b10b61fa2735daf61374",
-                "db0a346ae3c9cc5a93325409015a297febdd021c73f6f197344e5784bb83d366",
-                "17d667613e4267bb45cf7e7083229e2d8be1222adb135c852de3b6467fad473d",
-                "0f77c1360bb20b36c4a4ba46ababd65ccbaed6847c69d2c89eac5fca0aabdf4c",
-                "4e2bdcc70fda790576880fbc711de68865664bdaf890ad752c302ac69de9d316",
-                "af2d1f713055eacd4573792865ed79088e3bb6edd365824e5cbdadb854468f3e",
-                "ffb08dd8c27bb4eb12e72e4f8b4874bb3ba127690f4d55d141e93dfade42b7da",
-                "cfd9efc47a5a6b0ed7beeb8ed941cbf01c18511fb1b69673f404adb5a444e623",
-                "8758af6318d6759b92b11d4e69bc19fc181461b74177c3efbfda617f3e8cb8f0",
-                "4d601dab81adf8e3f3904345ac17b8c99320137f46ec07dc08cf7fba3e96961e",
-                "47891ce0a10d3c8e26f2ad101e1a81edce569a3ec8665c58f88641020686cdf8",
-                "f89aef48378db19bfb24dd1bae3005a5c1b8aa82cebe82ca71fcd2a6ecf8ac5e",
-                "705f1ad5596db2d874a2b4ffb945a06effe848b47e047e7f264fcdc77c020368",
-                "bb4e7052fefd2efdc008003e749904939a1315e16419875077ac6658739aea21",
-                "793ce98d8b6a25974836010a054ad5312230072531f5ac41f30f59842fdc7216"
+                "8cb67f623b590e23a750ae96082fdf79ea229c7ac21286b7127b8bcd82a6baec",
+                "1ed195e5adf7657ed0cc20b849fb07f00fd61d725e6ca26737326ea51c8d16f9",
+                "6cedc712e382cc0244adfe4195e93adaddbcb4802ba39f578fce238449711527",
+                "0f83df3c91459cbc9988f81a938d19aa86667f79cb76a24a6789da838fd8b8fd",
+                "82b3ecfc6d33a1bbea3577b3b9582e040ea8d0b8c82371614e28cfd094d407d4",
+                "ff89d89de03fe4609cb388b61a965ac237eaccc027ddd1604b3e5e1f69655489",
+                "f643350b45a1b595695d0e2756882d6c1081a1c5f5ef806b75b3424f490533a1",
+                "61740b20463d7ef8b11b7c704820d406c92b3ed6762bb8607d1101342760960e",
+                "a45913b2d6e368bd690f823f2ed577065862faf9a4e7ff53a0495155a6d83df6",
+                "0b1e18e3745ed225b72bc9b4c49934315a1034e06ae6d8732197097c4d009294",
+                "6d1be8f88ec5088aace0b0fb0b2d997eae456957286d36bec0dcbea5719ee08b",
+                "59540657e433243c503da9ac2ee993c700c2d71a03354c3785c07643cfa66a9d",
+                "1d6d5d4a24e97804c210d060d4b8d43c833c34f9d4b78fd0fb70ced8eb470335",
+                "b97e556cef3820fb9aa897f0a8d79b98a002a764b6d07ef9612255b410fc994d",
+                "bb8fa4c6d9b86d25ff05fea6e86b71a346e658e4c92aed8f8130730f7c09cd50",
+                "d6c5bd14a0c4ba436a21ad3fc03afb85dc5fec68fd13f36334e4cab7a29b0b0c",
+                "ea23750e8e3f7b5594766ded5d9adc1be2a6df461f2fd66daa16a6724fb19d79",
+                "b29d344457c8a02771a253725468ac92ac3d7950845701b8e55a51d0a740ad9c",
+                "6d276c9864d3a48925806e118d5fdd227ca3ddfc5f25f5409224fdb58820cff5",
+                "9e45dcd752c92d6e62b5d158f411b024f8ece7463c5445eb47903a4aaded8bbf",
+                "c2aef033a4db466c2e24ebefd15ce472185cc465c1abe210115be8ec1d59d3e3",
+                "43f93fbfac9fc7ee5ad363c9f6f5cc502920da11e13b8541b314a71085cca361",
+                "889240991e14e21dca72994f9d6ed8c26827aa26364c942fd7bf295a34435739"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dyjsession": 0.0004017677782241864,
-                "_dy_csc_ses": 0.0004017677782241864,
-                "_dyid": 0.0001004419445560466
+                "_dyjsession": 0.0006042904622822037,
+                "_dy_csc_ses": 0.0006042904622822037,
+                "dy_fs_page": 0.00010071507704703394,
+                "_dyid": 0.00020143015409406788
             },
             "exampleSites": [
-                "apmex.com",
                 "www.aritzia.com",
-                "www.bluemountain.com",
-                "www.cabelas.ca",
-                "www.callawaygolf.ca",
-                "www.cartersoshkosh.ca",
-                "www.dior.com",
-                "www.ferguson.com",
-                "www.gadventures.com",
-                "www.harborfreight.com",
-                "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
-                "www.jacquielawson.com",
-                "www.lacoste.com",
                 "www.michaelkors.ca",
+                "www.harryrosen.com",
+                "www.jacquielawson.com",
+                "www.gadventures.com",
+                "www.511tactical.com",
+                "www.kohls.com",
+                "www.apmex.com",
+                "www.harborfreight.com",
+                "www.dior.com",
+                "www.yesstyle.com",
+                "www.bluemountain.com",
+                "www.cartersoshkosh.ca",
+                "www.avery.com",
+                "www.callawaygolf.ca",
+                "www.fatquartershop.com",
                 "www.pelican.com",
-                "www.peoplesjewellers.com",
-                "www.sportchek.ca"
+                "511tactical.com",
+                "www.ferguson.com",
+                "www.peoplesjewellers.com"
             ]
         },
         {
-            "rule": "dynamicyield\\.com\\/scripts\\/1\\.176\\.0\\/dy-coll-min\\.js",
+            "rule": "dynamicyield\\.com\\/scripts\\/1\\.184\\.0\\/dy-coll-min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Date.prototype.getTime": 6,
-                "Navigator.prototype.appName": 6,
-                "Screen.prototype.width": 6,
-                "Screen.prototype.height": 6,
-                "window.innerHeight": 6,
-                "window.innerWidth": 5
+                "Navigator.prototype.userAgent": 9,
+                "Date.prototype.getTime": 9,
+                "Navigator.prototype.appName": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "window.innerHeight": 9,
+                "window.innerWidth": 8
             },
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 9,
+            "prevalence": 0.000906,
             "cnames": [],
             "responseHashes": [
-                "8d45dd50af1abd06acdc8a31d3953997137b8a2e1797a003a733f840c0beeaa9"
+                "c70e10ca8fafcb362f20607f77364e4543d78821c0c2d2158ec253624e461ec5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "apmex.com",
+                "511tactical.com",
+                "www.511tactical.com",
+                "www.apmex.com",
+                "www.avery.com",
                 "www.bluemountain.com",
                 "www.cabelas.ca",
                 "www.gadventures.com",
@@ -126,31 +263,39 @@
                 "async-px"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 18,
+            "prevalence": 0.00181,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.001004419445560466,
-                "_dyid": 0.0011048613901165126,
-                "_dycst": 0.0011048613901165126,
-                "IR_gbd": 0.0001004419445560466
+                "dy_fs_page": 0.0014100110786584752,
+                "_dyid": 0.001510726155705509,
+                "_dycst": 0.001510726155705509,
+                "IR_gbd": 0.00010071507704703394,
+                "_li_dcdm_c": 0.00010071507704703394
             },
             "exampleSites": [
-                "apmex.com",
+                "511tactical.com",
+                "www.511tactical.com",
+                "www.apmex.com",
                 "www.aritzia.com",
+                "www.avery.com",
                 "www.bluemountain.com",
                 "www.callawaygolf.ca",
+                "www.fatquartershop.com",
                 "www.ferguson.com",
                 "www.gadventures.com",
                 "www.harborfreight.com",
                 "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
                 "www.jacquielawson.com",
+                "www.kohls.com",
                 "www.lacoste.com",
+                "www.linenchest.com",
+                "www.meublesrd.com",
                 "www.pelican.com"
             ]
         },
@@ -162,8 +307,8 @@
                 "async-px"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
+            "sites": 23,
+            "prevalence": 0.00232,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -172,62 +317,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "apmex.com",
                 "www.aritzia.com",
-                "www.bluemountain.com",
-                "www.cabelas.ca",
-                "www.callawaygolf.ca",
                 "www.cartersoshkosh.ca",
-                "www.ferguson.com",
+                "www.linenchest.com",
                 "www.gadventures.com",
                 "www.harborfreight.com",
                 "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
-                "www.jacquielawson.com",
-                "www.lacoste.com",
-                "www.michaelkors.ca",
-                "www.pelican.com",
                 "www.peoplesjewellers.com",
-                "www.sportchek.ca"
-            ]
-        },
-        {
-            "rule": "dynamicyield\\.com\\/var",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "async-px"
-            ],
-            "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_dyid": 0.0016070711128967456
-            },
-            "exampleSites": [
-                "apmex.com",
+                "www.michaelkors.ca",
+                "www.avery.com",
+                "www.lacoste.com",
+                "www.pelican.com",
                 "www.apmex.com",
-                "www.aritzia.com",
+                "511tactical.com",
                 "www.bluemountain.com",
                 "www.cabelas.ca",
                 "www.callawaygolf.ca",
-                "www.cartersoshkosh.ca",
-                "www.ferguson.com",
-                "www.gadventures.com",
-                "www.harborfreight.com",
-                "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
                 "www.jacquielawson.com",
-                "www.lacoste.com",
-                "www.michaelkors.ca",
-                "www.pelican.com",
-                "www.peoplesjewellers.com"
+                "www.kohls.com",
+                "www.ferguson.com",
+                "www.yesstyle.com"
             ]
         },
         {
@@ -238,8 +347,8 @@
                 "async-px"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
+            "sites": 23,
+            "prevalence": 0.00232,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -248,24 +357,94 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "apmex.com",
+                "www.harborfreight.com",
+                "511tactical.com",
+                "www.pelican.com",
+                "www.harryrosen.com",
+                "www.gadventures.com",
+                "www.kohls.com",
+                "www.peoplesjewellers.com",
+                "www.bluemountain.com",
+                "www.apmex.com",
+                "www.ferguson.com",
+                "www.yesstyle.com",
+                "www.cartersoshkosh.ca",
+                "www.avery.com",
+                "www.linenchest.com",
+                "www.michaelkors.ca",
+                "www.meublesrd.com",
+                "www.aritzia.com",
+                "www.jacquielawson.com",
+                "www.callawaygolf.ca",
+                "www.cabelas.ca"
+            ]
+        },
+        {
+            "rule": "dynamicyield\\.com\\/var",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "async-px"
+            ],
+            "apis": {},
+            "sites": 23,
+            "prevalence": 0.00232,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_dyid": 0.002014301540940679
+            },
+            "exampleSites": [
+                "www.meublesrd.com",
+                "www.cartersoshkosh.ca",
+                "www.511tactical.com",
+                "www.harryrosen.com",
+                "www.ferguson.com",
+                "www.michaelkors.ca",
+                "511tactical.com",
+                "www.linenchest.com",
+                "www.cabelas.ca",
+                "www.jacquielawson.com",
+                "www.yesstyle.com",
+                "www.harborfreight.com",
+                "www.kohls.com",
+                "www.lacoste.com",
                 "www.apmex.com",
                 "www.aritzia.com",
-                "www.bluemountain.com",
-                "www.cabelas.ca",
                 "www.callawaygolf.ca",
+                "www.peoplesjewellers.com",
+                "www.avery.com",
+                "www.fatquartershop.com"
+            ]
+        },
+        {
+            "rule": "dynamicyield\\.com\\/clog",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "511tactical.com",
+                "www.511tactical.com",
+                "www.bluemountain.com",
                 "www.cartersoshkosh.ca",
-                "www.ferguson.com",
-                "www.gadventures.com",
-                "www.harborfreight.com",
-                "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
-                "www.jacquielawson.com",
-                "www.lacoste.com",
-                "www.michaelkors.ca",
-                "www.pelican.com",
-                "www.peoplesjewellers.com"
+                "www.meublesrd.com",
+                "www.yesstyle.com"
             ]
         },
         {
@@ -277,19 +456,19 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.0004017677782241864,
-                "_dyid": 0.0004017677782241864,
-                "_dycst": 0.0004017677782241864,
-                "IR_gbd": 0.0002008838891120932
+                "dy_fs_page": 0.00040286030818813577,
+                "_dyid": 0.00040286030818813577,
+                "_dycst": 0.00040286030818813577,
+                "IR_gbd": 0.00010071507704703394
             },
             "exampleSites": [
-                "apmex.com",
+                "511tactical.com",
                 "www.apmex.com",
                 "www.harborfreight.com",
                 "www.peoplesjewellers.com"
@@ -317,86 +496,86 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "189c3553dfb03e8dddb4a714cf9907e058b7b41478220834d2e2005f1e0dcd89"
+                "8e3b896dc8fe55c5776ab98d1ac281d66d6f28c95031cb319938665030f9fb9c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_dy_ses_load_seq": {
-                    "ttl": 2592003,
+                    "ttl": 2592009,
                     "length": 21,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_csc_ses": {
-                    "ttl": -740662118,
+                    "ttl": -742848249,
                     "length": 1,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_soct": {
-                    "ttl": 31536003,
+                    "ttl": 31536009,
                     "length": 51,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dycnst": {
-                    "ttl": 2592004,
+                    "ttl": 2592009,
                     "length": 2,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dyid": {
-                    "ttl": 2592004,
-                    "length": 20,
-                    "prevalence": 0.0002008838891120932,
+                    "ttl": 2592010,
+                    "length": 19,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dyfs": {
-                    "ttl": -740662118,
+                    "ttl": -742848249,
                     "length": 13,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dyjsession": {
-                    "ttl": -740662118,
+                    "ttl": -742848249,
                     "length": 32,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "dy_fs_page": {
-                    "ttl": -740662118,
+                    "ttl": -742848249,
                     "length": 15,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_lu_ses": {
-                    "ttl": -740662118,
+                    "ttl": -742848249,
                     "length": 48,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dycst": {
-                    "ttl": 2592004,
+                    "ttl": 2592010,
                     "length": 10,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_geo": {
-                    "ttl": 2592004,
+                    "ttl": 2592010,
                     "length": 29,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_df_geo": {
-                    "ttl": 2592004,
+                    "ttl": 2592010,
                     "length": 19,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "_dy_toffset": {
-                    "ttl": 2592004,
+                    "ttl": 2592010,
                     "length": 2,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 }
             },
@@ -407,7 +586,7 @@
             ]
         },
         {
-            "rule": "dynamicyield\\.com\\/scripts\\/1\\.176\\.0\\/dy-coll-nojq-min\\.js",
+            "rule": "dynamicyield\\.com\\/scripts\\/1\\.184\\.0\\/dy-coll-nojq-min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -415,19 +594,19 @@
                 "cdn-eu"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "Navigator.prototype.appName": 13,
-                "Screen.prototype.width": 13,
-                "Screen.prototype.height": 13,
-                "Date.prototype.getTime": 13,
-                "window.innerHeight": 13,
-                "window.innerWidth": 3
+                "Navigator.prototype.userAgent": 15,
+                "Navigator.prototype.appName": 15,
+                "Screen.prototype.width": 15,
+                "Screen.prototype.height": 15,
+                "Date.prototype.getTime": 15,
+                "window.innerHeight": 15,
+                "window.innerWidth": 7
             },
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 15,
+            "prevalence": 0.00151,
             "cnames": [],
             "responseHashes": [
-                "f9e320c019d3a29ccce097b1ecb05f586ecb211de251fcebdfee00705075d1ed"
+                "033ef4430961f9a4950d1eb9a85f6117e0ae6e9f20e6458582dadd9ecb89ae14"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -437,27 +616,29 @@
                 "www.callawaygolf.ca",
                 "www.cartersoshkosh.ca",
                 "www.dior.com",
+                "www.fatquartershop.com",
                 "www.ferguson.com",
                 "www.harborfreight.com",
                 "www.harryrosen.com",
-                "www.hoka.com",
-                "www.hugoboss.com",
+                "www.kohls.com",
                 "www.lacoste.com",
+                "www.linenchest.com",
+                "www.meublesrd.com",
                 "www.pelican.com",
                 "www.peoplesjewellers.com",
-                "www.sportchek.ca"
+                "www.yesstyle.com"
             ]
         },
         {
             "rule": "dynamicyield\\.com\\/userAffinities",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "rcom"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -465,63 +646,38 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dyid": 0.0003013258336681398
+                "_dyid": 0.00020143015409406788
             },
             "exampleSites": [
                 "aritzia.com",
                 "www.cabelas.ca",
-                "www.hugoboss.com"
-            ]
-        },
-        {
-            "rule": "dynamicyield\\.com\\/clog",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "px"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluemountain.com",
-                "www.cartersoshkosh.ca",
-                "www.sportchek.ca"
+                "www.kohls.com"
             ]
         },
         {
             "rule": "dynamicyield\\.com\\/spa\\/json",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "st"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d23b8f4e0951b2fcbef21725f406a603e937b6620fac614d094a00dab6c4b5ff",
-                "1ed0c90b20355848334732514db974f9af03eb04e9f0807437d97ba9ee592440"
+                "6caf7a460486ab7859a6b70286b8826c7a33890dcb5772195c76a0435f88251c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dyjsession": 0.0001004419445560466,
-                "_dy_csc_ses": 0.0001004419445560466,
-                "_dyid": 0.0002008838891120932
+                "_dyjsession": 0.00010071507704703394,
+                "_dy_csc_ses": 0.00010071507704703394,
+                "_dyid": 0.00010071507704703394
             },
             "exampleSites": [
                 "ferguson.com",
-                "www.harryrosen.com",
-                "www.hugoboss.com"
+                "www.harryrosen.com"
             ]
         },
         {
@@ -536,7 +692,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "efb000c92cf8e30abd0a598c5a6164c94e5796e56b660805c699878f296efe70"
+                "1a47ce624c67e2fe1885d6607dffe053829a799f4a1f75fa7af11fc3716e7ecf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -544,6 +700,28 @@
             "exampleSites": [
                 "gadventures.com",
                 "www.gadventures.com"
+            ]
+        },
+        {
+            "rule": "dynamicyield\\.com\\/v3\\/recommend\\/8774928",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8c78e65a385a19d6508872df17821c427428bc6fb6fbcb2d22540d82e9c0fd7f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linenchest.com",
+                "www.linenchest.com"
             ]
         },
         {
@@ -567,6 +745,28 @@
                 "peoplesjewellers.com",
                 "www.peoplesjewellers.com"
             ]
+        },
+        {
+            "rule": "dynamicyield\\.com\\/v3\\/recommend\\/8775686",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c77e828c991613fa8d77cacd44ac0be5be92ed7b2cc421420e357d9a297f0e37"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yesstyle.com",
+                "www.yesstyle.com"
+            ]
         }
     ],
     "categories": [
@@ -576,52 +776,48 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00191,
+    "cookies": 0.00242,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8833333333333333
+            "prevalence": 0.9102564102564102
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.03888888888888889
+            "prevalence": 0.035256410256410256
         },
         {
-            "domain": "yottaa.com",
-            "prevalence": 0.03333333333333333
+            "domain": "michaelkors.com",
+            "prevalence": 0.03205128205128205
         },
         {
             "domain": "btttag.com",
-            "prevalence": 0.016666666666666666
-        },
-        {
-            "domain": "contentsquare.net",
-            "prevalence": 0.011111111111111112
+            "prevalence": 0.01282051282051282
         },
         {
             "domain": "upsellit.com",
-            "prevalence": 0.005555555555555556
+            "prevalence": 0.003205128205128205
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.005555555555555556
+            "prevalence": 0.003205128205128205
         },
         {
-            "domain": "nmgassets.com",
-            "prevalence": 0.005555555555555556
+            "domain": "contentsquare.net",
+            "prevalence": 0.003205128205128205
         }
     ],
     "types": {
-        "Script": 40,
-        "Fetch": 35,
-        "XHR": 29,
-        "Ping": 18,
+        "Script": 54,
+        "Fetch": 45,
+        "XHR": 40,
+        "Ping": 23,
         "Image": 2
     },
     "nameservers": [
+        "ns-409.awsdns-51.com",
         "ns-772.awsdns-32.net",
-        "ns-1102.awsdns-09.org",
         "ns-1687.awsdns-18.co.uk",
-        "ns-409.awsdns-51.com"
+        "ns-1102.awsdns-09.org"
     ]
 }

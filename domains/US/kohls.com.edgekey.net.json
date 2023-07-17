@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
-    "sites": 5,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "prod-edge"
     ],
@@ -20,12 +20,72 @@
             "resolved": "prod-edge.kohls.com.edgekey.net"
         },
         {
+            "original": "assetcert.kohls.com",
+            "resolved": "prod-edge.kohls.com.edgekey.net"
+        },
+        {
             "original": "designsystem.kohls.com",
             "resolved": "prod-edge.kohls.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kohls\\.com\\.edgekey\\.net\\/1\\.3\\.4\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "assetcert.kohls.com",
+                    "resolved": "prod-edge.kohls.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "db8ecbee35f5b40bec6dc33e75b8ae4c1adbf17d0160e19e9edc6ff9d5dd82fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kohls.com",
+                "m.kohls.com",
+                "www.kohls.com"
+            ]
+        },
+        {
+            "rule": "kohls\\.com\\.edgekey\\.net\\/assets\\/2\\.69\\.0\\/fonts\\/zenithFonts\\.css",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "designsystem.kohls.com",
+                    "resolved": "prod-edge.kohls.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f454249179a814235fc3fb95d944190adf6b371e0c1f000d2445eed78d1dd353"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kohls.com",
+                "m.kohls.com",
+                "www.kohls.com"
+            ]
+        },
         {
             "rule": "kohls\\.com\\.edgekey\\.net\\/update\\/ede\\/assets\\/experiences\\/webstore\\/bd-experience-rendering-sdk\\.default\\.theme\\.min\\.css",
             "cookies": 0,
@@ -99,7 +159,7 @@
                 }
             ],
             "responseHashes": [
-                "8e74975d0c0a6ffd0f3aff3a0990d4f312cc3c453cb4b33f0800b4d3dcabfe6e"
+                "4c648b5db44e40b0b836cfab0a91caa54d530d181f79b9d489d12315fc9370ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -127,8 +187,7 @@
                 }
             ],
             "responseHashes": [
-                "d8f5907956eaa9c000f316b9fea9161f3673634fffe02f84665b2f7fe3016f9e",
-                "0ce3739085f0801ee9948dee45e3940bc99250dd62d8d6cef1ebd6ccd6bfe6ca"
+                "47caf4140e2a39fa7593f870c84293d1d5202b180a7b9a2b579d50acef107d85"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -182,8 +241,7 @@
                 }
             ],
             "responseHashes": [
-                "bbe9fd8a2bb62d0c2e01484c3de637dc5db728f897a08a615c4505655825ea7e",
-                "05326cc75941b31fa67c06a169f862a2701b220b4cc8d2f49a98694b2be33ac8"
+                "740bb89590037f0569df267378639740f494c8c4a0c9bfa93f5be611c1f89ef4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -225,21 +283,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
-            "domain": "dynatrace.com",
-            "prevalence": 0.625
+            "domain": "go-mpulse.net",
+            "prevalence": 0.6
         },
         {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.375
+            "domain": "dynatrace.com",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Stylesheet": 3,
+        "Script": 6,
+        "Stylesheet": 6,
         "Image": 3,
-        "Script": 3,
         "XHR": 6,
         "Preflight": 3,
         "Ping": 3

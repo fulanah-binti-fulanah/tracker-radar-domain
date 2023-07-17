@@ -7,78 +7,109 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
+        "cdn",
         "data"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "pendo\\.io\\/data\\/ptm\\.gif\\/16bd5dd1-e029-4c34-7a4c-3482b1250970",
+            "rule": "pendo\\.io\\/agent\\/static\\/85872289-85e6-434e-7f1b-a803c02ed2be\\/pendo\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "data"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "Navigator.prototype.languages": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssrn.com",
-                "papers.ssrn.com"
-            ]
-        },
-        {
-            "rule": "pendo\\.io\\/data\\/ptm\\.gif\\/cc6fbeb8-269e-4f49-728a-9da8153f61b7",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "data"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "codecademy.com",
-                "www.codecademy.com"
-            ]
-        },
-        {
-            "rule": "pendo\\.io\\/data\\/guide\\.js\\/cc6fbeb8-269e-4f49-728a-9da8153f61b7",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "data"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f5f55d36ab76e707fbc8e20792f026d46c48a3b583d1c5f1f8774c7963affa7a"
+                "8ac4a3a8ce3d4ee0333dda974d34d9e676971afee9948684b3854bbb407ee7b0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "codecademy.com",
-                "www.codecademy.com"
+                "lpl.ca",
+                "www.lpl.ca"
+            ]
+        },
+        {
+            "rule": "pendo\\.io\\/data\\/ptm\\.gif\\/85872289-85e6-434e-7f1b-a803c02ed2be",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lpl.ca",
+                "www.lpl.ca"
+            ]
+        },
+        {
+            "rule": "pendo\\.io\\/data\\/guide\\.js\\/85872289-85e6-434e-7f1b-a803c02ed2be",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2f780b6710e1fafe6535a36bc327ed2f7297ac538e1eaf7f44813a82eb4cb296"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lpl.ca",
+                "www.lpl.ca"
+            ]
+        },
+        {
+            "rule": "pendo\\.io\\/data\\/guide\\.gif\\/85872289-85e6-434e-7f1b-a803c02ed2be",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lpl.ca",
+                "www.lpl.ca"
             ]
         }
     ],
@@ -87,38 +118,46 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "vega-widgets.s3.us-east-2.amazonaws.com",
+            "prevalence": 0.5102040816326531
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.42105263157894735
+            "prevalence": 0.2653061224489796
         },
         {
             "domain": "transcend.io",
-            "prevalence": 0.21052631578947367
-        },
-        {
-            "domain": "segment.com",
-            "prevalence": 0.15789473684210525
+            "prevalence": 0.08163265306122448
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.04081632653061224
+        },
+        {
+            "domain": "vibes.com",
+            "prevalence": 0.04081632653061224
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.02040816326530612
+        },
+        {
+            "domain": "segment.com",
+            "prevalence": 0.02040816326530612
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.02040816326530612
         }
     ],
     "types": {
-        "Image": 4,
-        "Script": 2
+        "Script": 4,
+        "Image": 4
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e4.googledomains.com"
     ]
 }

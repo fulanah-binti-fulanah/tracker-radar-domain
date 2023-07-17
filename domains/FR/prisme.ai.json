@@ -4,33 +4,38 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
+        "cdn",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "prisme\\.ai\\/v1\\/notifications",
+            "rule": "prisme\\.ai\\/wegobot_inject\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "1280b179829297a72805339a43abb37897ef7f6c82cc699841d9cf757cac39e4"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "quimper.bzh",
+                "departement13.fr",
                 "www.quimper.bzh"
             ]
         },
@@ -43,15 +48,37 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "quimper.bzh",
-                "www.quimper.bzh"
+                "departement13.fr",
+                "www.departement13.fr"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/v1\\/notifications",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.departement13.fr"
             ]
         }
     ],
@@ -61,16 +88,17 @@
     "topInitiators": [
         {
             "domain": "gogowego.com",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.625
         },
         {
             "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.375
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-154-c.gandi.net",

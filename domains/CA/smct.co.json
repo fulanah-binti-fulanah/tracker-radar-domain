@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
-    "subdomains": [],
+    "prevalence": 0.000604,
+    "sites": 6,
+    "subdomains": [
+        "ls"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -19,22 +21,55 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.sessionStorage": 2
+                "window.sessionStorage": 4,
+                "window.localStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "f5582475947d6b512abc8279dc59f6ee34512bdaf3eaa76af2450a99b1b9b05e",
-                "c427a7b7f187094e8546bcce905a56fc540aa529ebeaee88a4dc76cbc3f342a9"
+                "c740481fb1521ae164d0ec866e5548eefb8852ca8a5db4b87703d1bcc0953bfd",
+                "0f1cfe5dc8b03ce81c94ff56d29c786f2096ae5329b09a3a5e524cd9aab669dc",
+                "a9fbe68136ca5392c66dafa640e7d640ce406fed82027151cff7799c1b4e4af4",
+                "35f821bc57680410719dbb11647917595152881ad4a4803a445e0ce62045fa25",
+                "35f49115e2dd8bbf7806977cddd3a012dc996a2d7ad7338cc496d4e90e721868"
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00010071507704703394
+            },
+            "exampleSites": [
+                "classiccars.com",
+                "ca.eufy.com",
+                "www.cityexperiences.com",
+                "www.datacamp.com",
+                "www.linenchest.com",
+                "www.sunglasshut.com"
+            ]
+        },
+        {
+            "rule": "smct\\.co\\/lse1\\.3\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ls"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "017217e952a763a6a3ac2688bb3c1c17db0a42721148434b9060158bd08716d6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eufy.com",
-                "classiccars.com",
-                "www.sunglasshut.com"
+                "datacamp.com",
+                "www.datacamp.com"
             ]
         }
     ],
@@ -44,16 +79,29 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "smct.io",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "affiliatefuture.com",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 6,
+        "Document": 2
     },
     "nameservers": [
         "ns-2014.awsdns-59.co.uk",
-        "ns-96.awsdns-12.com",
         "ns-753.awsdns-30.net",
+        "ns-96.awsdns-12.com",
         "ns-1303.awsdns-34.org"
     ]
 }

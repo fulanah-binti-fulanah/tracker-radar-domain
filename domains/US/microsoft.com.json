@@ -9,32 +9,42 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00098,
-    "sites": 144,
+    "prevalence": 0.00202,
+    "sites": 297,
     "subdomains": [
+        "adsdk",
+        "wcpstatic",
         "browser.pipe.aria",
         "eu-mobile.events.data",
-        "adsdk",
-        "us-mobile.events.data",
         "browser.events.data",
-        "wcpstatic",
+        "us-mobile.events.data",
+        "tb.events.data",
+        "noam.events.data",
+        "eu-office.events.data",
+        "atlas",
         "target",
         "www",
         "c1",
         "powerva",
         "ajax",
-        "atlas",
         "opensource",
         "fpt.dfp",
-        "westus2.tts.speech",
         "edge-auth",
         "mtag",
-        "analyticspixel",
-        "customervoice"
+        "dec1feca562fb5cb6fb0c90f4e060093.measure",
+        "c3fd4eaeb1b7e0bffd8d4a000e39acb1.measure"
     ],
     "cnames": [
         {
+            "original": "dfp-fpt.dor.wa.gov",
+            "resolved": "fpt.dfp.microsoft.com"
+        },
+        {
             "original": "fpt.bellhelmets.com",
+            "resolved": "fpt.dfp.microsoft.com"
+        },
+        {
+            "original": "fpt.blackburndesign.com",
             "resolved": "fpt.dfp.microsoft.com"
         },
         {
@@ -62,12 +72,98 @@
             "resolved": "fpt.dfp.microsoft.com"
         },
         {
+            "original": "fpt.remington.com",
+            "resolved": "fpt.dfp.microsoft.com"
+        },
+        {
             "original": "fpt.speer.com",
             "resolved": "fpt.dfp.microsoft.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/native-to-display\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "adsdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 97
+            },
+            "sites": 114,
+            "prevalence": 0.000776,
+            "cnames": [],
+            "responseHashes": [
+                "1cbee518f6314d565c81f72af6f09dbc74cc770fce1a02a90b52c2c2dd480985"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "symbolsdb.com",
+                "www.aonprd.com",
+                "www.hmdb.org",
+                "us.icalculator.com",
+                "dinarchronicles.com",
+                "ruwix.com",
+                "www.barchart.com",
+                "lotro-wiki.com",
+                "blog.cheapism.com",
+                "www.mediafire.es",
+                "mbaction.com",
+                "aussie-hours.com",
+                "www.essentiallysports.com",
+                "campify.jp",
+                "spoonuniversity.com",
+                "www.solutionmotsfleches.com",
+                "homeautomationways.com",
+                "www.site-annonce.fr",
+                "wikibio.in",
+                "www.kinofans.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Document.cookie getter": 8,
+                "Document.cookie setter": 7
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSCC": {
+                    "ttl": 86403,
+                    "length": 2,
+                    "prevalence": 0.000034037918240920386,
+                    "uniqueness": 0.2
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mojang.com",
+                "education.minecraft.net",
+                "feedback.minecraft.net",
+                "forums.obsidian.net",
+                "microsoft.github.io",
+                "minecrafthelp.zendesk.com",
+                "www.flightsimulator.com",
+                "www.minecraft.net",
+                "www.msngames.com"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -77,8 +173,8 @@
                 "eu-mobile.events.data"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.00017,
+            "sites": 32,
+            "prevalence": 0.000218,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -87,53 +183,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.infineon.com",
+                "www.electroschematics.com",
+                "www.epiloglaser.com",
+                "www.techstreet.com",
+                "de.ecoflow.com",
+                "austin.com",
+                "www.lexmark.com",
+                "cafc.uscourts.gov",
                 "us.ecoflow.com",
                 "www.bettermusic.com.au",
+                "www.wonderslist.com",
+                "www.benu.nl",
                 "www.mrcooper.com",
-                "medicinaonline.co",
-                "my.bswhealth.com",
-                "www.weboost.com",
-                "www.electroschematics.com",
-                "sciencefiles.org",
-                "catholicism.org",
-                "www.winterwatch.net",
-                "www.cornwall.gov.uk",
-                "www.ecoflow.com",
-                "www.lynkco.com",
-                "catholicstand.com",
-                "my.clevelandclinic.org",
-                "www.miumiu.com",
+                "www.prada.com",
+                "americancollectors.com",
+                "www.infineon.com",
                 "www.gotransit.com",
-                "www.iqair.com",
-                "www.benu.nl"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/native-to-display\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "adsdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 5,
-            "prevalence": 0.000034,
-            "cnames": [],
-            "responseHashes": [
-                "a031aa283fa67b76e36ed05c1f1ff92901fc37da1efd3746611dd661c5f9573f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trains.com",
-                "murderpedia.org",
-                "ndmais.com.br",
-                "terrabrasilnoticias.com",
-                "www.aujardin.org"
+                "www.winterwatch.net",
+                "www.coverstore.com",
+                "www.cornwall.gov.uk",
+                "www.superfeet.com"
             ]
         },
         {
@@ -141,55 +210,60 @@
             "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
+                "browser.events.data",
+                "eu-mobile.events.data",
                 "us-mobile.events.data",
-                "browser.events.data"
+                "tb.events.data",
+                "noam.events.data",
+                "eu-office.events.data"
             ],
             "apis": {},
-            "sites": 21,
-            "prevalence": 0.000143,
+            "sites": 30,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "48649eeee778002422a327bfee0fc4f1792b4b28b62a11b4fcce7366ebd47840",
-                "3c3fa8f835fdc584786a3af59b23cefa7f3420175abdf9f4fa321d3dd962611d",
+                "269d6331edcabda4c79c7225e355c32e99d8762ee8ea05e40da1ad6d53f88b71",
+                "d36602e7006c8249d296a0550893894beb0c2d25b022b3590a51533f8766df79",
+                "b5f4bb37ecfb9e748b5ec415927f064d6f0bc347b91a7b091f1d8654007786d1",
+                "fd5c95737e775ca8d28f6efd93190a2f9bbb1fd97c3f03be4a4cd9dd13c158df",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58",
-                "205f3da78c1d3da68fc19a80550c48570194da1e548384c7f20e0d090557fd12",
-                "a01c93b15b2b592dc2498f62821d0d4a3d2ecea414c72ca6b5c2277d613f89ec",
-                "2d4b10bc517baee25d5a2ad91f9c55ed57f5a1d67d4f931104c9a52114be516a",
-                "940734eb40d7dfadf4ed51d3327ab6e3ab2a7effa33e1ab75d4199249f5c7283",
-                "7897e08a289c4d99d3b3de40827f5e8616aa76dfe488787e7484c70266201bcf",
-                "78ab297e9c7dcd4dc1c6b43d581f64854393f00ea64553846b84a7be1a994fed",
-                "227a0f31f5583f79137561628c49c66c22a5b47f4dc64d24e77faf28034818d2",
-                "f1dcb2ec1df5229b5e1fe8056939d04dc5fa7e838ba925abd9450b3cd1d94627",
-                "3dfc5a6810c78500999ee9e4c657c6e84687a4cc2c89f8f5039cf6742da24dfc",
-                "4aaf5c4f18c26af2c02fe9fcb42f4e4f09f40bde7040afc5909c9856a3f68b2e",
-                "7d4906f4a76a30587e41dfb8c4de1871a0871af803defee6836fdb77d797e0a3",
-                "51eb16447d65a8e85488cc5b300daa11092e03134afc7e587392a1563640ca8d",
-                "f7215859d1d7cf3c78bf86748498ddd2474078362a8df9842d80fbc4ffed9132"
+                "06dad27d89dd3be398d7288708aeeba7e2d185bf3ade9c1ca252b85985509de8",
+                "a101f2be60122bf5aeb91a7e9cd9c05a15ca62b95470f892e5451ba138e55cc3",
+                "b89fc2c503adf32e066d5d169b23876debac01a350d4fdcefc66de8be41a3554",
+                "73a3434c2e285b3da8415a24daf3e7f4a0bf84c90fba8a98f6a5c5d111632ee8",
+                "f086a800642c8ac4faf43d473924973be6c20116f9c5dbdca215fdf97c885fa6",
+                "9b8c0e0a74e230d772cbef99fa6631cdd5d23075584633384b8164d30b2624d2",
+                "47e8b7846cb315e96f5d8463b4a91a2fab3626080d9ff58c86f7f21734d83bcb",
+                "d98e0d1ed6c7197c03085b63a2667c7905047fff572ce3c7436edda710629696",
+                "e12511365a56dadbb6ca9db7b6e86a6566cc176f79daca9a039dad7c78df5eb2",
+                "1c0a39ab3bf24d71d6d6cac9aa50e13c8ff5569db1ce12a19501b480fa535181",
+                "443a90baf04def70862b0823078ec78d01cbb47f65b3982e95022c87e12025c3",
+                "f204452d6c5b458b1c9c29bbb7a1ad001a11e7bbd4b2c102c8846882a47f0bcf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gonctd.com",
-                "portal.311.nyc.gov",
-                "education.minecraft.net",
-                "www.supercars.com",
-                "www.trekbikes.com",
-                "takelessons.com",
-                "webmail.apps.mil",
                 "www.swimmingpool.com",
-                "www.virginia.gov",
-                "www.piedmontng.com",
-                "feedback.minecraft.net",
-                "customersupport.spirit.com",
-                "spirit.com",
-                "electra.trekbikes.com",
-                "helpcenter.trendmicro.com",
-                "minecrafthelp.zendesk.com",
-                "support.fender.com",
-                "www.weboost.com",
+                "www.msngames.com",
+                "www.minecraft.net",
                 "www.13cabs.com.au",
-                "www.minecraft.net"
+                "education.minecraft.net",
+                "woodbine.com",
+                "faq.ssa.gov",
+                "www.piedmontng.com",
+                "customersupport.spirit.com",
+                "www.fivewishes.org",
+                "www.kalcounty.com",
+                "portal.311.nyc.gov",
+                "helpcenter.trendmicro.com",
+                "support.fender.com",
+                "feedback.minecraft.net",
+                "community.hmrc.gov.uk",
+                "dvagov-btsss.dynamics365portals.us",
+                "www.supercars.com",
+                "webmail.apps.mil",
+                "electra.trekbikes.com"
             ]
         },
         {
@@ -197,73 +271,67 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "eu-mobile.events.data",
                 "us-mobile.events.data",
-                "browser.events.data"
+                "tb.events.data",
+                "browser.events.data",
+                "noam.events.data",
+                "eu-office.events.data"
             ],
             "apis": {},
-            "sites": 16,
-            "prevalence": 0.000109,
+            "sites": 21,
+            "prevalence": 0.000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "spirit.com",
-                "customersupport.spirit.com",
-                "education.minecraft.net",
-                "feedback.minecraft.net",
-                "gonctd.com",
-                "helpcenter.trendmicro.com",
-                "minecrafthelp.zendesk.com",
-                "portal.311.nyc.gov",
                 "support.fender.com",
-                "takelessons.com",
+                "portal.311.nyc.gov",
+                "gonctd.com",
+                "storageauctions.com",
                 "webmail.apps.mil",
-                "woodbine.com",
-                "www.minecraft.net",
+                "www.gtcountymi.gov",
+                "minecrafthelp.zendesk.com",
+                "education.minecraft.net",
                 "www.piedmontng.com",
-                "www.virginia.gov",
-                "www.weboost.com"
+                "dvagov-btsss.dynamics365portals.us",
+                "www.fivewishes.org",
+                "hmrc.gov.uk",
+                "faq.ssa.gov",
+                "woodbine.com",
+                "www.subaru.com",
+                "feedback.minecraft.net",
+                "helpcenter.trendmicro.com",
+                "www.minecraft.net",
+                "www.transferexpress.com",
+                "www.ssa.gov"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.0000408,
-            "fingerprinting": 1,
+            "rule": "microsoft\\.com\\/sdk\\/javascript\\/mapcontrol\\/2\\/atlas\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "wcpstatic"
+                "atlas"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Document.cookie getter": 7,
-                "Document.cookie setter": 6
-            },
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
+                "5b36865605f0eacc3b64a9b18af34cc18e6e9a6401924fc652344957a62df356"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "MSCC": {
-                    "ttl": 86402,
-                    "length": 2,
-                    "prevalence": 0.000027223848090927652,
-                    "uniqueness": 0.25
-                }
-            },
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "minecraft.net",
-                "education.minecraft.net",
-                "feedback.minecraft.net",
-                "forums.obsidian.net",
-                "microsoft.github.io",
-                "minecrafthelp.zendesk.com",
-                "www.flightsimulator.com",
-                "www.minecraft.net"
+                "crackerbarrel.com",
+                "www.big4.com.au",
+                "www.crackerbarrel.com",
+                "www.meritushealth.com",
+                "www.petfood.express"
             ]
         },
         {
@@ -278,10 +346,10 @@
             "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "e648975f43eade344540f102a790f8c1ffb9ecc7731f82a76af6d87d4462533f",
-                "a98b59fef317188eb0a95e29c91563de4bc4c72bff3df943a54681bfd55b830b",
-                "f04d5ed2b5ba4a6689acf5c47c6a14f2487c445a2e9a108ccdaeb41af65b6668",
-                "2ea22205947c7f74cb262420cb978a5637c23f46ac08d0e13de39c02a0e78c3d"
+                "fdbba9415a3419da7ae2e1bf1e142f77d1fd6eb48faa1e747e88a0d01f4f45c8",
+                "39a4d3171f9eb41ee0b1c33cf37b7a26c820b07dad1f492f64c9bcf82ed50073",
+                "531bbdf0fa4afc14bfed831708fd86046db495a0923c83a542c8c594402aaa15",
+                "8c94c1f7db276462214b1f4520f34d816f0025ebc19487e1e311ebdb50902536"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -366,9 +434,9 @@
             "exampleSites": [
                 "minecraft.net",
                 "education.minecraft.net",
+                "feedback.minecraft.net",
                 "minecrafthelp.zendesk.com",
-                "www.minecraft.net",
-                "www.weboost.com"
+                "www.minecraft.net"
             ]
         },
         {
@@ -379,19 +447,21 @@
                 "powerva"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "72bac1cf4ce5a9b9c3e9923b34e8dd2830d168f823578ba033a1569bbcab638e"
+                "33153a6d91afd84f2f4c5d3d763422227e87c1fa12950f3df171fea24dbf9644",
+                "c74a7b33641fab4bf1ae4be7a792db5b4aa11b053f1f45edadbf7bdd727bd53a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "channel": 0.000006805962022731913
+                "channel": 0.000006807583648184077
             },
             "exampleSites": [
                 "virginatlantic.com",
+                "help.virginatlantic.com",
                 "www.cheshireeast.gov.uk"
             ]
         },
@@ -428,8 +498,8 @@
                 "ajax"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "dfee1fe127c3a828a6f88e3ef6e8d1d7f8a3750e6f9d9e24520992a2294696a6"
@@ -440,49 +510,33 @@
             "exampleSites": [
                 "dignityhealth.org",
                 "locations.dignityhealth.org",
+                "login.activebuilding.com",
+                "www.aaautostores.com",
                 "www.searchyellowdirectory.com"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/map\\/tile\\/png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "be1d1c7e0650fb56cebf45604033fd361aa82e599a61cbe085d585c0610bc9a6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mailboxlocate.com",
-                "www.historicenvironment.scot"
-            ]
-        },
-        {
             "rule": "microsoft\\.com\\/",
-            "cookies": 0.0000476,
+            "cookies": 0.0000613,
             "fingerprinting": 3,
             "subdomains": [
                 "opensource",
                 "fpt.dfp"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [
+                {
+                    "original": "dfp-fpt.dor.wa.gov",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
                 {
                     "original": "fpt.bellhelmets.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
-                    "original": "fpt.bushnell.com",
+                    "original": "fpt.blackburndesign.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
@@ -502,97 +556,39 @@
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
+                    "original": "fpt.remington.com",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
+                {
                     "original": "fpt.speer.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 }
             ],
             "responseHashes": [
-                "b94601b6b22478b0222ea17b9f4a54c4524df27c709e85e75acfe75b082761bf",
-                "cb1b4277ec76bdc851c7b75b90855453fe4e6686b88af518145dbe1e5fa030fb",
-                "cb472da1525d7c817f8a619f403594622242a7b760f6390204c34e0576d31c2a",
-                "1eac52fca1b58206ca7b2a6bb6cb0fc6c8683480af447c8179c370b25aec68ed",
-                "210ffcaae319a5b35b74efcbd7a9ed2c205dae45a9750f6ccc6c57a764cc94af",
-                "faee04ef97ddd86178ab546c4ec600ff7a4b951edf094bd3af08ca22f0028ffa",
-                "65bba0db45ed6644ebd1b758214c1fc45095bbcecf7adb5e4de873c3c4342bfb"
+                "bc7e7a67e301959e3392bd88671b57ec8a2f7c44c29a5dacc814a8fa0ebfaf83",
+                "246fde4f710159efc1bf92ac92f101da5e4fa3335002019a397ca1c1b2cb8a6e",
+                "06ac6fa2f3233e14227ed1223318b229b31c71ccb0372aab78885bac34b1538c",
+                "bd99f7d676a1b92a5e245fb72b2bab851f1e73a2b122dab9454fb2f8a1360f69",
+                "b7c913c3a008e634f22a974096dfabb527d0b7bf3f9a91c318a866196df38ce6",
+                "9f6ce6e4390d97265c9338e3acdbedaa1ad0dd0a26db25629a75024ba7e5a8db",
+                "37cf235e81e8c6f67c8756c29fcf025b93f0c8c9c0291d6882ee21833e2c9fbc",
+                "8857970da3d7575b34cc10e1f3475cc4c6c2bb630b44e2197602e7c27cb1a199",
+                "51131a7faf0b5f1da5f95677595396201307052bffeaf4bf31c48b3d43a5d98f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.github.io",
+                "secure.dor.wa.gov",
                 "www.bellhelmets.com",
-                "www.bushnell.com",
+                "www.blackburndesign.com",
                 "www.camelbak.com",
                 "www.cci-ammunition.com",
                 "www.federalpremium.com",
                 "www.giro.com",
+                "www.remington.com",
                 "www.speer.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/sdk\\/javascript\\/mapcontrol\\/2\\/atlas\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "5b36865605f0eacc3b64a9b18af34cc18e6e9a6401924fc652344957a62df356"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
-                "www.big4.com.au",
-                "www.crackerbarrel.com",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/cognitiveservices\\/voices\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "westus2.tts.speech"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7b0719a0b6416b92fb2b4fbc301d5fc86c4a3709e4172d6b8a017a6b622e729a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "d-id.com",
-                "studio.d-id.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/cognitiveservices\\/voices\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "westus2.tts.speech"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "d-id.com",
-                "studio.d-id.com"
             ]
         },
         {
@@ -603,9 +599,13 @@
                 "fpt.dfp"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 11,
+            "prevalence": 0.0000749,
             "cnames": [
+                {
+                    "original": "dfp-fpt.dor.wa.gov",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
                 {
                     "original": "fpt.britax.com",
                     "resolved": "fpt.dfp.microsoft.com"
@@ -615,6 +615,10 @@
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
+                    "original": "fpt.blackburndesign.com",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
+                {
                     "original": "fpt.bushnell.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
@@ -632,6 +636,10 @@
                 },
                 {
                     "original": "fpt.giro.com",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
+                {
+                    "original": "fpt.remington.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
@@ -640,54 +648,36 @@
                 }
             ],
             "responseHashes": [
-                "aa45732b6b5bdc118f0dfa408fea14c8a55513690aae1c09d9e0f2c25cfb5479",
-                "7f4cda77cca35c2a4dd6175436c3b21cee3c63b367855dcf1b07f8d391110dcb",
-                "e1d4514de905e9aa17ce7ee5fe823e9c33461110bd60f1622d7717116023464c",
-                "d4e402f3fbe1c36a85d71fcac552513d2bbcb4ccd2bf946fec5d1491b0ff31ef",
-                "0212f1814b33816b3ab5de4a7164efb43f980243547a6b01f348443a55c52ad6",
-                "1b14f5d729a872224c2e6322dc4cbed2823a6f1aed03ccf090efe302bc0c8fbb",
-                "7bc71e3ae870e09760caf77b7362443daf2a6d983333697d23f79b681e0281c0"
+                "45c94964264559f7d08e3cedd3d080d9a51476011093ad46e3f730be1ef7238e",
+                "60fea93e9915cb7be0d79abce108cfbb9d0769c6b238df68d8ba8363fad807ef",
+                "70f0a6d861886c1fac16a5467b1ce68d35fe2ca2f0641cf3d6535fb1cf71431e",
+                "973585a59ae2ef77a632fb0917bb712ced351bc2ce55ac886f9887e921fcc7d4",
+                "2969168fefb8d2753ef8bef4ee2e6c6419ab2c33ef11c81301fdcca764fd3f40",
+                "46b91aaf7e58be1fd01b3c7b1f3d3c13a4b8135731c99e4cfb046ec4c911c1f4",
+                "b599fe1e9677b7aaa78e06cbd95cc10f4b2a4423b795dc8dab2ef1a01159ff5c",
+                "3a3591b0c02cd26d6759d60528c1f264d9a444f9d744f0a91077039bbcdc36ae",
+                "4d7038a379e3e61b6f67bfa8d5685754c938d0415790fee1959a573c59cd1a12"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "britax.com",
+                "wa.gov",
                 "us.britax.com",
                 "www.bellhelmets.com",
+                "www.blackburndesign.com",
                 "www.bushnell.com",
                 "www.camelbak.com",
                 "www.cci-ammunition.com",
                 "www.federalpremium.com",
                 "www.giro.com",
+                "www.remington.com",
                 "www.speer.com"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/ajax\\/jquery\\.validate\\/1\\.7\\/jquery\\.validate\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajax"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4bcce205f04604ce7c10ea64d84730110c5872df2ac2c3699f15f337bd8c5a02"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "austinchronicle.com",
-                "www.mystore411.com"
-            ]
-        },
-        {
             "rule": "microsoft\\.com\\/Clear\\.HTML",
-            "cookies": 0.0000681,
+            "cookies": 0.000102,
             "fingerprinting": 1,
             "subdomains": [
                 "fpt.dfp"
@@ -695,53 +685,67 @@
             "apis": {
                 "window.localStorage": 2
             },
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
-                "2eb72a4ea40a36763d1d2b7f4c5543d823d6866a7d5f29947b62644b49e7efea",
-                "ce61453ddc7a9c8a1dc161769e0da20d88740e0bb139e7a7523dc5134f498ccb",
-                "8990dacb62f5ffd6a122f2c9cd29f34ef4c36c82042cc3b8dd042c3114a631c1",
-                "d1e62981ef764f89bc29b9b0b59c6210bccf25379f4a26b921331d373d30be5c",
-                "1fcd9e2df96ec0fdf40add44c7457188ebcd4432a87b17527fd5a97ad0d897c1",
-                "f4ea96ae3e10bb0566118537b40a6437b6a74261579cd597d62d73dcaa6c027d",
-                "0640f25e6322c67745189c2be4c78748d97d07242cb500b51b13811b10a13449",
-                "e239b9fabf3faab4c0c46bdac78d7825ecf9a580bac2d3e8f9977f7b8d96253b",
-                "7470c2d972657e2aaf22008d406cf1954892fb89cdae6aa738d62a258331b8ec"
+                "de59cd8b73de928f4478d197a0c439f52e10b41801693604e19cd6875ff93fa0",
+                "8e6088e5ab7cacc8d7b21cf9f998c0d6449c6f742832539d4d9def1df3096c69",
+                "47a829e388977f9362b004d74fb31e8fe7d5419a4343ea3555fbe94a62db5a54",
+                "55c791e89b334f9ee0e273545b0aa95c3e447ddcaa6d478ad1a0af5dd7199c67",
+                "df19d5529964f4b6e3b5b033041626d878f90959bf9e2ccde10263bf3f1af659",
+                "05001593a9f32166367dd74438615742277a1385e12dcc1ac2294b787af8e222",
+                "c989a13d19c6e1dde92883eb1db19239c27feaa752d65c59cc8b9b430de13dd3",
+                "107da3b3ddbefab1123052e0b0a54c46388080b477d330bf4f8e5a8070962a95",
+                "095c905b9ee84e0918ffcfb5774b3e1dce8429fa0c7ae4185519b63c45efe30a",
+                "a7db5e5d8a68aaa85dc85ee13512a17a3feab3b832d9621677708e1ac71ee2e3",
+                "070f1691451306912b83475f3e21329ffab5d22970e6712f335689b0cce012d6",
+                "cabbe5239d13d38aa6db3d1147596d55dc3b29f4c32b19b9952863e46163b93e",
+                "4937d2618482d509b2740663888e127ab8d3981a01c38a3a278f178e8f94d865",
+                "84c21ca3f599881aa71bc7bf1a06f66f7ac5ac94d9001afeee1c8f2c885ed428"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bellhelmets.com",
+                "wa.gov",
                 "www.bellhelmets.com",
-                "www.blackhawk.com",
-                "www.bushnell.com",
+                "www.blackburndesign.com",
+                "www.butlercreek.com",
                 "www.camelbak.com",
                 "www.cci-ammunition.com",
                 "www.federalpremium.com",
                 "www.giro.com",
+                "www.goldtip.com",
+                "www.hoppes.com",
                 "www.rcbs.com",
-                "www.speer.com"
+                "www.remington.com",
+                "www.speer.com",
+                "www.unclemikes.com",
+                "www.weaveroptics.com"
             ]
         },
         {
             "rule": "microsoft\\.com\\/Images\\/Clear\\.PNG",
-            "cookies": 0.0000544,
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
                 "fpt.dfp"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [
+                {
+                    "original": "dfp-fpt.dor.wa.gov",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
                 {
                     "original": "fpt.bellhelmets.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
-                    "original": "fpt.bushnell.com",
+                    "original": "fpt.blackburndesign.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
@@ -758,6 +762,10 @@
                 },
                 {
                     "original": "fpt.giro.com",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
+                {
+                    "original": "fpt.remington.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
@@ -772,14 +780,88 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bellhelmets.com",
+                "wa.gov",
                 "www.bellhelmets.com",
-                "www.bushnell.com",
+                "www.blackburndesign.com",
                 "www.camelbak.com",
                 "www.cci-ammunition.com",
                 "www.federalpremium.com",
                 "www.giro.com",
+                "www.remington.com",
                 "www.speer.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/ajax\\/beta\\/0910\\/MicrosoftAjax\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajax"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.appVersion": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cb68272dff8c4ee0a0e36e75ff6404f0a838ee558f8866aa76bd92594d5cb996"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpharetta.ga.us",
+                "www.asrt.org",
+                "www.lcisd.org"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/ajax\\/beta\\/0910\\/MicrosoftAjaxWebForms\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajax"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cf545e810a861e9230d11968b90c430346dcfbd96be8336138e79fcdd2b2ea25"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpharetta.ga.us",
+                "www.asrt.org",
+                "www.lcisd.org"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/ajax\\/jQuery\\.Validate\\/1\\.8\\.1\\/jQuery\\.Validate\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajax"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "91041664284577258552181a3e751d13c25db8baed778804547b10ab0e69557c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpharetta.ga.us",
+                "www.asrt.org",
+                "www.lcisd.org"
             ]
         },
         {
@@ -790,53 +872,19 @@
                 "edge-auth"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "3baeff6de22c80f8891d9fc080fc77a82d67fa7fb4374bf27265a3bc8ffe233d"
+                "ca51fd614f01533949cc36632afe148d5a8e9ffc47941cca669c61fac6e1345a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "benzinga.com",
+                "www.benzinga.com",
                 "www.salon.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/sdk\\/javascript\\/mapcontrol\\/2\\/atlas\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "URL.createObjectURL": 3,
-                "Navigator.prototype.onLine": 3,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "window.devicePixelRatio": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "CanvasRenderingContext2D.prototype.getImageData": 1,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "bec0b868de5ab4499cfe81a6b5dd442814237f6fe592489129ae3170dd43310c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "big4.com.au",
-                "www.big4.com.au",
-                "www.i9sports.com"
             ]
         },
         {
@@ -906,26 +954,52 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/aid\\/imp",
-            "cookies": 0.0000136,
+            "rule": "microsoft\\.com\\/apc\\/trans\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analyticspixel"
+                "dec1feca562fb5cb6fb0c90f4e060093.measure",
+                "c3fd4eaeb1b7e0bffd8d4a000e39acb1.measure"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "csoonline.com",
-                "www.csoonline.com",
-                "www.infoworld.com"
+                "cruiseamerica.com",
+                "www.cruiseamerica.com",
+                "www.ithaca.edu"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/ajax\\/jquery\\/jquery-3\\.2\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajax"
+            ],
+            "apis": {
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87083882cc6015984eb0411a99d3981817f5dc5c90ba24f0940420c5548d82de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "explorerst.org",
+                "www.fiestastforum.com"
             ]
         },
         {
@@ -936,11 +1010,10 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4250adc27ff1c2def3ccb7cd82755090e1dfdd967c08bac9ff1c0dcc24b717e9",
                 "c9ad5eb25302407dba3b84a990eda0d9cffad9b051b11bbdaa4d60f89c6b3282"
             ],
             "type": "Fetch",
@@ -948,7 +1021,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -960,8 +1032,8 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "552271586aa18efbe298131c496ee590daed41ef97260fa72e3203bff9cee579"
@@ -971,7 +1043,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -983,11 +1054,10 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ae0cb2512e7dc2ff933355fbbd2988e424362c13b47fa13b60c2c5372286b9c7",
                 "69917b657dd8aff70203e6fd1a4fbf89fa680cc3c6ce80ad283d4932c215fea4"
             ],
             "type": "Fetch",
@@ -995,7 +1065,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1007,8 +1076,8 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1016,7 +1085,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1028,11 +1096,10 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cecca9d2ae214fbe43a20b79f0ccb3abb9fe3b6db4437768f2480ff49ce3fb6d",
                 "0e383a11691e19e69a0b92aef31a04dac0896cf330bbb42ea26c674a2704b682"
             ],
             "type": "Fetch",
@@ -1040,7 +1107,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1052,11 +1118,10 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "971908998ed0b45d9bc2a34e9f40590429423e33afd6eb5af1eedc3d395b03f7",
                 "1b4b99d4b04e26317e6ff46beb8d6dce2b52cdb36cbc32ba355839a28d92c167"
             ],
             "type": "Fetch",
@@ -1064,7 +1129,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1076,12 +1140,34 @@
                 "atlas"
             ],
             "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "86cc7d5cb8e43291efdb03f20f00475d81b968133572afad910dc59a3b55e680"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fuelwatch.wa.gov.au",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/map\\/tile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "4b4b82723f595116ba20a272c2c532d0b2288f28957a1a7b2a9465cc3137d839",
-                "86cc7d5cb8e43291efdb03f20f00475d81b968133572afad910dc59a3b55e680"
+                "db3dee05d3480f978ecafb3926163712caa9f7dd98c816ca98e34bea67d88452",
+                "a20e30d468c890980afca59753e22fcdad9ab8b70a9c8ac34ae1e811b6e9759c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1093,32 +1179,6 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/ajax\\/4\\.0\\/MicrosoftAjax\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ajax"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a046107100abf99453abbc591ebcbd43640286baa2c18b2af4614a56e576181d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "horseracingnation.com",
-                "www.horseracingnation.com"
-            ]
-        },
-        {
             "rule": "microsoft\\.com\\/map\\/tile",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1126,38 +1186,127 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4508c4a3fcc863e752c3d6c4d4511125cf0061a3f586a48c375886bfef2bf63d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "i9sports.com",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/map\\/tile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "i9sports.com",
+                "fuelwatch.wa.gov.au",
+                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/StandardFont-Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8004b568b7581586fc7b66fc0d31a603bade6c7a0dec0a8d71bf9019c007f7af"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fuelwatch.wa.gov.au",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/SegoeFrutigerHelveticaMYingHei-Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4c02258ac4f2bc3fac359acfb85bc82eb278aebe07cea83c7bce2ff1d3022e7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fuelwatch.wa.gov.au",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/SegoeFrutigerHelveticaMYingHei-Medium\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cf98022472080f9520afaf2a266faab0f576b2599d60b6e42a434d3b8c5f1c8f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fuelwatch.wa.gov.au",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/tags\\/14293651161987\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mtag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db3604d1bdaa2b0f7e16e683a217d89fb6777114c16f4cbf5296070efb045f1a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gouletpens.com",
+                "www.gouletpens.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/map\\/tile\\/png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a7348bff49b67155fb2ee9f757d65cb995fef85de2c4abe1bcdedd00515a725"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "historicenvironment.scot",
+                "www.historicenvironment.scot"
             ]
         },
         {
@@ -1180,6 +1329,29 @@
             "exampleSites": [
                 "isc2.org",
                 "www.isc2.org"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.pipe.aria",
+                "eu-mobile.events.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lynkco.com",
+                "www.lynkco.com"
             ]
         },
         {
@@ -1225,28 +1397,6 @@
                 "truthforlife.org",
                 "www.truthforlife.org"
             ]
-        },
-        {
-            "rule": "microsoft\\.com\\/formapi\\/api\\/dd36faf3-dd56-4130-91be-2a3ccd38746f\\/users\\/cf9c3859-5705-479a-83e8-4c15a2a60604\\/light\\/runtimeForms\\('8_o23VbdMEGRvio8zTh0b1k4nM8FV5pHg-hMFaKmBgRUOTU0MjdWR0s4RkZNQ1FZUFJGWjU2UktGTS4u'\\)",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "customervoice"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "493e932540e90308fb64aef731b1c337945727939a6fda68224dcbb78797c30e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "weboost.com",
-                "www.weboost.com"
-            ]
         }
     ],
     "categories": [
@@ -1256,62 +1406,63 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000313,
+    "cookies": 0.000347,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.13725490196078433
-        },
-        {
-            "domain": "powerapps.com",
-            "prevalence": 0.09803921568627451
-        },
-        {
-            "domain": "azure.com",
-            "prevalence": 0.07450980392156863
-        },
-        {
-            "domain": "minecraft.net",
-            "prevalence": 0.054901960784313725
-        },
-        {
-            "domain": "office.net",
-            "prevalence": 0.043137254901960784
-        },
-        {
-            "domain": "dynamics.com",
-            "prevalence": 0.0392156862745098
-        },
-        {
-            "domain": "skype.com",
-            "prevalence": 0.03137254901960784
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.023529411764705882
+            "prevalence": 0.30045871559633025
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.023529411764705882
+            "prevalence": 0.16972477064220184
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.10550458715596331
+        },
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.09403669724770643
+        },
+        {
+            "domain": "powerapps.com",
+            "prevalence": 0.06880733944954129
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.05504587155963303
+        },
+        {
+            "domain": "minecraft.net",
+            "prevalence": 0.02981651376146789
+        },
+        {
+            "domain": "dynamics.com",
+            "prevalence": 0.027522935779816515
+        },
+        {
+            "domain": "atmrum.net",
+            "prevalence": 0.027522935779816515
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.01834862385321101
         }
     ],
     "types": {
-        "XHR": 63,
-        "Script": 55,
-        "Preflight": 23,
-        "Image": 10,
-        "Fetch": 22,
-        "Document": 18,
-        "Stylesheet": 4
+        "Script": 176,
+        "XHR": 79,
+        "Preflight": 26,
+        "Stylesheet": 5,
+        "Image": 7,
+        "Fetch": 24,
+        "Document": 25,
+        "Ping": 2
     },
     "nameservers": [
+        "ns3-39.azure-dns.org",
         "ns2-39.azure-dns.net",
         "ns1-39.azure-dns.com",
-        "ns3-39.azure-dns.org",
         "ns4-39.azure-dns.info"
     ]
 }

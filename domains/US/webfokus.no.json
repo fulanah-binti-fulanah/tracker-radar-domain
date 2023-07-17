@@ -10,16 +10,20 @@
         "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "webfokus\\.no\\/js\\/script\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "analytics"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.webdriver": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -71,8 +75,8 @@
         "XHR": 2
     },
     "nameservers": [
-        "ns1.hyp.net",
         "ns2.hyp.net",
+        "ns1.hyp.net",
         "ns3.hyp.net"
     ]
 }

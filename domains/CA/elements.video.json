@@ -4,14 +4,37 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "capi"
+        "capi",
+        "cks"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "elements\\.video\\/core\\/sync",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ee9cc51e6c46fc9a617ec1610fb4d3c7ef88d7e498973619dc522d94d82072ca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "washingtontimes.com",
+                "www.washingtontimes.com"
+            ]
+        },
         {
             "rule": "elements\\.video\\/tr\\/ucl",
             "cookies": 0,
@@ -35,7 +58,77 @@
             ]
         },
         {
-            "rule": "elements\\.video\\/tr\\/st",
+            "rule": "elements\\.video\\/cks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cf29a56d53ff7c0f19ecc47e11dde8d069ee04f9e47485974fe7c1b9bb9d2e70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cnx_userId": 0.00020143015409406788
+            },
+            "exampleSites": [
+                "washingtontimes.com",
+                "www.washingtontimes.com"
+            ]
+        },
+        {
+            "rule": "elements\\.video\\/core\\/us",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "washingtontimes.com",
+                "www.washingtontimes.com"
+            ]
+        },
+        {
+            "rule": "elements\\.video\\/core\\/us",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cnx_userId": 0.00010071507704703394
+            },
+            "exampleSites": [
+                "washingtontimes.com",
+                "www.washingtontimes.com"
+            ]
+        },
+        {
+            "rule": "elements\\.video\\/rtb\\/g",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -57,28 +150,58 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.515625
         },
         {
             "domain": "webcontentassessor.com",
-            "prevalence": 0.1388888888888889
+            "prevalence": 0.25
+        },
+        {
+            "domain": "yellowblue.io",
+            "prevalence": 0.03125
+        },
+        {
+            "domain": "contextweb.com",
+            "prevalence": 0.015625
+        },
+        {
+            "domain": "turn.com",
+            "prevalence": 0.015625
+        },
+        {
+            "domain": "ctnsnet.com",
+            "prevalence": 0.015625
+        },
+        {
+            "domain": "casalemedia.com",
+            "prevalence": 0.015625
+        },
+        {
+            "domain": "bidr.io",
+            "prevalence": 0.015625
         },
         {
             "domain": "adsrvr.org",
-            "prevalence": 0.027777777777777776
+            "prevalence": 0.015625
+        },
+        {
+            "domain": "adnxs.com",
+            "prevalence": 0.015625
         }
     ],
     "types": {
-        "XHR": 4
+        "XHR": 8,
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-491.awsdns-61.com",
-        "ns-1840.awsdns-38.co.uk",
         "ns-1483.awsdns-57.org",
-        "ns-927.awsdns-51.net"
+        "ns-927.awsdns-51.net",
+        "ns-1840.awsdns-38.co.uk"
     ]
 }

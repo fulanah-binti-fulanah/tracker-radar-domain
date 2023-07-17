@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "rum"
     ],
@@ -23,30 +23,33 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
-                "9ac6fa99b4e4ce3aa85976ed9a65fb47fc471613f9e3b4f12dc70b006ed18a03",
-                "4e0a5d19e24115733e2130aaf837ccfd1e0a38ea1ced46df247ca25f0dd05c29",
-                "3aaa70463a9e3f3f63838d0842ad030173ab8c34a2d4f0b64781c7c717d7e34d",
-                "b0851492ef8f6f784f6a26fff71e69239bf8a393f6c533e7b9ca687db51e202d",
-                "dd7fc326756819ee77d789b16eef7519baf68020e548beb92663f5894173e82c",
-                "d2f60a2ae1312e46d22ebb84d9f5f550d9c822460eaf4a9d6d5e151533685ffb",
-                "0d521b84cd8bd6b00b40f6a7ddd589663d20e653e4f041fbd6ae1915dcf2bd24"
+                "a889af802c4c71d91c679a24ea4d1b2a06abd85d5840d10d77cc07462072f768",
+                "a33dfc46f6521eb9c3ce94b47e7b2369e9676495a1f6054d1522f8b68ca6d950",
+                "5501f95a0531937b63d66e7bf91ab7745a32bf6ab5434acb5ef561505884f3bb",
+                "0679a079b66313de47a45aeb24e8b30f26db03b43aab89f38bec6936d348d9d0",
+                "9f7326ccc07d54ecc8a607683e69e234a58d49725a8a7aeb0923ab9ff1c5a9ce",
+                "c5e5ce135763da46b76ee5188692238c13d48256bbcb7c142263963c6141b204",
+                "949c8141d32809eaa2f8b13f0de4ef5d6b6f03280577d8fca022591ba03d83d0",
+                "3590f2a0402b847ec9dd99ecdfacde74ea2a4a6f71b83e69425eb69ad8f539f1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clickup.com",
+                "hashicorp.com",
                 "developer.hashicorp.com",
+                "support.hpe.com",
+                "uk.practicallaw.thomsonreuters.com",
                 "www.abritel.fr",
-                "www.digikey.ch",
-                "www.mytheresa.com",
-                "www.pitchup.com",
-                "www.wish.com",
-                "www.zoominfo.com"
+                "www.eventbrite.com",
+                "www.gartentraum.de",
+                "www.myfitnesspal.com",
+                "www.padi.com",
+                "www.wish.com"
             ]
         },
         {
@@ -58,19 +61,40 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "4a5197c948cb451b78b9a61bbb7672a874747886a5a385ffaa2fc78c776aa469",
-                "1174006fd192acb5f9841ae86e6863027f82b5c623ecee67b5e25a9ef40c113d"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com",
+                "www.padi.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e58772af4aec2e5a86cdd7f7c6482a00a4707e455e0e22597c62680eb1194b24"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clickup.com",
-                "www.wish.com",
-                "www.zoominfo.com"
+                "codecademy.com",
+                "www.codecademy.com"
             ]
         }
     ],
@@ -80,16 +104,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8148148148148148
+            "prevalence": 0.7597402597402597
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.18518518518518517
+            "prevalence": 0.17532467532467533
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.06493506493506493
         }
     ],
     "types": {
-        "Fetch": 8,
-        "XHR": 3
+        "Fetch": 10,
+        "Ping": 3,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1264.awsdns-30.org",

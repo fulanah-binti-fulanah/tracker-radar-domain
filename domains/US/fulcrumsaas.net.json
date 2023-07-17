@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "log-v3-web",
         "api-v2-web"
@@ -21,17 +21,16 @@
                 "log-v3-web"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
-            "responseHashes": [
-                "d4f52926109184c68e0f4216a97d5f7de65a72fc0004cc918d0d962353d1ed5a"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "enjoyillinois.com",
+                "cmfgroup.com",
+                "www.cmfgroup.com",
                 "www.enjoyillinois.com",
                 "www.xome.com"
             ]
@@ -44,11 +43,38 @@
                 "log-v3-web"
             ],
             "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d4f52926109184c68e0f4216a97d5f7de65a72fc0004cc918d0d962353d1ed5a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmfgroup.com",
+                "www.cmfgroup.com",
+                "www.enjoyillinois.com",
+                "www.xome.com"
+            ]
+        },
+        {
+            "rule": "fulcrumsaas\\.net\\/personalizers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-v2-web"
+            ],
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "598af6e2c3a3d68081aecd11112bd2464e1cc27ad245cb8e5d7c03269704917c",
+                "81d63dae3a62dded99abae538fbdbc12acf7bf559c7ede25ff17b4ef7a4d53ad"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -65,30 +91,8 @@
                 "api-v2-web"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a80e1ed36506b9a144477d8087c8b43d3a921b107509f17bfaa186db73a0fdde"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "enjoyillinois.com",
-                "www.enjoyillinois.com"
-            ]
-        },
-        {
-            "rule": "fulcrumsaas\\.net\\/personalizers",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-v2-web"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -96,7 +100,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "enjoyillinois.com",
-                "www.enjoyillinois.com"
+                "www.enjoyillinois.com",
+                "www.xome.com"
             ]
         }
     ],
@@ -106,17 +111,21 @@
     "topInitiators": [
         {
             "domain": "d1lxrc90a9g0is.cloudfront.net",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Fetch": 5,
-        "Preflight": 5
+        "Preflight": 7,
+        "Fetch": 7
     },
     "nameservers": [
-        "ns-cloud-b3.googledomains.com",
-        "ns-cloud-b4.googledomains.com",
         "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b2.googledomains.com"
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b4.googledomains.com",
+        "ns-cloud-b3.googledomains.com"
     ]
 }

@@ -10,16 +10,19 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "lolstage\\.com\\/stable\\/js\\/ab\\/fanbyte\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -48,9 +51,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-627.awsdns-14.net",
-        "ns-97.awsdns-12.com",
         "ns-1374.awsdns-43.org",
-        "ns-1543.awsdns-00.co.uk"
+        "ns-627.awsdns-14.net",
+        "ns-1543.awsdns-00.co.uk",
+        "ns-97.awsdns-12.com"
     ]
 }

@@ -7,18 +7,20 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "salesiq"
+        "salesiq",
+        "pagesense-collect",
+        "webfonts"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "zoho\\.eu\\/widget",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
+            "cookies": 0.000202,
+            "fingerprinting": 2,
             "subdomains": [
                 "salesiq"
             ],
@@ -29,40 +31,28 @@
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Document.cookie setter": 2
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "0c37959d1b1bc0be450b53fa959b3a05d0d1dc1e27a3260cb7b74546bea7422a"
+                "46896f387b5c34f025a6ea4bde5b458bab4d85441740a68e9794b412218ca056"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "meretmarine-_zldp": {
-                    "ttl": 31536003,
-                    "length": 78,
-                    "prevalence": 0.00010046212577858148,
-                    "uniqueness": 1
-                },
-                "meretmarine-_zldt": {
-                    "ttl": 86403,
-                    "length": 38,
-                    "prevalence": 0.00010046212577858148,
-                    "uniqueness": 1
-                },
                 "oscarofrance-_zldp": {
-                    "ttl": 31536004,
-                    "length": 84,
-                    "prevalence": 0.00010046212577858148,
+                    "ttl": 31536003,
+                    "length": 82,
+                    "prevalence": 0.00010088781275221953,
                     "uniqueness": 1
                 },
                 "oscarofrance-_zldt": {
-                    "ttl": 86404,
+                    "ttl": 86403,
                     "length": 38,
-                    "prevalence": 0.00010046212577858148,
+                    "prevalence": 0.00010088781275221953,
                     "uniqueness": 1
                 }
             },
@@ -74,17 +64,17 @@
         },
         {
             "rule": "zoho\\.eu\\/visitor\\/v2\\/channels\\/website",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "salesiq"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "57ff2da5d702ba939fdb2a09c8019ae86c029f6b9390357d5c0c5d467bca911b"
+                "6bc9479c72fc71c8753ed002d8b3e740652eb64fbb783233e932376fa21d9f74"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -92,6 +82,53 @@
             "exampleSites": [
                 "meretmarine.com",
                 "www.oscaro.com"
+            ]
+        },
+        {
+            "rule": "zoho\\.eu\\/psimg\\.gif",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pagesense-collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "zabUserId": 0.00020177562550443906,
+                "zsc389d86ae1a3c4f9b8fa40cae094ab7a7": 0.00010088781275221953
+            },
+            "exampleSites": [
+                "permaculturedesign.fr",
+                "www.permaculturedesign.fr"
+            ]
+        },
+        {
+            "rule": "zoho\\.eu\\/css",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webfonts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "1aa4e5a66a884e6550357e033ec7ce35fc453a9e9c41a643d589877dd0d530d0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "permaculturedesign.fr",
+                "www.permaculturedesign.fr"
             ]
         }
     ],
@@ -104,29 +141,39 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000303,
     "topInitiators": [
         {
+            "domain": "pagesense.io",
+            "prevalence": 0.6923076923076923
+        },
+        {
+            "domain": "zohocdn.com",
+            "prevalence": 0.19230769230769232
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "oscaro.media",
-            "prevalence": 0.5
+            "prevalence": 0.038461538461538464
         }
     ],
     "types": {
         "Script": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Ping": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns31.zns-53.com",
-        "NS1.ZOHOCORP.com",
-        "ns21.zns-53.net",
-        "ns11.zns-53.com",
-        "pdns90.ultradns.com",
+        "ns1.zohocorp.com",
         "pdns90.ultradns.net",
+        "ns41.zns-53.net",
+        "pdns90.ultradns.com",
+        "ns11.zns-53.com",
         "pdns90.ultradns.biz",
-        "ns41.zns-53.net"
+        "ns21.zns-53.net"
     ]
 }

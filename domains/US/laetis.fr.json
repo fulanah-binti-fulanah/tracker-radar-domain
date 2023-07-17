@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "panier"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "laetis\\.fr\\/f\\/laetis\\/leaflet\\/leaflet\\.extend\\.js",
@@ -31,7 +32,56 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anjou-tourisme.com",
-                "www.anjou-tourisme.com"
+                "www.tourisme-aveyron.com"
+            ]
+        },
+        {
+            "rule": "laetis\\.fr\\/dist\\/v02\\/css\\/buttons\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "panier"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "48bf99a56b7ebcff96883c3b54f7bd77164f14a781949d44b3e35c90d1493e06"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sancy.com",
+                "www.tourisme-aveyron.com",
+                "www.tourisme-occitanie.com"
+            ]
+        },
+        {
+            "rule": "laetis\\.fr\\/dist\\/v02\\/js\\/buttons\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "panier"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a9d8db3b7980921ec6f5998a6e5f4743ad0d7d9cfbd521d7fe12360a72f567a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tourisme-aveyron.com",
+                "www.tourisme-occitanie.com"
             ]
         }
     ],
@@ -45,7 +95,8 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns3.nameshield.net",

@@ -4,17 +4,18 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
-        "static"
+        "static",
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
-            "cookies": 0.000502,
+            "cookies": 0.000604,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -23,10 +24,10 @@
                 "Document.cookie getter": 6,
                 "Navigator.prototype.cookieEnabled": 6,
                 "Date.prototype.getTime": 6,
-                "Document.cookie setter": 5
+                "Document.cookie setter": 6
             },
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "944ab414abd7379509535f0f7422544deaf2a4d19b9fbee4ef9bd1b6b02b3dcd"
@@ -34,44 +35,46 @@
             "type": "Script",
             "firstPartyCookies": {
                 "QueueITAccepted-SDFrts345E-V3_prebf012020browse": {
-                    "ttl": 610,
+                    "ttl": 609,
                     "length": 202,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "QueueITAccepted-SDFrts345E-V3_dysonprod2021": {
+                    "ttl": 1291,
+                    "length": 198,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_iga": {
-                    "ttl": 1210,
+                    "ttl": 1206,
                     "length": 188,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_2020pandemic": {
-                    "ttl": 1206,
+                    "ttl": 1204,
                     "length": 197,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_livenation": {
-                    "ttl": 1205,
+                    "ttl": 1208,
                     "length": 194,
-                    "prevalence": 0.0001004419445560466,
-                    "uniqueness": 1
-                },
-                "QueueITAccepted-SDFrts345E-V3_victoriasecretgb": {
-                    "ttl": 1210,
-                    "length": 201,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestbuy.ca",
+                "www.dyson.com",
                 "www.dysoncanada.ca",
+                "www.greatwolf.com",
                 "www.iga.net",
                 "www.lcbo.com",
                 "www.livenation.com",
-                "www.victoriassecret.co.uk",
+                "www.tate.org.uk",
                 "www.whistlerblackcomb.com",
                 "www.youngliving.com"
             ]
@@ -84,11 +87,11 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie getter": 2
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 3
             },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "7157deb8ebe872e9ad11477112493ef6d3175123c43073bbbc81954295049f08"
@@ -98,39 +101,68 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestbuy.ca",
+                "www.dyson.com",
                 "www.dysoncanada.ca",
+                "www.greatwolf.com",
                 "www.iga.net",
                 "www.lcbo.com",
                 "www.livenation.com",
+                "www.tate.org.uk",
                 "www.whistlerblackcomb.com",
                 "www.youngliving.com"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/dyson\\/integrationconfig\\/javascript\\/queueclientConfig\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a5058e4c0ae31413c4c4abbac73eae6d8a5b3d0f2b4a03c52e634c27070d3225"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dysoncanada.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000703,
+    "cookies": 0.000806,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8095238095238095
-        },
-        {
-            "domain": "queue-it.net",
-            "prevalence": 0.09523809523809523
+            "prevalence": 0.6538461538461539
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.09523809523809523
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "queue-it.net",
+            "prevalence": 0.11538461538461539
+        },
+        {
+            "domain": "dysoncanada.ca",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 15
+        "Script": 22
     },
     "nameservers": [
-        "ns-1175.awsdns-18.org",
         "ns-85.awsdns-10.com",
         "ns-793.awsdns-35.net",
-        "ns-1935.awsdns-49.co.uk"
+        "ns-1935.awsdns-49.co.uk",
+        "ns-1175.awsdns-18.org"
     ]
 }

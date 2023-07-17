@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000502,
+    "prevalence": 0.000503,
     "sites": 5,
     "subdomains": [
-        "radar"
+        "radar",
+        "rpt"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -49,7 +50,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "38b126f92a3104c7d73e1cf2f448db9896d4f29ebf3a7b593b380e6cdd0ae378"
@@ -59,10 +60,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "accor.com",
+                "assets.adac.de",
                 "ibis.accor.com",
                 "mubi.com",
-                "www.coursehero.com",
-                "www.directindustry.fr"
+                "www.coursehero.com"
             ]
         },
         {
@@ -73,7 +74,7 @@
                 "radar"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1
+                "PerformanceTiming.prototype.navigationStart": 2
             },
             "sites": 4,
             "prevalence": 0.000402,
@@ -86,9 +87,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "accor.com",
+                "assets.adac.de",
                 "ibis.accor.com",
-                "mubi.com",
-                "www.directindustry.fr"
+                "mubi.com"
+            ]
+        },
+        {
+            "rule": "cedexis\\.com\\/r1\\/1\\/22815\\/_CgJqNRAUGHsiBggBEJ-yASjxtouBBDD449OlBjj449OlBkCz1uGhBUoPCAMQKBiLPyAAKNWCgKAEUABaCggAEAAYACAAKABgAWoTYnV0dG9uMi5hbXMuaHYucHJvZIIBDwgDECgYiz8gACjVgoCgBIgBs9ahiQ0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8aed5e340cf6a71108b30bd80e05ea7abfb02b5b9ccf9439cae12382df68d2a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adac.de",
+                "assets.adac.de"
             ]
         }
     ],
@@ -98,24 +121,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.56
+            "prevalence": 0.631578947368421
         },
         {
-            "domain": "virtual-expo.com",
-            "prevalence": 0.24
+            "domain": "mubicdn.net",
+            "prevalence": 0.15789473684210525
         },
         {
-            "domain": "inspectlet.com",
-            "prevalence": 0.2
+            "domain": "googletagmanager.com",
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "cedexis-test.com",
+            "prevalence": 0.10526315789473684
         }
     ],
     "types": {
-        "Script": 11
+        "Script": 11,
+        "XHR": 2
     },
     "nameservers": [
-        "ns2.cedexis.net",
+        "ns3.cedexis.net",
         "ns1.cedexis.net",
         "ns4.cedexis.net",
-        "ns3.cedexis.net"
+        "ns2.cedexis.net"
     ]
 }

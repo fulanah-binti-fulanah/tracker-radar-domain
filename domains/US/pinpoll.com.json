@@ -4,14 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "tools",
         "static",
         "api.dmp",
         "pa",
-        "cdn",
         "api.embed"
     ],
     "cnames": [],
@@ -27,14 +26,14 @@
             "apis": {
                 "window.localStorage": 9,
                 "Navigator.prototype.cookieEnabled": 8,
-                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.userAgent": 8,
                 "Date.prototype.getTimezoneOffset": 9,
                 "Navigator.prototype.doNotTrack": 9,
                 "Screen.prototype.width": 9,
                 "Screen.prototype.height": 9,
                 "Screen.prototype.colorDepth": 9,
                 "Screen.prototype.orientation": 9,
-                "Date.prototype.getTime": 6,
+                "Date.prototype.getTime": 7,
                 "window.innerWidth": 5,
                 "window.innerHeight": 5
             },
@@ -42,7 +41,7 @@
             "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "f961e29934d073212ae61abcfdfc10caa40e8ae09442c43488788081411f0ef7"
+                "0801da665f2df733cb04cab212f3dd7df4d8a90c78a73db60e18ff7e89216e47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -52,7 +51,7 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -61,12 +60,14 @@
         },
         {
             "rule": "pinpoll\\.com\\/static\\/start\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 3
+            },
             "sites": 9,
             "prevalence": 0.0000613,
             "cnames": [],
@@ -74,14 +75,21 @@
                 "38dfcfd29e5bc35eabebb6db93870261846cb9fa1bcd1631c1a7aef3114de24b"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "thirdparty": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.00002042275094455223,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "orf.at",
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -110,7 +118,7 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -137,7 +145,7 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -169,7 +177,7 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -196,7 +204,7 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
@@ -223,34 +231,10 @@
                 "kurier.at",
                 "oe3.orf.at",
                 "www.film.at",
-                "www.fuldaerzeitung.de",
+                "www.kleinezeitung.at",
                 "www.ruhrnachrichten.de",
                 "www.salzburg24.at",
                 "www.stol.it",
-                "www.suedtirolnews.it"
-            ]
-        },
-        {
-            "rule": "pinpoll\\.com\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b2952dce61d9d675d9dd7abf251eeecfc0f54bc8d98d2cde5952dc93bbd10fe9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fuldaerzeitung.de",
                 "www.suedtirolnews.it"
             ]
         },
@@ -266,97 +250,51 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9e9ebb557fdfd71859477d913e1b54877b8242289c4589eb39eee94af35955e3"
+                "839696c397adea2238507e9c6879454a2879a7b8bd34163c8ed4630ec6aedef5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__pid": 0.000006805962022731913,
-                "_gb_lh": 0.000006805962022731913
+                "__pid": 0.000006807583648184077,
+                "_gb_lh": 0.000006807583648184077
             },
             "exampleSites": [
                 "salzburg24.at",
-                "www.suedtirolnews.it"
-            ]
-        },
-        {
-            "rule": "pinpoll\\.com\\/sdk\\/getAudiences",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.dmp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "92aed6d0338e1400018d78a3b0f0023d285a49487d0da1f65a62edd5dea86301"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "suedtirolnews.it",
-                "www.suedtirolnews.it"
-            ]
-        },
-        {
-            "rule": "pinpoll\\.com\\/sdk\\/getAudiences",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.dmp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "suedtirolnews.it",
                 "www.suedtirolnews.it"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6818181818181818
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "stol.it",
-            "prevalence": 0.09523809523809523
+            "prevalence": 0.09090909090909091
         },
         {
-            "domain": "idcdn.de",
-            "prevalence": 0.047619047619047616
-        },
-        {
-            "domain": "consensu.org",
-            "prevalence": 0.023809523809523808
+            "domain": "consentmanager.net",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 11,
+        "Script": 9,
         "Document": 18,
-        "Fetch": 22,
-        "Preflight": 20
+        "Fetch": 20,
+        "Preflight": 18
     },
     "nameservers": [
-        "ns1-04.azure-dns.com",
         "ns2-04.azure-dns.net",
+        "ns4-04.azure-dns.info",
         "ns3-04.azure-dns.org",
-        "ns4-04.azure-dns.info"
+        "ns1-04.azure-dns.com"
     ]
 }

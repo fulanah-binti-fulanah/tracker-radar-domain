@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "jobsapi-google"
+        "jobsapi-google",
+        "jobsapi-internal"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,12 +21,14 @@
                 "jobsapi-google"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "9a20727773eca288873dab7fee454500887c0442d59d3a0ebe493f5b1bf6f6ce",
-                "70c8381ef115350599320cba1874827650419d316e0aad00626af71a356ebb8c"
+                "41ffc3bcf4b41d72540cb667d15181e53ccf2b73cd0d853e30de1226ed299a5f",
+                "9e53b68b78c261e3e69c36f5ce6027fceba017c97252ea157568e73198db0915",
+                "61f7661cfd2829470d4a0bdc6c929ac4304276984d6582dae58336d58fcf5316",
+                "4cfaa1c2ef3be9deefd22025dd6ce901f34c46e31b93042f05ff5390069ce540"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,7 +36,53 @@
             "exampleSites": [
                 "homedepot.com",
                 "careers.homedepot.com",
-                "jobs.cvshealth.com"
+                "careers.unitedhealthgroup.com",
+                "jobs.cvshealth.com",
+                "www.pinterestcareers.com"
+            ]
+        },
+        {
+            "rule": "m-cloud\\.io\\/api\\/job",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jobsapi-internal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6beb118eaa8e32ed290c2fd00997d92292092a13705e2f916fe6efb3132d9d00"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "humana.com",
+                "careers.t-mobile.com"
+            ]
+        },
+        {
+            "rule": "m-cloud\\.io\\/api\\/job\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jobsapi-google"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f40b690011ac270059fdd72a030ac9bbc2f2c23b0d0b2ca184a91ffed4dea72"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fidelity.com",
+                "jobs.fidelity.com"
             ]
         }
     ],
@@ -47,12 +96,13 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 7,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-762.awsdns-31.net",
         "ns-1347.awsdns-40.org",
-        "ns-1682.awsdns-18.co.uk",
-        "ns-160.awsdns-20.com"
+        "ns-762.awsdns-31.net",
+        "ns-160.awsdns-20.com",
+        "ns-1682.awsdns-18.co.uk"
     ]
 }

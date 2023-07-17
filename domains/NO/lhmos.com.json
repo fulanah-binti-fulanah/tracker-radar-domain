@@ -4,14 +4,35 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
         "trc"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "lhmos\\.com\\/enrich\\/data\\/jsonp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dermnetnz.org",
+                "www.mayoclinic.org",
+                "www.nejm.org"
+            ]
+        },
         {
             "rule": "lhmos\\.com\\/uid\\/set",
             "cookies": 0,
@@ -20,18 +41,41 @@
                 "trc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dmd-sid": 0.00010041168792047395
+                "dmd-sid": 0.0002018774603815484
             },
             "exampleSites": [
                 "dermnetnz.org",
-                "www.mdcalc.com"
+                "www.mayoclinic.org",
+                "www.nejm.org"
+            ]
+        },
+        {
+            "rule": "lhmos\\.com\\/prebid\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0001009387301907742
+            },
+            "exampleSites": [
+                "dermnetnz.org",
+                "www.drugs.com"
             ]
         },
         {
@@ -42,18 +86,41 @@
                 "trc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dmd-sid": 0.00010041168792047395
+                "dmd-sid": 0.0002018774603815484
             },
             "exampleSites": [
                 "dermnetnz.org",
-                "www.mdcalc.com"
+                "www.mayoclinic.org",
+                "www.nejm.org"
+            ]
+        },
+        {
+            "rule": "lhmos\\.com\\/enrich\\/data\\/redir",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dermnetnz.org",
+                "www.nejm.org"
             ]
         }
     ],
@@ -63,24 +130,34 @@
     "topInitiators": [
         {
             "domain": "medtargetsystem.com",
-            "prevalence": 0.5
+            "prevalence": 0.4
         },
         {
-            "domain": "rubiconproject.com",
+            "domain": "adpushup.com",
             "prevalence": 0.25
         },
         {
             "domain": "hcn.health",
-            "prevalence": 0.25
+            "prevalence": 0.2
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "lassomarketing.io",
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Image": 4
+        "Script": 3,
+        "Image": 6,
+        "XHR": 4
     },
     "nameservers": [
         "ns-cloud-d4.googledomains.com",
-        "ns-cloud-d1.googledomains.com",
         "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d2.googledomains.com"
+        "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d1.googledomains.com"
     ]
 }

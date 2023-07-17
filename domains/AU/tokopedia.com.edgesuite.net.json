@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "gql"
@@ -73,6 +73,33 @@
                 "tokopedia.com",
                 "www.tokopedia.com"
             ]
+        },
+        {
+            "rule": "tokopedia\\.com\\.edgesuite\\.net\\/graphql\\/RolloutFeatureVariants",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "gql.tokopedia.com",
+                    "resolved": "gql.tokopedia.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "e9b21e41d31990184eb4bb3549786cb6c19d71cfb66dc26cdc5bfc1cf49c4780"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tokopedia.com",
+                "www.tokopedia.com"
+            ]
         }
     ],
     "categories": [
@@ -88,7 +115,7 @@
     ],
     "types": {
         "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4
     },
     "nameservers": []
 }

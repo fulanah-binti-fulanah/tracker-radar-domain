@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "pt37ad6f6a"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/Prod\\/v1\\/analytics",
@@ -25,20 +25,16 @@
                 "pt37ad6f6a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [
-                "324983026e9f52647c3aaf3415248c858d024121a5fe13e566e1943931140136",
-                "2009707d15f88970cc81b2b345491f8a6741973bf8b86441082c612e1e519ec2"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
-                "www.splunk.com",
-                "www.veritas.com"
+                "www.splunk.com"
             ]
         },
         {
@@ -49,17 +45,18 @@
                 "pt37ad6f6a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b3ac4683a7927edd953bfd9a429e5c3f964d4fd7b7666ae2793e53f47b1c134d"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
-                "www.splunk.com",
-                "www.veritas.com"
+                "www.splunk.com"
             ]
         }
     ],
@@ -67,37 +64,49 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "listenloop.com",
-            "prevalence": 0.25
-        },
-        {
-            "domain": "getlighthouse.io",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.4666666666666667
         },
         {
             "domain": "signalfx.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "listenloop.com",
+            "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "intelligems.io",
+            "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "script.ac",
+            "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "getlighthouse.io",
+            "prevalence": 0.06666666666666667
         },
         {
             "domain": "pushengage.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "yummlystatic.com",
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Fetch": 3,
-        "Preflight": 3
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-543.awsdns-03.net",
         "ns-1982.awsdns-55.co.uk",
         "ns-230.awsdns-28.com",
-        "ns-543.awsdns-03.net",
         "ns-1368.awsdns-43.org"
     ]
 }

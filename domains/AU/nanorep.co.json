@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "nordvpn",
-        "icici"
+        "icici",
+        "toastmasters-cv19"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "nanorep\\.co\\/api\\/visitorTokenConfig",
@@ -24,11 +25,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "nordvpn",
-                "icici"
+                "icici",
+                "toastmasters-cv19"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "086891f96cf54a0938281ebdc52edbfa58291be32b592dd792d7dbd2e4cf8e00"
@@ -38,7 +40,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nordvpn.com",
-                "www.icicibank.com"
+                "www.icicibank.com",
+                "www.toastmasters.org"
             ]
         },
         {
@@ -53,7 +56,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cc68ea478610ae7da9d45a99e6ba89bf2e348b36a4f99b55dde8afc70e64c4ec"
+                "694f620d6c58d0735efa6aa64beecee32be091fdba431c739bbcd96d4e208225"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -64,8 +67,71 @@
             ]
         },
         {
-            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/cnf",
+            "rule": "nanorep\\.co\\/web\\/floating-widget\\.js",
             "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "icici",
+                "toastmasters-cv19"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1,
+                "Navigator.prototype.languages": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8f280143f0fbd7b2b57488eb044b204adf2a82909fe0d3a02af17e8a976795e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bc.visitor_token": {
+                    "ttl": 31622416,
+                    "length": 19,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icicibank.com",
+                "www.toastmasters.org"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "icici",
+                "toastmasters-cv19"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ea8912800b6b48c8bbcdb5428355f8ab99be309234dd6dc2a83b78d7daeb38f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icicibank.com",
+                "www.icicibank.com",
+                "www.toastmasters.org"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "icici"
@@ -74,19 +140,19 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "56e91997a35da84b60c4a232cbc066b0da26cfebfcf1c0060235c1f45adf73e1"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.00020126798832645668
+            },
             "exampleSites": [
                 "icicibank.com",
                 "www.icicibank.com"
             ]
         },
         {
-            "rule": "nanorep\\.co\\/api\\/conversation\\/v3\\/create",
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -97,12 +163,12 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9729a90992fe62539be3396a6aa610a55e9917450b5e8aad673e7321fb536fce"
+                "658d4e9b605db1b5f57a3e32d6d331cb9384141260defa094c7bc1f2c13aa302"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "bc.visitor_token": 0.00020058168689198675
+                "bc.visitor_token": 0.00020126798832645668
             },
             "exampleSites": [
                 "icicibank.com",
@@ -112,24 +178,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.7
         },
         {
             "domain": "nanorep.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.3
         }
     ],
     "types": {
-        "XHR": 8
+        "XHR": 10,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1044.awsdns-02.org",
         "ns-1693.awsdns-19.co.uk",
         "ns-124.awsdns-15.com",
-        "ns-572.awsdns-07.net"
+        "ns-572.awsdns-07.net",
+        "ns-1044.awsdns-02.org"
     ]
 }

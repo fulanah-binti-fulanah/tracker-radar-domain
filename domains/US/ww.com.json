@@ -4,28 +4,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "api"
+        "api",
+        "api.qa"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "ww\\.com\\/privacy-control\\/js\\/privacy\\.min\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "Document.cookie setter": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d9082f65b6cdfcc9ffb9928745d787e84dd3f8db9e09836949d66765213d764f"
@@ -35,14 +36,13 @@
                 "ww_privacy": {
                     "ttl": 31536000000,
                     "length": 30,
-                    "prevalence": 0.00002041788606819574,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weightwatchers.com",
-                "cmx.weightwatchers.com",
                 "www.weightwatchers.com"
             ]
         },
@@ -54,8 +54,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eb2785d9586ac9a64146ac247deaa63054e391926a1fcd96d9fabc1191a23583"
@@ -65,7 +65,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weightwatchers.com",
-                "cmx.weightwatchers.com",
                 "www.weightwatchers.com"
             ]
         },
@@ -74,6 +73,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "api.qa",
                 "api"
             ],
             "apis": {},
@@ -81,33 +81,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eac089ed62c953e568b9c40c23c63b742d7f9a0297e8174128d3804a5feb8ad9"
+                "8b75d14cf7262fe49265b4fe5871b556a49b409ce76aa3532e00ffc9e8db1995"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000027223848090927652
+                "_ga": 0.000013615167296368154
             },
-            "exampleSites": [
-                "weightwatchers.com",
-                "www.weightwatchers.com"
-            ]
-        },
-        {
-            "rule": "ww\\.com\\/v1\\/guest\\/gql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weightwatchers.com",
                 "www.weightwatchers.com"
@@ -134,11 +114,31 @@
                 "weightwatchers.com",
                 "www.weightwatchers.com"
             ]
+        },
+        {
+            "rule": "ww\\.com\\/v1\\/guest\\/gql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weightwatchers.com",
+                "www.weightwatchers.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
@@ -146,15 +146,15 @@
         }
     ],
     "types": {
-        "Script": 3,
-        "Fetch": 5,
+        "Script": 2,
+        "Fetch": 4,
         "XHR": 2,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-176.awsdns-22.com",
-        "ns-1926.awsdns-48.co.uk",
         "ns-961.awsdns-56.net",
+        "ns-1926.awsdns-48.co.uk",
+        "ns-176.awsdns-22.com",
         "ns-1342.awsdns-39.org"
     ]
 }

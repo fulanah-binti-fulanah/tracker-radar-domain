@@ -11,7 +11,8 @@
     "sites": 2,
     "subdomains": [
         "assets",
-        "trends"
+        "trends",
+        "images"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -30,14 +31,13 @@
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "window.localStorage": 2,
                 "window.innerWidth": 2,
-                "Navigator.prototype.language": 1,
-                "window.innerHeight": 1
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4bf4b3ba6f93adaa0aad39f0b22b65fd8e42f244c67be4c11f3324cec0c01aac"
+                "986c44a725849d586a0cd29852f3538c64152968293e9734f468c6970e5b58bf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -80,7 +80,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c0a08fd0e3074d8bfb95b7fa3305766467eea388dc7328c1634e5fc49db51047"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -91,7 +93,51 @@
         },
         {
             "rule": "newsmaxwidget\\.com\\/sync",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trends"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ea9172dd223104de0df66cbe9d0bacb7eddc9e4670eddd81fb59d5fff1b4c870"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halturnerradioshow.com",
+                "www.sgtreport.com"
+            ]
+        },
+        {
+            "rule": "newsmaxwidget\\.com\\/api\\/delivery\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trends"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8ed8e43c2becb6699d884e99e243ef10951cacf03ab5c7fa066e4496e3ade90d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halturnerradioshow.com",
+                "www.sgtreport.com"
+            ]
+        },
+        {
+            "rule": "newsmaxwidget\\.com\\/event\\/impression",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "trends"
@@ -110,18 +156,20 @@
             ]
         },
         {
-            "rule": "newsmaxwidget\\.com\\/api\\/delivery\\/",
-            "cookies": 0.0001,
+            "rule": "newsmaxwidget\\.com\\/image\\/fetch\\/f_jpg,q_auto,h_150,w_225,c_fill,g_faces:auto\\/pg_1\\/https:\\/\\/media\\.newsmaxwidget\\.com\\/content\\/images\\/5955c8ff072aea96e83054dedfa198c4\\.jpeg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "trends"
+                "images"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "aeb1f76c99d5075fdfc6721f3f4cf9457333df1568594dcd31ccabca9e0a593c"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,22 +184,22 @@
     "topInitiators": [
         {
             "domain": "revcontent.com",
-            "prevalence": 0.8
+            "prevalence": 0.84
         },
         {
             "domain": "newsmaxfeednetwork.com",
-            "prevalence": 0.2
+            "prevalence": 0.16
         }
     ],
     "types": {
         "Script": 2,
-        "Image": 2,
-        "Fetch": 6
+        "Image": 4,
+        "Fetch": 8
     },
     "nameservers": [
-        "ns-112.awsdns-14.com",
         "ns-1515.awsdns-61.org",
+        "ns-895.awsdns-47.net",
         "ns-1969.awsdns-54.co.uk",
-        "ns-895.awsdns-47.net"
+        "ns-112.awsdns-14.com"
     ]
 }

@@ -7,37 +7,17 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00271,
-    "sites": 27,
+    "prevalence": 0.00211,
+    "sites": 21,
     "subdomains": [
-        "realtimeeventfeeds",
         "i",
-        "api"
+        "realtimeeventfeeds",
+        "api",
+        "notifications"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "viafoura\\.co\\/eventfeed",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "realtimeeventfeeds"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nationalpost.com",
-                "www.cbc.ca",
-                "www.standard.co.uk"
-            ]
-        },
         {
             "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
             "cookies": 0.000201,
@@ -55,11 +35,31 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020058168689198675
+                "lotame_domain_check": 0.00020126798832645668
             },
             "exampleSites": [
                 "cbc.ca",
                 "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/eventfeed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtimeeventfeeds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.standard.co.uk"
             ]
         },
         {
@@ -74,12 +74,12 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5ea2d90429226f9a1ac82ca49e6fbf5e484bfa8af41c3bb89291b7c11ff9818b"
+                "c468d09795d40bed4d0e4a97cb02a16c9b4918816707df504be600f600d63440"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020058168689198675
+                "lotame_domain_check": 0.00020126798832645668
             },
             "exampleSites": [
                 "cbc.ca",
@@ -103,8 +103,30 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020058168689198675
+                "lotame_domain_check": 0.00020126798832645668
             },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v5\\/notifications\\/00000000-0000-4000-8000-082f79d5b829\\/all",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "notifications"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b6dc85459fbb9d03f478d91eae99e6627e04c8f805b08e4b97423ffbc3870d9d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
                 "www.cbc.ca"
@@ -113,27 +135,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00271,
+    "cookies": 0.00211,
     "topInitiators": [
         {
             "domain": "viafoura.net",
-            "prevalence": 0.5357142857142857
+            "prevalence": 0.5108695652173914
         },
         {
             "domain": "first party",
-            "prevalence": 0.4642857142857143
+            "prevalence": 0.4891304347826087
         }
     ],
     "types": {
-        "WebSocket": 3,
         "Image": 2,
-        "XHR": 2,
+        "WebSocket": 2,
+        "XHR": 4,
         "Ping": 2
     },
     "nameservers": [
-        "ns-272.awsdns-34.com",
-        "ns-766.awsdns-31.net",
         "ns-1124.awsdns-12.org",
-        "ns-2035.awsdns-62.co.uk"
+        "ns-2035.awsdns-62.co.uk",
+        "ns-272.awsdns-34.com",
+        "ns-766.awsdns-31.net"
     ]
 }

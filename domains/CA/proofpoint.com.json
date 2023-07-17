@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
         "urldefense"
     ],
@@ -18,49 +18,61 @@
         {
             "rule": "proofpoint\\.com\\/v2\\/url",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "urldefense"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.sessionStorage": 1
+            },
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [],
+            "responseHashes": [
+                "916be282c43b9101501223bf9a189a6334fa4a0206b21a43a8b9d9c910ceaaa0",
+                "0a3e0f755421c37f636595fb55e723b048dd9e0cb77df30048f52f3198f9ea5f",
+                "fc360f2719e81b4264a11bf3a46d84c9258c8794f58849398e10e47df6e5b960",
+                "a224dfc1e1af0259dd16f2fbc3033f2d43c30eb02ce760a3333d86c01dc1e942"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "ca.norton.com",
+                "us.norton.com",
+                "www.talbots.com",
+                "www.weightwatchers.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "proofpoint\\.com\\/v2\\/url",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "urldefense"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "fdac71109000ee5e21163bc6b60221d4077f59d8224d3e7cb16fa994a184440b"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
                 "us.norton.com",
-                "www.weightwatchers.com"
-            ]
-        },
-        {
-            "rule": "proofpoint\\.com\\/v2\\/url",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "urldefense"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 1,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 1,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "norton.com",
                 "www.weightwatchers.com"
             ]
         }
@@ -70,28 +82,36 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.4
-        },
-        {
             "domain": "doubleclick.net",
             "prevalence": 0.4
         },
         {
-            "domain": "googletagmanager.com",
+            "domain": "adobedtm.com",
             "prevalence": 0.2
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Image": 3,
-        "Script": 2
+        "Script": 6,
+        "Image": 3
     },
     "nameservers": [
-        "pdns99.ultradns.org",
-        "pdns99.ultradns.biz",
-        "ns1.proofpoint.com",
         "pdns99.ultradns.net",
+        "ns1.proofpoint.com",
+        "pdns99.ultradns.com",
         "ns3.proofpoint.com",
-        "pdns99.ultradns.com"
+        "pdns99.ultradns.org",
+        "pdns99.ultradns.biz"
     ]
 }

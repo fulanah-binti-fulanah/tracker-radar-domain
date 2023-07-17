@@ -4,16 +4,115 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000101,
+    "sites": 1,
     "subdomains": [
-        "content"
+        "content",
+        "ads",
+        "monetize-static"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "viralize\\.tv\\/display\\/",
+            "rule": "viralize\\.tv\\/player\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content",
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "83426a492a226f2871e67c3d11a10fdaea1e515b9220fbd386ce42fbe38fce18"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "treccani.it",
+                "www.treccani.it"
+            ]
+        },
+        {
+            "rule": "viralize\\.tv\\/t-bid-opportunity\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content",
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "treccani.it",
+                "www.treccani.it"
+            ]
+        },
+        {
+            "rule": "viralize\\.tv\\/t-bid-done\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content",
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "treccani.it",
+                "www.treccani.it"
+            ]
+        },
+        {
+            "rule": "viralize\\.tv\\/viralize_vpaid\\.min\\.46a3cb44\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "monetize-static"
+            ],
+            "apis": {
+                "window.name": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5b0fec4897c8d707e2a52d9262890d1aa99aadc26db754c18a6b9d874bc62261"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "treccani.it",
+                "www.treccani.it"
+            ]
+        },
+        {
+            "rule": "viralize\\.tv\\/track\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,13 +123,13 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "292fb565b221ae3b7600d28ec80efc51ccf557d2553d4476255ed1262a80bbe3"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dagospia.com",
+                "treccani.it",
                 "www.treccani.it"
             ]
         }
@@ -41,14 +140,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5333333333333333
         },
         {
-            "domain": "imasdk.googleapis.com",
-            "prevalence": 0.3333333333333333
+            "domain": "ravenjs.com",
+            "prevalence": 0.4666666666666667
         }
     ],
     "types": {
+        "XHR": 2,
+        "Image": 6,
         "Script": 2
     },
     "nameservers": [

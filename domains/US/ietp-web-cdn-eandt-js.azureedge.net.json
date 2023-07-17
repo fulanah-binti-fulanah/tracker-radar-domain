@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ietp-web-cdn-eandt-js\\.azureedge\\.net\\/picturefill\\.min\\.js",
@@ -21,6 +21,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.devicePixelRatio": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -65,7 +67,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2
             },
@@ -126,9 +128,11 @@
         {
             "rule": "ietp-web-cdn-eandt-js\\.azureedge\\.net\\/custom\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],

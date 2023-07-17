@@ -7,27 +7,56 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
+        "vid9430",
         "paapi3971",
-        "api5256",
-        "cdn-0"
+        "vid1005",
+        "api3469",
+        "api7291",
+        "cdn-0",
+        "vi4820"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "d41\\.co\\/api\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vid9430"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "9b9e6f3986b269d0df576c63ab6fff0e0584753b40e6c52e4bef0214c9e07477"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hpe.com",
+                "techlibrary.hpe.com",
+                "www.hpe.com"
+            ]
+        },
         {
             "rule": "d41\\.co\\/sync\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "paapi3971",
-                "api5256"
+                "vid1005",
+                "api3469",
+                "api7291"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,7 +66,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mariadb.com",
-                "www.cockroachlabs.com"
+                "quickbooks.intuit.com",
+                "www.servicenow.com",
+                "www.sonicwall.com"
             ]
         },
         {
@@ -61,7 +92,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mariadb.com",
-                "www.cockroachlabs.com"
+                "www.servicenow.com"
             ]
         },
         {
@@ -70,11 +101,13 @@
             "fingerprinting": 0,
             "subdomains": [
                 "paapi3971",
-                "api5256"
+                "vi4820",
+                "api3469",
+                "api7291"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "8b883f947b157a3396a286b998bbe23cb1e8a9afd2cf8141d68de890f91530ac"
@@ -84,30 +117,87 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mariadb.com",
-                "www.cockroachlabs.com"
+                "quickbooks.intuit.com",
+                "www.servicenow.com",
+                "www.sonicwall.com"
+            ]
+        },
+        {
+            "rule": "d41\\.co\\/tags\\/dnb_coretag_v4\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-0"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "52c766d175703482411d165b1339220aac1167e3315b792928eb51de6d6b3183"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "www.sonicwall.com"
+            ]
+        },
+        {
+            "rule": "d41\\.co\\/tags\\/ff-2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9e111614ac18cf0c829a3dbfc6aff736c03536ec281330daf38e4bb3fb6ddfca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pluralsight.com",
+                "www.sonicwall.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.7142857142857143
-        },
-        {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.14285714285714285
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 4,
-        "Fetch": 2
+        "XHR": 3,
+        "Script": 10,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-1457.awsdns-54.org",

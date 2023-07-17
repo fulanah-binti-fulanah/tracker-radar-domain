@@ -12,7 +12,6 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "wildcard",
         "api",
         "search-api"
     ],
@@ -22,56 +21,12 @@
             "resolved": "api.blueport.com.edgekey.net"
         },
         {
-            "original": "search-api.blueport.com",
+            "original": "search.api.blueport.com",
             "resolved": "search-api.blueport.com.edgekey.net"
-        },
-        {
-            "original": "search.blueport.com",
-            "resolved": "wildcard.blueport.com.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "blueport\\.com\\.edgekey\\.net\\/sites\\/asiv2\\/includes\\/hawksearch\\.min\\.js",
-            "cookies": 0.00000681,
-            "fingerprinting": 1,
-            "subdomains": [
-                "wildcard"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "search.blueport.com",
-                    "resolved": "wildcard.blueport.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "9096032b46721a254d06a094b5b9d14e0fce50d16239e330ed485c55aa25a832"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "visitor_id": {
-                    "ttl": 31104003,
-                    "length": 36,
-                    "prevalence": 0.000006805962022731913,
-                    "uniqueness": 1
-                },
-                "visit_id": {
-                    "ttl": 14403,
-                    "length": 36,
-                    "prevalence": 0.000006805962022731913,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "valuecityfurniture.com",
-                "www.valuecityfurniture.com"
-            ]
-        },
         {
             "rule": "blueport\\.com\\.edgekey\\.net\\/v1\\/content\\/stringresources\\/PageNotFound",
             "cookies": 0.0000136,
@@ -224,7 +179,7 @@
                 }
             ],
             "responseHashes": [
-                "1b102204041073cb30ce32c52a1a8593f6443fd5020b10387212d5b58d961480"
+                "77caa0ec36dcd2eb9fb23109f99f27abd6530e140bf011829caf77c0a693629e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -467,7 +422,7 @@
                 }
             ],
             "responseHashes": [
-                "cc7f4734fc6962e09c1f7411deecb9a3d8ba27292a475b362991928f22dd08fe"
+                "ea1b44dc4be09b9467d710691b526d8adcd52444e95d62d4e072681fc396dda1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -494,7 +449,61 @@
                 }
             ],
             "responseHashes": [
-                "fe448cf96500d790dbed0791f7d5cf4b233cec69e0e122641bd098493f47d898"
+                "909ace1e3bdcce685366cc4d2b2fd5452827ef6fd782fd136da2df6f7fd8990a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "valuecityfurniture.com",
+                "www.valuecityfurniture.com"
+            ]
+        },
+        {
+            "rule": "blueport\\.com\\.edgekey\\.net\\/v1\\/favorites",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.blueport.com",
+                    "resolved": "api.blueport.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "valuecityfurniture.com",
+                "www.valuecityfurniture.com"
+            ]
+        },
+        {
+            "rule": "blueport\\.com\\.edgekey\\.net\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "search-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.api.blueport.com",
+                    "resolved": "search-api.blueport.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d1009e2ca2c89bd7349b39ef10662fa7215f4914309727ab4f7232c699c90998"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -557,60 +566,6 @@
                 "valuecityfurniture.com",
                 "www.valuecityfurniture.com"
             ]
-        },
-        {
-            "rule": "blueport\\.com\\.edgekey\\.net\\/search",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "search-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "search-api.blueport.com",
-                    "resolved": "search-api.blueport.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "65fe3e6c28107072050d57d2dd1ae9df06bbef7fd0215d2213633fae9b881aca"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "valuecityfurniture.com",
-                "www.valuecityfurniture.com"
-            ]
-        },
-        {
-            "rule": "blueport\\.com\\.edgekey\\.net\\/v1\\/favorites",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.blueport.com",
-                    "resolved": "api.blueport.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "valuecityfurniture.com",
-                "www.valuecityfurniture.com"
-            ]
         }
     ],
     "categories": [],
@@ -623,7 +578,6 @@
         }
     ],
     "types": {
-        "Script": 2,
         "XHR": 40
     },
     "nameservers": []

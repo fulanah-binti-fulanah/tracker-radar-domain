@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "stream"
     ],
@@ -20,8 +20,8 @@
                 "stream"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -29,7 +29,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "binge.com.au",
+                "www.binge.com.au",
                 "www.petbarn.com.au"
+            ]
+        },
+        {
+            "rule": "raptor\\.digital\\/api\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stream"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "binge.com.au",
+                "www.binge.com.au"
             ]
         },
         {
@@ -59,7 +82,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9230769230769231
+            "prevalence": 0.7692307692307693
+        },
+        {
+            "domain": "streamotion.com.au",
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "googletagmanager.com",
@@ -67,13 +94,14 @@
         }
     ],
     "types": {
-        "Preflight": 2,
+        "Preflight": 3,
+        "XHR": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c4.googledomains.com"
+        "ns-cloud-c4.googledomains.com",
+        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c2.googledomains.com"
     ]
 }

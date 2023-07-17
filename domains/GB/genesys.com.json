@@ -4,14 +4,37 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
+        "www",
         "widgets.hive"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "genesys\\.com\\/media\\/genesys-logo-base\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3b9cb75ea0b3b0026833463b5ace8057632053261070d74458b5206b93f68652"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natwest.com",
+                "supportcentre.natwest.com"
+            ]
+        },
         {
             "rule": "genesys\\.com\\/",
             "cookies": 0,
@@ -60,28 +83,6 @@
                 "bmw.co.uk",
                 "www.mini.co.uk"
             ]
-        },
-        {
-            "rule": "genesys\\.com\\/i18n\\/widgetsClientStrings\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.hive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bmw.co.uk",
-                "www.mini.co.uk"
-            ]
         }
     ],
     "categories": [],
@@ -89,27 +90,31 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "baqend.com",
-            "prevalence": 0.42857142857142855
+            "domain": "first party",
+            "prevalence": 0.25
         },
         {
             "domain": "bmw.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.25
+        },
+        {
+            "domain": "baqend.com",
+            "prevalence": 0.25
         },
         {
             "domain": "d2uinmo2bcbdsn.cloudfront.net",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.25
         }
     ],
     "types": {
+        "Image": 2,
         "Script": 2,
-        "XHR": 2,
-        "Fetch": 2
+        "XHR": 2
     },
     "nameservers": [
-        "ns6.genesys.com",
-        "ns7.genesys.com",
         "ns5.genesys.com",
-        "ns8.genesys.com"
+        "ns6.genesys.com",
+        "ns8.genesys.com",
+        "ns7.genesys.com"
     ]
 }

@@ -7,7 +7,8 @@
     "prevalence": 0.0000408,
     "sites": 6,
     "subdomains": [
-        "accio"
+        "accio",
+        "clickstream-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -29,8 +30,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "napaonline.com",
-                "www.napacanada.com",
-                "www.napaonline.com"
+                "www.napaonline.com",
+                "www.napacanada.com"
             ]
         },
         {
@@ -45,15 +46,37 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "d201b248b8f8021d865ec9f0817e6ec8704c066de801c3c3f35978a656b6335b",
-                "6c47581b1e7cad98abfdb36e03c7f80f0c1beb85bb09b15ac3c87f1e30b9dc43"
+                "95e34bdc82a78c0153f4e249e0c4d38d569aea7603cfd4985784c14092704c00",
+                "ef693a6a12042fa1f8510c53feda97524ca3b4d616bb45b58e817c21f542f336"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "napaonline.com",
-                "www.napacanada.com",
+                "www.napaonline.com",
+                "www.napacanada.com"
+            ]
+        },
+        {
+            "rule": "genpt\\.com\\/userevents\\/v1\\/selling-systems\\/NOL\\/countries\\/US\\/languages\\/EN\\/events",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clickstream-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "napaonline.com",
                 "www.napaonline.com"
             ]
         }
@@ -64,21 +87,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.9166666666666666
         },
         {
-            "domain": "fullstory.com",
-            "prevalence": 0.3333333333333333
+            "domain": "napaonline.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
         "Preflight": 3,
-        "Fetch": 3
+        "Fetch": 3,
+        "Ping": 2
     },
     "nameservers": [
         "pdns204.ultradns.com",
-        "pdns204.ultradns.org",
         "pdns204.ultradns.net",
+        "pdns204.ultradns.org",
         "pdns204.ultradns.biz"
     ]
 }

@@ -9,14 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "apigw",
         "iwmapapi",
+        "apigw",
         "functions",
-        "cdaas",
-        "dynatracepsg"
+        "loyalty-1",
+        "client-logging",
+        "dynatracepsg",
+        "cdaas"
     ],
     "cnames": [
         {
@@ -26,6 +28,10 @@
         {
             "original": "cdaas.americanexpress.com",
             "resolved": "cdaas.americanexpress.com.akadns.net"
+        },
+        {
+            "original": "client-logging.americanexpress.com",
+            "resolved": "client-logging.americanexpress.com.akadns.net"
         },
         {
             "original": "dynatracepsg.americanexpress.com",
@@ -42,39 +48,14 @@
         {
             "original": "iwmapapi.americanexpress.com",
             "resolved": "iwmapapi.americanexpress.com.akadns.net"
+        },
+        {
+            "original": "loyalty-1.americanexpress.com",
+            "resolved": "loyalty-1.americanexpress.com.akadns.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "americanexpress\\.com\\.akadns\\.net\\/acqpzn\\/en-us\\/both\\/hp\\/pzn-offers",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apigw"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "apigw.americanexpress.com",
-                    "resolved": "apigw.americanexpress.com.akadns.net"
-                }
-            ],
-            "responseHashes": [
-                "bc3dbde1a9d7ee250d4bd7ea9cdd5bce0443e50d00d2eef39c67550af0fa32d9",
-                "d713d4ffd455da8380be15982ba8f84ddd37dfc0c9c63b23050c87ea0cf659ad"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americanexpress.com",
-                "online.americanexpress.com",
-                "www.americanexpress.com"
-            ]
-        },
         {
             "rule": "americanexpress\\.com\\.akadns\\.net\\/beacon",
             "cookies": 0,
@@ -83,8 +64,8 @@
                 "iwmapapi"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "iwmapapi.americanexpress.com",
@@ -102,6 +83,61 @@
             "exampleSites": [
                 "americanexpress.com",
                 "global.americanexpress.com",
+                "myca.americanexpress.com",
+                "online.americanexpress.com",
+                "www.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iwmapapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "iwmapapi.americanexpress.com",
+                    "resolved": "iwmapapi.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
+                "myca.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/acqpzn\\/en-us\\/both\\/hp\\/pzn-offers",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apigw"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "apigw.americanexpress.com",
+                    "resolved": "apigw.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "d7c1efbdcff53b5fa29bd0c7fc3664cb905eff3f2ee7bf5e5b7532641abfd87b",
+                "7857ba2a16fd5b3ba99f85f57e92a47cddbddb068e2d65b0fa66509571ebab3a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
                 "online.americanexpress.com",
                 "www.americanexpress.com"
             ]
@@ -124,7 +160,7 @@
             ],
             "responseHashes": [
                 "4d725d85b8124351470aa8d83334cea0ca7b06c1b7be1158efb55c97bcff82cc",
-                "22cdbc8c0a8d9a8b744512fd34adb445dc780e7030f29028cba604b5f037c266"
+                "f1070bb9a8a71c8cbde3234cb1acaa84478957d3279d906d14dd21c6d8d38d96"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -132,6 +168,121 @@
             "exampleSites": [
                 "americanexpress.com",
                 "global.americanexpress.com",
+                "online.americanexpress.com",
+                "www.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/home\\/report\\/security\\/csp-violation",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "loyalty-1",
+                "client-logging"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "loyalty-1.americanexpress.com",
+                    "resolved": "loyalty-1.americanexpress.com.akadns.net"
+                },
+                {
+                    "original": "client-logging.americanexpress.com",
+                    "resolved": "client-logging.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
+                "global.americanexpress.com",
+                "myca.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/monitoring\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iwmapapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "iwmap.americanexpress.com",
+                    "resolved": "iwmapapi.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
+                "global.americanexpress.com",
+                "myca.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iwmapapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "iwmap.americanexpress.com",
+                    "resolved": "iwmapapi.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
+                "online.americanexpress.com",
+                "www.americanexpress.com"
+            ]
+        },
+        {
+            "rule": "americanexpress\\.com\\.akadns\\.net\\/jstag\\/managed\\/ruxitagent_A27Vfhjqrux_10233220224103020\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dynatracepsg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "dynatracepsg.americanexpress.com",
+                    "resolved": "dynatracepsg.americanexpress.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "87b1236a89f18934179862bf5fd808af2460c7dff7a0b7cbadbbe3a07e88e4ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanexpress.com",
                 "online.americanexpress.com",
                 "www.americanexpress.com"
             ]
@@ -165,7 +316,7 @@
         {
             "rule": "americanexpress\\.com\\.akadns\\.net\\/cdaas\\/myca\\/flash-flood\\/lib\\/flash-flood\\.html",
             "cookies": 0.0000204,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdaas"
             ],
@@ -191,64 +342,8 @@
             ]
         },
         {
-            "rule": "americanexpress\\.com\\.akadns\\.net\\/beacon",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iwmapapi"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "iwmap.americanexpress.com",
-                    "resolved": "iwmapapi.americanexpress.com.akadns.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americanexpress.com",
-                "online.americanexpress.com",
-                "www.americanexpress.com"
-            ]
-        },
-        {
-            "rule": "americanexpress\\.com\\.akadns\\.net\\/jstag\\/managed\\/ruxitagent_A27Vfhjqrux_10233220224103020\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "dynatracepsg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "dynatracepsg.americanexpress.com",
-                    "resolved": "dynatracepsg.americanexpress.com.akadns.net"
-                }
-            ],
-            "responseHashes": [
-                "87b1236a89f18934179862bf5fd808af2460c7dff7a0b7cbadbbe3a07e88e4ab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americanexpress.com",
-                "online.americanexpress.com",
-                "www.americanexpress.com"
-            ]
-        },
-        {
             "rule": "americanexpress\\.com\\.akadns\\.net\\/bf\\/8264482b-dee3-4f6d-be79-c4d3fee1d8c7",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "dynatracepsg"
@@ -274,38 +369,13 @@
                 "online.americanexpress.com",
                 "www.americanexpress.com"
             ]
-        },
-        {
-            "rule": "americanexpress\\.com\\.akadns\\.net\\/monitoring\\/info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iwmapapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "iwmap.americanexpress.com",
-                    "resolved": "iwmapapi.americanexpress.com.akadns.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americanexpress.com",
-                "global.americanexpress.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000408,
+    "cookies": 0.0000477,
     "topInitiators": [
         {
             "domain": "aexp-static.com",
@@ -313,11 +383,12 @@
         }
     ],
     "types": {
-        "Fetch": 12,
-        "Preflight": 4,
-        "Document": 3,
+        "Preflight": 5,
+        "Fetch": 15,
+        "Other": 3,
         "XHR": 7,
-        "Script": 3
+        "Script": 3,
+        "Document": 3
     },
     "nameservers": []
 }

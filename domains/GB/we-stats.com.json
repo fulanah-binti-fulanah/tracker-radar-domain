@@ -4,17 +4,27 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "wup-6bb5a42d.eu.v2",
         "wup-788fdc13.suk.v2",
         "wup-16c9d93d.eu.v2",
+        "wup-532e636f.us.v2",
         "logs-6bb5a42d.eu.v2",
         "log-788fdc13.suk.v2",
+        "bcdn-16c9d93d",
         "bcdn-6a1d7b63"
     ],
     "cnames": [
+        {
+            "original": "bcdn-16c9d93d.bankofscotland.co.uk",
+            "resolved": "bcdn-16c9d93d.we-stats.com"
+        },
+        {
+            "original": "bcdn-16c9d93d.halifax-online.co.uk",
+            "resolved": "bcdn-16c9d93d.we-stats.com"
+        },
         {
             "original": "bclog.nationwide.co.uk",
             "resolved": "log-788fdc13.suk.v2.we-stats.com"
@@ -24,8 +34,20 @@
             "resolved": "wup-788fdc13.suk.v2.we-stats.com"
         },
         {
+            "original": "bup.bankofamerica.com",
+            "resolved": "wup-532e636f.us.v2.we-stats.com"
+        },
+        {
+            "original": "logon.digitalbanking.rbs.co.uk",
+            "resolved": "bcdn-6a1d7b63.we-stats.com"
+        },
+        {
             "original": "logon.onlinebanking.natwest.com",
             "resolved": "bcdn-6a1d7b63.we-stats.com"
+        },
+        {
+            "original": "wup-16c9d93d.bankofscotland.co.uk",
+            "resolved": "wup-16c9d93d.eu.v2.we-stats.com"
         },
         {
             "original": "wup-16c9d93d.halifax-online.co.uk",
@@ -41,15 +63,24 @@
             "subdomains": [
                 "wup-6bb5a42d.eu.v2",
                 "wup-788fdc13.suk.v2",
-                "wup-16c9d93d.eu.v2"
+                "wup-16c9d93d.eu.v2",
+                "wup-532e636f.us.v2"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [
                 {
                     "original": "bcwup.nationwide.co.uk",
                     "resolved": "wup-788fdc13.suk.v2.we-stats.com"
+                },
+                {
+                    "original": "wup-16c9d93d.bankofscotland.co.uk",
+                    "resolved": "wup-16c9d93d.eu.v2.we-stats.com"
+                },
+                {
+                    "original": "bup.bankofamerica.com",
+                    "resolved": "wup-532e636f.us.v2.we-stats.com"
                 },
                 {
                     "original": "wup-16c9d93d.halifax-online.co.uk",
@@ -57,9 +88,11 @@
                 }
             ],
             "responseHashes": [
-                "cb53767b51d7807534c8795a3451832bd2691d1362c82141aa4e2432df71f1a6",
-                "b0619a91ebf4a21b98b097121faba8d5d648e23673e879a4b036055ff5fd95cb",
-                "bcb768c72831f509bb08739f69e9e9264436b91be51adf148ec4d3896e479d95"
+                "99731bc799c883f1c1316f96cf5a4b820dc356f357a47fb36cebf13f20d3b0a3",
+                "0a0d896a4edd83025886a81d6e1b995137d4bb4a9bbe58e7f56e9f4047b09d1b",
+                "00184c8285297e80951300516da48e3ef9a7ac10cb8822aa248758517d311507",
+                "1466f891a9573031acf0575025d4b5de8907b84808b24f859f9b05efa0ccd018",
+                "e0c810f4c51890c5d49d677ac93d841c4804321886638349134525ce6c60a4e6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -68,6 +101,8 @@
                 "barclays.co.uk",
                 "bank.barclays.co.uk",
                 "onlinebanking.nationwide.co.uk",
+                "online.bankofscotland.co.uk",
+                "www.bankofamerica.com",
                 "www.halifax-online.co.uk"
             ]
         },
@@ -100,9 +135,67 @@
             ]
         },
         {
-            "rule": "we-stats\\.com\\/scripts\\/6a1d7b63\\/6a1d7b64\\.js",
+            "rule": "we-stats\\.com\\/scripts\\/16c9d93d\\/16c9d93d\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
+            "subdomains": [
+                "bcdn-16c9d93d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "bcdn-16c9d93d.bankofscotland.co.uk",
+                    "resolved": "bcdn-16c9d93d.we-stats.com"
+                },
+                {
+                    "original": "bcdn-16c9d93d.halifax-online.co.uk",
+                    "resolved": "bcdn-16c9d93d.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "e507e764eb1c1ef06bdca65935ac97c239c896c1dfabdef661ad15cfb449493c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bankofscotland.co.uk",
+                "www.halifax-online.co.uk"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/scripts\\/6a1d7b63\\/6a1d7b63\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bcdn-6a1d7b63"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "logon.digitalbanking.rbs.co.uk",
+                    "resolved": "bcdn-6a1d7b63.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "b9f701c035d402cd8abfa91c6e0f367367c22e5b9e941e18f22e112c307bdcd0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbs.co.uk",
+                "www.digitalbanking.rbs.co.uk"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/scripts\\/6a1d7b63\\/6a1d7b64\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
                 "bcdn-6a1d7b63"
             ],
@@ -129,7 +222,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "adobedtm.com",
@@ -137,13 +230,13 @@
         }
     ],
     "types": {
-        "XHR": 6,
-        "Script": 2
+        "XHR": 8,
+        "Script": 6
     },
     "nameservers": [
-        "dns3.p07.nsone.net",
+        "dns1.p07.nsone.net",
         "dns2.p07.nsone.net",
-        "dns4.p07.nsone.net",
-        "dns1.p07.nsone.net"
+        "dns3.p07.nsone.net",
+        "dns4.p07.nsone.net"
     ]
 }

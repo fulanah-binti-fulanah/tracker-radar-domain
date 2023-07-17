@@ -125,11 +125,15 @@
         {
             "rule": "lvmh-static\\.com\\/themes\\/lvmh\\/js\\/libs\\/modernizr\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "r"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -218,15 +222,15 @@
                 "r"
             ],
             "apis": {
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 1,
                 "window.innerWidth": 1,
                 "window.innerHeight": 1,
                 "window.devicePixelRatio": 1,
                 "Document.cookie getter": 1,
                 "Navigator.prototype.platform": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -501,9 +505,9 @@
         "Font": 6
     },
     "nameservers": [
-        "d.ns.domainoo.fr",
+        "c.ns.domainoo.fr",
         "b.ns.domainoo.fr",
-        "a.ns.domainoo.fr",
-        "c.ns.domainoo.fr"
+        "d.ns.domainoo.fr",
+        "a.ns.domainoo.fr"
     ]
 }

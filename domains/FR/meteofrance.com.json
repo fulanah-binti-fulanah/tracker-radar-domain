@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "webservice"
+        "webservice",
+        "rpcache-aa"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,10 +25,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "9ee54f949ca96b2eddbbda76635def6311d6248f56645e4ee9637743f28730ed"
+                "68c30ad7604bcd083eb227d0a828eb6575c7c31a759111fc3e90655bf4f701f5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -36,6 +37,48 @@
                 "meteo.fr",
                 "www.meteo60.fr",
                 "www.vigicrues.gouv.fr"
+            ]
+        },
+        {
+            "rule": "meteofrance\\.com\\/wsft\\/v3\\/warning\\/thumbnail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpcache-aa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tf1.fr",
+                "meteo.tf1.fr"
+            ]
+        },
+        {
+            "rule": "meteofrance\\.com\\/wsft\\/v3\\/warning\\/thumbnail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpcache-aa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tf1.fr",
+                "meteo.tf1.fr"
             ]
         }
     ],
@@ -49,10 +92,12 @@
         }
     ],
     "types": {
-        "Image": 3
+        "Image": 3,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "nscf2.meteo.fr",
-        "nscf1.meteo.fr"
+        "nscf1.meteo.fr",
+        "nscf2.meteo.fr"
     ]
 }

@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.00000681,
+    "sites": 1,
     "subdomains": [],
     "cnames": [
         {
@@ -20,6 +20,33 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "gtmss-cdk-alb-prod-1955868797\\.eu-central-1\\.elb\\.amazonaws\\.com\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtmss.webanalytics.eprimo.de",
+                    "resolved": "gtmss-cdk-alb-prod-1955868797.eu-central-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "10d9afc540cbdc55d38f8e5e4a2fcfc8e8b462fe1d2207b8f6ee688fcf720e35"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "eprimo.de",
+                "www.eprimo.de"
+            ]
+        },
         {
             "rule": "gtmss-cdk-alb-prod-1955868797\\.eu-central-1\\.elb\\.amazonaws\\.com\\/collect",
             "cookies": 0,
@@ -39,7 +66,9 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013615167296368154
+            },
             "exampleSites": [
                 "eprimo.de",
                 "www.eprimo.de"
@@ -53,11 +82,16 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "google-analytics.com",
-            "prevalence": 1
+            "prevalence": 0.5
         }
     ],
     "types": {
+        "XHR": 2,
         "Image": 2
     },
     "nameservers": []

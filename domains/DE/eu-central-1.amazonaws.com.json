@@ -9,13 +9,25 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "cognito-identity",
-        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+        "d-d3q5u4t0te.execute-api",
+        "2e8mp31zr0.execute-api",
+        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
+        "d-27lyv9kpda.execute-api"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "api.aerztekammer-bw.de",
+            "resolved": "d-d3q5u4t0te.execute-api.eu-central-1.amazonaws.com"
+        },
+        {
+            "original": "api.cloud.tui.com",
+            "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -27,16 +39,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "jura-online.de",
                 "sensiseeds.com",
-                "www.medpets.de",
-                "www.mepal.com"
+                "www.medpets.de"
             ]
         },
         {
@@ -47,20 +59,63 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2195a4b5b0e9e46347dfe46d686904faab15a35b846fc4dac17ca817f932bb74",
-                "85ed8cf81a86c38e4a8bb964530c50ae51f17aa5dba307ab9f1295f3fe41a771"
+                "408a4710a4e35092b3a8b2b72a926d1623a4698a445c114b748f34521c3a6541"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
-                "www.medpets.de",
-                "www.mepal.com"
+                "www.medpets.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/rss-parser",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-d3q5u4t0te.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.aerztekammer-bw.de",
+                    "resolved": "d-d3q5u4t0te.execute-api.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerztekammer-bw.de",
+                "www.aerztekammer-bw.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "2e8mp31zr0.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eintracht.de",
+                "www.eintracht.de"
             ]
         },
         {
@@ -104,6 +159,58 @@
                 "maingau-energie.de",
                 "www.maingau-energie.de"
             ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/login\\/current\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-27lyv9kpda.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.cloud.tui.com",
+                    "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tui.com",
+                "www.tuifly.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/login\\/current\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-27lyv9kpda.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.cloud.tui.com",
+                    "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "8d0bb1229bebe993f8bfc5856bed3f1bf1e9aa45e14214bd425dc7a924ea5554"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tui.com",
+                "www.tuifly.com"
+            ]
         }
     ],
     "categories": [
@@ -113,35 +220,36 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "sooqr.com",
-            "prevalence": 0.5
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.5384615384615384
         },
         {
-            "domain": "tripcdn.com",
-            "prevalence": 0.08333333333333333
+            "domain": "sooqr.com",
+            "prevalence": 0.3076923076923077
         },
         {
             "domain": "steadycdn.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Preflight": 5,
-        "XHR": 3,
+        "Preflight": 7,
+        "XHR": 6,
+        "WebSocket": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns1.amzndns.co.uk",
+        "ns2.amzndns.net",
         "ns1.amzndns.com",
         "ns1.amzndns.net",
+        "ns2.amzndns.com",
+        "ns2.amzndns.org",
         "ns1.amzndns.org",
         "ns2.amzndns.co.uk",
-        "ns2.amzndns.com",
-        "ns2.amzndns.net",
-        "ns2.amzndns.org"
+        "ns1.amzndns.co.uk"
     ]
 }

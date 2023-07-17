@@ -4,17 +4,19 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00252,
+    "sites": 25,
     "subdomains": [
-        "8425474",
+        "8434384",
         "7528771",
+        "353607680710",
+        "7827621",
+        "8425474",
         "8254354",
         "112843328967",
-        "353607680710",
         "290323197687",
         "155020499666",
-        "7827621",
+        "6457061",
         "240228167835",
         "6960311",
         "487681674109",
@@ -43,12 +45,20 @@
             "resolved": "353607680710.gigya-api.com"
         },
         {
+            "original": "gigya.elgato.com",
+            "resolved": "353607680710.gigya-api.com"
+        },
+        {
             "original": "gigya.lequipeur.com",
             "resolved": "8254354.gigya-api.com"
         },
         {
             "original": "gigya.marks.com",
             "resolved": "8254354.gigya-api.com"
+        },
+        {
+            "original": "gigya.nascar.com",
+            "resolved": "6457061.gigya-api.com"
         },
         {
             "original": "gigya.partycity.ca",
@@ -91,6 +101,10 @@
             "resolved": "112843328967.gigya-api.com"
         },
         {
+            "original": "socialid.wimbledon.com",
+            "resolved": "8434384.gigya-api.com"
+        },
+        {
             "original": "socialize-us.yamaha.com",
             "resolved": "8425474.gigya-api.com"
         }
@@ -98,17 +112,117 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "gigya-api\\.com\\/accounts\\.webSdkBootstrap",
-            "cookies": 0.00181,
+            "rule": "gigya-api\\.com\\/sdk\\.config\\.get",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "8425474",
+                "8434384",
                 "7528771",
+                "353607680710",
+                "7827621"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
+                {
+                    "original": "login.abc.net.au",
+                    "resolved": "7528771.gigya-api.com"
+                },
+                {
+                    "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "auth-id.nfl.com",
+                    "resolved": "7827621.gigya-api.com"
+                }
+            ],
+            "responseHashes": [
+                "b91ca84b54cac64f189eef6c11ec330dd70c39b225ae8aba6f7a772a94985b21",
+                "d64718f4f9f70c74f7371b3d4431e1a0deec8f0cdc44b92b71b6deccb4df47c1",
+                "8fc52ca170f39604d435f9e0e44d72a9d155513dd26a556665b0932579625daf",
+                "2c63ca1454fcc16186897b098bae858de11af0a6a7458631cf380c05d0aa0db4",
+                "285cee853ca8a64f7a51de6f356ad65eaa7076caf848fe90044bd09b45f6edcf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "2023.wimbledon.com",
+                "www.abc.net.au",
+                "www.corsair.com",
+                "www.nfl.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "gigya-api\\.com\\/gs\\/webSdk\\/Api\\.aspx",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "8434384",
+                "7528771",
+                "353607680710",
+                "7827621"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
+                {
+                    "original": "login.abc.net.au",
+                    "resolved": "7528771.gigya-api.com"
+                },
+                {
+                    "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "auth-id.nfl.com",
+                    "resolved": "7827621.gigya-api.com"
+                }
+            ],
+            "responseHashes": [
+                "dc788646d9aa4dd31406a4754c8eeff38ab23ffbc19d05688f326dc714f75225",
+                "49071b75a0fb0f859b21836f56c90b61261eb379e23dfd70bcb0b3a3b3a42e87",
+                "03595e808222bc694090c017e20cc869e17de47c8ad06882ded0d546280ff44a",
+                "4f60c20336b3d6108e6b7ce9f200416ba4d3e7947f6861c843bf7516ab1b143e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "www.abc.net.au",
+                "www.corsair.com",
+                "www.nfl.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "gigya-api\\.com\\/accounts\\.webSdkBootstrap",
+            "cookies": 0.00252,
+            "fingerprinting": 0,
+            "subdomains": [
+                "8434384",
+                "8425474",
                 "8254354",
+                "7528771",
                 "112843328967",
                 "353607680710",
                 "290323197687",
                 "155020499666",
+                "6457061",
                 "7827621",
                 "240228167835",
                 "6960311",
@@ -117,12 +231,24 @@
                 "7214911"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
+            "sites": 25,
+            "prevalence": 0.00252,
             "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
                 {
                     "original": "socialize-us.yamaha.com",
                     "resolved": "8425474.gigya-api.com"
+                },
+                {
+                    "original": "gigya.canadiantire.ca",
+                    "resolved": "8254354.gigya-api.com"
+                },
+                {
+                    "original": "gigya.sportchek.ca",
+                    "resolved": "8254354.gigya-api.com"
                 },
                 {
                     "original": "login.abc.net.au",
@@ -133,15 +259,15 @@
                     "resolved": "8254354.gigya-api.com"
                 },
                 {
-                    "original": "gigya.canadiantire.ca",
-                    "resolved": "8254354.gigya-api.com"
-                },
-                {
                     "original": "myaccount.condor.com",
                     "resolved": "112843328967.gigya-api.com"
                 },
                 {
                     "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "gigya.elgato.com",
                     "resolved": "353607680710.gigya-api.com"
                 },
                 {
@@ -159,6 +285,10 @@
                 {
                     "original": "gigya.marks.com",
                     "resolved": "8254354.gigya-api.com"
+                },
+                {
+                    "original": "gigya.nascar.com",
+                    "resolved": "6457061.gigya-api.com"
                 },
                 {
                     "original": "auth-id.nfl.com",
@@ -181,10 +311,6 @@
                     "resolved": "487681674109.gigya-api.com"
                 },
                 {
-                    "original": "gigya.sportchek.ca",
-                    "resolved": "8254354.gigya-api.com"
-                },
-                {
                     "original": "idp.uefa.com",
                     "resolved": "7942871.gigya-api.com"
                 },
@@ -194,132 +320,60 @@
                 }
             ],
             "responseHashes": [
-                "a1b3f0d9f245ec002353d604b412ed546ebe1b2699d41409f65eea500a988701",
-                "3a1550cc483b22eda83974583936789e0842c28013078ed19ecd2448b3ca0a6f",
-                "9fb1edb94463e82d9482938796cef84c764e50bcd43f212bf285b3fa89558576",
-                "a2b2a30a12fb78345a9db53006d43fc2ac6c7a917f4e98eeae617fbc1fdfc730",
-                "03f690fef3216b0e6a0e6bc6b866be9967df22b863effc896988d4d25d7ac3f9",
-                "0ee01016e50d12a3e24f3e9fd0dc9be702ed574efd9a21b96544e746c3c291f6",
-                "2a6ad4ee4270782a074194d39206b95eb97c5af204a0eb1d59f34c7b25bec576",
-                "371a83215d04a2569b25e871c236267eb25af82cfa657bf2a266704eb94465b2",
-                "b75e95524ab7d35b1311003f94941c6b4c01e7c1d9bb7037d1cfe3740d1550a8",
-                "c3a7862672ec7083ca87f959410b388cdc8713ddedad6eea7f720675a64501cb",
-                "bc32502665e19f425f75790da5367ce2c59f9b44f27c62e4f86eec5b7e89b4c8",
-                "29ed691708704f6afeb9069c2cb37aace643deda34da5b024c6422cbfe0f16d8",
-                "3f37706365e0eac2405021a3dfe53efc934a123f3ab132e662926c1da1df1d10",
-                "62c429ccf16a69d5b41209a1e73e430891f93372aded894eff2b450e2f80c010",
-                "7566fe4a9e0df308f61bf337bbd8a1ef2143634eadf61ec530523fa62947ac3a",
-                "cd7ce2c8ab81b158f90efbe8c8552f6dcf2f47c0a5e2190834a30e9b4d98995c",
-                "96eb5140ea495019f22cb617e5aaad47d32a0bb3418ec9f2febf2b08cb1d668b"
+                "71274f8fa5859ab032408e5a592616190692251f429ba393499fb2cf89f3ed44",
+                "4485a2448cdb2e881516e6b7968a52b358383bf7a37d2db00effd5fc7c063936",
+                "a134b4a89a78cfa56e41d1758611000d42347ae2066c0b95aa5daf3c264664ea",
+                "6393d911824d79ea19077f5456d7b3e079bb67ff6b34a76d508f73de01f55a9f",
+                "046f8ed6c44b9ac5165bea602d83d70511d7655b34ad1a5f5f171860fb81bbc2",
+                "d1623ec2409bf0e9b9a61134b865af5ccf951987ebf507f2e1446eff2607860f",
+                "36deaf65fbd4a5c549fa311f71faf9c3ff9b5d5464838c2c27f653e50eb105e1",
+                "f5cce8c6bbf15d61ef6baa3e45ee6f7a7d6e62123a39fe08d71386f8cfe38618",
+                "694d581d7f98d4edfce7f5087f7c8ef82084a54b6a8ca322beb7f8dba1ff2f26",
+                "4ef2b721133a96f43758ef67add15a222e1b470c0f705788287a2664a1e7819c",
+                "9c05c1721cc9f97cd36f27e9b4e2a3c9e6456217788932847a854e1e9905911b",
+                "01a2a0503d223d8967ff4255ddbaa883a92fe4e5dd17cda283a5a0ffda91bf54",
+                "c07f2152c0434284e1e1e98566f6c57e5e534f72f2be725c5239a57ad644c2a8",
+                "4ce166c5f6b68907772dbfea9ff3006f629bcd78c1b54e28946043dfea3d00db",
+                "777a3e949b1725be4ac6c8a58530280ce66945954d38ad99b2ffd7d62e55e483",
+                "2bbd37854baf4e8c7d1719aaccbf001d222bf4e690492152b642992607f4aabe",
+                "a488b18c79eb0a5d9b16a06bf07dfcd3fc44d00e4ccbbc6e0dcc153e978aea5f",
+                "435f52ce4784d523701f920f2a155de3ebd0c33684071854bc883b5d36116bae",
+                "5dad3481fd386bb2a5d43239b9a985723314b7cb27e6e11ff95a8a5d9430e388",
+                "ccc631d9d75f26bec34f40127d093715d8805c2aa97f8c17b30f48a441d7a77c",
+                "2900ab05d7273d67d4690055157008dd9fdff530ea6d174bcf0503a29c572b71",
+                "9da9c69ecedcbf731dcc406dc74293ebfa091533b7d666d226b0529ce19615a3",
+                "c645f7efae7e5618b90c0a9e832b7ce463635885c2173d96fe46b284e7b79071",
+                "7c28922e64f59ce297c4100639ee687a65ab95ec49767a8c520f5efb40950e04"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.0004017677782241864,
-                "_li_dcdm_c": 0.0001004419445560466,
-                "lotame_domain_check": 0.0001004419445560466,
-                "_td_domain_ramtrucks.com": 0.0001004419445560466,
-                "dy_fs_page": 0.0001004419445560466
+                "IR_gbd": 0.00040286030818813577,
+                "_li_dcdm_c": 0.00020143015409406788,
+                "lotame_domain_check": 0.00010071507704703394,
+                "_td_domain_ramtrucks.com": 0.00010071507704703394
             },
             "exampleSites": [
-                "yamaha.com",
-                "www.abc.net.au",
-                "www.atmosphere.ca",
-                "www.canadiantire.ca",
-                "www.condor.com",
-                "www.corsair.com",
-                "www.geappliances.ca",
-                "www.golfdigest.com",
-                "www.lequipeur.com",
-                "www.marks.com",
                 "www.nfl.com",
-                "www.partycity.ca",
-                "www.ramtrucks.com",
-                "www.realtor.ca",
-                "www.ryobitools.com",
-                "www.sportchek.ca",
-                "www.uefa.com",
-                "www.wacom.com"
-            ]
-        },
-        {
-            "rule": "gigya-api\\.com\\/sdk\\.config\\.get",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "7528771",
-                "353607680710",
-                "7827621"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [
-                {
-                    "original": "login.abc.net.au",
-                    "resolved": "7528771.gigya-api.com"
-                },
-                {
-                    "original": "gigya.corsair.com",
-                    "resolved": "353607680710.gigya-api.com"
-                },
-                {
-                    "original": "auth-id.nfl.com",
-                    "resolved": "7827621.gigya-api.com"
-                }
-            ],
-            "responseHashes": [
-                "fb1949a39bcb78c91ef572e135cb35b9315c1b2b8c79d987800e50d0abc0b602",
-                "0a0ac51ae34d39b7239806a17cd9bd3c7c8f635077d0e3d7a3ea73b74b4b41c2",
-                "26e7228701165d5e4a1bf6fed21c030eb601000302498d8fcee60c7918c96981"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abc.net.au",
+                "www.wimbledon.com",
+                "www.nascar.com",
                 "www.abc.net.au",
-                "www.corsair.com",
-                "www.nfl.com"
-            ]
-        },
-        {
-            "rule": "gigya-api\\.com\\/gs\\/webSdk\\/Api\\.aspx",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "7528771",
-                "353607680710",
-                "7827621"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "login.abc.net.au",
-                    "resolved": "7528771.gigya-api.com"
-                },
-                {
-                    "original": "gigya.corsair.com",
-                    "resolved": "353607680710.gigya-api.com"
-                },
-                {
-                    "original": "auth-id.nfl.com",
-                    "resolved": "7827621.gigya-api.com"
-                }
-            ],
-            "responseHashes": [
-                "b139a641fc523d40d33049055ac911e7d6a2dc39463c137cc1f95c2edd87c5ae",
-                "2abdb4e7fc4d71f8edc9eca84ed8e0f54d9a58803f20eae16f22b6c622ac6915"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abc.net.au",
-                "www.corsair.com",
-                "www.nfl.com"
+                "www.golfdigest.com",
+                "ca.yamaha.com",
+                "sportchek.ca",
+                "www.geappliances.ca",
+                "www.atmosphere.ca",
+                "www.ramtrucks.com",
+                "www.lequipeur.com",
+                "www.partycity.ca",
+                "canadiantire.ca",
+                "www.canadiantire.ca",
+                "www.ryobitools.com",
+                "www.condor.com",
+                "www.elgato.com",
+                "qa2-www.canadiantire.ca",
+                "www.realtor.ca",
+                "www.corsair.com"
             ]
         },
         {
@@ -327,14 +381,19 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
+                "8434384",
                 "7528771",
                 "353607680710",
                 "7827621"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
                 {
                     "original": "login.abc.net.au",
                     "resolved": "7528771.gigya-api.com"
@@ -349,17 +408,21 @@
                 }
             ],
             "responseHashes": [
-                "072ffe8426e5da15479b5e3c91abbcbe44de85d1ffc97d4f4dbd287c5c1c56b6",
-                "31ccdef4c99794a9012892bbfa4779a1c313b5c7d042228a3b6832464c1bc653"
+                "1dffde6dad0363686ca903be31b18b49e28ad3cdb19df216e26595bb082d331c",
+                "6b89a7cb651690d329ea1119dd40d36ca837b684cfa5e8edd1be3f2f7c297d1a",
+                "5f24c8edfb9048527e13f5a496647d3a88938e796faf0f3e4b4d963c171be370",
+                "08b4d2a33c5963a3372f45822bedfbe8272e073d9abbe73cbd0c327200ecdf12"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abc.net.au",
+                "wimbledon.com",
+                "2023.wimbledon.com",
                 "www.abc.net.au",
                 "www.corsair.com",
-                "www.nfl.com"
+                "www.nfl.com",
+                "www.wimbledon.com"
             ]
         },
         {
@@ -384,7 +447,7 @@
                 }
             ],
             "responseHashes": [
-                "fbab54ea8d8ae7937faf423e85cd4f00dfad0843e0b8dece282c4af1795f0c6c"
+                "deb69d9f5ce41f4ef032aeb4f98c57a110f92b614ce89fcdd2218dcb7f3c7d6d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -397,47 +460,39 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00181,
+    "cookies": 0.00252,
     "topInitiators": [
         {
             "domain": "gigya.com",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.9322033898305084
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.047619047619047616
+            "prevalence": 0.03389830508474576
         },
         {
             "domain": "bigcommerce.com",
-            "prevalence": 0.023809523809523808
-        },
-        {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.01694915254237288
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.023809523809523808
-        },
-        {
-            "domain": "canary.js",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.01694915254237288
         }
     ],
     "types": {
-        "XHR": 18,
-        "Fetch": 4,
-        "Document": 7,
+        "Fetch": 6,
+        "Document": 11,
+        "XHR": 25,
         "Script": 2
     },
     "nameservers": [
-        "dns4.p06.nsone.net",
-        "dns3.p06.nsone.net",
-        "ns-594.awsdns-10.net",
-        "ns-20.awsdns-02.com",
-        "dns1.p06.nsone.net",
-        "ns-2039.awsdns-62.co.uk",
         "dns2.p06.nsone.net",
-        "ns-1502.awsdns-59.org"
+        "ns-594.awsdns-10.net",
+        "dns3.p06.nsone.net",
+        "ns-2039.awsdns-62.co.uk",
+        "dns1.p06.nsone.net",
+        "dns4.p06.nsone.net",
+        "ns-1502.awsdns-59.org",
+        "ns-20.awsdns-02.com"
     ]
 }

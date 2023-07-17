@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "cdn"
     ],
@@ -14,17 +14,17 @@
     "resources": [
         {
             "rule": "clickanalyticsresource\\.com\\/analytics\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000272,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "e0c13d9c8443b018852674af43978d6df965584358677ce0efe65ae1dd1963af"
@@ -32,16 +32,18 @@
             "type": "Script",
             "firstPartyCookies": {
                 "clickanalyticsresource": {
-                    "ttl": 2592008,
+                    "ttl": 2592011,
                     "length": 36,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000027230334592736308,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "banggood.com",
-                "www.banggood.com"
+                "www.banggood.com",
+                "www.dhgate.com",
+                "www.donnerdeal.com"
             ]
         },
         {
@@ -52,38 +54,81 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.banggood.com",
+                "www.dhgate.com",
+                "www.donnerdeal.com"
+            ]
+        },
+        {
+            "rule": "clickanalyticsresource\\.com\\/adretag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "87c42eabdf6a6486d4c168700a8232d8325ea97079ef50f6a4d339b690bd19b8"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "banggood.com",
-                "www.banggood.com"
+                "www.banggood.com",
+                "www.dhgate.com",
+                "www.donnerdeal.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "trmit.com",
-            "prevalence": 0.5
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "dhresource.com",
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "sentry-cdn.com",
-            "prevalence": 0.5
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "hrznads.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "lenmit.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2
+        "Script": 4,
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": [
-        "melinda.ns.cloudflare.com",
-        "jack.ns.cloudflare.com"
+        "jack.ns.cloudflare.com",
+        "melinda.ns.cloudflare.com"
     ]
 }

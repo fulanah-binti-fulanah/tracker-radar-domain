@@ -4,25 +4,105 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "static",
+        "u",
         "track",
+        "gtrack",
         "exchange"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "kueezrtb\\.com\\/dye",
+            "rule": "kueezrtb\\.com\\/latest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "track"
+                "static"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aa8bd32342b76da9f3ee296fa3f2ef4a8945997a532de65a027cc4b20d5be89f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com"
+            ]
+        },
+        {
+            "rule": "kueezrtb\\.com\\/js\\/latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.outerWidth": 2,
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b0f0729466d02b8cbbd114cfdd3c1af2409b48172fa377d918a495d2eccb2cf4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com"
+            ]
+        },
+        {
+            "rule": "kueezrtb\\.com\\/fpd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "u"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1bca496a66ec4c8461498964526ad7a62ab7ffb46db20ae7462a8aa6a3aa8d29"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com"
+            ]
+        },
+        {
+            "rule": "kueezrtb\\.com\\/dye",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track",
+                "gtrack"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -30,10 +110,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020062192797672785
+                "lotame_domain_check": 0.00010070493454179255
             },
             "exampleSites": [
-                "dexerto.com",
+                "dailydot.com",
+                "www.dailydot.com",
                 "www.dexerto.com"
             ]
         },
@@ -66,16 +147,21 @@
     "topInitiators": [
         {
             "domain": "relevant-digital.com",
-            "prevalence": 0.875
+            "prevalence": 0.5454545454545454
         },
         {
             "domain": "first party",
-            "prevalence": 0.125
+            "prevalence": 0.4090909090909091
+        },
+        {
+            "domain": "d137xjgotpkrvc.cloudfront.net",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Image": 2,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 4,
+        "Image": 3
     },
     "nameservers": [
         "dan.ns.cloudflare.com",

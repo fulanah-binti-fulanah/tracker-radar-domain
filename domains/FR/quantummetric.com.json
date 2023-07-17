@@ -7,59 +7,70 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "vistaprint-app",
         "lenovosupport-app",
+        "avis-app",
         "beatport-app",
         "christies-app",
+        "metmuseum-app",
         "nintendo-app",
         "telegraph-app",
         "united-app",
-        "vistaprint-app",
-        "rl",
-        "cdn"
+        "cdn",
+        "rl"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "quantummetric\\.com\\/",
-            "cookies": 0.000603,
+            "cookies": 0.000908,
             "fingerprinting": 0,
             "subdomains": [
+                "vistaprint-app",
                 "lenovosupport-app",
+                "avis-app",
                 "beatport-app",
                 "christies-app",
+                "metmuseum-app",
                 "nintendo-app",
                 "telegraph-app",
-                "united-app",
-                "vistaprint-app"
+                "united-app"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
+                "a20e8ef92883f77bb2d4dbde9df3a7ed2372a0135ffc0da8dfbba6c279171ccd",
+                "272a59a4f93d6982002f2f42ea17306e0afe0fdec4b3fb44bec32061212da306",
+                "6ede0a477e106a461455da1a70cba32d03408ef4d6512312bbdb2f7ad6772ff9",
+                "6e65fff2cfd03faca3a40dc210d2919c3cbf1a916f5ef56180c2abb56811f297",
+                "c949ff1d30a68bb2f8aebe5f6c53cae973ca040261ecf913eec04361e961a680",
+                "4c5591ab15f8b0aeaaba5b08cffff21ed595a0e201ce054bf1ee57ccd3993163",
+                "06c52f48f4599aa4d85825897b17c22668f0ac2e66b0db5d2eac28965e83e61f",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "47adf9680e9e157a28327d1a797afe0b55928ca0ac881ec562244a8dd3e39de5",
-                "e5ed5539ede84b6a5533d0619f7f4a2821e41c7c7cd814cb8518f6d0a7a2cf11",
-                "bf00f7e0939143b7020e2c41f34e679ac55d47422cb79a92d46b03f84e9337d5",
-                "ed03b9fea9b6a278fa8b82534bfd3f87859ae824995b7b432ae1179126a9595a",
-                "232099d4ec0dcaf70cfd1c87eea016133861a3a62cafee3b0ed3ae48e767f15e"
+                "850ba031f378caa3818e67891b847485b59fd78f337d9ed6986da4c46f00d48e",
+                "17a152f8f55b2ef0170886c17f990e210c185928db627f58e9335e5bce9724f0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020092425155716296,
-                "dnsDisplayed": 0.00010046212577858148,
-                "signedLspa": 0.00010046212577858148
+                "IR_gbd": 0.00020177562550443906,
+                "dnsDisplayed": 0.00010088781275221953,
+                "signedLspa": 0.00010088781275221953
             },
             "exampleSites": [
-                "lenovo.com",
+                "99designs.fr",
+                "pcsupport.lenovo.com",
                 "support.lenovo.com",
+                "www.avis.com",
                 "www.beatport.com",
                 "www.christies.com",
+                "www.metmuseum.org",
                 "www.nintendo.com",
                 "www.telegraph.co.uk",
                 "www.united.com",
@@ -67,52 +78,96 @@
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/beatport\\/hash-check",
+            "rule": "quantummetric\\.com\\/helpers\\/blank",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "rl"
+                "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "07e2a6fb0d22cdbde787ec2941eb285c222861ddc3cbc8903315b6e5942be8cb"
             ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "beatport.com",
-                "www.beatport.com"
+                "99designs.fr",
+                "support.lenovo.com",
+                "www.avis.com",
+                "www.beatport.com",
+                "www.metmuseum.org",
+                "www.nintendo.com",
+                "www.telegraph.co.uk",
+                "www.united.com",
+                "www.vistaprint.fr"
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/christies\\/hash-check",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-lenovosupport\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
             "subdomains": [
-                "rl"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.vendor": 2,
+                "URL.createObjectURL": 1,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2,
+                "BroadcastChannel.prototype.constructor": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "816f7a615cf1d6818191e98ad67fe286df417bde0c03949e7ce47c6b84848555"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "qm-ssc": {
+                    "ttl": -1689562197,
+                    "length": 4,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "QuantumMetricSessionID": {
+                    "ttl": 1811,
+                    "length": 32,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536011,
+                    "length": 32,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "christies.com",
-                "www.christies.com"
+                "lenovo.com",
+                "support.lenovo.com"
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/qscripts\\/quantum-telegraph\\.js",
-            "cookies": 0.000201,
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-beatport\\.js",
+            "cookies": 0.000202,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -129,7 +184,6 @@
                 "Navigator.prototype.webkitTemporaryStorage": 2,
                 "Performance.prototype.memory": 2,
                 "BroadcastChannel.prototype.constructor": 2,
-                "Animation.prototype.currentTime": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
                 "Screen.prototype.width": 2,
@@ -138,29 +192,130 @@
                 "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9f1edbca95332704a1823091d658e2b7e24a867f3d134183d129da064cc24aae"
+                "7c8fca156aec6854638ba66d6a706a48e50c297a6d86625d40fe51e7c41fa0a1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1687372419,
+                    "ttl": -1689559422,
                     "length": 4,
-                    "prevalence": 0.00020092425155716296,
+                    "prevalence": 0.00020177562550443906,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricSessionID": {
-                    "ttl": 1823,
+                    "ttl": 1811,
                     "length": 32,
-                    "prevalence": 0.00020092425155716296,
+                    "prevalence": 0.00020177562550443906,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536006,
+                    "ttl": 31536011,
                     "length": 32,
-                    "prevalence": 0.00020092425155716296,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beatport.com",
+                "www.beatport.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/beatport\\/hash-check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beatport.com",
+                "www.beatport.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/beatport\\/hash-check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beatport.com",
+                "www.beatport.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-telegraph\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.vendor": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2,
+                "BroadcastChannel.prototype.constructor": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b2bcab62bc8dcbf89eda00a14dce2b7557aa043f40efa0301fa969c70864b8aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "qm-ssc": {
+                    "ttl": -1689558595,
+                    "length": 4,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "QuantumMetricSessionID": {
+                    "ttl": 1821,
+                    "length": 32,
+                    "prevalence": 0.00020177562550443906,
+                    "uniqueness": 0.5
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536021,
+                    "length": 32,
+                    "prevalence": 0.00020177562550443906,
                     "uniqueness": 0.5
                 }
             },
@@ -173,36 +328,42 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000804,
+    "cookies": 0.00131,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5483870967741935
+            "prevalence": 0.48717948717948717
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.22580645161290322
+            "prevalence": 0.23076923076923078
         },
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.06451612903225806
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "prevalence": 0.14102564102564102
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.06451612903225806
-        },
-        {
-            "domain": "google.com",
-            "prevalence": 0.06451612903225806
+            "prevalence": 0.0641025641025641
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.03225806451612903
+            "prevalence": 0.02564102564102564
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.02564102564102564
+        },
+        {
+            "domain": "google.com",
+            "prevalence": 0.02564102564102564
         }
     ],
     "types": {
-        "XHR": 12,
-        "Script": 2
+        "XHR": 13,
+        "Document": 9,
+        "Script": 6,
+        "Preflight": 2
     },
     "nameservers": [
         "ian.ns.cloudflare.com",

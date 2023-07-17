@@ -4,12 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000735,
-    "sites": 108,
+    "prevalence": 0.000919,
+    "sites": 135,
     "subdomains": [
-        "magento-recs-sdk"
+        "magento-recs-sdk",
+        "ethos.ethos12-prod-va7.ethos"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "hummingbirdwebsocket-va7.cloud.adobe.io",
+            "resolved": "ethos.ethos12-prod-va7.ethos.adobe.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -20,38 +26,67 @@
                 "magento-recs-sdk"
             ],
             "apis": {
-                "window.localStorage": 58
+                "window.localStorage": 94
             },
-            "sites": 67,
-            "prevalence": 0.000456,
+            "sites": 102,
+            "prevalence": 0.000694,
             "cnames": [],
             "responseHashes": [
-                "d2c369be47066cb16cf667050e5367fde84a43b9a2e06092ff1cda189eb6834f"
+                "b47f125354a47a799625764fd021f71f97f4e7f2b70345bde5d1c9a8066f9a1f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.kika.at",
-                "www.zarebasystems.com",
-                "www.oxo.com",
-                "www.vuse.com",
                 "www.bricodepot.es",
-                "www.hydroflask.com",
-                "dildoking.de",
-                "www.storz-bickel.com",
-                "www.bettermusic.com.au",
-                "mossmotors.com",
-                "www.jondon.com",
-                "www.seasaltcornwall.com",
+                "www.silverts.com",
+                "www.ghbass.com",
+                "automotivesuperstore.com.au",
+                "www.walthers.com",
+                "www.australianplantsonline.com.au",
                 "www.elementvape.com",
+                "www.farmandhomesupply.com",
+                "byjasco.com",
+                "www.greatlakesskipper.com",
+                "www.stairwayshop.com",
+                "bestwayusa.com",
+                "www.poolsuppliessuperstore.com",
                 "www.performancehealth.com",
-                "www.primera.nl",
+                "www.balega.com",
+                "www.heritagepartscentre.com",
                 "www.dkny.com",
-                "www.greentophuntfish.com",
-                "www.primrose.co.uk",
-                "www.joebrowns.co.uk",
-                "www.terro.com"
+                "www.snakeriverfarms.com",
+                "www.swfa.com",
+                "ghirardelli.com"
+            ]
+        },
+        {
+            "rule": "adobe\\.net\\/activation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ethos.ethos12-prod-va7.ethos"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "hummingbirdwebsocket-va7.cloud.adobe.io",
+                    "resolved": "ethos.ethos12-prod-va7.ethos.adobe.net"
+                }
+            ],
+            "responseHashes": [
+                "b3827f8c95aa46ddd8c556b65b78e1dd7d8c15eb28e29b12e10a26aa26cedbe0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpv": 0.000006807583648184077
+            },
+            "exampleSites": [
+                "adobe.com",
+                "business.adobe.com"
             ]
         }
     ],
@@ -61,31 +96,32 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8793103448275862
+            "prevalence": 0.8896551724137931
         },
         {
             "domain": "sdiapi.com",
-            "prevalence": 0.05172413793103448
+            "prevalence": 0.034482758620689655
         },
         {
             "domain": "clicktale.net",
-            "prevalence": 0.02586206896551724
-        },
-        {
-            "domain": "adoberesources.net",
-            "prevalence": 0.017241379310344827
+            "prevalence": 0.027586206896551724
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.017241379310344827
+            "prevalence": 0.020689655172413793
         },
         {
-            "domain": "global-e.com",
-            "prevalence": 0.008620689655172414
+            "domain": "adoberesources.net",
+            "prevalence": 0.013793103448275862
+        },
+        {
+            "domain": "appdynamics.com",
+            "prevalence": 0.013793103448275862
         }
     ],
     "types": {
-        "Script": 67
+        "Script": 102,
+        "Fetch": 2
     },
     "nameservers": [
         "ns101.adobe.net",

@@ -17,7 +17,7 @@
     "resources": [
         {
             "rule": "impact-ad\\.jp\\/h_bid",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "y.one"
@@ -31,8 +31,28 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cookpad.com",
-                "gyo.tc"
+                "gyo.tc",
+                "www.nicovideo.jp"
+            ]
+        },
+        {
+            "rule": "impact-ad\\.jp\\/ul_cb\\/h_bid",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "y.one"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gyo.tc",
+                "www.nicovideo.jp"
             ]
         },
         {
@@ -51,8 +71,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cookpad.com",
-                "gyo.tc"
+                "gyo.tc",
+                "www.nicovideo.jp"
             ]
         }
     ],
@@ -62,17 +82,21 @@
     "topInitiators": [
         {
             "domain": "flux-cdn.com",
-            "prevalence": 1
+            "prevalence": 0.7
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.3
         }
     ],
     "types": {
-        "XHR": 2,
+        "XHR": 4,
         "Document": 2
     },
     "nameservers": [
-        "ns-1115.awsdns-11.org",
         "ns-1679.awsdns-17.co.uk",
         "ns-122.awsdns-15.com",
-        "ns-997.awsdns-60.net"
+        "ns-997.awsdns-60.net",
+        "ns-1115.awsdns-11.org"
     ]
 }

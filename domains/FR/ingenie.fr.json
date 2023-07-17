@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "static",
+        "queyras",
         "belle-ile",
         "vannes",
-        "les2alpes"
+        "msm-normandie"
     ],
     "cnames": [
         {
@@ -22,12 +23,39 @@
             "resolved": "vannes.ingenie.fr"
         },
         {
-            "original": "reservation.les2alpes.com",
-            "resolved": "les2alpes.ingenie.fr"
+            "original": "reservation.lequeyras.com",
+            "resolved": "queyras.ingenie.fr"
+        },
+        {
+            "original": "reservation.ot-montsaintmichel.com",
+            "resolved": "msm-normandie.ingenie.fr"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ingenie\\.fr\\/js\\/ScriptsLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "35819cf38833d5b01c7feccba216648080c2b1623d2d4b5efeee45e664326b5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lequeyras.com",
+                "www.labaule-guerande.com",
+                "www.ot-montsaintmichel.com"
+            ]
+        },
         {
             "rule": "ingenie\\.fr\\/js\\/widgets\\/resa\\/IngenieWidgetResaClient\\.js",
             "cookies": 0,
@@ -36,45 +64,24 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.appName": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "f6ccf486ac7b7f6496b7330d33471aeb68418492df9fb59cd152a142c7c477bb"
+                "6213be6cc4322e2c144f1a56dc139d5aec4812daa20f46a8cd0cab3aeae2b9d4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
                 "www.labaule-guerande.com",
-                "www.les2alpes.com"
-            ]
-        },
-        {
-            "rule": "ingenie\\.fr\\/js\\/widgets\\/min\\/widget-resa\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "632da3749e57afd207688bf1af1dc40f22652ced1df6a1774dc1c6d239fc3cc8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "belle-ile.com",
-                "www.larochelle-tourisme.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -85,8 +92,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "472ed22627155c62e9c8484014ca61fc5d9a446cf2df8f64aaf172b32bb51263"
@@ -95,24 +102,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
             "rule": "ingenie\\.fr\\/javascript\\.js",
-            "cookies": 0.000301,
-            "fingerprinting": 1,
+            "cookies": 0.000404,
+            "fingerprinting": 0,
             "subdomains": [
+                "queyras",
                 "belle-ile",
                 "vannes",
-                "les2alpes"
+                "msm-normandie"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [
+                {
+                    "original": "reservation.lequeyras.com",
+                    "resolved": "queyras.ingenie.fr"
+                },
                 {
                     "original": "reservation.belle-ile.com",
                     "resolved": "belle-ile.ingenie.fr"
@@ -122,36 +135,41 @@
                     "resolved": "vannes.ingenie.fr"
                 },
                 {
-                    "original": "reservation.les2alpes.com",
-                    "resolved": "les2alpes.ingenie.fr"
+                    "original": "reservation.ot-montsaintmichel.com",
+                    "resolved": "msm-normandie.ingenie.fr"
                 }
             ],
             "responseHashes": [
-                "69848d5261a84c708e336cd31f7fe12c401a6854a8cc2477f88a08f66b2232ee",
-                "d4e144086991b8f53dbdeaad1e74ab4f9fa28fad5ee0a746fc525cf01b8507ab"
+                "69848d5261a84c708e336cd31f7fe12c401a6854a8cc2477f88a08f66b2232ee"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
             "rule": "ingenie\\.fr\\/booking",
-            "cookies": 0.000402,
+            "cookies": 0.000404,
             "fingerprinting": 0,
             "subdomains": [
+                "queyras",
                 "belle-ile",
                 "vannes",
-                "les2alpes"
+                "msm-normandie"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000404,
             "cnames": [
+                {
+                    "original": "reservation.lequeyras.com",
+                    "resolved": "queyras.ingenie.fr"
+                },
                 {
                     "original": "reservation.belle-ile.com",
                     "resolved": "belle-ile.ingenie.fr"
@@ -161,23 +179,55 @@
                     "resolved": "vannes.ingenie.fr"
                 },
                 {
-                    "original": "reservation.les2alpes.com",
-                    "resolved": "les2alpes.ingenie.fr"
+                    "original": "reservation.ot-montsaintmichel.com",
+                    "resolved": "msm-normandie.ingenie.fr"
                 }
             ],
             "responseHashes": [
-                "183a9807a866e82fba490cbb33f7e169a80c6c26fc9d5fdf731c2e5a45d6b4bb",
-                "714b5f8e79b37f18aa913a246379cd12f4abb50554f69ac56c069ccd02dcda16",
-                "b17297bf227c1e712fd7429955ce3400c322ebb91c1cccb0214c3255b895520e"
+                "c3d6f1b54f37dcb1dddbfca8def70c2e198a50a53f77c601d72da894f75c508f",
+                "6e876005b5b5342fc2425c5062f1fad36e857b77493d64d2358f60e50355230f",
+                "bb12d820176edb20f2654fb7677b9b970569556fb884faff28509c777ba928ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
                 "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/templates\\/RESA\\/css\\/widget-resa\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "queyras",
+                "vannes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "reservation.lequeyras.com",
+                    "resolved": "queyras.ingenie.fr"
+                },
+                {
+                    "original": "reservation.golfedumorbihan.bzh",
+                    "resolved": "vannes.ingenie.fr"
+                }
+            ],
+            "responseHashes": [
+                "40619d34d3586a0743b10f12b73385d7883b2a4312c2c69d3a55ce8e1fd89cf7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lequeyras.com",
+                "www.golfedumorbihan.bzh"
             ]
         },
         {
@@ -188,8 +238,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "b3b08bbcb44d0cd4c2f5ad720d5b4c2e2395469f6ed04658fd60295c8eaeaecc"
@@ -198,9 +248,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -211,19 +262,20 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "2e7dd5b3e9d803dbd19008a31a3d06f51f36a81890b73f99df89bf2dde0c79a9"
+                "8d3c6d88d848a21a3a5ef861abc623882b8d956231e73022de2300fb9d52f27e"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -234,8 +286,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "61f2a6ced32fc4d0e868c6bdcd342e0dbb19ffc9e3796478009a448ef4a80c07"
@@ -244,9 +296,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -257,8 +310,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "d768bab292687135ba3559ead78b09d854debb2f4a2befc837d5dc1601f1e4fc"
@@ -267,9 +320,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -280,8 +334,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "f0edc02eee9b72238e5ecab8fa83037595a45513e4b9721ad0d256ff89cbbedf"
@@ -290,9 +344,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belle-ile.com",
+                "lequeyras.com",
+                "www.belle-ile.com",
                 "www.golfedumorbihan.bzh",
-                "www.les2alpes.com"
+                "www.ot-montsaintmichel.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/js\\/widgets\\/min\\/widget-resa\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "632da3749e57afd207688bf1af1dc40f22652ced1df6a1774dc1c6d239fc3cc8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belle-ile.com",
+                "www.larochelle-tourisme.com",
+                "www.ot-montsaintmichel.com"
             ]
         },
         {
@@ -304,7 +382,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "dc98930f8f59e9a066642ca39fc0dfd03f45062a813405d9ad599144dc1260a8"
@@ -326,7 +404,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "7fe72c1c247fef8a9dca2a215f76c57c2792399eef7b7b86b8fc26343efe19eb"
@@ -348,7 +426,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "c27972397bf467d00de398026f07eebfac86efbfc75b3a07de9b5f66d5985f58"
@@ -370,7 +448,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "b60aba486e6364f81aff72c8fbfe5f65178396380ccfe4bfd16723dbd22eaa3f"
@@ -392,7 +470,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "a15ae459df9cc0dddcbdc8d4fe02e7a12adb4683019e817666433c3d204acee4"
@@ -413,8 +491,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
@@ -424,32 +502,152 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "golfedumorbihan.bzh",
-                "www.labaule-guerande.com"
+                "www.labaule-guerande.com",
+                "www.ot-montsaintmichel.com",
+                "www.pornic.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/js\\/iframeResizer\\/easyXDM\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4ab7d6943b8d50d7903d6af6100ffa5f5a03144a2a186be2d7ea2bdb2915a891"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyeres-tourisme.com",
+                "www.vulcania.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/widgets\\/menu-engine\\/js\\/Client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "28c1317c9e0af26d92d7462c1a565cb78c49b8cd46aedd5241594f0a6e8a0d8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaule-guerande.com",
+                "www.ot-montsaintmichel.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/js\\/colorbox\\/controls\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2ee991432fa1f85dfc0d2b5e2b0fd34d4cf9452377ffac0ddb5a9f5d729324f4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaule-guerande.com",
+                "www.pornic.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/js\\/colorbox\\/border\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "905ef5f9366bbf78f5ca44be0e3a150635ee9486a64bed286168059669308fa3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaule-guerande.com",
+                "www.pornic.com"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/images\\/jquery\\.bxslider\\/bx_loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "df927125f386f4445027d5cc842a764fba383244793e51d491a5e07491f474de"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaule-guerande.com",
+                "www.pornic.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000605,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4927536231884058
+            "prevalence": 0.46534653465346537
         },
         {
             "domain": "cloudly.space",
-            "prevalence": 0.3188405797101449
+            "prevalence": 0.2079207920792079
         },
         {
             "domain": "ingenie.fr",
-            "prevalence": 0.18840579710144928
+            "prevalence": 0.16831683168316833
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.15841584158415842
         }
     ],
     "types": {
-        "Script": 21,
-        "Image": 3,
-        "Stylesheet": 17,
-        "Font": 2
+        "Script": 31,
+        "Image": 10,
+        "Stylesheet": 24,
+        "Font": 4
     },
     "nameservers": [
         "ns1.ingenie.fr",

@@ -7,14 +7,53 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "geoip"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "esri\\.com\\/geoip\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "geoip"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9355bbfdfa4cd7580db87c6ade712224063e22e631fd57fa6aacf7f2e724ad53"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sat_track": {
+                    "ttl": 86404,
+                    "length": 4,
+                    "prevalence": 0.00010053282396702523,
+                    "uniqueness": 1
+                },
+                "pi_opt_in82202": {
+                    "ttl": 86404,
+                    "length": 4,
+                    "prevalence": 0.00010053282396702523,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arcgis.com",
+                "pro.arcgis.com"
+            ]
+        },
         {
             "rule": "esri\\.com\\/get-country",
             "cookies": 0,
@@ -26,8 +65,10 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "8131becda8b4bbacd06df11e04bf2e569867cbfa98bf35057a49b9aebc61195a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -47,7 +88,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "XHR",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -58,24 +99,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.6666666666666666
+            "domain": "first party",
+            "prevalence": 0.8
         },
         {
-            "domain": "esri.com",
-            "prevalence": 0.3333333333333333
+            "domain": "adobedtm.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Other": 2,
-        "XHR": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "cmtu.mt.ns.els-gms.att.net",
         "dns.esri.com",
-        "cbru.br.ns.els-gms.att.net"
+        "cbru.br.ns.els-gms.att.net",
+        "cmtu.mt.ns.els-gms.att.net"
     ]
 }

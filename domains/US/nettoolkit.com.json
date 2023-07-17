@@ -10,7 +10,7 @@
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "nettoolkit\\.com\\/net\\/ipgeoplugin-0\\.0\\.1\\.js",
@@ -35,29 +35,20 @@
             ]
         },
         {
-            "rule": "nettoolkit\\.com\\/geo\\/nettoolkit-maps-1\\.0\\.0\\.js",
+            "rule": "nettoolkit\\.com\\/v1\\/net\\/ip-geocodes",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
-            "apis": {
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "URL.createObjectURL": 2,
-                "window.devicePixelRatio": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0bf588b494c1dd633449a5a0fdaf8ef6b8afda01f95b384c1f5311dd50fbcae1"
+                "eb45b7c02d7acc84b657f4d580199efa3996995dc37163df5ef600f8c47960f9"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -86,20 +77,23 @@
             ]
         },
         {
-            "rule": "nettoolkit\\.com\\/v1\\/net\\/ip-geocodes",
+            "rule": "nettoolkit\\.com\\/geo\\/nettoolkit-maps-1\\.0\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
-            "apis": {},
+            "apis": {
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb45b7c02d7acc84b657f4d580199efa3996995dc37163df5ef600f8c47960f9"
+                "0bf588b494c1dd633449a5a0fdaf8ef6b8afda01f95b384c1f5311dd50fbcae1"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -229,8 +223,8 @@
     ],
     "types": {
         "Script": 4,
-        "Preflight": 2,
         "XHR": 2,
+        "Preflight": 2,
         "Fetch": 10
     },
     "nameservers": [

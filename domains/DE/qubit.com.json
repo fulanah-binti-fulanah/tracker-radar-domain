@@ -7,15 +7,79 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "gong-eb",
-        "api"
+        "api",
+        "gong-eb"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "qubit\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ff6f06143d027b43ff44c3244590a94654c32bc2b6f01b8f7887592d99b3a272"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nh-hotels.de",
+                "www.tkmaxx.com"
+            ]
+        },
+        {
+            "rule": "qubit\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nh-hotels.de",
+                "www.tkmaxx.com"
+            ]
+        },
+        {
+            "rule": "qubit\\.com\\/events\\/deflate\\/nh_hotels_de",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gong-eb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "dbb7f387be85eb554eec875956c7132db55e699f84fbbde382ed4e2ed4609e5a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nh-hotels.de",
+                "www.nh-hotels.de"
+            ]
+        },
         {
             "rule": "qubit\\.com\\/events\\/deflate\\/tkmaxxde_prod",
             "cookies": 0,
@@ -50,7 +114,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "13b7e46747cd6f868b9b9435229b684e85e4e4ff22706c901861cc0901efa72d"
+                "e45873ee81e877986dc440f72f9cfe7509a92669053ea4d9f9e80b0b382148c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -87,11 +151,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7272727272727273
+        },
+        {
+            "domain": "goqubit.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "XHR": 2,
+        "XHR": 6,
+        "Preflight": 2,
         "Fetch": 4
     },
     "nameservers": [

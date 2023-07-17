@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000544,
-    "sites": 8,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "d2zue0pgsssbc6\\.cloudfront\\.net\\/j\\/marketwatch-production\\.js",
@@ -21,14 +21,14 @@
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 3,
-                "HTMLCanvasElement.prototype.toDataURL": 2
+                "window.localStorage": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5353e35f4dddb63129edcd3adb4c7a527d9b9873a61c21784cd1b0591bdcf76d"
+                "60759864a130c6e69ce4893e784768cc04b99b2876edc9ae0cefce2af5f23c0a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,8 +45,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "90bd81cf99b2e58d56c40d3a1080fda3e569447835fac418ba96c5fb4018c96f"
@@ -57,8 +57,37 @@
             "exampleSites": [
                 "marketwatch.com",
                 "bigcharts.marketwatch.com",
+                "online.wsj.com",
+                "r.wsj.com",
+                "wsj.com",
+                "www.customercenter.wsj.com",
                 "www.marketwatch.com",
                 "www.vice.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "d2zue0pgsssbc6\\.cloudfront\\.net\\/j\\/wsj-production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.localStorage": 4,
+                "HTMLCanvasElement.prototype.toDataURL": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "60759864a130c6e69ce4893e784768cc04b99b2876edc9ae0cefce2af5f23c0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "r.wsj.com",
+                "www.customercenter.wsj.com",
                 "www.wsj.com"
             ]
         },
@@ -84,29 +113,6 @@
                 "vice.com",
                 "www.vice.com"
             ]
-        },
-        {
-            "rule": "d2zue0pgsssbc6\\.cloudfront\\.net\\/j\\/wsj-production\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [],
-            "apis": {
-                "window.localStorage": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "55ac4c8666c3782839d8858ba6016569ac2f78dd0f101f61a6722b8adadd24a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wsj.com",
-                "www.wsj.com"
-            ]
         }
     ],
     "categories": [
@@ -117,21 +123,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7692307692307693
+            "prevalence": 0.8181818181818182
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.13636363636363635
+        },
+        {
+            "domain": "djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 7,
-        "XHR": 5
+        "Script": 9,
+        "XHR": 9
     },
     "nameservers": [
-        "ns-877.awsdns-45.net",
-        "ns-1643.awsdns-13.co.uk",
+        "ns-105.awsdns-13.com",
         "ns-1216.awsdns-24.org",
-        "ns-105.awsdns-13.com"
+        "ns-877.awsdns-45.net",
+        "ns-1643.awsdns-13.co.uk"
     ]
 }

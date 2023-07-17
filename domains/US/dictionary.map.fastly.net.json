@@ -18,10 +18,47 @@
         {
             "original": "api-portal.dictionary.com",
             "resolved": "dualstack.dictionary.map.fastly.net"
+        },
+        {
+            "original": "api-portal.thesaurus.com",
+            "resolved": "dualstack.dictionary.map.fastly.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "dictionary\\.map\\.fastly\\.net\\/editorial\\/editors-notes",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api-portal.dictionary.com",
+                    "resolved": "dualstack.dictionary.map.fastly.net"
+                },
+                {
+                    "original": "api-portal.thesaurus.com",
+                    "resolved": "dualstack.dictionary.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5a82b63d54ee83b0342478824e2b08b8b9c9dcf1f4ae803d8c45fade0fa29b14",
+                "342113b8b37f31cfe5f503c2d26fbad0c4f4eea725393143b1b2866f16e79969"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dictionary.com",
+                "www.dictionary.com",
+                "www.thesaurus.com"
+            ]
+        },
         {
             "rule": "dictionary\\.map\\.fastly\\.net\\/editorial\\/wotd",
             "cookies": 0,
@@ -39,7 +76,7 @@
                 }
             ],
             "responseHashes": [
-                "0afb8d4ec698f5040732563c1f169f79977ed0e5539c4a12c47132f037792cc9"
+                "e8da2ad147f33accf561e986fd837f2ee9b20fb35a6ef0379c5d73284a7b7002"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -69,7 +106,7 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 5
     },
     "nameservers": []
 }

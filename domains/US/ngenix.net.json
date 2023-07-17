@@ -7,19 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
         "tutu1-st.cdn",
         "s32166.cdn",
-        "rum",
-        "rum-static",
-        "rum-jobs",
-        "a1566398996-s73767.cdn",
-        "a635215891-s73767.cdn",
-        "d64b424e-91a0-4bc4-bd55-75a8c62f5c93.rum-reflector",
-        "cffec626-ea94-477f-827b-1f943ae1a340.rum-reflector",
+        "a635217391-s73767.cdn",
+        "a1311338118-s73767.cdn",
         "s61745.cdn",
+        "s30454.cdn",
         "s91588.cdn"
     ],
     "cnames": [
@@ -34,9 +30,13 @@
         {
             "original": "cdn4.tu-tu.ru",
             "resolved": "s32166.cdn.ngenix.net"
+        },
+        {
+            "original": "images-cdn.cian.site",
+            "resolved": "s30454.cdn.ngenix.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "ngenix\\.net\\/fonts\\/direct\\/patch4\\/ALSDirect-Bold\\.woff2",
@@ -93,15 +93,42 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/static\\/order\\/order-icons\\.45872c235279d50a36c4c802231992f225b6c564\\.svg",
+            "rule": "ngenix\\.net\\/static\\/client\\.b3857e3b59094dd60c02\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tutu1-st.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn1.tu-tu.ru",
+                    "resolved": "tutu1-st.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "abbc6f23000bff531121a8871af7397689be9ae80bc106720cb67868118fcd9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tutu.ru",
+                "bus.tutu.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/static\\/order\\/order-icons\\.2681606cef5a37b22d714632970b4753629db814\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "s32166.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn4.tu-tu.ru",
@@ -109,83 +136,14 @@
                 }
             ],
             "responseHashes": [
-                "48f54c3633d72f7fafc34075d8b6e3c88e6a40cc4767e0b15799dce7c7c83b63"
+                "8b722bd87c240150afaa6e1eae722aefb8c0336a3421513b06cf458ba7305398"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tutu.ru",
-                "bus.tutu.ru",
-                "www.tutu.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/js\\/loader\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rum"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c4a9137454ad0a5a2eb2cda86965bd07ec76d28818681a50b587b7f9b86551d0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele2.ru",
-                "msk.tele2.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/798ba2659ac47a4062b8d5184b92856498baeea7\\/js\\/userscript\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "rum-static"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5545ff42da67dd0cfb2c690baa8fa6e1040c012fb6de705d43b4d7b1d436761e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele2.ru",
-                "msk.tele2.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/jobs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rum-jobs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6570f8b55ef033d0cb4ba1f5a9231ca55c561281c3d5442f8b7fdb5a104e13e7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele2.ru",
-                "msk.tele2.ru"
+                "bus.tutu.ru"
             ]
         },
         {
@@ -193,15 +151,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "a1566398996-s73767.cdn",
-                "a635215891-s73767.cdn"
+                "a635217391-s73767.cdn",
+                "a1311338118-s73767.cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2d41d4cfcfced5ac8bad2c0d5b064630a93497b7c7ac101c78348b11f2da3bef"
+                "cfcebc2511497db27aed91a8ab2687dc18050624188b36df6d90902506275b1d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -212,26 +170,111 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/data\\.json",
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/main\\.8a198ee9df680ddd706e\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "d64b424e-91a0-4bc4-bd55-75a8c62f5c93.rum-reflector",
-                "cffec626-ea94-477f-827b-1f943ae1a340.rum-reflector"
+                "s61745.cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
             "responseHashes": [
-                "a31c2be508061ce9a057fdfbcf9f247bc7d3802f9abeb9cdb772bac84aa548ec"
+                "0cd109a5846bbd42a159ee8d087d9a41023d56a5d66805d5dab95fc994cf4061"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/main\\.088107272ceb7a8c1d59\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "48f68eed4def802337a74a93e2a581410f5e584d9be7a2b754acf05ae974e685"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tele2.ru",
-                "msk.tele2.ru"
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-sdk\\/system-logger\\/global-system-logger\\.v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "0f6693d1fc8f51c765b356dcce17adf77834efd3c7b21e7f774b214a8870556d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/polyfills\\/h\\/pl\\.eaef60f89399ac8da4be\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "eaef60f89399ac8da4bee102a0101ba34b332a7eb1244c94e9bbceacfe3ba0c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
             ]
         },
         {
@@ -262,7 +305,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/frontend\\/header-frontend\\/main\\.7b5683980085124b0c9c\\.js",
+            "rule": "ngenix\\.net\\/frontend\\/header-frontend\\/main\\.34b5faf36a6dae8a00d2\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
@@ -278,44 +321,17 @@
                 }
             ],
             "responseHashes": [
-                "d109bf93c20bcb19585d6e3d9a58b0172b659b3ce084c670352b5b3d22179def"
+                "c89bf0e2a2ca101139c9dc5e2559bc0239d729c8e7ccd3c9411eff13689270ef"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "login_mro_popup": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000013615167296368154,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cian.ru",
-                "www.cian.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/media\\/images\\/pik_orange\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s61745.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "cdn.cian.site",
-                    "resolved": "s61745.cdn.ngenix.net"
-                }
-            ],
-            "responseHashes": [
-                "5f807ddc6695649160225ae26e6668133d9f6a95a551673fee81324539cdd232"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cian.ru",
@@ -377,7 +393,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/frontend\\/frontend-footer\\/main\\.42b7f1e4d8dcf1cf38bc\\.js",
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/mixed-promo-bg\\.b7ced304ec560dba0b00\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -393,7 +409,169 @@
                 }
             ],
             "responseHashes": [
-                "b754d6843d3aa5f6ea93c1722e7979936c25f3454a0599c3d2a61573cea1f746"
+                "9d70b42baeaca42de617df0bcfb2c8713746f5dddf494be0491111cce94b2c08"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/realty\\/journal\\/314945\\/%D0%96%D1%83%D1%80%D0%BD%D0%B0%D0%BB_740490_29_gK63Y8U\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s30454.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images-cdn.cian.site",
+                    "resolved": "s30454.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "4eb3d255a795fcba22048452ea094bd26e9fad7f6e8c1aca343740313123250a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/realty\\/journal\\/327840\\/fast_JzfsmCG\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s30454.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images-cdn.cian.site",
+                    "resolved": "s30454.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "6fa0cc0aaaab6c9eb67225abe7f91fe995ffe5d9906fce3e76c3b7d5e8a01918"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/realty\\/journal\\/327334\\/22_%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9_%D1%81%D0%B4%D0%B5%D0%BB%D0%BA%D0%B0_yDfjUj3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s30454.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images-cdn.cian.site",
+                    "resolved": "s30454.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "a007ebcfc6f6549a3aed0fda60fa6c13384992967be5d7b44831be31c0046849"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/realty\\/journal\\/321081\\/1_vs_2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s30454.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images-cdn.cian.site",
+                    "resolved": "s30454.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "b937cbda2b89820c1dbf3313ef21b7189cff23df8a55a44b1a7debfcd0ef82ee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/realty\\/journal\\/327333\\/23_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BA%D1%83%D0%BF%D0%BB%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8_ee8G4Tk\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s30454.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images-cdn.cian.site",
+                    "resolved": "s30454.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "107e6c7220ef10572d7b953cc9ab041f8182549a163f96229e1dc250d0756db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-footer\\/main\\.8e54238175740f3b5261\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "dd2d6064fde939dcbd7cad55a1a1220595f8e4fb94b89842bea2032969e82738"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -512,6 +690,87 @@
             ]
         },
         {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/ChatsContainer\\.d9ab1d2e57860280e913\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "e02dae0e5cb44bf82fad364a25e37a401ad7e4fa195d9dcd225af82e6bc2d925"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/chunk\\.158fb0e7cf3819be2647\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "67558218922a510966c4b7f34bba0d416255c4594739a81147d47db71d51981d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/frontend\\/frontend-serp\\/var_C_1x\\.05b08df2bc7d417805ad\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "79de7719d2c9f80c5f13d56642816d4f44976c017e57a7cb96d3ef355ff84674"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        },
+        {
             "rule": "ngenix\\.net\\/frontend\\/header-frontend\\/886\\.d3dcb5312f26a498a71b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -566,7 +825,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/frontend\\/header-frontend\\/261\\.fde723b10526c67c528e\\.css",
+            "rule": "ngenix\\.net\\/frontend\\/header-frontend\\/884\\.5d5b7206660359a5b1ab\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -582,7 +841,7 @@
                 }
             ],
             "responseHashes": [
-                "7884e0090e0122726b104722c7904292e6f6536b2f2f442c2378c0756d6e9767"
+                "56a72c64815ff90bf3e5c8fd60fe05790090a58312f000668254c7abf74539e4"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -647,182 +906,6 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-light\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6be74f24e164cca60847cb25c3de44c4b6a042e1c77a1907cd8f64315b760758"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-light\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9244bd1d7ca939958e82a095132bf4f921a3d26df9dcc32c1910867a67e91681"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e16bfc16a3ccdf32d744a07fd8eb08c1bb768f470aa52033ad2efedd738565f9"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-regular\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8c5782cfa4fa20158d6615d17f587e3458150521dc5ffd96904e8b695f78b9e1"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-semibold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e08252e134b028499490ef17d198bed1026dbe7ac98b6a5d4581c38c61aafa7e"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-semibold\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "58144fbf75010183abad1d4703eec4754ddf443a24564e1295b565fce118d1ce"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-bold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "369e77e169242b736af9da3ab3d5ddfa20c8aabbd6fe01f24e3f67594db271c5"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/open-sans\\/opensans-bold\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7d2b132e092ac0edd904e6a97e44a66e2f670b10de2e078b73c98211d2c297f9"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
             "rule": "ngenix\\.net\\/shared\\/static\\/fonts\\/aeroport\\/Aeroport-bold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -833,9 +916,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "d8dcf75da931524292ad695269f24a3d2e533b4e103118514b510a9e928751ae"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -855,9 +936,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "999fbc96ef17845dc37a6212baa1a65dc5320a04ed31217096da7be5aac8d33c"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -899,9 +978,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e08252e134b028499490ef17d198bed1026dbe7ac98b6a5d4581c38c61aafa7e"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -921,252 +998,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e16bfc16a3ccdf32d744a07fd8eb08c1bb768f470aa52033ad2efedd738565f9"
-            ],
+            "responseHashes": [],
             "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f76a245bc22a520a6545\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1a663a5b54b30bd5474a4a20adc47ae2472ffb4b1b52a9a46095036a1edf42e1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f767245bc22a520a5fd5\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8febebc99c4cefdf40b085bc210dded07514020a76297cd34244cf9b52af315d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f767245bc22a520a60fb\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c0012aed5c3442d3614978e388851760b264004e1a094eca8fd4b65f40eecc41"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f76a245bc22a520a644d\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0b1ed6c1a8ded96e03f964894a7667c0e7bc2fb6bd3ac8ec4b636958647d4cdf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f76a245bc22a520a64db\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e2f81b9a93bb778202758d3b5b44d22f19a7ce9b889060b0d70fe66ddb2acf5d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f769245bc22a520a6353\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a414fbb2c730c1a4881bf6377a136815316372354818e9923dfd31751c0df42a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f768245bc22a520a6115\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "46e8c60465f367a5339e0135d979fdac7da2a08a596ebdc3aeb565c5d9b8e03b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f769245bc22a520a640d\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b58274cbf58c3451a6444ab167da2e03979dc0405d72b1f424e4671d803ef75d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f769245bc22a520a6385\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "43aa8e86674d2b82fb0582a08a4c56a04db69564964f8636ab92413b4c153f1e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f767245bc22a520a60ab\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d43ace12b9633d7dd0e3ebf33c8d1a23daf1373a423d7ab0401958e51d696c3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sravni.ru",
-                "www.sravni.ru"
-            ]
-        },
-        {
-            "rule": "ngenix\\.net\\/organizations\\/logotypes\\/square\\/5bb4f767245bc22a520a609f\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s91588.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "56c836e2c822917c5d478ee240389a0bca9bbb976266d56d53bff970227beb43"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1185,9 +1018,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "369e77e169242b736af9da3ab3d5ddfa20c8aabbd6fe01f24e3f67594db271c5"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1197,7 +1028,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/shared\\/fonts\\/open-sans\\/opensans-bold\\.woff",
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/chunks\\/webpack-56cda2f13b928ccc\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1208,9 +1039,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "6971384b139f5a582c37ad213dec7746f71e1e74c6ea5049830de187da758e5c"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1219,7 +1050,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/shared\\/fonts\\/open-sans\\/opensans-regular\\.woff",
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/chunks\\/framework-e70c6273bfe3f237\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1230,9 +1061,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "bea0f6faa54da760afb6950462140cb017a83dcf49103cb9d0069520e480a3a4"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1241,7 +1072,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/shared\\/fonts\\/open-sans\\/opensans-light\\.woff",
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/chunks\\/main-2b80b893986766ed\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1252,9 +1083,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "4464033036e32608977a47498af590076e5ca561e5c26de4c1fbb68f880fec7e"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1263,7 +1094,7 @@
             ]
         },
         {
-            "rule": "ngenix\\.net\\/shared\\/fonts\\/ubuntu\\/ubuntu-bold\\.woff",
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/chunks\\/pages\\/_app-b80da28c43f918ea\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1274,9 +1105,75 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "ca63c2fc1e951d7dabe45f1d3465a7440f2881b883ab6dfd045a659684247dad"
             ],
-            "type": "Fetch",
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sravni.ru",
+                "www.sravni.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/iCi6tYYMj306BkEvkKZJL\\/_buildManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s91588.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "58375cc402983050205c0276f8e51b8eecf3f249fe79374aca9bf53d6ff19eda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sravni.ru",
+                "www.sravni.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/iCi6tYYMj306BkEvkKZJL\\/_ssgManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s91588.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f5b4aa00d2f8d6aed9935b471806bf7acef464d0c1d390260e5fe27f800c67e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sravni.ru",
+                "www.sravni.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/ugc-widgets\\/_next\\/static\\/iCi6tYYMj306BkEvkKZJL\\/_middlewareManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s91588.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de5341313a4dc5d982ca50ae4a491e84bc5e80b0f439d87f05fc3973c1b7e59a"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1287,31 +1184,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.000034,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9613733905579399
-        },
-        {
-            "domain": "ngenix.net",
-            "prevalence": 0.034334763948497854
+            "prevalence": 0.9970414201183432
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.004291845493562232
+            "prevalence": 0.0029585798816568047
         }
     ],
     "types": {
-        "Font": 34,
-        "XHR": 3,
-        "Script": 24,
-        "Image": 32,
-        "Stylesheet": 4,
-        "Fetch": 8
+        "Font": 18,
+        "Script": 40,
+        "XHR": 2,
+        "Stylesheet": 8,
+        "Image": 22
     },
     "nameservers": [
-        "ns.ngenix.net",
-        "ns1.ngenix.net"
+        "ns1.ngenix.net",
+        "ns.ngenix.net"
     ]
 }

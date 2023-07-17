@@ -4,17 +4,89 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.000605,
+    "sites": 6,
     "subdomains": [
+        "static.captcha",
+        "319b4d880343.d82935e2.eu-west-3.token",
         "3c54b1d8355d.5b60ca98.eu-west-3.token",
-        "889fee46b72b.81527cb2.eu-west-3.token",
+        "c60708c831e2.edge.captcha-sdk",
+        "c60708c831e2.e166df38.eu-west-3.captcha",
+        "c60708c831e2.e166df38.eu-west-3.token",
+        "34f86431659a.edge.sdk",
+        "34f86431659a.9437eba2.eu-west-3.token",
         "c09bc9c04079.edge.sdk",
         "c09bc9c04079.9b596df7.eu-west-3.token"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/stylesheet\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.captcha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2998d81cfd55c682823a732f696790f3745c3c1b394ca6701cc91dda9dc54516"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rugbyworldcup.com",
+                "www.angloinfo.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/AmazonEmber-Light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.captcha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7ba49badcc6d0141f4a12d364346e737e063627cad02365666f6ce39628a6f26"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rugbyworldcup.com",
+                "www.angloinfo.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/319b4d880343\\/9cd6f671c0e1\\/127a99f46c70\\/telemetry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "319b4d880343.d82935e2.eu-west-3.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d2fb2a6a9acd790919e55fe5469b8a972a6daa4183065686ae267376554d5871"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rugbyworldcup.com",
+                "tickets.rugbyworldcup.com"
+            ]
+        },
         {
             "rule": "awswaf\\.com\\/3c54b1d8355d\\/3f0a9fd78afe\\/c68d70616c2f\\/telemetry",
             "cookies": 0,
@@ -24,10 +96,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9fa9b2c90aa5b956fe3fd2946d50eb06cd4eb230cc3e1ef6d11ff03a5c4747aa"
+                "36f716ef02b4f535e291c28b93ffde08b50fdf9e6622592d90336cdb3218ce3a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -38,118 +110,130 @@
             ]
         },
         {
-            "rule": "awswaf\\.com\\/889fee46b72b\\/5c356d4acfd6\\/c161d86b4522\\/challenge\\.js",
-            "cookies": 0.000502,
-            "fingerprinting": 3,
+            "rule": "awswaf\\.com\\/c60708c831e2\\/_\\/jsapi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "889fee46b72b.81527cb2.eu-west-3.token"
+                "c60708c831e2.edge.captcha-sdk",
+                "c60708c831e2.e166df38.eu-west-3.captcha"
             ],
             "apis": {
-                "Navigator.prototype.appName": 5,
-                "Date.prototype.getTime": 5,
-                "window.localStorage": 5,
-                "Navigator.prototype.plugins": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.webdriver": 5,
-                "WebGLRenderingContext.prototype.getExtension": 5,
-                "WebGLRenderingContext.prototype.getParameter": 5,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 5,
-                "Navigator.prototype.doNotTrack": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Screen.prototype.availHeight": 5,
-                "Screen.prototype.colorDepth": 5,
-                "PerformanceTiming.prototype.navigationStart": 5,
-                "HTMLMediaElement.prototype.canPlayType": 5,
-                "MediaSource.isTypeSupported": 5,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 5,
-                "HTMLCanvasElement.prototype.toDataURL": 5,
-                "CanvasRenderingContext2D.prototype.getImageData": 5,
-                "Document.cookie getter": 5,
-                "Document.cookie setter": 5
+                "window.localStorage": 1
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "a1959f8317040021083c951c4efc81d44176d0a39101d98ac89905d17b8fab5f",
-                "dd4d03baf392e499010d34952764e4addda69a1aa269d59a4b6879d69189e665",
-                "8e8c5f3dcf5552f83ca497a1b19606a5625c362f2b7d773175ce6abd6e1221a0",
-                "bd2c3c7d6a48c0a5e4d7cc944002bd6a7e2c961637034c88b2aa9d06e5100d4b"
+                "e8171faa654c9edec271a1531dbf212e6bcfe1f66d08292ebcd4cf0ca775776a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geogebra.org",
+                "www.geogebra.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/c60708c831e2\\/telemetry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c60708c831e2.e166df38.eu-west-3.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ab42e95a71249e9d44b581651f4e2d0155afbded239b3052d64374fa25eaf53a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geogebra.org",
+                "www.geogebra.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/34f86431659a\\/643734b0f9e0\\/challenge\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 3,
+            "subdomains": [
+                "34f86431659a.edge.sdk",
+                "34f86431659a.9437eba2.eu-west-3.token"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.webdriver": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.colorDepth": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "CanvasRenderingContext2D.prototype.getImageData": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7ce4c07a70a6519ce590c2ac943149aa44b8d1539a29fd951b15f607ca38fd91"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345602,
-                    "length": 289,
-                    "prevalence": 0.0003013863773357444,
+                    "ttl": 345607,
+                    "length": 300,
+                    "prevalence": 0.00010088781275221953,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gettyimages.com",
-                "www.gettyimages.com",
-                "www.gettyimages.com.au",
-                "www.gettyimages.fr",
-                "www.gettyimages.in"
+                "reuters.com",
+                "www.reuters.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/889fee46b72b\\/5c356d4acfd6\\/c161d86b4522\\/verify",
+            "rule": "awswaf\\.com\\/34f86431659a\\/643734b0f9e0\\/telemetry",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "889fee46b72b.81527cb2.eu-west-3.token"
+                "34f86431659a.9437eba2.eu-west-3.token"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "90be44579b66e90e6d2b14e3dc6bcdc990f0ea55e8ffe76ce3ba0b2746990e61",
-                "c9eeac23f0481072650c32920b8765950f183136a8ceabbe7e67f81d1e95cbc1",
-                "e24b1115c679e2def2e8b1e649e151d8d017200779a46a1437a74b647cecc247",
-                "0d8bf7be6ef92514fa07de0714d4b971f6bbc1bf44f94fa9cadbcee84a0dee4d"
+                "c2d90512e1905748d5f084cd3565a56c58d4ec3469dfce28a69fba507802cd2c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gettyimages.com",
-                "www.gettyimages.com",
-                "www.gettyimages.com.au",
-                "www.gettyimages.fr",
-                "www.gettyimages.in"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/889fee46b72b\\/5c356d4acfd6\\/c161d86b4522\\/telemetry",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "889fee46b72b.81527cb2.eu-west-3.token"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "97ce65757337906940e0715ecb54869f480648af43b3fc9a2f6a067ca9d82381"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gettyimages.com",
-                "www.gettyimages.com",
-                "www.gettyimages.com.au",
-                "www.gettyimages.in"
+                "reuters.com",
+                "www.reuters.com"
             ]
         },
         {
             "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/challenge\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 3,
             "subdomains": [
                 "c09bc9c04079.edge.sdk",
@@ -180,17 +264,17 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "e3a3ba717a721201ce7b7daccc748e32454105c99ffc4c743725c605ecb1ea75"
+                "2609bfeb7c65816df086d3f8a423882349ba1381fa2b670578c5cb19c244f32c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345605,
                     "length": 329,
-                    "prevalence": 0.00010046212577858148,
+                    "prevalence": 0.00010088781275221953,
                     "uniqueness": 1
                 }
             },
@@ -209,10 +293,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c55a531d61707eacea6d57a8b4bb29470ba2c17ee10d9b242e9580f759d01983"
+                "36016d0fe233a48104d5e8432f2519d78b9f55c26cafd4db016e020c234730e7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -225,25 +309,31 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000804,
+    "cookies": 0.000605,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9411764705882353
+            "prevalence": 0.6875
         },
         {
-            "domain": "gettyimages.fr",
-            "prevalence": 0.058823529411764705
+            "domain": "datadome.co",
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Fetch": 13,
-        "Script": 7
+        "Stylesheet": 2,
+        "Font": 2,
+        "Fetch": 10,
+        "Script": 6
     },
     "nameservers": [
-        "ns-43.awsdns-05.com",
         "ns-759.awsdns-30.net",
         "ns-1121.awsdns-12.org",
-        "ns-1878.awsdns-42.co.uk"
+        "ns-1878.awsdns-42.co.uk",
+        "ns-43.awsdns-05.com"
     ]
 }

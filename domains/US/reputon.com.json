@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
         "cdn.grw",
         "cdn.tmnls",
-        "grw"
+        "cdn.etsy",
+        "grw",
+        "tmnls"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -17,26 +19,43 @@
         {
             "rule": "reputon\\.com\\/assets\\/widget\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn.grw",
-                "cdn.tmnls"
+                "cdn.tmnls",
+                "cdn.etsy"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 5,
+                "Navigator.prototype.platform": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Element.prototype.getClientRects": 2,
+                "window.innerWidth": 7
+            },
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "3842eda8e8ea02d38ad69ab6a6164edac142ac59f29f12822f51001ec8fb4a85",
-                "9ba4faee17e6bdfcc1cf7ce4c39ef2c795026108201f95da9492972f4097f947"
+                "0dc8f2a47922a62b7ead51386e2bc526a722f6d3c0e8781b04af7072e447b2cb",
+                "944e4f37e86d61149786aa73e24e64927b49d612cebb47b12216c2d714717dcb",
+                "0126e916e5cbff69a6e4ab0b8d4ddd8fc94ee86670adbab6ebec79fcb51ee651"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "bearcatwarehouse.com",
                 "burgertuning.com",
+                "cardiomiracle.com",
+                "doublewoodsupplements.com",
+                "gamedayready.com",
+                "goodbuygear.com",
+                "happygardens.com",
                 "kamerastore.com",
-                "windshieldwow.com"
+                "tkcustom.com",
+                "www.progressiveautomations.com"
             ]
         },
         {
@@ -44,21 +63,36 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "grw"
+                "grw",
+                "tmnls"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "4e4b8843c97188bb3235da9a759be9803f63749804f12bc53e28f3d7afe2c264"
+                "8dc8acce575a042719272b0e35d3f52991e463c58611ba39b4b09dcb9cd980c9",
+                "93570d8916ad76d18f6e2b42c182f5ec0bc07775545f0f409f6deefaec39ecb3",
+                "ee409c3914f4effe46bab9dbfa20ccc606c0acd6537657e6b397e35232f21e3e",
+                "3ea72846bba8c0a59aa0ab394c2de205b6c2d43e87e7ae14154a4765e40b2692",
+                "937c2caefd0860f394a474c18a2aae88db506ab90d2f69d60403aa92c979c7ee",
+                "b80619005db22451093e018fd25eb25e8fae7268b936cf66c5b0930d3f1f59ff",
+                "9d07bfd4e3917966d618bc6aad4ee25e1df872508aa15fb23677a3fbedfa4632",
+                "0eb09625c9ad1368db2943aa10c63c844949c96a1379385f956b131cc3d7833f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "bearcatwarehouse.com",
                 "burgertuning.com",
-                "kamerastore.com"
+                "cardiomiracle.com",
+                "doublewoodsupplements.com",
+                "gamedayready.com",
+                "goodbuygear.com",
+                "kamerastore.com",
+                "www.bridgecomsystems.com",
+                "www.progressiveautomations.com"
             ]
         },
         {
@@ -69,8 +103,8 @@
                 "cdn.grw"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "0cf576a5dab9315daac7ffe29d29ed585e0ff9850e59408d0f25f38dc1da037b"
@@ -80,7 +114,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "burgertuning.com",
-                "kamerastore.com"
+                "kamerastore.com",
+                "www.bridgecomsystems.com"
             ]
         },
         {
@@ -91,8 +126,8 @@
                 "cdn.grw"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "973e5fa5a9a0e4163843526a59abd390e5ed0b2817cdc9eafcd8f2a9cab7c5c3"
@@ -102,7 +137,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "burgertuning.com",
-                "kamerastore.com"
+                "kamerastore.com",
+                "www.bridgecomsystems.com"
             ]
         }
     ],
@@ -112,22 +148,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.8620689655172413
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.4
+            "prevalence": 0.13793103448275862
         }
     ],
     "types": {
-        "Script": 3,
-        "XHR": 2,
-        "Image": 4
+        "Script": 10,
+        "XHR": 9,
+        "Image": 6
     },
     "nameservers": [
-        "ns-923.awsdns-51.net",
         "ns-92.awsdns-11.com",
-        "ns-1121.awsdns-12.org",
-        "ns-1581.awsdns-05.co.uk"
+        "ns-923.awsdns-51.net",
+        "ns-1581.awsdns-05.co.uk",
+        "ns-1121.awsdns-12.org"
     ]
 }

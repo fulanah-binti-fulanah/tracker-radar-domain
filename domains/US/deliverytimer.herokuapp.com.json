@@ -13,23 +13,19 @@
     "sites": 12,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "deliverytimer\\.herokuapp\\.com\\/output\\/view\\.json",
+            "rule": "deliverytimer\\.herokuapp\\.com\\/output\\/get_remote_ip\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "c00af94decedda25859583fd5fa46a6d187d5e843cdc43b2abbda53a15b228e9",
-                "fb0febb74f5461369280f25f0dda2b8a8c37e1c56dadb7bb806461ed3583882b",
-                "51531b262d6fa491a3745c0491c37594581482ae778199b63c10f8d8ae59e8aa",
-                "5c549a3794ef3ae1a1a82488ff13ba33997fa4f4f9b9a8b9c4252525c5e59e15",
-                "c9c8424229071820360643e342086c214b57809f56a1586f6a96fe5d051b58c9"
+                "45b2bfcd9ed1e969c6d8ff129812bc15aeca129e295e651f150e1366053342e2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -37,6 +33,70 @@
             "exampleSites": [
                 "blade-tech.com",
                 "buceplant.com",
+                "colemanhvacparts.com",
+                "lavinialingerie.com",
+                "shokz.com",
+                "www.fashioneyewear.com",
+                "www.turtlewax.com"
+            ]
+        },
+        {
+            "rule": "deliverytimer\\.herokuapp\\.com\\/output\\/get_geolocation_info\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "4900d3d1d0b0c53ccd2af8c307732ef784d4e9ced54aa2b6bd7b416e1439ad1d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "returngo_customer_id": 0.000006807583648184077,
+                "cookies.js": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "blade-tech.com",
+                "buceplant.com",
+                "colemanhvacparts.com",
+                "lavinialingerie.com",
+                "shokz.com",
+                "www.fashioneyewear.com",
+                "www.turtlewax.com"
+            ]
+        },
+        {
+            "rule": "deliverytimer\\.herokuapp\\.com\\/output\\/view\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "abca5895aa18dbe351557e1ba8ef92a89634f2321725cb0a2221f955290607bc",
+                "349698102417c19a4a0f2a5225e4ecf4ade061dd95feec4f51b6195126dd60e1",
+                "843502bd89f5ca7a0fd54fc6f7d7d9b7d059c5ce890ba2c02b4897c2fe734b87",
+                "1abf03cdc4a0d1ce59d2f28e1016db49f245e72a06837b0a8baf238de207ce8c",
+                "275692dee4ffac9a7f3cb99cb9fb9fcfeb2f2acf60d88aa532c0f7b0e11fe8f3",
+                "e6462363809b15012e7ef2ccdf3f92bfe289133415425b1dcc6a46bed5b25d49"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "swym-cu_ct": 0.000006807583648184077,
+                "returngo_customer_id": 0.000006807583648184077,
+                "cookies.js": 0.00002042275094455223,
+                "sf_cid": 0.000006807583648184077
+            },
+            "exampleSites": [
+                "blade-tech.com",
+                "buceplant.com",
+                "colemanhvacparts.com",
                 "lavinialingerie.com",
                 "shokz.com",
                 "www.fashioneyewear.com",
@@ -46,20 +106,24 @@
         {
             "rule": "deliverytimer\\.herokuapp\\.com\\/deliverrytimer\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {
+                "Document.cookie getter": 4,
+                "window.localStorage": 4
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "b206523f4cc44bc86827cf928cace658b360083e2deab8fa7fc93a2f1d226808"
+                "77a99e7854de44972f66973764f884763dce95c1e8bbd3f97481539fa64df3fa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "buceplant.com",
+                "colemanhvacparts.com",
                 "lavinialingerie.com",
                 "shokz.com",
                 "www.turtlewax.com"
@@ -73,21 +137,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "shopify.com",
-            "prevalence": 0.6
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.3
+            "prevalence": 0.9772727272727273
         },
         {
             "domain": "reamaze.com",
-            "prevalence": 0.1
+            "prevalence": 0.022727272727272728
         }
     ],
     "types": {
-        "XHR": 6,
-        "Script": 4
+        "XHR": 21,
+        "Script": 5
     },
     "nameservers": []
 }

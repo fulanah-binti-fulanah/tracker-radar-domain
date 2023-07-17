@@ -4,16 +4,21 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
+        "search",
         "justice.sites.infr.search",
-        "search"
+        "noaa-gov.sites.infr.search"
     ],
     "cnames": [
         {
             "original": "search.justice.gov",
             "resolved": "justice.sites.infr.search.usa.gov"
+        },
+        {
+            "original": "search.noaa.gov",
+            "resolved": "noaa-gov.sites.infr.search.usa.gov"
         }
     ],
     "fingerprinting": 1,
@@ -23,16 +28,21 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "search",
                 "justice.sites.infr.search",
-                "search"
+                "noaa-gov.sites.infr.search"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [
                 {
                     "original": "search.justice.gov",
                     "resolved": "justice.sites.infr.search.usa.gov"
+                },
+                {
+                    "original": "search.noaa.gov",
+                    "resolved": "noaa-gov.sites.infr.search.usa.gov"
                 }
             ],
             "responseHashes": [],
@@ -40,9 +50,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "justice.gov",
+                "nih.gov",
+                "www.justice.gov",
                 "www.ncei.noaa.gov",
-                "www.tsp.gov"
+                "www.noaa.gov"
             ]
         },
         {
@@ -50,16 +61,21 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "search",
                 "justice.sites.infr.search",
-                "search"
+                "noaa-gov.sites.infr.search"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [
                 {
                     "original": "search.justice.gov",
                     "resolved": "justice.sites.infr.search.usa.gov"
+                },
+                {
+                    "original": "search.noaa.gov",
+                    "resolved": "noaa-gov.sites.infr.search.usa.gov"
                 }
             ],
             "responseHashes": [
@@ -69,9 +85,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "justice.gov",
+                "nih.gov",
+                "www.justice.gov",
                 "www.ncei.noaa.gov",
-                "www.tsp.gov"
+                "www.noaa.gov"
+            ]
+        },
+        {
+            "rule": "usa\\.gov\\/assets\\/sayt\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5268469cfd31d3684df638b658cb7a6fc6500920cf0aefc7df2208cc73549d31"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nih.gov",
+                "www.noaa.gov"
+            ]
+        },
+        {
+            "rule": "usa\\.gov\\/assets\\/sayt_loader_libs\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "search"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "582e73ac970002554e1c8368be182701f8565622cfc0fbaf63f103e067e7a7c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nih.gov",
+                "www.noaa.gov"
             ]
         }
     ],
@@ -85,13 +148,14 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "dns3.gsa.gov",
         "dns4.gsa.gov",
         "dns2.gsa.gov",
         "dns.gsa.gov",
-        "dns3.gsa.gov",
         "dns5.gsa.gov"
     ]
 }

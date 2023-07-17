@@ -4,34 +4,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
+        "paapi",
         "events",
-        "static",
-        "flv"
+        "flv",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "isitetv\\.com\\/api\\/Event",
+            "rule": "isitetv\\.com\\/isitetv_cms\\/paapi\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events"
+                "paapi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e5461e8b75db56e8da84530f67a9f71ad6414e45f449d03671346fc300b64da3",
+                "b1a08c35b0e42b28b413fb586cfd191806e8d920e169dc9c5946f8adbdc00952"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "currys.co.uk",
-                "www.harveynorman.ie"
+                "beko.co.uk",
+                "www.currys.co.uk",
+                "www.currys.ie"
             ]
         },
         {
@@ -42,8 +47,33 @@
                 "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beko.co.uk",
+                "www.beko.co.uk",
+                "www.costco.co.uk",
+                "www.currys.co.uk",
+                "www.currys.ie",
+                "www.harveynorman.ie",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/api\\/Event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -52,18 +82,261 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "currys.co.uk",
-                "www.harveynorman.ie"
+                "beko.co.uk",
+                "www.beko.co.uk",
+                "www.costco.co.uk",
+                "www.currys.co.uk",
+                "www.currys.ie",
+                "www.harveynorman.ie",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/isitetv_cms\\/player\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0d4a597a973ae0c4ec38383bbc43cf5255e627af4ca95cc0373d31d2842202aa"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/fonts\\/font-awesome\\/v5\\.4\\.1\\/isite\\/js\\/regular\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "13ab678d7065dae07d540ecb3fc2a3d820d6aa5e974a044d47afa946c1269540"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/fonts\\/font-awesome\\/v5\\.4\\.1\\/isite\\/js\\/solid\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "369ef997b24ca51b607a06141d42aae1ce952374c3f6de9c9b5ce30f364e1798"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/fonts\\/font-awesome\\/v5\\.4\\.1\\/isite\\/js\\/fontawesome\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "065939b14413b7b9489ee6b78354cbf41a7a076fbfb01a6c86c63d7c5c8e10c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/players\\/core\\/css\\/infinity_player\\.1\\.0\\.5\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0cfbd99452ee5d4c2951cbe9b3851adbdba042d1f7f42359ab2b84acad25aa44"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/players\\/core\\/javascript\\/infinity_player_1\\.3\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cd8a3c0642446cceebe053c94959786d81492f44604931d4356725167d59dbbd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/video\\/1043\\/ol_video_img_url__L12_175473_1043\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35d9e58f59d740db289f549fbb8944063afe3f4857439ef774f3c352db2bfea3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/players\\/images\\/default_play_icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "27191518450918db43d5a3e5c118f929d33d3fafa789b5bf6b5a5b01f305054c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/video\\/1043\\/ol_video_img_url__T_175473_1043\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d2385de04da2e333d8651748352ed5190387629fd8c4f009d1193c50b1697bd8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/video\\/1043\\/ol_video_img_url__T_175469_1043\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "586d968de416fa5d2d8ca007a95f3f8b1ed48486735250d818290efe5c932042"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.co.uk",
+                "www.costco.co.uk"
             ]
         },
         {
             "rule": "isitetv\\.com\\/api\\/embed\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
@@ -80,25 +353,25 @@
             ]
         },
         {
-            "rule": "isitetv\\.com\\/js\\/Player_DID_IE\\.min\\.js",
+            "rule": "isitetv\\.com\\/isitetv_cms\\/get_outside_loggin_text\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "flv"
+                "paapi"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "09b3496eb6463d0b9e779f8ddde28246b82f800433c7695444166b6cb6692e1c"
+                "9b382af43399be72db4702499bb7a4364b0823d292dce188c6799a52f3c7dea6"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "did.ie",
-                "www.did.ie"
+                "currys.co.uk",
+                "www.currys.co.uk"
             ]
         },
         {
@@ -120,6 +393,71 @@
                 "did.ie",
                 "www.mediamarkt.hu"
             ]
+        },
+        {
+            "rule": "isitetv\\.com\\/isitetv_cms\\/resp_player\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hughes.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/video\\/1535\\/ol_video_img_url__L12_240668_1535\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aaf7e38c2dee8c836c86ee56077eb02c8ccb6880e715104a324d39e7f03dc95f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hughes.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "isitetv\\.com\\/media\\/video\\/1535\\/ol_video_img_url__T_240668_1535\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05ae0e406ccf55cad5f350bf495e796e657228ed323ffc82ee32980e258d859f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hughes.co.uk",
+                "www.hughes.co.uk"
+            ]
         }
     ],
     "categories": [],
@@ -128,22 +466,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9545454545454546
+            "prevalence": 0.9074074074074074
         },
         {
-            "domain": "shopify.com",
-            "prevalence": 0.045454545454545456
+            "domain": "jquery.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.037037037037037035
         }
     ],
     "types": {
-        "Preflight": 2,
-        "XHR": 4,
-        "Script": 5
+        "XHR": 14,
+        "Preflight": 7,
+        "Document": 4,
+        "Script": 15,
+        "Stylesheet": 3,
+        "Image": 13
     },
     "nameservers": [
+        "a20-67.akam.net",
         "a26-64.akam.net",
         "a5-65.akam.net",
-        "a20-67.akam.net",
         "a14-66.akam.net",
         "a11-65.akam.net",
         "a1-58.akam.net"

@@ -4,18 +4,19 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
+        "dns-normandie.automation",
         "dns-esante.automation",
         "dns-medisite.automation",
-        "dns-hostettlerm.automation",
-        "dns-schaefer.automation"
+        "dns-schaefer.automation",
+        "swissfirms.automation"
     ],
     "cnames": [
         {
-            "original": "marketing.hostettler-moto.ch",
-            "resolved": "dns-hostettlerm.automation.webmecanik.com"
+            "original": "automation.normandie-tourisme.fr",
+            "resolved": "dns-normandie.automation.webmecanik.com"
         },
         {
             "original": "marketing.schaefer-shop.ch",
@@ -33,8 +34,144 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "webmecanik\\.com\\/mtc\\.js",
+            "cookies": 0.000402,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dns-normandie.automation",
+                "dns-esante.automation",
+                "dns-medisite.automation",
+                "dns-schaefer.automation",
+                "swissfirms.automation"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [
+                {
+                    "original": "automation.normandie-tourisme.fr",
+                    "resolved": "dns-normandie.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.e-sante.fr",
+                    "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
+                },
+                {
+                    "original": "marketing.schaefer-shop.ch",
+                    "resolved": "dns-schaefer.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "076c670077d805db5d5982ce0048190daa33dfd3c132db2ed406faaa77ee19c0",
+                "34a38e917cf4601c4258a6bfd4c31f746eeb3bce0318788dea0870fdcf674423",
+                "c14c1ee9753163743569e9317b95845714da40b872f7eb0062468664ed253b28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "normandie-tourisme.fr",
+                "www.e-sante.fr",
+                "www.medisite.fr",
+                "www.schaefer-shop.ch",
+                "www.swissfirms.ch"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-normandie.automation",
+                "dns-esante.automation",
+                "dns-medisite.automation",
+                "dns-schaefer.automation"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "automation.normandie-tourisme.fr",
+                    "resolved": "dns-normandie.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.e-sante.fr",
+                    "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
+                },
+                {
+                    "original": "marketing.schaefer-shop.ch",
+                    "resolved": "dns-schaefer.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "4accebf2e8ad97410b5b9e014f7a6510131e16e0686ed92273cc0a1383c95f28",
+                "bcb5588e01280dd020e1c8ffdab8a052b55e57ac073c09ce6d575da0715775b6",
+                "2cd865e12f2f6b7a30eb6d62e7a609f81288a0f045af53a123e7f0ea202f13e0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "normandie-tourisme.fr",
+                "www.e-sante.fr",
+                "www.medisite.fr",
+                "www.schaefer-shop.ch"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-normandie.automation",
+                "dns-esante.automation",
+                "dns-medisite.automation",
+                "dns-schaefer.automation"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "automation.normandie-tourisme.fr",
+                    "resolved": "dns-normandie.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.e-sante.fr",
+                    "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
+                },
+                {
+                    "original": "marketing.schaefer-shop.ch",
+                    "resolved": "dns-schaefer.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "normandie-tourisme.fr",
+                "www.e-sante.fr",
+                "www.medisite.fr",
+                "www.schaefer-shop.ch"
+            ]
+        },
+        {
             "rule": "webmecanik\\.com\\/form\\/generate\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "dns-esante.automation",
@@ -54,7 +191,7 @@
                 }
             ],
             "responseHashes": [
-                "126619b5b5921a077a158a07838f8d97f521f3d0d26af5949f4daa776261e395"
+                "a299512f78638d6fa205b74fb6f98c4a6cf1c4495d44c14956f76eb63bf3b73c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -97,52 +234,6 @@
             ]
         },
         {
-            "rule": "webmecanik\\.com\\/mtc\\.js",
-            "cookies": 0.000402,
-            "fingerprinting": 2,
-            "subdomains": [
-                "dns-esante.automation",
-                "dns-hostettlerm.automation",
-                "dns-medisite.automation",
-                "dns-schaefer.automation"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [
-                {
-                    "original": "mtc.e-sante.fr",
-                    "resolved": "dns-esante.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.hostettler-moto.ch",
-                    "resolved": "dns-hostettlerm.automation.webmecanik.com"
-                },
-                {
-                    "original": "mtc.medisite.fr",
-                    "resolved": "dns-medisite.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.schaefer-shop.ch",
-                    "resolved": "dns-schaefer.automation.webmecanik.com"
-                }
-            ],
-            "responseHashes": [
-                "e531532fc0e29f0b6ca1d0e54ac4431fc69ff90b7dacd8d49ba6f64cef207d6e",
-                "00f4798655e1b899001dd08b13280ee4fae7736f94d4511d630bedbd187b8816",
-                "e3cd857ea718f867cf9482c3cc5657fbcfc85dfffb2ad6fef32d2ab925ef54af"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "e-sante.fr",
-                "www.hostettler-moto.ch",
-                "www.medisite.fr",
-                "www.schaefer-shop.ch"
-            ]
-        },
-        {
             "rule": "webmecanik\\.com\\/media\\/css\\/modal\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -173,94 +264,6 @@
                 "e-sante.fr",
                 "www.medisite.fr"
             ]
-        },
-        {
-            "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0.000402,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dns-esante.automation",
-                "dns-hostettlerm.automation",
-                "dns-medisite.automation",
-                "dns-schaefer.automation"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [
-                {
-                    "original": "mtc.e-sante.fr",
-                    "resolved": "dns-esante.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.hostettler-moto.ch",
-                    "resolved": "dns-hostettlerm.automation.webmecanik.com"
-                },
-                {
-                    "original": "mtc.medisite.fr",
-                    "resolved": "dns-medisite.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.schaefer-shop.ch",
-                    "resolved": "dns-schaefer.automation.webmecanik.com"
-                }
-            ],
-            "responseHashes": [
-                "ba6ea36830e094bc92316fba12dea7a85bbf5b8c95121e990909e8617aa6220e",
-                "5047293af2b85062d2e32d1759362c51c4d47ec746b5351adb9f53fa7d826e8b",
-                "30af165f9ab7ca277475a7f8135e710657ae45fb3bd09b1fdce519cb975f0d43"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "e-sante.fr",
-                "www.hostettler-moto.ch",
-                "www.medisite.fr",
-                "www.schaefer-shop.ch"
-            ]
-        },
-        {
-            "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dns-esante.automation",
-                "dns-hostettlerm.automation",
-                "dns-medisite.automation",
-                "dns-schaefer.automation"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [
-                {
-                    "original": "mtc.e-sante.fr",
-                    "resolved": "dns-esante.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.hostettler-moto.ch",
-                    "resolved": "dns-hostettlerm.automation.webmecanik.com"
-                },
-                {
-                    "original": "mtc.medisite.fr",
-                    "resolved": "dns-medisite.automation.webmecanik.com"
-                },
-                {
-                    "original": "marketing.schaefer-shop.ch",
-                    "resolved": "dns-schaefer.automation.webmecanik.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "e-sante.fr",
-                "www.hostettler-moto.ch",
-                "www.medisite.fr",
-                "www.schaefer-shop.ch"
-            ]
         }
     ],
     "categories": [],
@@ -269,14 +272,18 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 8,
-        "Stylesheet": 2,
+        "Script": 9,
         "XHR": 4,
-        "Preflight": 4
+        "Preflight": 4,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-235-a.gandi.net",

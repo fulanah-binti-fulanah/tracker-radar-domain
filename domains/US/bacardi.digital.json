@@ -4,17 +4,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "ip-geo-locator-prod.prod",
         "age-gate-prod.prod",
-        "spotlight-backend-prod.eu-prod"
+        "spotlight-backend-prod.eu-prod",
+        "spotlight-frontend-prod.eu-prod"
     ],
     "cnames": [
         {
             "original": "spl.bacardi.com",
             "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+        },
+        {
+            "original": "spl.martini.com",
+            "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
         }
     ],
     "fingerprinting": 1,
@@ -47,8 +52,8 @@
                 "ip-geo-locator-prod.prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "7a356dcd855041724c2fd83c454f00907b49893cc5ff2e974fa814306795e23c"
@@ -58,7 +63,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
             ]
         },
         {
@@ -69,12 +76,12 @@
                 "age-gate-prod.prod"
             ],
             "apis": {
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "bf22bc6edcad9281f74823d97ad8710620a26d8da57fc9feaba85ef6e3b1dba9"
@@ -84,32 +91,43 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
             ]
         },
         {
             "rule": "bacardi\\.digital\\/cep\\/banner\\.jsonp",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
-                "spotlight-backend-prod.eu-prod"
+                "spotlight-backend-prod.eu-prod",
+                "spotlight-frontend-prod.eu-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "spl.bacardi.com",
                     "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+                },
+                {
+                    "original": "spl.martini.com",
+                    "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "21320f4ea526a9896079c62d5bca1816ba437fa4dc87b675d5f4a3a646eee2da",
+                "583ca33c33678312b16cbe98ee827eff2b41aa6d450a0769a6ca889f93decb73"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com"
             ]
         },
         {
@@ -128,7 +146,9 @@
                     "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "3587644854fc95260fc26da718eea3552c35860159c1172d1a89279ddb546484"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -145,20 +165,23 @@
                 "age-gate-prod.prod"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "15bdcde56153611bd18e010abfd4e656bd8df60256468ce462af58985d53bc15"
+                "b52ff8518b69714de5644270888327a4fd259b4c781079eb756015d24cdd3485",
+                "939f3ab0e8800e11fd771b7a8a67a9f5b09fdee3118cc300975d366b31570348"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
             ]
         },
         {
@@ -166,26 +189,33 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "spotlight-backend-prod.eu-prod"
+                "spotlight-backend-prod.eu-prod",
+                "spotlight-frontend-prod.eu-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "spl.bacardi.com",
                     "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+                },
+                {
+                    "original": "spl.martini.com",
+                    "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
                 }
             ],
             "responseHashes": [
-                "ca0f7862b38e2fd7f550c4d2cae753afa08deace6e87896b9f9d9ef58b346fb9"
+                "425341cff45f5543a692595d582d9ef644043d010ced6015cfe7ef313c9833cd",
+                "4ab811ad8959508159de4998da100fca89e3cb1d7af0fafbd6f34c10039f4909"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com"
             ]
         },
         {
@@ -341,34 +371,210 @@
                 "bacardi.com",
                 "www.bacardi.com"
             ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/patrontequila\\/main\\.8503ac3db73b65fdb978\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b0daa1b3c7a325dbb4a349c32ed57bffbe3bb5f1647d755f466c35e95f208a0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/patrontequila\\/patrontequila-age-gate-image-cover-desktop\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a913eb384b1ad8a981f1985517499c0e83fdb8feeacc73da871bdb1f5c3fc688"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/patrontequila\\/patrontequila-primary-logo-new\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "72cecdbca8639514d7e8ca3b6e1ec087e1cc49271687822c67e1c6aeced8c608"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/patrontequila\\/index\\.87c161704798a9ab842d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd970e1faf6538448e6f8c690b35013638ac66e974a5c1b30fb0a080885b0746"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/common\\/fonts\\/f1ce7a1345f8a1179d1f\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ca522a5c08706d592d45737c14a08e04e0950f500163a3c691e7331058d169bb"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/common\\/fonts\\/7559f55fd8a448a804ad\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4fab424e5c6fbf173c7bd7abf2cd3ce3e868c31bbaf24460e56c6c1bd55d0ef"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/common\\/fonts\\/fc23fd0ed6b59e87c318\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bbccfce94fad21d7e99e905b17ef525b92e9b1cf30044f0a4ae5fb376db3da97"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/static\\/common\\/fonts\\/48dc2c320f0da2cc7fc6\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "521916e514bbb16b211e6db8ef8cd6e4cacc32ab89c26a2a45612eb3d99daa10"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patrontequila.com",
+                "www.patrontequila.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5238095238095238
+            "prevalence": 0.5
         },
         {
             "domain": "d29mknc5251yuj.cloudfront.net",
-            "prevalence": 0.47619047619047616
+            "prevalence": 0.5
         }
     ],
     "types": {
         "Preflight": 2,
-        "Fetch": 2,
-        "Script": 10,
-        "Document": 2,
-        "Stylesheet": 2,
-        "Image": 6,
-        "Font": 4
+        "Fetch": 4,
+        "Script": 16,
+        "Document": 4,
+        "Stylesheet": 4,
+        "Image": 10,
+        "Font": 12
     },
     "nameservers": [
-        "ns-1076.awsdns-06.org",
-        "ns-530.awsdns-02.net",
         "ns-1837.awsdns-37.co.uk",
-        "ns-276.awsdns-34.com"
+        "ns-276.awsdns-34.com",
+        "ns-1076.awsdns-06.org",
+        "ns-530.awsdns-02.net"
     ]
 }

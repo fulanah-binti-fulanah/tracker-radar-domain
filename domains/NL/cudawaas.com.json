@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "app146161.prod"
+        "app146161.prod",
+        "app831079.prod"
     ],
     "cnames": [
+        {
+            "original": "api.iza.nl",
+            "resolved": "app831079.prod.cudawaas.com"
+        },
         {
             "original": "api.vgz.nl",
             "resolved": "app146161.prod.cudawaas.com"
@@ -18,7 +23,32 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "cudawaas\\.com\\/iml-platform-wc-metadata\\/api\\/dependencies\\/cvgz-orienteren-zoeken-zoekresultaten",
+            "rule": "cudawaas\\.com\\/sgw\\/auth\\/user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app146161.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.vgz.nl",
+                    "resolved": "app146161.prod.cudawaas.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgz.nl",
+                "mijn.vgz.nl"
+            ]
+        },
+        {
+            "rule": "cudawaas\\.com\\/sgw\\/auth\\/user",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -34,13 +64,71 @@
                 }
             ],
             "responseHashes": [
-                "f8ff404954d7c82e4d6d71fcd09f7f561c8314a81fcf286661287adba9f4eb91"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgz.nl",
+                "mijn.vgz.nl"
+            ]
+        },
+        {
+            "rule": "cudawaas\\.com\\/sgw\\/auth\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app146161.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.vgz.nl",
+                    "resolved": "app146161.prod.cudawaas.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgz.nl",
+                "mijn.vgz.nl"
+            ]
+        },
+        {
+            "rule": "cudawaas\\.com\\/iml-platform-wc-metadata\\/api\\/dependencies\\/cvgz-orienteren-zoeken-zoekresultaten",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app831079.prod",
+                "app146161.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.iza.nl",
+                    "resolved": "app831079.prod.cudawaas.com"
+                },
+                {
+                    "original": "api.vgz.nl",
+                    "resolved": "app146161.prod.cudawaas.com"
+                }
+            ],
+            "responseHashes": [
+                "2086b270875d9f5a53d3dccdc8766eb269436e3bdff15f078dfd66bef583b614"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vgz.nl",
+                "iza.nl",
+                "www.iza.nl",
                 "www.vgz.nl"
             ]
         },
@@ -49,32 +137,38 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "app831079.prod",
                 "app146161.prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
+                {
+                    "original": "api.iza.nl",
+                    "resolved": "app831079.prod.cudawaas.com"
+                },
                 {
                     "original": "api.vgz.nl",
                     "resolved": "app146161.prod.cudawaas.com"
                 }
             ],
             "responseHashes": [
-                "e85b9c7ce67b6715fd66c7183dfd9050d07a249b1d7d4b0723efaed465004d11"
+                "0cfda7989d9391897e8730c9d1ce74924b5cc5103bd6cc4241a834f9b7fc6f03"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vgz.nl",
+                "iza.nl",
+                "www.iza.nl",
                 "www.vgz.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "azureedge.net",
@@ -82,7 +176,10 @@
         }
     ],
     "types": {
-        "Fetch": 4
+        "Preflight": 2,
+        "XHR": 2,
+        "Document": 2,
+        "Fetch": 6
     },
     "nameservers": [
         "ns1-02.azure-dns.com",

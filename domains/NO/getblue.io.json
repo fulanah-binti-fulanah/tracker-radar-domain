@@ -7,14 +7,114 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
+        "event",
+        "widget",
         "cms"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "getblue\\.io\\/js\\/blue-tag\\.min\\.js",
+            "cookies": 0.000404,
+            "fingerprinting": 1,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Document.cookie getter": 4,
+                "window.sessionStorage": 4,
+                "window.localStorage": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "34e01e40592c8a50b9f83324bce144e5ed190300f5fcebb09b290f42118a3eca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "blueID": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.0004037549207630968,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eltiempo.com",
+                "www.kost1.no",
+                "www.movavi.com",
+                "www.travelmarket.no"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/p\\/",
+            "cookies": 0.000404,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "2709ac04602f22fb6c151f48ad6fe6dd323b82e607d00cf3d72bb1a66741803b",
+                "f84be234030af557c3b51947292d6ba977ef4e94f01d1cf20d53c482cffb12be",
+                "aa8fafc7d7a5538a93353336300a0f018ad4005137824033f49a86ca558b8d9a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "blueID": 0.0004037549207630968
+            },
+            "exampleSites": [
+                "eltiempo.com",
+                "www.kost1.no",
+                "www.movavi.com",
+                "www.travelmarket.no"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/event\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "5b92a408bbe994550b7055a07066d79ec13a646062d36f046dbd84a9d59e86e1",
+                "eb99134542c987f687360d120213eeec049a290d73d2302ee1b74a01ce279f4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "blueID": 0.0004037549207630968
+            },
+            "exampleSites": [
+                "eltiempo.com",
+                "www.kost1.no",
+                "www.movavi.com",
+                "www.travelmarket.no"
+            ]
+        },
         {
             "rule": "getblue\\.io\\/cm\\/",
             "cookies": 0,
@@ -23,8 +123,8 @@
                 "cms"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -32,30 +132,71 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "blueID": 0.0002008233758409479
+                "blueID": 0.0003028161905723226
             },
             "exampleSites": [
-                "latamairlines.com",
-                "www.latamairlines.com"
+                "kost1.no",
+                "www.movavi.com",
+                "www.travelmarket.no"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/r\\/audience-pixel-std\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "572a14b2ed42ac11680e3f8dd32668d0762088cea6097b23f943e1addfeb166e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travelmarket.no",
+                "www.travelmarket.no"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000404,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "prevalence": 0.3333333333333333
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "movavi.io",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 10,
+        "Document": 4,
+        "Image": 3
     },
     "nameservers": [
-        "ns-48.awsdns-06.com",
-        "ns-730.awsdns-27.net",
         "ns-1053.awsdns-03.org",
-        "ns-1752.awsdns-27.co.uk"
+        "ns-730.awsdns-27.net",
+        "ns-1752.awsdns-27.co.uk",
+        "ns-48.awsdns-06.com"
     ]
 }

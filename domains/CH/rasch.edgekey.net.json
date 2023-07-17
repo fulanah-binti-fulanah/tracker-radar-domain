@@ -9,13 +9,21 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "prod",
         "prod-ipv6"
     ],
     "cnames": [
+        {
+            "original": "api.cash.ch",
+            "resolved": "prod.rasch.edgekey.net"
+        },
+        {
+            "original": "api.pme.ch",
+            "resolved": "prod.rasch.edgekey.net"
+        },
         {
             "original": "cdn.graphql.service.beobachter.ch",
             "resolved": "prod.rasch.edgekey.net"
@@ -44,8 +52,8 @@
                 "prod-ipv6"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [
                 {
                     "original": "cdn.graphql.service.beobachter.ch",
@@ -60,14 +68,19 @@
                     "resolved": "prod.rasch.edgekey.net"
                 },
                 {
+                    "original": "api.pme.ch",
+                    "resolved": "prod.rasch.edgekey.net"
+                },
+                {
                     "original": "cdn.graphql.service.schweizer-illustrierte.ch",
                     "resolved": "prod.rasch.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "6afd3fd2ee4bc333f73f4ab54c92c7b52c8a4f10d499ca9ba5d1ae9e14f57445",
-                "745787462ca3f88c77f495dd0b792f00f287532ebe5a9489aea63e4611b9d6c3",
-                "0dedf1113fa0fe46cf21c66c9593e8deb651fa00520e0e51440cfdb2eb828baa"
+                "d4885313f74786be336003c6fc9d7b417e2c32f1ca0b7b46e66d97dc8b915e6e",
+                "41389bd14017ad97509f6c3d3e901ab2b05086d22103a15b36cb3aad087ee0ba",
+                "321708de3c7d556253fd5af1789e89e828cf3bb0be5dae062a51ce487a2859f4",
+                "6bb8de1489e487176b1dca8be8f2827bc46738ec257bdfaee9283f178fa2ba71"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -76,7 +89,38 @@
                 "beobachter.ch",
                 "www.cash.ch",
                 "www.handelszeitung.ch",
+                "www.pme.ch",
                 "www.schweizer-illustrierte.ch"
+            ]
+        },
+        {
+            "rule": "rasch\\.edgekey\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod",
+                "prod-ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.cash.ch",
+                    "resolved": "prod.rasch.edgekey.net"
+                },
+                {
+                    "original": "cdn.graphql.service.cash.ch",
+                    "resolved": "prod-ipv6.rasch.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cash.ch",
+                "www.cash.ch"
             ]
         }
     ],
@@ -84,7 +128,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4
+        "Fetch": 5,
+        "Preflight": 2
     },
     "nameservers": []
 }

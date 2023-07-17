@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000544,
-    "sites": 8,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
         "dce-frontoffice"
     ],
@@ -20,8 +20,8 @@
                 "dce-frontoffice"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -30,7 +30,9 @@
             "exampleSites": [
                 "volleyballworld.com",
                 "europeanleague.football",
-                "www.lutontown.co.uk",
+                "www.ntfc.co.uk",
+                "www.swfc.co.uk",
+                "www.uefa.tv",
                 "www.wrexhamafc.co.uk"
             ]
         },
@@ -42,19 +44,21 @@
                 "dce-frontoffice"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "847e1adc109732d688ba55a9e4b7166d8976c3ce6f95f2aee35de141a4c3393d",
-                "243011a2799b8d0d31b24113e1b0635acac0e58931dedbaf3b0037fc7adeca7c"
+                "f9a326d2d6bdcf476c6123f082f7e73952e53e304b65ce218892ea0b89bd5810",
+                "e86f421bbe4ecd31f6ec5c1c0a8a8684e3b0ac4f2a45730eb200bf74a3d93c70",
+                "454549a6a1c2da02ba83e82c86f0517f9139213a14765b6d52c998cb4843fd39"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "volleyballworld.com",
-                "www.lutontown.co.uk",
+                "www.ntfc.co.uk",
+                "www.swfc.co.uk",
                 "www.wrexhamafc.co.uk"
             ]
         },
@@ -90,7 +94,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bc4a9db71a2fb302f24caafde1c11d52379cebb6d8f10e41358cfd3e45bb7550"
+                "4d38b582dfa0affb77d5064e4b2e6a93637e1d2852586d841e2b2ec44d8858f9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -101,27 +105,7 @@
             ]
         },
         {
-            "rule": "imggaming\\.com\\/api\\/v2\\/accesscheck",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dce-frontoffice"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lutontown.co.uk",
-                "www.wrexhamafc.co.uk"
-            ]
-        },
-        {
-            "rule": "imggaming\\.com\\/api\\/v2\\/accesscheck",
+            "rule": "imggaming\\.com\\/api\\/v2\\/login\\/guest\\/checkin",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -132,14 +116,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d13cdbc058b6c1802451be9ada44a9f8646b218b7a3510a775e060a78cb877c"
+                "2adf5001d9f1c0aa624858b9cec300a0c9d307427798568af95a45c58a8d8e61"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lutontown.co.uk",
-                "www.wrexhamafc.co.uk"
+                "europeanleague.football",
+                "www.uefa.tv"
             ]
         },
         {
@@ -154,14 +138,15 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e492d48d63fb6e47fbd8a50f2e48f2f2e285c7b832342ca77a65d5e8a43a9639"
+                "64cd6793982f63c47078363816bc0bffc2a1a5977eb91ed03efebbe288e484e7",
+                "22891a4a00c2939699bc6c14b75691891c4fc1662d0ba4b8666f03b3945c8874"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lutontown.co.uk",
-                "www.lutontown.co.uk",
+                "ntfc.co.uk",
+                "www.swfc.co.uk",
                 "www.wrexhamafc.co.uk"
             ]
         },
@@ -181,8 +166,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lutontown.co.uk",
-                "www.lutontown.co.uk",
+                "ntfc.co.uk",
+                "www.swfc.co.uk",
                 "www.wrexhamafc.co.uk"
             ]
         }
@@ -193,21 +178,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8043478260869565
+            "prevalence": 0.7428571428571429
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.1956521739130435
+            "prevalence": 0.2
+        },
+        {
+            "domain": "uefa.com",
+            "prevalence": 0.05714285714285714
         }
     ],
     "types": {
         "Preflight": 11,
-        "XHR": 10
+        "XHR": 9,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1642.awsdns-13.co.uk",
-        "ns-760.awsdns-31.net",
         "ns-385.awsdns-48.com",
-        "ns-1052.awsdns-03.org"
+        "ns-760.awsdns-31.net",
+        "ns-1052.awsdns-03.org",
+        "ns-1642.awsdns-13.co.uk"
     ]
 }

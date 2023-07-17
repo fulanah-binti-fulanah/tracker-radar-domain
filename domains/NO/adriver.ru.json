@@ -9,15 +9,70 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
+        "ev",
+        "ad",
+        "pb",
         "ssp",
-        "ev"
+        "content"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "adriver\\.ru\\/cgi-bin\\/rle\\.cgi",
+            "cookies": 0.000404,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ev",
+                "ad"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "pageLanding": 0.0001009387301907742,
+                "__P__wuid": 0.0001009387301907742
+            },
+            "exampleSites": [
+                "animespirit.tv",
+                "iz.ru",
+                "journal.tinkoff.ru",
+                "www.kinopoisk.ru"
+            ]
+        },
+        {
+            "rule": "adriver\\.ru\\/cgi-bin\\/bid\\.cgi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pb"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iz.ru",
+                "www.film.ru",
+                "www.kp.ru",
+                "www.rbc.ru"
+            ]
+        },
         {
             "rule": "adriver\\.ru\\/cgi-bin\\/sync\\.cgi",
             "cookies": 0,
@@ -26,8 +81,8 @@
                 "ssp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 7,
+            "prevalence": 0.000707,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
@@ -38,27 +93,106 @@
             "exampleSites": [
                 "abcdef.wiki",
                 "no.abcdef.wiki",
-                "www.mmnt.net"
+                "lenta.ru",
+                "rusvesna.su",
+                "tass.com",
+                "www.kinopoisk.ru",
+                "www.ontvtime.ru"
             ]
         },
         {
-            "rule": "adriver\\.ru\\/cgi-bin\\/rle\\.cgi",
-            "cookies": 0.000201,
+            "rule": "adriver\\.ru\\/AdRiverFPS\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "83138cfb5cffcd7add600a7df811c9fbe2a93f72c2c57ae6a38a8998f1751269"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "adrdel": {
+                    "ttl": 43209,
+                    "length": 1,
+                    "prevalence": 0.0001009387301907742,
+                    "uniqueness": 1
+                },
+                "adrcid": {
+                    "ttl": 315360009,
+                    "length": 23,
+                    "prevalence": 0.0001009387301907742,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ivi.ru",
+                "www.labirint.ru"
+            ]
+        },
+        {
+            "rule": "adriver\\.ru\\/cgi-bin\\/erle\\.cgi",
+            "cookies": 0.000303,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "9ccfb5d5b0d67c1d9250b156c6495f638757056c11ceae2956e42ce1fd762e62"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ym_uid": 0.0002018774603815484,
+                "_ym_d": 0.0002018774603815484,
+                "_ga": 0.0007065711113354194
+            },
+            "exampleSites": [
+                "ivi.ru",
+                "www.ivi.ru",
+                "www.labirint.ru"
+            ]
+        },
+        {
+            "rule": "adriver\\.ru\\/cgi-bin\\/json\\.cgi",
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "ev"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
+            "responseHashes": [
+                "0828b586e94cb1ae1a357176a474e7b4d25735b38b46dc6744609b524048c5f4"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ym_uid": 0.0002018774603815484,
+                "_ym_d": 0.0002018774603815484,
+                "_ga": 0.000504693650953871
+            },
             "exampleSites": [
-                "mmnt.net",
-                "www.mmnt.net"
+                "ivi.ru",
+                "www.labirint.ru"
             ]
         }
     ],
@@ -67,29 +201,60 @@
         "Advertising"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000606,
     "topInitiators": [
         {
-            "domain": "acint.net",
-            "prevalence": 0.5714285714285714
-        },
-        {
             "domain": "yastatic.net",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.2894736842105263
         },
         {
             "domain": "yandex.ru",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.23684210526315788
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.13157894736842105
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.07894736842105263
+        },
+        {
+            "domain": "soloway.ru",
+            "prevalence": 0.07894736842105263
+        },
+        {
+            "domain": "alfasense.com",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "cdn-tinkoff.ru",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "alfasense.net",
+            "prevalence": 0.02631578947368421
+        },
+        {
+            "domain": "rambler.ru",
+            "prevalence": 0.02631578947368421
+        },
+        {
+            "domain": "hybrid.ai",
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
-        "Image": 5
+        "Image": 11,
+        "XHR": 4,
+        "Script": 5,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns2.adriver.ru",
+        "ns1.adriver.ru",
         "ns4.adriver.ru",
         "ns5.adriver.ru",
-        "ns3.adriver.ru",
-        "ns1.adriver.ru",
-        "ns2.adriver.ru"
+        "ns3.adriver.ru"
     ]
 }

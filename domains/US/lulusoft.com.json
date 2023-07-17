@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "jtracking",
         "jtracking-gate"
@@ -24,10 +24,10 @@
                 "jtracking"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -37,22 +37,16 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "pdfescape": {
-                    "ttl": 31535999,
-                    "length": 5,
-                    "prevalence": 0.000013611924045463826,
-                    "uniqueness": 0.5
-                },
                 "qti": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 47,
-                    "prevalence": 0.000013611924045463826,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 1
                 },
                 "visitor_id": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 36,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000013615167296368154,
                     "uniqueness": 1
                 }
             },
@@ -64,55 +58,105 @@
         },
         {
             "rule": "lulusoft\\.com\\/api\\/visitor\\/",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "jtracking-gate"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "08aa8ff301e2c5a12889603bf7afae2e95ce9dfaf67dea591cd15cc22820c099"
+                "63254bdade749b8d6a134290d29c580e8a0bb5a39f8a58dd741ea73d11eebb2e",
+                "61eaf1f804ae4d451cb88a85187eaa0de004cdfd9c0fdfe4928604113f30dc22"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pdfescape.com",
-                "www.pdfescape.com"
+                "www.pdfescape.com",
+                "www.pdfforge.org"
             ]
         },
         {
             "rule": "lulusoft\\.com\\/api\\/visitor-js\\/",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "jtracking-gate"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "15b0b60e94b4c4313794c420257e933366159f9be333005d100ba58fb40ad5c0"
+                "0e6ddeda17efe3857604d93ec4b1254b6d127d3168cc0030e617f21efab1bd7e",
+                "ffd58479aad9051bd409a146e91b246beb17715e1cdb8c302a41844595aa745b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "qti": 0.000013611924045463826,
-                "visitor_id": 0.000013611924045463826
+                "qti": 0.00002042275094455223,
+                "visitor_id": 0.00002042275094455223
             },
             "exampleSites": [
                 "pdfescape.com",
-                "www.pdfescape.com"
+                "www.pdfescape.com",
+                "www.pdfforge.org"
+            ]
+        },
+        {
+            "rule": "lulusoft\\.com\\/js\\/v2\\/pdfforge\\.org\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jtracking"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65235c16e8791a49e955d69a02d5a3eb99a745f50d119951b3d7cfb39f83efae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "jTracking": {
+                    "ttl": 31536000,
+                    "length": 3,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 0.5
+                },
+                "qti": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 0.5
+                },
+                "visitor_id": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pdfforge.org",
+                "www.pdfforge.org"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
@@ -120,10 +164,10 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10
     },
     "nameservers": [
-        "lina.ns.cloudflare.com",
-        "henry.ns.cloudflare.com"
+        "henry.ns.cloudflare.com",
+        "lina.ns.cloudflare.com"
     ]
 }

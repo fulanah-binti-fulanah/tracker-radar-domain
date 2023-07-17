@@ -7,52 +7,14 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "piwik"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "itzbund\\.de\\/js\\/",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "piwik"
-            ],
-            "apis": {
-                "Document.cookie getter": 5,
-                "window.name": 5,
-                "Date.prototype.getTime": 5,
-                "NavigatorUAData.prototype.brands": 5,
-                "NavigatorUAData.prototype.platform": 5,
-                "NavigatorUAData.prototype.getHighEntropyValues": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.mimeTypes": 5,
-                "Navigator.prototype.javaEnabled": 5,
-                "Navigator.prototype.cookieEnabled": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5
-            },
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [
-                "a98bcbffd5d9ea7bf01dfdc4d0b7f0c75bfcefffa62a51e237082f7d05d18987"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bfarm.de",
-                "www.bfs.de",
-                "www.bundesrat.de",
-                "www.bzst.de",
-                "www.pei.de"
-            ]
-        },
         {
             "rule": "itzbund\\.de\\/js\\/",
             "cookies": 0,
@@ -61,20 +23,39 @@
                 "piwik"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfs.de",
+                "www.bundesrat.de",
+                "www.pei.de"
+            ]
+        },
+        {
+            "rule": "itzbund\\.de\\/error_path\\/503\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "piwik"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfarm.de",
-                "www.bfs.de",
+                "bfs.de",
                 "www.bundesrat.de",
-                "www.bzst.de",
                 "www.pei.de"
             ]
         }
@@ -89,13 +70,12 @@
         }
     ],
     "types": {
-        "Script": 5,
-        "Ping": 5
+        "Script": 6
     },
     "nameservers": [
-        "ns2.itzbund.de",
-        "ns1.itzbund.de",
         "secondary006.dtag.net",
-        "pns.dtag.de"
+        "pns.dtag.de",
+        "ns1.itzbund.de",
+        "ns2.itzbund.de"
     ]
 }

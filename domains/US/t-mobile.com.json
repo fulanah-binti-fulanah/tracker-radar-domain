@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
         "www",
         "splk-hec",
+        "unav",
+        "smetrics",
         "sgtm"
     ],
     "cnames": [],
@@ -25,27 +27,47 @@
                 "www"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f97dfea554c2dcac772a779b1569a0eea0eb0b78433af2534f66fae3b2bac625"
+                "c3eba794c8f4dc931b5fefb75678f6d4f9cf94b8494de54e97e908099f7b9424"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "KPI_EV": {
-                    "ttl": 1815,
+                    "ttl": 1812,
                     "length": 1,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000013615167296368154,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metrobyt-mobile.com",
+                "www.metrobyt-mobile.com"
+            ]
+        },
+        {
+            "rule": "t-mobile\\.com\\/services\\/collector\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splk-hec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "metrobyt-mobile.com",
@@ -75,18 +97,18 @@
             ]
         },
         {
-            "rule": "t-mobile\\.com\\/services\\/collector\\/event",
+            "rule": "t-mobile\\.com\\/client\\/styles\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "splk-hec"
+                "unav"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -95,27 +117,91 @@
             ]
         },
         {
-            "rule": "t-mobile\\.com\\/MkFyUN\\/7w\\/zV\\/Ix7Z\\/CUyqqtQruJAGQ\\/EuYYDGhmLrYuiL\\/YB0IWHFkaQE\\/CHtCT\\/Fk5I04",
+            "rule": "t-mobile\\.com\\/client\\/unav\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "unav"
+            ],
+            "apis": {
+                "HTMLCanvasElement.prototype.constructor": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f1398c7feca615ac556fb902de072faa2c0fc2108c29fc52d013fa98e5d31930"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metrobyt-mobile.com",
+                "www.metrobyt-mobile.com"
+            ]
+        },
+        {
+            "rule": "t-mobile\\.com\\/etc\\.clientlibs\\/digx\\/experience\\/clientlibs\\/clientlib-experience-main\\/resources\\/sprite\\/icons\\.svg",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a870a83f0df8f6c46148e9d109e491e8a02358bd1b21f47b8fa91c688e2b44b6"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sprint.com",
+                "www.sprint.com"
+            ]
+        },
+        {
+            "rule": "t-mobile\\.com\\/id",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smetrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a0b0a1b6147c816669520bf33fad12e1528b1ea2387c154b1ef91dfdd425cd60"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sprint.com",
+                "www.t-mobilemoney.com"
+            ]
+        },
+        {
+            "rule": "t-mobile\\.com\\/eak_ySYZ6-Gm\\/vuZJ7e\\/_HPJx6\\/p5L7pffLDzha\\/RAJUAVAj\\/YHYvRlIv\\/KiI",
             "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "speechSynthesis.__proto__.getVoices": 2,
-                "Document.cookie getter": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.userAgent": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "Navigator.prototype.plugins": 2,
-                "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.width": 2,
@@ -126,6 +212,7 @@
                 "Navigator.prototype.productSub": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.product": 2,
+                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.onLine": 2,
                 "Navigator.prototype.storage": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
@@ -133,10 +220,18 @@
                 "Navigator.prototype.permissions": 2,
                 "Navigator.prototype.webkitTemporaryStorage": 2,
                 "Navigator.prototype.webdriver": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTimezoneOffset": 2,
                 "window.devicePixelRatio": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Navigator.prototype.deviceMemory": 2,
                 "Navigator.prototype.connection": 2,
                 "Performance.prototype.memory": 2,
                 "DeviceMotionEvent.prototype.acceleration": 2,
@@ -161,63 +256,104 @@
             ]
         },
         {
-            "rule": "t-mobile\\.com\\/g\\/collect",
+            "rule": "t-mobile\\.com\\/content\\/dam\\/tmobile\\/util\\/cdl\\/cdl\\.js",
             "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "913ca0921d80ea3402fb5322adc091f9de69dd63122cb9c7394ac0b95252f993"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sprint.com",
+                "www.t-mobilemoney.com"
+            ]
+        },
+        {
+            "rule": "t-mobile\\.com\\/g\\/collect",
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "sgtm"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "fcd28939ac4e8caabcc6db7ea75b8ddba552e123721db9d39bef5fb1c90d226b"
+                "6d97dba373cb32ebc3902b9d63198fbff361c7966bd06ae88a9dff55030c3c04",
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000027223848090927652
+                "_ga": 0.00004084550188910446
             },
             "exampleSites": [
                 "sprint.com",
-                "www.sprint.com"
+                "www.sprint.com",
+                "www.t-mobilemoney.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3181818181818182
+            "prevalence": 0.49122807017543857
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.22727272727272727
-        },
-        {
-            "domain": "appdynamics.com",
-            "prevalence": 0.18181818181818182
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.18181818181818182
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.17543859649122806
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.08771929824561403
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.07017543859649122
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "appdynamics.com",
+            "prevalence": 0.03508771929824561
+        },
+        {
+            "domain": "lpsnmedia.net",
+            "prevalence": 0.03508771929824561
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 6,
-        "Preflight": 2
+        "Script": 6,
+        "Preflight": 2,
+        "XHR": 9,
+        "Stylesheet": 2,
+        "Other": 2
     },
     "nameservers": [
         "ns2.customer.level3.net",

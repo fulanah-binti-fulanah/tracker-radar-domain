@@ -9,34 +9,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mozilla\\.github\\.io\\/pdf\\.js\\/build\\/pdf\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000476,
+            "apis": {
+                "URL.createObjectURL": 1,
+                "CanvasRenderingContext2D.prototype.getImageData": 1,
+                "window.devicePixelRatio": 1
+            },
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "ca4f616bf3b35683170d803f656eca41dbe01d60ed50c196bdfa8a3b3f24f2e6",
-                "5c3fca214c7834b7fc050b30b2e37716fc65a669ef4c2446c4ffc8aa1a44d158",
-                "c494e7647b1979965b11b87fa6ae381f2da005f3e2038da11f3ad73075ba878e"
+                "3e2857caf983455b52f553b266e8efc66d2815b7bb1e2586c426b7d6120dd20e",
+                "34546553bdc1eca57030acc2a20997adbbc318fe8ee9b25846a1472a990dd517",
+                "c927231c5fe41c685cfbdce7b149461a0429ae3895a4aaf6a02b855751d971b5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "methodshop.com",
-                "www.baetiy.com",
-                "www.mrinsta.com",
+                "southaustralia.com",
+                "www.beeper.com",
+                "www.gob.mx",
+                "www.j3l.ch",
                 "www.palomahealth.com",
+                "www.practiceaptitudetests.com",
                 "www.royalbuildingproducts.com",
                 "www.sprachheld.de",
                 "www.visitmysmokies.com"
@@ -52,11 +59,15 @@
     "topInitiators": [
         {
             "domain": "chatbase.co",
-            "prevalence": 1
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 10
     },
     "nameservers": []
 }

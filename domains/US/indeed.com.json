@@ -7,27 +7,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000259,
-    "sites": 38,
+    "prevalence": 0.000143,
+    "sites": 21,
     "subdomains": [
         "pxl",
         "gdc",
         "www",
-        "prod.statics"
+        "apply",
+        "c03.s3",
+        "m5.apply"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "indeed\\.com\\/usersync",
-            "cookies": 0.000109,
+            "cookies": 0.0000953,
             "fingerprinting": 0,
             "subdomains": [
                 "pxl"
             ],
             "apis": {},
-            "sites": 16,
-            "prevalence": 0.000109,
+            "sites": 14,
+            "prevalence": 0.0000953,
             "cnames": [],
             "responseHashes": [
                 "7d313f32ad7ce382a2df2cd1dcaa8bc48187b20382e323b4369587ec54ae3d64"
@@ -37,19 +39,17 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glassdoor.ch",
-                "de.glassdoor.ch",
                 "www.glassdoor.ca",
                 "www.glassdoor.co.in",
                 "www.glassdoor.co.uk",
                 "www.glassdoor.com.au",
-                "www.glassdoor.com.br",
                 "www.glassdoor.com.mx",
+                "www.glassdoor.com.br",
                 "www.glassdoor.com",
                 "www.glassdoor.de",
                 "www.glassdoor.es",
-                "www.glassdoor.fr",
-                "www.glassdoor.ie",
                 "www.glassdoor.it",
+                "www.glassdoor.fr",
                 "www.glassdoor.nl",
                 "www.glassdoor.sg"
             ]
@@ -66,9 +66,7 @@
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [
-                "95aa4a182b681198b4057f9dfea67d034ad6947348dda4664a5377dc35337693"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -79,11 +77,132 @@
             ]
         },
         {
-            "rule": "indeed\\.com\\/rpc\\/apilog",
+            "rule": "indeed\\.com\\/indeedapply\\/static\\/scripts\\/app\\/bootstrap\\.js",
             "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
-                "gdc"
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "14f92f91d31f24f6f66cbe860c236db520f78bb9d1c820d08cd40f1ce6bd1672"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/env",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3bcfc1439421e44d9c34b40320d5d2c6ddf6e67f77e4c24fefd2f199276ead89",
+                "ec3c3084b80d34121059beba617fd51a356ae9804fe0cad0b613182db09e3304"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/s\\/99242e1\\/indeedapply-compiled\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c03.s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.appVersion": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9b3756be50256c0c7636c082a71a8626cac49118a909d7c6e9a981d6ad3e0467"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/beta\\/indeedapply\\/preloadresumeapply",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "m5.apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "92c2ad87ec4dccb789ff962ee5e491728cfc86317353e41e3439047b125f1aad"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/gqlappliedstatus",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1f746cbe837b2c6a9d913fc925c920247a1c5335a5e2c54c6b2ca8345a42c25b",
+                "c3aa7423289fe98d6cfca01baf848b0dab85bf263881960ad0157ca3baeb6752"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/tracking\\/thirdpartytag\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
             ],
             "apis": {},
             "sites": 3,
@@ -92,59 +211,295 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/rpc\\/log",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2577fd1470fa192497cc292750833b14ebbc8cb92283449b928b9edc36de5df8"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "houjin.jp",
-                "uavcoach.com",
-                "www.profilecanada.com"
+                "glassdoor.ca",
+                "www.glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
             ]
         },
         {
-            "rule": "indeed\\.com\\/tmn-imp\\/v4\\/lazyload\\.min\\.js",
+            "rule": "indeed\\.com\\/indeedapply\\/xpc",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3e3d9fcc0acd0e88007e5d58655642bef746b277b524387ce565f7f89bb90f8b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/smart-apply\\/indeedapply\\/s\\/69d6dca274688a8aa7c3\\/styles\\/applyForm-janus\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod.statics"
+                "c03.s3"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "eb61516b315d5813d91995e6eddeaaf13d8564a60c4a82e5f96caa603482604d"
+                "9e16e4e23180c8ce1a6203dd58c5495dd36bfcbb4ad91e0c919a556a0908e40e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/smart-apply\\/indeedapply\\/s\\/a6bd7c530b26f8d956dd\\/scripts\\/applyForm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c03.s3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "733e8393cfd84f03eefc8447ccc7a7cf5101bc1a1fca85d90e621ddab56b6d75"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationaleberoepengids.nl",
-                "www.nationaleberoepengids.nl"
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/smart-apply\\/indeedapply\\/s\\/259ff500f1728d80b439\\/scripts\\/formVendor\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c03.s3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "473f26acecbd5ad47139164eec18b72524d7c673fe84663db9903d456c03acbf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/smart-apply\\/indeedapply\\/s\\/5e1498e5b6310f2f03e5\\/scripts\\/i18n\\/en_US\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c03.s3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "bb4ace1eb27e657f43261a5e158d9d579ad95a6e3a00804c090246695a6bfc88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/ads",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2577fd1470fa192497cc292750833b14ebbc8cb92283449b928b9edc36de5df8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/s\\/65b8aac69127cfd1623a\\/scripts\\/applyForm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f0cd5520ecef6a53d7abbb6d012dfa3b04a03a2e23c5b73432b83c12048a3ab1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/s\\/f888c4613449c03526c6\\/styles\\/applyForm-janus\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ea0c9ad93c78d57d7af07096e3e3df27b22f7132cdf0b2e8afcd4dd36dadba95"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/s\\/bffba53018d640c1f5a8\\/scripts\\/accountCheck\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9b8da94dd8a4d9a715040b961bf6789d0cb2dc0fde2943028cd2430e01c0c682"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/s\\/b9805813693bda4c05e1\\/styles\\/accountCheck-janus\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d5b2def685ce142f2426d86bc26850b00ddfbe1f9764d3b956b653d4cf30e7b2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glassdoor.ca",
+                "www.glassdoor.com",
+                "www.glassdoor.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000245,
+    "cookies": 0.000136,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.8157894736842105
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "first party",
-            "prevalence": 0.18421052631578946
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Image": 19,
-        "Script": 5
+        "Image": 21,
+        "Script": 33,
+        "Document": 6,
+        "Stylesheet": 9
     },
     "nameservers": [
+        "dns1.p01.nsone.net",
         "dns2.p01.nsone.net",
-        "dns4.p01.nsone.net",
         "dns3.p01.nsone.net",
-        "dns1.p01.nsone.net"
+        "dns4.p01.nsone.net"
     ]
 }

@@ -9,100 +9,208 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00732,
-    "sites": 73,
+    "prevalence": 0.00704,
+    "sites": 70,
     "subdomains": [
-        "api-2-0",
-        "publisher-assets",
+        "launcher",
         "direct-events-collector",
         "static-cdn",
-        "pix",
-        "launcher"
+        "publisher-assets",
+        "api-2-0",
+        "pix"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "spot\\.im\\/pixels\\/ayl_pixel",
+            "rule": "spot\\.im\\/spot\\/sp_xEkoxAFD",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ed55dda61ef1b77534549e4c23d8527fb760571c66e723c04fd4ab657b355f22"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v2\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "direct-events-collector"
             ],
             "apis": {},
-            "sites": 59,
-            "prevalence": 0.00592,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.howtogeek.com",
-                "www.techradar.com",
-                "www.timeanddate.com",
-                "www.tomsguide.com",
-                "www.tomshardware.com",
-                "www.anandtech.com",
-                "www.imore.com",
-                "www.sciencealert.com",
-                "www.guitarworld.com",
-                "www.livescience.com",
-                "forums.androidcentral.com",
-                "www.alphr.com",
-                "attackofthefanboy.com",
-                "www.bikeperfect.com",
-                "www.cyclingweekly.com",
-                "www.itpro.com",
-                "www.barstoolsports.com",
-                "www.techspot.com",
-                "www.space.com",
-                "www.cyclingnews.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
-            "cookies": 0.0014,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0014,
-            "cnames": [],
-            "responseHashes": [
-                "527b30529ff5f1529f30ad468e94f24a86c2189c873b40577e47ffd947c73d25",
-                "a217d8c5f081f3ebe6aadea0d88bfba457e263c53067d5dba2993a36dc90ac5d",
-                "77c50f9efbe0ef7eddb76253e6c6dbf9b5d980784d2f8fbbdb319d830e39fc1b",
-                "7512d2441629cbcb02953c756a1e99b3cd8a72867c4781844da34aefdb594514",
-                "68f0465e22d112f010813154c93664e57d43a7492092de99e16d14963dde6c5f",
-                "71546b325af52ea7d6c084dca2301f75cf87fa4e54183daeb047d700e52f8db3",
-                "55475aaecad787dcff00ea465a5b643262aae5fca502ca227d8915f748e5569b",
-                "d74a154c8a14aa4037da32d198b5fcea63ed5a3616a4b660d1de2588aeb93070",
-                "ce41c278b37411175862fe6b9c9dad3b2b006cacd17a6c03d25e2a6e5ff21480",
-                "43f0e29a44156a49e062ffb22384ddfa70dffca2bc6809926bddf754a77eb55e",
-                "d844ecbcc3570fd8ff0c9325a5d4ec3ce221cdf7d1fefcd0cf1062c05ede235c",
-                "75cfdb67d8c6840d2e1a33da783bf8b6ae5c0850e1e9a0e73a9ce33524678c80",
-                "cfeb3f092787fa1d878e5f355fccc5832e1cf624ffe2b768e0d7d77807091bd2"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
+                "ign.com",
                 "decider.com",
                 "nypost.com",
                 "pagesix.com",
                 "soaps.sheknows.com",
                 "wordfinder.yourdictionary.com",
                 "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
                 "www.dailydot.com",
+                "www.dailywire.com",
                 "www.dexerto.com",
                 "www.icy-veins.com",
+                "www.ign.com",
+                "www.ted.com",
+                "www.thekitchn.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/386-bundle\\.js",
+            "cookies": 0.000503,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.language": 6
+            },
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "65d907d1b8033445e8bc4e7b6576892a78df5b8228e0cb23682e121373fca82b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1811,
+                    "length": 178,
+                    "prevalence": 0.0005031699708161417,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "soaps.sheknows.com",
+                "www.apartmenttherapy.com",
+                "www.dailywire.com",
+                "www.dexerto.com",
+                "www.ign.com",
+                "www.ted.com",
+                "www.thekitchn.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/480-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 8,
+                "Date.prototype.getTime": 7
+            },
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "4a4a10a664ff7f5a65f89c2a9ccb02a6c49cb144eb80c1ecc03745c7559cb4c7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "soaps.sheknows.com",
+                "www.apartmenttherapy.com",
+                "www.dailywire.com",
+                "www.dexerto.com",
+                "www.ign.com",
+                "www.ted.com",
+                "www.thekitchn.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/93-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 7
+            },
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "3d07dc74e69a213fe77138be770f3e5cba8359b14798b2e39609b7c566a03b2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "soaps.sheknows.com",
+                "www.apartmenttherapy.com",
+                "www.dailywire.com",
+                "www.dexerto.com",
+                "www.ign.com",
+                "www.ted.com",
+                "www.thekitchn.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/initial-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 6,
+                "window.localStorage": 6
+            },
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "7fdc395421de6b28ae29bf2c18cf4d19673c397bb95fc565ec634bc7b710cb16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "soaps.sheknows.com",
+                "www.apartmenttherapy.com",
+                "www.dailywire.com",
+                "www.dexerto.com",
                 "www.ign.com",
                 "www.ted.com",
                 "www.thekitchn.com"
@@ -117,9 +225,160 @@
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.0014,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "decider.com",
+                "nypost.com",
+                "pagesix.com",
+                "soaps.sheknows.com",
+                "wordfinder.yourdictionary.com",
+                "www.apartmenttherapy.com",
+                "www.dailydot.com",
+                "www.dailywire.com",
+                "www.dexerto.com",
+                "www.icy-veins.com",
+                "www.ign.com",
+                "www.ted.com",
+                "www.thekitchn.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/metrics-reporter-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1212aebf052f6f8132cec9e511eb780c9eb9efbaea9805ed1308e8c480fefcf0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/181-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "622d8b20aff13a9a96cecc1eff31d5336fa29a8fb3f4c97ef3a184217dc6c103"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.7\\.2\\/launcher\\/shell-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5805bbdacd4532163a50c3acca0a7f660e61cc1d95d72380117869daf64fc1bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/pixels\\/ayl_pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 55,
+            "prevalence": 0.00553,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.howtogeek.com",
+                "www.techradar.com",
+                "www.timeanddate.com",
+                "www.tomsguide.com",
+                "www.tomshardware.com",
+                "www.procyclingstats.com",
+                "www.gamesradar.com",
+                "forums.whathifi.com",
+                "www.imore.com",
+                "www.whowhatwear.com",
+                "www.classicfm.com",
+                "www.womanandhome.com",
+                "www.cyclingnews.com",
+                "www.marieclaire.com",
+                "www.golfmonthly.com",
+                "www.rugbyworld.com",
+                "www.whattowatch.com",
+                "www.decanter.com",
+                "forums.anandtech.com",
+                "www.digitalcameraworld.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
+            "cookies": 0.00131,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.00131,
+            "cnames": [],
+            "responseHashes": [
+                "fbe5d0be32670b5f523876eaa0aa4a445b5df814e4eaf473f29d50bef18dfa8c",
+                "548f59c3bd18d7806d4658fd05ecf81db21a77b010c35bf9d4bbf399ec2f24b7",
+                "13b589f4fc49ef5ef48065c6053924003cd51fdea5486601471bd75bc7146bab",
+                "101fe4a51329bef6f2bfa6998df2fa046079098961017c7aad59405e11952b0f",
+                "3d5293451c99e9076fbcfb796745fca6c213863a316cc5958a6ec1230d59a6e9",
+                "08b8fcf41eb78de1b6dc83fbe7976a03c71d12d228e00711544bb8d35d4f1ad2",
+                "39248c3b7f8899534f4c597b7af47385d32f54ea0b38cbc46ec9efb57f4ab528",
+                "80fe6a68286d7c64679ff89f657ffa4a8b6a2c1d761ae0cbc8e381819f943b02",
+                "c80968a0f407922c4c25708e8d77dfa5279464206ba22154cdf9c926114d7a07",
+                "b01c17490bc81f4d3a9d77f670f0101e99540d11ce5dd642097556116ec0a0ec",
+                "7627490b3b3a09ce1404964c7574f8bbd830c25dc7d54afee31f57c8876409cc",
+                "b483dc0360182016a8b89a355df24b8e8a9b5d79b6da297317ccecd87fe5c6fd"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -130,9 +389,8 @@
                 "soaps.sheknows.com",
                 "wordfinder.yourdictionary.com",
                 "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
                 "www.dailydot.com",
+                "www.dailywire.com",
                 "www.dexerto.com",
                 "www.icy-veins.com",
                 "www.ign.com",
@@ -141,58 +399,20 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v22\\.2\\.1\\/ads-independent\\/ads-independent\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "direct-events-collector"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0014,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "decider.com",
-                "nypost.com",
-                "pagesix.com",
-                "soaps.sheknows.com",
-                "wordfinder.yourdictionary.com",
-                "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
-                "www.dailydot.com",
-                "www.dexerto.com",
-                "www.icy-veins.com",
-                "www.ign.com",
-                "www.ted.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v22\\.1\\.3\\/ads-independent\\/ads-independent\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
                 "static-cdn"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "NavigatorUAData.prototype.platform": 5
-            },
+            "apis": {},
             "sites": 5,
-            "prevalence": 0.000501,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "a6c1ecceb7f06cc1247e78ab69e1b59a74318e7f6a0249a502445b2194db0e24"
+                "d415c4566f065908f7e4acab88aaef09b81e0b86eeb84bdaf632b4a8afc2e451"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -204,20 +424,24 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v22\\.1\\.3\\/ads-independent\\/ads-independent\\.css",
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v22\\.2\\.1\\/ads-independent\\/ads-independent\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "NavigatorUAData.prototype.platform": 5
+            },
             "sites": 5,
-            "prevalence": 0.000501,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "6e73ba511ceeee36bd286aef7ac6d43fb75a3a14d468344272a7368f40b9dfc2"
+                "10927e298717581adb16fe8aca0b5da68419cef4929e883fb3895542c85c976f"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -236,8 +460,8 @@
                 "pix"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0012,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -251,10 +475,9 @@
                 "pagesix.com",
                 "wordfinder.yourdictionary.com",
                 "www.apartmenttherapy.com",
-                "www.charlieintel.com",
+                "www.dailydot.com",
                 "www.dailywire.com",
                 "www.dexerto.com",
-                "www.dailydot.com",
                 "www.icy-veins.com",
                 "www.ted.com",
                 "www.thekitchn.com"
@@ -283,140 +506,6 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.6\\.8\\/launcher\\/971-bundle\\.js",
-            "cookies": 0.000602,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 8,
-                "window.localStorage": 8,
-                "Document.cookie getter": 6,
-                "Date.prototype.getTime": 7,
-                "Document.cookie setter": 6,
-                "Navigator.prototype.language": 7
-            },
-            "sites": 8,
-            "prevalence": 0.000802,
-            "cnames": [],
-            "responseHashes": [
-                "111ea971c9137340b54e629d8ec11f8c522353ac3c1b5d2b2b140703fa9ea6ad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1811,
-                    "length": 178,
-                    "prevalence": 0.0006017450606759602,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
-                "www.dexerto.com",
-                "www.ign.com",
-                "www.ted.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.6\\.8\\/launcher\\/561-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {
-                "window.localStorage": 8,
-                "Date.prototype.getTime": 8
-            },
-            "sites": 8,
-            "prevalence": 0.000802,
-            "cnames": [],
-            "responseHashes": [
-                "6efa153451100e1a6052c7ab4d52f1094cda9423bd4ff15f9467c4588b51ef08"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
-                "www.dexerto.com",
-                "www.ign.com",
-                "www.ted.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.6\\.8\\/launcher\\/857-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {
-                "window.localStorage": 8
-            },
-            "sites": 8,
-            "prevalence": 0.000802,
-            "cnames": [],
-            "responseHashes": [
-                "0360c1b7783d7c950d76f7eb1a7e587821c55902467aaa1f86a67c670f07b63c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
-                "www.dexerto.com",
-                "www.ign.com",
-                "www.ted.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v3\\.6\\.8\\/launcher\\/initial-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {
-                "window.sessionStorage": 7,
-                "window.localStorage": 7
-            },
-            "sites": 8,
-            "prevalence": 0.000802,
-            "cnames": [],
-            "responseHashes": [
-                "9b154f757a58c493385b36b163304495730459908cc98df836e3703781d2a197"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "www.apartmenttherapy.com",
-                "www.charlieintel.com",
-                "www.dailywire.com",
-                "www.dexerto.com",
-                "www.ign.com",
-                "www.ted.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
             "rule": "spot\\.im\\/production\\/icons\\/sprites\\/sprite\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -424,8 +513,8 @@
                 "static-cdn"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000802,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
                 "937085b9310af935b47f756a6326f86351c9fa0066de9e313e8cd6623ca0f888"
@@ -436,125 +525,54 @@
             "exampleSites": [
                 "sheknows.com",
                 "www.apartmenttherapy.com",
-                "www.charlieintel.com",
                 "www.dailywire.com",
                 "www.dexerto.com",
                 "www.ign.com",
                 "www.ted.com",
                 "www.thekitchn.com"
             ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_1kH6jnBV",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "launcher"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "788b8043abcf8a8df12160da92c250ecf5ca1cf43965d9812ee2fd4b469d2eaa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "charlieintel.com",
-                "www.dexerto.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_1kH6jnBV\\/no_post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "abfe4aaca18cbb4f0488c00f5c87b086e67c29acb6525d04ffb50580c24f7123"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "charlieintel.com",
-                "www.dexerto.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_1kH6jnBV\\/no_post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "charlieintel.com",
-                "www.dexerto.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0014,
+    "cookies": 0.00131,
     "topInitiators": [
         {
             "domain": "omnitagjs.com",
-            "prevalence": 0.6483516483516484
+            "prevalence": 0.55
         },
         {
             "domain": "first party",
-            "prevalence": 0.12087912087912088
-        },
-        {
-            "domain": "d137xjgotpkrvc.cloudfront.net",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.21
         },
         {
             "domain": "ignimgs.com",
-            "prevalence": 0.06593406593406594
+            "prevalence": 0.09
+        },
+        {
+            "domain": "d137xjgotpkrvc.cloudfront.net",
+            "prevalence": 0.07
         },
         {
             "domain": "ethyca.com",
-            "prevalence": 0.054945054945054944
+            "prevalence": 0.05
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.02197802197802198
+            "prevalence": 0.02
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.01098901098901099
+            "prevalence": 0.01
         }
     ],
     "types": {
-        "Image": 61,
-        "Fetch": 38,
+        "Script": 45,
         "XHR": 14,
-        "Script": 39,
+        "Fetch": 34,
+        "Image": 57,
         "Stylesheet": 5,
-        "Ping": 12,
-        "Preflight": 2
+        "Ping": 11
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

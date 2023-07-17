@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
         "jukebox",
         "cdn-app",
@@ -16,23 +16,27 @@
     "resources": [
         {
             "rule": "pathfactory\\.com\\/api\\/public\\/v1\\/init",
-            "cookies": 0.000201,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "jukebox"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "7e898067349da34c3b53d5ee956c60e5ed8611bb31ee63f49130500e2ab02abc"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "e79e1432034d2681c28e55dd5043789501f0e1d28a505ea0391e9bea3b7bf346",
+                "06b33bb2bac38b47d98912d93aa62eccdea56935e9d356beb6dcfe8209705932"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hpe.com",
+                "gitlab.com",
+                "www.anaconda.com",
+                "www.hpe.com",
                 "www.okta.com"
             ]
         },
@@ -44,15 +48,59 @@
                 "jukebox"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hpe.com",
+                "gitlab.com",
+                "www.anaconda.com",
+                "www.hpe.com",
+                "www.okta.com"
+            ]
+        },
+        {
+            "rule": "pathfactory\\.com\\/production\\/jukebox\\/current\\/jukebox\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "window.innerHeight": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "23333b0e597af5f208e88cd29360ba941141339248cea3bffbb0690a4880c932"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "vid": {
+                    "ttl": 63072019,
+                    "length": 36,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_pf_id.f894": {
+                    "ttl": 31536020,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anaconda.com",
                 "www.okta.com"
             ]
         },
@@ -198,27 +246,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pf_ses.0f78": {
-                    "ttl": 1825,
+                    "ttl": 1827,
                     "length": 1,
-                    "prevalence": 0.00010029084344599338,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_pf_id.0f78": {
-                    "ttl": 63072025,
+                    "ttl": 63072027,
                     "length": 108,
-                    "prevalence": 0.00010029084344599338,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_pf_ses.f894": {
-                    "ttl": 1823,
+                    "ttl": 1820,
                     "length": 1,
-                    "prevalence": 0.00010029084344599338,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_pf_id.f894": {
-                    "ttl": 63072023,
+                    "ttl": 63072020,
                     "length": 108,
-                    "prevalence": 0.00010029084344599338,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
@@ -230,7 +278,7 @@
         },
         {
             "rule": "pathfactory\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "spcollector",
@@ -238,7 +286,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -263,7 +311,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -278,28 +326,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000403,
     "topInitiators": [
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.5
+            "domain": "bizible.com",
+            "prevalence": 0.4
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 0.4
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "XHR": 7,
-        "Preflight": 7,
+        "XHR": 9,
+        "Preflight": 9,
+        "Script": 4,
         "Stylesheet": 4,
-        "Fetch": 2,
-        "Script": 2
+        "Fetch": 2
     },
     "nameservers": [
         "ns-369.awsdns-46.com",
-        "ns-882.awsdns-46.net",
         "ns-1821.awsdns-35.co.uk",
+        "ns-882.awsdns-46.net",
         "ns-1123.awsdns-12.org"
     ]
 }

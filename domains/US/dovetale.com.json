@@ -7,27 +7,31 @@
     "prevalence": 0.0000681,
     "sites": 10,
     "subdomains": [
-        "widget-api"
+        "widget-api",
+        "widget"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "dovetale\\.com\\/api\\/shopify\\/widget",
-            "cookies": 0.000034,
+            "cookies": 0.0000545,
             "fingerprinting": 0,
             "subdomains": [
                 "widget-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "d3eefe8620e3e4173e20b59d8abbe50faf818e7dfd28ab5ab2ccaee9e7f570d5",
                 "779516982be980bb0826d3a07abaad2dbb024fd054e9f1b89f88566f34ae727d",
                 "85280df28684502b7ee11a5d6ca4b1fe4ef3fd236e3b920cc9e67549ae0f9b61",
-                "2042baadcd889fcd2ded5aef55e3c3d668d04b07c1f7556b798e7fce13efd87f"
+                "0150e708fc8afa2ed3c0a022b2955de752d0e627e4628df3ccf733b7b2e20c25",
+                "eb8aed6094bab3ca6de39cc20e4c06336b9cf8f247333a4b10fb0f14dc1aa746",
+                "8fc7f7ee935d07e24c789b6b51ad961300137deb0d25ed2597b54bfa9a761fd0",
+                "e740a3dd8599bc70b4f09f80a07935949aba027aba169b510641de58b0a98c9b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -37,7 +41,35 @@
                 "growerssolution.com",
                 "jeans.com",
                 "lincraft.com.au",
-                "love-lust-latex.myshopify.com"
+                "love-lust-latex.myshopify.com",
+                "www.penboutique.com",
+                "www.springstepshoes.com",
+                "www.voweek.com"
+            ]
+        },
+        {
+            "rule": "dovetale\\.com\\/shopify\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "42a9ac80349a3fa41ac004bd5c05d78f4b52c26c49f6ef4d38d0d0678924d7af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "growerssolution.com",
+                "www.springstepshoes.com"
             ]
         }
     ],
@@ -46,16 +78,21 @@
     "cookies": 0.0000681,
     "topInitiators": [
         {
-            "domain": "shopify.com",
+            "domain": "first party",
             "prevalence": 0.8333333333333334
         },
         {
-            "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "domain": "shopify.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "d2fk970j0emtue.cloudfront.net",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Fetch": 5
+        "Fetch": 8,
+        "Script": 2
     },
     "nameservers": [
         "heather.ns.cloudflare.com",

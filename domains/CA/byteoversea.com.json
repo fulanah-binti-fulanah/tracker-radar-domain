@@ -7,15 +7,109 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
+        "mon-va",
+        "vmweb-sg",
+        "vmweb-va",
         "maliva-mcs",
-        "mon-va"
+        "mssdk-va"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "byteoversea\\.com\\/monitor_web\\/settings\\/browser-settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mon-va"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.theverge.com",
+                "www.tmz.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/monitor_web\\/settings\\/browser-settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mon-va"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "bc181818ecc1afce6aadd6fdf61ced72b072d5d4b390fab8e0c26f2759d3dfce",
+                "c6e3803f33a7b48b3d77f29d3be7e2264d21603d2e7cdb2f9611025bb118781f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.theverge.com",
+                "www.tmz.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/service\\/2\\/abtest_config\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vmweb-sg",
+                "vmweb-va"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.theverge.com",
+                "www.tmz.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/service\\/2\\/abtest_config\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vmweb-sg",
+                "vmweb-va"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c58bed1f097a21b4014e7eade9bac3e998cf9a500857651d6bb960f4d7553ae1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.theverge.com",
+                "www.tmz.com"
+            ]
+        },
         {
             "rule": "byteoversea\\.com\\/list",
             "cookies": 0,
@@ -66,8 +160,8 @@
                 "mon-va"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -75,7 +169,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "capcut.com",
-                "www.capcut.com"
+                "www.capcut.com",
+                "www.theverge.com"
             ]
         },
         {
@@ -86,8 +181,8 @@
                 "mon-va"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -97,29 +192,56 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "capcut.com",
-                "www.capcut.com"
+                "www.capcut.com",
+                "www.theverge.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/web\\/resource",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mssdk-va"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "66089deb99c39978a759196cd18422560ed33929b8a07de03f4f81a4b2d0a4fa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theverge.com",
+                "www.tmz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
+            "domain": "ttwstatic.com",
+            "prevalence": 0.5428571428571428
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.45714285714285713
         }
     ],
     "types": {
-        "Preflight": 4,
-        "XHR": 4
+        "Preflight": 11,
+        "XHR": 13
     },
     "nameservers": [
-        "a9-66.akam.net",
-        "a18-64.akam.net",
-        "a1-97.akam.net",
-        "a6-65.akam.net",
         "a12-66.akam.net",
-        "a13-67.akam.net"
+        "a18-64.akam.net",
+        "a13-67.akam.net",
+        "a6-65.akam.net",
+        "a9-66.akam.net",
+        "a1-97.akam.net"
     ]
 }

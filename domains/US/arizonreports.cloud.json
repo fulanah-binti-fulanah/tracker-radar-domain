@@ -4,14 +4,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
+        "filteringapp",
         "desantis"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "arizonreports\\.cloud\\/App\\/Filter_Admin\\/sort-order-settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "filteringapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb7567ab48863b7c6219448dc3fa8a881a01fcf159b304534bad54fe7a3c15e6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aspenfasteners.com",
+                "www.ljsmith.com"
+            ]
+        },
+        {
+            "rule": "arizonreports\\.cloud\\/DeSantisHolsters\\/getMfgAndModelOptions2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "desantis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "desantisholster.com",
+                "www.desantisholster.com"
+            ]
+        },
         {
             "rule": "arizonreports\\.cloud\\/DeSantisHolsters\\/getMfgAndModelOptions2",
             "cookies": 0,
@@ -24,7 +67,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "419d08841071fb1a0b5db8b57261d52dedc7c13589dfb5ba5ce09b627762edc6"
+                "70464e578b3f552e754497021b9f05bf84957c3f6c6182c3bba5c1ba546af016"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -35,7 +78,7 @@
             ]
         },
         {
-            "rule": "arizonreports\\.cloud\\/DeSantisHolsters\\/getMfgAndModelOptions2",
+            "rule": "arizonreports\\.cloud\\/DeSantisHolsters\\/getCategoriesForMfgModel2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -75,26 +118,6 @@
                 "desantisholster.com",
                 "www.desantisholster.com"
             ]
-        },
-        {
-            "rule": "arizonreports\\.cloud\\/DeSantisHolsters\\/getCategoriesForMfgModel2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "desantis"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "desantisholster.com",
-                "www.desantisholster.com"
-            ]
         }
     ],
     "categories": [],
@@ -103,11 +126,15 @@
     "topInitiators": [
         {
             "domain": "bigcommerce.com",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "XHR": 4,
+        "XHR": 6,
         "Preflight": 4
     },
     "nameservers": [

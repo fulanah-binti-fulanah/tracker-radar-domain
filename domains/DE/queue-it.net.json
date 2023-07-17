@@ -4,15 +4,56 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000702,
+    "prevalence": 0.000705,
     "sites": 7,
     "subdomains": [
+        "disneyparis",
+        "fnacdarty",
         "static",
         "assets"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "queue.fnac.com",
+            "resolved": "fnacdarty.queue-it.net"
+        },
+        {
+            "original": "waitingroom.disneylandparis.com",
+            "resolved": "disneyparis.queue-it.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "queue-it\\.net\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "disneyparis",
+                "fnacdarty"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "waitingroom.disneylandparis.com",
+                    "resolved": "disneyparis.queue-it.net"
+                },
+                {
+                    "original": "queue.fnac.com",
+                    "resolved": "fnacdarty.queue-it.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "disneylandparis.com",
+                "www.fnac.com"
+            ]
+        },
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
             "cookies": 0.000201,
@@ -27,7 +68,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "944ab414abd7379509535f0f7422544deaf2a4d19b9fbee4ef9bd1b6b02b3dcd"
@@ -35,15 +76,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "QueueITAccepted-SDFrts345E-V3_dysonprod2021": {
-                    "ttl": 1268,
+                    "ttl": 1272,
                     "length": 198,
-                    "prevalence": 0.00010031096398836393,
+                    "prevalence": 0.00010070493454179255,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_nextintmainsitelive": {
                     "ttl": 1204,
                     "length": 204,
-                    "prevalence": 0.00010031096398836393,
+                    "prevalence": 0.00010070493454179255,
                     "uniqueness": 1
                 }
             },
@@ -68,7 +109,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "7157deb8ebe872e9ad11477112493ef6d3175123c43073bbbc81954295049f08"
@@ -108,22 +149,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
+            "prevalence": 0.6923076923076923
         },
         {
             "domain": "nvidia.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.23076923076923078
         },
         {
             "domain": "queue-it.net",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
+        "Document": 2,
         "Script": 11
     },
     "nameservers": [

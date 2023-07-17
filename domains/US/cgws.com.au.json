@@ -4,37 +4,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.00000681,
+    "sites": 1,
     "subdomains": [
-        "websocket.website-prod"
+        "images.absinthe"
     ],
-    "cnames": [
-        {
-            "original": "websocket.catch.com.au",
-            "resolved": "websocket.website-prod.cgws.com.au"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "cgws\\.com\\.au\\/",
+            "rule": "cgws\\.com\\.au\\/image-hydration",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "websocket.website-prod"
+                "images.absinthe"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "websocket.catch.com.au",
-                    "resolved": "websocket.website-prod.cgws.com.au"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [],
-            "type": "WebSocket",
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "catch.com.au",
+                "www.catch.com.au"
+            ]
+        },
+        {
+            "rule": "cgws\\.com\\.au\\/image-resizer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images.absinthe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efea4a4a2ca765e55e639f7bdd10716e568341015705d5553522c61d0987140e"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -46,13 +58,19 @@
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "WebSocket": 2
+        "Image": 4
     },
     "nameservers": [
+        "ns-902.awsdns-48.net",
         "ns-1329.awsdns-38.org",
         "ns-1677.awsdns-17.co.uk",
-        "ns-902.awsdns-48.net",
         "ns-22.awsdns-02.com"
     ]
 }

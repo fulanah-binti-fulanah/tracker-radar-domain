@@ -4,17 +4,26 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
+        "reports.a",
+        "bkclick.n",
+        "static.n",
+        "anti-bot.n",
         "delegation.a",
         "als.e",
-        "eclick.e"
+        "eclick.e",
+        "www.a"
     ],
     "cnames": [
         {
             "original": "als.baidu.com",
             "resolved": "als.e.shifen.com"
+        },
+        {
+            "original": "cstm.baidu.com",
+            "resolved": "bkclick.n.shifen.com"
         },
         {
             "original": "eclick.baidu.com",
@@ -23,10 +32,158 @@
         {
             "original": "gsp0.baidu.com",
             "resolved": "delegation.a.shifen.com"
+        },
+        {
+            "original": "miao.baidu.com",
+            "resolved": "anti-bot.n.shifen.com"
+        },
+        {
+            "original": "nsclick.baidu.com",
+            "resolved": "static.n.shifen.com"
+        },
+        {
+            "original": "reports.baidu.com",
+            "resolved": "reports.a.shifen.com"
+        },
+        {
+            "original": "sp1.baidu.com",
+            "resolved": "www.a.shifen.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "shifen\\.com\\/csp-report\\/baike",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reports.a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "reports.baidu.com",
+                    "resolved": "reports.a.shifen.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "baike.baidu.com"
+            ]
+        },
+        {
+            "rule": "shifen\\.com\\/log\\/index",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bkclick.n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cstm.baidu.com",
+                    "resolved": "bkclick.n.shifen.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "baike.baidu.com"
+            ]
+        },
+        {
+            "rule": "shifen\\.com\\/v\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.n"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "nsclick.baidu.com",
+                    "resolved": "static.n.shifen.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "baike.baidu.com",
+                "tieba.baidu.com"
+            ]
+        },
+        {
+            "rule": "shifen\\.com\\/abdr",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "anti-bot.n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "miao.baidu.com",
+                    "resolved": "anti-bot.n.shifen.com"
+                }
+            ],
+            "responseHashes": [
+                "7177fb8d1829ee9dbcf97492848d320bf151f87fa4f5738c92f8293e6416999d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "tieba.baidu.com"
+            ]
+        },
+        {
+            "rule": "shifen\\.com\\/abdr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "anti-bot.n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "miao.baidu.com",
+                    "resolved": "anti-bot.n.shifen.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "tieba.baidu.com"
+            ]
+        },
         {
             "rule": "shifen\\.com\\/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK\\/tb\\/img\\/track\\.gif",
             "cookies": 0,
@@ -107,32 +264,66 @@
                 "baidu.com",
                 "tieba.baidu.com"
             ]
+        },
+        {
+            "rule": "shifen\\.com\\/-L-Xsjip0QIZ8tyhnq\\/v\\.gif",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sp1.baidu.com",
+                    "resolved": "www.a.shifen.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baidu.com",
+                "www.baidu.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "bdstatic.com",
-            "prevalence": 0.7575757575757576
+            "prevalence": 0.5961538461538461
+        },
+        {
+            "domain": "bdimg.com",
+            "prevalence": 0.23076923076923078
         },
         {
             "domain": "baidustatic.com",
-            "prevalence": 0.15151515151515152
+            "prevalence": 0.09615384615384616
         },
         {
             "domain": "bcebos.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Image": 6
+        "Other": 2,
+        "WebSocket": 2,
+        "Image": 13,
+        "XHR": 2
     },
     "nameservers": [
-        "ns3.baidu.com",
         "ns2.baidu.com",
-        "ns4.baidu.com",
-        "ns1.baidu.com"
+        "ns1.baidu.com",
+        "ns3.baidu.com",
+        "ns4.baidu.com"
     ]
 }

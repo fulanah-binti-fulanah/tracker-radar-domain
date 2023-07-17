@@ -4,12 +4,59 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "notix\\.io\\/ent\\/current\\/enot\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Notification.permission": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b2e138796938ad41d276aef74ff5980dcf585815d6763c4033e9719b764ded2b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hcbdsm.com",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "notix\\.io\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a184d88796612148bc44440e8ac2a264e745e8f3774a82e2e3219c079134ac45"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hcbdsm.com",
+                "www.ghacks.net"
+            ]
+        },
         {
             "rule": "notix\\.io\\/event",
             "cookies": 0,
@@ -26,7 +73,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ghacks.net",
+                "hcbdsm.com",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "notix\\.io\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hcbdsm.com",
                 "www.ghacks.net"
             ]
         }
@@ -36,17 +101,24 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "freedailytip.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Ping": 2
+        "Script": 2,
+        "Fetch": 2,
+        "Ping": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1473.awsdns-56.org",
-        "ns-393.awsdns-49.com",
         "ns-566.awsdns-06.net",
-        "ns-1879.awsdns-42.co.uk"
+        "ns-393.awsdns-49.com",
+        "ns-1879.awsdns-42.co.uk",
+        "ns-1473.awsdns-56.org"
     ]
 }

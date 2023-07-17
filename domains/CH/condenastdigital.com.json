@@ -10,17 +10,61 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "capture"
+        "rum"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "condenastdigital\\.com\\/track",
+            "rule": "condenastdigital\\.com\\/client\\/boomerang-1\\.0\\.e7f702e5362e8a8f56f0cf3040ee24077d13a9a8\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.getBattery": 2,
+                "Performance.prototype.memory": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.orientation": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d8e0d3737f08174b423810d21f2da7189e6abb397056ff4e4e06845fc63f1b2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vogue.de",
+                "www.vogue.fr"
+            ]
+        },
+        {
+            "rule": "condenastdigital\\.com\\/beacon",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "capture"
+                "rum"
             ],
             "apis": {},
             "sites": 2,
@@ -29,12 +73,12 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lacucinaitaliana.it",
-                "www.lacucinaitaliana.it"
+                "vogue.de",
+                "www.vogue.fr"
             ]
         }
     ],
@@ -44,20 +88,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
-        },
-        {
-            "domain": "cnevids.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 1
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-28.awsdns-03.com",
-        "ns-836.awsdns-40.net",
+        "ns-1935.awsdns-49.co.uk",
         "ns-1116.awsdns-11.org",
-        "ns-1935.awsdns-49.co.uk"
+        "ns-836.awsdns-40.net",
+        "ns-28.awsdns-03.com"
     ]
 }

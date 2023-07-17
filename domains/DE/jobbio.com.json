@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
         "widgets"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "jobbio\\.com\\/partner_fluid_widgets_v1\\.6\\.1\\/display\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "9dba4893f2a2101dedec2db1058c4f8bbd230c0ce2ceae7172d5964a0263f839"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hackr.io",
+                "www.basicthinking.de",
+                "www.nextpit.de",
+                "www.techspot.com"
+            ]
+        },
         {
             "rule": "jobbio\\.com\\/partner_fluid_widgets_v1\\.6\\.1\\/assets\\/css\\/v1_6_1\\.css",
             "cookies": 0,
@@ -20,17 +46,43 @@
                 "widgets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "c0976d85dce48b9170dc6272b640372243bf1706c77675f02fdd2fe9791d56f5"
+                "52fe780d03e98dcb4524e857426d1f7d10559ae6454cc38e551a8e307e93eaff"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nextpit.de",
+                "hackr.io",
+                "www.basicthinking.de",
+                "www.nextpit.de",
+                "www.techspot.com"
+            ]
+        },
+        {
+            "rule": "jobbio\\.com\\/partner_fluid_widgets_v1\\.6\\.1\\/assets\\/js\\/imp\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "f6aa2579190f17098e22234151f389c6da5c54501c085951fc426f9f19fcf862"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hackr.io",
+                "www.basicthinking.de",
+                "www.nextpit.de",
                 "www.techspot.com"
             ]
         }
@@ -41,15 +93,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.625
+            "prevalence": 0.8
         },
         {
             "domain": "npstatic.com",
-            "prevalence": 0.375
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Stylesheet": 2
+        "Script": 8,
+        "Stylesheet": 4
     },
     "nameservers": [
         "ns0.reg365.net",

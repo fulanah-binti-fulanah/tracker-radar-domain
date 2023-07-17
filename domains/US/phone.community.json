@@ -15,62 +15,19 @@
     "resources": [
         {
             "rule": "phone\\.community\\/api\\/request-no-cache",
-            "cookies": 0.00000681,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cache"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.language": 1,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d5b9c0774bfbdbe1420ef4200122c1a8b8fd63f315b9a50566a80d2aee724b89"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "st_samesite": {
-                    "ttl": 0,
-                    "length": 1,
-                    "prevalence": 0.000006805962022731913,
-                    "uniqueness": 1
-                },
-                "fpestid": {
-                    "ttl": 31622400,
-                    "length": 70,
-                    "prevalence": 0.000006805962022731913,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "communityphone.org",
-                "www.communityphone.org"
-            ]
-        },
-        {
-            "rule": "phone\\.community\\/webflow-ci\\/js\\/vendors\\/callroot\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "7fc5c87bc2de0ae8b025508521ef86db93542f579db710a4d86adc8613b90f4f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -81,20 +38,20 @@
             ]
         },
         {
-            "rule": "phone\\.community\\/api\\/request",
+            "rule": "phone\\.community\\/api\\/v2\\/checkout\\/sessions\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cache"
+                "landline"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f3496bc7c277d917d35553c46ed1597a86065494cac582e42a3a1d55aedef7fb"
+                "0743d4e347d260cc9b067f10069b2a2628a3fa0d1f70031b07af7ec5ad80439e"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -121,28 +78,6 @@
                 "communityphone.org",
                 "www.communityphone.org"
             ]
-        },
-        {
-            "rule": "phone\\.community\\/api\\/v2\\/checkout\\/sessions\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "landline"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f1a3c370871337dc9efad0e55651373c3b40dee7da6b99871c025399c125e47a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "communityphone.org",
-                "www.communityphone.org"
-            ]
         }
     ],
     "categories": [],
@@ -155,12 +90,13 @@
         }
     ],
     "types": {
-        "Script": 6,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1.digitalocean.com",
+        "ns3.digitalocean.com",
         "ns2.digitalocean.com"
     ]
 }

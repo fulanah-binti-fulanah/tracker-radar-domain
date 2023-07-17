@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "emisja"
     ],
@@ -23,8 +23,8 @@
                 "emisja"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "0b37d9fe2b7c589af5634275e05416504de8ea0d41cd7117afb7405219759eab"
@@ -35,7 +35,8 @@
             "exampleSites": [
                 "deccoria.pl",
                 "echodnia.eu",
-                "www.salon24.pl"
+                "twojememy.pl",
+                "www.kobieta.pl"
             ]
         },
         {
@@ -46,33 +47,38 @@
                 "emisja"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "f66021f36274efefc3698b3369c9f01a485181ddf68914138ff9f9ff937893e6"
+                "8ae442204c0d550f6f5d47634993eb4029c37a0ff9aa09dec10a7b6889147378",
+                "04a40b1ddfe1e6c5e79c293ce8b7a3f127183b270494d3457f5be555316e1414"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "deccoria.pl",
-                "www.salon24.pl"
+                "twojememy.pl",
+                "www.kobieta.pl"
             ]
         },
         {
             "rule": "contentstream\\.pl\\/_\\/aldentkaAds\\/",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "emisja"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "857e6af6276f48391e33d12e0e3798fbcf5a80367307a2bab45f8bfe2ed9eb72"
+                "82773de24039e90e458e4320dbf9e3900d750c7ebcd0ba8f23b1451b3a73fd0c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -125,30 +131,6 @@
             ]
         },
         {
-            "rule": "contentstream\\.pl\\/_\\/getImageII\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "emisja"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "166417c65703111e88c14b5d4c88f44d7ac9f2b0c749d35b68f5230a620d90ca",
-                "ab46cb8108571eda47a1effa31146983f0824c447ef2133fdfff70ad952e2e58"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "deccoria.pl",
-                "echodnia.eu",
-                "www.salon24.pl"
-            ]
-        },
-        {
             "rule": "contentstream\\.pl\\/aldente\\/stats_img\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -191,6 +173,28 @@
                 "deccoria.pl",
                 "echodnia.eu"
             ]
+        },
+        {
+            "rule": "contentstream\\.pl\\/_\\/getImageII\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "emisja"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f91a97c47cb66d491c021bad23d7cb0afd679da38e08c2a1622aacb69b20d92"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twojememy.pl",
+                "www.kobieta.pl"
+            ]
         }
     ],
     "categories": [],
@@ -199,31 +203,27 @@
     "topInitiators": [
         {
             "domain": "simpleplacementcustomserversideadart-0.js",
-            "prevalence": 0.4375
+            "prevalence": 0.35294117647058826
         },
         {
             "domain": "customplacementclientsideadart-0.js",
-            "prevalence": 0.3125
+            "prevalence": 0.29411764705882354
         },
         {
             "domain": "first party",
-            "prevalence": 0.125
+            "prevalence": 0.23529411764705882
         },
         {
-            "domain": "ppstatic.pl",
-            "prevalence": 0.0625
-        },
-        {
-            "domain": "adrino.cloud",
-            "prevalence": 0.0625
+            "domain": "parser-0.js",
+            "prevalence": 0.11764705882352941
         }
     ],
     "types": {
-        "Script": 5,
-        "Stylesheet": 2,
+        "Script": 6,
+        "Stylesheet": 3,
         "Preflight": 2,
         "XHR": 2,
-        "Image": 7
+        "Image": 6
     },
     "nameservers": [
         "dns200.anycast.me",

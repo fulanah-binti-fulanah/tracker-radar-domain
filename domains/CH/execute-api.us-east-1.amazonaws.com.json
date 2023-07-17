@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "pt37ad6f6a",
         "oeqepmcz7a"
@@ -26,61 +26,85 @@
                 "pt37ad6f6a"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "8677fda8c52b20880e3ac0d8ff83a2ba8fac1b89c614eaf37e0dcee931e142a3",
+                "94e71c0f18f8b5a588c49e1456a3d651f0ad739a2f4f50b1c2f9367fae7d3827"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
-                "docs.splunk.com"
+                "docs.splunk.com",
+                "www.splunk.com"
             ]
         },
         {
-            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/Prod\\/v1\\/analytics",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "oeqepmcz7a"
+                "pt37ad6f6a"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "a915a7a2d26a7fca08bb0a021c039f05086c8f0ae378c0ba3b5946900fa39d99",
-                "98d747d1d7eac8f697beddb8fe5bc9e595c0a01983f95ea980a00d3af2d1a825"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "profital.ch",
-                "www.wickedweasel.com",
-                "www.yallayalla.it"
-            ]
-        },
-        {
-            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "oeqepmcz7a"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "profital.ch",
-                "www.wickedweasel.com",
-                "www.yallayalla.it"
+                "splunk.com",
+                "docs.splunk.com",
+                "www.splunk.com"
+            ]
+        },
+        {
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oeqepmcz7a"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "f9ed58a60e446f02a82a3cd01334a8111c74c22eba8b304edbea68ddbf32666d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "insta360.com",
+                "www.profital.ch",
+                "www.wickedweasel.com"
+            ]
+        },
+        {
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oeqepmcz7a"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "insta360.com",
+                "www.profital.ch",
+                "www.wickedweasel.com"
             ]
         }
     ],
@@ -91,22 +115,26 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "pushengage.com",
-            "prevalence": 0.5
-        },
-        {
             "domain": "listenloop.com",
             "prevalence": 0.3333333333333333
         },
         {
-            "domain": "asteriresearch.com",
+            "domain": "pushengage.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "alicdn.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "signalfx.com",
             "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Fetch": 2,
-        "XHR": 3,
-        "Preflight": 3
+        "Fetch": 3,
+        "Preflight": 6,
+        "XHR": 3
     },
     "nameservers": [
         "ns-1368.awsdns-43.org",

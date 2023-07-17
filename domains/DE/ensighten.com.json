@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00251,
+    "prevalence": 0.00252,
     "sites": 25,
     "subdomains": [
         "data.privacy",
@@ -26,8 +26,8 @@
                 "data.privacy"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -39,8 +39,10 @@
                 "rs-online.com",
                 "de.rs-online.com",
                 "www.bhphotovideo.com",
+                "www.ffb.de",
                 "www.nationalgeographic.com",
-                "www.vueling.com"
+                "www.vueling.com",
+                "www.wyndhamhotels.com"
             ]
         },
         {
@@ -51,8 +53,8 @@
                 "data.privacy"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -63,7 +65,9 @@
             "exampleSites": [
                 "rs-online.com",
                 "www.bhphotovideo.com",
-                "www.vueling.com"
+                "www.ffb.de",
+                "www.vueling.com",
+                "www.wyndhamhotels.com"
             ]
         },
         {
@@ -74,8 +78,8 @@
                 "nexus"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -85,6 +89,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hp.com",
+                "support.norton.com",
                 "support.hp.com",
                 "www.bhphotovideo.com",
                 "www.fewo-direkt.de",
@@ -95,25 +100,33 @@
         },
         {
             "rule": "ensighten\\.com\\/hearst\\/mag-dnt\\/Bootstrap\\.js",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "nexus"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 11,
-                "window.localStorage": 11,
-                "Date.prototype.getTime": 11,
-                "Document.cookie getter": 11
+                "Navigator.prototype.userAgent": 10,
+                "window.localStorage": 10,
+                "Date.prototype.getTime": 10,
+                "Document.cookie getter": 10,
+                "Document.cookie setter": 1
             },
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "717f09d9f8ea790bb7ba142ba64d956c02389ff14de2ab0873ba36a70d034e58"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_glimmerCookieTest": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.00010070493454179255,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bicycling.com",
@@ -123,7 +136,6 @@
                 "www.goodhousekeeping.com",
                 "www.harpersbazaar.com",
                 "www.menshealth.com",
-                "www.popularmechanics.com",
                 "www.runnersworld.com",
                 "www.seventeen.com",
                 "www.womenshealthmag.com"
@@ -137,20 +149,19 @@
                 "nexus"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
-                "df79ebcf6f9ea10acff9e8989e5e8950e408280ed9d65060a3a3e5b7413f25f4",
-                "8f3e8d118b20a54ed876f7ceb6d6feb90651a7cfdd8b4ad5b80e788b07e666f4",
-                "ce9d732b622a99db226e74bbfe4d4362fc2698f13be4052e4efdb0e348ac4f26",
-                "a5b1d452fd48efb7c41b1aa43c5fd4d71a3f78595b746613e800cb474d5a6aae",
-                "b9cd96f97f37f50efe2029d39a54e028dae7b9b8e9f18a94d45600fd2adbe796",
-                "f209328fa7497e9137e59d6456e337c2caa4f1f8136a6ed415772e08267f16a8",
-                "b76870b1e22ff3676dc4e8307af61b574fc6330f6b89a565f28aa01e45daa56a",
-                "755f5373c04d781273743d3497d917462f963967e0ef0ae1696eb95956e748a0",
-                "cc420a78a235654a327466407f47cc5b4c57cf0e29f6a5e8095fc433fef92422",
-                "1ef69bdb69de53ec42880fb882aab4e80a9e860533332baa4fd3182b7d0f96a7"
+                "3ec36a11092e0a501486c90efdf25cb8607037f737254e898c84855db32992c5",
+                "228ba7e6ec14ee285ac0e6830d3543010dddf01c15dac79d62438b473b200fcf",
+                "e5f5be25b3175d6f059c757b2b4bad4bd02f9c4693c2104ef553a586ce508aa4",
+                "53ab3736dbe7bfa7558315ceaa16caa80835522049df86b7b5d1e2b09ac49159",
+                "4640c99eb424ba021f5ca1c96da1159a5de9eae117957b1d2622a213e5dff69e",
+                "3e0bca29279ad50469e62ef6a84c36d4baeb066c746997c15d55d67a6657adf2",
+                "923e15d1ee668f4c17363ddff7919fc8dc8a37d2fd0c946312447d52d0b700d8",
+                "701e4a1b53f22f828bb799b74373a710c88c0b4cda9759aa209c406ef62b02f4",
+                "60af83ecaf8d561ec1a949a6a3f2ff800ed100c9c781e74c95df2f2cb9712cf3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -163,7 +174,6 @@
                 "www.goodhousekeeping.com",
                 "www.harpersbazaar.com",
                 "www.menshealth.com",
-                "www.popularmechanics.com",
                 "www.runnersworld.com",
                 "www.seventeen.com",
                 "www.womenshealthmag.com"
@@ -177,8 +187,8 @@
                 "nexus"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "cf353a22f264da3512bf2a370a979ad548e97d39a092a89b8253ac62fb0c93f0"
@@ -194,7 +204,6 @@
                 "www.goodhousekeeping.com",
                 "www.harpersbazaar.com",
                 "www.menshealth.com",
-                "www.popularmechanics.com",
                 "www.runnersworld.com",
                 "www.seventeen.com",
                 "www.womenshealthmag.com"
@@ -221,100 +230,6 @@
                 "caranddriver.com",
                 "www.caranddriver.com"
             ]
-        },
-        {
-            "rule": "ensighten\\.com\\/hearst\\/mag-uk-dnt\\/Bootstrap\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "nexus"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "9925fe5dd7738b1ba04ceb7a2586b44e5fefcf0083fb268fcda749c7b214d746"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "digitalspy.com",
-                "www.netdoctor.co.uk"
-            ]
-        },
-        {
-            "rule": "ensighten\\.com\\/hearst\\/mag-uk-dnt\\/serverComponent\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nexus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "814d26a7ccb64c4fbe01e06a91e331552704f38ae82619e3479bc54c3f35a41c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "digitalspy.com",
-                "www.netdoctor.co.uk"
-            ]
-        },
-        {
-            "rule": "ensighten\\.com\\/hearst\\/mag-uk-dnt\\/code\\/0d9f8225b957a6386f8d27b28027fdc3\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nexus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4ec05d6975b045cda2c27cfa2201431868bbac2e97163836debae787dcbd5e69"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "digitalspy.com",
-                "www.netdoctor.co.uk"
-            ]
-        },
-        {
-            "rule": "ensighten\\.com\\/hearst\\/mag-uk-dnt\\/code\\/c88d14cf0be4a8293575ba311ab6af92\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nexus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3cb476fdf2f42433d484b65a680c0a737acc47f42eafd962ae5438df0463dccd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "digitalspy.com",
-                "www.netdoctor.co.uk"
-            ]
         }
     ],
     "categories": [
@@ -325,36 +240,32 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000806,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5972222222222222
+            "prevalence": 0.6857142857142857
         },
         {
             "domain": "bhphoto.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.11428571428571428
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "aexp-static.com",
-            "prevalence": 0.09722222222222222
+            "prevalence": 0.11428571428571428
         },
         {
             "domain": "espn.com",
-            "prevalence": 0.06944444444444445
+            "prevalence": 0.07142857142857142
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.013888888888888888
+            "prevalence": 0.014285714285714285
         }
     ],
     "types": {
-        "Image": 15,
-        "Script": 43
+        "Image": 20,
+        "Script": 32
     },
     "nameservers": [
         "ns1.ensighten.com",

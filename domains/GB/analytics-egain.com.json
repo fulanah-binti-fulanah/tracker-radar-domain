@@ -7,14 +7,39 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "analytics-egain\\.com\\/iframe\\/EG94020756",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7dc0108355117ef1d4f6b974756d2d9f83e6b16bad59f340525e05fdaca97229"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "norton.com",
+                "us.norton.com"
+            ]
+        },
         {
             "rule": "analytics-egain\\.com\\/onetag\\/EG18253742",
             "cookies": 0.000201,
@@ -40,15 +65,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "EG-U-ID": {
-                    "ttl": 31536006,
+                    "ttl": 31536002,
                     "length": 38,
-                    "prevalence": 0.00020090406830738323,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 },
                 "EG-S-ID": {
                     "ttl": null,
                     "length": 38,
-                    "prevalence": 0.00020090406830738323,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 }
             },
@@ -109,13 +134,13 @@
                 "EG-U-ID": {
                     "ttl": 31536005,
                     "length": 38,
-                    "prevalence": 0.00020090406830738323,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 },
                 "EG-S-ID": {
                     "ttl": null,
                     "length": 38,
-                    "prevalence": 0.00020090406830738323,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 }
             },
@@ -133,8 +158,8 @@
                 "analytics"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 1
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -153,25 +178,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000804,
+    "cookies": 0.000905,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.7
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.25
+            "prevalence": 0.2
+        },
+        {
+            "domain": "egainonetag.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 4,
-        "Document": 4
+        "Document": 6,
+        "Script": 4
     },
     "nameservers": [
+        "ns-1159.awsdns-16.org",
         "ns-171.awsdns-21.com",
-        "ns-1868.awsdns-41.co.uk",
         "ns-615.awsdns-12.net",
-        "ns-1159.awsdns-16.org"
+        "ns-1868.awsdns-41.co.uk"
     ]
 }

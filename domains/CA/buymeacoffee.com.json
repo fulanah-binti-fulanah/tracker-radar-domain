@@ -4,14 +4,95 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
-        "cdnjs"
+        "cdnjs",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "buymeacoffee\\.com\\/1\\.0\\.0\\/widget\\.prod\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdnjs"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "d646130ab36a04f425c348dc78e092c6421a5185c868ceaba995f08ce8f898c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "visited": {
+                    "ttl": 86401,
+                    "length": 1,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amg-news.com",
+                "www.novascotiawebcams.com",
+                "www.paulcraigroberts.org"
+            ]
+        },
+        {
+            "rule": "buymeacoffee\\.com\\/assets\\/img\\/widget\\/loader\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "8dc50845649eef3ca755e444896a607b1dd75260a815da51be1f67d2c2b7ce2d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amg-news.com",
+                "www.novascotiawebcams.com",
+                "www.paulcraigroberts.org"
+            ]
+        },
+        {
+            "rule": "buymeacoffee\\.com\\/widget\\/assets\\/coffee%20cup\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "241e4e553d88785f2ce15f635f3a2f10ed8f6642a4da85e48d17964cbe388152"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amg-news.com",
+                "www.novascotiawebcams.com",
+                "www.paulcraigroberts.org"
+            ]
+        },
         {
             "rule": "buymeacoffee\\.com\\/1\\.0\\.0\\/button\\.prod\\.min\\.js",
             "cookies": 0,
@@ -20,8 +101,8 @@
                 "cdnjs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "34b50941eef94ced5cacf2234be9bdfba74d556e35394a63acd987735f6c1c6b"
@@ -31,14 +112,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smoothiex12.blogspot.com",
-                "www.crystalwind.ca",
                 "www.majorgeeks.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -46,7 +126,8 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 5,
+        "Image": 6
     },
     "nameservers": [
         "ruth.ns.cloudflare.com",

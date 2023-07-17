@@ -7,14 +7,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "ecdn",
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "firstimpression\\.io\\/fi_client\\.js",
@@ -24,78 +24,148 @@
                 "ecdn"
             ],
             "apis": {
-                "window.localStorage": 3,
-                "window.sessionStorage": 3,
-                "Date.prototype.getTime": 3,
-                "window.innerHeight": 3,
-                "window.innerWidth": 3,
-                "Document.cookie getter": 3,
-                "Event.prototype.timeStamp": 2
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "Date.prototype.getTime": 5,
+                "window.innerHeight": 5,
+                "window.innerWidth": 5,
+                "Document.cookie getter": 5,
+                "Event.prototype.timeStamp": 5,
+                "Element.prototype.getClientRects": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "7ec1e4ccd301055c681829f47982f50b5ec2f75b79bec2d1f2080a117bbaf4e0",
-                "59bfea2599287f970e08809f6a658e758c37fa5d673635cddb94546f572cda37"
+                "52da6bbfc114d4fbe0424d969086e5b5325bb6b741542cd03f7bdaa615efe7a6",
+                "713e726db186561391815ce88ca5c6be2b2870aed355067a860b885acd98c4e2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bleepingcomputer.com",
+                "archdaily.com",
+                "www.bleepingcomputer.com",
                 "www.eliteprospects.com",
+                "www.haaretz.com",
                 "www.onthemarket.com"
             ]
         },
         {
             "rule": "firstimpression\\.io\\/delivery\\/spc_fi\\.php",
-            "cookies": 0.000301,
+            "cookies": 0.000503,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "070cea49b38761a70f395fbfb30035d0cf93329ca710ca36cacd2e6bc7979b48",
-                "61b9314aac3bf5f2ac82a58b1d6c6e429b5c61f09f76e6803cd34331dfccb3f7"
+                "0b3cd6bbbfd8372c367dbab297ac1764651b8cb230282489f72832baeaee5f78",
+                "7cbf4d775d12aa684162c1fd4590aff64df2549acaedd29d4236da310b5ee47b",
+                "a1eb5299176501634b9356d0ae55aae20d2c9914ff2abefc4f467f93c260a49d",
+                "e58b20bee6f2b7a86c14f14488c6ab45cc29bb0a70e6517eb6d5efe0172a5032"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020078305391024997
+                "lotame_domain_check": 0.0004021312958681009
             },
             "exampleSites": [
-                "bleepingcomputer.com",
+                "archdaily.com",
+                "www.bleepingcomputer.com",
                 "www.eliteprospects.com",
+                "www.haaretz.com",
                 "www.onthemarket.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/delivery\\/lg\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/static\\/js\\/prebidamp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ecdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "36fb5f66f20c65f70014a36766814de66f2cb3de2dd089f596314c89428d9dc7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.haaretz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000503,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
+            "domain": "first party",
+            "prevalence": 0.5
         },
         {
-            "domain": "first party",
+            "domain": "googletagmanager.com",
             "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Script": 3,
-        "XHR": 3
+        "Script": 7,
+        "XHR": 5,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1137.awsdns-14.org",
-        "ns-1564.awsdns-03.co.uk",
+        "ns-711.awsdns-24.net",
         "ns-303.awsdns-37.com",
-        "ns-711.awsdns-24.net"
+        "ns-1564.awsdns-03.co.uk"
     ]
 }

@@ -9,61 +9,25 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
+        "logs",
         "cognito-identity",
-        "logs"
+        "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb"
     ],
-    "cnames": [],
-    "fingerprinting": 0,
+    "cnames": [
+        {
+            "original": "a.staging.tech.esquire.de",
+            "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+        },
+        {
+            "original": "a.staging.tech.harpersbazaar.de",
+            "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity",
-                "logs"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sensiseeds.com",
-                "www.covid19.admin.ch",
-                "www.mobilezone.ch",
-                "www.talktalk.ch",
-                "www.toolnationschweiz.ch"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "82ff21fe68bda4b0342dea57924062d46335f833e2d1551a49e33f6d9a54b2b6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sensiseeds.com",
-                "www.toolnationschweiz.ch"
-            ]
-        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
@@ -77,9 +41,9 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "676d648ddeff1defdef3bc9626ddc6180d1c6f171eba543a6bd907bfb984e06a",
-                "2229548e742861cd6c9d2bec42fee547d91d9c4098ddb083bf92a741e6beb5a7",
-                "eef933e17f46f42e29539a5cd4a4e20f4bd0fbbae986a2a9290698b961376ded"
+                "5f05788ec32f9979465f2ffa130b18c87e28f84391ee1f57f898e02aceddd172",
+                "8fa6863478621835829796a774ff9021be25b79a30634f7e578f77066007cbe1",
+                "59c433973562b169a6afa653c81c4385347b0164d101b82d49d6574d630648d3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -90,52 +54,108 @@
                 "www.mobilezone.ch",
                 "www.talktalk.ch"
             ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logs",
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "admin.ch",
+                "www.mobilezone.ch",
+                "www.talktalk.ch"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/g\\/collect",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "a.staging.tech.esquire.de",
+                    "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+                },
+                {
+                    "original": "a.staging.tech.harpersbazaar.de",
+                    "resolved": "ab2fedad12eea43c788b73c4768a347d-5ba9b6fca54a13dd.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.0005026641198351262,
+                "lotame_domain_check": 0.0003015984719010757
+            },
+            "exampleSites": [
+                "esquire.de",
+                "www.harpersbazaar.de"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.35294117647058826
-        },
-        {
-            "domain": "sooqr.com",
-            "prevalence": 0.23529411764705882
-        },
-        {
-            "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.23529411764705882
+            "prevalence": 0.5238095238095238
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.19047619047619047
+        },
+        {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "steadycdn.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "tripcdn.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Preflight": 5,
-        "XHR": 2,
-        "Fetch": 4
+        "Fetch": 4,
+        "Preflight": 3,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.amzndns.co.uk",
+        "ns2.amzndns.net",
         "ns1.amzndns.com",
         "ns1.amzndns.net",
+        "ns2.amzndns.com",
+        "ns2.amzndns.org",
         "ns1.amzndns.org",
         "ns2.amzndns.co.uk",
-        "ns2.amzndns.com",
-        "ns2.amzndns.net",
-        "ns2.amzndns.org"
+        "ns1.amzndns.co.uk"
     ]
 }

@@ -7,40 +7,137 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "www"
+        "cdn1",
+        "api-cf",
+        "www",
+        "tracker"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "affirm\\.com\\/js\\/v2\\/affirm\\.js",
+            "cookies": 0.000302,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {
+                "console.memory": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.connection": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "window.localStorage": 3,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e96f6c22d6ecbb07beba836a93b9e2e02729b9699ddf581e6bacbf601283d9fa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1689593470,
+                    "length": 1,
+                    "prevalence": 0.0003022365504735039,
+                    "uniqueness": 0.3333333333333333
+                },
+                "tracker_device": {
+                    "ttl": 157680002,
+                    "length": 36,
+                    "prevalence": 0.0003022365504735039,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.com",
+                "www.anker.com",
+                "www.comptia.org"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/api\\/v2\\/session\\/touch_track",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "0476186683cca9d1324f7022c13f0b14e30a05fbb320df4caef8476e236bd2a2",
+                "31df6ef7ff10d4d55451b59f537204d10befe5d0fa88cf3172f43f0307cbd3cf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.com",
+                "www.anker.com",
+                "www.comptia.org"
+            ]
+        },
+        {
             "rule": "affirm\\.com\\/api\\/v2\\/cookie_sent",
-            "cookies": 0.000201,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8",
+                "924aebf24af414b12986f4af470b2ac7b61d765897f9e222c0af15805de9ae40"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.com",
+                "electronics.sony.com",
+                "www.anker.com",
+                "www.comptia.org"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8"
+                "70f07df8529a5da355e70cb8fd1a2c6cdbe6dec83a5332bfcf06f5a917e6e607"
             ],
-            "type": "Fetch",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellotech.com",
-                "www.hellotech.com"
+                "sony.com",
+                "electronics.sony.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
@@ -48,7 +145,9 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Script": 3,
+        "Fetch": 7,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1463.awsdns-54.org",

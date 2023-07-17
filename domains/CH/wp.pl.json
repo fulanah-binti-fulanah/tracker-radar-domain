@@ -7,40 +7,20 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000101,
+    "sites": 1,
     "subdomains": [
-        "pixel"
+        "ssp"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "wp\\.pl\\/api\\/collect",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pixel"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mediaexpert.pl",
-                "www.mediaexpert.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/r1687393025\\/wppixeln",
+            "rule": "wp\\.pl\\/bidder\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pixel"
+                "ssp"
             ],
             "apis": {},
             "sites": 2,
@@ -49,34 +29,53 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mediaexpert.pl",
-                "www.mediaexpert.pl"
+                "lrytas.lt",
+                "www.lrytas.lt"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/bidder\\/usersync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "636c486cc865655e882b671daac5c2edad7fa375be58a343d57364e385f6ebf6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrytas.lt",
+                "www.lrytas.lt"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0,
     "topInitiators": [
         {
-            "domain": "relevant-digital.com",
-            "prevalence": 0.75
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.25
+            "domain": "dimatter.ai",
+            "prevalence": 1
         }
     ],
     "types": {
-        "Image": 4
+        "XHR": 2,
+        "Document": 2
     },
     "nameservers": [
+        "ns1.task.gda.pl",
         "ns2.wp.pl",
-        "ns1.wp.pl",
-        "ns1.task.gda.pl"
+        "ns1.wp.pl"
     ]
 }

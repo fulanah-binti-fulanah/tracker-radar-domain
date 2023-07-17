@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "aps"
+        "aps",
+        "segment-data"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,19 +27,41 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "e34f6806bf9026b69d2a72dbca96860ada3c87d696ee864cac941636f65bd017"
+                "3a5d7a2e689bd1b7b88d6b0979852c868afba9be98c88a0cd97e5b785b891df6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020092425155716296
+                "lotame_domain_check": 0.00020177562550443906
             },
             "exampleSites": [
-                "dexerto.fr",
-                "www.dexerto.com"
+                "dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "zqtk\\.net\\/leafgroup-eerfe3r",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "segment-data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "77a58a29aba7a28bbfaeb41d7506acd7aabb85cd2d29f24b0174d50a0b3a2539"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livestrong.com",
+                "www.techwalla.com"
             ]
         }
     ],
@@ -48,20 +71,25 @@
     "topInitiators": [
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.25
         },
         {
             "domain": "leafmedia.io",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1519.awsdns-61.org",
-        "ns-1716.awsdns-22.co.uk",
         "ns-370.awsdns-46.com",
-        "ns-529.awsdns-02.net"
+        "ns-529.awsdns-02.net",
+        "ns-1519.awsdns-61.org",
+        "ns-1716.awsdns-22.co.uk"
     ]
 }

@@ -11,7 +11,7 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "maxcdn\\.info\\/country_blocker\\.js",
@@ -21,8 +21,8 @@
                 "nginx-cf"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,7 +31,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ustream.to",
+                "olweb.tv",
+                "www.olweb.tv",
                 "www.ustream.to"
             ]
         },
@@ -53,8 +54,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ustream.to",
+                "olweb.tv",
                 "www.ustream.to"
+            ]
+        },
+        {
+            "rule": "maxcdn\\.info\\/channel\\/0384edef8761dcd7436696fe6a5bb71f-WOWOW-japan\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "742eb68812c2cf8404709e3db06252fd2af0b89dc08f17738a45978f947b0f74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olweb.tv",
+                "www.olweb.tv"
             ]
         }
     ],
@@ -64,15 +87,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9747899159663865
+        },
+        {
+            "domain": "ustream.to",
+            "prevalence": 0.01680672268907563
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.008403361344537815
         }
     ],
     "types": {
-        "Script": 2,
-        "Image": 2
+        "Script": 3,
+        "Image": 4
     },
     "nameservers": [
-        "lex.ns.cloudflare.com",
-        "elsa.ns.cloudflare.com"
+        "elsa.ns.cloudflare.com",
+        "lex.ns.cloudflare.com"
     ]
 }

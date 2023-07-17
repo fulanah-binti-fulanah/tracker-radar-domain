@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -22,17 +22,37 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geny.com",
+                "www.paris-turf.com"
+            ]
+        },
+        {
+            "rule": "pubsub\\.googleapis\\.com\\/v1\\/projects\\/betin-data-prod\\/topics\\/topic-betin-display-tracking-prod:publish",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "d243c09f797a083af26236639e1b7bec30634d533d06ca5e6792efb1f52cda3c"
+                "c59beef90b2e49efb1586fb084bbd8f45c993eff9d529524ceaf2e883d3ff071",
+                "d8943da7e89cd4a7bc2f9daa0ee807761bfa3d8e7ae48d2702ca322ca16940a8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "geny.com",
-                "www.geny.com"
+                "www.geny.com",
+                "www.paris-turf.com"
             ]
         }
     ],
@@ -49,7 +69,8 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 2,
+        "Fetch": 3
     },
     "nameservers": []
 }

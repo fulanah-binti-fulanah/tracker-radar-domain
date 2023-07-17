@@ -9,26 +9,35 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00211,
-    "sites": 21,
+    "prevalence": 0.00222,
+    "sites": 22,
     "subdomains": [
         "afd-b2c-iibozyiouoyi4.z01",
-        "pbsfd-ckd4hwf4f7hwabfb.z01",
         "voilaloginseconnecter",
         "cdnmen-g2cshcbzguekb0h8.z01",
         "p2pcontent-fd-prod",
-        "cdn2-effvafera4awcdfn.z01",
+        "cdn2-fixed-fvdwgqedg5defvey.z01",
         "ctg-afd-assets-prod-hugjasc7aqgtc2bq.z01",
+        "edcsso",
+        "matk-gndpgkawdecdgkcr.z01",
         "sd-tagging"
     ],
     "cnames": [
+        {
+            "original": "auth.edc.ca",
+            "resolved": "edcsso.azurefd.net"
+        },
+        {
+            "original": "ca.matk.temu.com",
+            "resolved": "matk-gndpgkawdecdgkcr.z01.azurefd.net"
+        },
         {
             "original": "cdn-men.aznude.com",
             "resolved": "cdnmen-g2cshcbzguekb0h8.z01.azurefd.net"
         },
         {
             "original": "cdn2.aznude.com",
-            "resolved": "cdn2-effvafera4awcdfn.z01.azurefd.net"
+            "resolved": "cdn2-fixed-fvdwgqedg5defvey.z01.azurefd.net"
         },
         {
             "original": "consumer.intel.com",
@@ -51,6 +60,10 @@
             "resolved": "voilaloginseconnecter.azurefd.net"
         },
         {
+            "original": "socialize.liquor.sobeys.com",
+            "resolved": "voilaloginseconnecter.azurefd.net"
+        },
+        {
             "original": "socialize.safeway.ca",
             "resolved": "voilaloginseconnecter.azurefd.net"
         },
@@ -67,21 +80,23 @@
     "resources": [
         {
             "rule": "azurefd\\.net\\/intelcorpb2c\\.onmicrosoft\\.com\\/B2C_1A_UNIFIEDLOGIN_SISU_STD_OIDC\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "afd-b2c-iibozyiouoyi4.z01"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "consumer.intel.com",
                     "resolved": "afd-b2c-iibozyiouoyi4.z01.azurefd.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "6cc166ef02a9b7a1651053c246e800bd52b64745651b618233e5bc576019487d"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -92,59 +107,15 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/openrtb2\\/auction",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pbsfd-ckd4hwf4f7hwabfb.z01"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f1ed8d5c7e83833eea3ca8cf33e7372f7ed9907b577a29b1d1ac7b780cf14f85"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "babylonbee.com",
-                "notthebee.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/cookie_sync",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pbsfd-ckd4hwf4f7hwabfb.z01"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e5ef281b6effe5396606f1dc7bc90fd6893e407fd9f344a557a433c8f5532aae"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "babylonbee.com",
-                "notthebee.com"
-            ]
-        },
-        {
             "rule": "azurefd\\.net\\/js\\/gigya\\.js",
-            "cookies": 0.000402,
+            "cookies": 0.000504,
             "fingerprinting": 2,
             "subdomains": [
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -152,6 +123,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -164,9 +139,10 @@
                 }
             ],
             "responseHashes": [
-                "67c21bee874ff052541031ca679c686f101ba21806b0425fced68b69a7b8964f",
-                "225c671d58013601f4be6fddba3e27d16fb41a64b0cae663ad036c7ad80a3bbf",
-                "9e3a02442f5ac36f34cb3175de84080f1f7f6c49949e327fef48171b096c3abd"
+                "c2ddedb899bb649ea6cbffb37a9326d3d55efb8c9f791188835dd0712d78eae6",
+                "31f7ef6248a1a6e722a34aed215a2a445524fefeea24b5316043570d3305955e",
+                "4d768758c1af99be9965c8e3866b7687d479c26c24249f0d0ce181409b0aeb14",
+                "778d1287847e5a0e966e8643c8615ce63a9713497b8384ce86af7986b3207453"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -174,20 +150,21 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.safeway.ca",
                 "www.sobeys.com"
             ]
         },
         {
             "rule": "azurefd\\.net\\/accounts\\.webSdkBootstrap",
-            "cookies": 0.000603,
+            "cookies": 0.000705,
             "fingerprinting": 0,
             "subdomains": [
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -195,6 +172,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -215,11 +196,12 @@
                 }
             ],
             "responseHashes": [
-                "f4270d1ba26cc5caf3310dd4f94782c4313930477c7db0485368ac86263c20e0",
-                "701e45961eebf2bc52ad1b4c9e346c97a1903ecc4c1041c12b394144d76b7a63",
-                "e765b5873c80582c7aa96d4b4dc9095387b3db638638c9a059c8fca2d5688797",
-                "80a442c5fdde62803fa05dd3db420492a5130f6e8f6ef22e3033c7f400ab017c",
-                "cd5b2a94739c12c817d140e47595ed9f535a29e1410910938b1a4e68ebbd5ebd"
+                "5bb576e7add051b5e10e4c7a34e7f92aac42987b4c9ab1ee01db351698672464",
+                "cb3b1602380203037202fc8414118921e5f0f2b13d84dec1e9459ad592e94c71",
+                "f3e4089f41143b1488b0e88dfc39eede57ec158235dfb59be64f2914d053ff5d",
+                "a631de3f3dc77ba1046411fbcf0af005837a190d1f0e18530181003a985f6fa5",
+                "72d1a726b0c1ce6c6f0a5f8bc4e82f2f5908e0afc7abf4f8f69005f8fa4fdccb",
+                "0c2134e273dc99d7ca559ffc70d9b6e96849df512840b1c496aaf5cfc0befee1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -227,6 +209,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.iga.net",
                 "www.safeway.ca",
                 "www.sobeys.com",
@@ -241,8 +224,8 @@
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -250,6 +233,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -262,7 +249,7 @@
                 }
             ],
             "responseHashes": [
-                "6255d3928bafd4525699c8ad2b13f6c57ddf7395ceeb0f6c225a09c10620ff49"
+                "b73f92763a5922ebc8aba6d5ace589e29620f29545b3f5281cb8a0b49447f25d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -270,6 +257,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.safeway.ca",
                 "www.sobeys.com"
             ]
@@ -282,8 +270,8 @@
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -291,6 +279,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -311,11 +303,12 @@
                 }
             ],
             "responseHashes": [
-                "1b93184b1dedc7f86213ee2c81891185a50e93b449c3a1a9a79d912e019d9bb4",
-                "3794068786c8b102a4793ac8b123924c69ff9f50078ea595a60bda2ff772e7da",
-                "d4aea6a29cd6001360482af3df17abe6e40b1dd2ebafff177e84052ae3de3288",
-                "9012a14ce6a3f4ace9d01b2a068f40a1cdb31be28f388cdedac5fc0402280fb5",
-                "76a1528b9867822633b8755c29b74aeaccfed4d1d425543cdf7bcc1ba2011a33"
+                "58205c3ababa40c6dc593e5a3014aa361dba1efe418ebc15d06c8063e03daa7a",
+                "16ab08ba44d6aa8bc368916f667cdd5fb19ed1425dc22159e8f0c1a53429f3a9",
+                "c5bd33291d5144e2c42cce5076aac1c21830226b8b63a2885aa89b91859cb989",
+                "552e06501e6ac4bb72f3b4b78bc428bffe53679e607ede6139054169a4cfb926",
+                "27511ebea36ca91d2c6e86c988b23132da41a635ec777733b8e190b6e4ad7c78",
+                "69c84b30e72a6eb45521ae319a76e555a1d048be902c479ee3d84ba901bc2a6a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -323,6 +316,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.iga.net",
                 "www.safeway.ca",
                 "www.sobeys.com",
@@ -331,14 +325,14 @@
         },
         {
             "rule": "azurefd\\.net\\/sdk\\.getConsentStatus",
-            "cookies": 0.000603,
+            "cookies": 0.000705,
             "fingerprinting": 0,
             "subdomains": [
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -346,6 +340,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -366,11 +364,12 @@
                 }
             ],
             "responseHashes": [
-                "6c9ae635aa35f7f813036cf48a075221af32d695127d7f75b1b4f1fd9a22f827",
-                "8023d5c77c7563bcf82f6d211ff812b34770a6eca3c3f797716dbc7d6185508d",
-                "b30ac00b3670fd65584e014f0195cb318fc8a6d4efc18ac3036e26c26cba810e",
-                "0356274e39e8559a59100a5d0a91ee0df49b1e752a261d843d04ffe7e3f94ed2",
-                "4c6366677a6d9e969594b44ef7089bcba39733a17e3f6d7a904a8acad25e324a"
+                "389eea09e138e4ffbf950b42a6077d66866791fb7a1e2c4497d2fd93ad9f5641",
+                "f828da09f3d86e805c3ea460d1b4161bda0fa937dea07288d60eff400c1b1ea6",
+                "71158621b144e67cd5a4f8393e0a5c91684872ea2b1887364ee2e8ec0c6da551",
+                "277d6d3334e84d72dd1e0f971919c7eb51e480c7a0bde66463642bfd2e3d5eb2",
+                "8100ff094e7feb4c0a2b3d12e14cc588798814b1c1d547b819e3550d1146b1f1",
+                "4e446856ad410f4024b2478d620114c0dd542b8a82f02fc7ce944e4f7e21939c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -378,6 +377,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.iga.net",
                 "www.safeway.ca",
                 "www.sobeys.com",
@@ -392,8 +392,8 @@
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -401,6 +401,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -421,11 +425,12 @@
                 }
             ],
             "responseHashes": [
-                "4ae911c852f1499cb24e96d409633e756a68e468e442d00a4458adb183692639",
-                "23d57d42fd5b30f1d156e291f90bd390739f23ffa2f869f08ca9f9c021216949",
-                "4c7c2a450f7a90f2bcb082f5f5051e83679c9d68b59aa546de0cbff7369d2f46",
-                "de2b49d83df6776a40bf12036616b920c2540b757d61ef2a56dac7203d620074",
-                "12eac404771c66927376af9a9c51eb387b2a61527d9c10661e14a550736730f7"
+                "6d13b819e1037efc0dcb178978c868c2b50b540072d3b50d92a1c43ea7a4321d",
+                "dfdd56e2ddafcf631141e2ddc8ae08b486445be8d3157de1cd4dbe17abdeea23",
+                "dadc107cba0a382173d61718e24c8ac26e16207e387a7739ea9b53708338850a",
+                "00ce1724a0b9653d9926137342e5e80d3f883d0bc9d676518c6b349adb334d5e",
+                "ede188bb04adfc0486ba630f4f777cf3dec271b8793db3ae5c71d49a084f7e11",
+                "131d25a0bd8ed22e6aa7b3499cefefbf581eed707c5526f682601a0a7b8b1428"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -433,6 +438,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.iga.net",
                 "www.safeway.ca",
                 "www.sobeys.com",
@@ -447,8 +453,8 @@
                 "voilaloginseconnecter"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000705,
             "cnames": [
                 {
                     "original": "socialize.foodland.ca",
@@ -456,6 +462,10 @@
                 },
                 {
                     "original": "socialize.freshco.com",
+                    "resolved": "voilaloginseconnecter.azurefd.net"
+                },
+                {
+                    "original": "socialize.liquor.sobeys.com",
                     "resolved": "voilaloginseconnecter.azurefd.net"
                 },
                 {
@@ -476,11 +486,12 @@
                 }
             ],
             "responseHashes": [
-                "f1c250c73ce1f68bac4fc6942094ce9cb3100f81b88c76e32b758c336f2b3729",
-                "dad86a03380ae6745e815e5a5f592281ebd2bd452824e7612e97335330f9a8b1",
-                "76b3eb08e9dd228482cf6100e2d7584430a9f3d38c968794bef5e1a91e3ee80f",
-                "1f467d0bcb7f86bfb7a8a04d597a00fbcbce87f860d10a32016f269cbfae9dbe",
-                "06a7b44bb379d0ca9e769f37a3b4e6b8fba0fca4f97aaf3f386c87413c97cdd7"
+                "c56a245c2fa378fcb74539e4adeef8968869b621bb66820ece4fe3204a128d9c",
+                "9434d2fc79aeebf3b4b8a4fff4d843505c5791656bd6eeeacd0d0004ef09d005",
+                "c87d6c8ebe04b552b0ed5feec0435bb54a90a5cd1ae43f37edc344410266b1e0",
+                "3f373f5fd75dfad6d808ab90678b421203637b1b51c32e2e5e9c0a686ec090af",
+                "53860d7ecd1c61624d91394cf9046aa8c5b93ca3693c6fdc73a52a03455df83e",
+                "6d52f7d6f8e2e51af197014951c57465f88d92451ce67e63cc03704988f74e4d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -488,6 +499,7 @@
             "exampleSites": [
                 "foodland.ca",
                 "freshco.com",
+                "liquor.sobeys.com",
                 "www.iga.net",
                 "www.safeway.ca",
                 "www.sobeys.com",
@@ -495,7 +507,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/mekhiphifer\\/slowburn\\/SlowBurn-2005-Phifer-HD-01_lo\\.mp4",
+            "rule": "azurefd\\.net\\/jozefpawlowski\\/girlstobuy\\/GirlsToBuy-2021-Pawlowski-UHD-03-lo\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -511,7 +523,7 @@
                 }
             ],
             "responseHashes": [
-                "3e0f9db5d3bdfe7a297bf05cd8f6e1129e2cfa7cf2bfbe251f6b06323177ea7f"
+                "aad34b26018edb2f56348f6b1cc1c91a66b376b079106aae872d2cf3d1536df1"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -544,11 +556,11 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/ge2tanbzfzwxana\\/ge2tanbzfzwxana-lo\\.mp4",
+            "rule": "azurefd\\.net\\/lindafiorentino\\/afterhours\\/AfterHours-Fiorentino-HD-3_lo\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn2-effvafera4awcdfn.z01"
+                "cdn2-fixed-fvdwgqedg5defvey.z01"
             ],
             "apis": {},
             "sites": 2,
@@ -556,11 +568,11 @@
             "cnames": [
                 {
                     "original": "cdn2.aznude.com",
-                    "resolved": "cdn2-effvafera4awcdfn.z01.azurefd.net"
+                    "resolved": "cdn2-fixed-fvdwgqedg5defvey.z01.azurefd.net"
                 }
             ],
             "responseHashes": [
-                "8e823aa1c9762be84bd8e18fa858d699399873f01ca213187e08d74e5108970f"
+                "afac7e318de0adea570c61e5e002665a66cd0d94001b97ebc5a8f0b7314836ed"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -668,7 +680,7 @@
                 }
             ],
             "responseHashes": [
-                "5ab2227e6f9b877dba69eb351205394ce30fc5e5c1372afe54b0b5d641a2356d"
+                "24282fc7bc12a53e160f675ae860222c7861306d398f7667e2f5943397581f30"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -676,6 +688,58 @@
             "exampleSites": [
                 "christies.com",
                 "www.christies.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fd1995d3-4618-487b-a046-22260db17e72\\/B2C_1A_AEM_SignUpOrSignIn_SAML\\/samlp\\/sso\\/login",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edcsso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "auth.edc.ca",
+                    "resolved": "edcsso.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edc.ca",
+                "www.edc.ca"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/web\\/wtm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matk-gndpgkawdecdgkcr.z01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ca.matk.temu.com",
+                    "resolved": "matk-gndpgkawdecdgkcr.z01.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "temu.com",
+                "www.temu.com"
             ]
         },
         {
@@ -690,7 +754,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "15e38e11cfdb9cc1c7163dd0da45d91d319757041632af0a551a4b3743f2376f"
+                "c54428e9b1cd33e74f834118ba53b7e54d6bdc4256d18b669cf3ff31a349e86e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -729,50 +793,43 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3103448275862069
+            "prevalence": 0.32142857142857145
         },
         {
             "domain": "login-seconnecter.ca",
-            "prevalence": 0.25862068965517243
+            "prevalence": 0.32142857142857145
         },
         {
             "domain": "azure.com",
-            "prevalence": 0.1724137931034483
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.1206896551724138
+            "prevalence": 0.17857142857142858
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.08620689655172414
+            "prevalence": 0.08928571428571429
         },
         {
-            "domain": "casalemedia.com",
-            "prevalence": 0.017241379310344827
-        },
-        {
-            "domain": "pubmatic.com",
-            "prevalence": 0.017241379310344827
+            "domain": "azureedge.net",
+            "prevalence": 0.05357142857142857
         },
         {
             "domain": "kwcdn.com",
-            "prevalence": 0.017241379310344827
+            "prevalence": 0.03571428571428571
         }
     ],
     "types": {
         "Document": 3,
-        "XHR": 28,
-        "Script": 10,
-        "Fetch": 6,
+        "Script": 12,
+        "XHR": 30,
+        "Fetch": 7,
         "Media": 4,
         "Stylesheet": 10,
+        "Ping": 2,
         "Image": 2
     },
     "nameservers": [
-        "ns3-37.azure-dns.org",
+        "ns1-37.azure-dns.com",
         "ns2-37.azure-dns.net",
         "ns4-37.azure-dns.info",
-        "ns1-37.azure-dns.com"
+        "ns3-37.azure-dns.org"
     ]
 }

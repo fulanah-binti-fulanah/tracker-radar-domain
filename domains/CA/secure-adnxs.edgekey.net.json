@@ -9,25 +9,29 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [],
     "cnames": [
         {
             "original": "acdn.adnxs.com",
             "resolved": "secure-adnxs.edgekey.net"
+        },
+        {
+            "original": "cdn.adnxs.com",
+            "resolved": "secure-adnxs.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "secure-adnxs\\.edgekey\\.net\\/ast\\/ast\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "acdn.adnxs.com",
@@ -35,13 +39,66 @@
                 }
             ],
             "responseHashes": [
-                "8d8d98bf03978db751f5ad59d041b9d234f0b6ceef68c76f7c57ba6cea4ebd1e"
+                "3b72af59b1d95751583f25bee44592d7026c8b9f6922fd5bfff7ecd961c6859c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "msn.com",
+                "www.msn.com",
+                "zone.msn.com"
+            ]
+        },
+        {
+            "rule": "secure-adnxs\\.edgekey\\.net\\/v\\/s\\/239\\/trk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "cdn.adnxs.com",
+                    "resolved": "secure-adnxs.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a9c49f9f526c232731b2ff9aa3e31b686b8b339bdd246bbf74f804c802f9755d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "www.msn.com",
+                "zone.msn.com"
+            ]
+        },
+        {
+            "rule": "secure-adnxs\\.edgekey\\.net\\/dmp\\/async_usersync\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "acdn.adnxs.com",
+                    "resolved": "secure-adnxs.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3d649c0b3e87fd6abcb983656a0a1b3923a2a59885c3a30538641fd4f7126cbd"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "www.msn.com",
                 "zone.msn.com"
             ]
         }
@@ -52,11 +109,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6470588235294118
+        },
+        {
+            "domain": "adnxs-simple.com",
+            "prevalence": 0.35294117647058826
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Document": 3
     },
     "nameservers": []
 }

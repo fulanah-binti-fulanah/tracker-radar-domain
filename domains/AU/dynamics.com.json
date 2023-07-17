@@ -9,14 +9,41 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
+        "8638fbfd59554b679ff778f16a755928.svc",
+        "4076422be0e747a18285d19d11183d24.svc",
         "download.pi"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "dynamics\\.com\\/t\\/w",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "8638fbfd59554b679ff778f16a755928.svc",
+                "4076422be0e747a18285d19d11183d24.svc"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "46bfb9a1323985fd7c764cdc776fe85cc63d2b0cd163167b1be8cdff985c7997"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grdc.com.au",
+                "www.nhp.com.au"
+            ]
+        },
         {
             "rule": "dynamics\\.com\\/sdk\\/web\\/msei-0\\.min\\.js",
             "cookies": 0.000201,
@@ -49,9 +76,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_msei": {
-                    "ttl": 31536015,
+                    "ttl": 31536012,
                     "length": 36,
-                    "prevalence": 0.00020058168689198675,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 }
             },
@@ -64,28 +91,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.001,
+    "cookies": 0.00111,
     "topInitiators": [
         {
             "domain": "azureedge.net",
-            "prevalence": 0.625
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.25
+            "prevalence": 0.5
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.125
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
-        "ns1-205.azure-dns.com",
+        "ns3-205.azure-dns.org",
         "ns2-205.azure-dns.net",
-        "ns4-205.azure-dns.info",
-        "ns3-205.azure-dns.org"
+        "ns1-205.azure-dns.com",
+        "ns4-205.azure-dns.info"
     ]
 }

@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [],
     "cnames": [
@@ -18,7 +18,7 @@
         {
             "rule": "cloud-cdn\\.co\\/app-costco\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [],
             "apis": {},
             "sites": 2,
@@ -55,9 +55,34 @@
                 }
             ],
             "responseHashes": [
-                "23a9dc90f7df6d2c96b1fb626598877c5d2a4b5df948d00336c614b6100e52f1"
+                "8f80f76ffeaf13cfdc02d5f0c176146ed4ccb585dc0a7a56873aee09bf3d139b"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.com"
+            ]
+        },
+        {
+            "rule": "cloud-cdn\\.co\\/www3-media\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media-cdn.costco.com",
+                    "resolved": "cloud-cdn.co"
+                }
+            ],
+            "responseHashes": [
+                "1c294bcc0dac299a7dc63db35f6db1398371f7b2f4b1f99eb53ca320659246e8"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -89,31 +114,6 @@
                 "costco.com",
                 "www.costco.com"
             ]
-        },
-        {
-            "rule": "cloud-cdn\\.co\\/www3-media\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "media-cdn.costco.com",
-                    "resolved": "cloud-cdn.co"
-                }
-            ],
-            "responseHashes": [
-                "a474274cd57e98cc022e308a1eb50c43d7909230ba0313f2b5a805307393613f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "costco.com",
-                "www.costco.com"
-            ]
         }
     ],
     "categories": [],
@@ -131,9 +131,9 @@
         "Image": 4
     },
     "nameservers": [
-        "ns-179.awsdns-22.com",
-        "ns-1386.awsdns-45.org",
         "ns-655.awsdns-17.net",
-        "ns-1665.awsdns-16.co.uk"
+        "ns-179.awsdns-22.com",
+        "ns-1665.awsdns-16.co.uk",
+        "ns-1386.awsdns-45.org"
     ]
 }

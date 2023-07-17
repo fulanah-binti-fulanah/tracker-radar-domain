@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "floor"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "249bf340cfd8d02b1c3f4e20ce62ba9ec4da50c4072431913ba35c74eb94d3c7"
@@ -36,18 +37,42 @@
             ]
         },
         {
-            "rule": "pbxai\\.com\\/95910a44-4e78-40ea-82d9-1d1c8f0b9575\\.js",
+            "rule": "pbxai\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "floor"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a83a3a05b8287c4cee0bc6e5eb0170367b8434cf31968949c102dae5fba7c2e2"
+                "345edab5f686fb37eefdf04d5e82b73f889388f40a9b02b102f275908d17577a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digitaltrends.com",
+                "www.procyclingstats.com"
+            ]
+        },
+        {
+            "rule": "pbxai\\.com\\/95910a44-4e78-40ea-82d9-1d1c8f0b9575\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5c49b609880985fd4663dded41826ff10438aff2272af2ed6ddc65e65946d839"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -64,23 +89,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
-        },
-        {
-            "domain": "htlbid.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.375
         },
         {
             "domain": "refinery89.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.375
+        },
+        {
+            "domain": "htlbid.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-847.awsdns-41.net",
         "ns-234.awsdns-29.com",
+        "ns-847.awsdns-41.net",
         "ns-1067.awsdns-05.org",
         "ns-1593.awsdns-07.co.uk"
     ]

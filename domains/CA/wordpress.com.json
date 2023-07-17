@@ -9,32 +9,89 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
+        "v0",
         "public-api",
         "r-login",
-        "stats",
         "videos.files"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "wordpress\\.com\\/js\\/next\\/videopress-iframe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "43408b83c4204c88df63426b6208c663b9fb4eb0c971eec1d039a2a0f577b0e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americancrimejournal.com",
+                "www.scienceofpeople.com"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/js\\/videojs\\/videopress-routes\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "v0"
+            ],
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.onLine": 2,
+                "Screen.prototype.orientation": 2,
+                "window.devicePixelRatio": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3cfe9e926c303ede3c797dc4fdfb554480c77adb624b96a7244884c622ed062"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americancrimejournal.com",
+                "www.scienceofpeople.com"
+            ]
+        },
+        {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
-            "cookies": 0.000402,
+            "cookies": 0.000403,
             "fingerprinting": 1,
             "subdomains": [
                 "public-api"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.vendor": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie getter": 2
+                "Date.prototype.getTime": 1
             },
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "82d7db2beaf0bed1398411ac2509f5fb4ca0564af181a066c77bec4b835b93bb"
@@ -43,56 +100,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "americancrimejournal.com",
                 "bikexchange.com",
                 "roserambles.org",
-                "sunnysjournal.com",
-                "wingsfortruth.info"
-            ]
-        },
-        {
-            "rule": "wordpress\\.com\\/geo\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "public-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "46f270bcec034754523f8f6223ef3595052f187a7e6169246d518ba50f1c93cb"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "globalnews.ca",
-                "ideas.ted.com"
-            ]
-        },
-        {
-            "rule": "wordpress\\.com\\/remote-login\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "r-login"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "2f022c26faec665e9d0d0be2dad65ac90bca21333494cb8374793fb9fff710f1",
-                "8fe9dd5010cc6fce1648983fdc57bf31b4d9dfd4872f4fb2cfde4428eba1eb0b"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "roserambles.org",
-                "sunnysjournal.com",
-                "wingsfortruth.info"
+                "sunnysjournal.com"
             ]
         },
         {
@@ -107,38 +118,36 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4623a80a453bddb1951cbbc9e1075767e301bf62034d8d6206c5a8c4aea85b00"
+                "b733dfbdc00c6eaed7349e4a654d619c52d6ce8b11828debe24a13284cb5bd6a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sunnysjournal.com",
-                "wingsfortruth.info"
+                "americancrimejournal.com",
+                "sunnysjournal.com"
             ]
         },
         {
-            "rule": "wordpress\\.com\\/e-202325\\.js",
+            "rule": "wordpress\\.com\\/remote-login\\.php",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "stats"
+                "r-login"
             ],
-            "apis": {
-                "Navigator.prototype.appName": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ab8517f3d5171dd42a8b9c22af6a2f944b41d00e7ea54ba02b4ed71a6c59e543"
+                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dramabeans.com",
-                "www.dramabeans.com"
+                "roserambles.org",
+                "sunnysjournal.com"
             ]
         },
         {
@@ -191,32 +200,32 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.717948717948718
+            "prevalence": 0.8160919540229885
         },
         {
             "domain": "wp.com",
-            "prevalence": 0.2564102564102564
+            "prevalence": 0.16091954022988506
         },
         {
             "domain": "videopress.com",
-            "prevalence": 0.02564102564102564
+            "prevalence": 0.022988505747126436
         }
     ],
     "types": {
-        "Document": 7,
-        "XHR": 4,
-        "Script": 2,
+        "Script": 4,
+        "Document": 6,
+        "XHR": 2,
         "Image": 2,
         "Media": 2
     },
     "nameservers": [
         "ns2.wordpress.com",
-        "ns4.wordpress.com",
         "ns1.wordpress.com",
+        "ns4.wordpress.com",
         "ns3.wordpress.com"
     ]
 }

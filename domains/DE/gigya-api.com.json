@@ -4,27 +4,28 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00201,
+    "sites": 20,
     "subdomains": [
+        "8434384",
+        "7528771",
+        "400482867624",
+        "653852678119",
+        "353607680710",
+        "124964306379",
+        "7905011",
+        "896509145315",
         "164374141857",
         "7942871",
-        "7528771",
-        "653852678119",
         "112843328967",
-        "353607680710",
-        "8553444",
-        "124964306379",
+        "319306803617",
         "8173854",
-        "7905011",
         "6954421",
         "297400543333",
         "598061811971",
         "7680151",
-        "8534914",
-        "124893829730",
-        "400482867624",
-        "896509145315"
+        "7214911",
+        "124893829730"
     ],
     "cnames": [
         {
@@ -44,12 +45,20 @@
             "resolved": "353607680710.gigya-api.com"
         },
         {
+            "original": "gigya.elgato.com",
+            "resolved": "353607680710.gigya-api.com"
+        },
+        {
             "original": "gigya.wago.com",
             "resolved": "124893829730.gigya-api.com"
         },
         {
             "original": "idp.uefa.com",
             "resolved": "7942871.gigya-api.com"
+        },
+        {
+            "original": "login-eu-prd-www.wacom.com",
+            "resolved": "7214911.gigya-api.com"
         },
         {
             "original": "login-eu.geberit.de",
@@ -80,20 +89,20 @@
             "resolved": "297400543333.gigya-api.com"
         },
         {
-            "original": "mitglied.frag-team-clean.de",
-            "resolved": "8553444.gigya-api.com"
-        },
-        {
-            "original": "mitglied.schwarzkopf.de",
-            "resolved": "8534914.gigya-api.com"
-        },
-        {
             "original": "myaccount.condor.com",
             "resolved": "112843328967.gigya-api.com"
         },
         {
+            "original": "socialid.wimbledon.com",
+            "resolved": "8434384.gigya-api.com"
+        },
+        {
             "original": "socialize-europe.yamaha.com",
             "resolved": "164374141857.gigya-api.com"
+        },
+        {
+            "original": "sso.gamescom.de",
+            "resolved": "319306803617.gigya-api.com"
         },
         {
             "original": "users.rtve.es",
@@ -103,31 +112,190 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "gigya-api\\.com\\/accounts\\.webSdkBootstrap",
-            "cookies": 0.00171,
+            "rule": "gigya-api\\.com\\/sdk\\.config\\.get",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "8434384",
+                "7528771",
+                "400482867624",
+                "653852678119",
+                "353607680710",
+                "124964306379",
+                "7905011",
+                "896509145315"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.00101,
+            "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
+                {
+                    "original": "login.abc.net.au",
+                    "resolved": "7528771.gigya-api.com"
+                },
+                {
+                    "original": "login.aldi-nord.de",
+                    "resolved": "400482867624.gigya-api.com"
+                },
+                {
+                    "original": "login.aldi-onlineshop.de",
+                    "resolved": "653852678119.gigya-api.com"
+                },
+                {
+                    "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "accounts.frankfurt-airport.com",
+                    "resolved": "124964306379.gigya-api.com"
+                },
+                {
+                    "original": "login.globus.de",
+                    "resolved": "7905011.gigya-api.com"
+                },
+                {
+                    "original": "gigya.account.wago.com",
+                    "resolved": "896509145315.gigya-api.com"
+                }
+            ],
+            "responseHashes": [
+                "60f528d7b84894948d88fd5b20165792b448353593a55eed7a855c887f368f75",
+                "35711c046b7df4a70a95ddcc076f1c44f5ccc0825021498bae1caa45d4a67834",
+                "d6a1c62944198f3000bd3353e45ce5c81763004d284c953723ab20d12e46a354",
+                "d9a8c950db0825c8fc97f99f3ec9aebd4fd643a21b76ee7413800db512ee04f0",
+                "221e8975c18325413fd2d2065d37e3f47064f7501c904d537ed91bb1e82a0aff",
+                "4e31963055c59f223d5327f997798921d6d5fb61b741e59b84abf9a198b6a802",
+                "60a3715a8b6a6dd56bcca48e73732eec2a2a1b7e7fdf11e20d25da49e71bc32f",
+                "ffd041ef3d42f4c59009911115438d1eafbce6fb1213ae3606ee5dbe2d6d8f3b",
+                "9c02e815d416ff247d17f706ad5508b012377dd474d4c3380f7e351a2eba2247"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "2023.wimbledon.com",
+                "www.abc.net.au",
+                "www.aldi-nord.de",
+                "www.aldi-onlineshop.de",
+                "www.corsair.com",
+                "www.frankfurt-airport.com",
+                "www.globus.de",
+                "www.wago.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "gigya-api\\.com\\/gs\\/webSdk\\/Api\\.aspx",
+            "cookies": 0.000604,
+            "fingerprinting": 1,
+            "subdomains": [
+                "8434384",
+                "7528771",
+                "400482867624",
+                "653852678119",
+                "353607680710",
+                "124964306379",
+                "7905011",
+                "896509145315"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000906,
+            "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
+                {
+                    "original": "login.abc.net.au",
+                    "resolved": "7528771.gigya-api.com"
+                },
+                {
+                    "original": "login.aldi-nord.de",
+                    "resolved": "400482867624.gigya-api.com"
+                },
+                {
+                    "original": "login.aldi-onlineshop.de",
+                    "resolved": "653852678119.gigya-api.com"
+                },
+                {
+                    "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "accounts.frankfurt-airport.com",
+                    "resolved": "124964306379.gigya-api.com"
+                },
+                {
+                    "original": "login.globus.de",
+                    "resolved": "7905011.gigya-api.com"
+                },
+                {
+                    "original": "gigya.account.wago.com",
+                    "resolved": "896509145315.gigya-api.com"
+                }
+            ],
+            "responseHashes": [
+                "dc788646d9aa4dd31406a4754c8eeff38ab23ffbc19d05688f326dc714f75225",
+                "fba22e07063d4c67b88d25d2efefdded727aa716d3975ab74f8264b447d44930",
+                "2fb9b46c38c6e673e2c2f267c2ab8f8b41dc495716efe6d443aa7ffcdc228353",
+                "49071b75a0fb0f859b21836f56c90b61261eb379e23dfd70bcb0b3a3b3a42e87",
+                "8be5b651ec6852463cc66e4219124893ee1addb5c3c584899e10618275e7df99",
+                "533e11362bc9b797867bfc907dba5eb9a0c0fc2d5a66c8308dec4eddc42ceaa2",
+                "5f5ecbdecf7322553284279ed31a635692829a1fa96bcdecf525d0f2c9ee57b5",
+                "4f60c20336b3d6108e6b7ce9f200416ba4d3e7947f6861c843bf7516ab1b143e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "www.abc.net.au",
+                "www.aldi-nord.de",
+                "www.aldi-onlineshop.de",
+                "www.corsair.com",
+                "www.frankfurt-airport.com",
+                "www.globus.de",
+                "www.wago.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "gigya-api\\.com\\/accounts\\.webSdkBootstrap",
+            "cookies": 0.00191,
+            "fingerprinting": 0,
+            "subdomains": [
+                "8434384",
                 "164374141857",
                 "7942871",
                 "7528771",
                 "653852678119",
                 "112843328967",
                 "353607680710",
-                "8553444",
                 "124964306379",
+                "319306803617",
                 "8173854",
                 "7905011",
                 "6954421",
                 "297400543333",
                 "598061811971",
                 "7680151",
-                "8534914",
+                "7214911",
                 "124893829730"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.00171,
+            "sites": 19,
+            "prevalence": 0.00191,
             "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
                 {
                     "original": "socialize-europe.yamaha.com",
                     "resolved": "164374141857.gigya-api.com"
@@ -153,12 +321,16 @@
                     "resolved": "353607680710.gigya-api.com"
                 },
                 {
-                    "original": "mitglied.frag-team-clean.de",
-                    "resolved": "8553444.gigya-api.com"
+                    "original": "gigya.elgato.com",
+                    "resolved": "353607680710.gigya-api.com"
                 },
                 {
                     "original": "accounts.frankfurt-airport.com",
                     "resolved": "124964306379.gigya-api.com"
+                },
+                {
+                    "original": "sso.gamescom.de",
+                    "resolved": "319306803617.gigya-api.com"
                 },
                 {
                     "original": "login-eu.geberit.de",
@@ -185,8 +357,8 @@
                     "resolved": "7680151.gigya-api.com"
                 },
                 {
-                    "original": "mitglied.schwarzkopf.de",
-                    "resolved": "8534914.gigya-api.com"
+                    "original": "login-eu-prd-www.wacom.com",
+                    "resolved": "7214911.gigya-api.com"
                 },
                 {
                     "original": "gigya.wago.com",
@@ -194,46 +366,113 @@
                 }
             ],
             "responseHashes": [
-                "1215ee030b35844e609db057e6f8e58bcd67dbd0677c8b90ac99d39cec578df1",
-                "ebc37ad338de5382dc669438d315fdf90bedb7f18bdb28835ad8c734ce6e847a",
-                "2513ade18963f60fc09cbd6b78fda8c1ac78ae5f5eaa748823852b9b841e7e68",
-                "924b8822c26cfde3ff15e1774c752524d98cd63cb06427348a7bb0e84a347106",
-                "dda143141fa6f1fba7efa88a53a1a20af834ff6e03c8acdd108341b56948bd2a",
-                "5b0749972d48aae301c57927205fc40203af94e952618927b9663c8753f6829a",
-                "cafdf5e4404b23ffa36a9b416fd494b00073629167e614daa294e094f2ea3d59",
-                "a0f6c48ada51ac939e57989afe3e990a23254db3257f827486e0f6928abfca12",
-                "ddf32441883d2739d089dcdac20cc3c89001bc0caaa98bc2b18bcae0e940b8db",
-                "dccfc167b2174773feee819f17255b2fd32e6498864cb00f6bf02b59f4cb048e",
-                "44248b0a526892d6aef64108efb9d5b5467d778c77095aae8c5168e837ccd2b3",
-                "3b774543ccec1e5a62aefe2415ca5f9286ffe5fde683a396545f20e6523429cd",
-                "a9a24a0c99f237e12b00d99d5076d83cbb0540f2586c7df30ceb23a30c9a3e9a",
-                "9f6bab2a0196914940fd6887eb784a7f14ec263ef0bdf5809672aff4815f6301",
-                "4d89f21f9bae9d24441e6726b07371342cff65441bdf4f61401703388add747e",
-                "2e0bfc3630a0956bfef0e61383c8f1a10770a6e7286da617725322d09e7516ab"
+                "4d5ee8081f9553b9d506c484718e9fef1b1a45317945fa512951ae22bc5cbdcf",
+                "b2931b7028ec58b6a569293ad6bcf9581097991be8e7416b4b9ae10de31804a5",
+                "b39fb2dee40067f486555d82a3bb86024223872cc52b651d5526d3691c62036d",
+                "e248b86e1cdece281b10fe2a90515314c846d6f1abb5c03d15b774c833e0761c",
+                "8fd64e5b067fd0e20246a53368dde894771f3366678ebfbade859c52b22a89a1",
+                "391b1dc0378dd8518681c75b6d012b0ee4f734b87d5b8e7a0f0d7f4f207dd606",
+                "ddea3f4a9c89a1bf03d4b39a4cf845ef405c746f340cd95dfd3d7b9c452c5b2b",
+                "99002f2dd07354c5298f5113c10a4c0caf7741e3ac80045bd2b80086f81ee31a",
+                "dda453c4d7b9330c8fad32635c746c92f953dd22fd8ae9053b243ab51f7098e7",
+                "4f7b4e2d9a5137e9bf78c419e293dcad7d11298b09565b4f0005ff9d3a09c086",
+                "be618f1182ac8bc336845e01a0a3501ff0677a449fae19d593dcc09c6991ad16",
+                "5cdd7032affd4fae9064158fa4dd26b5bdaf4d3dda5a4878872bf9df4c576d49",
+                "1cbd01832e5d81bdeb80413b5c22d8c514422653cddd72b0e1fde65896726f1d",
+                "40f25deaad8bfbe99dffda9bdd5f0f73e921b07d0c2148fddd7eba0691852271",
+                "576863e1952e83c18c9e24081ab36f94248d205d9e195e3a0c2ac56ce879489c",
+                "83ebcae51b2d7b15a0afc8286c7b08d34de0035d491fad6aaf5c022487a681cf",
+                "f64fbcb32dfbcbf7c4be95354b3d1ecbf39e3144c41d386a08ea73eca0de3e28",
+                "9159063694948bbd399e4bcb27ca06a739ae6d306c6187d02301b81f96868934"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010031096398836393
+                "IR_gbd": 0.0002014098690835851
             },
             "exampleSites": [
-                "yamaha.com",
+                "wimbledon.com",
+                "de.yamaha.com",
                 "de.uefa.com",
                 "www.abc.net.au",
                 "www.aldi-onlineshop.de",
                 "www.condor.com",
                 "www.corsair.com",
-                "www.frag-team-clean.de",
+                "www.elgato.com",
                 "www.frankfurt-airport.com",
+                "www.gamescom.de",
                 "www.geberit.de",
                 "www.globus.de",
                 "www.intimissimi.com",
                 "www.miele.de",
                 "www.repubblica.it",
                 "www.rtve.es",
-                "www.schwarzkopf.de",
-                "www.uefa.com",
-                "www.wago.com"
+                "www.wacom.com",
+                "www.wago.com",
+                "www.wimbledon.com"
+            ]
+        },
+        {
+            "rule": "gigya-api\\.com\\/gs\\/sso\\.htm",
+            "cookies": 0.000806,
+            "fingerprinting": 1,
+            "subdomains": [
+                "8434384",
+                "7528771",
+                "353607680710",
+                "124964306379",
+                "7905011",
+                "896509145315"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000806,
+            "cnames": [
+                {
+                    "original": "socialid.wimbledon.com",
+                    "resolved": "8434384.gigya-api.com"
+                },
+                {
+                    "original": "login.abc.net.au",
+                    "resolved": "7528771.gigya-api.com"
+                },
+                {
+                    "original": "gigya.corsair.com",
+                    "resolved": "353607680710.gigya-api.com"
+                },
+                {
+                    "original": "accounts.frankfurt-airport.com",
+                    "resolved": "124964306379.gigya-api.com"
+                },
+                {
+                    "original": "login.globus.de",
+                    "resolved": "7905011.gigya-api.com"
+                },
+                {
+                    "original": "gigya.account.wago.com",
+                    "resolved": "896509145315.gigya-api.com"
+                }
+            ],
+            "responseHashes": [
+                "6b89a7cb651690d329ea1119dd40d36ca837b684cfa5e8edd1be3f2f7c297d1a",
+                "5f24c8edfb9048527e13f5a496647d3a88938e796faf0f3e4b4d963c171be370",
+                "82e49a83e39127c6ff147edb660da9227014cf8516505d049322d3baecbae314",
+                "d2341a94b7dfdf8ebc32cf4b34d0d6c15bb4c6713c5a0d59036ad2b3074eec7f",
+                "22e980e0414d1c2117376ad330fbfd76eda22cf536be9bd88dac30750f6a2b1f",
+                "1dffde6dad0363686ca903be31b18b49e28ad3cdb19df216e26595bb082d331c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wimbledon.com",
+                "2023.wimbledon.com",
+                "www.abc.net.au",
+                "www.corsair.com",
+                "www.frankfurt-airport.com",
+                "www.globus.de",
+                "www.wago.com",
+                "www.wimbledon.com"
             ]
         },
         {
@@ -258,7 +497,7 @@
                 }
             ],
             "responseHashes": [
-                "ecc79a88a3410106f9a2149714f9253b0a7bafb9eaf114bd442e900edd0bd1b7"
+                "be8772613e7d95d70df06ad8ddb1e41e9fb99bb0d2d0898014056833e45601b5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -266,196 +505,6 @@
             "exampleSites": [
                 "yamaha.com",
                 "www.globus.de"
-            ]
-        },
-        {
-            "rule": "gigya-api\\.com\\/sdk\\.config\\.get",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "7528771",
-                "400482867624",
-                "653852678119",
-                "353607680710",
-                "124964306379",
-                "7905011",
-                "896509145315"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000802,
-            "cnames": [
-                {
-                    "original": "login.abc.net.au",
-                    "resolved": "7528771.gigya-api.com"
-                },
-                {
-                    "original": "login.aldi-nord.de",
-                    "resolved": "400482867624.gigya-api.com"
-                },
-                {
-                    "original": "login.aldi-onlineshop.de",
-                    "resolved": "653852678119.gigya-api.com"
-                },
-                {
-                    "original": "gigya.corsair.com",
-                    "resolved": "353607680710.gigya-api.com"
-                },
-                {
-                    "original": "accounts.frankfurt-airport.com",
-                    "resolved": "124964306379.gigya-api.com"
-                },
-                {
-                    "original": "login.globus.de",
-                    "resolved": "7905011.gigya-api.com"
-                },
-                {
-                    "original": "gigya.account.wago.com",
-                    "resolved": "896509145315.gigya-api.com"
-                }
-            ],
-            "responseHashes": [
-                "9d1b8a74b80a6f40ed5676f2fffb9f1f53da679ffa8a8e90a7c86f9412209094",
-                "dc541f6e3d92727a6a3c047f3147d63b9894c0464d0612ab8e24bfb6c5f23672",
-                "78930f0c70cba0fb017a64a0745a5e870359f55a27dfbced11554140361fcd0c",
-                "04b9119045c32f4b95fcee202579495db73dc345d8480766bc10c4fc2bfdc5e9",
-                "50a17037b66b884d885b684f3b79aaaf31bae7d75fd1d2088f3b585f71c2fd83",
-                "e10eb695ec0f8d9b3ce2d3e56d85684ccd4bb13fb7637c6c81e1e314995babfe",
-                "61f3de2fe325b449a81b5f7216338fbcbef44e335a6f58a4f44f2c5f94037bf8"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abc.net.au",
-                "www.abc.net.au",
-                "www.aldi-nord.de",
-                "www.aldi-onlineshop.de",
-                "www.corsair.com",
-                "www.frankfurt-airport.com",
-                "www.globus.de",
-                "www.wago.com"
-            ]
-        },
-        {
-            "rule": "gigya-api\\.com\\/gs\\/webSdk\\/Api\\.aspx",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
-            "subdomains": [
-                "7528771",
-                "400482867624",
-                "653852678119",
-                "353607680710",
-                "124964306379",
-                "7905011",
-                "896509145315"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
-            "cnames": [
-                {
-                    "original": "login.abc.net.au",
-                    "resolved": "7528771.gigya-api.com"
-                },
-                {
-                    "original": "login.aldi-nord.de",
-                    "resolved": "400482867624.gigya-api.com"
-                },
-                {
-                    "original": "login.aldi-onlineshop.de",
-                    "resolved": "653852678119.gigya-api.com"
-                },
-                {
-                    "original": "gigya.corsair.com",
-                    "resolved": "353607680710.gigya-api.com"
-                },
-                {
-                    "original": "accounts.frankfurt-airport.com",
-                    "resolved": "124964306379.gigya-api.com"
-                },
-                {
-                    "original": "login.globus.de",
-                    "resolved": "7905011.gigya-api.com"
-                },
-                {
-                    "original": "gigya.account.wago.com",
-                    "resolved": "896509145315.gigya-api.com"
-                }
-            ],
-            "responseHashes": [
-                "b402a71b50f35d99600697e2310a08ac7051a1cc70cc6adf9ce630fade30fc27",
-                "1c3c57bd637a3f9a3f0c8d9e48c011b1bb7a42af058c3fbb159dceadf8488ee6",
-                "b139a641fc523d40d33049055ac911e7d6a2dc39463c137cc1f95c2edd87c5ae",
-                "705fa3871a3c9afa511906fd57449116d988dcf3a83aaee3d3a645eca613b858",
-                "8afde6ec8872d2f5a8f8eb69b9bf7e346fd26bd89f4acdedaf7129870e7b5372",
-                "a5abf4342f3628efac2e5ad9673a8a5cdbb165bb34acfd7b720681be465bf154"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abc.net.au",
-                "www.aldi-nord.de",
-                "www.aldi-onlineshop.de",
-                "www.corsair.com",
-                "www.frankfurt-airport.com",
-                "www.globus.de",
-                "www.wago.com"
-            ]
-        },
-        {
-            "rule": "gigya-api\\.com\\/gs\\/sso\\.htm",
-            "cookies": 0.000301,
-            "fingerprinting": 1,
-            "subdomains": [
-                "7528771",
-                "353607680710",
-                "124964306379",
-                "7905011",
-                "896509145315"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
-            "cnames": [
-                {
-                    "original": "login.abc.net.au",
-                    "resolved": "7528771.gigya-api.com"
-                },
-                {
-                    "original": "gigya.corsair.com",
-                    "resolved": "353607680710.gigya-api.com"
-                },
-                {
-                    "original": "accounts.frankfurt-airport.com",
-                    "resolved": "124964306379.gigya-api.com"
-                },
-                {
-                    "original": "login.globus.de",
-                    "resolved": "7905011.gigya-api.com"
-                },
-                {
-                    "original": "gigya.account.wago.com",
-                    "resolved": "896509145315.gigya-api.com"
-                }
-            ],
-            "responseHashes": [
-                "31ccdef4c99794a9012892bbfa4779a1c313b5c7d042228a3b6832464c1bc653",
-                "a8987c413cfe113393a5a14ad1d5b6a2d2c84b9c0465f64f9d6940bf1c48fa75",
-                "9c95af079ca45ff2a0af6a7f922db9d70217f34f2e64e94621c0924a11385fc4",
-                "00670876db7076d9c6382357ae8e7c347992a0fd41fe6c1a5db3d07e578717bb"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abc.net.au",
-                "www.abc.net.au",
-                "www.corsair.com",
-                "www.frankfurt-airport.com",
-                "www.globus.de",
-                "www.wago.com"
             ]
         },
         {
@@ -480,7 +529,7 @@
                 }
             ],
             "responseHashes": [
-                "5f9eec8b167ebb4b8c42ac8d5d73223a0b484bb81d8d69e51a00b800be55789d"
+                "d2601afc467df0c221d9a163c4014c06e7e3aec14e25eb4ebb68a7f7c7a0e69f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -493,35 +542,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00171,
+    "cookies": 0.00191,
     "topInitiators": [
         {
             "domain": "gigya.com",
-            "prevalence": 0.9433962264150944
+            "prevalence": 0.9594594594594594
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.03773584905660377
+            "prevalence": 0.02702702702702703
         },
         {
             "domain": "dynatrace.com",
-            "prevalence": 0.018867924528301886
+            "prevalence": 0.013513513513513514
         }
     ],
     "types": {
-        "XHR": 19,
-        "Fetch": 8,
-        "Document": 13,
+        "Fetch": 10,
+        "Document": 17,
+        "XHR": 21,
         "Script": 2
     },
     "nameservers": [
-        "ns-20.awsdns-02.com",
-        "ns-594.awsdns-10.net",
-        "ns-2039.awsdns-62.co.uk",
-        "ns-1502.awsdns-59.org",
-        "dns1.p06.nsone.net",
         "dns2.p06.nsone.net",
+        "ns-594.awsdns-10.net",
         "dns3.p06.nsone.net",
-        "dns4.p06.nsone.net"
+        "ns-2039.awsdns-62.co.uk",
+        "dns1.p06.nsone.net",
+        "dns4.p06.nsone.net",
+        "ns-1502.awsdns-59.org",
+        "ns-20.awsdns-02.com"
     ]
 }

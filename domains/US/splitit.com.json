@@ -4,63 +4,177 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
         "upstream.production",
+        "upstream.sandbox",
         "translations-v2.production",
-        "externals",
-        "shop-server"
+        "translations-v2.sandbox",
+        "shop-server",
+        "externals"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "splitit\\.com\\/v1\\/dist\\/upstream-messaging\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000545,
             "fingerprinting": 1,
             "subdomains": [
-                "upstream.production"
+                "upstream.production",
+                "upstream.sandbox"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2
+                "Date.prototype.getTime": 8,
+                "Navigator.prototype.product": 8,
+                "Navigator.prototype.userAgent": 8
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "0402c0069a5bdf80fa272d7602b459d4b339c874a4c7e227b7b8702507c1b50c"
+                "0402c0069a5bdf80fa272d7602b459d4b339c874a4c7e227b7b8702507c1b50c",
+                "9f3391f4bed4b0f4a766a75859798bb8396dbd9a539d8a260e69e9139be0d0fc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "bedjet.com",
+                "echelonfit.com",
+                "joovv.com",
+                "mitoredlight.com",
                 "mypatriotsupply.com",
-                "www.ima-usa.com"
+                "pittsburghsprayequip.com",
+                "www.beprepared.com",
+                "www.mypatriotsupply.com"
             ]
         },
         {
             "rule": "splitit\\.com\\/api\\/v1\\/translations",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "translations-v2.production",
+                "translations-v2.sandbox"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "8004be4139418668236a3c877ed935a1ce5b29f7c5e78741d72752ea59b1fe4f",
+                "0f6dd749198b9c923eea88f04090e4e86b6d6baf45eb4abd7dc28dc74825bd51",
+                "e71eff0a5afee3d10fc871f63196c1ceb27d6983a05d65d3fc961040bdfda770",
+                "47bfc5f24e8477db9d3e2965b7e4374be79390dd7bac88151d444ecfff93610d",
+                "0bf2e86b987c19bd0d990f4c46469f9012ee3d988bf122d6402527f4cd2e473f",
+                "d5678239f2e0d186c38fc234d3d320de07a45c00cfa0097f36202908ecfc7436",
+                "eed9a0b600b650cf5253dd6c412fd5fa6e819b7921aaff65cdbebf87694368c3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bedjet.com",
+                "echelonfit.com",
+                "joovv.com",
+                "mitoredlight.com",
+                "mypatriotsupply.com",
+                "pittsburghsprayequip.com",
+                "www.beprepared.com",
+                "www.mypatriotsupply.com"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/get-base-upstream-messaging-script",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop-server"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magnusonsuperchargers.com",
+                "novaalab.com",
+                "www.ima-usa.com"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/get-product-upstream-messaging-script",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop-server"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "fae52ce79962ac5219d0c0930e1c84ee1cfb39c69447f542e646f83ea3a1529f",
+                "0c8bf5115e15cee6fd0978c919376ae6d9e0bd5b572f828b545fb7a3230b7ba0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magnusonsuperchargers.com",
+                "novaalab.com",
+                "www.ima-usa.com"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/get-cart-upstream-messaging-script",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "translations-v2.production"
+                "shop-server"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0dd77b2914ab1ebb8c698e4ec65a3c06f6382bcc6f0faa8926258e59bd51809f"
+                "4da1f77e8aeac7c5984c93b11442cca5fb586c8a30e1d7135b17b9b445ac094c"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mypatriotsupply.com",
-                "www.ima-usa.com"
+                "magnusonsuperchargers.com",
+                "novaalab.com"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/get-footer-upstream-messaging-script",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c3a3451d25165402356f2d7afc4f6e3ffc6e607aff52198ee5d40b4c408a5776"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magnusonsuperchargers.com",
+                "novaalab.com"
             ]
         },
         {
@@ -82,77 +196,33 @@
                 "ima-usa.com",
                 "www.ima-usa.com"
             ]
-        },
-        {
-            "rule": "splitit\\.com\\/get-base-upstream-messaging-script",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "shop-server"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7107ab65e81bb30c5de8f6394dcab4837fb64fa49a3aa494bce293e700b8b4bd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ima-usa.com",
-                "www.ima-usa.com"
-            ]
-        },
-        {
-            "rule": "splitit\\.com\\/get-product-upstream-messaging-script",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "shop-server"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0c8bf5115e15cee6fd0978c919376ae6d9e0bd5b572f828b545fb7a3230b7ba0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ima-usa.com",
-                "www.ima-usa.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.000109,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.8648648648648649
         },
         {
             "domain": "shopifyorderlimits.s3.amazonaws.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.10810810810810811
         },
         {
-            "domain": "shopify.com",
-            "prevalence": 0.16666666666666666
+            "domain": "d2fj3s7h83rb61.cloudfront.net",
+            "prevalence": 0.02702702702702703
         }
     ],
     "types": {
-        "Script": 8,
-        "Fetch": 2
+        "Script": 20,
+        "Fetch": 8
     },
     "nameservers": [
         "ns-177.awsdns-22.com",
         "ns-762.awsdns-31.net",
-        "ns-1179.awsdns-19.org",
-        "ns-1563.awsdns-03.co.uk"
+        "ns-1563.awsdns-03.co.uk",
+        "ns-1179.awsdns-19.org"
     ]
 }

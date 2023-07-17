@@ -4,47 +4,51 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "location"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "postscript\\.io\\/sdk\\.bundle\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000403,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.localStorage": 1
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "18c46c40e0dea3c5254b4ee200f5b2c675a1b7b0fcae73f699dbe3a80cb788b2"
+                "0a2d49cd904fb0d9f926f9fdad6e69ca0a2eb208f50078434924ece86586489d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_ps_session": {
-                    "ttl": 86430,
+                    "ttl": 86411,
                     "length": 21,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00040286030818813577,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "drsquatch.com",
-                "hush.ca"
+                "hush.ca",
+                "opusartsupplies.com",
+                "perfectketo.com",
+                "www.epicgardening.com"
             ]
         },
         {
@@ -55,8 +59,8 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "ed455c446a7d5dce7d54021f47950e3572c696b6c5e822d8ee8facf0a5a3e91e"
@@ -64,32 +68,120 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ps_session": 0.0002008838891120932,
-                "IR_gbd": 0.0001004419445560466
+                "IR_gbd": 0.00010071507704703394,
+                "_ps_session": 0.00040286030818813577
             },
             "exampleSites": [
-                "drsquatch.com",
-                "hush.ca"
+                "hush.ca",
+                "opusartsupplies.com",
+                "perfectketo.com",
+                "www.epicgardening.com"
+            ]
+        },
+        {
+            "rule": "postscript\\.io\\/desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "593c4a999003f17278d24aa38f1534710e4f796d236cef1cfcc051e506ef8850"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hush.ca",
+                "opusartsupplies.com",
+                "perfectketo.com",
+                "www.epicgardening.com"
+            ]
+        },
+        {
+            "rule": "postscript\\.io\\/desktop\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "6cb1b314379e605d0d97516a2d50f17f693b973fc919e41bfa15b6f900753fa1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00010071507704703394,
+                "_ps_session": 0.00040286030818813577
+            },
+            "exampleSites": [
+                "hush.ca",
+                "opusartsupplies.com",
+                "perfectketo.com",
+                "www.epicgardening.com"
+            ]
+        },
+        {
+            "rule": "postscript\\.io\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "location"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8bd69d0dddab8bc553263c254faad469c2a3e08bfb0b737e763f7feabe571225"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "perfectketo.com",
+                "www.epicgardening.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000403,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.625
+        },
+        {
             "domain": "shopify.com",
-            "prevalence": 1
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 2
+        "Script": 8,
+        "Document": 4,
+        "Stylesheet": 4,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-1021.awsdns-63.net",
         "ns-448.awsdns-56.com",
-        "ns-2022.awsdns-60.co.uk",
         "ns-1106.awsdns-10.org",
-        "ns-1021.awsdns-63.net"
+        "ns-2022.awsdns-60.co.uk"
     ]
 }

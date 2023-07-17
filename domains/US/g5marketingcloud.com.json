@@ -4,15 +4,86 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
+        "inventory",
         "call-tracking",
         "snowplowcollection"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "g5marketingcloud\\.com\\/api\\/v3\\/client_state_data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inventory"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7df030d92e67838b32a6e08b081edcf9a302451749ae66d5073200d84d8bbab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hgliving.com",
+                "www.missionrockresidential.com"
+            ]
+        },
+        {
+            "rule": "g5marketingcloud\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inventory"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hgliving.com",
+                "www.missionrockresidential.com",
+                "www.morgan-properties.com",
+                "www.storquest.com"
+            ]
+        },
+        {
+            "rule": "g5marketingcloud\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inventory"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f3eb63090b1ed2066bed10209fe579a36a08098ac01081a1262a4e108cc2e9b4",
+                "643a7790d73b9d8bce8c10a74e9df12cbc134d7464574d6669bd9ec717752dbd",
+                "885c545dc03d839125230fcfec6ee5a2a6123f00875092a99c59dd67a43f96f3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hgliving.com",
+                "www.missionrockresidential.com",
+                "www.morgan-properties.com",
+                "www.storquest.com"
+            ]
+        },
         {
             "rule": "g5marketingcloud\\.com\\/api\\/v1\\/phone_numbers",
             "cookies": 0,
@@ -21,30 +92,38 @@
                 "call-tracking"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "d7e395bfa17cb858d5c83f9e29ceba813b22dbbd4f7cc2d6ccfca67bb7efde3f"
+                "0155e8ad8f79614930b5487a0667e43f6a861fcea053a34d0607329ed9039539",
+                "22da004a1303774ae33f9a63bd9360b9299f1a4ab76a1d30ee11ee6a73d5d905",
+                "f3aea1b948558c9f63af79acd72d6ab01e8d279d50039531dee5c9ae58f6d15d",
+                "245c5a4d7d7c6d0986942196631012353f8e639fb5544e158a7ef6296e0e7bd7",
+                "dd3ba1549a403033ae1760a24c64369050b8b5e9d6f6d3bc6038dbb244db87c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "morgan-properties.com",
-                "www.morgan-properties.com"
+                "hgliving.com",
+                "www.merrillgardens.com",
+                "www.missionrockresidential.com",
+                "www.morgan-properties.com",
+                "www.olympusproperty.com",
+                "www.storquest.com"
             ]
         },
         {
             "rule": "g5marketingcloud\\.com\\/com\\.google\\.analytics\\/v1",
-            "cookies": 0.0000136,
+            "cookies": 0.0000408,
             "fingerprinting": 0,
             "subdomains": [
                 "snowplowcollection"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
@@ -53,27 +132,45 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "morgan-properties.com",
-                "www.morgan-properties.com"
+                "hgliving.com",
+                "www.merrillgardens.com",
+                "www.missionrockresidential.com",
+                "www.morgan-properties.com",
+                "www.olympusproperty.com",
+                "www.storquest.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000477,
     "topInitiators": [
         {
+            "domain": "g5dxm.com",
+            "prevalence": 0.43478260869565216
+        },
+        {
+            "domain": "google-analytics.com",
+            "prevalence": 0.21739130434782608
+        },
+        {
             "domain": "honeybadger.io",
-            "prevalence": 1
+            "prevalence": 0.21739130434782608
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.13043478260869565
         }
     ],
     "types": {
-        "XHR": 4
+        "XHR": 14,
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns3.dnsimple.com",
-        "ns2.dnsimple.com",
+        "ns4.dnsimple.com",
         "ns1.dnsimple.com",
-        "ns4.dnsimple.com"
+        "ns2.dnsimple.com",
+        "ns3.dnsimple.com"
     ]
 }

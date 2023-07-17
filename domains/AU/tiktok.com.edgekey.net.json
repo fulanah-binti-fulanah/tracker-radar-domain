@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "mcs-sg",
+        "web-va",
+        "web-i18n",
         "mssdk-va"
     ],
     "cnames": [
@@ -23,6 +25,14 @@
         {
             "original": "mssdk-va.tiktok.com",
             "resolved": "mssdk-va.tiktok.com.edgekey.net"
+        },
+        {
+            "original": "web-i18n.tiktok.com",
+            "resolved": "web-i18n.tiktok.com.edgekey.net"
+        },
+        {
+            "original": "web-va.tiktok.com",
+            "resolved": "web-va.tiktok.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
@@ -43,8 +53,10 @@
                     "resolved": "mcs-sg.tiktok.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "2e4db1b9878a9a561c858ac0212d57a19ee946a3c36c16d7004f22e7eb0c3d35"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -53,25 +65,30 @@
             ]
         },
         {
-            "rule": "tiktok\\.com\\.edgekey\\.net\\/v1\\/list",
-            "cookies": 0,
+            "rule": "tiktok\\.com\\.edgekey\\.net\\/passport\\/web\\/store_region\\/",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "mcs-sg"
+                "web-va",
+                "web-i18n"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "mcs-sg.tiktok.com",
-                    "resolved": "mcs-sg.tiktok.com.edgekey.net"
+                    "original": "web-va.tiktok.com",
+                    "resolved": "web-va.tiktok.com.edgekey.net"
+                },
+                {
+                    "original": "web-i18n.tiktok.com",
+                    "resolved": "web-i18n.tiktok.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "84dd4a0028d4a61c74848f562967fab38a368e206518383c705e577e67f45946"
+                "9e2508b39b82e8549f7ce8243a19a0f4c4d09cade72e073130caa51b00c4bcba"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -109,7 +126,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "tiktokcdn.com",
@@ -117,8 +134,8 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "XHR": 4
+        "XHR": 4,
+        "Fetch": 2
     },
     "nameservers": []
 }

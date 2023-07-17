@@ -7,63 +7,120 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
-        "smetrics"
+        "sso",
+        "smetrics",
+        "ometrics"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "optum\\.com\\/ext\\/as\\/authorization\\.oauth2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myuhcvision.com",
+                "www.optumrx.com"
+            ]
+        },
+        {
             "rule": "optum\\.com\\/id",
-            "cookies": 0.0000272,
+            "cookies": 0.0000408,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "3ffbe04291bf18341a7741b56f0ea873d452f31981f499002b74cff6914d1bac",
-                "fca6c0b8e994d19932465b39d5763e3965b277a423768faaf3c5cef36b3097be"
+                "a2271d9d057ac2008bb12f860bbe5f576e85d8182e805ccf0334d618d00eb3c9",
+                "d15b16183d51918729b8a6e8e89000b38f555bffc39ecb5ef0239c0d877b04df",
+                "ad5e8fbe808b3b6b44fe8ba4cc1a454e0e7e234a1f6ba6083d7aa67f32be9307",
+                "8b4d1b198cab204f8fdcac99290db216540b5e06003cf8e542b1d6507ad54160",
+                "8340cb61ec2c6214b0d93a1fa38cf83633310d8c85b7685b6f065c2096c43eca"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_sdsat_Draft Marketing Cloud ID": 0.000006807583648184077
+            },
             "exampleSites": [
                 "optumrx.com",
+                "www.optumpersonalcare.com",
                 "www.optumrx.com",
+                "www.uhcdental.com",
                 "www.uhcprovider.com",
                 "www.unitedhealthgroup.com"
+            ]
+        },
+        {
+            "rule": "optum\\.com\\/b\\/ss\\/uhgoptumrxprod,uhgoptumglobalprod\\/1\\/JS-1\\.6\\.4-D6I2\\/s7701834029107",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smetrics",
+                "ometrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aaeb5aa7aa053a3b7b8fc76adfc05e6ce7fa66de54aae4718dda6e1763c56e3f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_sdsat_Draft Marketing Cloud ID": 0.000013615167296368154,
+                "s_ppn": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "optumpersonalcare.com",
+                "www.optumpersonalcare.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.5806451612903226
         },
         {
             "domain": "first party",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.25806451612903225
         },
         {
             "domain": "healthsafe-id.com",
-            "prevalence": 0.13636363636363635
+            "prevalence": 0.0967741935483871
         },
         {
-            "domain": "akamaized.net",
-            "prevalence": 0.045454545454545456
+            "domain": "gbqofs.com",
+            "prevalence": 0.06451612903225806
         }
     ],
     "types": {
-        "XHR": 4
+        "Document": 2,
+        "XHR": 6,
+        "Image": 2
     },
     "nameservers": [
         "epla2.corpnamesvcs.com",

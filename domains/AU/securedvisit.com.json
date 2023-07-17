@@ -9,16 +9,70 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
+    "prevalence": 0.00101,
     "sites": 10,
     "subdomains": [
-        "aarp.track",
         "track",
-        "nbcu.track"
+        "nbcu.track",
+        "aarp.track"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "securedvisit\\.com\\/js\\/sv\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "track",
+                "nbcu.track"
+            ],
+            "apis": {
+                "window.localStorage": 8,
+                "window.sessionStorage": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "Date.prototype.getTimezoneOffset": 8,
+                "window.outerWidth": 8,
+                "window.outerHeight": 8,
+                "Screen.prototype.availWidth": 8,
+                "Screen.prototype.availHeight": 8,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "d02f3e08886d4db0f4c275e62781595e4c42647606e02b575d215d50ef11326f",
+                "f9df1da2e337cc44e3d87a5dc93f8271933b5ee914c7046ef02e281014b6cda0",
+                "c6bd0fb654024389e2f34c76ee3d256948f146ad7d5eb251887c82d6f360f520"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_svsid": {
+                    "ttl": 31536007,
+                    "length": 32,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tesla.com",
+                "www.christianbook.com",
+                "www.cnbc.com",
+                "www.msnbc.com",
+                "www.nbcnews.com",
+                "www.osprey.com",
+                "www.tesla.com",
+                "www.today.com"
+            ]
+        },
         {
             "rule": "securedvisit\\.com\\/",
             "cookies": 0,
@@ -37,65 +91,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_svsid": 0.00020058168689198675
+                "_svsid": 0.00020126798832645668
             },
             "exampleSites": [
                 "aarp.org",
                 "www.osprey.com"
-            ]
-        },
-        {
-            "rule": "securedvisit\\.com\\/js\\/sv\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 3,
-            "subdomains": [
-                "track",
-                "nbcu.track"
-            ],
-            "apis": {
-                "window.localStorage": 8,
-                "window.sessionStorage": 8,
-                "Navigator.prototype.cookieEnabled": 8,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.availHeight": 8,
-                "Screen.prototype.availWidth": 8,
-                "Screen.prototype.colorDepth": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTimezoneOffset": 8,
-                "window.outerWidth": 8,
-                "window.outerHeight": 8
-            },
-            "sites": 9,
-            "prevalence": 0.000903,
-            "cnames": [],
-            "responseHashes": [
-                "f9df1da2e337cc44e3d87a5dc93f8271933b5ee914c7046ef02e281014b6cda0",
-                "634dce8822f83208b1799f59246e30592f4042e569602a286df30c2cd37927b0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_svsid": {
-                    "ttl": 31536008,
-                    "length": 32,
-                    "prevalence": 0.00020058168689198675,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "christianbook.com",
-                "www.cnbc.com",
-                "www.heart.org",
-                "www.msnbc.com",
-                "www.nbcnews.com",
-                "www.nbc.com",
-                "www.osprey.com",
-                "www.tesla.com",
-                "www.today.com"
             ]
         },
         {
@@ -115,7 +115,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_svsid": 0.00020058168689198675
+                "_svsid": 0.00020126798832645668
             },
             "exampleSites": [
                 "christianbook.com",
@@ -131,34 +131,34 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "mparticle.com",
-            "prevalence": 0.2857142857142857
+            "domain": "rkdms.com",
+            "prevalence": 0.3333333333333333
         },
         {
-            "domain": "rkdms.com",
-            "prevalence": 0.21428571428571427
+            "domain": "mparticle.com",
+            "prevalence": 0.26666666666666666
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.2
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.13333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Image": 2,
-        "Script": 11
+        "Script": 10,
+        "Image": 2
     },
     "nameservers": [
-        "ns-1434.awsdns-51.org",
-        "ns-752.awsdns-30.net",
         "ns-115.awsdns-14.com",
-        "ns-1902.awsdns-45.co.uk"
+        "ns-1434.awsdns-51.org",
+        "ns-1902.awsdns-45.co.uk",
+        "ns-752.awsdns-30.net"
     ]
 }

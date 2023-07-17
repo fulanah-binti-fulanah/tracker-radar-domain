@@ -7,14 +7,13 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000502,
+    "prevalence": 0.000505,
     "sites": 5,
     "subdomains": [
-        "schibsted",
         "sas.customdomains",
+        "logon.customdomains",
         "servicenowsignon.customdomains",
-        "thewineenthusiast",
-        "churchofjesuschrist.customdomains"
+        "thewineenthusiast"
     ],
     "cnames": [
         {
@@ -22,8 +21,8 @@
             "resolved": "sas.customdomains.okta.com"
         },
         {
-            "original": "id.churchofjesuschrist.org",
-            "resolved": "churchofjesuschrist.customdomains.okta.com"
+            "original": "logon.bcg.com",
+            "resolved": "logon.customdomains.okta.com"
         },
         {
             "original": "ssosignon.servicenow.com",
@@ -33,22 +32,55 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000402,
+            "rule": "okta\\.com\\/api\\/v1\\/users\\/me",
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
-                "schibsted",
-                "sas.customdomains",
-                "servicenowsignon.customdomains",
-                "thewineenthusiast"
+                "sas.customdomains"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "auth.sas.com",
                     "resolved": "sas.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "e5a88b3f39d13e2c0e4d263afb8d2d83814857aa007645a60b163894b360374b",
+                "caac81d2c4f5942419f143b5abd6d830066aadf34c9a8e0b4e0056d0fbab5110"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "support.sas.com",
+                "www.sas.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000505,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains",
+                "logon.customdomains",
+                "servicenowsignon.customdomains",
+                "thewineenthusiast"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000505,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                },
+                {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
                 },
                 {
                     "original": "ssosignon.servicenow.com",
@@ -60,112 +92,60 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "schibsted.com",
+                "sas.com",
+                "www.bcg.com",
                 "www.sas.com",
                 "www.servicenow.com",
-                "www.winemag.com"
+                "www.wineenthusiast.com"
             ]
         },
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
+            "cookies": 0.000505,
             "fingerprinting": 0,
             "subdomains": [
-                "schibsted",
-                "servicenowsignon.customdomains"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "ssosignon.servicenow.com",
-                    "resolved": "servicenowsignon.customdomains.okta.com"
-                }
-            ],
-            "responseHashes": [
-                "0a006871cc6d614c0854e3825c7e83c8078c64104b44f48c51ad8fdd56834935"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schibsted.com",
-                "www.servicenow.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000402,
-            "fingerprinting": 0,
-            "subdomains": [
-                "churchofjesuschrist.customdomains",
                 "sas.customdomains",
+                "logon.customdomains",
                 "servicenowsignon.customdomains",
                 "thewineenthusiast"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [
-                {
-                    "original": "id.churchofjesuschrist.org",
-                    "resolved": "churchofjesuschrist.customdomains.okta.com"
-                },
                 {
                     "original": "auth.sas.com",
                     "resolved": "sas.customdomains.okta.com"
                 },
                 {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
+                },
+                {
                     "original": "ssosignon.servicenow.com",
                     "resolved": "servicenowsignon.customdomains.okta.com"
                 }
             ],
             "responseHashes": [
-                "14747ab977ce2d4553495425ba665a67005707f9135253104e5d5aa2e056fadc",
-                "3e0f77e8e2a9560bb67e4434c606e227a59dfade65b4b7e18b5e50d174a5fad6"
+                "d9959a5b04863a3fce3a977ff3e1c95290ea3e73ccab1ac32d2a43a83ddd22b4",
+                "45bf6bfef9a7b352a4bd797d1e3ff77a155d97d4b43a11e5794ed90d12f6eafa",
+                "f3f39d42cfca7c8e6a459f292dd0b42fe4788ade1938ac7071ebdb3faa3d18c2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "churchofjesuschrist.org",
+                "sas.com",
+                "www.bcg.com",
                 "www.sas.com",
                 "www.servicenow.com",
-                "www.winemag.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/users\\/me",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sas.customdomains"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "auth.sas.com",
-                    "resolved": "sas.customdomains.okta.com"
-                }
-            ],
-            "responseHashes": [
-                "290dce979e02dd1b4ff75d61a73c41f63cf5cf57d4e9015627a72b9e1e5524d0"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sas.com",
-                "www.sas.com"
+                "www.wineenthusiast.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000505,
     "topInitiators": [
         {
             "domain": "oktacdn.com",
@@ -173,9 +153,9 @@
         }
     ],
     "types": {
-        "Preflight": 4,
-        "XHR": 4,
-        "Fetch": 4
+        "XHR": 3,
+        "Preflight": 5,
+        "Fetch": 5
     },
     "nameservers": [
         "edns5.ultradns.biz",

@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "data00"
+        "data00",
+        "j"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "adlooxtracking\\.com\\/ads\\/ic5\\.php",
@@ -23,18 +24,57 @@
                 "data00"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "12db6710704be359f07f6c1e2bcb3955a3fd0ed332d59586cb0c38c6858c7312"
+                "12db6710704be359f07f6c1e2bcb3955a3fd0ed332d59586cb0c38c6858c7312",
+                "1e2b59d3b3683af2691874fb11c33de6dcf5b2e58dfa2e3d6822ce65e84020ec"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "contrepoints.org",
-                "www.contrepoints.org"
+                "www.contrepoints.org",
+                "www.corsematin.com",
+                "www.laprovence.com"
+            ]
+        },
+        {
+            "rule": "adlooxtracking\\.com\\/ads\\/js\\/tfav_adl_237\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "j"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.webdriver": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.appName": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.hardwareConcurrency": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "window.devicePixelRatio": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "f953f25f1cf9527ee41c4434bceed1dcb40fca0c3c4417e731ce7d1d7824b760"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corsematin.com",
+                "www.corsematin.com",
+                "www.laprovence.com"
             ]
         }
     ],
@@ -43,12 +83,17 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "adnxs-simple.com",
+            "prevalence": 0.8333333333333334
+        },
+        {
             "domain": "smartadserver.com",
-            "prevalence": 1
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 4,
+        "Script": 3
     },
     "nameservers": [
         "lia.ns.cloudflare.com",

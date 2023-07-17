@@ -4,32 +4,54 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "debug"
+        "pricing"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "nordsec\\.com\\/api\\/7\\/envelope\\/",
+            "rule": "nordsec\\.com\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "debug"
+                "pricing"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordlocker.com",
+                "nordpass.com"
+            ]
+        },
+        {
+            "rule": "nordsec\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pricing"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cac445cc825048ac022b12ec44110357e6640c1f2c5ccc2a5e73a5edff50b5f5"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nordaccount.com",
-                "my.nordaccount.com"
+                "nordlocker.com",
+                "nordpass.com"
             ]
         }
     ],
@@ -43,10 +65,11 @@
         }
     ],
     "types": {
+        "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "lily.ns.cloudflare.com",
-        "seth.ns.cloudflare.com"
+        "seth.ns.cloudflare.com",
+        "lily.ns.cloudflare.com"
     ]
 }

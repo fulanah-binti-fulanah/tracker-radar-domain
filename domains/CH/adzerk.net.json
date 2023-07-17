@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
         "e-10875",
@@ -16,7 +16,7 @@
         "e-10398"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "adzerk\\.net\\/api\\/v2",
@@ -27,8 +27,8 @@
                 "e-10220"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -36,6 +36,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "coinmarketcap.com",
+                "we.tl",
                 "wetransfer.com"
             ]
         },
@@ -61,29 +62,56 @@
                 "unsplash.com",
                 "www.united.com"
             ]
+        },
+        {
+            "rule": "adzerk\\.net\\/api\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e-10220"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "we.tl",
+                "wetransfer.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8888888888888888
+            "prevalence": 0.75
+        },
+        {
+            "domain": "wetransfer.com",
+            "prevalence": 0.125
         },
         {
             "domain": "casalemedia.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Image": 2
+        "Preflight": 3,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1272.awsdns-31.org",
         "ns-106.awsdns-13.com",
-        "ns-817.awsdns-38.net",
-        "ns-1608.awsdns-09.co.uk"
+        "ns-1272.awsdns-31.org",
+        "ns-1608.awsdns-09.co.uk",
+        "ns-817.awsdns-38.net"
     ]
 }

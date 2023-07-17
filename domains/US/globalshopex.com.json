@@ -4,15 +4,83 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "shopify",
-        "bigcommerce"
+        "bigcommerce",
+        "shopify"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "globalshopex\\.com\\/merchant\\/globex_script_v11\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d60f89628e4f6f2467982550fdc88710836cb66c87c3e0749370f654f1471ebc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackforestdecor.com",
+                "www.lonestarwesterndecor.com"
+            ]
+        },
+        {
+            "rule": "globalshopex\\.com\\/merchant\\/mini_globex_script_v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cf366773ce913a6df74543df61b7b377dba1207a3af785a82d58f37ff5f4ecc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackforestdecor.com",
+                "www.lonestarwesterndecor.com"
+            ]
+        },
+        {
+            "rule": "globalshopex\\.com\\/\\/server\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8b16034d10948656e3889eddd849a0620ade23389ccad42baf9f301add169838",
+                "195734e219f9f4cdfdf50552f3d5bd7b56d1743f3dcdf9faaa54e30065dd0784"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackforestdecor.com",
+                "www.blackforestdecor.com",
+                "www.lonestarwesterndecor.com"
+            ]
+        },
         {
             "rule": "globalshopex\\.com\\/cdn\\/script\\/merchant\\/2458802\\.js",
             "cookies": 0,
@@ -84,17 +152,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10,
+        "XHR": 3
     },
     "nameservers": [
-        "ns11.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com"
     ]

@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0198,
-    "sites": 197,
+    "prevalence": 0.0226,
+    "sites": 225,
     "subdomains": [
         "sync",
         "ad",
+        "media-cdn",
         "js"
     ],
     "cnames": [],
@@ -21,56 +22,57 @@
     "resources": [
         {
             "rule": "ipredictive\\.com\\/d\\/sync\\/cookie\\/generic",
-            "cookies": 0.0172,
+            "cookies": 0.0205,
             "fingerprinting": 0,
             "subdomains": [
                 "sync"
             ],
             "apis": {},
-            "sites": 190,
-            "prevalence": 0.0191,
+            "sites": 216,
+            "prevalence": 0.0217,
             "cnames": [],
             "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4",
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_uc_referrer": 0.0005019576347756249
+                "_uc_referrer": 0.0010053282396702524
             },
             "exampleSites": [
                 "9to5mac.com",
                 "community.spiceworks.com",
                 "cplusplus.com",
-                "drudgereport.com",
-                "forum.xda-developers.com",
+                "download.cnet.com",
                 "forums.macrumors.com",
                 "gizmodo.com",
                 "health.usnews.com",
                 "heavy.com",
+                "itsfoss.com",
                 "lifehacker.com",
-                "diablo.4fansites.de",
-                "onemileatatime.com",
-                "www.gocomics.com",
-                "adamtheautomator.com",
-                "www.politico.eu",
-                "www.cpu-monkey.com",
-                "feiertag.info",
-                "www.lotustalk.com",
-                "kreuzwort-raetsel.com",
-                "musiccritic.com"
+                "travel.usnews.com",
+                "radiopaedia.org",
+                "primagames.com",
+                "iplocation.io",
+                "www.motscroises.fr",
+                "www.onlinedoctranslator.com",
+                "www.justonecookbook.com",
+                "www.baby-vornamen.de",
+                "www.albumoftheyear.org",
+                "lazyadmin.nl"
             ]
         },
         {
             "rule": "ipredictive\\.com\\/d\\/track\\/cvt\\/pixel",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "ad"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "29f24c02ad7929c65da4335a73dfd62967b456c2056561bc747e041e897bfb81"
@@ -86,14 +88,14 @@
         },
         {
             "rule": "ipredictive\\.com\\/d\\/rt\\/pixel",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "ad"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "29f24c02ad7929c65da4335a73dfd62967b456c2056561bc747e041e897bfb81"
@@ -101,33 +103,43 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "s_pltp": 0.00010039152695512498
+                "s_pltp": 0.00010053282396702523,
+                "lotame_domain_check": 0.00010053282396702523
             },
             "exampleSites": [
                 "cars.com",
-                "www.harley-davidson.com"
+                "www.harley-davidson.com",
+                "www.ufc.com"
             ]
         },
         {
-            "rule": "ipredictive\\.com\\/d\\/track\\/event",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "ipredictive\\.com\\/js\\/cirt_v2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "ad"
+                "media-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "4308b770a8f544c1fc4487836df776d7a8a4170b0947e45c9b748369846ee115"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oreilly.com",
-                "www.plannedparenthood.org"
+                "harley-davidson.com",
+                "www.ufc.com"
             ]
         },
         {
@@ -169,11 +181,33 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cobiExperienceId": 0.00010039152695512498
+                "cobiExperienceId": 0.00010053282396702523
             },
             "exampleSites": [
                 "nikonusa.com",
                 "www.schwab.com"
+            ]
+        },
+        {
+            "rule": "ipredictive\\.com\\/d\\/track\\/event",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oreilly.com",
+                "www.plannedparenthood.org"
             ]
         }
     ],
@@ -182,54 +216,58 @@
         "Advertising"
     ],
     "performance": {},
-    "cookies": 0.0179,
+    "cookies": 0.0214,
     "topInitiators": [
         {
             "domain": "gumgum.com",
-            "prevalence": 0.8538812785388128
+            "prevalence": 0.8359375
         },
         {
             "domain": "openx.net",
-            "prevalence": 0.0958904109589041
+            "prevalence": 0.109375
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.0182648401826484
+            "prevalence": 0.01953125
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.0091324200913242
+            "prevalence": 0.0078125
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.00390625
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.0045662100456621
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.0045662100456621
+            "prevalence": 0.00390625
         },
         {
             "domain": "nikon-cdn.com",
-            "prevalence": 0.0045662100456621
+            "prevalence": 0.00390625
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.00390625
+        },
+        {
+            "domain": "connatix.com",
+            "prevalence": 0.00390625
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.0045662100456621
-        },
-        {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.0045662100456621
+            "prevalence": 0.00390625
         }
     ],
     "types": {
-        "Image": 197,
-        "Script": 2,
+        "Image": 224,
+        "Script": 4,
         "Document": 2
     },
     "nameservers": [
+        "ns-42.awsdns-05.com",
         "ns-959.awsdns-55.net",
         "ns-1734.awsdns-24.co.uk",
-        "ns-1402.awsdns-47.org",
-        "ns-42.awsdns-05.com"
+        "ns-1402.awsdns-47.org"
     ]
 }

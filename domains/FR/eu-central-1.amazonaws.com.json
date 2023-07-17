@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
+    "prevalence": 0.000605,
     "sites": 6,
     "subdomains": [
-        "cognito-identity"
+        "cognito-identity",
+        "zecuih4odfh3fabzrmlxtfhl5u.appsync-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -25,8 +26,8 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -34,7 +35,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
-                "www.toolnation.fr",
+                "www.darjeeling.fr",
+                "www.glady.com",
+                "www.vetostore.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5d9e49a21d81efcab377e8c221f08c8d7a7c3ad1ff75503094c0365ab6d448c4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sensiseeds.com",
                 "www.vetostore.com"
             ]
         },
@@ -47,19 +71,61 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "07c7e118c08aa8bb9826306d98991c1b56f5ce0054a5e46d7102473ae8829796",
-                "9aaaadde8d7654e34bd611c6955020b4f87f8e32cc5bc623ebdc5be0f59e765b"
+                "895b666beb3b9b1c91f6e88d532371ab50c0cea2901a6554d6f04cdb615c5537",
+                "1b5711a3164c8cc7b553ac52dd74d66c8df2ff35b07861ca97e20b5087c16586"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darjeeling.fr",
+                "www.darjeeling.fr",
+                "www.glady.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zecuih4odfh3fabzrmlxtfhl5u.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darjeeling.fr",
+                "www.darjeeling.fr"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zecuih4odfh3fabzrmlxtfhl5u.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c3401845cc73b554231c2328f932083039d10b246dfa277412a907f73a0035d7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sensiseeds.com",
-                "www.toolnation.fr",
-                "www.vetostore.com"
+                "darjeeling.fr",
+                "www.darjeeling.fr"
             ]
         }
     ],
@@ -67,24 +133,25 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "sooqr.com",
-            "prevalence": 0.6
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3
+            "domain": "sooqr.com",
+            "prevalence": 0.26666666666666666
         },
         {
             "domain": "tripcdn.com",
-            "prevalence": 0.1
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Preflight": 3,
-        "XHR": 3
+        "Preflight": 6,
+        "XHR": 4,
+        "Fetch": 3
     },
     "nameservers": [
         "ns1.amzndns.co.uk",

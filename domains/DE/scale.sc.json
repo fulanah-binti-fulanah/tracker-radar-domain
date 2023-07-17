@@ -4,13 +4,17 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
-        "lb.hz",
-        "de-fsn1.lb"
+        "de-fsn1.lb",
+        "lb.hz"
     ],
     "cnames": [
+        {
+            "original": "collect.eterna.de",
+            "resolved": "de-fsn1.lb.scale.sc"
+        },
         {
             "original": "reco.kirstein.de",
             "resolved": "lb.hz.scale.sc"
@@ -18,44 +22,43 @@
         {
             "original": "sst.kirstein.de",
             "resolved": "lb.hz.scale.sc"
-        },
-        {
-            "original": "sst.rofu.de",
-            "resolved": "de-fsn1.lb.scale.sc"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "scale\\.sc\\/gtm\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
+            "rule": "scale\\.sc\\/g\\/collect",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
             "subdomains": [
-                "lb.hz",
-                "de-fsn1.lb"
+                "de-fsn1.lb",
+                "lb.hz"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "sst.kirstein.de",
-                    "resolved": "lb.hz.scale.sc"
+                    "original": "collect.eterna.de",
+                    "resolved": "de-fsn1.lb.scale.sc"
                 },
                 {
-                    "original": "sst.rofu.de",
-                    "resolved": "de-fsn1.lb.scale.sc"
+                    "original": "sst.kirstein.de",
+                    "resolved": "lb.hz.scale.sc"
                 }
             ],
             "responseHashes": [
-                "5370091fc90cbad65c2a11e30fd00a62958591a3ffcad00ad46e676e01ce53a6"
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__gtm_session_start": 0.00010070493454179255,
+                "_ga": 0.00010070493454179255
+            },
             "exampleSites": [
-                "kirstein.de",
-                "www.rofu.de"
+                "eterna.de",
+                "www.kirstein.de"
             ]
         },
         {
@@ -75,7 +78,7 @@
                 }
             ],
             "responseHashes": [
-                "54a6bfcbb0340ff60bc2223cddf062b00cb41ce146380b1eb45587611fc1e1d1"
+                "e73375a201d510a06cb2d407e2391c416d1f52ce490fd1de3412b2ec3c49cf21"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -88,10 +91,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "fraud0.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
         "dave.ns.cloudflare.com",

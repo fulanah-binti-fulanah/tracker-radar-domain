@@ -4,15 +4,92 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "centracare",
-        "arc-chat"
+        "atlanticare",
+        "arc-chat",
+        "scanhealthplan",
+        "centracare"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "orbita\\.cloud\\/api\\/adaptivecardsHostConfig",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlanticare",
+                "arc-chat",
+                "scanhealthplan"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlanticare.org",
+                "www.redcrossblood.org",
+                "www.scanhealthplan.com"
+            ]
+        },
+        {
+            "rule": "orbita\\.cloud\\/api\\/cssprocessor",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlanticare",
+                "arc-chat",
+                "scanhealthplan"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "534c8b21a49f0e5730f0b72a70e9a8f9571e5c539ea8fca966360ea323109134",
+                "d336cfb567ead5639bb3cef5eb4e69dbd87b5fe1e9ccb6be1283618e86bdf9c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlanticare.org",
+                "www.redcrossblood.org",
+                "www.scanhealthplan.com"
+            ]
+        },
+        {
+            "rule": "orbita\\.cloud\\/api\\/adaptivecardsHostConfig",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlanticare",
+                "arc-chat",
+                "scanhealthplan"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "717e326f484a647b30803b83d3498d5debf4c1f081dcb34d616f70eaa3783d55",
+                "164218e402540ea2574640e851230a571d14d7f7af6af9a0ba2bbaa375ce16f7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlanticare.org",
+                "www.redcrossblood.org",
+                "www.scanhealthplan.com"
+            ]
+        },
         {
             "rule": "orbita\\.cloud\\/chatbot\\/v2\\/chat-plugin\\.js",
             "cookies": 0.0000204,
@@ -104,11 +181,56 @@
                 "centracare.com",
                 "www.centracare.com"
             ]
+        },
+        {
+            "rule": "orbita\\.cloud\\/chatbot\\/v3\\/chat\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arc-chat",
+                "scanhealthplan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f32eba4786f5e90f2a3e3330ab04199357bbaad0331cc72f2ce0907ff3b7e9f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redcrossblood.org",
+                "www.scanhealthplan.com"
+            ]
+        },
+        {
+            "rule": "orbita\\.cloud\\/oeapi\\/v2\\/chat-custom\\.css",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arc-chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f9605d10649088a0cd05d2ab30fd53c8d404e2400599fc3d8a63f01b2a11682"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redcrossblood.org",
+                "www.redcrossblood.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "first party",
@@ -116,14 +238,16 @@
         }
     ],
     "types": {
-        "Script": 5,
-        "Stylesheet": 2,
+        "Preflight": 3,
+        "XHR": 6,
+        "Script": 7,
+        "Stylesheet": 4,
         "Image": 2
     },
     "nameservers": [
-        "ns-248.awsdns-31.com",
-        "ns-1814.awsdns-34.co.uk",
         "ns-770.awsdns-32.net",
-        "ns-1381.awsdns-44.org"
+        "ns-1381.awsdns-44.org",
+        "ns-1814.awsdns-34.co.uk",
+        "ns-248.awsdns-31.com"
     ]
 }

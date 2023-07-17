@@ -9,12 +9,56 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "bgwgroup\\.github\\.io\\/css\\/git-update\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6623378a04b2255162a4f1678c3f320bea74122007203393a9f828d3f8d38e67"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnw.com.au",
+                "shop.samios.net.au"
+            ]
+        },
+        {
+            "rule": "bgwgroup\\.github\\.io\\/js\\/git-update\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "12c238e307597082a03759e5243d6098ef0d0880680e9b46822a98dca78e6709"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnw.com.au",
+                "shop.samios.net.au"
+            ]
+        },
         {
             "rule": "bgwgroup\\.github\\.io\\/data\\/cnw-news\\.json",
             "cookies": 0,
@@ -25,14 +69,94 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "594c7da30d5bede5ee1c635a3a987a4e2f20f5e8730434184919d92bf039bae8"
+                "1b9159568c36492ba882a2aa22cb32c1e81129a58b7f76c0b6aa8fa673b84d1d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samios.net.au",
+                "shop.cnw.com.au"
+            ]
+        },
+        {
+            "rule": "bgwgroup\\.github\\.io\\/data\\/sam-news\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ee25abafd2bf1f037a0a94c1c10046fb5238c1e657a5b0ac2b4714bc3e145bc6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samios.net.au",
+                "shop.cnw.com.au"
+            ]
+        },
+        {
+            "rule": "bgwgroup\\.github\\.io\\/data\\/she-news\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "93f2546603f960ad5aceaefcc7595de81f456a66d679ba52c3ddc91834cc9479"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samios.net.au",
+                "shop.cnw.com.au"
+            ]
+        },
+        {
+            "rule": "bgwgroup\\.github\\.io\\/data\\/sammy-mas-promo\\/prizeList\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "de778101221976d1309a5e6d857b428d909258099ebb0f86108251b61f4c8124"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cnw.com.au",
-                "shop.cnw.com.au"
+                "shop.samios.net.au"
+            ]
+        },
+        {
+            "rule": "bgwgroup\\.github\\.io\\/data\\/sammy-mas-promo\\/productList\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "63087580d2cf310760b5d29ae73c0b0246be5ee50db07cbb14c093d6fd59f35e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnw.com.au",
+                "shop.samios.net.au"
             ]
         }
     ],
@@ -49,7 +173,9 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Stylesheet": 2,
+        "Script": 2,
+        "Fetch": 10
     },
     "nameservers": []
 }

@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
         "tg1",
-        "cdn",
-        "servt"
+        "servt",
+        "serv",
+        "servs",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,59 +24,46 @@
                 "tg1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.appVersion": 8
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "c0facca32222d403fc98b14e0d863348b8088b229af5506235c602d197748925",
-                "21613484787b95f72b891b9718dc589754f28cda1f9dc3ac1b40fdaf677927cb"
+                "77155970f19f7c0b71601ebabb172f7f3b6d122d18cea67f6bafc2b03de89b95",
+                "af8fd1220ce7f2033584702d2f649f42ef40feaa8a2d8fbcafaab241482f5214",
+                "12ef2913ae4d9288bdc2f84fbfebb0b28d775a59b907f1f15b9842fe9545dd0b",
+                "30a07b3beff2076404171609e7eadb75ec956fc0c347c22853079cc955a1c591",
+                "cb64fb944cfc4f33e2fff98f1ca4e642a60376671bf813f315bf281f1ffdde0b",
+                "7541ba78a214af42aebf025b3ff4d0932c61d612840923274e553da2c5057718",
+                "3d43bce482d9cbf0f090c9746b14e82969cdf15ccec865a6041742bc54bd2204"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lokmat.com",
-                "epaper.lokmat.com",
+                "finance.detik.com",
+                "food.detik.com",
+                "health.detik.com",
+                "hot.detik.com",
+                "inet.detik.com",
+                "oto.detik.com",
+                "travel.detik.com",
                 "www.hitekno.com"
             ]
         },
         {
-            "rule": "ergadx\\.com\\/js\\/35\\/lokmat-ads\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.innerWidth": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "188c5d2a08fc53bafa77bc76a313d0d86d38ac59a91630cbae6a616f48f60fbc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lokmat.com",
-                "epaper.lokmat.com"
-            ]
-        },
-        {
             "rule": "ergadx\\.com\\/track",
-            "cookies": 0.0000204,
+            "cookies": 0.0000545,
             "fingerprinting": 0,
             "subdomains": [
                 "servt"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -82,11 +71,71 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006805962022731913
+                "lotame_domain_check": 0.00004765308553728854
             },
             "exampleSites": [
                 "lokmat.com",
-                "epaper.lokmat.com",
+                "finance.detik.com",
+                "food.detik.com",
+                "hot.detik.com",
+                "inet.detik.com",
+                "oto.detik.com",
+                "travel.detik.com",
+                "www.hitekno.com"
+            ]
+        },
+        {
+            "rule": "ergadx\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "f7578f7d9d25269aff31dfaef1fc40be5d0260603ca31076e88050a4889bb777",
+                "1ca10d42dcec9d44eb36f80b500191fa653f6b6b142e57f81ea177852dffc913",
+                "9b9405a13862c2a8c8662b28fe8e73d670603eb3a215658271e082e6f587e1c5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000034037918240920386,
+                "__dtmids": 0.000027230334592736308
+            },
+            "exampleSites": [
+                "detik.com",
+                "hot.detik.com",
+                "inet.detik.com",
+                "travel.detik.com",
+                "www.hitekno.com"
+            ]
+        },
+        {
+            "rule": "ergadx\\.com\\/cookiesyncendpoint",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servs"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "hot.detik.com",
+                "inet.detik.com",
+                "travel.detik.com",
                 "www.hitekno.com"
             ]
         },
@@ -111,83 +160,30 @@
                 "agrifarming.in",
                 "www.agrifarming.in"
             ]
-        },
-        {
-            "rule": "ergadx\\.com\\/js\\/1508\\/ads\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.innerWidth": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6862fe9b6ecf4b318677c7aa5a4dfdd4837b138be4d6075633b5356ce1e72ba3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "newdelhiairport.in",
-                "www.newdelhiairport.in"
-            ]
-        },
-        {
-            "rule": "ergadx\\.com\\/js\\/3\\/ads\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.innerWidth": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b5da6d2582612d94a0835d9687868c4330b28f39c77e553f89e8bc2077ec16b3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "skymetweather.com",
-                "www.skymetweather.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.6666666666666666
-        },
-        {
             "domain": "aniview.com",
-            "prevalence": 0.2
-        },
-        {
-            "domain": "enewspapr.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.5357142857142857
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.17857142857142858
         }
     ],
     "types": {
         "Script": 11,
-        "Image": 3
+        "Image": 8,
+        "XHR": 5,
+        "Document": 5
     },
     "nameservers": [
         "diva.ns.cloudflare.com",

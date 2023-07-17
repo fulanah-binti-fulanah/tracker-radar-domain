@@ -4,14 +4,46 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "mantl\\.com\\/assets\\/cfg_bank\\/production-scripts\\/cfg-bank-analytics-pixel\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f102d9f575ec69a6657943eb166a04ddd2ee52276d2578b99be925e0e759f85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mantl_s": {
+                    "ttl": null,
+                    "length": 101,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cfg.bank",
+                "www.cfg.bank"
+            ]
+        },
         {
             "rule": "mantl\\.com\\/assets\\/first_premier_bank\\/production-scripts\\/first-premier-bank-analytics-pixel\\.js",
             "cookies": 0.0000136,
@@ -37,15 +69,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000749,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
         "tara.ns.cloudflare.com",

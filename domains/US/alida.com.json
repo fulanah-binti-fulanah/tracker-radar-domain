@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
         "api-touchpoint.na2",
         "api-touchpoint.na1",
-        "api-touchpoint.eu2",
         "touchpoint-sdk",
-        "dist-touchpoint.na2"
+        "dist-touchpoint.na2",
+        "client-uploads.na2"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -22,12 +22,11 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api-touchpoint.na2",
-                "api-touchpoint.na1",
-                "api-touchpoint.eu2"
+                "api-touchpoint.na1"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -39,9 +38,8 @@
                 "www.deere.ca",
                 "www.deere.com",
                 "www.duquesnelight.com",
-                "www.oddschecker.com",
                 "www.sunbeltrentals.com",
-                "www.xfl.com"
+                "www.wellsense.org"
             ]
         },
         {
@@ -50,20 +48,19 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api-touchpoint.na2",
-                "api-touchpoint.na1",
-                "api-touchpoint.eu2"
+                "api-touchpoint.na1"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "4bf487ab254d4860644a4ffb33a77eb1fe9dba9978b93773ed4b00e2b9be872d",
                 "74895026f8247f55d91798a6c402ddc5a7e0263eb6f4f3542f897542227ac38e",
                 "824a5f39bf6eeaa99698412a3a452385dda3bcebab4531a0fd588250d459b76b",
-                "4f273d0a2cd93d06e7b633d0ad6c21d76711b2051b65b5a3da63bac905287147",
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-                "a6122abba40d12ca2983b36682b8472c71cfe1cd8937da7b470de6c360f0d369"
+                "d9b92467ea0b79c9b696d575c724016260033d7ee656a2b8488ec31801e8690e",
+                "632b84313a8e6f7a9c0eff3f101eaab250477c3d00311878718cf11f6e05b5ce",
+                "2c31d9ee9b41330671a3b803f70a28f12f737e1dda2bf5efa1c0db597432129a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -74,9 +71,8 @@
                 "www.deere.ca",
                 "www.deere.com",
                 "www.duquesnelight.com",
-                "www.oddschecker.com",
                 "www.sunbeltrentals.com",
-                "www.xfl.com"
+                "www.wellsense.org"
             ]
         },
         {
@@ -103,22 +99,84 @@
             "exampleSites": [
                 "duquesnelight.com",
                 "www.sunbeltrentals.com",
-                "www.xfl.com"
+                "www.wellsense.org"
             ]
         },
         {
-            "rule": "alida\\.com\\/js\\/664\\.0c19be12e9fae634a344\\.min\\.js",
+            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UserAttributes",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-touchpoint.na2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
+            ]
+        },
+        {
+            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UserAttributes",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-touchpoint.na2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
+            ]
+        },
+        {
+            "rule": "alida\\.com\\/pai6rv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dist-touchpoint.na2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "665be6e011dab3142311f219878c625ed95f1a0f407e6ffcb54663b5c4705e53"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
+            ]
+        },
+        {
+            "rule": "alida\\.com\\/js\\/746\\.a046796f0d6785938b88\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "dist-touchpoint.na2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
                 "window.innerHeight": 2,
+                "Navigator.prototype.vendor": 2,
                 "OfflineAudioContext.prototype.constructor": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
                 "Screen.prototype.availTop": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.availWidth": 2,
@@ -129,6 +187,7 @@
                 "Navigator.prototype.languages": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.deviceMemory": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
                 "window.sessionStorage": 2,
@@ -142,53 +201,73 @@
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "PerformanceTiming.prototype.navigationStart": 1
+                "WebGLRenderingContext.prototype.getParameter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8013682ceb52ec0e7216e644867eb3b7d4236fd6af4292dd6f7a917a07ddb683"
+                "d782c97f392250e30a3afc05b509edbaec834d10cea988acbbdc56b4789b3985"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1687298598,
+                    "ttl": -1689493948,
                     "length": 1,
-                    "prevalence": 0.000013611924045463826,
+                    "prevalence": 0.000013615167296368154,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
-            "rule": "alida\\.com\\/js\\/main\\.94d1f3a836a37336724e\\.min\\.js",
+            "rule": "alida\\.com\\/js\\/main\\.5a47198d2c063c3cdcd3\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "dist-touchpoint.na2"
             ],
             "apis": {
-                "window.localStorage": 2,
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4354386080001404e9bb446ee602afa4aa500a27e568dea32d3b29216d13270e"
+                "0de8df9fbf74764accb9abd212a37b4cbcb302fbc3b762a94a9e2f22cd3b3914"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
+            ]
+        },
+        {
+            "rule": "alida\\.com\\/vci-touchpoint\\/na2\\/css\\/pai6rv\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-uploads.na2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
@@ -207,8 +286,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
@@ -223,36 +302,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "32e7b4db76e2d2edc4e93d408044a5f28aaa87f4a5ec5c91856412b11de89ecc"
+                "347ddc3699ba9316081a68cb10872caed935ce9bbe685d471550411dff39ca95"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
-            ]
-        },
-        {
-            "rule": "alida\\.com\\/js\\/208\\.f649ebe1b18a88c7ea21\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dist-touchpoint.na2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0117e1e4e0f501d0fd119619ca1a69dc5372bea0e2d6aad191d5c5dcc74ccabf"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
@@ -273,8 +330,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
@@ -295,30 +352,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
-            "rule": "alida\\.com\\/js\\/FlexibleQuestion\\.794b2419f89127dfd207\\.min\\.js",
+            "rule": "alida\\.com\\/js\\/Numeric\\.2c125efc9dedbe3765dd\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "dist-touchpoint.na2"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4c12d7920e44c31bbdbdd11c5a2e4c723b543c5e4a9acc1c2cb902c559437ff0"
+                "f8d5c94c46f3bc214b02eb86d4bdf41a541e7f89870cf5b779a08860b268530b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
@@ -332,83 +391,19 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
             ]
         },
         {
             "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/Event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-touchpoint.na2"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "duquesnelight.com",
-                "www.duquesnelight.com",
-                "www.xfl.com"
-            ]
-        },
-        {
-            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UpdateClient",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-touchpoint.na2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "duquesnelight.com",
-                "www.xfl.com"
-            ]
-        },
-        {
-            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UpdateClient",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-touchpoint.na2"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "duquesnelight.com",
-                "www.duquesnelight.com",
-                "www.xfl.com"
-            ]
-        },
-        {
-            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UserAttributes",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -428,7 +423,7 @@
             ]
         },
         {
-            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UserAttributes",
+            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UpdateClient",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -442,6 +437,26 @@
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunbeltrentals.com",
+                "www.sunbeltrentals.com"
+            ]
+        },
+        {
+            "rule": "alida\\.com\\/tracker\\/tracker\\.Tracker\\/UpdateClient",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-touchpoint.na2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -455,31 +470,33 @@
     "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5263157894736842
+            "domain": "visioncritical.com",
+            "prevalence": 0.4
         },
         {
-            "domain": "visioncritical.com",
-            "prevalence": 0.3157894736842105
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.2
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Preflight": 16,
-        "Fetch": 18,
-        "Script": 15
+        "Preflight": 15,
+        "Fetch": 15,
+        "Script": 13,
+        "Document": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-1030.awsdns-00.org",
         "ns-375.awsdns-46.com",
         "ns-1017.awsdns-63.net",
+        "ns-1030.awsdns-00.org",
         "ns-1739.awsdns-25.co.uk"
     ]
 }

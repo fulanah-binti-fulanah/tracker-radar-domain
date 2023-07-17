@@ -40,7 +40,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f961e29934d073212ae61abcfdfc10caa40e8ae09442c43488788081411f0ef7"
+                "0801da665f2df733cb04cab212f3dd7df4d8a90c78a73db60e18ff7e89216e47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -52,7 +52,7 @@
         },
         {
             "rule": "pinpoll\\.com\\/static\\/start\\.html",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -71,35 +71,10 @@
                 "thirdparty": {
                     "ttl": null,
                     "length": 3,
-                    "prevalence": 0.00010039152695512498,
+                    "prevalence": 0.00010053282396702523,
                     "uniqueness": 1
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kurier.at",
-                "www.film.at"
-            ]
-        },
-        {
-            "rule": "pinpoll\\.com\\/static\\/complete\\.html",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6415cb12c174f6986037af95933f36db85e7efdee5f4fea96f9804cb89d3d190"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kurier.at",
@@ -149,18 +124,23 @@
             ]
         },
         {
-            "rule": "pinpoll\\.com\\/v1",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "pinpoll\\.com\\/static\\/complete\\.html",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
             "subdomains": [
-                "pa"
+                "static"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "6415cb12c174f6986037af95933f36db85e7efdee5f4fea96f9804cb89d3d190"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -181,6 +161,26 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kurier.at",
+                "www.film.at"
+            ]
+        },
+        {
+            "rule": "pinpoll\\.com\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -209,9 +209,9 @@
         "Preflight": 4
     },
     "nameservers": [
-        "ns1-04.azure-dns.com",
         "ns2-04.azure-dns.net",
+        "ns4-04.azure-dns.info",
         "ns3-04.azure-dns.org",
-        "ns4-04.azure-dns.info"
+        "ns1-04.azure-dns.com"
     ]
 }

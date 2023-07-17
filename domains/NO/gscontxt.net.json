@@ -4,12 +4,15 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "bbc",
+        "step-dk",
         "vmg-ash",
-        "vmg-useast"
+        "vmg-useast",
+        "stuffnz-sydney",
+        "torstar"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -22,19 +25,42 @@
                 "bbc"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "75b9d325ed6e1a2ccecad877377a4f7f45d5b4aaf433ee1cb8b1001f8d54baba"
+                "544ed8d3dc9962c67c8762ac557992860e255d0e0936b4c093978045ae9b1e19"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bbc.co.uk",
-                "www.bbc.com",
-                "www.bbc.co.uk"
+                "www.bbc.com"
+            ]
+        },
+        {
+            "rule": "gscontxt\\.net\\/main\\/main\\/channels\\.cgi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "step-dk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "22ddc2d73886102e1dc92d29be06e19ab805cc9d2bb2442b3e55de019916a6f6",
+                "1a9c077f537914c53d173d4f7d53eaefca4e6bdcbcbe79aef5b4d7538012f51c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boligsiden.dk",
+                "www.lav-det-selv.dk",
+                "www.tilbudsuken.no"
             ]
         },
         {
@@ -47,10 +73,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9e7fedd3df4d3844b2bb5db1160b05750efed89e70162c028e0688e85e0c7cda"
+                "d9cf8890a2803fe0934ef6a5406006f7f62706b8a0dadb8c218366e6ea0723fb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -58,6 +84,29 @@
             "exampleSites": [
                 "refinery29.com",
                 "www.vice.com"
+            ]
+        },
+        {
+            "rule": "gscontxt\\.net\\/main\\/channels\\.cgi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stuffnz-sydney",
+                "torstar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8fe35fc9a2cb36c191f083abc54835a1baf7d559317c48fa35616d85396a5ad5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "www.thestar.com"
             ]
         }
     ],
@@ -67,24 +116,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "bbc.com",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 9
     },
     "nameservers": [
-        "ns2.p201.dns.oraclecloud.net",
         "ns3.p201.dns.oraclecloud.net",
+        "ns1.p201.dns.oraclecloud.net",
         "ns4.p201.dns.oraclecloud.net",
-        "ns1.p201.dns.oraclecloud.net"
+        "ns2.p201.dns.oraclecloud.net"
     ]
 }

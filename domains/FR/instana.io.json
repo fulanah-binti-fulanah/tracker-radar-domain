@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "eum",
         "eum-eu-west-1",
         "eum-orange-saas",
         "eum-green-saas",
-        "eum-blue-saas"
+        "eum-blue-saas",
+        "eum-red-saas"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,16 +28,16 @@
                 "eum"
             ],
             "apis": {
-                "window.localStorage": 10,
-                "Date.prototype.getTime": 10,
-                "Navigator.prototype.languages": 10,
-                "PerformanceTiming.prototype.navigationStart": 10,
-                "window.innerWidth": 10,
-                "window.innerHeight": 10,
-                "Navigator.prototype.connection": 10
+                "window.localStorage": 15,
+                "Date.prototype.getTime": 15,
+                "Navigator.prototype.languages": 15,
+                "PerformanceTiming.prototype.navigationStart": 15,
+                "window.innerWidth": 15,
+                "window.innerHeight": 15,
+                "Navigator.prototype.connection": 15
             },
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 15,
+            "prevalence": 0.00151,
             "cnames": [],
             "responseHashes": [
                 "04857d263d127bca083f9036ffcb2c030cd12b943cf4cde1a71daf4da22fcdde"
@@ -48,13 +49,18 @@
                 "cookidoo.fr",
                 "mabanque.fortuneo.fr",
                 "weather.com",
-                "www.conrad.fr",
+                "www.adidas.fr",
+                "www.adidas.com",
                 "www.hellomagazine.com",
+                "www.hola.com",
                 "www.lidl.be",
                 "www.lidl.fr",
-                "www.sixt.fr",
+                "www.livestrong.com",
+                "www.obi.de",
                 "www.sixt.com",
-                "www.wonderbox.fr"
+                "www.sixt.fr",
+                "www.wonderbox.fr",
+                "www.wunderground.com"
             ]
         },
         {
@@ -65,11 +71,12 @@
                 "eum-eu-west-1",
                 "eum-orange-saas",
                 "eum-green-saas",
-                "eum-blue-saas"
+                "eum-blue-saas",
+                "eum-red-saas"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 13,
+            "prevalence": 0.00131,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -80,13 +87,39 @@
             "exampleSites": [
                 "cookidoo.fr",
                 "weather.com",
-                "www.conrad.fr",
+                "www.adidas.fr",
+                "www.adidas.com",
                 "www.hellomagazine.com",
+                "www.hola.com",
                 "www.lidl.be",
                 "www.lidl.fr",
-                "www.sixt.fr",
+                "www.livestrong.com",
                 "www.sixt.com",
-                "www.wonderbox.fr"
+                "www.sixt.fr",
+                "www.wonderbox.fr",
+                "www.wunderground.com"
+            ]
+        },
+        {
+            "rule": "instana\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eum-orange-saas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wunderground.com",
+                "www.wunderground.com"
             ]
         }
     ],
@@ -96,17 +129,38 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.047619047619047616
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.047619047619047616
+        },
+        {
+            "domain": "adidas.fr",
+            "prevalence": 0.047619047619047616
+        },
+        {
+            "domain": "baqend.com",
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Script": 10,
-        "Ping": 9
+        "Script": 15,
+        "Ping": 13,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-517.awsdns-00.net",
         "ns-1272.awsdns-31.org",
         "ns-1952.awsdns-52.co.uk",
-        "ns-240.awsdns-30.com",
-        "ns-517.awsdns-00.net"
+        "ns-240.awsdns-30.com"
     ]
 }

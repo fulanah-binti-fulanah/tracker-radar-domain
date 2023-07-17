@@ -7,9 +7,17 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
+        "dn6mqn7xvzz3",
+        "5b4dcn321xtp",
+        "jbxzcdv9xc4d",
+        "f99hbcdmsb16",
+        "z8s4n2jmrsl0",
+        "bghgsx0hcy0k",
+        "cdn",
+        "sc26zwwp3c0r",
         "gp2tp03j16xq",
         "2p66nmmycsj3"
     ],
@@ -17,26 +25,132 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "statuspage\\.io\\/api\\/v2\\/status\\.json",
+            "rule": "statuspage\\.io\\/api\\/v2\\/summary\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gp2tp03j16xq",
-                "2p66nmmycsj3"
+                "dn6mqn7xvzz3",
+                "5b4dcn321xtp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "58cf7dc8dc906defe190d9c04341963b0eae129e3f80ce25dde69d32145f4971",
-                "67f577ee941515d9b433862959e94658dfa1bd71acfa9cca34e8449f23541251"
+                "9e2cd4457ff7b50d3442eafa7688514e2166a522ced58b2ee737830861959472"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "redhat.com",
+                "etcher.balena.io"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/embed\\/frame",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jbxzcdv9xc4d",
+                "f99hbcdmsb16",
+                "z8s4n2jmrsl0",
+                "bghgsx0hcy0k"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "d0fb61b82d6922139364e73d50ac0809a1438a810593e861d122b8ef72ae5780",
+                "af2f0217155a42ee33ebe0a874380bfbb21ec44631697701dda922e162549bba",
+                "06bd4f1dcfe81e1d34dcab81bef7aa904e76446326af619d435d59f7a921d70a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "openai.com",
+                "community.qlik.com",
+                "docs.gradle.org",
+                "support.sonos.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/embed\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f99hbcdmsb16",
+                "z8s4n2jmrsl0",
+                "bghgsx0hcy0k"
+            ],
+            "apis": {
+                "Screen.prototype.width": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "8adacc8a96bb4b5e397651fe347e15f0c6c3de4665b4cc5c9d7f316b2da81130",
+                "ab69bdc2e29f7e08f74d12c84f97a92c254deff0715447bc1350b11110145f2e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qlik.com",
+                "docs.gradle.org",
+                "support.sonos.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/se-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e2de85007c28d01d2a973cbd4efd90bda8f52771727ea5db199bd425f0720a37"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "balena.io",
+                "help.wetransfer.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/api\\/v2\\/status\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sc26zwwp3c0r",
+                "gp2tp03j16xq",
+                "2p66nmmycsj3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "b6ff24bffb63d611e01a41ea1319cf24af4502b37c09ebc56c9facdb877d1e9f",
+                "b1baefa0ceb2f197d529eb2d1d7875045f12b1b33a4aac42eebe454c5f2c863e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wetransfer.com",
+                "login.ionos.fr",
                 "mail.ionos.fr",
                 "www.python.org"
             ]
@@ -50,10 +164,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "78e8d3ca4a77daef78f5d79189c6e16ae3a783880a0c93ae329562b04c64614c"
+                "7e1feef902d6374cde632d5a82dcc51dd3a95f988f85c6262b772fdadb426719"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -72,10 +186,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "04842975cf094c3d4f80f5b9b413f56ba08518c66bd709ffa65daff80ce16150"
+                "74c3b2b35af1a36bf76af2889d484076337849be013c7602a9d761812c11fac9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -92,24 +206,34 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "ionos.com",
-            "prevalence": 0.3
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "zdassets.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.1
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "XHR": 7
+        "XHR": 10,
+        "Document": 4,
+        "Script": 5
     },
     "nameservers": [
+        "ns-1407.awsdns-47.org",
         "ns-1560.awsdns-03.co.uk",
         "ns-209.awsdns-26.com",
-        "ns-1407.awsdns-47.org",
         "ns-951.awsdns-54.net"
     ]
 }

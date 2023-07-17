@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00251,
-    "sites": 25,
+    "prevalence": 0.00302,
+    "sites": 30,
     "subdomains": [
-        "s"
+        "s",
+        "yads.c"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,14 +24,14 @@
                 "s"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 17,
-                "Document.cookie getter": 7,
+                "Navigator.prototype.userAgent": 20,
+                "Document.cookie getter": 8,
                 "window.localStorage": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 7,
-                "Date.prototype.getTime": 6
+                "NavigatorUAData.prototype.getHighEntropyValues": 8,
+                "Date.prototype.getTime": 7
             },
-            "sites": 22,
-            "prevalence": 0.00221,
+            "sites": 25,
+            "prevalence": 0.00252,
             "cnames": [],
             "responseHashes": [
                 "9fb6863010c8231f47d4ca9e7d8a7a97aff34a3feb82b8030b164d1710c08c15"
@@ -39,26 +40,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.doordash.com",
-                "www.insta360.com",
-                "www.twilio.com",
-                "www.muji.com",
-                "www.jal.co.jp",
-                "livejapan.com",
-                "www.houzz.com.au",
-                "www.airasia.com",
-                "asana.com",
-                "eikaiwa.dmm.com",
-                "macpaw.com",
-                "www.ubereats.com",
-                "www.arubanetworks.com",
-                "www.parallels.com",
-                "www.ana.co.jp",
                 "www.japantimes.co.jp",
+                "www.tokyodisneyresort.jp",
+                "au.trip.com",
+                "www.ubereats.com",
                 "wise.com",
-                "www.seagate.com",
+                "www.jal.co.jp",
+                "www.insta360.com",
                 "www.trip.com",
-                "www.houzz.com"
+                "livejapan.com",
+                "eikaiwa.dmm.com",
+                "asana.com",
+                "www.italki.com",
+                "www.arubanetworks.com",
+                "macpaw.com",
+                "kb.parallels.com",
+                "www.nicovideo.jp",
+                "www.airasia.com",
+                "www.doordash.com",
+                "www.ana.co.jp",
+                "www.jreast.co.jp"
             ]
         },
         {
@@ -73,8 +74,8 @@
                 "Document.cookie getter": 1,
                 "window.localStorage": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "9e3a9103c80346b1b39bea3de46f44a462b3f594fa45e7206252bc41d7e3e855"
@@ -84,9 +85,128 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dmm.com",
+                "fujifilm-x.com",
                 "www.bluestacks.com",
                 "www.matchesfashion.com",
                 "www.philippineairlines.com"
+            ]
+        },
+        {
+            "rule": "yimg\\.jp\\/js\\/yads\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "yads.c"
+            ],
+            "apis": {
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "df38407e5169fb87ee9a06b3ad8b0eea43fd403a6a313143ccd9f1eeb31c3398"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "yimg\\.jp\\/images\\/advertising\\/common\\/js\\/iicon\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "76f51988a4825b1cd604aabb74e99aa51ccba042695e1f414a1606d3550cbe7b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "yimg\\.jp\\/uadf\\/yads_vimps\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "yads.c"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "785e5316c62a3fd3b6a4126a2ce44ab1b8e92b78a782fcf97861fae9d50f57b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "yimg\\.jp\\/images\\/listing\\/tool\\/yads\\/yads-iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "be70cedebacd96dce28b985d65c52839d99611ea2cba820ef151c52fb8be8096"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "yimg\\.jp\\/js\\/yads-async\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yads.c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d4c89ef60adadf271b35903c7ff513f19607c817cd02a3a2959f92f43f04581a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
             ]
         }
     ],
@@ -99,44 +219,37 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5925925925925926
+            "prevalence": 0.6
         },
         {
             "domain": "first party",
-            "prevalence": 0.14814814814814814
+            "prevalence": 0.15
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.15
         },
         {
             "domain": "yjtag.jp",
-            "prevalence": 0.07407407407407407
-        },
-        {
-            "domain": "reamaze.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.05
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.037037037037037035
-        },
-        {
-            "domain": "adobedtm.com",
-            "prevalence": 0.037037037037037035
-        },
-        {
-            "domain": "mcangelus.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.025
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.025
         }
     ],
     "types": {
-        "Script": 26
+        "Script": 38,
+        "Document": 2
     },
     "nameservers": [
-        "ns11.yahoo.co.jp",
-        "ns01.yahoo.co.jp",
         "ns02.yahoo.co.jp",
-        "ns12.yahoo.co.jp"
+        "ns11.yahoo.co.jp",
+        "ns12.yahoo.co.jp",
+        "ns01.yahoo.co.jp"
     ]
 }

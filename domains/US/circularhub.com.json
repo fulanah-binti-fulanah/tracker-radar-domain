@@ -4,13 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000327,
-    "sites": 48,
+    "prevalence": 0.000456,
+    "sites": 67,
     "subdomains": [
-        "api",
-        "www"
+        "www",
+        "api"
     ],
     "cnames": [
+        {
+            "original": "ad.foodlion.com",
+            "resolved": "www.circularhub.com"
+        },
         {
             "original": "circulars.foodcity.com",
             "resolved": "www.circularhub.com"
@@ -18,14 +22,49 @@
         {
             "original": "flyers.homfurniture.com",
             "resolved": "circularhub.com"
-        },
-        {
-            "original": "weeklyad.fleetfarm.com",
-            "resolved": "circularhub.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "circularhub\\.com\\/hosted_services\\/iframe\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "ad.foodlion.com",
+                    "resolved": "www.circularhub.com"
+                },
+                {
+                    "original": "circulars.foodcity.com",
+                    "resolved": "www.circularhub.com"
+                },
+                {
+                    "original": "flyers.homfurniture.com",
+                    "resolved": "circularhub.com"
+                }
+            ],
+            "responseHashes": [
+                "33284d2292b7dddcaaf7bb38405a78eb9ca2de281e6db7c5cb09336ba05e5786",
+                "435cc071b8512275e928f8b2e4e38309aaf5e9fa072c5c67693f862822cf1c58",
+                "8ec4510dc172034da0bc3adb8176e488c5a015d0ca995369adac2a445ea02d2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foodlion.com",
+                "legacy.foodlion.com",
+                "www.foodcity.com",
+                "www.homfurniture.com"
+            ]
+        },
         {
             "rule": "circularhub\\.com\\/flyermodules",
             "cookies": 0,
@@ -34,51 +73,69 @@
                 "api"
             ],
             "apis": {
-                "window.innerWidth": 14,
-                "window.innerHeight": 14,
-                "Date.prototype.getTime": 14,
-                "Event.prototype.timeStamp": 14
+                "window.innerWidth": 26,
+                "window.innerHeight": 26,
+                "Date.prototype.getTime": 26,
+                "Event.prototype.timeStamp": 26
             },
-            "sites": 14,
-            "prevalence": 0.0000953,
+            "sites": 26,
+            "prevalence": 0.000177,
             "cnames": [],
             "responseHashes": [
-                "5f67cc3f210ae966892e2d79b546d72a350a1ed0e0687a03344e32d739839223",
-                "ea092f0ca19e982dad29e379a6ac2946179a1f7474388c6e68f3e7992570d652",
-                "515372bbc2c2b60d813bde4feec2a5e958a4ccb6704b69d4a90d204bec244093",
-                "a458e19093346af38a42a7f3c55983156857117eba252f2101d0c03947a8eb30",
-                "36851db6daa1caa1158bb9a71feb0c7b15cd45542acf4b8743798e1eb0abf139",
-                "904790fc878a9e2d1667cc2014a7ea524b3e7291c9eaefc497f0e0fe6b8fd907",
-                "9b25290c4192c570a6f3c1e6eb7be09eac23e0215bb79471057222c69c539a73",
-                "39dd43f46230880f92d77567bd911a192d9813fbdb8df666e768b71680152fc5",
-                "d91d04be721caa8a12d14cf5e0c8738706cc8da181b60c61412eadce54ba1767",
-                "10ce7e1f6e808a74b4324550858d6e37efeb7f5da06e9df3f4d3c7a8ba51ea9d",
-                "aeb52a4cf83f20f5ab5390c5049c47d80c9f452d96215a91257981c452a86dec",
-                "ca0d1bff9216c775210fd505a9911a0d090f7492e19b2d2b1e4396cef0803f9f",
-                "9de826ff87b782c4fb9fd1974f8e08ddd7896b3d50d37517ea6ca205cae76bdc"
+                "90b673b905e764fb2701cff6198dac0572e33994954973bd684e3c9f57609680",
+                "66212075ecc91762ce46c9c90e17f278b7f2a160948edbe694baf618b26e55f9",
+                "acfecbf30efa558e44947170d50d524397ec890bad218994ae36fc4be0b3de26",
+                "093d69178049b85fbac7f884951148b96d528993cb19e04d34029e7c581a7982",
+                "3f22ff74a12c927dbfdb838a5e2de9c1565619ea91c770dd2ea4f5477133c4e0",
+                "4cb0a2979f40102c17b5f30d5b7d38eec780ce23fec435e5f2bec29f0ab3fcfb",
+                "5bf12309604f3851c0373099a8853f08bd6d6826a2c92a31a276eee3ef51e2b3",
+                "fef49bbf891cb491edaeeb18572faea32c5a221f726536b649bd7b82c6bab555",
+                "f0995fe5872b7d6b7924c8fd4e4c68ffaf0985261a515395e231cd8c8420cb93",
+                "7a3ddfa0b60b66c78f782fd58539021d3fee43590de44d786b69231a0e9075e6",
+                "50a5d10bd8103f4749d8089374db59bb786670353fb5a2bcba6d5cea7ff57010",
+                "4a8e704291e0c54d246f05deaeb1ce909ff0b9b7af47ade7181228db5b504d50",
+                "60122dd3844d2fa22fc5c1ee0ec610f0ff11cb079815f0ed401be0b8cac4d591",
+                "23714f86d7045960cdef30b7b9bed90bde41c3c2f14fe8cf5d032bd99623253f",
+                "f8522ca0f904dd9fa11ca16e13a7f20f9e77384bc44d63bb74aaf3952befd06f",
+                "0364f337230aec84bb28643dbaa206109cc65a303e9f7be6fee3bac57338f7f4",
+                "eb780630c05e16609f47eb12ffdd0b82c99dc169d794ef1fe31273ffaff5783d",
+                "b16f8b1ce65a2e35f2fa2072a0d99c48030385fa2eea53d4ed8277dc3d91c394",
+                "760c4f961119d2dd78497e4b1db14471bf35cfe5ffea88e272693256a1f97da4",
+                "10e1981c5085537d745fe5fea813efedcad72a8354517b02713e2ef6a44286d1",
+                "57b22a197b2da2894298d03218a0b847e1e4fb34d39a41b9e3a4a19db0f5e2b1",
+                "1316e90a485e945a920e3174bbb2e1915dc1050981ef0a805d0e0d5beae3a524",
+                "12261544a775557f433d50a64592de7d60305007f07972485bb6fcea4d94a65a",
+                "a3aa2e3951b81d6e07c877af20a363ca8eb7b1004a8c7ddd5c5a7a0155702f1c",
+                "d0791c9b38d0b189a2b13006582cb3f3e9aeef138da1302d2d22d3842a881c69"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailyitem.com",
-                "www.eagletribune.com",
-                "www.enidnews.com",
-                "www.heraldbulletin.com",
+                "crossville-chronicle.com",
+                "www.dailycitizen.news",
                 "www.joplinglobe.com",
                 "www.mankatofreepress.com",
-                "www.newburyportnews.com",
-                "www.newsandtribune.com",
+                "www.muskogeephoenix.com",
+                "www.dailyitem.com",
+                "www.dailyindependent.com",
+                "www.pressrepublican.com",
+                "www.enidnews.com",
+                "www.tribstar.com",
                 "www.normantranscript.com",
-                "www.record-eagle.com",
-                "www.salemnews.com",
+                "www.cullmantimes.com",
+                "www.valdostadailytimes.com",
+                "www.weatherforddemocrat.com",
+                "www.eagletribune.com",
+                "www.stwnewspress.com",
                 "www.thedailystar.com",
-                "www.tribdem.com",
-                "www.tribstar.com"
+                "www.record-eagle.com",
+                "www.gloucestertimes.com",
+                "www.newsandtribune.com"
             ]
         },
         {
-            "rule": "circularhub\\.com\\/15570\\/df39ca42a0598929\\/circularhub_module\\.js",
+            "rule": "circularhub\\.com\\/15569\\/50524dacd9582c57\\/circularhub_module\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -96,39 +153,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f8630f3feb38e654906cf6e7420c71753a283ae9348bbf7b04a67782a6420c1d"
+                "bdf107664e1b8f0b7ff04b10b3686dc62df5b6d17f97f3263f374a80eebb7360"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "enidnews.com",
-                "www.enidnews.com"
-            ]
-        },
-        {
-            "rule": "circularhub\\.com\\/hosted_services\\/js\\/2\\.1\\.1\\/wishabi\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "weeklyad.fleetfarm.com",
-                    "resolved": "circularhub.com"
-                }
-            ],
-            "responseHashes": [
-                "1aa785d4b1c0410fdec353212fa8a78749def34d725ce1af5e1016a8e89b62af"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fleetfarm.com",
-                "www.fleetfarm.com"
+                "eagletribune.com",
+                "www.eagletribune.com"
             ]
         },
         {
@@ -159,36 +191,112 @@
             ]
         },
         {
-            "rule": "circularhub\\.com\\/hosted_services\\/iframe\\.js",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
+            "rule": "circularhub\\.com\\/15665\\/632a273f88449014\\/circularhub_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "www"
+                "api"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "circulars.foodcity.com",
-                    "resolved": "www.circularhub.com"
-                },
-                {
-                    "original": "flyers.homfurniture.com",
-                    "resolved": "circularhub.com"
-                }
-            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
             "responseHashes": [
-                "d60b96548723fa5295568b822a74b15c16c755e472d0191dac3bc93ef6e40087",
-                "e6d1419538d6942c2b30d605d0fbe27764846701a97d0e6ae57d4e43424d1a8f"
+                "a0387fae9e8f267c1d31338dd3292acaff90ddff7b4ac5e39eabd3d67a6e502e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foodcity.com",
-                "www.foodcity.com",
-                "www.homfurniture.com"
+                "gloucestertimes.com",
+                "www.gloucestertimes.com"
+            ]
+        },
+        {
+            "rule": "circularhub\\.com\\/15680\\/173e784f20bfe3c7\\/circularhub_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb385753a350b807ae598a1b5f978f2f124b4d7618fb94864c2d1e1d717f94fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goshennews.com",
+                "www.goshennews.com"
+            ]
+        },
+        {
+            "rule": "circularhub\\.com\\/15573\\/e03d21059bf0c65e\\/circularhub_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52054ad7a46332d8f5bfa40220c4c0db362b289645639be277cdec4b2e9803e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joplinglobe.com",
+                "www.joplinglobe.com"
+            ]
+        },
+        {
+            "rule": "circularhub\\.com\\/15574\\/027f64b1828a4589\\/circularhub_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d43b55e947736901e1306b65d09181f89e3812577431796f55d1b0378f2af5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kokomotribune.com",
+                "www.kokomotribune.com"
             ]
         },
         {
@@ -258,6 +366,35 @@
             ]
         },
         {
+            "rule": "circularhub\\.com\\/15575\\/aca4cff208774bf4\\/circularhub_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89355ba2ba8674e505e47ded28f902127884efe21206822cbfe178941be596bc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mankatofreepress.com",
+                "www.mankatofreepress.com"
+            ]
+        },
+        {
             "rule": "circularhub\\.com\\/15598\\/e03a4e95ce95ec4f\\/circularhub_module\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -302,35 +439,6 @@
             ]
         },
         {
-            "rule": "circularhub\\.com\\/15576\\/0179f8159b98b44e\\/circularhub_module\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a24f8bd1696523ca15164d423023b4809198613b37ebb70ffe75a3d1cd153a32"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "normantranscript.com",
-                "www.normantranscript.com"
-            ]
-        },
-        {
             "rule": "circularhub\\.com\\/15582\\/a1f0fbb26902db18\\/circularhub_module\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -360,25 +468,32 @@
             ]
         },
         {
-            "rule": "circularhub\\.com\\/15578\\/2e5c1cff0f48bd17\\/circularhub_module\\.js",
+            "rule": "circularhub\\.com\\/15579\\/c65b7c7316e15ae2\\/circularhub_module\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1a092a65e4617a29d9dcd28c2db8c6eb72195f3a236144963a5681faedcfaef1"
+                "9cd926343039e7e09312985f88ab0400e1c0789547e1734de18bee1964671101"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "register-herald.com",
-                "www.register-herald.com"
+                "salemnews.com",
+                "www.salemnews.com"
             ]
         },
         {
@@ -401,64 +516,6 @@
             "exampleSites": [
                 "sharonherald.com",
                 "www.sharonherald.com"
-            ]
-        },
-        {
-            "rule": "circularhub\\.com\\/15572\\/ae58e644ad9afb30\\/circularhub_module\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0cb64184c3d70e1a93a36096817f77866872538cf81d410d70bc268f7944bff1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tribdem.com",
-                "www.tribdem.com"
-            ]
-        },
-        {
-            "rule": "circularhub\\.com\\/15583\\/0390813b17124607\\/circularhub_module\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cb8668f3d021b64e745f4822918a1a9b5872cce2253806770d84c4c8e535afba"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tribstar.com",
-                "www.tribstar.com"
             ]
         },
         {
@@ -486,24 +543,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000408,
+    "cookies": 0.000034,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9782608695652174
+            "prevalence": 0.9701492537313433
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.014925373134328358
         },
         {
             "domain": "where2getit.com",
-            "prevalence": 0.021739130434782608
+            "prevalence": 0.014925373134328358
         }
     ],
     "types": {
-        "Script": 47
+        "Script": 62
     },
     "nameservers": [
+        "ns-1510.awsdns-60.org",
         "ns-116.awsdns-14.com",
         "ns-823.awsdns-38.net",
-        "ns-1510.awsdns-60.org",
         "ns-1790.awsdns-31.co.uk"
     ]
 }

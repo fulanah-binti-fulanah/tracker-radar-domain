@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000129,
-    "sites": 19,
+    "prevalence": 0.000197,
+    "sites": 29,
     "subdomains": [
-        "image-optimizer"
+        "image-optimizer",
+        "cookie-bar"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "salessquad\\.co\\.uk\\/app\\/broken-links\\/track",
@@ -20,8 +21,8 @@
                 "image-optimizer"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -29,9 +30,41 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cozyearth.com",
-                "subimods.com",
                 "www.dixxon.com",
                 "www.tupperware.com"
+            ]
+        },
+        {
+            "rule": "salessquad\\.co\\.uk\\/scripts\\/fcb_c7b4d88793f1dc1be78829e44b750b64\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cookie-bar"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c907ddadb1b4b40ed57341e3e52d2b113c8582ae15a2737a3557a3e381a156d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "testCookie": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tuckerpowersports.com",
+                "www.kuryakyn.com"
             ]
         },
         {
@@ -79,23 +112,36 @@
             ]
         },
         {
-            "rule": "salessquad\\.co\\.uk\\/\\/app\\/broken-links\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "salessquad\\.co\\.uk\\/scripts\\/fcb_2785daf06dbdf1d3a8468fb419d92ca1\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "image-optimizer"
+                "cookie-bar"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "5ec4f354de378566e66062ca5e29a4d05dfb55fd1a2fb3e37dd6886565447b17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "testCookie": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "civivi.com",
-                "www.unihertz.com"
+                "cotopaxi.com",
+                "www.cotopaxi.com"
             ]
         },
         {
@@ -145,23 +191,31 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.782608695652174
+            "prevalence": 0.90625
+        },
+        {
+            "domain": "d5zu2f4xvqanl.cloudfront.net",
+            "prevalence": 0.03125
+        },
+        {
+            "domain": "tuckerpowersports.com",
+            "prevalence": 0.03125
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.21739130434782608
+            "prevalence": 0.03125
         }
     ],
     "types": {
-        "XHR": 6,
-        "Script": 8
+        "XHR": 3,
+        "Script": 12
     },
     "nameservers": [
-        "ns68.domaincontrol.com",
-        "ns67.domaincontrol.com"
+        "ns67.domaincontrol.com",
+        "ns68.domaincontrol.com"
     ]
 }

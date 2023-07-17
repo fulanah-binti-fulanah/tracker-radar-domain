@@ -4,15 +4,18 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000908,
+    "sites": 9,
     "subdomains": [
         "auth",
         "geoip",
-        "eua"
+        "eua",
+        "static",
+        "cms",
+        "event"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "instiengage\\.com\\/auth\\/index\\.html",
@@ -22,8 +25,8 @@
                 "auth"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [
                 "32dcb7b5d0e79583353a56225e4d8097e004103102d584e245d1b96547f9948d"
@@ -32,9 +35,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cafemom.com",
                 "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com",
                 "techraptor.net",
-                "www.stack.com"
+                "weather-and-climate.com",
+                "www.discovermagazine.com",
+                "www.redcafe.net",
+                "www.sherdog.com"
             ]
         },
         {
@@ -45,38 +54,45 @@
                 "geoip"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [
-                "bacddb3f9013b95cc0aa86baa42e4209a382b8f6bd2fe8e76b4446682197fdd7"
+                "38953bf3ff0d3aff8bf3034dd20d1e9c28148f44fb5996ed98861a4a27481023"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cafemom.com",
                 "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com",
                 "techraptor.net",
-                "www.stack.com"
+                "weather-and-climate.com",
+                "www.discovermagazine.com",
+                "www.redcafe.net",
+                "www.sherdog.com"
             ]
         },
         {
             "rule": "instiengage\\.com\\/auth\\/authIframe\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000908,
             "fingerprinting": 1,
             "subdomains": [
                 "auth"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "window.name": 3
+                "Navigator.prototype.userAgent": 9,
+                "window.localStorage": 9,
+                "Navigator.prototype.cookieEnabled": 9,
+                "Document.cookie setter": 9,
+                "Document.cookie getter": 9,
+                "window.name": 9,
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [
                 "d1d05642e23866a6d7fb1b165615355e7c01fffaf89c61e9c14c0beecb96ae23"
@@ -85,9 +101,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cafemom.com",
                 "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com",
                 "techraptor.net",
-                "www.stack.com"
+                "weather-and-climate.com",
+                "www.discovermagazine.com",
+                "www.redcafe.net",
+                "www.sherdog.com"
             ]
         },
         {
@@ -98,17 +120,23 @@
                 "eua"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cafemom.com",
                 "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com",
                 "techraptor.net",
-                "www.stack.com"
+                "weather-and-climate.com",
+                "www.discovermagazine.com",
+                "www.redcafe.net",
+                "www.sherdog.com"
             ]
         },
         {
@@ -119,46 +147,198 @@
                 "eua"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000908,
             "cnames": [],
             "responseHashes": [
-                "d3bdb4952ee39c458ad0f2aeaf8f40b353c5ba557e9f498b5f3d5a02b28ceaf8",
-                "1214d13f82908a3d85c0f8277c5ee4fd9f44fd207a55f95970d69bdabfa603dd"
+                "9687917c671e8da95fd98c49dd9e6e063c347b6e392a5ab58fa660434f65daac",
+                "08bf7886388931a7c83a99fd45259611a08a1567273842977beaaff239e41f2e",
+                "6e7b182eb501b6383a9c7092b443761ce42bbec8f94968e458f30a7ba60df02b",
+                "614175c81021c5e31286425df42b1bd9b07cd360035e2e7787ae137d0b83a23a",
+                "a2cdbe310417b2c8b47d7da9393c34defadf1d14639594e678796bf97c5e69e9",
+                "7b8fa7708ac43ce8aa66b8fd6e4e19f0e2e4300aa2e73ea94118448b08ab3cce",
+                "b9ce00d03ecd602087d3acc0e618ceb01fc2f887f6e2863bb0903e7a4087eb78",
+                "9f427781ca6180eb7e2a3cfea8264622e479fcd12ca16de25a9a8e7e1d5a9939"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cafemom.com",
                 "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com",
                 "techraptor.net",
-                "www.stack.com"
+                "weather-and-climate.com",
+                "www.discovermagazine.com",
+                "www.redcafe.net",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/logo-insticator-light-opt\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "6904003eca98c9ba2599e2b985dc0cc0e3e95e01f7a29892065c76b50810a923"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/icon-check\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "34c2201cbfc3b501839820ae120c267b274aab5e3eaac1ed04dfc9703a274e28"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/graphic-ooc-opt\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "a0a936f1245488f21db005cf7c3fad543bba22c45e837bed399e066c374bf830"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v3\\/contents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "38728c045b18c4e43bf8e2a4395e4953763c45e51d483c31155d318d1d7e6788",
+                "b2cbb71bae6b92369eb2d8656570b272cfdcfcffef99f3c6ed6a04649ac226f7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "oilprice.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oilprice.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oilprice.com",
+                "stocktwits.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000908,
     "topInitiators": [
         {
             "domain": "d3lcz8vpax4lo2.cloudfront.net",
-            "prevalence": 0.7
+            "prevalence": 0.6829268292682927
         },
         {
             "domain": "first party",
-            "prevalence": 0.2
+            "prevalence": 0.2682926829268293
         },
         {
-            "domain": "requestmetrics.com",
-            "prevalence": 0.1
+            "domain": "osano.com",
+            "prevalence": 0.024390243902439025
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.024390243902439025
         }
     ],
     "types": {
-        "Document": 3,
-        "XHR": 3,
-        "Script": 3,
-        "Preflight": 3,
-        "Fetch": 3
+        "Document": 9,
+        "XHR": 14,
+        "Script": 9,
+        "Preflight": 11,
+        "Fetch": 9,
+        "Image": 9
     },
     "nameservers": [
         "carl.ns.cloudflare.com",

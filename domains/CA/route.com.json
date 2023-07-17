@@ -4,43 +4,16 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
+    "prevalence": 0.000504,
     "sites": 5,
     "subdomains": [
+        "bigcommerce",
         "protection-widget",
-        "bigcommerce"
+        "shopify"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "route\\.com\\/protect\\.core\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "protection-widget"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 3,
-                "Navigator.prototype.userAgent": 3,
-                "window.sessionStorage": 3,
-                "Date.prototype.getTime": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "d764010c9e5bf7fde0465748dd1ebb39c6dfce6cfb3188fbdd07200da352043f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boathousestores.com",
-                "labyrinthos.co",
-                "mazdashop.ca"
-            ]
-        },
         {
             "rule": "route\\.com\\/css\\/custom\\.css",
             "cookies": 0,
@@ -49,8 +22,8 @@
                 "bigcommerce"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "92cc6ca2c255085b726fbf567aeff34df5d21951aebaef0e269b0fbad22777c2"
@@ -60,33 +33,131 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "houseofknives.ca",
+                "www.renogy.com",
+                "www.smartwheel.ca"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/protect\\.core\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "protection-widget"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d764010c9e5bf7fde0465748dd1ebb39c6dfce6cfb3188fbdd07200da352043f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labyrinthos.co",
+                "www.prohockeylife.com"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/v1\\/merchant-info\\/prohockeylife\\.myshopify\\.com",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shopify"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "890643ca3256d0ac209d1cce3267b00be412952dac23c5e8357d8b9aa3b112b2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prohockeylife.com",
+                "www.prohockeylife.com"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/checkout\\/client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7f2d0025bd3c717652a20b4f63dfa3724b0c4cd4257cd3fa4f03ada3fba75973"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renogy.com",
+                "www.smartwheel.ca"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/checkout\\/merchantPreferences",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2bfe8187398e26a627fd1f3124d64db92a58c8e08a6e470d35700a3d75f05c0c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renogy.com",
                 "www.smartwheel.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "shopify.com",
-            "prevalence": 0.6923076923076923
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "shopifyorderlimits.s3.amazonaws.com",
+            "prevalence": 0.3
         },
         {
             "domain": "routeapp.io",
-            "prevalence": 0.23076923076923078
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 3,
-        "Stylesheet": 2
+        "Stylesheet": 3,
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": [
-        "grace.ns.cloudflare.com",
-        "jim.ns.cloudflare.com"
+        "jim.ns.cloudflare.com",
+        "grace.ns.cloudflare.com"
     ]
 }

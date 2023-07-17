@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00211,
-    "sites": 21,
+    "prevalence": 0.00242,
+    "sites": 24,
     "subdomains": [
         "api.wdprapps.disney",
         "gbxgateway.dell",
+        "jsso.indiatimes",
+        "ase.clmbtech",
         "geo.cnbc",
         "www.mlssoccer",
         "www.contact.nespresso"
@@ -24,6 +26,10 @@
             "resolved": "api.wdprapps.disney.com-v1.edgekey.net"
         },
         {
+            "original": "ase.clmbtech.com",
+            "resolved": "ase.clmbtech.com-v1.edgekey.net"
+        },
+        {
             "original": "gbxgateway.dell.com",
             "resolved": "gbxgateway.dell.com-v1.edgekey.net"
         },
@@ -32,11 +38,11 @@
             "resolved": "geo.cnbc.com-v1.edgekey.net"
         },
         {
-            "original": "sportapi.mlssoccer.com",
-            "resolved": "www.mlssoccer.com-v1.edgekey.net"
+            "original": "jsso.indiatimes.com",
+            "resolved": "jsso.indiatimes.com-v1.edgekey.net"
         },
         {
-            "original": "sportapi.torontofc.ca",
+            "original": "sportapi.mlssoccer.com",
             "resolved": "www.mlssoccer.com-v1.edgekey.net"
         },
         {
@@ -119,7 +125,7 @@
                 }
             ],
             "responseHashes": [
-                "778b8c425e53692babc496677b1e57ce65236d8573918820cc732d8746120c97"
+                "1702f0a94e850db2dcf6eda7b516316a869657d1b045a501cc792ba23ef0d6c1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -171,7 +177,7 @@
                 }
             ],
             "responseHashes": [
-                "d9595be5177ea2e64fdaf53bd86ae485a76823b82339885ca95d71458ff270d3"
+                "20ed0a6837dbcf1bbd7d8e00a4f2690405131dc32d5b4600cacc4fa13c5c53a6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -208,14 +214,14 @@
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/post\\/WEB\\/report",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "gbxgateway.dell"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "gbxgateway.dell.com",
@@ -223,14 +229,14 @@
                 }
             ],
             "responseHashes": [
-                "cfe6a17889eed47b46edb774820345f9a604ba5cdcba204fa3c9609de4f53ac4",
-                "784aa4a56c711137fabb55a5f503280da0eaba651b60ef2215b641ab4957af27"
+                "038ef10f306650f2d8fed11d29618e3fbffd82f14a9f1e18165cbcb424e04b97",
+                "092dab4f3487d41c36849561c8c1280d68708fea829c39e58e2d06aed662bd90"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_cls_v": 0.0003013258336681398,
-                "_cls_s": 0.0001004419445560466
+                "_cls_v": 0.00030214523114110184,
+                "_cls_s": 0.00010071507704703394
             },
             "exampleSites": [
                 "dell.com",
@@ -239,15 +245,153 @@
             ]
         },
         {
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso.indiatimes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso.indiatimes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ddfd865e7f12769fb2bda5bcaa84657980cae7117acc679be6877a2d318909b5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossdomain\\/getTicket",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso.indiatimes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "16922e0618061c38b2fecdfbe9725bbc3e018f855becf498d30ad8acae59ff21"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/message",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ase.clmbtech"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ase.clmbtech.com",
+                    "resolved": "ase.clmbtech.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ae688ca99d1598df40b40f442e6cfaa2ca1980b3171df9ea8c6905716b53e956"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00010071507704703394
+            },
+            "exampleSites": [
+                "indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/colsync\\/oid",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ase.clmbtech"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ase.clmbtech.com",
+                    "resolved": "ase.clmbtech.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "89ba8802148489c0fef3f81303ae3b0608468b0bf84ff93d08926f5ff712c554"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_col_uuid": 0.00020143015409406788,
+                "_one_uuid": 0.00020143015409406788
+            },
+            "exampleSites": [
+                "indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
             "rule": "com-v1\\.edgekey\\.net\\/info\\/",
-            "cookies": 0.000502,
+            "cookies": 0.000504,
             "fingerprinting": 0,
             "subdomains": [
                 "geo.cnbc"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000504,
             "cnames": [
                 {
                     "original": "geo.cnbc.com",
@@ -276,15 +420,11 @@
                 "www.mlssoccer"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "sportapi.mlssoccer.com",
-                    "resolved": "www.mlssoccer.com-v1.edgekey.net"
-                },
-                {
-                    "original": "sportapi.torontofc.ca",
                     "resolved": "www.mlssoccer.com-v1.edgekey.net"
                 },
                 {
@@ -298,7 +438,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mlssoccer.com",
-                "www.torontofc.ca",
                 "www.whitecapsfc.com"
             ]
         },
@@ -310,15 +449,11 @@
                 "www.mlssoccer"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "sportapi.mlssoccer.com",
-                    "resolved": "www.mlssoccer.com-v1.edgekey.net"
-                },
-                {
-                    "original": "sportapi.torontofc.ca",
                     "resolved": "www.mlssoccer.com-v1.edgekey.net"
                 },
                 {
@@ -327,21 +462,19 @@
                 }
             ],
             "responseHashes": [
-                "aa32459b0d94e7a6d342d71b43001c8a18547cfe5851803fee46b61c2635f545",
-                "b5c7f99f0a46092a932df5679c289c88b957786ae00faf7d328f77e91e152810"
+                "192b20b33ec01d5c96ea72b4007ff810df3f185b8ad0e61e6ca7f707127bad26"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mlssoccer.com",
-                "www.torontofc.ca",
                 "www.whitecapsfc.com"
             ]
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/apps\\.php",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 2,
             "subdomains": [
                 "www.contact.nespresso"
@@ -356,7 +489,7 @@
                 }
             ],
             "responseHashes": [
-                "a387800b7daea20eb5faea1d13c04049dde43a69fdab103fbfd0cd4d6919b6df"
+                "54d95713d636a3bcbb28836112b294eb0f1705b04dc5a70cef303f63d1ed6db9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -383,7 +516,7 @@
                 }
             ],
             "responseHashes": [
-                "500dce6831c6a3b31cbe03ed6def46b122781940e38904dbdb2a3593f05d9463"
+                "0b8e3c6b603771df0669a6b4853276f53fef6d6237fde73890267d46925043f5"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -399,43 +532,39 @@
     "cookies": 0.00121,
     "topInitiators": [
         {
-            "domain": "dellcdn.com",
-            "prevalence": 0.3333333333333333
+            "domain": "first party",
+            "prevalence": 0.34375
         },
         {
-            "domain": "first party",
-            "prevalence": 0.26666666666666666
+            "domain": "dellcdn.com",
+            "prevalence": 0.34375
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.1
+            "prevalence": 0.09375
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.06666666666666667
+            "domain": "clmbtech.com",
+            "prevalence": 0.0625
         },
         {
             "domain": "cnbcfm.com",
-            "prevalence": 0.06666666666666667
-        },
-        {
-            "domain": "webcontentassessor.global.ssl.fastly.net",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.0625
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.0625
         },
         {
             "domain": "medscapestatic.com",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.03125
         }
     ],
     "types": {
-        "Preflight": 9,
-        "Fetch": 14,
-        "XHR": 3,
-        "Script": 2,
+        "Preflight": 10,
+        "Fetch": 13,
+        "XHR": 5,
+        "Script": 8,
         "Stylesheet": 2
     },
     "nameservers": []

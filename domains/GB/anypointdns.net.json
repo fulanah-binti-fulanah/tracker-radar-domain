@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "splunk-elb.lb"
     ],
@@ -19,14 +19,40 @@
     "resources": [
         {
             "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
-            "cookies": 0.0001,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "splunk-elb.lb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com",
+                "www.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "apps-api.splunk.com",
@@ -34,37 +60,74 @@
                 }
             ],
             "responseHashes": [
-                "9053403fba68cc90c4a412d632f9c77b1bac3292ff655e46e8d8f7ef906fbc5a"
+                "0749144635610759b65ff39bc26c350e6eab3cafba5d9da29455520c2ed9bc59",
+                "c5c4309999eeebdb257c38939bc04ff8d6d40d164dc609884cda79775fc6923f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
-                "docs.splunk.com"
+                "docs.splunk.com",
+                "www.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/track",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [
+                "9729487a16602598139702e479b1bcb7e03451b01015b91cd19143d31e6d35bf",
+                "4428b04ac59e45123c8f315e6f84285b8acccd23dfc247d55a4e3292bf0b566d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com",
+                "www.splunk.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "d7koym0rxduxm.cloudfront.net",
+            "domain": "signalfx.com",
             "prevalence": 0.5
         },
         {
+            "domain": "d7koym0rxduxm.cloudfront.net",
+            "prevalence": 0.3333333333333333
+        },
+        {
             "domain": "d221cp5lqk6y64.cloudfront.net",
-            "prevalence": 0.5
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 3,
+        "Fetch": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns-180.awsdns-22.com",
-        "ns-1546.awsdns-01.co.uk",
         "ns-975.awsdns-57.net",
+        "ns-1546.awsdns-01.co.uk",
         "ns-1343.awsdns-39.org"
     ]
 }

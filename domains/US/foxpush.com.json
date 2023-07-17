@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
-        "www"
+        "www",
+        "videoads"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "74c473f1ad49dd0a87352a0428b1a0eae06e94467caea6d479c1b3f910aa57f3"
@@ -31,6 +32,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "al-ain.com",
+                "almrj3.com",
+                "gulfnews.com",
                 "mhtwyat.com",
                 "www.arabnews.com",
                 "www.skynewsarabia.com"
@@ -44,8 +47,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "dc8ac2704d0a63ff0afde64cc469f34e587c25760462f9b73cae3cb4bf6dcf1f"
@@ -57,7 +60,28 @@
                 "al-ain.com",
                 "almrj3.com",
                 "mhtwyat.com",
+                "www.skynewsarabia.com",
                 "www.thenationalnews.com"
+            ]
+        },
+        {
+            "rule": "foxpush\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videoads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "al-ain.com",
+                "almrj3.com"
             ]
         },
         {
@@ -94,13 +118,15 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b2f4002d462933c42a6542acef2074baee895a05d9a8f60a6dc1f6d9543c9799"
+                "818358f2acf4c7f594feb300fbc8e500d4c84d6f35a66c1ad0e3535bc6cdf1fc"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006807583648184077
+            },
             "exampleSites": [
-                "shbabbek.com",
+                "almasryalyoum.com",
                 "www.automobile-magazine.fr"
             ]
         },
@@ -115,14 +141,34 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "54585fe08ab04ee40d682aabde442603307ebf1227adb9dc1c18c810a69f8cb6"
-            ],
+            "responseHashes": [],
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shbabbek.com",
+                "almasryalyoum.com",
+                "www.automobile-magazine.fr"
+            ]
+        },
+        {
+            "rule": "foxpush\\.com\\/cdn-cgi\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "almasryalyoum.com",
                 "www.automobile-magazine.fr"
             ]
         },
@@ -155,32 +201,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.34285714285714286
+            "prevalence": 0.35135135135135137
         },
         {
             "domain": "foxpush.io",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.24324324324324326
         },
         {
             "domain": "foxpush.net",
-            "prevalence": 0.2571428571428571
+            "prevalence": 0.1891891891891892
         },
         {
             "domain": "imasdk.googleapis.com",
-            "prevalence": 0.05714285714285714
-        },
-        {
-            "domain": "cloudflareinsights.com",
-            "prevalence": 0.02857142857142857
+            "prevalence": 0.10810810810810811
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.02857142857142857
+            "prevalence": 0.05405405405405406
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.05405405405405406
         }
     ],
     "types": {
-        "Image": 4,
-        "Fetch": 4,
+        "Image": 6,
+        "Fetch": 5,
+        "XHR": 4,
         "Stylesheet": 2,
         "Document": 2,
         "Other": 2,

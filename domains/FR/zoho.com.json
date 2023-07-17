@@ -7,24 +7,26 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "pagesense-collect"
+        "pagesense-collect",
+        "pagesense",
+        "webfonts"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "zoho\\.com\\/psimg\\.gif",
-            "cookies": 0.000201,
+            "cookies": 0.000404,
             "fingerprinting": 0,
             "subdomains": [
                 "pagesense-collect"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
@@ -32,12 +34,59 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "zabUserId": 0.00020092425155716296,
-                "zsce5082152feb94ff093562f2843f93063": 0.00010046212577858148
+                "zabUserId": 0.0004035512510088781,
+                "zsc87ea18e0694140a6aee7bd03c60ab997": 0.00010088781275221953,
+                "zabHMBucket": 0.00010088781275221953,
+                "zsc1361333c972b46a0a579e2052141ff5e": 0.00010088781275221953,
+                "zsce5082152feb94ff093562f2843f93063": 0.00010088781275221953
             },
             "exampleSites": [
-                "wecasa.fr",
+                "autoportee-discount.fr",
+                "www.autoportee-discount.fr",
+                "www.guide-genealogie.com",
                 "www.wecasa.fr"
+            ]
+        },
+        {
+            "rule": "zoho\\.com\\/pagesense\\/image\\/v1\\/portal\\/desklogicielcdip\\/webpushimage",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pagesense"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guide-genealogie.com",
+                "www.guide-genealogie.com"
+            ]
+        },
+        {
+            "rule": "zoho\\.com\\/css",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webfonts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "6441a04e5ca6cbe630e36c55b3a64b6cce16096d1afdb8e0747ba5c8eab349e3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guide-genealogie.com",
+                "www.guide-genealogie.com"
             ]
         }
     ],
@@ -50,24 +99,38 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000404,
     "topInitiators": [
         {
             "domain": "pagesense.io",
-            "prevalence": 1
+            "prevalence": 0.5416666666666666
+        },
+        {
+            "domain": "zohocdn.com",
+            "prevalence": 0.375
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.041666666666666664
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.041666666666666664
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 4,
+        "Image": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "DNS1.P03.NSONE.NET",
-        "DNS2.P03.NSONE.NET",
-        "DNS3.P03.NSONE.NET",
+        "DNS4.P03.NSONE.NET",
         "ns1.zohocorp.com",
-        "PDNS90.ULTRADNS.BIZ",
-        "PDNS90.ULTRADNS.NET",
         "PDNS90.ULTRADNS.ORG",
-        "DNS4.P03.NSONE.NET"
+        "PDNS90.ULTRADNS.BIZ",
+        "DNS1.P03.NSONE.NET",
+        "PDNS90.ULTRADNS.NET",
+        "DNS3.P03.NSONE.NET",
+        "DNS2.P03.NSONE.NET"
     ]
 }

@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [
         {
@@ -34,8 +34,31 @@
                     "resolved": "prod-api-http-elb-1187870272.us-east-1.elb.amazonaws.com"
                 }
             ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tommyjohn.com",
+                "www.tommyjohn.com"
+            ]
+        },
+        {
+            "rule": "prod-api-http-elb-1187870272\\.us-east-1\\.elb\\.amazonaws\\.com\\/all-product-inventory",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.tommyjohn.com",
+                    "resolved": "prod-api-http-elb-1187870272.us-east-1.elb.amazonaws.com"
+                }
+            ],
             "responseHashes": [
-                "b2f4fbfb3051f30ec35b5ef03d6b392e2842fddc5b9066e0b09dae90d0d4cb94"
+                "9d2a5dc6475e52772e59053f8bce05c898015427dd7ba38c768a91d5913978ac"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -83,7 +106,7 @@
                 }
             ],
             "responseHashes": [
-                "8f32cdee0447c09131b38da279676ff3c1a30b67741b93ae92cc267ddcbc953e"
+                "d2756beeca3510e66b596c7308afe66579e37e8860c47d944338a03934cf911e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -101,13 +124,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "shopify.com",
-            "prevalence": 1
+            "domain": "signalfx.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Fetch": 4,
-        "Preflight": 2
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": []
 }

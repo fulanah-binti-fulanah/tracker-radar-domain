@@ -11,7 +11,8 @@
     "sites": 2,
     "subdomains": [
         "raqa",
-        "www"
+        "www",
+        "map"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -172,7 +173,7 @@
         },
         {
             "rule": "rockwellautomation\\.com\\/resources\\/assets\\/scripts\\/banner\\/v1\\.0\\.0\\/banner\\.js",
-            "cookies": 0.00000681,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
@@ -180,9 +181,9 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.vendor": 2,
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 1
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -221,39 +222,17 @@
             ]
         },
         {
-            "rule": "rockwellautomation\\.com\\/etc\\.clientlibs\\/rockwell-aem-base\\/clientlibs\\/analytics-pagetracker\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2011f9676565e40aa9fcc3153256af8a4a8d2010ecb46ec6307d12e031a19285"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "custhelp.com",
-                "rockwellautomation.custhelp.com"
-            ]
-        },
-        {
             "rule": "rockwellautomation\\.com\\/resources\\/assets\\/scripts\\/modernizr\\/v2\\.8\\.3\\/modernizr\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "window.indexedDB": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
+                "window.indexedDB": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -377,6 +356,28 @@
                 "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "custhelp.com",
+                "rockwellautomation.custhelp.com"
+            ]
+        },
+        {
+            "rule": "rockwellautomation\\.com\\/etc\\.clientlibs\\/rockwell-aem-base\\/clientlibs\\/analytics-pagetracker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2011f9676565e40aa9fcc3153256af8a4a8d2010ecb46ec6307d12e031a19285"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -625,36 +626,82 @@
                 "custhelp.com",
                 "rockwellautomation.custhelp.com"
             ]
+        },
+        {
+            "rule": "rockwellautomation\\.com\\/content\\/dam\\/rockwell-automation\\/sites\\/images\\/icons\\/errors\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d4702c241ee4783bf1134d83acadcf642147cc806425fb96ec789cf795626b2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "custhelp.com",
+                "rockwellautomation.custhelp.com"
+            ]
+        },
+        {
+            "rule": "rockwellautomation\\.com\\/visitor\\/v200\\/svrGP",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "map"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "custhelp.com",
+                "rockwellautomation.custhelp.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.6956521739130435
+        },
+        {
+            "domain": "en25.com",
+            "prevalence": 0.13043478260869565
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.08695652173913043
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.08695652173913043
         }
     ],
     "types": {
-        "Script": 20,
+        "Script": 22,
         "Font": 10,
         "Stylesheet": 8,
-        "Image": 8,
+        "Image": 10,
         "XHR": 8
     },
     "nameservers": [
         "ns4-05.azure-dns.info",
-        "ns2-05.azure-dns.net",
+        "ns1-05.azure-dns.com",
         "ns3-05.azure-dns.org",
-        "ns1-05.azure-dns.com"
+        "ns2-05.azure-dns.net"
     ]
 }

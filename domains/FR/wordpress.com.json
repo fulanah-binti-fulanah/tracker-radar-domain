@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "r-login",
-        "public-api"
+        "public-api",
+        "videos.files"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "wordpress\\.com\\/remote-login\\.php",
@@ -27,10 +28,11 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd",
+                "1af54614ce29e3ff8371bc45bb541a10ef76f7f68c2e69d4bf88f1120ddc3907",
+                "9afd0afb813d4cb15147ef096f8f945786bea9939b67b580d931b3cddd86608f",
                 "84b3421a8033ee8514b967cd8d451bdf26fd926b060df6ef876b13afaf48383b"
             ],
             "type": "Document",
@@ -39,20 +41,20 @@
             "exampleSites": [
                 "brunobertez.com",
                 "laclassedemallory.net",
-                "methodeheuristique.com",
+                "nadegecompper.com",
                 "pgibertie.com"
             ]
         },
         {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
-            "cookies": 0.000201,
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
                 "public-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "82d7db2beaf0bed1398411ac2509f5fb4ca0564af181a066c77bec4b835b93bb"
@@ -62,7 +64,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eveilhomme.com",
-                "methodeheuristique.com"
+                "nadegecompper.com",
+                "www.olympine.com"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/LaqNWxpf\\/dr-philippe-unvaxxed-blood_mp4_dvd\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videos.files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e5cc2ce965eb7b1c462a77f4e60c10b297bdb5c852b592e53936630d0821f56a"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crashdebug.fr",
+                "www.crashdebug.fr"
             ]
         }
     ],
@@ -71,23 +96,28 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8409090909090909
+            "prevalence": 0.9393939393939394
         },
         {
             "domain": "wp.com",
-            "prevalence": 0.14772727272727273
+            "prevalence": 0.04040404040404041
         },
         {
             "domain": "d1kobrs472tcq4.cloudfront.net",
-            "prevalence": 0.011363636363636364
+            "prevalence": 0.010101010101010102
+        },
+        {
+            "domain": "videopress.com",
+            "prevalence": 0.010101010101010102
         }
     ],
     "types": {
-        "Document": 6
+        "Document": 7,
+        "Media": 2
     },
     "nameservers": [
         "ns1.wordpress.com",

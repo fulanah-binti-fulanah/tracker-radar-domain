@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [],
     "cnames": [
         {
@@ -18,16 +18,16 @@
             "resolved": "d3ea0v4xu2fifc.cloudfront.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "d3ea0v4xu2fifc\\.cloudfront\\.net\\/taxonomy",
-            "cookies": 0.0000204,
+            "rule": "d3ea0v4xu2fifc\\.cloudfront\\.net\\/should-get-new-navigation",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [
                 {
                     "original": "rgh.ecs.retp.c1.vanguard.com",
@@ -35,15 +35,43 @@
                 }
             ],
             "responseHashes": [
-                "9483178a95fa1db5971f25bf37aac14929c1a9d5cc7c624eae204efae3e0132d"
+                "b6bd9c0ea13c94336167796d8eb42c03d97d26e51dd3cb0c707a0bac14a4f056"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "vanguard.com",
                 "investor.vanguard.com",
-                "personal.vanguard.com"
+                "personal.vanguard.com",
+                "smallbiz.vanguard.com"
+            ]
+        },
+        {
+            "rule": "d3ea0v4xu2fifc\\.cloudfront\\.net\\/client-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "rgh.ecs.retp.c1.vanguard.com",
+                    "resolved": "d3ea0v4xu2fifc.cloudfront.net"
+                }
+            ],
+            "responseHashes": [
+                "73492d7132cc1ee5c792dea959eefad7950650be13c8fef7b0bb17fedacd6a34"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanguard.com",
+                "investor.vanguard.com",
+                "personal.vanguard.com",
+                "smallbiz.vanguard.com"
             ]
         }
     ],
@@ -51,20 +79,24 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "vgcontent.info",
-            "prevalence": 1
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "XHR": 3
+        "Fetch": 8
     },
     "nameservers": [
-        "ns-1576.awsdns-05.co.uk",
-        "ns-199.awsdns-24.com",
         "ns-804.awsdns-36.net",
-        "ns-1128.awsdns-13.org"
+        "ns-199.awsdns-24.com",
+        "ns-1128.awsdns-13.org",
+        "ns-1576.awsdns-05.co.uk"
     ]
 }

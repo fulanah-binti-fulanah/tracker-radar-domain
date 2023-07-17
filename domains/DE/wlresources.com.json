@@ -12,10 +12,10 @@
     "subdomains": [
         "prm03",
         "s1",
-        "spcdn1"
+        "sp5"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "wlresources\\.com\\/livebanneriframe",
@@ -29,7 +29,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b427ebdfd0ef0cda4fe2abf002cf2ba026d20d63dbbeedc0903009bd43ba9f24"
+                "74777f81d49e939c40ffdab3d02b65351b4b951cc2e4e0e4cc124501724bdc5d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -69,8 +69,8 @@
                 "s1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "f08080238e6a1c4c47627147c4c9337530d79813c857ec2ef1bb8567de29bc3b"
@@ -80,7 +80,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
@@ -108,13 +109,15 @@
         {
             "rule": "wlresources\\.com\\/vendor\\/tool\\/streaming\\/video-js-hls-js\\/v0\\.9\\.1\\/hls\\.light\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "s1"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "MediaSource.isTypeSupported": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "6c4ba8d0db29ad1fe8732590c52af262afbcdb592c346934fd2bb25ff1ce8a1b"
@@ -124,19 +127,25 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
             "rule": "wlresources\\.com\\/xlove\\/sp\\/js\\/spImgOnly\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "s1"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "URL.createObjectURL": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "faec8c75770f8e01f2f86a2c2f053d6adcfc63b8bf44380a982ff84c18694c83"
@@ -146,7 +155,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
@@ -157,8 +167,8 @@
                 "s1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "af6b9d84eac1dbb042b641f317d6ecbf1dc36779670b97c3b7f444802845942b"
@@ -168,7 +178,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
@@ -223,8 +234,8 @@
                 "prm03"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "5d7e9a16b2c8d217bbc11ac55a1370782523b7dfad8d2c4a5eb0af637249f23f"
@@ -234,7 +245,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
@@ -245,8 +257,8 @@
                 "s1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "ecb916133a9376911f10bc5c659952eb0031e457f5df367cde560edbfba38fb8"
@@ -256,7 +268,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4tube.com",
-                "www.4tube.com"
+                "www.4tube.com",
+                "www.sexgeschichtenfick.com"
             ]
         },
         {
@@ -293,7 +306,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1672ca0cc7cf3e32db84825a1e03a705e0e018890eb8c0b02ab551ded1633c10"
+                "a3311567950bb389c80e64f11bc9e4e823073823d39362671307af582d9e0e7b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -304,25 +317,47 @@
             ]
         },
         {
-            "rule": "wlresources\\.com\\/imgSolo\\.php",
+            "rule": "wlresources\\.com\\/livepopup",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "spcdn1"
+                "prm03"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7c19d6a6b75bfd139d100e17980b1f8894df2775344a48aa99e725301b564a07"
+                "bc0e0b61ac7d6be121dd1d1ac163eefbc4d66ec34374f3c7f28c318a2f2914dd"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freeones.com",
-                "www.freeones.com"
+                "sexgeschichtenfick.com",
+                "www.sexgeschichtenfick.com"
+            ]
+        },
+        {
+            "rule": "wlresources\\.com\\/imgDl\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sp5"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "04bef7a287deac89081bb8a65951caae860b4bca9f6d94500216d1d27fea2f4d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sexgeschichtenfick.com",
+                "www.sexgeschichtenfick.com"
             ]
         }
     ],
@@ -334,19 +369,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.625
+            "prevalence": 0.9423076923076923
         },
         {
             "domain": "freecamsfan.com",
-            "prevalence": 0.375
+            "prevalence": 0.057692307692307696
         }
     ],
     "types": {
         "Document": 2,
-        "Stylesheet": 6,
-        "Script": 14,
-        "XHR": 4,
-        "Image": 2
+        "Stylesheet": 7,
+        "Script": 18,
+        "XHR": 9
     },
     "nameservers": [
         "fay.ns.cloudflare.com",

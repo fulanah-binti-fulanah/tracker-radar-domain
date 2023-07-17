@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "app"
+        "app",
+        "insights"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -42,7 +43,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ef2a940cacd8392e58064b807f5a8c180123bdc6bb7d5c6c4bd95cac8bb3b1db"
+                "91a89b767e266d42e8c8729558828c5bcf13b0935ad6b4d96bf9fce141416216"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -60,8 +61,8 @@
                 "app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "faf6360392b9b225c6f87ad1f030325e84c6f4002f0beee2252d17790bda1981"
@@ -71,7 +72,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rockwellautomation.com",
-                "www.rockwellautomation.com"
+                "www.rockwellautomation.com",
+                "www.sage.com",
+                "www.zebra.com"
             ]
         },
         {
@@ -86,7 +89,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3536c8fe4be909339810b075cf946e6f874edbba3b49d0fb13d1299bcacdffed"
+                "9a09257d23dc5a64e19accf836b5e15c6d7d6cc75b6f9f22017f498130e04c91"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -126,8 +129,8 @@
                 "app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "0304936a8b0010d3355c1ba3e3e86df3fe9316b544a7fc656072f2245c152082"
@@ -137,7 +140,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rockwellautomation.com",
-                "www.rockwellautomation.com"
+                "www.rockwellautomation.com",
+                "www.sage.com",
+                "www.zebra.com"
+            ]
+        },
+        {
+            "rule": "gatedcontent\\.com\\/log_entry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sage.com",
+                "www.sage.com",
+                "www.zebra.com"
             ]
         }
     ],
@@ -147,13 +175,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9411764705882353
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Stylesheet": 2,
-        "XHR": 4
+        "XHR": 9
     },
     "nameservers": [
         "darwin.ns.cloudflare.com",

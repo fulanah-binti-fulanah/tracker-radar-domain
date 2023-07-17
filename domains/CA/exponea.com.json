@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "api.us1",
         "api.uk",
-        "dnb-api.us"
+        "dnb-api.us",
+        "api.eu1"
     ],
     "cnames": [
         {
@@ -24,25 +25,27 @@
     "resources": [
         {
             "rule": "exponea\\.com\\/js\\/exponea\\.min\\.js",
-            "cookies": 0.000703,
+            "cookies": 0.00101,
             "fingerprinting": 2,
             "subdomains": [
                 "api.us1",
                 "api.uk",
-                "dnb-api.us"
+                "dnb-api.us",
+                "api.eu1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.vendor": 6,
-                "window.indexedDB": 6,
-                "window.localStorage": 6,
-                "window.sessionStorage": 6,
-                "Document.cookie getter": 6,
-                "Date.prototype.getTime": 6,
-                "Document.cookie setter": 6
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.vendor": 8,
+                "window.indexedDB": 8,
+                "window.localStorage": 8,
+                "window.sessionStorage": 8,
+                "Document.cookie getter": 8,
+                "Date.prototype.getTime": 9,
+                "Navigator.prototype.maxTouchPoints": 4,
+                "Document.cookie setter": 9
             },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [
                 {
                     "original": "exponea-api.dnb.com",
@@ -50,22 +53,29 @@
                 }
             ],
             "responseHashes": [
-                "9d40cbf33414e683f3a09b68fc684b227fd23a737d7982ce52acb222d8dcd5ae",
-                "e87824a54293bacbfba3fe04919d5c0b4f999b3219e029d6611dd7d5cd6f4f0b",
-                "5cd01b98c0a8be7f16c6105cc56c78b0430bbc5da2dbee5dfc7ecc652dbb436b"
+                "d23cc74db612e23bb06a124d77920e436d793a022093e124bcf9038ec29f33fc",
+                "a911194d3412c23d2d9262658e5b2050a18d2c5f924cbfc36c10de4248501e6d",
+                "d667e9fd7dd2b7d03274195c8a52669900c9bf78628a4d2ca59008bc0fc64cd3",
+                "1770fbfe23b2ea907fc5d38cef331bee226d1f1d36ce681f502cadfd409a697c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__exponea_etc__": {
-                    "ttl": 94608004,
+                    "ttl": 94608003,
                     "length": 36,
-                    "prevalence": 0.0006026516673362796,
+                    "prevalence": 0.0009064356934233055,
                     "uniqueness": 1
                 },
                 "__exponea_time2__": {
-                    "ttl": 3604,
+                    "ttl": 3603,
                     "length": 20,
-                    "prevalence": 0.0006026516673362796,
+                    "prevalence": 0.0009064356934233055,
+                    "uniqueness": 1
+                },
+                "PJEsegment": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 }
             },
@@ -73,10 +83,13 @@
             "exampleSites": [
                 "altitude-sports.com",
                 "patient.info",
+                "reservationdesk.com",
                 "www.altitude-sports.com",
                 "www.dnb.com",
                 "www.eddiebauer.ca",
-                "www.neimanmarcus.com",
+                "www.fairphone.com",
+                "www.jensonusa.com",
+                "www.sheetmusicplus.com",
                 "www.thelasthunt.com"
             ]
         },
@@ -92,7 +105,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "bcef031ed6d0dad7df418715412a18f7a1fc63575be77bfdbaf822634880f7af"
+                "4941b475d7349e6ea42fae3d0be9d8c1490081b681a16be12f510a7a78bd453b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -104,16 +117,17 @@
         },
         {
             "rule": "exponea\\.com\\/bulk",
-            "cookies": 0.000703,
+            "cookies": 0.00101,
             "fingerprinting": 0,
             "subdomains": [
                 "api.us1",
                 "api.uk",
-                "dnb-api.us"
+                "dnb-api.us",
+                "api.eu1"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [
                 {
                     "original": "exponea-api.dnb.com",
@@ -121,13 +135,16 @@
                 }
             ],
             "responseHashes": [
-                "32033c5ed9241fa4ea7ed029fd26299735238a6845781c61659d109e09943b3b",
-                "e13fb06dc2aa1c1dafa4dee21c519408549cbf5809bbbb1ff4ef467c6a19451c",
-                "85954a52e7dad90773a3b5ff76cd5e7d15b876d613ac9b4bb558009f82527c52",
-                "a5cbc02b9b9a33d55ddab0d1b02854fc684a4a1fdb57d00ff6ae76d0d1cb89fd",
-                "5c7697cc949f9e271f6a26815fb4117b78e8d15dadd0341e538f40bacd1b64b9",
-                "0e3c0b39bef9f03a6a7413a10faef4276969f259b4eedfbba0ec08ec2b21e2ee",
-                "a2cd68b0e7dcf9977eab948cc87b5cbb04633641beb536b0a058a0ec1de6241f"
+                "72f704489d004e962eda802c2a9d4c7509072a7648f8796a63d72173b971adae",
+                "510be6d157c69d8208c4929816e639bba6875e07d482425a94287936ea398b46",
+                "d7a4efc4857e3ff5756a3bb9133235c1ccf7cdf935112fbf0f0e2fbdcf5e8fb3",
+                "1236df27d385df0b7568e580f46e00bbd4f3caaf85b1e96105850cda9d2ed40f",
+                "93df881e19c2d43792d21eadd1fa5077df3c0cc4d38d1b878496a4cb2720bccb",
+                "d06f51d71815ace281822c8f59869b1c7fea9658f66018b2b143a0dbd9a8b7d6",
+                "703b6c346a3eca21255bcf57c7b3e0bd805919c1442c469b65b25b64f4b952c9",
+                "c6615e25c57aff4f82d12ecd9b1380e550f854cc3aea40c4270eef7d17a6d4c4",
+                "39447fa409a6ea7bb9576c72902ed14fe7c0d8ab30907b12fc42102e1ab75604",
+                "6a462382d5237aa58b533b79152c2d1ca8d4a13d1d45b151676119f70d74d3ae"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -136,10 +153,13 @@
                 "altitude-sports.com",
                 "fr.altitude-sports.com",
                 "patient.info",
+                "reservationdesk.com",
                 "www.altitude-sports.com",
                 "www.dnb.com",
                 "www.eddiebauer.ca",
-                "www.neimanmarcus.com",
+                "www.fairphone.com",
+                "www.jensonusa.com",
+                "www.sheetmusicplus.com",
                 "www.thelasthunt.com"
             ]
         },
@@ -150,11 +170,12 @@
             "subdomains": [
                 "api.us1",
                 "api.uk",
-                "dnb-api.us"
+                "dnb-api.us",
+                "api.eu1"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [
                 {
                     "original": "exponea-api.dnb.com",
@@ -163,7 +184,9 @@
             ],
             "responseHashes": [
                 "ef51cee56d3dde41e94db0c99f36260c49143a2c05e85bcfed40e3a8f0edc1fe",
-                "92afaf5b4720776c9ffc0c8bd5046d7483635b898a7376582ae0404901a4ec08"
+                "e400958698d5fdb9db3b40d35d796f81fbfcbb8be192459fba234cfedb57ef6c",
+                "d584c23cbadde4d0ddb13f1018a02411a739291567db9af5480db81a27233cf5",
+                "c489de8b16b83c0f428f73f262b8df136fd98c49fe51e4e4d91494816605fcff"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -171,10 +194,13 @@
             "exampleSites": [
                 "altitude-sports.com",
                 "patient.info",
+                "reservationdesk.com",
                 "www.altitude-sports.com",
                 "www.dnb.com",
                 "www.eddiebauer.ca",
-                "www.neimanmarcus.com",
+                "www.fairphone.com",
+                "www.jensonusa.com",
+                "www.sheetmusicplus.com",
                 "www.thelasthunt.com"
             ]
         },
@@ -183,15 +209,16 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.us1"
+                "api.us1",
+                "api.eu1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "f49b3e43ccf1fffa5455d94851eb642710f64136515f8eeba309a08f9c3884d4",
-                "9385bf8cab9ccaf8596d3b73556937269f1ab4689ba0b301a740c25b5ad5fb23"
+                "f5c1388868f22487ce09932804f0203ff0e4821dc325963da6337358b3c6274f",
+                "e0650862ffe55593be18f41327881109f307268896eb7944b7e0aa3d345b73a2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -199,55 +226,48 @@
             "exampleSites": [
                 "altitude-sports.com",
                 "www.altitude-sports.com",
+                "www.fairphone.com",
                 "www.thelasthunt.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000703,
+    "cookies": 0.00101,
     "topInitiators": [
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.35294117647058826
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.2647058823529412
+            "prevalence": 0.7659574468085106
         },
         {
-            "domain": "shopify.com",
-            "prevalence": 0.17647058823529413
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.06382978723404255
         },
         {
             "domain": "newrelic.com",
-            "prevalence": 0.08823529411764706
+            "prevalence": 0.06382978723404255
         },
         {
-            "domain": "geoedge.be",
-            "prevalence": 0.029411764705882353
-        },
-        {
-            "domain": "trustarc.com",
-            "prevalence": 0.029411764705882353
+            "domain": "azure.com",
+            "prevalence": 0.06382978723404255
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.02127659574468085
         },
         {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.029411764705882353
+            "domain": "trustarc.com",
+            "prevalence": 0.02127659574468085
         }
     ],
     "types": {
-        "Script": 7,
-        "Fetch": 20
+        "Script": 10,
+        "Fetch": 27
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e3.googledomains.com",
         "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e4.googledomains.com"
     ]
 }

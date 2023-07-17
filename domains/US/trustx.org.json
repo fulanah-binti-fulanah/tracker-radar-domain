@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "sofia"
     ],
@@ -25,8 +25,8 @@
                 "sofia"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -34,7 +34,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boston.com",
-                "www.boston.com"
+                "www.boston.com",
+                "www.fox.com",
+                "www.foxbusiness.com"
+            ]
+        },
+        {
+            "rule": "trustx\\.org\\/hb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sofia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox.com",
+                "www.foxbusiness.com"
             ]
         }
     ],
@@ -47,16 +69,25 @@
     "topInitiators": [
         {
             "domain": "pubmatic.com",
-            "prevalence": 1
+            "prevalence": 0.42857142857142855
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "foxnews.com",
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns1.whois.com",
-        "ns4.whois.com",
         "ns2.whois.com",
-        "ns3.whois.com"
+        "ns3.whois.com",
+        "ns4.whois.com"
     ]
 }

@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "appdynamics\\.com\\/adrum\\/adrum-latest\\.js",
@@ -23,26 +23,32 @@
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 3,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "Date.prototype.getTime": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
-                "Event.prototype.timeStamp": 2
+                "Document.cookie getter": 7,
+                "PerformanceTiming.prototype.navigationStart": 7,
+                "Date.prototype.getTime": 7,
+                "window.innerWidth": 7,
+                "window.innerHeight": 7,
+                "Event.prototype.timeStamp": 7,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 7,
+            "prevalence": 0.000706,
             "cnames": [],
             "responseHashes": [
-                "dfa731ce827e2f060ea42f19dab75059a472040765f766818cfdefdeb5a37958"
+                "a6a1420f8ab5ad1b3760099a446859f6e47b713df0331aa53ed8f3562a2722e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "audiens.org",
+                "www.audiens.org",
+                "www.crucial.com",
                 "www.crucial.fr",
-                "www.promovacances.com"
+                "espace-personnel.agirc-arrco.fr",
+                "www.partirpascher.com",
+                "www.probtp.com"
             ]
         },
         {
@@ -53,10 +59,10 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 4
+                "window.localStorage": 8
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000807,
             "cnames": [],
             "responseHashes": [
                 "995330736ff929442f9647e5737ece1bb85c64384e9091ca8d5f3808332daf70"
@@ -66,9 +72,41 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "audiens.org",
+                "www.audiens.org",
                 "www.botanic.com",
+                "www.crucial.com",
                 "www.crucial.fr",
-                "www.promovacances.com"
+                "espace-personnel.agirc-arrco.fr",
+                "www.partirpascher.com",
+                "www.probtp.com"
+            ]
+        },
+        {
+            "rule": "appdynamics\\.com\\/adrum\\/adrum-20\\.6\\.0\\.3177\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "fe3667dacaa74fed39aa53e8c8261c855a99ceaafd6fc1c3e60e0db2610c2b26"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carhartt.com",
+                "www.carhartt.com"
             ]
         }
     ],
@@ -80,15 +118,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "ekstatic.net",
-            "prevalence": 0.25
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 17
     },
     "nameservers": [
         "ns-1486.awsdns-57.org",

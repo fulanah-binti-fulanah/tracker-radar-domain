@@ -4,11 +4,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "speed.syd.aussiebroadband.com.au.prod.hosts",
-        "sy5.test.gslnetworks.com.au.prod.hosts"
+        "speed.syd.aussiebroadband.com.au.prod.hosts"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -18,8 +17,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "speed.syd.aussiebroadband.com.au.prod.hosts",
-                "sy5.test.gslnetworks.com.au.prod.hosts"
+                "speed.syd.aussiebroadband.com.au.prod.hosts"
             ],
             "apis": {},
             "sites": 2,
@@ -30,7 +28,27 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "speedtest.net",
+                "speed.one",
+                "www.speedtest.net"
+            ]
+        },
+        {
+            "rule": "ooklaserver\\.net\\/hello",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speed.syd.aussiebroadband.com.au.prod.hosts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "speed.one",
                 "www.speedtest.net"
             ]
         }
@@ -40,12 +58,17 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "speedtestcustom.com",
+            "prevalence": 0.6486486486486487
+        },
+        {
             "domain": "cdnst.net",
-            "prevalence": 1
+            "prevalence": 0.35135135135135137
         }
     ],
     "types": {
-        "WebSocket": 2
+        "WebSocket": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-121.awsdns-15.com",

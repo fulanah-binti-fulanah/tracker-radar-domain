@@ -7,10 +7,13 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "rts-ssl"
+        "rts-ssl",
+        "idgcompu-ssl",
+        "idgpctip-ssl",
+        "onlinepc-ssl"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,11 +23,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "rts-ssl"
+                "rts-ssl",
+                "idgcompu-ssl"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -32,8 +36,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rts.ch",
+                "details.rts.ch",
                 "pages.rts.ch",
-                "programmesradio.rts.ch"
+                "programmesradio.rts.ch",
+                "www.computerworld.ch",
+                "www.rsr.ch"
             ]
         },
         {
@@ -44,8 +51,8 @@
                 "rts-ssl"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -53,8 +60,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rts.ch",
+                "details.rts.ch",
                 "pages.rts.ch",
-                "programmesradio.rts.ch"
+                "programmesradio.rts.ch",
+                "www.rsr.ch"
+            ]
+        },
+        {
+            "rule": "wemfbox\\.ch\\/cgi-bin\\/ivw\\/CP\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "idgpctip-ssl",
+                "idgcompu-ssl",
+                "onlinepc-ssl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pctipp.ch",
+                "www.computerworld.ch",
+                "www.onlinepc.ch"
             ]
         }
     ],
@@ -64,16 +96,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6923076923076923
+            "prevalence": 0.5833333333333334
         },
         {
             "domain": "usercentrics.eu",
-            "prevalence": 0.3076923076923077
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "rts.ch",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 3,
-        "Image": 3
+        "Script": 6,
+        "Image": 8
     },
     "nameservers": [
         "de.ch-inter.net",

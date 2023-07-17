@@ -4,15 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
+        "geo-ip-service",
         "bloop-static",
         "bloop-api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "bsscommerce\\.com\\/geoip\\/getCountryByIP",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geo-ip-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed09b3d0d110d83bdb9a05b1cf63fa2d8650ab4e44ea0d4cf49cb54e4fd58b02"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boc24.de",
+                "www.everymanjack.com"
+            ]
+        },
         {
             "rule": "bsscommerce\\.com\\/bloop-loyalty\\.js",
             "cookies": 0,
@@ -146,25 +169,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.4
+            "prevalence": 0.9230769230769231
         },
         {
             "domain": "shopifyorderlimits.s3.amazonaws.com",
-            "prevalence": 0.2
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
+        "XHR": 6,
         "Script": 4,
-        "Preflight": 4,
-        "XHR": 4
+        "Preflight": 4
     },
     "nameservers": [
         "jonah.ns.cloudflare.com",

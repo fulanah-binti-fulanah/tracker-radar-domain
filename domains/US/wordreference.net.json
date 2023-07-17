@@ -10,16 +10,20 @@
         "cdnawsf"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "wordreference\\.net\\/js\\/xf\\/preamble\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdnawsf"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.maxTouchPoints": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -86,9 +90,11 @@
                 "cdnawsf"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.webdriver": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -186,8 +192,8 @@
     },
     "nameservers": [
         "ns-620.awsdns-13.net",
-        "ns-1204.awsdns-22.org",
         "ns-323.awsdns-40.com",
+        "ns-1204.awsdns-22.org",
         "ns-1950.awsdns-51.co.uk"
     ]
 }

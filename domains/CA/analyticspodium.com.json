@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
         "lab",
         "api2"
@@ -21,19 +21,17 @@
                 "lab"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
-            "responseHashes": [
-                "78b29dd61608f05e6b658d51ce116be99daa3e22aaf7c19a2316cd00f8052495",
-                "5b2a722268022a7a4d3945b0086ffa69580d8c4f1ec176490f767155fdef2a00"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mhfh.com",
                 "www.bowcycle.com",
+                "www.jensonusa.com",
                 "www.orkincanada.ca"
             ]
         },
@@ -45,33 +43,13 @@
                 "lab"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mhfh.com",
-                "www.bowcycle.com",
-                "www.orkincanada.ca"
-            ]
-        },
-        {
-            "rule": "analyticspodium\\.com\\/2\\/httpapi",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api2"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "fbca21cb12eb649184077163b7326352cdb0e2e6e701b0d3cf5a9462aa65e7bb",
-                "7387e735a1d10134c423f918e3d817ec58d1a7500afc045e3e089a355ab79eac"
+                "e7346963d7e38f2a9449300467530b883f822e9fb8f6313dd38dd4e758064df9",
+                "6a7c55ed6eb95e5b0651bf57969bffefffcc0f60f57bd99c1fcfd859bcf8a572",
+                "9976901dc7f5af7c7786e312e90d4ad543e5638b06d7d101e2e482f22f63004f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -79,6 +57,7 @@
             "exampleSites": [
                 "mhfh.com",
                 "www.bowcycle.com",
+                "www.jensonusa.com",
                 "www.orkincanada.ca"
             ]
         },
@@ -90,8 +69,8 @@
                 "api2"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -100,6 +79,33 @@
             "exampleSites": [
                 "mhfh.com",
                 "www.bowcycle.com",
+                "www.jensonusa.com",
+                "www.orkincanada.ca"
+            ]
+        },
+        {
+            "rule": "analyticspodium\\.com\\/2\\/httpapi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api2"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "68d6320dd1756642274e602f0d98968dfeb56483b6b30a26ff734e542e54f420",
+                "d99a79d2968896b1684652b0ab67d6d783a4e4d675fb83f6c59ba7efe83a48ae",
+                "e35eb899482a7e0440fa648fce797fd0d6c2004aae3c30f60d755c166192689c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mhfh.com",
+                "www.bowcycle.com",
+                "www.jensonusa.com",
                 "www.orkincanada.ca"
             ]
         }
@@ -110,16 +116,20 @@
     "topInitiators": [
         {
             "domain": "podium.com",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 6,
-        "Preflight": 6
+        "Preflight": 8,
+        "Fetch": 8
     },
     "nameservers": [
-        "ns-1198.awsdns-21.org",
         "ns-495.awsdns-61.com",
+        "ns-1198.awsdns-21.org",
         "ns-1894.awsdns-44.co.uk",
         "ns-754.awsdns-30.net"
     ]

@@ -8,10 +8,11 @@
     "sites": 2,
     "subdomains": [
         "code",
-        "logger"
+        "logger",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "moviead55\\.ru\\/madstyle\\.css",
@@ -25,7 +26,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c6af511f252804b2251373b537cb52bc65ae1870c96a2c88830475c1520f0306"
+                "ee0359418865fef6ee454edce366cd11ed0369b4e93b67dae08355ee06b7e224"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -58,21 +59,45 @@
             ]
         },
         {
-            "rule": "moviead55\\.ru\\/go\\/bmap",
+            "rule": "moviead55\\.ru\\/mp_dist\\/mstream2\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
             "subdomains": [
-                "code"
+                "static"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
                 "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Notification.permission": 2,
+                "URL.createObjectURL": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.orientation": 2,
+                "window.devicePixelRatio": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d9d70f8a2b2576a8c1bc59ad6282fccbb53e50eb21094d4545b9d86d07951f1d"
+                "42e612c8d14218caefe89cbbe31aecaf94ffceb292c92b66ebdce0b99c168994"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -125,6 +150,53 @@
             ]
         },
         {
+            "rule": "moviead55\\.ru\\/go\\/bmap",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2d5a1176371511fb1021ad785515c53cd1dfa84b0147d4ccfbbdc7b18f6744cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rutor.info",
+                "www.rutor.info"
+            ]
+        },
+        {
+            "rule": "moviead55\\.ru\\/mp_dist\\/cfg\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f6d4df5696e9f102fb2baf390473959a449fa1bc4dbda3af91c6ed4c380199f0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rutor.info",
+                "www.rutor.info"
+            ]
+        },
+        {
             "rule": "moviead55\\.ru\\/go\\/bn",
             "cookies": 0,
             "fingerprinting": 0,
@@ -136,7 +208,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "da70a660dbadc11a3849a7d0da9032e8b5b7fbf635c0432ba0c79a5fde9dd55b"
+                "b302406eb93966e191c1ffe6797116f3894b76089832294dbb6029ff492d26df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -158,7 +230,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b03b5099157c0a6739c2a35497ed2cd2ba4b77b8b3336b447a097f0668f93b08"
+                "def233331fdff916dfe3eacc89170df51e9ec1c5a1e75d75709fac53a7df3f45"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -197,34 +269,30 @@
     "topInitiators": [
         {
             "domain": "serieslife.online",
-            "prevalence": 0.36
+            "prevalence": 0.38
         },
         {
             "domain": "videotoday.site",
-            "prevalence": 0.34
+            "prevalence": 0.38
         },
         {
             "domain": "vak345.com",
             "prevalence": 0.16
         },
         {
-            "domain": "clients-cdnnow.ru",
-            "prevalence": 0.12
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.02
+            "prevalence": 0.08
         }
     ],
     "types": {
         "Stylesheet": 2,
         "Image": 6,
-        "Script": 4,
-        "Fetch": 2,
+        "Script": 6,
+        "Fetch": 4,
         "XHR": 2
     },
     "nameservers": [
-        "cloe.ns.cloudflare.com",
-        "george.ns.cloudflare.com"
+        "george.ns.cloudflare.com",
+        "cloe.ns.cloudflare.com"
     ]
 }

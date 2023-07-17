@@ -4,38 +4,75 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "lib"
+        "lib",
+        "config"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "jasperplayer\\.com\\/7\\.0\\.x\\/jasper\\.umd\\.production\\.min\\.js",
+            "rule": "jasperplayer\\.com\\/7\\.2\\.0\\/jasper\\.umd\\.production\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "lib"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.onLine": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.onLine": 7,
+                "Navigator.prototype.platform": 7,
+                "Navigator.prototype.requestMediaKeySystemAccess": 7,
+                "Date.prototype.getTime": 7,
+                "window.localStorage": 7,
+                "Event.prototype.timeStamp": 7
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "ded7a95b7e13c489341270a3f8228a21f3e51ce5706ba6dcf9bb745b2ddadbe3"
+                "964180fc2d6852cafb17a7a23f49364f249fc8ba6f86a672b591638754684b8e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bellmedia.ca",
-                "www.bellmedia.ca"
+                "ctvnews.ca",
+                "bc.ctvnews.ca",
+                "montreal.ctvnews.ca",
+                "northernontario.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "toronto.ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
+            "rule": "jasperplayer\\.com\\/v20230309\\/ctvnews\\/production\\/web\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "cbb71d4f73f334200ded9c85cce5ba9703310a83a75a29ef756bfd69faa7f00c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "bc.ctvnews.ca",
+                "montreal.ctvnews.ca",
+                "northernontario.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "toronto.ctvnews.ca",
+                "www.ctvnews.ca"
             ]
         }
     ],
@@ -49,12 +86,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7,
+        "XHR": 7
     },
     "nameservers": [
-        "ns-1074.awsdns-06.org",
-        "ns-365.awsdns-45.com",
         "ns-560.awsdns-06.net",
+        "ns-365.awsdns-45.com",
+        "ns-1074.awsdns-06.org",
         "ns-1954.awsdns-52.co.uk"
     ]
 }

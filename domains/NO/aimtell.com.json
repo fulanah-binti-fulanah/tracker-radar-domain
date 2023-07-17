@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
         "cdn",
-        "signals"
+        "signals",
+        "beacon"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "aimtell\\.com\\/sdk\\/aimtell-worker-sdk\\.js",
@@ -22,7 +23,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "d0ea4d4cfe79e28a38d69ce76c3cbe9dff703ac715574ee149adbd198b87a456"
@@ -32,8 +33,48 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "shein.com",
-                "www.reference.com",
-                "www.winemag.com"
+                "www.risskov.no",
+                "www.wineenthusiast.com"
+            ]
+        },
+        {
+            "rule": "aimtell\\.com\\/trackpush\\/trackpush\\.min\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Document.cookie getter": 2,
+                "Notification.permission": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "968e7632b7fc4fcf5183bf7d1c8f8ea9cd65c0b6c529b7d5c51dc7bd4d2770f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_aimtellSubscriberID": {
+                    "ttl": 8640008,
+                    "length": 36,
+                    "prevalence": 0.0002018774603815484,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "risskov.no",
+                "www.wineenthusiast.com"
             ]
         },
         {
@@ -44,8 +85,8 @@
                 "signals"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
@@ -54,45 +95,76 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bridgecomsystems.com",
-                "www.reference.com",
-                "www.winemag.com"
+                "risskov.no",
+                "www.wineenthusiast.com"
+            ]
+        },
+        {
+            "rule": "aimtell\\.com\\/suppression",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "risskov.no",
+                "www.wineenthusiast.com"
+            ]
+        },
+        {
+            "rule": "aimtell\\.com\\/suppression",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "risskov.no",
+                "www.wineenthusiast.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.16666666666666666
-        },
-        {
-            "domain": "d214j3hoglojvd.cloudfront.net",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.8
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.16666666666666666
-        },
-        {
-            "domain": "wineenthusiast.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2
         }
     ],
     "types": {
         "Other": 3,
-        "XHR": 3
+        "Script": 2,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1356.awsdns-41.org",
-        "ns-1687.awsdns-18.co.uk",
         "ns-52.awsdns-06.com",
-        "ns-914.awsdns-50.net"
+        "ns-914.awsdns-50.net",
+        "ns-1356.awsdns-41.org",
+        "ns-1687.awsdns-18.co.uk"
     ]
 }

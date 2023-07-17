@@ -7,21 +7,26 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
-        "content"
+        "content",
+        "rea-ads"
     ],
     "cnames": [
         {
             "original": "mscontent.morningstar.com",
             "resolved": "content.aimatch.com"
+        },
+        {
+            "original": "sasinator.realestate.com.au",
+            "resolved": "rea-ads.aimatch.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "aimatch\\.com\\/mstar\\/9\\/MFI_120x60\\.gif",
+            "rule": "aimatch\\.com\\/mstar\\/9\\/September_Surge_OnSite_300x250\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -37,7 +42,7 @@
                 }
             ],
             "responseHashes": [
-                "2947a6e6d4be9ef57c8bd24330a6d6d27548eb96585f150eb255f7c82d4ea59d"
+                "137fe1e0afcc51082680b35cbd47dc2d82fd61ddfb7476a3c91841114230a44f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -73,6 +78,55 @@
                 "morningstar.com",
                 "www.morningstar.com"
             ]
+        },
+        {
+            "rule": "aimatch\\.com\\/parameters\\/v1\\/parameters\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "838c9a99ef2b4e26039583df5baa8a0b782ce8ff166215ebef194f2aeaf37848"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morningstar.com",
+                "www.morningstar.com"
+            ]
+        },
+        {
+            "rule": "aimatch\\.com\\/rea\\/setsv\\/PUBMATIC=EFB9C3E4-9344-41FE-A168-309D39C95176",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rea-ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sasinator.realestate.com.au",
+                    "resolved": "rea-ads.aimatch.com"
+                }
+            ],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realestate.com.au",
+                "www.realestate.com.au"
+            ]
         }
     ],
     "categories": [],
@@ -81,40 +135,34 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.42105263157894735
-        },
-        {
-            "domain": "trackad.cz",
-            "prevalence": 0.15789473684210525
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "reagroupdata.com.au",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "reamedia.com.au",
-            "prevalence": 0.10526315789473684
-        },
-        {
-            "domain": "1gr.cz",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "pubmatic.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "Image": 4
+        "Image": 4,
+        "Script": 2,
+        "Document": 2
     },
     "nameservers": [
-        "ns-1068.awsdns-05.org",
         "ns-1742.awsdns-25.co.uk",
         "ns-177.awsdns-22.com",
+        "ns-1068.awsdns-05.org",
         "ns-544.awsdns-04.net"
     ]
 }

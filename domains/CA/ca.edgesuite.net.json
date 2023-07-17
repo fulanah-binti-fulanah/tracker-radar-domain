@@ -12,9 +12,14 @@
     "prevalence": 0.00181,
     "sites": 18,
     "subdomains": [
-        "recodata.shared-svc.bellmedia"
+        "recodata.shared-svc.bellmedia",
+        "production.sportsnet"
     ],
     "cnames": [
+        {
+            "original": "production-cdn.sportsnet.ca",
+            "resolved": "production.sportsnet.ca.edgesuite.net"
+        },
         {
             "original": "recodata.shared-svc.bellmedia.ca",
             "resolved": "recodata.shared-svc.bellmedia.ca.edgesuite.net"
@@ -24,7 +29,7 @@
     "resources": [
         {
             "rule": "ca\\.edgesuite\\.net\\/api\\/recommendation\\/v2\\/mostPopular\\/articles",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "recodata.shared-svc.bellmedia"
@@ -39,22 +44,22 @@
                 }
             ],
             "responseHashes": [
-                "33f596bb54fba1517e2b8d105838dc39c9d0c7983f532f2a7a68be307ce1b575",
-                "3af6d21ca7de6c6ebd6a379c5eac61507770a9150bacf3b9986751f401886644",
-                "1a56f96c438e910b41f6461c3a3575741c5e7b1f4c8bdefea7ddf1f21f467804",
-                "ff1552ef0034244ab3ccf70a242f6f2db005321d8ab9431728924293e40131c2",
-                "8d4440d6701c5a68b918f8b70fb1813ee0b3dc731eb7d8d43c6e83a69799e253",
-                "b41e4ee292294e1a62ad5f10202d701e11b0025a4b743ce70bd8821b1ac328eb",
-                "80f937f24029bce360aaab1d01305f01e421c7ec2c87ed4ad668ace79817e6ce",
-                "f92f016bedc4206c8dfc859b9db3038919d4e76f7f24ebaff414ad0748e73f60",
-                "69275bcbc8d4084790a10a7d3e77b8cd5f59e0e9e99346b07ba9b2bca7004719",
-                "fdced090697824c16f6f8ffc96819cf1048739a9c389b4c7fbdc552095c8f400",
-                "7810b4b3d4ae213492279e5142f026b7655689f76381ed57903d19ac54ee6093",
-                "5d3e35ae0de7859f458340bbceb2ab2729b2b758954eb286b0d37668c63074bf",
-                "888a392c99ff54f897a41c2f0d1ef54f6cfa5d3aa7618eb6e5f29e1aa3359f65",
-                "63bdaa51ea3d01d3aa7947dfebab01fff8faff7ac43d9732cac1ee6f4bd6af36",
-                "0317f45bcf8c5a065c2c851b8e8e789371855254e0700ccbed005bb989895c22",
-                "daff7e7e99c88abcc222992e966c041d6253a8289efe699e7673fbb02c4f1165"
+                "a9918fc22b85ed49d6116706eb4f32c2c10b9f770be71db176ed22425c045f19",
+                "7b5bcf5984892c614f6b445b9939789fa0ffdc9f3a58a63ff4129e93ee6cc4a5",
+                "b2d33d1725466e2e8aa45b388d91846590d2e9bb9320c17c115df8c85473a2ec",
+                "2fe1d5acbfcd6e14eb5406ba91eef1c1c6ad695b00c522a08341c70f814279d3",
+                "e5dcdb90eee40a542b2ca6af0373f833a84e0ccc30bb202e3567b208233e6d16",
+                "3d92207822d1477d735ba3964a590077d20d818df982e8d998ac9252d206046b",
+                "f8cc498708d5a6f7656d4fa6bf15db2e3f807abe00472ba72279514cd955caec",
+                "34d4ae6101941a9a9113916589f5422124a2a392ce3621e38b3f309917fe9109",
+                "ffd8b6b73b687f27c9247c8df716e3fe9c9ecc2ddaa2a56fdf0fe38964bc7ec4",
+                "d6cfcfb6357a1fd21edb85b3bbea1929a2375c5b9dde6220576d3cf6d0d9632c",
+                "155831ef359bdf0b0a82c98a0a3972b7ba7046d7a808145d2f6d5d37e8c1a802",
+                "74000e57964b86d496c18d4ed25ad02f62a8bb2fd2651f9ba532a40e7c4936ea",
+                "b143a5f7a2b70e58309316d56c755ba211f8c706cfa84f15a5b2ecd2148e3e8e",
+                "59c975c21c6a6dc5fcfaac9b034e6e0a99fa613f3601d978b30793532f6ddd6f",
+                "7781949bc4ca1d40c362438763ce31d5a7463ba51c462c07e4688ebe2fb09ea2",
+                "826404360234e74e948fa1997c376dfd8d0bfbebbd7be3211f3e89cdaa9275ee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -78,21 +83,53 @@
                 "winnipeg.ctvnews.ca",
                 "www.ctvnews.ca"
             ]
+        },
+        {
+            "rule": "ca\\.edgesuite\\.net\\/api\\/lists",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production.sportsnet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "production-cdn.sportsnet.ca",
+                    "resolved": "production.sportsnet.ca.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "bf0872c360d762b45a4ea9efcdf1dbaf4b0cbe4fa4d52abfe04f33ed691522bb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportsnet.ca",
+                "watch.sportsnet.ca"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7727272727272727
+        },
+        {
+            "domain": "sportsnet-static.com",
+            "prevalence": 0.22727272727272727
         }
     ],
     "types": {
-        "XHR": 17
+        "XHR": 17,
+        "Fetch": 2
     },
     "nameservers": []
 }

@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "nordvpn",
-        "vodafoneuk"
+        "vodafoneuk",
+        "rbs",
+        "icici"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,16 +26,17 @@
             "fingerprinting": 1,
             "subdomains": [
                 "nordvpn",
-                "vodafoneuk"
+                "vodafoneuk",
+                "rbs"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
                 "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "32584b2783e66b16203b7b50c8e7870b68c92cf669118e91a6bab647ce44f857"
@@ -41,16 +44,17 @@
             "type": "Script",
             "firstPartyCookies": {
                 "bc.visitor_token": {
-                    "ttl": 31622404,
+                    "ttl": 31622403,
                     "length": 19,
-                    "prevalence": 0.00020090406830738323,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nordvpn.com",
-                "support.vodafone.co.uk"
+                "support.vodafone.co.uk",
+                "supportcentre.natwest.com"
             ]
         },
         {
@@ -59,11 +63,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "nordvpn",
-                "vodafoneuk"
+                "vodafoneuk",
+                "icici"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "086891f96cf54a0938281ebdc52edbfa58291be32b592dd792d7dbd2e4cf8e00"
@@ -73,7 +78,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nordvpn.com",
-                "support.vodafone.co.uk"
+                "support.vodafone.co.uk",
+                "www.icicibank.com"
             ]
         },
         {
@@ -88,7 +94,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cc68ea478610ae7da9d45a99e6ba89bf2e348b36a4f99b55dde8afc70e64c4ec"
+                "694f620d6c58d0735efa6aa64beecee32be091fdba431c739bbcd96d4e208225"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,7 +122,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "bc.visitor_token": 0.00020090406830738323
+                "bc.visitor_token": 0.00020110608345902463
             },
             "exampleSites": [
                 "nordvpn.com",
@@ -144,34 +150,103 @@
                 "vodafone.co.uk",
                 "support.vodafone.co.uk"
             ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "icici"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ea8912800b6b48c8bbcdb5428355f8ab99be309234dd6dc2a83b78d7daeb38f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icicibank.com",
+                "www.icicibank.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "icici"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.00020110608345902463
+            },
+            "exampleSites": [
+                "icicibank.com",
+                "www.icicibank.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "icici"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "658d4e9b605db1b5f57a3e32d6d331cb9384141260defa094c7bc1f2c13aa302"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.00020110608345902463
+            },
+            "exampleSites": [
+                "icicibank.com",
+                "www.icicibank.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.6470588235294118
         },
         {
             "domain": "nanorep.com",
-            "prevalence": 0.4166666666666667
+            "prevalence": 0.29411764705882354
         },
         {
             "domain": "boldchat.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 6,
-        "Image": 2
+        "Script": 3,
+        "XHR": 11,
+        "Image": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1044.awsdns-02.org",
-        "ns-572.awsdns-07.net",
         "ns-1693.awsdns-19.co.uk",
+        "ns-572.awsdns-07.net",
         "ns-124.awsdns-15.com"
     ]
 }

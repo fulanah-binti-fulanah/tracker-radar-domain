@@ -4,19 +4,52 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "lf-oldnational.tools"
+        "lf-navyfcu.tools",
+        "lf-oldnational.tools",
+        "expert"
     ],
     "cnames": [
         {
             "original": "calculators.oldnational.com",
             "resolved": "lf-oldnational.tools.leadfusion.com"
+        },
+        {
+            "original": "tools.navyfederal.org",
+            "resolved": "lf-navyfcu.tools.leadfusion.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "leadfusion\\.com\\/tools\\/lf-navyfcu\\/home02\\/tool\\.fcs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lf-navyfcu.tools"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tools.navyfederal.org",
+                    "resolved": "lf-navyfcu.tools.leadfusion.com"
+                }
+            ],
+            "responseHashes": [
+                "9c29dbfc46177e8dfa2dcd8ba804650b3fd4cda9f8595f96a76db7f7dff08c91"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navyfederal.org",
+                "www.navyfederal.org"
+            ]
+        },
         {
             "rule": "leadfusion\\.com\\/response\\/lf-oldnational\\/artifact\\/home11\\/assets\\/scripts\\/lf-tool-wrapper-v1\\.js",
             "cookies": 0,
@@ -34,7 +67,7 @@
                 }
             ],
             "responseHashes": [
-                "25277a0083176355ffdd98d6d1a6039c6ee6a41218fef7d787b78a590913fd78"
+                "3945a2b87f946145a0a054cce6b7194ddb2a86a1827186a0b612db913f140b95"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,16 +76,45 @@
                 "oldnational.com",
                 "www.oldnational.com"
             ]
+        },
+        {
+            "rule": "leadfusion\\.com\\/tools\\/lf-unifyfcu\\/home02\\/tool\\.fcs",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expert"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f8c6747313a65691d5ab6fb9e579a0432c57b28809d86461dcd81d010386188"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unifyfcu.com",
+                "www.unifyfcu.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
+        "XHR": 4,
         "Script": 2
     },
     "nameservers": [
-        "udns2.ultradns.net",
-        "udns1.ultradns.net"
+        "udns1.ultradns.net",
+        "udns2.ultradns.net"
     ]
 }

@@ -9,25 +9,27 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "pxl",
-        "sync"
+        "sync",
+        "as",
+        "playercdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "jivox\\.com\\/tags\\/re\\/pxrc\\.php",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "pxl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -35,24 +37,25 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "adsk_s_gpv": 0.0002008838891120932
+                "adsk_s_gpv": 0.00030214523114110184
             },
             "exampleSites": [
                 "autodesk.com",
+                "www.autodesk.ca",
                 "www.autodesk.com"
             ]
         },
         {
             "rule": "jivox\\.com\\/tags\\/sync\\/usync\\.php",
-            "cookies": 0.000301,
+            "cookies": 0.000504,
             "fingerprinting": 0,
             "subdomains": [
                 "pxl",
                 "sync"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -61,31 +64,137 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bose.ca",
+                "subway.com",
+                "swcms-w.subway.com",
+                "www.al.com",
                 "www.bose.com",
-                "www.flyfrontier.com"
+                "www.subway.com"
             ]
         },
         {
-            "rule": "jivox\\.com\\/tags\\/re\\/pxjs\\.php",
+            "rule": "jivox\\.com\\/unit\\/unit_renderer\\.php",
             "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "as"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "d177965dad7b4d44c905ba69bd284e91f6d02f7ae5ffa68636507015ea8fd767",
+                "0559a2829834c619a865e3394ee550ea329329dafc012a4b5218df38d50e02f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "al.com",
+                "www.al.com",
+                "www.oregonlive.com"
+            ]
+        },
+        {
+            "rule": "jivox\\.com\\/unit\\/layout_renderer\\.php",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "as"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f1d78433e843ad1d9b03ffd4f3159c24da758c4edf8047830585ff2692814dfe"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00030214523114110184,
+                "_li_dcdm_c": 0.00010071507704703394
+            },
+            "exampleSites": [
+                "al.com",
+                "www.oregonlive.com"
+            ]
+        },
+        {
+            "rule": "jivox\\.com\\/1682338336\\/unit\\/js\\/gz\\/jquery-2\\.1\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "playercdn"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f284353a7cc4d97f6fe20a5155131bd43587a0f1c98a56eeaf52cff72910f47d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "al.com",
+                "www.oregonlive.com"
+            ]
+        },
+        {
+            "rule": "jivox\\.com\\/1682338336\\/unit\\/js\\/gz\\/velocity-raf-disabled\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "playercdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fa85a4366200f608a99ecf4b1b933babdd9c5662cbe5d518b3daa57e53dbd85b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "al.com",
+                "www.oregonlive.com"
+            ]
+        },
+        {
+            "rule": "jivox\\.com\\/1682338336\\/widgets\\/jivoxWidgetApi\\/gz\\/jivoxWidgetApiV2\\.min\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pxl"
+                "playercdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c8f2e8ae0a0640355d341722421fdf669d44b0665289cf2ad484d3674169dcf2"
+                "f6c84a15873bbae73ff06857139327b85a6869fa0e21d36666aa2bb5d9bbb19b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flyfrontier.com",
-                "www.zillow.com"
+                "al.com",
+                "www.oregonlive.com"
             ]
         },
         {
@@ -106,84 +215,48 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flyfrontier.com",
-                "www.zillow.com"
-            ]
-        },
-        {
-            "rule": "jivox\\.com\\/tags\\/conv\\/pxjs\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pxl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "27a9be60aa6b9a32ef776ae46dbc134d72fcbd420ca984eecadacde95eaa22c4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-mobile.com",
-                "www.zillow.com"
-            ]
-        },
-        {
-            "rule": "jivox\\.com\\/tags\\/conv\\/pxre\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pxl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-mobile.com",
+                "zillow.com",
                 "www.zillow.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000603,
+    "cookies": 0.00101,
     "topInitiators": [
         {
+            "domain": "demdex.net",
+            "prevalence": 0.3076923076923077
+        },
+        {
             "domain": "tiqcdn.com",
-            "prevalence": 0.3
+            "prevalence": 0.23076923076923078
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3
+            "prevalence": 0.15384615384615385
         },
         {
-            "domain": "demdex.net",
-            "prevalence": 0.2
+            "domain": "doubleclick.net",
+            "prevalence": 0.07692307692307693
         },
         {
-            "domain": "quantummetric.com",
-            "prevalence": 0.1
+            "domain": "crwdcntrl.net",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "zillowstatic.com",
-            "prevalence": 0.1
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Image": 5,
-        "Script": 6,
-        "XHR": 2
+        "Image": 8,
+        "Script": 11,
+        "Document": 2
     },
     "nameservers": [
         "ns-1014.awsdns-62.net",

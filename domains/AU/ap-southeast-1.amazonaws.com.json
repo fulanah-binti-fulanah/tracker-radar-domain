@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000802,
+    "prevalence": 0.000805,
     "sites": 8,
     "subdomains": [
-        "04apyp8qj6.execute-api",
-        "aws-sin-slb-internet-64392e0be8997725.elb"
+        "aws-sin-slb-internet-64392e0be8997725.elb",
+        "04apyp8qj6.execute-api"
     ],
     "cnames": [
         {
@@ -23,6 +23,87 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws-sin-slb-internet-64392e0be8997725.elb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "ab7a689ed5f62104e2239e878818105b90b3e0ff718c8ef2f969817b619e36a5",
+                "a0843bd1c86653d46703f2d7e5724719d5a3400d783c39e8dfea9011a455a80e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "au.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws-sin-slb-internet-64392e0be8997725.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bf\\.gif",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws-sin-slb-internet-64392e0be8997725.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
         {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/dev\\/row",
             "cookies": 0,
@@ -42,66 +123,41 @@
                 "bhg.com.au",
                 "www.bhg.com.au"
             ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aws-sin-slb-internet-64392e0be8997725.elb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "ubt-sin.tripcdn.com",
-                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
-                }
-            ],
-            "responseHashes": [
-                "2408f4ca8b59354a5906207cb4faa1e12a7fcdbda2973b18e440da68cca4feba"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trip.com",
-                "www.trip.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.78125
         },
         {
             "domain": "bonzai.co",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.1875
         },
         {
-            "domain": "vidgyor.com",
-            "prevalence": 0.05555555555555555
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.03125
         }
     ],
     "types": {
-        "Fetch": 2,
-        "XHR": 2
+        "XHR": 3,
+        "Preflight": 2,
+        "Image": 2,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns1.amzndns.co.uk",
+        "ns1.amzndns.com",
+        "ns1.amzndns.net",
         "ns1.amzndns.org",
         "ns2.amzndns.co.uk",
         "ns2.amzndns.com",
-        "ns1.amzndns.co.uk",
-        "ns2.amzndns.org",
-        "ns1.amzndns.net",
-        "ns1.amzndns.com",
-        "ns2.amzndns.net"
+        "ns2.amzndns.net",
+        "ns2.amzndns.org"
     ]
 }

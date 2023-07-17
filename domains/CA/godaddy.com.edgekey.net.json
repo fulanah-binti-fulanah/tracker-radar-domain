@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "events.api"
+        "events.api",
+        "csp"
     ],
     "cnames": [
+        {
+            "original": "csp.godaddy.com",
+            "resolved": "csp.godaddy.com.edgekey.net"
+        },
         {
             "original": "events.api.godaddy.com",
             "resolved": "events.api.godaddy.com.edgekey.net"
@@ -24,7 +29,7 @@
     "resources": [
         {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/image\\.aspx",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "events.api"
@@ -41,6 +46,31 @@
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
             ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "email.godaddy.com"
+            ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "csp.godaddy.com",
+                    "resolved": "csp.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -79,19 +109,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "unpkg.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.9
         },
         {
             "domain": "wsimg.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Fetch": 4
+        "Fetch": 6
     },
     "nameservers": []
 }

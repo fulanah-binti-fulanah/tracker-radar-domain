@@ -15,11 +15,13 @@
         {
             "rule": "ticketsqueeze\\.com\\/emailsignup\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
@@ -32,7 +34,7 @@
             "exampleSites": [
                 "georgeamphitheatre.com",
                 "www.georgeamphitheatre.com",
-                "www.pineknobamp.com"
+                "www.pncbankartscenter.org"
             ]
         },
         {
@@ -43,8 +45,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "7147ecce067ad49632224f364e0837c9ba5b65683ec2ecfc7d01ed4e9928e651"
@@ -54,7 +56,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "georgeamphitheatre.com",
-                "www.georgeamphitheatre.com"
+                "www.georgeamphitheatre.com",
+                "www.pncbankartscenter.org"
             ]
         }
     ],
@@ -64,15 +67,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.875
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
         "Script": 3,
-        "Stylesheet": 2
+        "Stylesheet": 3
     },
     "nameservers": [
-        "ns17.domaincontrol.com",
-        "ns18.domaincontrol.com"
+        "ns18.domaincontrol.com",
+        "ns17.domaincontrol.com"
     ]
 }

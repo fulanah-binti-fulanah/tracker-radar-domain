@@ -11,7 +11,9 @@
     "sites": 5,
     "subdomains": [
         "mon-va",
-        "maliva-mcs"
+        "vmweb-sg",
+        "maliva-mcs",
+        "mssdk-va"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -49,8 +51,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "de619cfa9780ae83c31b695240a279fbdba02340db803b0e43a176aed5912ef1",
-                "7437d7321efc88b35eff1ea57a71ea9854c1a862cb529083f8f64278b5ca1394"
+                "52c42b5b4ec720b76c6b257cd25a6b9268e70e7d351fc6291ab18f51ffaf1fd9",
+                "1511e2c0390665c7033ae81fdbca10c82c13df9b37af3cd7fe93e8425c292ae5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -62,11 +64,53 @@
             ]
         },
         {
-            "rule": "byteoversea\\.com\\/monitor_browser\\/collect\\/batch\\/",
+            "rule": "byteoversea\\.com\\/service\\/2\\/abtest_config\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "mon-va"
+                "vmweb-sg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.capcut.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/service\\/2\\/abtest_config\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vmweb-sg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d08b973ea4e28f491bb30229e30f53a416f1b2c0df51062bafc07c935dfdb0a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.capcut.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/list",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "maliva-mcs"
             ],
             "apis": {},
             "sites": 3,
@@ -74,6 +118,30 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capcut.com",
+                "www.capcut.com",
+                "www.gauthmath.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/list",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "maliva-mcs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "84dd4a0028d4a61c74848f562967fab38a368e206518383c705e577e67f45946",
+                "948190a15ae7d94bc1d62d16316370c5365c520310b32a4e3719a93d9a05f78f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -106,41 +174,18 @@
             ]
         },
         {
-            "rule": "byteoversea\\.com\\/list",
+            "rule": "byteoversea\\.com\\/monitor_browser\\/collect\\/batch\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "maliva-mcs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "capcut.com",
-                "www.gauthmath.com"
-            ]
-        },
-        {
-            "rule": "byteoversea\\.com\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "maliva-mcs"
+                "mon-va"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [
-                "e35c4ac06728e0bee3ae27a34726e5fe500291db1e83f8bb3a8ccfc065b73a72",
-                "948190a15ae7d94bc1d62d16316370c5365c520310b32a4e3719a93d9a05f78f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -160,10 +205,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "138e1f2374fdccd253b4764e33bd1354ded8c3a814944dc2458a63149bc615bf"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -182,8 +225,32 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b47961a8f3b229d55b3825a4847bf339865b6246447cc03e789e59d1f60b9c1b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gauthmath.com",
+                "www.gauthmath.com"
+            ]
+        },
+        {
+            "rule": "byteoversea\\.com\\/web\\/report",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mssdk-va"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b097fc471c067f5960fbf018f38f1e00396bb71612d79be26976b8f18cf8da26"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -194,7 +261,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -202,15 +269,15 @@
         }
     ],
     "types": {
-        "Preflight": 10,
-        "XHR": 11
+        "Preflight": 13,
+        "XHR": 15
     },
     "nameservers": [
-        "a9-66.akam.net",
-        "a18-64.akam.net",
-        "a1-97.akam.net",
         "a6-65.akam.net",
+        "a9-66.akam.net",
+        "a13-67.akam.net",
         "a12-66.akam.net",
-        "a13-67.akam.net"
+        "a18-64.akam.net",
+        "a1-97.akam.net"
     ]
 }

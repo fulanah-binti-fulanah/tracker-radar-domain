@@ -7,14 +7,34 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "web-sdk.control"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kochava\\.com\\/track\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviesanywhere.com",
+                "www.weatherbug.com"
+            ]
+        },
         {
             "rule": "kochava\\.com\\/track\\/json",
             "cookies": 0,
@@ -33,12 +53,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "moviesanywhere.com",
                 "www.weatherbug.com"
             ]
         },
         {
-            "rule": "kochava\\.com\\/track\\/json",
+            "rule": "kochava\\.com\\/v1\\/cpi\\/identityLink\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviesanywhere.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/v1\\/cpi\\/identityLink\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -53,14 +95,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "moviesanywhere.com",
                 "www.weatherbug.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
@@ -68,13 +110,13 @@
         }
     ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
+        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a4.googledomains.com",
         "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a3.googledomains.com",
-        "ns-cloud-a1.googledomains.com"
+        "ns-cloud-a3.googledomains.com"
     ]
 }

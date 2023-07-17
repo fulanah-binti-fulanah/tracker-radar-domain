@@ -9,19 +9,25 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "js.monitor",
         "francecentral-1.in.applicationinsights",
-        "westeurope-5.in.applicationinsights"
+        "westeurope-5.in.applicationinsights",
+        "nouvelair-gw.westeurope.cloudapp"
     ],
-    "cnames": [],
-    "fingerprinting": 2,
+    "cnames": [
+        {
+            "original": "webapi.nouvelair.com",
+            "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+        }
+    ],
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000303,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
@@ -36,7 +42,7 @@
                 "PerformanceTiming.prototype.navigationStart": 3
             },
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "a602657a3336b260818e5fbba8659e8a971327a571562652c1d46f7c4863d403"
@@ -46,20 +52,20 @@
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.0003013863773357444,
+                    "prevalence": 0.0003026634382566586,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.0003013863773357444,
+                    "prevalence": 0.0003026634382566586,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "clevelandclinic.org",
-                "www.christies.com",
+                "www.generali.fr",
                 "www.husqvarna.com",
                 "www.suunto.com"
             ]
@@ -74,10 +80,13 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "fc7b7e92726f4f516f4fa4710b1af4fdfa32580b2654a774bf96e45c147c096a",
+                "a0371d4fc59a21c844b13e45055c533e2410c7238808a8378e5f57d13f1db958"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -96,13 +105,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
-            "responseHashes": [
-                "fc7b7e92726f4f516f4fa4710b1af4fdfa32580b2654a774bf96e45c147c096a",
-                "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -110,11 +116,115 @@
                 "www.leetchi.com",
                 "www.skoda.fr"
             ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight\\/paginate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight\\/paginate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "dc8efec71241ad626cc65885c1b99fdd6c23c8420f8bc184e8e8b65e2ef7716a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "41044440561d688ab2f02a190480aad2e5482cafeeb4910e57e3d05a313906bf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000504,
     "topInitiators": [
         {
             "domain": "first party",
@@ -127,13 +237,13 @@
     ],
     "types": {
         "Script": 4,
-        "Preflight": 3,
-        "XHR": 3
+        "XHR": 7,
+        "Preflight": 7
     },
     "nameservers": [
-        "ns4-39.azure-dns.info",
+        "ns3-39.azure-dns.org",
         "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net",
-        "ns3-39.azure-dns.org"
+        "ns4-39.azure-dns.info",
+        "ns2-39.azure-dns.net"
     ]
 }

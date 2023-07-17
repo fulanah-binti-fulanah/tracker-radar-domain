@@ -7,37 +7,11 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "cdn5",
         "vast"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "playmatic\\.video\\/public\\/playmatic_union\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn5"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d5661aa30886e4dd43fb1e17981043352a5398a599443ebcd19b09da7648ec56"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lafa.site",
-                "top.lafa.site"
-            ]
-        },
         {
             "rule": "playmatic\\.video\\/vast\\.php",
             "cookies": 0,
@@ -67,15 +41,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "canstrm.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
         "Document": 2
     },
     "nameservers": [
-        "simon.ns.cloudflare.com",
-        "julissa.ns.cloudflare.com"
+        "julissa.ns.cloudflare.com",
+        "simon.ns.cloudflare.com"
     ]
 }

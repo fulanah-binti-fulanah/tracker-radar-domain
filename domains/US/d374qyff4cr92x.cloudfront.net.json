@@ -21,8 +21,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 1
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -330,9 +329,11 @@
         {
             "rule": "d374qyff4cr92x\\.cloudfront\\.net\\/productionjs\\/script\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -468,26 +469,6 @@
             ]
         },
         {
-            "rule": "d374qyff4cr92x\\.cloudfront\\.net\\/images\\/common\\/stars_small\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6ba2f0760052c01e9ec25c0b56c45ffac737afd7c4cae2e28b668806bd4b877d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheetmusicplus.com",
-                "www.sheetmusicplus.com"
-            ]
-        },
-        {
             "rule": "d374qyff4cr92x\\.cloudfront\\.net\\/images\\/common\\/dc-overlay-small\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -582,13 +563,13 @@
     "types": {
         "Script": 12,
         "Stylesheet": 8,
-        "Image": 32,
+        "Image": 30,
         "Font": 2
     },
     "nameservers": [
-        "ns-445.awsdns-55.com",
         "ns-1272.awsdns-31.org",
-        "ns-516.awsdns-00.net",
-        "ns-1835.awsdns-37.co.uk"
+        "ns-1835.awsdns-37.co.uk",
+        "ns-445.awsdns-55.com",
+        "ns-516.awsdns-00.net"
     ]
 }

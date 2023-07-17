@@ -101,7 +101,12 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "Navigator.prototype.appName": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -120,9 +125,11 @@
         {
             "rule": "d3ul5arn36jez0\\.cloudfront\\.net\\/assets\\/javascripts\\/ie10-viewport-bug-workaround\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -176,9 +183,9 @@
         "Font": 2
     },
     "nameservers": [
+        "ns-1188.awsdns-20.org",
         "ns-902.awsdns-48.net",
         "ns-500.awsdns-62.com",
-        "ns-1188.awsdns-20.org",
         "ns-2037.awsdns-62.co.uk"
     ]
 }

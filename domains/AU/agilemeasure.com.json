@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "fh-main.measure"
     ],
@@ -21,7 +21,34 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "agilemeasure\\.com\\/data",
+            "rule": "agilemeasure\\.com\\/lookup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fh-main.measure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "data-fh.ext.hpe.com",
+                    "resolved": "fh-main.measure.agilemeasure.com"
+                }
+            ],
+            "responseHashes": [
+                "bcc69b75dfab5b8344cc30e4a71ac8a6e57da7dce1aaa4b8f0ecdd3319693627"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hpe.com",
+                "www.hpe.com"
+            ]
+        },
+        {
+            "rule": "agilemeasure\\.com\\/identity",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -42,8 +69,9 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "hpaaeid": 0.00020058168689198675,
-                "drift_eid": 0.00020058168689198675
+                "hpaaeid": 0.00020126798832645668,
+                "drift_eid": 0.00020126798832645668,
+                "ca_user_id": 0.00010063399416322834
             },
             "exampleSites": [
                 "hpe.com",
@@ -57,22 +85,19 @@
     "topInitiators": [
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.6666666666666666
-        },
-        {
-            "domain": "driftt.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 1
         }
     ],
     "types": {
+        "Script": 2,
         "Ping": 2
     },
     "nameservers": [
-        "ns14.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com"
+        "ns13.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com"
     ]
 }

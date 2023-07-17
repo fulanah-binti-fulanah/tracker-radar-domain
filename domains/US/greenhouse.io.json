@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.000116,
+    "sites": 17,
     "subdomains": [
         "boards",
-        "boards-api"
+        "boards-api",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,13 +25,17 @@
                 "boards"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "52de045d747fcfef87de8d1618a85819d435296e271f24fee7f7e14ea0748a29",
-                "2dd3914a5d81d3a16369e7e2397a0997c866c9b072d677bd278eec9660036e12",
-                "51928593417825b5662786b7a5c464f465b0479f44155169319e592bc60cb29c"
+                "e9476801bf95b5a2dd859fc14d4897b2afc89afe251a6690aebb2fb4a81d5b76",
+                "4c499091f4645c5dea6759a3a1c3dacb967fa92f9d75a87adea3c9af4de76075",
+                "4f65daef41f85998f14c10a6e85cf63a964284c90cfadddf25f1bcd584cb2c67",
+                "f26c6e9f0046ebd3e3a488ee414f24fc714eeee89f6d754b785477e705240177",
+                "289f2bae7b7a754c4addbb783277b66eb7deb0b8807437cf9d613f4a02414b7f",
+                "208a6042359e360db62d287c66b46d0ffb4a8f13a0a4595715ea0377497d1084",
+                "dc9d7b9ba6fbe3e8b102276873a947abf2343a767e05ea414dca09ef83850a88"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -38,7 +43,11 @@
             "exampleSites": [
                 "crooked.com",
                 "havenly.com",
+                "mychristiancare.org",
+                "www.acplasticsinc.com",
                 "www.culliganwater.com",
+                "www.olympusproperty.com",
+                "www.timescale.com",
                 "www.upside.com"
             ]
         },
@@ -54,7 +63,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c1277385c87a1014898db01b021cc1dc3c0e5c0b046ef33ce23ec1eae2083d52"
+                "c06508bf943a3c009a79f9c16078fbeb57726332a0e7f6c657d4d13a3d69035c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -62,6 +71,28 @@
             "exampleSites": [
                 "anaconda.com",
                 "www.anaconda.com"
+            ]
+        },
+        {
+            "rule": "greenhouse\\.io\\/v1\\/boards\\/roundpointmortgageservicingcorporation\\/departments\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6a7f6b04646c221844692c37bcd28dc75a484b74021b8c47b40a1f244845100e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roundpointmortgage.com",
+                "www.roundpointmortgage.com"
             ]
         }
     ],
@@ -71,20 +102,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.6842105263157895
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.2
+            "prevalence": 0.15789473684210525
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "d3e54v103j8qbb.cloudfront.net",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "d2rhdy377k7eul.cloudfront.net",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-979.awsdns-58.net",
-        "ns-1030.awsdns-00.org",
         "ns-491.awsdns-61.com",
-        "ns-1915.awsdns-47.co.uk"
+        "ns-1915.awsdns-47.co.uk",
+        "ns-979.awsdns-58.net",
+        "ns-1030.awsdns-00.org"
     ]
 }

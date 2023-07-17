@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
+    "prevalence": 0.000504,
     "sites": 5,
     "subdomains": [
         "cdn"
@@ -26,8 +26,8 @@
                 "Navigator.prototype.userAgent": 1,
                 "window.innerHeight": 1
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "188342239ece0e05733298bc402d0741d2ac8c4c525b3860731799e8fac971c8"
@@ -37,10 +37,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cafemom.com",
-                "littlethings.com",
                 "www.concertarchives.org",
-                "www.healthrangerreport.com",
-                "www.peelschools.org"
+                "www.healthrangerreport.com"
+            ]
+        },
+        {
+            "rule": "embedly\\.com\\/widgets\\/media\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "090fb442e15ea60389c00e7ffed590dc4410285cef09f6637b7f73b8fd89bd45"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kajabi.com",
+                "www.concertarchives.org",
+                "www.jdfarag.org"
             ]
         },
         {
@@ -73,7 +100,9 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -82,33 +111,6 @@
                 "c91d38fda040cd460f25510bbfbd5b53590de7d0676a7f1e71bc13ebafa5b776"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "concertarchives.org",
-                "www.concertarchives.org"
-            ]
-        },
-        {
-            "rule": "embedly\\.com\\/widgets\\/media\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.languages": 2,
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "090fb442e15ea60389c00e7ffed590dc4410285cef09f6637b7f73b8fd89bd45"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -137,6 +139,26 @@
                 "concertarchives.org",
                 "www.concertarchives.org"
             ]
+        },
+        {
+            "rule": "embedly\\.com\\/libs\\/fonts\\/oxygen\\/oxygen-regular-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "concertarchives.org",
+                "www.concertarchives.org"
+            ]
         }
     ],
     "categories": [],
@@ -149,10 +171,10 @@
         }
     ],
     "types": {
-        "Script": 7,
+        "Script": 5,
+        "Document": 3,
         "Stylesheet": 2,
-        "Document": 2,
-        "Font": 2
+        "Font": 4
     },
     "nameservers": [
         "ns-1175.awsdns-18.org",

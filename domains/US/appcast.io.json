@@ -4,16 +4,100 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000544,
-    "sites": 8,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
-        "click"
+        "click",
+        "click2"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "appcast\\.io\\/phenom-te8\\/a31\\.png",
+            "rule": "appcast\\.io\\/generic-te8\\/a31\\.png",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "click"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rx_jobid_399b8a1b-b8cd-11e6-bd44-0bebbd81c23f": 0.000006807583648184077
+            },
+            "exampleSites": [
+                "tsa.gov",
+                "jobs.tsa.gov",
+                "www.cv-library.co.uk"
+            ]
+        },
+        {
+            "rule": "appcast\\.io\\/instacart-te8\\/a31\\.png",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "click2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instacart.com",
+                "shoppers.instacart.com"
+            ]
+        },
+        {
+            "rule": "appcast\\.io\\/pixels\\/dice1-8340\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "click"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b007d6c73de4a252e8e251b1aff1478b3935a608b7dc5c5a2cf7255e70e7946"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ccid": {
+                    "ttl": 31619664,
+                    "length": 22,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clearancejobs.com",
+                "www.clearancejobs.com"
+            ]
+        },
+        {
+            "rule": "appcast\\.io\\/dice-te8\\/a31\\.png",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -28,10 +112,12 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ccid": 0.000013615167296368154
+            },
             "exampleSites": [
-                "wholefoodsmarket.com",
-                "careers.wholefoodsmarket.com"
+                "clearancejobs.com",
+                "www.clearancejobs.com"
             ]
         },
         {
@@ -42,16 +128,28 @@
                 "click"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1de3746e1679d8e6f49feb05e051802c9c89b7630d13859f430692e300aafe99"
+                "8354b590f8250ba3897d54116950e92b981365b240f8a87e9be06cab57e3b038"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ccid": {
+                    "ttl": 31612038,
+                    "length": 22,
+                    "prevalence": 0.000013615167296368154,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sniffspot.com",
@@ -74,7 +172,9 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ccid": 0.000013615167296368154
+            },
             "exampleSites": [
                 "sniffspot.com",
                 "www.sniffspot.com"
@@ -83,11 +183,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000544,
+    "cookies": 0.0000885,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5555555555555556
+            "prevalence": 0.6
         },
         {
             "domain": "first party",
@@ -95,17 +195,17 @@
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Image": 4,
-        "Script": 2
+        "Image": 9,
+        "Script": 4
     },
     "nameservers": [
-        "ns-2043.awsdns-63.co.uk",
         "ns-85.awsdns-10.com",
         "ns-942.awsdns-53.net",
-        "ns-1093.awsdns-08.org"
+        "ns-1093.awsdns-08.org",
+        "ns-2043.awsdns-63.co.uk"
     ]
 }

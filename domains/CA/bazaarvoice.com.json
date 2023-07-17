@@ -9,12 +9,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00864,
-    "sites": 86,
+    "prevalence": 0.00997,
+    "sites": 99,
     "subdomains": [
-        "api",
         "apps",
+        "api",
+        "stg.api",
         "network-a",
+        "network-stg-a",
         "analytics-static.ugc",
         "network",
         "display.ugc"
@@ -23,90 +25,145 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "bazaarvoice\\.com\\/splitTests\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.00151,
+            "cnames": [],
+            "responseHashes": [
+                "6d8ca6aa1cc989fcaaad7b7c4daa9544bfa0d79c4a97be929e1014b428312a56"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "broilkingbbq.com",
+                "scotts.com",
+                "www.behr.ca",
+                "www.behr.com",
+                "www.cubcadet.ca",
+                "www.kitchenaid.ca",
+                "www.kitchenaid.com",
+                "www.liftmaster.com",
+                "www.maytag.ca",
+                "www.maytag.com",
+                "www.michaelhill.ca",
+                "www.ridgid.com",
+                "www.tractorsupply.com",
+                "www.whirlpool.ca",
+                "www.whirlpool.com"
+            ]
+        },
+        {
             "rule": "bazaarvoice\\.com\\/data\\/batch\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "api",
+                "stg.api"
             ],
             "apis": {},
-            "sites": 55,
-            "prevalence": 0.00552,
+            "sites": 73,
+            "prevalence": 0.00735,
             "cnames": [],
             "responseHashes": [
-                "fcfe76e42db2f0544eeb869ecd86c5fe7beba44d2891ccd4ee71bcd46063a55b",
-                "889bf709de49116e57af4f72c63a2aac50469e4f1fbc05fff409785a857f783e",
-                "95b22957dc3cdc89a8bd4488aca7f663371fe2a606c6b9cb3f05b4290413aa47",
-                "3bcabb82470ef3df147c9904db0c09f0fb51bb62678846734e296c2743e8d548",
-                "6a3863a0106a6e0f50ac82146442a94de5ceb839629d77bc19139913844b8584",
-                "7120b16ddd2f4e9449afe26986b6f2ae66e4910f96a54f165f27937c422ea992",
-                "292de2d5c44070cdebc431492c6de7409e451c62feea0d8cc3fb6598b22458be",
-                "0051f34ba9e95420dc19619dff604d75a5bf5ef363c214e5a000577eb410a9b5",
-                "27966f4177fdc133719babc18512f0e802f68cad8bf86d4a3b2a2446484e01e8",
-                "df715d3a965fbbedd2efca5640c3bd143dd573c568c6cad4fbd57826c675d488",
-                "1504dab56f2dd593a741d332f8864b65cbebf65d0d8b186ddc607f4d0d7480cb",
-                "bd55a22ea41e7a2c49d2059dd21d91b24b1724ed68d72db0c57582e9a6ebda16",
-                "5b08b2115d7732415278d660c22b82858d53f7ef77dfbec0c2338e8c2000de55",
-                "e3b23145c91dd8840a8e4a8617dd9955617f9adabcb0f77e6dd5575fd49e08a3",
-                "fb8b66e0e1426c047d8b40a80f557f3b3d2fc2aa35224d84b2781b5257dbb7c4",
-                "07e2c0f0be2af7497ec786030aec6b05a32b182527ba08cfd77fc2ec2cd578aa",
-                "565d7c2c82dc523542d2f3940eafc274aa01ee0f563599c72860e4ef8aaf23e0",
-                "70b6924fb896dc7a9b73b2e9592e4fe7bde74f6d55315ade2cb55d1881e79c4b",
-                "4a9bded51424d9c5ae95db33f8b165705ed0e5c0ca4321706de0119f349c7072",
-                "75097ac98f40fa9bd4bdf1d73eb357830a478b228d0224a66a221de4b80e60fe",
-                "031769628845402bd9cb2c44ae1c1aaa9c69f90f3f3621eb8548fb6c68b07ef5",
-                "0ae16c5d09930259209ec8ce1ddbaa372e44aeb5cb89e728c313d6655464bb07",
-                "5e15bd28aabeeb0e4a9aec4b82c3e79bf728f95c7589825fa7c358b3cbcbe106",
-                "3b637c5a4bba9b1b3d60271c711e63f0da7a19ec581d9294b700987c73e70241",
-                "978c5c646dd7f41f9e950b81130de433e397aaca529c100f172ceae0235435b6",
-                "a3b19c97488d239ff66c11c2e7d1c8c1c983df44e3d13395be73b65178097c25",
-                "3f54c68da02f2c24ab02b192d4be9acf050be0d17c9eb7c93c77cf46326308b6",
-                "cda3b20d49dea6873172a25bad0b944acd5c4183e6e89b88b96eaeee2d0f9adc",
-                "a16ef0dacc083e8c977f7b714cf114107da110d51a741989bef29ca0bb20f4a3",
-                "26cd0fde7734843f39d66c3400b5529568b666508db2c39be7ba06bb8176f1e2",
-                "ac685e59aea92ce9b9434b6e5fc7a8af80b075f8fdd3532618c0f9308a3b6794",
-                "2182ebc9d735ed9727ec0ca4f9bf75ce45f35279fd39b1e3e5b008b564421d49",
-                "ab8445613184889a2b49fd5fe32d9eaaf070684bf730b85f0245169a173fe65c",
-                "ea8cb62a031752b595a049f86343fdaacdc28910eb4ca9a18377d73dceb918bf",
-                "d9c8d7ce65fd513c70ce472ca4438dc8db9fe01af33aec5695527b57cef335fd",
-                "eff58ab62bdbb14c3f4d5f07e228d595d4ae9b95a3173ee543c8f5b8e3d789e2",
-                "d6d8f3c1f54a2b7c0a0c7feb605491205f56b8a62eab9fbe311b55116a20463a",
-                "4492e3f506c635b574239dc74a5e92f134f2c35b51a237d63c660457e2fca1eb",
-                "593ba31f222e2abd8ff3e626d23c7c4b89a0be8ec788a988d7eda2f10ad3f60d",
-                "26b82e9773e37f7fb92b3688ab4045ea1216f1ffcfa5d26820fb62a9ad1287b0",
-                "ca63dd3bf5fbaf67fb1a62208c02b584754fce88a2bc98a02aef60100617ac24",
-                "7a1d0e306fd5f76ed7b8bb946ca429d508fa689e23255416509339e68865a221",
-                "26e40f8f4044afffcef81078e8c786648dbf387a221e8e45f64684bc5468470e",
-                "64591326ebc3d8a50b8f4b3eb1739d4e3131bbbf7eb5e4db46dfbd30f2f155e8",
-                "07af13d5662f5ea256d6c02f3c0d54070dc3e8b7c82ac313e1a86434e70d310c",
-                "ca399e0a34fc3c1fb09ff1a71954db5cee30bf7cd0c18302e429a167e51d1649"
+                "bfd12b89151de1ebbc9e8367b6a939340bee7147a4a7de0adc8964c5c3c50c1d",
+                "3caefad4d03a2da0688dc5d3b5ad6535fcc1882454a526ca5af10893fa90cbfa",
+                "103c0dc556036b2f6330b4bef8b0522084239b811d65eba84a94be37fe78954c",
+                "463d3c5b58cc67554dfd9e168606def231cfcf1fcafd0b816fcbbb735c8c7e77",
+                "397a862212d0d1c0aa4e01730d56ebc309d3b50babe21c484d638ee4f92d1f45",
+                "4c873933654c5f18af96b62fd4b5943f7e0d6bf11b1024a0855ab0495c7f2e41",
+                "6089920d2567d61f19136b66c5838d6cf0c4684f13e27cf17cc6a805af97a41b",
+                "65dbbd8e615b55aac42a5d4a4cd594fea3cd0b64075931e0a44039930f9018c7",
+                "a641d8f247bc15f9bc25c39080a1f587ff75d8de90acabef3e469ad37bd7d3a6",
+                "4a3fa50f98a7dbd72bf363bdd55585d8a9b8db101fa440a06c90d82ac6eed39d",
+                "5dc0625b9ecedfe17848feb170c764d7fe5a398c555ee44fc575281b7ab05990",
+                "23ddece1c1394a71a063e09fd7798dcc3115821f1ade58418e663efd24dd824a",
+                "e14b1e0294472d8f70d4f6430b5ea176b939ea07c99ae9b1054eb7bc8a3616cb",
+                "b1bf2d8a0ceb421beaa9c45c8be9f22b71d9f1d4a8c24fa8a44a33be59ad5b95",
+                "98d7a67e3c617e89e896a2952616e729646f790b0eacdd75350352297b638e1a",
+                "3bbb1fce2682692ba535071b7950f101abfe8948cb80c6d287094fc0f566548c",
+                "b590b9743e38a3eca1de66055b50e7b626cd00d260600f346880e7f777c94ba0",
+                "f56dd5b3fad507e0fc8bec13657365fd1b8c616bf3c4837969d564fff8c71f3d",
+                "57a2e8f2862668b182e142d669cd56dc3ed2c32f1176d9943401080d49513248",
+                "a71aa60c1ab4baaf98fd96ebd6ad9521413e150fc1a2e2ee9b481011613b1757",
+                "e0fbc6a36d94249227c5dd28d7bde2ea1ece02bc2794a4fd3288eaae1c00c013",
+                "754cb5b29aba19eadbe80361434ba6b72aecda377ed2d5c718a23c7aad3b7d3e",
+                "76822e5b8ed48dea90fb220cc59fe4fada80ad00fe744065df800abfbe8cfd8a",
+                "e47ab8cd0b29b43f216e1e88a495941e23e8a8fd758268671e36fb2177e48374",
+                "7395b2c0ec38eca89c82d2bf4d952d4f2eb7c68533c1cd8bb89841dd99c6f270",
+                "d22f383476df5d6f5ce62622ff845ee7365aa0314b89562af055a492cfe7df1a",
+                "49654e3bff9aba06b3d8ae673ed42519a31089444662eb546def66ef20f93f68",
+                "4ab66ef69bc2cb18a2c5ac4a966181ae7566a31c29135d36052ed75bdf8101c1",
+                "a266c71299a21a013cc37da70804a869c1d7fd7d5dfac4d950a21afb13107e84",
+                "f1265ea80c38a7a7b13cd8d9bda61c2901301fbd37cf00a43e838da6e88b0fba",
+                "dbe5a0ccc5eab8fbe62dfa9cb2ce0c96c14fa36d5beba5efdf9933bac30e6dbd",
+                "7b25d9606408a154a8977c8b92f4d4c9a31fe0462eaa7e5d584d2c1da68e6ee2",
+                "b4eb165bf7ec121d91d9b678f0df02887fc814aeb6955e05061e47296df41484",
+                "3edbbf1d558f44ea561a8007183233bd3e508cf223049058ba746b06706c2ef6",
+                "ef0551fa08c0e0cb4ebba7663d275ee299e547d72dd02f9fa7ed754a17ab98ae",
+                "b863d4123f476a436ce6519ac7683b7b96ba82838b54f1a02bec158077073ccd",
+                "55e058c0a35b9623b28b69045aeabfd287b9247cd7194b4a7ea711b935b42d25",
+                "edb3d28effc1285072751413387c2ff9976aeebd44c97b3bee094142898f7f6d",
+                "02c3fdeca5bb481c91fab3b39c73d412ccbd22f284fb1d626fbf66cf37f5c682",
+                "2bd3b3c377283e5929c7957c51066f1acc5c60563ad5ef555b351fdc635122af",
+                "983495e9bb5e3cc5e8f0855234c49576bc6fe17b63a48e1b7513511a1f244160",
+                "2087d3048c384239f7a6cfe30e27eef4b4fe11d63a90a651bb804251bf67a529",
+                "498aa5de42c455b74de8c3814c371891c2bbe9bd0209246a7cb593f8410102ca",
+                "40ebc9a5f761c0c77f9b99ee4d395d7a87e2659851ef964ddfcfe0e2e4fae6b6",
+                "5a9bba7c6e925d6d44080786bb7d1c3efe0cd33761f22ee8fcf51ad59c74807a",
+                "b9c06bd6e8681f9d22d3817cfb93842caba52cc105e229c7e044f4824a1b080a",
+                "2211eac222442c08322d5dcc4d452e44f0996eacd3bb474862347b50571b78e9",
+                "44c283300a0824577e23b43bda949d6d2de38b5c77262de9c7e502c2f20599e8",
+                "070234aa106892dcdfc5e9adffb38ced6037ca1fdc4e74c639dd5ffd9ea0f14c",
+                "494fed1bc26613cf466cdedb9e2b9855a6c2287cc4e4446f2ac7ab757586e136",
+                "50ecf9382f5cc5afce1e121eada7bdd4ec65320a4ade13b607281da109887ef1",
+                "8041128807e334a113e7f0359ea6ee2388855288c14a5004b195bb1c4aafeac0",
+                "306e09297aec4fb0388490f6fc8d74b7fa586b1505350bca6b18becacb9e449c",
+                "3d307c7d73e73deade8f6afbefea20c62096ddf15f7b59d573e96d00a67b71a8",
+                "3f13fa9cc6eae72b04c392168fb93a3cc7023a32ed511624f8dfb8e102eef59e",
+                "c0a2292af742c0e83de4ced39435d200595698a27ed4d2657478545312af2691",
+                "f880e2a697c7b2691c76934148e36173ef7501f82bc18d7db196a338788b8cc2",
+                "c799db5555f4f338c6335b4871decf203dd37978a2e20d51e0d95201cf56b593",
+                "72f31e95f4596310dab4d997b0349b24c3db362af863b7fdfd30df63f9290b24",
+                "bff598fe5b4d92ae812827580d21cb528106c857c1644115f97ee0d49d5c6630",
+                "3b1f3e5dd17c398ffa33a78a3f04aa55ec1f0446d2b6a4d9e94d7abe6dc803a7",
+                "024c7640a4412d531c77c3b373095ff981e699ef8d93fdc2d4d7c70f0283ea02",
+                "de711605d673896a920063f178c3ea9c897e687ea47a3b8a9d1beeab7f7f8ef3",
+                "0607ac564e8a33885a1838170ddd3211d52469581a6cc3df5f6185e44ee29288",
+                "6f32b9097bd1201e8eaef3237a36057c0967f405b21d1e3b93c755ad0674dc3a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "BVImplocc_test": 0.0001004419445560466
+                "BVImplocc_test": 0.00010071507704703394
             },
             "exampleSites": [
+                "www.cuisinart.com",
+                "sportchek.ca",
                 "www.kitchenaid.com",
-                "www.delonghi.com",
-                "www.graco.com",
-                "casper.com",
-                "products.geappliances.com",
-                "www.bureauengros.com",
-                "www.staples.ca",
-                "www.behr.com",
+                "egopowerplus.com",
+                "www.kitchenaid.ca",
+                "kent.ca",
                 "www.mooresclothing.ca",
-                "www.geappliances.com",
-                "www.canadiantire.ca",
+                "www.michaels.com",
+                "casper.com",
+                "www.traeger.com",
+                "chatters.ca",
+                "www.behr.ca",
+                "www.ninjakitchen.ca",
+                "www.geappliances.ca",
                 "www.lequipeur.com",
-                "www.yeti.ca",
-                "www.colgate.com",
-                "www.dysoncanada.ca",
-                "www.royalcaribbean.com",
-                "www.tractorsupply.com",
-                "www.whirlpool.ca",
-                "www.acana.com",
-                "www.princessauto.com"
+                "www.wyze.com",
+                "www.henrys.com",
+                "www.northerntool.com",
+                "support-en.wd.com",
+                "www.maytag.ca"
             ]
         },
         {
@@ -117,8 +174,8 @@
                 "apps"
             ],
             "apis": {},
-            "sites": 54,
-            "prevalence": 0.00542,
+            "sites": 73,
+            "prevalence": 0.00735,
             "cnames": [],
             "responseHashes": [
                 "dccfc3418e69f6ca37f92a3459c360d871b36744be9a4e2b96bbe3ae4e45e4fd"
@@ -128,47 +185,47 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "www.bedbathandbeyond.com",
-                "www.whirlpool.ca",
-                "kent.ca",
-                "www.michaels.com",
-                "www.dysoncanada.ca",
-                "www.canadiantire.ca",
-                "www.cuisinart.com",
-                "www.tractorsupply.com",
-                "www.whirlpool.com",
-                "www.northerntool.com",
-                "well.ca",
-                "www.petvalu.ca",
-                "www.milwaukeetool.ca",
-                "www.boiron.ca",
-                "www.princessauto.com",
-                "www.colgate.com",
+                "ca.jbl.com",
+                "www.jbl.com",
+                "www.techsmith.com",
                 "products.geappliances.com",
-                "www.yeti.ca",
-                "www.geappliances.ca",
-                "www.famousfootwear.ca"
+                "ortho.com",
+                "www.naturalizer.ca",
+                "www.ridgid.com",
+                "www.partycity.ca",
+                "www.sportchek.ca",
+                "www.northerntool.com",
+                "www.famousfootwear.ca",
+                "www.whirlpool.com",
+                "www.princessauto.com",
+                "www.marks.com",
+                "egopowerplus.com",
+                "www.renogy.com",
+                "www.behr.ca",
+                "www.kitchenaid.com",
+                "www.royalcaribbean.com"
             ]
         },
         {
             "rule": "bazaarvoice\\.com\\/analytics\\/bv-analytics\\.js",
-            "cookies": 0.00492,
+            "cookies": 0.00675,
             "fingerprinting": 2,
             "subdomains": [
                 "apps"
             ],
             "apis": {
-                "Screen.prototype.width": 52,
-                "Screen.prototype.height": 52,
-                "Navigator.prototype.language": 54,
-                "Navigator.prototype.cookieEnabled": 54,
-                "Document.cookie getter": 49,
-                "Date.prototype.getTimezoneOffset": 54,
-                "Date.prototype.getTime": 54,
-                "Document.cookie setter": 49,
-                "PerformanceTiming.prototype.navigationStart": 16
+                "Screen.prototype.width": 69,
+                "Screen.prototype.height": 69,
+                "Navigator.prototype.language": 70,
+                "Navigator.prototype.cookieEnabled": 70,
+                "Document.cookie getter": 67,
+                "Date.prototype.getTimezoneOffset": 70,
+                "Date.prototype.getTime": 70,
+                "Document.cookie setter": 67,
+                "PerformanceTiming.prototype.navigationStart": 23
             },
-            "sites": 57,
-            "prevalence": 0.00573,
+            "sites": 74,
+            "prevalence": 0.00745,
             "cnames": [],
             "responseHashes": [
                 "7d22f48243f28ae0d3cfbbc0ec1919450e5249f32645dfdf104c83d0b5cfd00c"
@@ -177,26 +234,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.milwaukeetool.ca",
-                "www.pxg.com",
-                "www.canadiantire.ca",
-                "www.mooresclothing.ca",
-                "magpul.com",
-                "www.yeti.ca",
-                "www.henrys.com",
+                "www.royalcaribbean.com",
+                "www.petvalu.ca",
                 "www.bureauengros.com",
-                "www.barnesandnoble.com",
-                "www.acana.com",
-                "www.celebritycruises.com",
-                "www.ninjakitchen.ca",
-                "www.northerntool.com",
-                "www.geappliances.ca",
+                "www.sportsexperts.ca",
+                "www.whirlpool.ca",
+                "qa2-www.canadiantire.ca",
+                "chatters.ca",
+                "egopowerplus.com",
+                "www.purina.ca",
+                "www.ninjakitchen.com",
+                "www.milwaukeetool.com",
+                "sportchek.ca",
+                "www.behr.com",
                 "www.lcbo.com",
-                "www.delonghi.com",
-                "www.wyze.com",
-                "casper.com",
-                "www.michaelhill.ca",
-                "www.whirlpool.ca"
+                "www.napaonline.com",
+                "www.lequipeur.com",
+                "scotts.com",
+                "www.ridgid.com",
+                "www.henrys.com",
+                "www.mooresclothing.ca"
             ]
         },
         {
@@ -204,11 +261,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "network-a"
+                "network-a",
+                "network-stg-a"
             ],
             "apis": {},
-            "sites": 66,
-            "prevalence": 0.00663,
+            "sites": 79,
+            "prevalence": 0.00796,
             "cnames": [],
             "responseHashes": [
                 "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce"
@@ -216,34 +274,105 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "BVBRANDID": 0.006126958617918843,
-                "BVBRANDSID": 0.006126958617918843,
-                "IR_gbd": 0.0006026516673362796,
-                "crl8.fpcuid": 0.0002008838891120932,
-                "_li_dcdm_c": 0.0001004419445560466,
-                "BVImplocc_test": 0.0001004419445560466
+                "BVBRANDID": 0.007452915701480512,
+                "BVBRANDSID": 0.007452915701480512,
+                "IR_gbd": 0.0008057206163762715,
+                "crl8.fpcuid": 0.00040286030818813577,
+                "_li_dcdm_c": 0.00010071507704703394,
+                "BVImplocc_test": 0.00010071507704703394
             },
             "exampleSites": [
                 "www.bedbathandbeyond.com",
-                "www.yeti.ca",
-                "www.milwaukeetool.ca",
-                "www.geappliances.ca",
-                "www.ninjakitchen.ca",
-                "www.napacanada.com",
-                "egopowerplus.com",
-                "well.ca",
-                "casper.com",
-                "kent.ca",
-                "www.troybilt.ca",
-                "www.behr.com",
-                "www.famousfootwear.ca",
+                "www.milwaukeetool.com",
+                "www.lequipeur.com",
+                "www.ninjakitchen.com",
+                "www.northerntool.com",
+                "www.sharkclean.ca",
+                "broilkingbbq.com",
+                "qa2-www.canadiantire.ca",
+                "www.jbl.com",
                 "www.mooresclothing.ca",
-                "www.ridgid.com",
-                "www.colgate.com",
-                "www.hisense-canada.com",
-                "www.napaonline.com",
-                "www.boiron.ca",
-                "scotts.com"
+                "www.traeger.com",
+                "www.staples.ca",
+                "instantpot.com",
+                "www.sportsexperts.ca",
+                "egopowerplus.com",
+                "www.bureauengros.com",
+                "ca.naturalfactors.com",
+                "www.americanstandard.ca",
+                "www.tanguay.ca",
+                "www.famousfootwear.ca"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/deployments\\/JBL\\/main_site\\/production\\/en_CA\\/bv\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1c20e1d22330b44c4f3e2d3cc5d316a27c22e9b3c7fe54ee7788926a24e41bd8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "NoCookie": {
+                    "ttl": -86398,
+                    "length": 4,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "BVBRANDID": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                },
+                "BVBRANDSID": {
+                    "ttl": 1802,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jbl.com",
+                "www.jbl.com"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/deployments\\/jbl\\/main_site\\/production\\/en_CA\\/api-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "da08961e08f3b163d8f3c01975e5dc6bf407bcbab8900b922902d15558f1ec12"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jbl.com",
+                "www.jbl.com"
             ]
         },
         {
@@ -254,12 +383,12 @@
                 "apps"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 10,
-                "Document.cookie getter": 9,
-                "Navigator.prototype.userAgent": 10
+                "PerformanceTiming.prototype.navigationStart": 16,
+                "Document.cookie getter": 15,
+                "Navigator.prototype.userAgent": 16
             },
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [],
             "responseHashes": [
                 "ab58f1c62bdb7dddb3683d8c560271d72a7d70ac891aab0b4d0c063f077af661"
@@ -270,11 +399,17 @@
             "exampleSites": [
                 "jbl.com",
                 "egopowerplus.com",
+                "instantpot.com",
+                "shop.canon.ca",
                 "www.barnesandnoble.com",
                 "www.bureauengros.com",
                 "www.cuisinart.com",
+                "www.lequipeur.com",
                 "www.ninjakitchen.ca",
+                "www.ninjakitchen.com",
                 "www.petvalu.ca",
+                "www.sharkclean.ca",
+                "www.singer.com",
                 "www.staples.ca",
                 "www.traeger.com",
                 "www.yarnspirations.com"
@@ -288,18 +423,22 @@
                 "api"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 13,
+            "prevalence": 0.00131,
             "cnames": [],
             "responseHashes": [
-                "c588a20b68c82028b0356d48506fcf1cdeecdfa5868f50e0586667659adcc8c8",
-                "016a6b44d35daf8db1d0c7fa51b3aad34bc876100a855ed5005d76eb0acb0cb3",
-                "0676a8ef2466e26b9b619b235932d2c4fa03e9886dc548bf8c1e9d46d80ecb64",
-                "ba2804091fc838b66103012a6d8938e2f92ec1019724ee3941356af6500e33a0",
-                "cb9da63122910282f1abb631546fed24429b99a9862f9e2c2cae3a27d771d632",
+                "6d8ff219a68b36082fed6e654ef59c89bdaa4769f4b0c56fd4bcce7e53a7371f",
+                "b8b6f8501707aea1a5e48bc6e484dadad6e4d985c7bc98c89575c4d9050cc451",
+                "c6904407b0ae8fd6be12c407cb4c9aaf1860257aa3b964cc4c71d241c7169d64",
+                "14108291650510cd2f6b0567f552fb44e4ec3a7f536cc950535226a0099f5d0c",
+                "2abf52071232d158dcf59d78c6c6c5c761d6847f9fae1c7c2d4a93f0d531ecf1",
+                "0236138924a460d7de0784142bbcf52078f28dba7925ee4250fa0c6648ed1957",
+                "f0f76a15f492ec14061e5ff34cd6646c4a96107cf1ec37e997bca3930d6331b9",
                 "c7d8cc9efed0b20f57d6c140936dbba2b7a2a58fba2a0153724eaea9891845c8",
-                "248fa7db718659ad0a1b1e374990bcbfe808ebd1013c587858cd4d1c86fa8336",
-                "6ce4b24b3f16556f1d749d3c64be62322145bb4cec5b174805f7123dfaca1c48"
+                "8094cc13b7679cd3b25938195ccb1420db742744ad5cb9642f579d0f8d0a6cba",
+                "bdd04cee0fa5329d98e50b734ff17e8072de320eb6433b4c26fbbf4617fd14bf",
+                "c84b6d09d46b054a12669528464ca38726cc7d38b8f110b61a42b32a45226d8a",
+                "0696ed4148416d7cf1d26386b9656c517306352285b466141cd2809893776a49"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -307,59 +446,164 @@
             "exampleSites": [
                 "jbl.com",
                 "egopowerplus.com",
+                "instantpot.com",
                 "www.barnesandnoble.com",
                 "www.boiron.ca",
+                "www.boschtools.com",
                 "www.cubcadet.ca",
                 "www.cuisinart.com",
                 "www.ridgid.com",
+                "www.singer.com",
+                "www.techsmith.com",
                 "www.traeger.com",
                 "www.yarnspirations.com"
             ]
         },
         {
-            "rule": "bazaarvoice\\.com\\/prod\\/static\\/latest\\/bv-analytics\\.js",
-            "cookies": 0.00161,
-            "fingerprinting": 2,
+            "rule": "bazaarvoice\\.com\\/deployments\\/canadiantire-ca\\/odp_site\\/production\\/en_CA\\/bv\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
-                "analytics-static.ugc"
+                "apps"
             ],
             "apis": {
-                "Screen.prototype.width": 16,
-                "Screen.prototype.height": 16,
-                "Navigator.prototype.language": 16,
-                "Navigator.prototype.cookieEnabled": 16,
-                "Document.cookie getter": 16,
-                "Date.prototype.getTimezoneOffset": 16,
-                "Date.prototype.getTime": 16,
-                "Document.cookie setter": 16,
-                "PerformanceTiming.prototype.navigationStart": 6
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 16,
-            "prevalence": 0.00161,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7d22f48243f28ae0d3cfbbc0ec1919450e5249f32645dfdf104c83d0b5cfd00c"
+                "80cb635edb1e86da785c263d47a13629f2e878e3a5f6c23f9b8606107f17d734"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "NoCookie": {
+                    "ttl": -86396,
+                    "length": 4,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "BVBRANDID": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                },
+                "BVBRANDSID": {
+                    "ttl": 1806,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/deployments\\/canadiantire-ca\\/odp_site\\/production\\/en_CA\\/api-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1e2611c280d8d9eb540e615b2c5e2da2fe7bf37c34017c9df679e7f539fb3624"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "naturalfactors.com",
-                "pelicansport.com",
-                "vortexoptics.com",
-                "well.ca",
-                "www.bedbathandbeyond.com",
-                "www.boiron.ca",
-                "www.cabelas.ca",
-                "www.cubcadet.ca",
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/apps\\/inline_ratings\\/inline_ratings-2\\.3\\.4\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 7,
+                "Document.cookie getter": 7,
+                "Navigator.prototype.userAgent": 7
+            },
+            "sites": 7,
+            "prevalence": 0.000705,
+            "cnames": [],
+            "responseHashes": [
+                "730807080b9a3727f1ea51a2d75e0929252a5501a94bf3f804c21d9ff9760a06"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chatters.ca",
+                "kent.ca",
+                "www.boschtools.com",
+                "www.breville.com",
+                "www.kleintools.com",
+                "www.ridgid.com",
+                "www.techsmith.com"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/data\\/statistics\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.00151,
+            "cnames": [],
+            "responseHashes": [
+                "5752593d2c9621de6fde61ad777bfd9e48d2c614ebf7ace1c6f575b84f8a3edb",
+                "1b71b17c6e9bc363e6435da9d7121b5e36c6eed7afb103d5262c06cee901576a",
+                "0eac0b7e4d4883cf950721867e76fb85c2e8c26a2b71e4106fd868a7c59a7db9",
+                "0028618f470985e0d61e27475aeca1ae3ef1959c257dfb4ccd2d59a5d2da0289",
+                "8a0ec74315593178470120fb9312879705c0472d1c116f8d1484262c4a1a630e",
+                "7a60ef25fc2a20c911074a62d45f46f9958a0f72f1ca5854b6e6b717f3466f05",
+                "3fd9a95def568518575ca373ae50b52a426e1d16353573681e4757cc01d7fc85",
+                "00c92c8c7ee83f127cadd3e8a680bb425556fd5691d6a75634550805ba076dc4",
+                "c2012545fbfda90950f5c6fbd150fb7947067cd91e9c7e927a68636690fd80ac",
+                "316fee19d2763ad70c4f12387b4d566c4f45cfba69ba893924f814ae88b0b77c",
+                "3b13d4a50a9134f8866b16c249d81a14b537a1ae5eb82d9bdefba8e0dba11a6b",
+                "a84ea7aa1d1eac0f28ecdf26e52fc9a4cefcb8d546f48e04384e9e4426125fc3",
+                "f0ad25d77dc3a2655e271acce27abc853e0c23f6698e2123d74d4910c80b831b",
+                "15efc17bff9a86add073f77e983fd2b6cfe71484ba26903a20c65f81f4c2593f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chatters.ca",
+                "ca.naturalfactors.com",
+                "kent.ca",
+                "shop.canon.ca",
+                "www.breville.com",
+                "www.bureauengros.com",
                 "www.dewalt.ca",
                 "www.dewalt.com",
                 "www.kleintools.com",
-                "www.laura.ca",
-                "www.napacanada.com",
-                "www.pentair.com",
-                "www.troybilt.ca",
-                "www.weber.com"
+                "www.lequipeur.com",
+                "www.ninjakitchen.ca",
+                "www.ninjakitchen.com",
+                "www.petvalu.ca",
+                "www.sharkclean.ca",
+                "www.staples.ca"
             ]
         },
         {
@@ -371,11 +615,11 @@
             ],
             "apis": {
                 "PerformanceTiming.prototype.navigationStart": 3,
-                "Document.cookie getter": 3,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "3b58eed50f50fb815c1924ed5d571f41316ea94e22cb7974a736c7a179781415"
@@ -390,96 +634,68 @@
             ]
         },
         {
-            "rule": "bazaarvoice\\.com\\/data\\/statistics\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.00121,
-            "cnames": [],
-            "responseHashes": [
-                "75e124400e635868e9f06179017685db5aac40c400e060eff824f2036a15b7d6",
-                "9c162d6f5ab98ef26e34b1ea355182c70ec61540d3306f70ec4d31edacfa99df",
-                "7053ed3f870024186b60a354a49a98eb5f5e9b997ff4f0b54dad8637db4e6370",
-                "a1144ec3ab6cba3e338306b02cddc84cc69091b191f4145543ad16bf99c371a3",
-                "0307b4181710fd9e688749e6e6fdac7af4f8bf8bc9ec8a2e5acbdc582c0ca7a0",
-                "1a03f81a8b4024c689cf156baeddb5d5b81d39033896a229493e9db66d57fa24",
-                "a9ffa14ac6cf67924f83cf5d5c44aab0fca10915025fd4623f50974d7f567f5e",
-                "57e0d4d24ad16828cf58cb514247bd1e8ab25cbcaab70f50b3efbcb303906c4a",
-                "a232c798a2a9856be25ed06b4b41ba958acebbad1ec88f2ef27f36129a8ae7d1",
-                "9da34466c0b11970c7a9495a4fa73f9cb4b5aa7c295646d666310408774cd7dc",
-                "d5eadbc9573eef40613f2200e6733ad4490bc55f61bedac407a108352d5fbb8b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "naturalfactors.com",
-                "ca.tommyguns.com",
-                "chatters.ca",
-                "kent.ca",
-                "www.breville.com",
-                "www.bureauengros.com",
-                "www.dewalt.ca",
-                "www.dewalt.com",
-                "www.kleintools.com",
-                "www.ninjakitchen.ca",
-                "www.petvalu.ca",
-                "www.staples.ca"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/apps\\/inline_ratings\\/inline_ratings-2\\.3\\.4\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "apps"
-            ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 6,
-                "Document.cookie getter": 5,
-                "Navigator.prototype.userAgent": 6
-            },
-            "sites": 6,
-            "prevalence": 0.000603,
-            "cnames": [],
-            "responseHashes": [
-                "730807080b9a3727f1ea51a2d75e0929252a5501a94bf3f804c21d9ff9760a06"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tommyguns.com",
-                "chatters.ca",
-                "kent.ca",
-                "www.breville.com",
-                "www.kleintools.com",
-                "www.ridgid.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/prod\\/static\\/3\\/bv-analytics\\.js",
-            "cookies": 0.000804,
+            "rule": "bazaarvoice\\.com\\/prod\\/static\\/latest\\/bv-analytics\\.js",
+            "cookies": 0.00131,
             "fingerprinting": 2,
             "subdomains": [
                 "analytics-static.ugc"
             ],
             "apis": {
-                "Screen.prototype.width": 8,
-                "Screen.prototype.height": 8,
-                "Navigator.prototype.language": 8,
-                "Navigator.prototype.cookieEnabled": 8,
-                "Document.cookie getter": 8,
-                "Date.prototype.getTimezoneOffset": 8,
-                "Date.prototype.getTime": 8,
-                "Document.cookie setter": 8
+                "Screen.prototype.width": 13,
+                "Screen.prototype.height": 13,
+                "Navigator.prototype.language": 14,
+                "Navigator.prototype.cookieEnabled": 14,
+                "Document.cookie getter": 13,
+                "Date.prototype.getTimezoneOffset": 14,
+                "Date.prototype.getTime": 14,
+                "Document.cookie setter": 13,
+                "PerformanceTiming.prototype.navigationStart": 6
             },
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 14,
+            "prevalence": 0.00141,
+            "cnames": [],
+            "responseHashes": [
+                "7d22f48243f28ae0d3cfbbc0ec1919450e5249f32645dfdf104c83d0b5cfd00c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "naturalfactors.com",
+                "pelicansport.com",
+                "well.ca",
+                "www.bedbathandbeyond.com",
+                "www.boiron.ca",
+                "www.cabelas.ca",
+                "www.cubcadet.ca",
+                "www.dewalt.ca",
+                "www.dewalt.com",
+                "www.kleintools.com",
+                "www.laura.ca",
+                "www.melanielyne.com",
+                "www.pentair.com",
+                "www.weber.com"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/prod\\/static\\/3\\/bv-analytics\\.js",
+            "cookies": 0.000604,
+            "fingerprinting": 2,
+            "subdomains": [
+                "analytics-static.ugc"
+            ],
+            "apis": {
+                "Screen.prototype.width": 6,
+                "Screen.prototype.height": 6,
+                "Navigator.prototype.language": 6,
+                "Navigator.prototype.cookieEnabled": 6,
+                "Document.cookie getter": 6,
+                "Date.prototype.getTimezoneOffset": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
                 "7d22f48243f28ae0d3cfbbc0ec1919450e5249f32645dfdf104c83d0b5cfd00c"
@@ -487,21 +703,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "NoCookie": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 4,
-                    "prevalence": 0.0008035355564483728,
-                    "uniqueness": 0.125
+                    "prevalence": 0.0006042904622822037,
+                    "uniqueness": 0.16666666666666666
                 },
                 "BVBRANDID": {
-                    "ttl": 31536006,
+                    "ttl": 31536005,
                     "length": 36,
-                    "prevalence": 0.0008035355564483728,
+                    "prevalence": 0.0006042904622822037,
                     "uniqueness": 1
                 },
                 "BVBRANDSID": {
-                    "ttl": 1806,
+                    "ttl": 1805,
                     "length": 36,
-                    "prevalence": 0.0008035355564483728,
+                    "prevalence": 0.0006042904622822037,
                     "uniqueness": 1
                 }
             },
@@ -509,24 +725,22 @@
             "exampleSites": [
                 "maax.ca",
                 "powerequipment.honda.com",
+                "www.broan-nutone.com",
                 "www.capitalone.ca",
-                "www.chamberlain.com",
-                "www.heartmath.org",
-                "www.liftmaster.com",
                 "www.lg.com",
-                "www.sportchek.ca"
+                "www.liftmaster.com"
             ]
         },
         {
             "rule": "bazaarvoice\\.com\\/sid\\.gif",
-            "cookies": 0.00151,
+            "cookies": 0.00141,
             "fingerprinting": 0,
             "subdomains": [
                 "network"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.00151,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
                 "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce"
@@ -538,18 +752,17 @@
                 "maax.ca",
                 "pelicansport.com",
                 "powerequipment.honda.com",
+                "www.broan-nutone.com",
                 "www.cabelas.ca",
                 "www.capitalone.ca",
-                "www.chamberlain.com",
                 "www.dewalt.ca",
                 "www.dewalt.com",
-                "www.heartmath.org",
                 "www.hisense-canada.com",
-                "www.laura.ca",
-                "www.liftmaster.com",
                 "www.lg.com",
-                "www.princessauto.com",
-                "www.sportchek.ca"
+                "www.liftmaster.com",
+                "www.laura.ca",
+                "www.melanielyne.com",
+                "www.princessauto.com"
             ]
         },
         {
@@ -560,8 +773,8 @@
                 "network"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.00151,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
                 "c3412bd2ed5730cc10799097f7bbfb2cdecab14d8f831fe6597185628e6fb645"
@@ -573,18 +786,17 @@
                 "maax.ca",
                 "pelicansport.com",
                 "powerequipment.honda.com",
+                "www.broan-nutone.com",
                 "www.cabelas.ca",
                 "www.capitalone.ca",
-                "www.chamberlain.com",
                 "www.dewalt.ca",
                 "www.dewalt.com",
-                "www.heartmath.org",
                 "www.hisense-canada.com",
-                "www.laura.ca",
-                "www.liftmaster.com",
                 "www.lg.com",
-                "www.princessauto.com",
-                "www.sportchek.ca"
+                "www.liftmaster.com",
+                "www.laura.ca",
+                "www.melanielyne.com",
+                "www.princessauto.com"
             ]
         },
         {
@@ -595,8 +807,8 @@
                 "network"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.00151,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
                 "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce"
@@ -604,31 +816,29 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "BVBRANDID": 0.001506629168340699,
-                "BVBRANDSID": 0.001506629168340699,
-                "dy_fs_page": 0.0002008838891120932,
-                "BVImplcanada": 0.0001004419445560466,
-                "lotame_domain_check": 0.0001004419445560466,
-                "crl8.fpcuid": 0.0002008838891120932,
-                "BVImplocc_test": 0.0001004419445560466,
-                "IR_gbd": 0.0001004419445560466
+                "BVBRANDID": 0.0014100110786584752,
+                "BVBRANDSID": 0.0014100110786584752,
+                "dy_fs_page": 0.00010071507704703394,
+                "BVImplcanada": 0.00010071507704703394,
+                "lotame_domain_check": 0.00010071507704703394,
+                "crl8.fpcuid": 0.00020143015409406788,
+                "BVImplocc_test": 0.00010071507704703394
             },
             "exampleSites": [
                 "maax.ca",
                 "pelicansport.com",
                 "powerequipment.honda.com",
+                "www.broan-nutone.com",
                 "www.cabelas.ca",
                 "www.capitalone.ca",
-                "www.chamberlain.com",
                 "www.dewalt.ca",
                 "www.dewalt.com",
-                "www.heartmath.org",
                 "www.hisense-canada.com",
-                "www.laura.ca",
-                "www.liftmaster.com",
                 "www.lg.com",
-                "www.princessauto.com",
-                "www.sportchek.ca"
+                "www.liftmaster.com",
+                "www.laura.ca",
+                "www.melanielyne.com",
+                "www.princessauto.com"
             ]
         },
         {
@@ -639,8 +849,8 @@
                 "apps"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "392a2a1574a825c8765b9300666e847dd9054551c629e5d49f54206937e2a5f3"
@@ -650,8 +860,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "honda.com",
-                "www.chamberlain.com",
-                "www.sportchek.ca"
+                "www.broan-nutone.com"
             ]
         },
         {
@@ -672,26 +881,26 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "53d501f46c3d66f62d3e5aa76e0bd06ddc1af7598f0d08846625ab0fb62fae6f"
+                "75af01089c868a69125fb8e4de18e4de40388df1cfaa975f2a98c870983a1c6e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "NoCookie": {
-                    "ttl": -86396,
+                    "ttl": -86393,
                     "length": 4,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 0.5
                 },
                 "BVBRANDID": {
-                    "ttl": 31536004,
+                    "ttl": 31536012,
                     "length": 36,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 },
                 "BVBRANDSID": {
-                    "ttl": 1804,
+                    "ttl": 1812,
                     "length": 36,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 }
             },
@@ -713,7 +922,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5a545b6f9af5860fab870f953a3c22cba5a75fd9fab3c40c5f4ba32fa9421655"
+                "7140d5a8738569a1027a528ab3dcfdff394953dc8445d85acc97bcf85d07a287"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -724,60 +933,72 @@
             ]
         },
         {
-            "rule": "bazaarvoice\\.com\\/splitTests\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "bazaarvoice\\.com\\/deployments\\/fgl\\/sportchek_odp_site\\/production\\/en_CA\\/bv\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
                 "apps"
             ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "97c9c15dad5c4676c849a40a4a1d8f70f7a667d84dbc20edac6dbcbd99250010"
+                "52528d5b9c82acad071456d25cb5981f2d2cb24daf7dd93fd2e788cad0064878"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "NoCookie": {
+                    "ttl": -86397,
+                    "length": 4,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
+                "BVBRANDID": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                },
+                "BVBRANDSID": {
+                    "ttl": 1805,
+                    "length": 36,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scotts.com",
-                "www.behr.ca",
-                "www.behr.com",
-                "www.chamberlain.com",
-                "www.cubcadet.ca",
-                "www.kitchenaid.ca",
-                "www.kitchenaid.com",
-                "www.liftmaster.com",
-                "www.michaelhill.ca",
-                "www.ridgid.com",
-                "www.tractorsupply.com",
-                "www.whirlpool.ca",
-                "www.whirlpool.com"
+                "sportchek.ca",
+                "www.sportchek.ca"
             ]
         },
         {
-            "rule": "bazaarvoice\\.com\\/apps\\/api\\/api-0\\.8\\.1\\.js",
+            "rule": "bazaarvoice\\.com\\/deployments\\/fgl\\/sportchek_odp_site\\/production\\/en_CA\\/api-config\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "apps"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0be51ecda1851e22ee9644e9fc3c301b3ac0dc8b89fad8cf9789d16914682277"
+                "bd7886ec05d86a470cf5a75dd5a83b40866f8df5fea32450abe54f1401121fdc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vortexoptics.com",
-                "www.cubcadet.ca",
-                "www.laura.ca",
-                "www.troybilt.ca"
+                "sportchek.ca",
+                "www.sportchek.ca"
             ]
         },
         {
@@ -789,7 +1010,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "3c3669397a0d6ab57176fa267184cf71c62cac31cd57d6d26aa0f5cdd1797d19"
@@ -812,10 +1033,10 @@
                 "display.ugc"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 5
+                "Event.prototype.timeStamp": 4
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "7e77c571a4a2547f6a78feaf06d969bd97b4d0f7854a5dd006a041acef608638"
@@ -825,10 +1046,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "capitalone.ca",
-                "www.heartmath.org",
                 "www.hisense-canada.com",
                 "www.lg.com",
                 "www.princessauto.com"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/apps\\/api\\/api-0\\.8\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "0be51ecda1851e22ee9644e9fc3c301b3ac0dc8b89fad8cf9789d16914682277"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cubcadet.ca",
+                "www.laura.ca",
+                "www.melanielyne.com"
             ]
         },
         {
@@ -858,52 +1101,8 @@
             ]
         },
         {
-            "rule": "bazaarvoice\\.com\\/data\\/batch\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "817931bfc413768c5cdd742da54ad5de00f341fb433f0b7b2cc534b691927c88",
-                "6366c0363209c516d2ce452f41e29c68e092806c6705f3467da0b9d48c6f0518"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heartmath.org",
-                "www.heartmath.org",
-                "www.lg.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/static\\/heartmath\\/main_site\\/72\\/11248\\/en_US\\/stylesheets\\/screen\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "display.ugc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heartmath.org",
-                "www.heartmath.org"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/deployments\\/princessauto\\/occ_test\\/production\\/en_CA\\/bv\\.js",
-            "cookies": 0.0001,
+            "rule": "bazaarvoice\\.com\\/deployments\\/Dyson-CA\\/main_site\\/production\\/en_CA\\/bv\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "apps"
@@ -912,6 +1111,75 @@
                 "PerformanceTiming.prototype.navigationStart": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a6ec2feae7f090a991e02f1f98b7e3468297f25c3193b7d1bdb978336fb6f181"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "NoCookie": {
+                    "ttl": -86371,
+                    "length": 4,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "BVBRANDID": {
+                    "ttl": 31536029,
+                    "length": 36,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "BVBRANDSID": {
+                    "ttl": 1829,
+                    "length": 36,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dysoncanada.ca"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/deployments\\/dyson-ca\\/main_site\\/production\\/en_CA\\/api-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "08f842b199e98acc24959cde9fdd269c4e48bc5557b64b0bf487ba31059ebfee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dysoncanada.ca"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/deployments\\/princessauto\\/occ_test\\/production\\/en_CA\\/bv\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
                 "Date.prototype.getTime": 1,
                 "Document.cookie setter": 1
             },
@@ -924,77 +1192,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "NoCookie": {
-                    "ttl": -86381,
+                    "ttl": -86382,
                     "length": 4,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "BVBRANDID": {
-                    "ttl": 31536018,
+                    "ttl": 31536017,
                     "length": 36,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "BVBRANDSID": {
-                    "ttl": 1818,
+                    "ttl": 1817,
                     "length": 36,
-                    "prevalence": 0.0001004419445560466,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "princessauto.com",
-                "www.princessauto.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/deployments\\/princessauto\\/occ_test\\/production\\/en_CA\\/api-config\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e9e7af9932ab4ea04a9041fa752e7efb0429e8908f5ca283b1eae28e20fd2ea8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "princessauto.com",
-                "www.princessauto.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/static\\/princessauto\\/occ_test\\/en_CA\\/bvapi\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "display.ugc"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4a70c549bc92117c2aa4bcda7d3793d5cadf5d5257b4ee19f6fd370869e4a983"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "BVImplocc_test": {
-                    "ttl": null,
-                    "length": 9,
-                    "prevalence": 0.0002008838891120932,
-                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -1014,61 +1227,61 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00733,
+    "cookies": 0.00866,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8265682656826568
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.055350553505535055
+            "prevalence": 0.8888888888888888
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.01845018450184502
+            "prevalence": 0.017543859649122806
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.01845018450184502
+            "prevalence": 0.014619883040935672
+        },
+        {
+            "domain": "dysoncanada.ca",
+            "prevalence": 0.011695906432748537
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.014760147601476014
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.01107011070110701
+            "prevalence": 0.008771929824561403
         },
         {
-            "domain": "506.io",
-            "prevalence": 0.007380073800738007
+            "domain": "instanthome.com",
+            "prevalence": 0.005847953216374269
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.007380073800738007
+            "prevalence": 0.005847953216374269
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.007380073800738007
-        },
-        {
-            "domain": "noibu.com",
-            "prevalence": 0.007380073800738007
+            "prevalence": 0.005847953216374269
         }
     ],
     "types": {
-        "Fetch": 64,
-        "Script": 200,
-        "Image": 96,
-        "XHR": 27
+        "XHR": 30,
+        "Fetch": 86,
+        "Script": 244,
+        "Image": 107
     },
     "nameservers": [
-        "a11-65.akam.net",
-        "a6-64.akam.net",
-        "a10-64.akam.net",
         "a13-66.akam.net",
+        "a10-64.akam.net",
+        "a11-65.akam.net",
+        "a2-67.akam.net",
         "a1-191.akam.net",
-        "a2-67.akam.net"
+        "a6-64.akam.net"
     ]
 }

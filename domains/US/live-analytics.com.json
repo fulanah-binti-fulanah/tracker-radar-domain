@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "cdn",
-        "api"
+        "api",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -21,56 +22,58 @@
                 "cdn"
             ],
             "apis": {
-                "window.matchMedia(\"prefers-color-scheme\")": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "Screen.prototype.availLeft": 2,
-                "Screen.prototype.availTop": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "document.fonts.check": 2,
-                "Navigator.prototype.getBattery": 2,
-                "Performance.prototype.memory": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.permissions": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.plugins": 2,
+                "window.matchMedia(\"prefers-color-scheme\")": 4,
+                "HTMLMediaElement.prototype.canPlayType": 4,
+                "MediaSource.isTypeSupported": 4,
+                "Screen.prototype.orientation": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "Screen.prototype.availLeft": 4,
+                "Screen.prototype.availTop": 4,
+                "window.outerWidth": 4,
+                "window.outerHeight": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "document.fonts.check": 4,
+                "Navigator.prototype.getBattery": 3,
+                "Performance.prototype.memory": 3,
+                "window.devicePixelRatio": 3,
+                "Navigator.prototype.permissions": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.plugins": 3,
                 "Notification.permission": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "b53d351e152ff957505ca88767983258b43f55c5ca1ff7ace4a945025ca9e8fb"
+                "1c81932f981234d6a635df010b2d5696b60d5c01e544677ccd564869781873db"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drriders.com",
-                "www.kerrydalestreet.co.uk"
+                "keywestboatsforum.com",
+                "vetsbenefits.net",
+                "www.fordfe.com"
             ]
         },
         {
             "rule": "live-analytics\\.com\\/frame",
-            "cookies": 0.0000136,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "a7fe83ec64bb23eb28090598db3d166ed98e52e39d1afbbfd74c579553f93e4e"
@@ -80,7 +83,34 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drriders.com",
-                "www.kerrydalestreet.co.uk"
+                "keywestboatsforum.com",
+                "vetsbenefits.net",
+                "www.fordfe.com"
+            ]
+        },
+        {
+            "rule": "live-analytics\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "3a605afc360475d59a972fde72170e6f9963133dbaa25b62cc8c3eb300ffa2b0",
+                "d8611d90367bab47238f9d0fafa670599af2e7921e8db54af56f476c261626ed"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drriders.com",
+                "keywestboatsforum.com",
+                "vetsbenefits.net",
+                "www.fordfe.com"
             ]
         },
         {
@@ -94,21 +124,19 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "drriders.com",
-                "www.kerrydalestreet.co.uk"
+                "keywestboatsforum.com",
+                "www.fordfe.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "browsiprod.com",
@@ -116,8 +144,9 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 4
+        "Script": 4,
+        "Document": 6,
+        "Fetch": 4
     },
     "nameservers": [
         "ns1.digitalocean.com",

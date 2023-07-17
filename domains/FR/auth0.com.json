@@ -7,49 +7,80 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "cozycozy-cd-fial5ekrjgq30de5.edge.tenants.eu",
         "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu",
-        "fr-grandoptical-production-cd-hzmp1marvf8si5kz.edge.tenants.eu",
-        "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
+        "ppyarn-cd-eotbud81oukahjry.edge.tenants.eu",
+        "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
+        "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
+        {
+            "original": "auth.cozycozy.com",
+            "resolved": "cozycozy-cd-fial5ekrjgq30de5.edge.tenants.eu.auth0.com"
+        },
         {
             "original": "auth.generale-optique.com",
             "resolved": "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu.auth0.com"
         },
         {
-            "original": "auth.grandoptical.com",
-            "resolved": "fr-grandoptical-production-cd-hzmp1marvf8si5kz.edge.tenants.eu.auth0.com"
+            "original": "auth.happywool.com",
+            "resolved": "ppyarn-cd-eotbud81oukahjry.edge.tenants.eu.auth0.com"
         },
         {
             "original": "auth.native-instruments.com",
             "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
+        },
+        {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.ireland.com",
+            "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000301,
+            "cookies": 0.000605,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "cozycozy-cd-fial5ekrjgq30de5.edge.tenants.eu",
                 "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu",
-                "fr-grandoptical-production-cd-hzmp1marvf8si5kz.edge.tenants.eu",
+                "ppyarn-cd-eotbud81oukahjry.edge.tenants.eu",
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
                 "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000605,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "auth.cozycozy.com",
+                    "resolved": "cozycozy-cd-fial5ekrjgq30de5.edge.tenants.eu.auth0.com"
+                },
                 {
                     "original": "auth.generale-optique.com",
                     "resolved": "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "auth.grandoptical.com",
-                    "resolved": "fr-grandoptical-production-cd-hzmp1marvf8si5kz.edge.tenants.eu.auth0.com"
+                    "original": "auth.happywool.com",
+                    "resolved": "ppyarn-cd-eotbud81oukahjry.edge.tenants.eu.auth0.com"
+                },
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -57,37 +88,146 @@
                 }
             ],
             "responseHashes": [
-                "19dec47cd0a18b30636d6d2bca2f700f9fbde60e7fdd0fa47c058cadbf637c65"
+                "5b64bf7591ac3f1c1c4750d8a65f0199780991006efe0ec2ada3f03ae34c12c4",
+                "bd18e29198bbb982d8783c1a1c3d465c26824eb7758bd2e7adda17c097f58d53",
+                "a9b3e8c8d36b16d151a89b2fb04db47bb04286d826cd779136da96fb4e6c7b83",
+                "5562c56816a0e1569ecab1fb7841267ac788c9ce9d82b6e519945e2eaecaca71"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "generale-optique.com",
-                "www.grandoptical.com",
+                "arduino.cc",
+                "www.cozycozy.com",
+                "www.generale-optique.com",
+                "www.happywool.com",
+                "www.ireland.com",
                 "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8ce9f639d0609bbca3d5362034f3d85efc0d75830259b3b1f56e6387fe9153a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "happywool.com",
+                "www.ireland.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/usernamepassword\\/challenge",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/client\\/NoHUbkPTHIyq4HDAb7n2cnOZx8xZiKaj\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [
+                "d3479aa9952c8c0c7ab819f3687130f5c9d4fb86a840e9954a94da1c2ca2745f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/usernamepassword\\/challenge",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000605,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4
+            "prevalence": 0.8
         },
         {
             "domain": "grandvision.io",
-            "prevalence": 0.4
+            "prevalence": 0.1
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.2
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Document": 3
+        "Document": 6,
+        "Image": 2,
+        "Preflight": 2,
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",

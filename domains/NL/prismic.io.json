@@ -13,6 +13,9 @@
         "static.cdn",
         "campercontact-acc",
         "tomorrowland",
+        "campercontact-acc.cdn",
+        "qbuzz-corporate-prod",
+        "qbuzz-corporate-prod.cdn",
         "images",
         "tomorrowland.cdn"
     ],
@@ -54,8 +57,8 @@
                 "tomorrowland"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -72,7 +75,53 @@
             ]
         },
         {
-            "rule": "prismic\\.io\\/home24-production\\/68be561b-e631-4465-acfb-1c6f58843006_nl_RTT_camp_SSV_mockup_4176x1182_2305_cw22_lc\\.jpg",
+            "rule": "prismic\\.io\\/api\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "campercontact-acc.cdn",
+                "qbuzz-corporate-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "48b97cf5b81d41a8869a56f0a9097297cb8694b7934e9964fc5ea6c4988e151f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "campercontact.com",
+                "www.qbuzz.nl"
+            ]
+        },
+        {
+            "rule": "prismic\\.io\\/api\\/v2\\/documents\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "campercontact-acc.cdn",
+                "qbuzz-corporate-prod.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71f8a76298c82731c3c23d6eae7d3bd83e6f8d98849eba71023e2bd4a4a04c42"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "campercontact.com",
+                "www.qbuzz.nl"
+            ]
+        },
+        {
+            "rule": "prismic\\.io\\/home24-production\\/18069168-bfae-43b6-bee3-c9087197c5ad_nl_RTT_campaign_wow_week_3_mockup_4176x1182_2203-cw09_ak\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -83,7 +132,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c5b54d075c92f6e0f1dc91318b9bfbf6fec55120341cd79d9910b10f2a3e8743"
+                "d6a12adf986631c1021ac415edfd756f8fc46376ed12a616324cd1343c22abf1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -259,7 +308,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b42678cd285624d758dd3eec3b307bee7a2333c4c5cc64b85974c2ed853cba24"
+                "8672418401a4e632bac2a885ced431199e45eb38b1fbdfe7d57a94da632cbea3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -281,7 +330,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "14ee5c182f49edaaafdf8fb4ca6498381c49d1bf54969612d45a93cba889629d"
+                "06d5b01adcc2dbb313f1e083144e4f61faa465c0ca61eea80391fe79947058ad"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -298,19 +347,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9954128440366973
+        },
+        {
+            "domain": "googleoptimize.com",
+            "prevalence": 0.0045871559633027525
         }
     ],
     "types": {
         "Script": 2,
         "Document": 2,
+        "XHR": 4,
         "Image": 16,
         "Fetch": 4
     },
     "nameservers": [
+        "ns-1163.awsdns-17.org",
         "ns-1545.awsdns-01.co.uk",
-        "ns-930.awsdns-52.net",
         "ns-307.awsdns-38.com",
-        "ns-1163.awsdns-17.org"
+        "ns-930.awsdns-52.net"
     ]
 }

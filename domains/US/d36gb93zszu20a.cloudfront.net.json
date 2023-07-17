@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -185,7 +185,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "efd7ee592dd2d018d9c295e03b4dca618f3fe38bb238882995468fa3f5ba5e48"
+                "5ef3f520d96652b619acb65dc49e5589c7be85f5f193363d2d8883f53f955287"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -227,7 +227,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0f98959c5311bbd20c89abf22c8ea185c70ea719e0c30d65a2756ecf33ac869e"
+                "d54f241200653bc34cc915bd4c4387678db655bbd1e833c06dfa30b1550db7ff"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -340,9 +340,14 @@
         {
             "rule": "d36gb93zszu20a\\.cloudfront\\.net\\/Cache\\/Scripts\\/modernizer-261\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -877,9 +882,9 @@
         "Image": 46
     },
     "nameservers": [
-        "ns-1883.awsdns-43.co.uk",
-        "ns-565.awsdns-06.net",
         "ns-1386.awsdns-45.org",
-        "ns-9.awsdns-01.com"
+        "ns-9.awsdns-01.com",
+        "ns-565.awsdns-06.net",
+        "ns-1883.awsdns-43.co.uk"
     ]
 }

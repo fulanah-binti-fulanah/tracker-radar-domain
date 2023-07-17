@@ -7,12 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "planetofhotels",
+        "www"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "book.hotels-rates.com",
+            "resolved": "www.hotelplanner.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -24,8 +31,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -40,11 +47,39 @@
                 "planetofhotels.com",
                 "www.oyster.com"
             ]
+        },
+        {
+            "rule": "hotelplanner\\.com\\/Common\\/Cfcs\\/Services\\/OfflineSession\\.cfc",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "planetofhotels",
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "book.hotels-rates.com",
+                    "resolved": "www.hotelplanner.com"
+                }
+            ],
+            "responseHashes": [
+                "3ef08b337efaaedb9909b6a00a15fb26c45abb71583b23ff6eae9dd7c0b9ae16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "planetofhotels.com",
+                "www.hotels-rates.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,10 +87,10 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
-        "osmar.ns.cloudflare.com",
-        "lovisa.ns.cloudflare.com"
+        "lovisa.ns.cloudflare.com",
+        "osmar.ns.cloudflare.com"
     ]
 }

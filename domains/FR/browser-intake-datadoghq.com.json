@@ -7,12 +7,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "rum",
-        "logs",
-        "session-replay"
+        "logs"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,27 +25,51 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000703,
+            "prevalence": 0.000706,
             "cnames": [],
             "responseHashes": [
-                "49a66ef1f668cfeb2f8978a00006021cb6371a31fa134794c23eb39c3f025503",
-                "42ebd0899471e63370bea307e0a8af7abca6d8fa7d04550e0e22f3b0b95af87c",
-                "9281fcc964f4d089a50688ddf350107f3e46885f58a6219c2b13373bffbfc1b2",
-                "15acf8077d42046280d815a42a6ddeb7211bdbf40e90a1e3ceb215c7955a3353",
-                "a82f5d13aee8912a6480f7e724901436b23e0e04bac1988a156ef6430320ffd5",
-                "b6a3c9348ad26cc395a32eaf1766624357b9e2b634e19dc42990e87d7f4ea954"
+                "1dfbe1d53295a327071620bab9b381dfbaf9e97f1582792826f1f94763d1c572",
+                "cb82b3c3e518bcf07c0851903b5f63f212b55a7ec035a621905da837b094e27e",
+                "2d35c23ce9eaf381a602104bf8e67138a31875685ef4a9db63c44ae36752dfc8",
+                "3316011494460efcca32a451a8feff4870b62b73997766be49130becada7d840",
+                "63553bc3616a03a8ae78064017b3c3e5f3d50e3e3c39454ac122834d0f41a136",
+                "ecf044189bd359367a1f6ba7c07970c7574fd7c5b764127ff820756528534f1c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hashicorp.com",
+                "asana.com",
                 "developer.hashicorp.com",
-                "www.digikey.com",
-                "www.pitchup.com",
-                "www.scribd.com",
-                "www.wish.com",
-                "www.zoominfo.com"
+                "piratebayproxy.net",
+                "splice.com",
+                "www.midjourney.com",
+                "www.netlify.com",
+                "www.wish.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "4134df9f11bcaa807ed28bcfd86bce30edc4d0f260cda0e4f937fbe1e2d5436d",
+                "0e0610b6c725720a1cd97fd90808777d7f627633f11b77e8b31207afb1d1ee15"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asana.com",
+                "www.codecademy.com",
+                "www.wish.com"
             ]
         },
         {
@@ -57,18 +80,20 @@
                 "logs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "bcea2d91e598fe7ba56fcf88b392c651f8bf9183955044e6dbd162d9a9d9975e"
+                "d0d1aecbc80719722cdd9a3e24e74b8988fa8a9080ad58557fc1ecbd14b5189a",
+                "1ac68395beff2b5c176e0baad139f31b687d3103cff1b076eafb023ee3a2c725"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "replit.com",
-                "www.backmarket.fr"
+                "www.backmarket.fr",
+                "www.backmarket.com"
             ]
         },
         {
@@ -80,7 +105,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -92,54 +117,6 @@
                 "codecademy.com",
                 "www.codecademy.com"
             ]
-        },
-        {
-            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rum"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "031c4eb37da7a405a780dfd0266113c30d9edb59051ffeefc0f41e9d3782cf92",
-                "8c86c0496611060fa7d9f1501d11b7e5e0f0530dbab907ca18d13612d44de89a",
-                "940bd962088d83447f00127146247a6c5d4175afb16176ac6a690066b8334d7f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "codecademy.com",
-                "www.codecademy.com",
-                "www.wish.com",
-                "www.zoominfo.com"
-            ]
-        },
-        {
-            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "session-replay"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "156766e48d38c4eddb7f2800febee7267e97778921458c70ae0627bd91704ec4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pitchup.com",
-                "www.wish.com"
-            ]
         }
     ],
     "categories": [],
@@ -148,30 +125,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8947368421052632
+            "prevalence": 0.8909090909090909
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.07894736842105263
-        },
-        {
-            "domain": "scribdassets.com",
-            "prevalence": 0.017543859649122806
+            "prevalence": 0.08181818181818182
         },
         {
             "domain": "d1eh9yux7w8iql.cloudfront.net",
-            "prevalence": 0.008771929824561403
+            "prevalence": 0.01818181818181818
+        },
+        {
+            "domain": "licdn.com",
+            "prevalence": 0.00909090909090909
         }
     ],
     "types": {
-        "Fetch": 9,
-        "Ping": 2,
-        "XHR": 6
+        "Fetch": 10,
+        "XHR": 3,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-1264.awsdns-30.org",
-        "ns-128.awsdns-16.com",
+        "ns-560.awsdns-06.net",
         "ns-1907.awsdns-46.co.uk",
-        "ns-560.awsdns-06.net"
+        "ns-128.awsdns-16.com",
+        "ns-1264.awsdns-30.org"
     ]
 }

@@ -7,16 +7,41 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
+        "i",
         "realtimeeventfeeds",
         "api",
-        "i"
+        "notifications"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8b0dd6330236b2fc5ec91d1fd116814d9f792fcecdc674a015ff88415fedaf86"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020177562550443906
+            },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
         {
             "rule": "viafoura\\.co\\/eventfeed",
             "cookies": 0,
@@ -26,7 +51,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -39,22 +64,22 @@
         },
         {
             "rule": "viafoura\\.co\\/v2\\/www\\.cbc\\.ca\\/bootstrap\\/v2",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "95f2a9edafd4805947de14fe21b01dd3d265dc72f06545adf07892099c079e44"
+                "f399f9e57b531d0c527d1a8b3fb197abbbd7e4eb64b001f6d57f4b5bf6819c21"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020092425155716296
+                "lotame_domain_check": 0.00020177562550443906
             },
             "exampleSites": [
                 "cbc.ca",
@@ -63,14 +88,14 @@
         },
         {
             "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "8b0dd6330236b2fc5ec91d1fd116814d9f792fcecdc674a015ff88415fedaf86"
@@ -78,8 +103,30 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020092425155716296
+                "lotame_domain_check": 0.00020177562550443906
             },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v5\\/notifications\\/00000000-0000-4000-8000-082f79d5b829\\/all",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "notifications"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b6dc85459fbb9d03f478d91eae99e6627e04c8f805b08e4b97423ffbc3870d9d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
                 "www.cbc.ca"
@@ -88,20 +135,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000504,
     "topInitiators": [
         {
             "domain": "viafoura.net",
-            "prevalence": 0.56
+            "prevalence": 0.5862068965517241
         },
         {
             "domain": "first party",
-            "prevalence": 0.44
+            "prevalence": 0.41379310344827586
         }
     ],
     "types": {
+        "Image": 2,
         "WebSocket": 2,
-        "XHR": 2,
+        "XHR": 4,
         "Ping": 2
     },
     "nameservers": [

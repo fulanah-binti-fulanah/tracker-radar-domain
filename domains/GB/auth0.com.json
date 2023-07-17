@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "cdn",
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "bpp-cd-yhdabwym25ns51mh.edge.tenants.eu",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
         "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
         "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu"
@@ -25,6 +26,14 @@
             "resolved": "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu.auth0.com"
         },
         {
+            "original": "id.bpp.com",
+            "resolved": "bpp-cd-yhdabwym25ns51mh.edge.tenants.eu.auth0.com"
+        },
+        {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
             "original": "login.finder.com",
             "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
         }
@@ -32,40 +41,28 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "auth0\\.com\\/js\\/polyfills\\/1\\.0\\/object-assign\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2e3281ce824bc83f86243254926e320d7a51fd34e310d76f38ddf5ca4430bcd8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "talktalk.co.uk",
-                "secure.vanguardinvestor.co.uk"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000402,
+            "cookies": 0.000503,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "bpp-cd-yhdabwym25ns51mh.edge.tenants.eu",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
                 "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "id.bpp.com",
+                    "resolved": "bpp-cd-yhdabwym25ns51mh.edge.tenants.eu.auth0.com"
+                },
                 {
                     "original": "login.finder.com",
                     "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
@@ -80,14 +77,16 @@
                 }
             ],
             "responseHashes": [
-                "bb84406cfe0dbd6868e47d0f097efaac2d6a67c5a0172a4e505aee8d2d1d77a3",
-                "00416f0e99bb135b565df5c84734a7eb152fbb4e42457783743f53ebd63c6d9e"
+                "54e9f3ce8c5b06faca0fcc5827ee553c52f300e4bb6e5b03bd10d54bc055ead1",
+                "0156f5cf86c01c6dc2296690f91d9032de752784e5ea9d35251c419f77d247c9",
+                "d46379441d1e7a7ad5b34cde5b5c305509c1ca5ff461eb9d4443bff46385d1bf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "finder.com",
+                "arduino.cc",
+                "www.bpp.com",
                 "www.finder.com",
                 "www.native-instruments.com",
                 "www.visionexpress.com"
@@ -96,28 +95,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.7
         },
         {
             "domain": "dvh1deh6tagwk.cloudfront.net",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.1
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.1
         },
         {
             "domain": "grandvision.io",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 4
+        "Document": 5
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",

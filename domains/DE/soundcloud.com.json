@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000705,
+    "sites": 7,
     "subdomains": [
         "w",
         "api-widget"
@@ -17,6 +17,34 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "soundcloud\\.com\\/player\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "w"
+            ],
+            "apis": {
+                "window.innerHeight": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "c238d7c812a7b5eeaed94cfcbc1e0ff91ed4e9499d813a26d49bb59fa18f39a6",
+                "611c3a1e4baac76ed11216e0ae6ed21b7114c42b77958858321d92ff4c5c4c23",
+                "506a9cdb30396f77edcdb2294233d7894f0d71aa2240b16502b84ce38d1d53a5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stardewvalleywiki.com",
+                "www.erozuna.com",
+                "www.fao.org",
+                "www.oecd.org"
+            ]
+        },
+        {
             "rule": "soundcloud\\.com\\/player\\/api\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -24,8 +52,8 @@
                 "w"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "fe7be71169532a67a19a2178113658e2cf55413a21635fcd0a89060c839a5be6"
@@ -35,35 +63,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ea.com",
-                "help.ea.com",
-                "www.ea.com",
                 "www.roland.com"
-            ]
-        },
-        {
-            "rule": "soundcloud\\.com\\/player\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "w"
-            ],
-            "apis": {
-                "window.innerHeight": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "fd79749a01a5e263861521049a0de710ce271ab7f0bf2fbaac1ab9b1cb6be502",
-                "6ab316843d3158e6a12cb768cb38aee97b430e4c06641be96abd5f2ae6392f87"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "stardewvalleywiki.com",
-                "www.erozuna.com",
-                "www.oecd.org"
             ]
         },
         {
@@ -74,17 +74,19 @@
                 "api-widget"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "40298a237b77417ee4e1857070dfd6d4c7f01e1ad03db4ccb6d0911dd252932c"
+                "899ad1247b9f297b4519e7bf2e9ccd66b3e8efc94cfad7d9cb2ac457c9a15add",
+                "7a6a16b9ad86d482e0a4161a15eabaec094d2fbce41577b19c79d42b74e5b696"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "erozuna.com",
+                "www.fao.org",
                 "www.oecd.org"
             ]
         }
@@ -98,26 +100,26 @@
     "topInitiators": [
         {
             "domain": "sndcdn.com",
-            "prevalence": 0.5882352941176471
+            "prevalence": 0.6818181818181818
         },
         {
             "domain": "first party",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 4,
-        "Document": 3,
-        "XHR": 2
+        "Document": 4,
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-646.awsdns-16.net",
-        "ns-1659.awsdns-15.co.uk",
         "ns-1303.awsdns-34.org",
-        "ns-451.awsdns-56.com"
+        "ns-1659.awsdns-15.co.uk",
+        "ns-451.awsdns-56.com",
+        "ns-646.awsdns-16.net"
     ]
 }

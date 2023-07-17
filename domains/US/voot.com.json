@@ -7,12 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "cs-jv",
+        "auth-jiocinema",
+        "apis-jiocinema",
         "content-jiovoot",
-        "auth-jiocinema"
+        "apis-jiovoot"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -28,7 +30,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "bbea6a96f0b183538789edf31190414d9cbb6ccdae4c5669940983b951a987be"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -38,11 +42,11 @@
             ]
         },
         {
-            "rule": "voot\\.com\\/psapi\\/voot\\/v1\\/voot-web\\/view\\/search-results",
-            "cookies": 0,
+            "rule": "voot\\.com\\/tokenservice\\/apis\\/v3\\/devicerange",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "content-jiovoot"
+                "auth-jiocinema"
             ],
             "apis": {},
             "sites": 2,
@@ -58,18 +62,40 @@
             ]
         },
         {
-            "rule": "voot\\.com\\/psapi\\/voot\\/v1\\/voot-web\\/view\\/search-results",
-            "cookies": 0,
+            "rule": "voot\\.com\\/location",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "content-jiovoot"
+                "apis-jiocinema"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0b7c519c7cba083153c14fde9fc4bb0b34dedcdb1d4a1f7f8e023e97379b9776"
+                "3a76b65fc3d848952ea8123f4bbd5aee7c14572d4e977d14dafd90f89ed3a7ec"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/tokenservice\\/apis\\/v3\\/devicerange",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth-jiocinema"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c86411a2ac93aaf40fd2a39d126c385f6f58ac8916c70674c7701df83d0b3eb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -102,48 +128,6 @@
             ]
         },
         {
-            "rule": "voot\\.com\\/clickstream\\/v1\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cs-jv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jiocinema.com",
-                "www.jiocinema.com"
-            ]
-        },
-        {
-            "rule": "voot\\.com\\/clickstream\\/v1\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cs-jv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4eb17efb1a3e575936ea79572d8844739bdf8d42b169ae11eedc08324908e93a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jiocinema.com",
-                "www.jiocinema.com"
-            ]
-        },
-        {
             "rule": "voot\\.com\\/psapi\\/voot\\/v1\\/voot-web\\/bff\\/menus",
             "cookies": 0,
             "fingerprinting": 0,
@@ -155,7 +139,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b320dbce1cda9bb3f81c2915a21db492d7eb6eb50105bb0088eaeb7c18b47141"
+                "0cfb2490fadc8600e26cb692a2ef6c92249df742eb8011e996c3cab518fb140e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -186,11 +170,95 @@
             ]
         },
         {
+            "rule": "voot\\.com\\/clickstream\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs-jv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edc48cd3b0bc4fa7ba23aad40b8508a17d370ca38be174bae2a2f64634e65a2b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/clickstream\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs-jv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/psapi\\/voot\\/v1\\/voot-web\\/view\\/search-results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-jiovoot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe3a1e1f585820c0717651bf6648a37cd317d0e7c0444dfe4bf5273ba9a7402b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
             "rule": "voot\\.com\\/tokenservice\\/apis\\/v4\\/guest",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "auth-jiocinema"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/psapi\\/voot\\/v1\\/voot-web\\/view\\/search-results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-jiovoot"
             ],
             "apis": {},
             "sites": 2,
@@ -217,8 +285,48 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3fea0d8eed22a91f3254ebe8828dc5403b9e27567242171bf578c31dc73fab56"
+                "1b2f97aa94e945d4ce67d7c6e7bde65396ba269dbc15e2b7a02b7ba53fd77630"
             ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/userjv\\/jv\\/v1\\/getmaskcohort",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apis-jiovoot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "voot\\.com\\/userjv\\/jv\\/v1\\/getmaskcohort",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apis-jiovoot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -238,15 +346,15 @@
         }
     ],
     "types": {
-        "XHR": 12,
-        "Preflight": 8
+        "XHR": 18,
+        "Preflight": 12
     },
     "nameservers": [
         "a7-67.akam.net",
-        "a20-65.akam.net",
         "a28-66.akam.net",
+        "a8-64.akam.net",
         "a1-116.akam.net",
         "a9-65.akam.net",
-        "a8-64.akam.net"
+        "a20-65.akam.net"
     ]
 }

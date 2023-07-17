@@ -7,18 +7,27 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "fs24-prod-cd-al9x7xt8mi4bfn23.edge.tenants.eu",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
-        "iberostar.eu",
+        "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
         "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu"
     ],
     "cnames": [
         {
+            "original": "auth.native-instruments.com",
+            "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
+        },
+        {
             "original": "auth0.s-ge.com",
             "resolved": "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu.auth0.com"
+        },
+        {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
         },
         {
             "original": "login.financescout24.ch",
@@ -33,18 +42,23 @@
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000402,
+            "cookies": 0.000503,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "fs24-prod-cd-al9x7xt8mi4bfn23.edge.tenants.eu",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
-                "iberostar.eu",
+                "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
                 "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
                 {
                     "original": "login.financescout24.ch",
                     "resolved": "fs24-prod-cd-al9x7xt8mi4bfn23.edge.tenants.eu.auth0.com"
@@ -54,35 +68,39 @@
                     "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
                 },
                 {
+                    "original": "auth.native-instruments.com",
+                    "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
+                },
+                {
                     "original": "auth0.s-ge.com",
                     "resolved": "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu.auth0.com"
                 }
             ],
             "responseHashes": [
-                "700779c4fcdff0724c7c6f2154fe1c3806501f62d93206e7b43b568c1c39420e",
-                "a74c3afab450f831ddd94764280e92a34a9d1c3600ec2a1b0698f4f033e03ee8",
-                "52f1985a4fd01625eaba6d373561996e9eefad8f126ebf41684ba38629ab8b53"
+                "e27932680cb6ef530626d3a8b810892eb823ce55d2473f5f6e9a0c416514b085",
+                "9f69c5fa5bf3abab5dcfd8847606d9d40f0876cc89fc0f80e702c99876dbdc78",
+                "3195d14db57a3f163f9fa1c8bb72127da7a3a0f3443c7d5eacd25cf550417cfc",
+                "e625c515b50b31dd49858e0e14662f4e3b69c607e1aa66ae701a4e2a69181f14"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "session_page_site_origin": 0.00010039152695512498
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "financescout24.ch",
+                "arduino.cc",
+                "www.financescout24.ch",
                 "www.finder.com",
-                "www.iberostar.com",
+                "www.native-instruments.com",
                 "www.s-ge.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6923076923076923
+            "prevalence": 0.6153846153846154
         },
         {
             "domain": "auth0.com",
@@ -91,13 +109,17 @@
         {
             "domain": "dvh1deh6tagwk.cloudfront.net",
             "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Document": 4
+        "Document": 5
     },
     "nameservers": [
-        "monroe.ns.cloudflare.com",
-        "kolton.ns.cloudflare.com"
+        "kolton.ns.cloudflare.com",
+        "monroe.ns.cloudflare.com"
     ]
 }

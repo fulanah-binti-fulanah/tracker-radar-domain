@@ -38,7 +38,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d31c89f8a6aae3cb821bfac009b3fe1104add6bec2e1b458ab6ada97254d10ee"
+                "03d8b07051ad97b5b47c144eb7d654e9113dd693ef18d9bc0b4bd8a9a9373373"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -103,8 +103,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "4639b91fd90aabd815378d47da533b4d288d868b4d788679eb70695411cd327e"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -123,10 +125,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "4639b91fd90aabd815378d47da533b4d288d868b4d788679eb70695411cd327e"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -142,13 +142,13 @@
                 "unification.prod.cd"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3faf159aa0139a6d8459f3ab58155027ea3b6e26a82fc3c39553a3801be747f8"
+                "db56869a097666f245d82b8b555ed597d41919cf86f675b65fcfe66ba7a10a0d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -170,31 +170,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "95b076a9bceb8d45e4fafe7cadf69fdb14737139b0c7b1c3abcba2d311804e5b"
+                "7888c29a0314e8e720f52d5620f27f1f48be072b48cc15ce58320e6b69747dbe"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "teambeachbody.com",
-                "www.teambeachbody.com"
-            ]
-        },
-        {
-            "rule": "beachbodyondemand\\.com\\/latest\\/script\\/close\\.a7cd675b\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unification.prod.cd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5d208f7c8d177432e08507df093637988bb6d61fe187bc78aad8a05d26245e98"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -223,6 +201,28 @@
                 "teambeachbody.com",
                 "www.teambeachbody.com"
             ]
+        },
+        {
+            "rule": "beachbodyondemand\\.com\\/latest\\/script\\/close\\.a7cd675b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unification.prod.cd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d208f7c8d177432e08507df093637988bb6d61fe187bc78aad8a05d26245e98"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teambeachbody.com",
+                "www.teambeachbody.com"
+            ]
         }
     ],
     "categories": [],
@@ -231,15 +231,11 @@
     "topInitiators": [
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.6153846153846154
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.3076923076923077
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
@@ -250,9 +246,9 @@
         "Image": 2
     },
     "nameservers": [
-        "pdns147.ultradns.org",
         "pdns147.ultradns.net",
         "pdns147.ultradns.biz",
-        "pdns147.ultradns.com"
+        "pdns147.ultradns.com",
+        "pdns147.ultradns.org"
     ]
 }

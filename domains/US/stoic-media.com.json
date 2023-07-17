@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
-    "sites": 5,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "tg1",
         "servt",
-        "serv",
         "servr",
-        "servs"
+        "servs",
+        "serv"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,33 +24,61 @@
                 "tg1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.appVersion": 4
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "111cb79e30ae101763ddf4eac80bb65e64279401c68e87bce3844696bb7155a7",
-                "d3fd6879c19bf078edd7253f16cccc5354275966f21dc41ac8c85b65f79b968b",
-                "08a3dc7376cc0d07a3ffde20438d8677fc88b3d65aeb640258bf3730a727dd16"
+                "26b9a5e6128483164a719a4e53e314f8dcd14a0ce93d67385c788bf1fd8d4cc2",
+                "eb5c17f6ac4492aaeab756cc4b8f290d6e8ee147a570d1e4b5fe4a6e72a9192d",
+                "19f926a4742e5d7e3df7a1a65d5b4d79b14216bcc752b5d1bf436937c4120c25",
+                "11a40c2f9f3cbf8015dc21d1c48b35c11e6d9706faae9b7bd4fc1b9eedb05d67"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "forbes.com.mx",
-                "www.forbes.com.mx",
                 "www.jornada.com.mx",
-                "www.ngenespanol.com"
+                "www.milenio.com",
+                "www.ngenespanol.com",
+                "www.tvazteca.com"
             ]
         },
         {
             "rule": "stoic-media\\.com\\/track",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "servt"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "forbes.com.mx",
+                "www.forbes.com.mx",
+                "www.jornada.com.mx",
+                "www.tvazteca.com"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/api\\/adserver\\/s2s",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servr"
             ],
             "apis": {},
             "sites": 3,
@@ -59,63 +87,15 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006805962022731913
-            },
-            "exampleSites": [
-                "forbes.com.mx",
-                "www.forbes.com.mx",
-                "www.jornada.com.mx"
-            ]
-        },
-        {
-            "rule": "stoic-media\\.com\\/api\\/adserver\\/tag\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7ce87435c1db9724ecf98406abe5260c180c69b0bdd56c232768749df53a139b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006805962022731913
-            },
-            "exampleSites": [
-                "forbes.com.mx",
-                "www.jornada.com.mx"
-            ]
-        },
-        {
-            "rule": "stoic-media\\.com\\/api\\/adserver\\/s2s",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "servr"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006805962022731913
+                "lotame_domain_check": 0.000013615167296368154
             },
             "exampleSites": [
                 "forbes.com.mx",
-                "www.jornada.com.mx"
+                "www.jornada.com.mx",
+                "www.tvazteca.com"
             ]
         },
         {
@@ -139,35 +119,63 @@
                 "forbes.com.mx",
                 "www.jornada.com.mx"
             ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "414c15991ba6c03d5dfdd0261e793c88b47da9dd44a4e14b88ede5170493d2b2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013615167296368154
+            },
+            "exampleSites": [
+                "jornada.com.mx",
+                "www.tvazteca.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.36363636363636365
+        },
+        {
             "domain": "aniview.com",
-            "prevalence": 0.46153846153846156
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3076923076923077
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "pubmatic.com",
-            "prevalence": 0.15384615384615385
+            "prevalence": 0.13636363636363635
         },
         {
-            "domain": "first party",
-            "prevalence": 0.07692307692307693
+            "domain": "doubleclick.net",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 4,
-        "Image": 3,
-        "XHR": 2,
-        "Fetch": 2,
-        "Document": 2
+        "Script": 5,
+        "Image": 4,
+        "Fetch": 3,
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns11.wixdns.net",

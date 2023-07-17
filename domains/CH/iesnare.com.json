@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "mpsnare"
     ],
@@ -23,8 +23,8 @@
                 "mpsnare"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -33,7 +33,8 @@
             "exampleSites": [
                 "anker.com",
                 "www.elitepartner.ch",
-                "www.manyvids.com"
+                "www.manyvids.com",
+                "www.parship.de"
             ]
         },
         {
@@ -57,29 +58,94 @@
                 "anker.com",
                 "www.manyvids.com"
             ]
+        },
+        {
+            "rule": "iesnare\\.com\\/5\\.2\\.2\\/wdp\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "mpsnare"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.plugins": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.getBattery": 2,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
+                "DeviceOrientationEvent.prototype.gamma": 2,
+                "DeviceOrientationEvent.prototype.beta": 2,
+                "DeviceOrientationEvent.prototype.alpha": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "07ac2066699367df8cf85e3b4c974b544463f53bd36c094ecd34d1d0ff374d77"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elitepartner.ch",
+                "www.parship.de"
+            ]
+        },
+        {
+            "rule": "iesnare\\.com\\/5\\.2\\.2\\/logo\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mpsnare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "34f2f9f7dc3c3d66ae9081bfe1e2ca8d8405793b62cfdffdb1489127e4532bf7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elitepartner.ch",
+                "www.parship.de"
+            ]
         }
     ],
-    "categories": [],
+    "categories": [
+        "Fraud Prevention"
+    ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000402,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.8888888888888888
         },
         {
             "domain": "yotpo.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "WebSocket": 3,
-        "Media": 2
+        "WebSocket": 4,
+        "Media": 2,
+        "Script": 4
     },
     "nameservers": [
         "dns1.p05.nsone.net",
+        "dns4.p05.nsone.net",
         "dns3.p05.nsone.net",
-        "dns2.p05.nsone.net",
-        "dns4.p05.nsone.net"
+        "dns2.p05.nsone.net"
     ]
 }

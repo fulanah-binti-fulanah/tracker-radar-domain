@@ -7,19 +7,22 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "moxies",
         "blackdiamond-web.cdn",
         "keystone-rv-dealer-app.cdn",
         "remaxnews",
+        "thormotorcoach.cdn",
         "static.cdn",
+        "moxies.cdn",
         "blackdiamond-web",
         "lynxair-ezycommerce",
         "keystone-rv-dealer-app",
-        "moxies.cdn",
-        "freshiiwebsite.cdn"
+        "thormotorcoach",
+        "freshiiwebsite.cdn",
+        "images"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -32,16 +35,18 @@
                 "moxies",
                 "blackdiamond-web.cdn",
                 "keystone-rv-dealer-app.cdn",
-                "remaxnews"
+                "remaxnews",
+                "thormotorcoach.cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "f7b3e0a5d75a56eacea2e74d1eb029b25c462afddf92463a0967df6ff8875d26",
-                "656480c8cf47b5ee4840b2ce434d3e2cff55f0d182005707cb4fd0ed3900398c",
-                "630d3f19034be22f4ad9aff242a684519229fd93afb3f4df7028692d1221a6bf"
+                "6f5aad07847644835ac5509286cd928812978edc9cdf4410422e4695c6f9bc16",
+                "607ff78d11721097d62378de97272d85c3fee552bd6b224bbfc11262d663c8b9",
+                "2228d09e2c59c1dcbd3dc1b1caeba336bf583660212acf7b844a86926677f27c",
+                "7e2222d52e70ca7d79aa07215b2dda840863e016fcb838d855509972db0e286d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -50,23 +55,24 @@
                 "moxies.com",
                 "www.blackdiamondequipment.com",
                 "www.keystonerv.com",
-                "www.remax.com"
+                "www.remax.com",
+                "www.thormotorcoach.com"
             ]
         },
         {
             "rule": "prismic\\.io\\/prismic\\.min\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000403,
             "fingerprinting": 1,
             "subdomains": [
                 "static.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie getter": 4,
-                "Document.cookie setter": 3
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 4
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "ab8eb5ecfec8aa8ef9e39ce22a7243d1a5c71362e3792dbd1a0a26ea7f2d359d"
@@ -78,24 +84,55 @@
                 "moxies.com",
                 "www.blackdiamondequipment.com",
                 "www.flylynx.com",
-                "www.keystonerv.com"
+                "www.keystonerv.com",
+                "www.thormotorcoach.com"
+            ]
+        },
+        {
+            "rule": "prismic\\.io\\/api\\/v2\\/documents\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "moxies.cdn",
+                "keystone-rv-dealer-app.cdn",
+                "remaxnews",
+                "thormotorcoach.cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "444b68511fc0cb2119de51961f4b3d1b7adb1d429b7efb3bb44624c1392b38c2",
+                "9c2e2ba33e8f9e9fcc2af3244e6d16d34bf2d1580b45617f8dfea9887cd86853",
+                "7b951bf05478ba5c9de2560b17876ed126e3723d591f9bea95b31b248614ac1e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moxies.com",
+                "www.keystonerv.com",
+                "www.remax.com",
+                "www.thormotorcoach.com"
             ]
         },
         {
             "rule": "prismic\\.io\\/prismic-toolbar\\/4\\.0\\.9\\/iframe\\.html",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "moxies",
                 "blackdiamond-web",
                 "lynxair-ezycommerce",
-                "keystone-rv-dealer-app"
+                "keystone-rv-dealer-app",
+                "thormotorcoach"
             ],
             "apis": {
-                "Document.cookie setter": 2
+                "Document.cookie setter": 3
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "dd34cc3a0af95382d37cf4318648616c35e2abcff7ccad25d6ec9ec140ddd0e2"
@@ -107,33 +144,8 @@
                 "moxies.com",
                 "www.blackdiamondequipment.com",
                 "www.flylynx.com",
-                "www.keystonerv.com"
-            ]
-        },
-        {
-            "rule": "prismic\\.io\\/api\\/v2\\/documents\\/search",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "moxies.cdn",
-                "keystone-rv-dealer-app.cdn",
-                "remaxnews"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "9fd4dd63b07fe3fd1d0b2cc6f9e742bfdfb95a48eaa53a733ea6937732976ebc",
-                "2102061ba63314e9cb5e54afbd8a67f32f4319347c0fa2039c7b764eceeb6074"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "moxies.com",
                 "www.keystonerv.com",
-                "www.remax.com"
+                "www.thormotorcoach.com"
             ]
         },
         {
@@ -148,7 +160,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e2fcc09a2b51e61f4ec1f2cf5d5770f81213dff12f5a22e3cf78b80e0eea7f22"
+                "89e5a04ec7483405923f31bf7ca02516d9804de19ac673c681b238c004cb1c69"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -170,7 +182,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "09223354c8ae95931a46ee77b61b9b549e239c050220b61015e0f6810e144cd7"
+                "461e4d79cb1893e71787ac618c1d296f4fb4129262a39f93c81142fac6806459"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -179,35 +191,50 @@
                 "freshii.com",
                 "www.freshii.com"
             ]
+        },
+        {
+            "rule": "prismic\\.io\\/prodigy-website\\/9eccf3d2-0d9c-4a86-9767-3341975bf399_Foreground-Ghost\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3613e417f98859c4295b91bf0e2c748cd06a2910d1f3cca35440ec4786e0a74a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prodigygame.com",
+                "www.prodigygame.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8991228070175439
-        },
-        {
-            "domain": "drinkag1.com",
-            "prevalence": 0.09649122807017543
-        },
-        {
-            "domain": "athleticgreens-landings.pages.dev",
-            "prevalence": 0.0043859649122807015
+            "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 7,
-        "Script": 4,
-        "Document": 4,
-        "Fetch": 4
+        "XHR": 9,
+        "Script": 5,
+        "Document": 5,
+        "Fetch": 4,
+        "Image": 2
     },
     "nameservers": [
+        "ns-930.awsdns-52.net",
         "ns-1163.awsdns-17.org",
-        "ns-1545.awsdns-01.co.uk",
         "ns-307.awsdns-38.com",
-        "ns-930.awsdns-52.net"
+        "ns-1545.awsdns-01.co.uk"
     ]
 }

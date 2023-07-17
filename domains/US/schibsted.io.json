@@ -7,13 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000157,
-    "sites": 23,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "cogwheel.inventory",
-        "collector",
-        "cdn.inventory",
-        "region-api.inventory"
+        "collector"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -46,33 +44,25 @@
             ]
         },
         {
-            "rule": "schibsted\\.io\\/prod\\/latest\\/gdpr-bundle\\.js",
+            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:stavangeraftenblad",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "cogwheel.inventory"
+                "collector"
             ],
-            "apis": {
-                "Document.cookie getter": 7
-            },
-            "sites": 8,
-            "prevalence": 0.0000544,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f2542c74b42ba0e89ab76721c1c02f830b62b9bb9cf6f4a70131ff82172d02df"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "e24.no",
-                "www.aftenposten.no",
-                "www.aftenbladet.no",
-                "www.blocket.se",
-                "www.bt.no",
-                "www.finn.no",
-                "www.godt.no",
-                "www.tek.no"
+                "aftenbladet.no",
+                "www.aftenbladet.no"
             ]
         },
         {
@@ -98,69 +88,28 @@
             ]
         },
         {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:stavangeraftenblad",
+            "rule": "schibsted\\.io\\/prod\\/latest\\/gdpr-bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "collector"
+                "cogwheel.inventory"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenbladet.no",
-                "www.aftenbladet.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/ad-takeover\\/4\\.2\\.1\\/ad-takeover\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2a503634d30a7fdc451d77087e65b586e38edf67003ae2cf7010a9c9a32d57d3"
+                "f2542c74b42ba0e89ab76721c1c02f830b62b9bb9cf6f4a70131ff82172d02df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/search\\/locationKeyWordsByIP",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "region-api.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5d284e3035c9b28dc6239c2a070f590bbac6fe2f94bab831efe29dd3995bea48"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
+                "www.godt.no",
+                "www.tek.no"
             ]
         },
         {
@@ -183,50 +132,6 @@
             "exampleSites": [
                 "bt.no",
                 "www.bt.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:bytbilse",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bytbil.com",
-                "www.bytbil.com"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:finn",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "finn.no",
-                "www.finn.no"
             ]
         },
         {
@@ -294,50 +199,6 @@
                 "tek.no",
                 "www.tek.no"
             ]
-        },
-        {
-            "rule": "schibsted\\.io\\/search\\/locationKeyWordsByIP",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "region-api.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5d284e3035c9b28dc6239c2a070f590bbac6fe2f94bab831efe29dd3995bea48"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tv.nu",
-                "www.tv.nu"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:tvnu",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tv.nu",
-                "www.tv.nu"
-            ]
         }
     ],
     "categories": [],
@@ -346,31 +207,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6698113207547169
+            "prevalence": 0.7254901960784313
         },
         {
             "domain": "schibsted.com",
-            "prevalence": 0.18867924528301888
-        },
-        {
-            "domain": "aftenposten.no",
-            "prevalence": 0.10377358490566038
+            "prevalence": 0.23529411764705882
         },
         {
             "domain": "blocketcdn.se",
-            "prevalence": 0.03773584905660377
+            "prevalence": 0.0392156862745098
         }
     ],
     "types": {
-        "Script": 15,
-        "Ping": 18,
-        "Fetch": 2,
-        "XHR": 2
+        "Script": 8,
+        "Ping": 12
     },
     "nameservers": [
-        "ns-1082.awsdns-07.org",
+        "ns-2019.awsdns-60.co.uk",
         "ns-791.awsdns-34.net",
         "ns-182.awsdns-22.com",
-        "ns-2019.awsdns-60.co.uk"
+        "ns-1082.awsdns-07.org"
     ]
 }

@@ -9,32 +9,75 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "pt37ad6f6a"
+        "oeqepmcz7a",
+        "6kkzqr57d9"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/Prod\\/v1\\/analytics",
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pt37ad6f6a"
+                "oeqepmcz7a"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "splunk.com",
-                "docs.splunk.com"
+                "insta360.com",
+                "www.wickedweasel.com"
+            ]
+        },
+        {
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/beta\\/streams\\/optin\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oeqepmcz7a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "insta360.com",
+                "www.wickedweasel.com"
+            ]
+        },
+        {
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/dni\\/v6",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "6kkzqr57d9"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "6d1d7fbc00a72da19bad34cdfe8f6ad07e859b76380b5cff3ad110e81503ea9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelr-energie.com",
+                "www.nouvelr-energie.com"
             ]
         }
     ],
@@ -45,20 +88,21 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "listenloop.com",
+            "domain": "nimbata.com",
             "prevalence": 0.5
         },
         {
-            "domain": "nimbata.com",
+            "domain": "alicdn.com",
             "prevalence": 0.25
         },
         {
-            "domain": "gammacdn.com",
+            "domain": "pushengage.com",
             "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1368.awsdns-43.org",

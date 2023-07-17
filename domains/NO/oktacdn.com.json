@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
         "global"
     ],
@@ -16,25 +16,27 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "oktacdn\\.com\\/okta-auth-js\\/4\\.5\\.0\\/okta-auth-js\\.min\\.js",
+            "rule": "oktacdn\\.com\\/okta-auth-js\\/6\\.3\\.0\\/okta-auth-js\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "global"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "34290715b0d39c6330c9300bf299dd17ae80da8c6688025e29bc6c84e77792e4"
+                "869fbc75dfaf96599260c3c0fb9d2650e34be8267d3d532d027a74b431989abb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "straitstimes.com",
-                "www.straitstimes.com"
+                "sas.com",
+                "www.sas.com"
             ]
         }
     ],
@@ -44,32 +46,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
-        },
-        {
-            "domain": "wineenthusiast.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.6
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.14285714285714285
-        },
-        {
-            "domain": "sph.com.sg",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.4
         }
     ],
     "types": {
         "Script": 2
     },
     "nameservers": [
-        "ns-136.awsdns-17.com",
-        "ns-795.awsdns-35.net",
-        "ns-1049.awsdns-03.org",
-        "ns-1928.awsdns-49.co.uk",
-        "edns5.ultradns.net",
-        "edns5.ultradns.com",
         "edns5.ultradns.biz",
-        "edns5.ultradns.org"
+        "edns5.ultradns.com",
+        "edns5.ultradns.net",
+        "edns5.ultradns.org",
+        "ns-1049.awsdns-03.org",
+        "ns-136.awsdns-17.com",
+        "ns-1928.awsdns-49.co.uk",
+        "ns-795.awsdns-35.net"
     ]
 }

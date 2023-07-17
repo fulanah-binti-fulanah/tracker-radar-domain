@@ -4,27 +4,30 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000501,
-    "sites": 5,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
-        "widgets"
+        "widgets",
+        "widget-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "jobbio\\.com\\/partner_fluid_widgets_v1\\.6\\.1\\/display\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widgets"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "ad4ac2139d0b5e552af8094320b215b8e557fcca4218c621d277aa16c5245dec"
+                "9dba4893f2a2101dedec2db1058c4f8bbd230c0ce2ceae7172d5964a0263f839"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,6 +36,7 @@
                 "hackr.io",
                 "interestingengineering.com",
                 "slashdot.org",
+                "www.benzinga.com",
                 "www.techspot.com"
             ]
         },
@@ -44,18 +48,19 @@
                 "widgets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "c0976d85dce48b9170dc6272b640372243bf1706c77675f02fdd2fe9791d56f5"
+                "52fe780d03e98dcb4524e857426d1f7d10559ae6454cc38e551a8e307e93eaff"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hackr.io",
-                "slashdot.org"
+                "slashdot.org",
+                "www.benzinga.com"
             ]
         },
         {
@@ -66,8 +71,8 @@
                 "widgets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "f6aa2579190f17098e22234151f389c6da5c54501c085951fc426f9f19fcf862"
@@ -77,29 +82,54 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hackr.io",
-                "slashdot.org"
+                "slashdot.org",
+                "www.benzinga.com"
             ]
         },
         {
-            "rule": "jobbio\\.com\\/partner_fluid_widgets_v1\\.6\\.1\\/assets\\/images\\/icons\\/location-pin\\.svg",
+            "rule": "jobbio\\.com\\/channels\\/benzinga-jobs",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "widgets"
+                "widget-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2519f29a2410200f8feccf1d4e83fac038bd183dd017aff8894d63f45b77eb44"
+                "80f44dfa7fe0301b2d05486276adb3c3750156402ae171b48d9272e8973ca6e1"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hackr.io",
-                "slashdot.org"
+                "benzinga.com",
+                "www.benzinga.com"
+            ]
+        },
+        {
+            "rule": "jobbio\\.com\\/channels\\/benzinga-jobs\\/feed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "921dbecdb0001072ca452fa6b7ecf8a4ed1efb75b7d76651b6e4c6664487080a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.00020126798832645668
+            },
+            "exampleSites": [
+                "benzinga.com",
+                "www.benzinga.com"
             ]
         }
     ],
@@ -113,13 +143,13 @@
         }
     ],
     "types": {
-        "Script": 6,
-        "Stylesheet": 2,
-        "Image": 2
+        "Script": 8,
+        "Stylesheet": 3,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns0.reg365.net",
+        "ns2.reg365.net",
         "ns1.reg365.net",
-        "ns2.reg365.net"
+        "ns0.reg365.net"
     ]
 }

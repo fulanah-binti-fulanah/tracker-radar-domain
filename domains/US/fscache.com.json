@@ -10,7 +10,7 @@
         "ps"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "fscache\\.com\\/clientscript\\/vbulletin_important\\.css",
@@ -37,11 +37,13 @@
         {
             "rule": "fscache\\.com\\/clientscript\\/vbulletin_global\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "ps"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -209,28 +211,6 @@
                 "planetsuzy.org",
                 "www.planetsuzy.org"
             ]
-        },
-        {
-            "rule": "fscache\\.com\\/images\\/icons\\/icon3\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "22ff48e76f7b98c5c1f81f2aaad1c791c786be642b996a63b9ccc67e3442faec"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "planetsuzy.org",
-                "www.planetsuzy.org"
-            ]
         }
     ],
     "categories": [],
@@ -245,7 +225,7 @@
     "types": {
         "Stylesheet": 2,
         "Script": 10,
-        "Image": 8
+        "Image": 6
     },
     "nameservers": [
         "carl.ns.cloudflare.com",

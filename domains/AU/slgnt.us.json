@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "cricut",
-        "corwin"
+        "corwin",
+        "site-azp"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "slgnt\\.us\\/optiext\\/webtracker\\.dll",
@@ -39,13 +40,13 @@
                 "m_ses": {
                     "ttl": null,
                     "length": 14,
-                    "prevalence": 0.00020058168689198675,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "m_cnt": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00020058168689198675,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 }
             },
@@ -53,6 +54,46 @@
             "exampleSites": [
                 "cricut.com",
                 "journals.sagepub.com"
+            ]
+        },
+        {
+            "rule": "slgnt\\.us\\/frontend\\/api\\/track",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-azp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cricut.com",
+                "www.lifeextension.com"
+            ]
+        },
+        {
+            "rule": "slgnt\\.us\\/frontend\\/api\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-azp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cricut.com",
+                "www.lifeextension.com"
             ]
         }
     ],
@@ -62,22 +103,24 @@
     "topInitiators": [
         {
             "domain": "windows.net",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns13.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com",
         "ns15.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com"
+        "ns13.dnsmadeeasy.com"
     ]
 }

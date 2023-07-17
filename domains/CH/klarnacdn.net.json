@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
         "x"
@@ -16,25 +16,29 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "klarnacdn\\.net\\/payment-method\\/assets\\/badges\\/generic\\/klarna\\.svg",
+            "rule": "klarnacdn\\.net\\/kp\\/lib\\/v1\\/api\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "x"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "console.memory": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7d832c8e875ef1de4dde6ae962138f18cc125127046e19742842916f55b3a528"
+                "934f495648a681e475044ebdc3203c5d9f31e0160b4b1d742cac89ea444dd0f2"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alditalk.de",
-                "www.goertz.de"
+                "m-way.ch",
+                "www.roche-bobois.com"
             ]
         }
     ],
@@ -48,7 +52,7 @@
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 2
     },
     "nameservers": [
         "a12-65.akam.net",

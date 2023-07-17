@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "collector"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,8 +24,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "b2121c21fd9eb2e53f321e3bea2c8e6a0fc19cac16944960bed9d1c5ba9b9105"
@@ -37,10 +38,12 @@
                 "forums.commentcamarche.net",
                 "leconjugueur.lefigaro.fr",
                 "sante.journaldesfemmes.fr",
+                "www.bestwordlist.com",
                 "www.commentcamarche.net",
                 "www.journaldesfemmes.fr",
-                "www.linternaute.com",
                 "www.linternaute.fr",
+                "www.linternaute.com",
+                "www.listesdemots.net",
                 "www.marketscreener.com"
             ]
         },
@@ -52,10 +55,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.languages": 9
+                "Navigator.prototype.languages": 11,
+                "window.localStorage": 2
             },
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "933d19419db535cadc7a91f938dd989aac6075e2f2c5a593ca2a56f43a0ec0af"
@@ -68,10 +72,12 @@
                 "forums.commentcamarche.net",
                 "leconjugueur.lefigaro.fr",
                 "sante.journaldesfemmes.fr",
+                "www.bestwordlist.com",
                 "www.commentcamarche.net",
                 "www.journaldesfemmes.fr",
-                "www.linternaute.com",
                 "www.linternaute.fr",
+                "www.linternaute.com",
+                "www.listesdemots.net",
                 "www.marketscreener.com"
             ]
         },
@@ -83,8 +89,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "722a8ea6c34ec98f6b88341f0ae1e89d054ba1cc6682f49a3defaaf620f340e1"
@@ -93,7 +99,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "babelio.com",
+                "akinator.com",
+                "www.babelio.com",
                 "www.lefigaro.fr"
             ]
         },
@@ -105,12 +112,12 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.languages": 3,
                 "window.localStorage": 1,
                 "window.innerWidth": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "4fc835760c1058833f1b2ae1656b0ed39aa9f321a954e56f583962fcdbfd3e53"
@@ -119,35 +126,153 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "babelio.com",
+                "akinator.com",
+                "www.babelio.com",
                 "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/hello",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr",
+                "www.listesdemots.net"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/hello",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "a589af77351574f2655849662b84e34a4ba41f744eb7aa35571186af2864e8f2",
+                "c27e191888f6427e4cfbcc263729dc5d8d8ac340b0f62d23928475685009841d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr",
+                "www.listesdemots.net"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/tcf2\\/30\\.3\\.1\\/vendors~ui\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "db6aa61edc87320a64abcac597d18d813996cd74657a0beada483d9369150e94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.listesdemots.net"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/tcf2\\/30\\.3\\.1\\/ui\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fc8cd6c304a03f7e4c88be5121ae79942133879295f12e9d02b4cd81dd62770c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.listesdemots.net"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/t2\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr",
+                "www.listesdemots.net"
             ]
         }
     ],
-    "categories": [],
+    "categories": [
+        "Consent Management Platform"
+    ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.6956521739130435
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.35714285714285715
+            "prevalence": 0.21739130434782608
         },
         {
             "domain": "ccmbg.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.08695652173913043
         }
     ],
     "types": {
-        "Script": 22
+        "Script": 32,
+        "Preflight": 3,
+        "Fetch": 3,
+        "Image": 3
     },
     "nameservers": [
-        "ns-cloud-b4.googledomains.com",
-        "ns-cloud-b3.googledomains.com",
         "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b2.googledomains.com"
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b4.googledomains.com"
     ]
 }

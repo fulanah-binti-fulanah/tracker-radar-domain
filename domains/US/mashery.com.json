@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "penguinrandomhouse.api",
         "prettigparkeren.api",
@@ -44,7 +44,34 @@
                 }
             ],
             "responseHashes": [
-                "4a5e3b3fb859416d6375a8f717653b80733b2f700c2a743c8ccc2141e947ce07"
+                "b2ae6aeefb0342cb7ca9c6e84c13032a54972e4034bcc5424da337b13480422b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "penguin.co.uk",
+                "www.penguin.co.uk"
+            ]
+        },
+        {
+            "rule": "mashery\\.com\\/resources\\/v2\\/title\\/domains\\/PRH\\.UK\\/titles\\/9780141393049\\/views\\/uk-product-display",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "penguinrandomhouse.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.penguinrandomhouse.com",
+                    "resolved": "penguinrandomhouse.api.mashery.com"
+                }
+            ],
+            "responseHashes": [
+                "180b81eb121553cc214eab7642dcd534680b3e382e05f8443f5b2d0ecc60c38d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -152,7 +179,7 @@
                 }
             ],
             "responseHashes": [
-                "8d40714a7a304b598d9fea07849c2113e8840d8f05bca5c9a073dd1ba21b8ecd"
+                "b330a399a10f374382b53711ffa7eea3dfe3f6d8a495ddbf49e84e713072bd7b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -164,6 +191,31 @@
         },
         {
             "rule": "mashery\\.com\\/exp\\/v1\\/users\\/headerData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "starwoodvacationownership.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.vistana.com",
+                    "resolved": "starwoodvacationownership.api.mashery.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistana.com",
+                "www.vistana.com"
+            ]
+        },
+        {
+            "rule": "mashery\\.com\\/dcm\\/v3\\/content\\/vistana\\.header\\.vistana\\.nav",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -215,31 +267,6 @@
             ]
         },
         {
-            "rule": "mashery\\.com\\/dcm\\/v3\\/content\\/vistana\\.header\\.vistana\\.nav",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "starwoodvacationownership.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.vistana.com",
-                    "resolved": "starwoodvacationownership.api.mashery.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vistana.com",
-                "www.vistana.com"
-            ]
-        },
-        {
             "rule": "mashery\\.com\\/exp\\/v1\\/headerData\\/destinationsNav",
             "cookies": 0,
             "fingerprinting": 0,
@@ -256,7 +283,7 @@
                 }
             ],
             "responseHashes": [
-                "43cd73f19913b08fe71bf322f4c3a712b615c5152358fdddf9001932c42ef21f"
+                "83ad2b0f109ccbf4ecc3e3617791708a097956abcd9c841ac8861dc843a44ec9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -298,15 +325,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.6
         },
         {
             "domain": "vistana-web-static.s3.amazonaws.com",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 2,
+        "Fetch": 4,
         "Script": 6,
         "XHR": 6,
         "Preflight": 6

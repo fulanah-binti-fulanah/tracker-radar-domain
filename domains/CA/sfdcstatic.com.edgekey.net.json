@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
         "a",
         "c"
@@ -28,6 +28,33 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "sfdcstatic\\.com\\.edgekey\\.net\\/digital\\/xsf\\/components\\/v1-stable\\/navs-fonts\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "a.sfdcstatic.com",
+                    "resolved": "a.sfdcstatic.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b4ebee7d0d8152c9fb23058f8a2f3b96fa541fcdbd750496fecdc5bcce5fc06a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "trailhead.salesforce.com"
+            ]
+        },
+        {
             "rule": "sfdcstatic\\.com\\.edgekey\\.net\\/shared\\/images\\/c360-nav\\/icons\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -35,8 +62,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -52,6 +79,7 @@
             "exampleSites": [
                 "salesforce.com",
                 "help.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -63,8 +91,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -80,6 +108,7 @@
             "exampleSites": [
                 "salesforce.com",
                 "help.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -91,8 +120,8 @@
                 "c"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "c1.sfdcstatic.com",
@@ -108,6 +137,7 @@
             "exampleSites": [
                 "salesforce.com",
                 "help.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -119,8 +149,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -136,6 +166,7 @@
             "exampleSites": [
                 "salesforce.com",
                 "help.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -174,8 +205,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -192,6 +223,7 @@
                 "salesforce.com",
                 "help.salesforce.com",
                 "login.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -203,8 +235,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -219,6 +251,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
@@ -230,8 +263,8 @@
                 "a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "a.sfdcstatic.com",
@@ -247,12 +280,13 @@
             "exampleSites": [
                 "salesforce.com",
                 "help.salesforce.com",
+                "trailhead.salesforce.com",
                 "www.salesforce.com"
             ]
         },
         {
             "rule": "sfdcstatic\\.com\\.edgekey\\.net\\/digital\\/one-trust\\/core\\/stable\\/scripttemplates\\/otSDKStub\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "a"
@@ -267,10 +301,17 @@
                 }
             ],
             "responseHashes": [
-                "ae8f65ca66270d872380dc1b80cadc038e64e62a25e6250781c45bf8c5b22d03"
+                "df297fb11ace04df17d2fc6c32fe63ba06a851359d71c204bb23fc8a958ae8ae"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sfdcConsent": {
+                    "ttl": 31622405,
+                    "length": 7,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "salesforce.com",
@@ -326,9 +367,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "OptanonConsent": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 9,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020143015409406788,
                     "uniqueness": 1
                 }
             },
@@ -382,7 +423,7 @@
                 }
             ],
             "responseHashes": [
-                "af5e4f94c4d38fb546ffd90be649e03066692d7ae523e0a48691af597bb836fd"
+                "60211ea14699701e0d6edcc0b5ced13540ca65665ba5e156063062d2b2dec476"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -526,6 +567,64 @@
                 "salesforce.com",
                 "www.salesforce.com"
             ]
+        },
+        {
+            "rule": "sfdcstatic\\.com\\.edgekey\\.net\\/digital\\/one-trust\\/ext\\/v1-stable\\/gdpr\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "a.sfdcstatic.com",
+                    "resolved": "a.sfdcstatic.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "36f2945d20e7dbe661e951ca4e3f10314d733aa604ddbafe440defeee0960820"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "webact": {
+                    "ttl": 31536005,
+                    "length": 314,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "v0": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "v20": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "c22": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "c40": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "www.salesforce.com"
+            ]
         }
     ],
     "categories": [],
@@ -534,17 +633,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9696969696969697
+            "prevalence": 0.9767441860465116
         },
         {
             "domain": "evgnet.com",
-            "prevalence": 0.030303030303030304
+            "prevalence": 0.023255813953488372
         }
     ],
     "types": {
-        "Image": 21,
-        "Font": 8,
-        "Script": 4,
+        "Script": 8,
+        "Image": 26,
+        "Font": 10,
         "XHR": 2,
         "Fetch": 8
     },

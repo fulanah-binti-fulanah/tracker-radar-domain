@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "smart-widget-assets"
+        "smart-widget-assets",
+        "sw-assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "077f9cb44a24d706f72f2e6de1ac4b00f70e4c4a498cc9c38a1f0942296e53b2"
@@ -33,6 +34,96 @@
                 "reimo.com",
                 "www.zamnesia.fr"
             ]
+        },
+        {
+            "rule": "ekomiapps\\.de\\/static_resources\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sw-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f51590d5dc8f61cfc0c025dfc89f35c726bef31ec33664ff8bebbb73e4fae660"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reimo.com",
+                "www.simoptions.com"
+            ]
+        },
+        {
+            "rule": "ekomiapps\\.de\\/static_resources\\/f-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "smart-widget-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3fcac0f4020279d0e32f8c27c13526f45257b03dcc5d84ef8b7bca82cced3f39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reimo.com",
+                "www.simoptions.com"
+            ]
+        },
+        {
+            "rule": "ekomiapps\\.de\\/static_resources\\/widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sw-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "59df6220fbd943e8cc4fd226f0174e5ddd07c60f0b30a1312fe797139cdb93b9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reimo.com",
+                "www.simoptions.com"
+            ]
+        },
+        {
+            "rule": "ekomiapps\\.de\\/resources\\/62e1166949e78Ubuntu-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sw-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0b11c25d9db5245560440dd512f21489288ecbca1c2f952846077583d422d5b4"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reimo.com",
+                "www.simoptions.com"
+            ]
         }
     ],
     "categories": [],
@@ -41,11 +132,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8620689655172413
+        },
+        {
+            "domain": "stackpathcdn.com",
+            "prevalence": 0.13793103448275862
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Script": 4,
+        "Stylesheet": 2,
+        "Font": 2
     },
     "nameservers": [
         "ns-161.awsdns-20.com",

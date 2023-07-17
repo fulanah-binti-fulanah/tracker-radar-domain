@@ -7,12 +7,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "ecdn",
-        "cdn",
-        "outbid"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,28 +24,37 @@
                 "ecdn"
             ],
             "apis": {
-                "window.sessionStorage": 6,
-                "window.localStorage": 6,
-                "Date.prototype.getTime": 5,
-                "window.innerHeight": 5,
-                "window.innerWidth": 5,
-                "Document.cookie getter": 5,
-                "Event.prototype.timeStamp": 5,
+                "window.sessionStorage": 7,
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 6,
+                "window.innerHeight": 6,
+                "window.innerWidth": 6,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 6,
+                "Event.prototype.timeStamp": 6,
                 "Element.prototype.getClientRects": 1
             },
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
-                "e21296ab3f72b4df9bbe9139342a0340d12352edee1b8f525d5fa0f296d098a8",
-                "ac39d74c09ff173d7f0d9d5f0066ba77ab42169333214adaa2e496a1ae39c509",
-                "27afa7d6c9aed63c71239b408a3460bd04cc72b7d12a8afba9479dbcea502534"
+                "e964888fc47d5fd09d12375ac589805a654109fff099696595fa715fa0ab55fa",
+                "474cf5d7227235a4ee58b8cf980b9183c85965afa5f69af13588e7b825fe364a",
+                "0e77fdd035a18498b07285bdb1fc6ec1697d5f391a94f44c7fedb8c0bed0cb37",
+                "c534c3cc677fa57641cb4d63e8f4330e671eded81365982715c45a9841297766"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "allfreeknitting.com",
+                "akinator.com",
+                "www.allfreeknitting.com",
                 "www.archdaily.com",
                 "www.bleepingcomputer.com",
                 "www.crazydaysandnights.net",
@@ -56,32 +64,56 @@
         },
         {
             "rule": "firstimpression\\.io\\/delivery\\/spc_fi\\.php",
-            "cookies": 0.000501,
+            "cookies": 0.000604,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000501,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "672e0041ea69e5d4f12071ef3b256647ea2462775a5e116dc87b9f37e9fd4bcb",
-                "285010e51bfe894ab5eb6d9fc625777c12d4a0822bd55ad994c8b7d93e5a1563",
-                "2f87606265ecdc293d759638e8f048421ffff15ff157f456b07c2ca1a426be72",
-                "91fd27ac1e1bb38608c0bd9312aded64b2bd0f7d37276c904442a37907ba25e3"
+                "324258f8475bccad2cbee85e2e522f24f56abb92122a86aa70f0ca9bfa69809b",
+                "40fbd725e2269b522e1c68cb86c256306f4251e7f975d1774db92c72f27dcff9",
+                "a274f1d5cfd482a6949fa3c1e97cc09e784ec44aa75ce1ff2babdb6718c5ae09",
+                "59bab8521c149c946eea546f5d70aa589f2ae815f81a40b4117135f435504d18",
+                "cdb894665f0b6fcf776bfe13036d71e9852f8331878f1bda030b6d524cab0a45"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0006017450606759602
+                "lotame_domain_check": 0.0007044379591425984
             },
             "exampleSites": [
-                "archdaily.com",
+                "akinator.com",
+                "www.archdaily.com",
                 "www.bleepingcomputer.com",
                 "www.crazydaysandnights.net",
                 "www.haaretz.com",
                 "www.onthemarket.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/tracking\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "akinator.com",
+                "www.archdaily.com"
             ]
         },
         {
@@ -92,22 +124,21 @@
                 "ecdn"
             ],
             "apis": {
-                "window.sessionStorage": 3,
-                "Navigator.prototype.appName": 3,
-                "Date.prototype.getTime": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Document.cookie getter": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "window.localStorage": 1
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "36fb5f66f20c65f70014a36766814de66f2cb3de2dd089f596314c89428d9dc7"
@@ -132,7 +163,7 @@
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "window.localStorage": 2
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -157,7 +188,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
@@ -170,42 +201,22 @@
                 "www.crazydaysandnights.net",
                 "www.haaretz.com"
             ]
-        },
-        {
-            "rule": "firstimpression\\.io\\/v1\\/outbid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "outbid"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crazydaysandnights.net",
-                "www.haaretz.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000501,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.25
+            "prevalence": 0.625
         },
         {
             "domain": "d1m2oaypgnddv2.cloudfront.net",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "doubleclick.net",
             "prevalence": 0.125
         },
         {
@@ -214,10 +225,9 @@
         }
     ],
     "types": {
-        "Script": 11,
-        "XHR": 5,
-        "Ping": 3,
-        "Fetch": 2
+        "Script": 12,
+        "XHR": 6,
+        "Ping": 5
     },
     "nameservers": [
         "ns-711.awsdns-24.net",

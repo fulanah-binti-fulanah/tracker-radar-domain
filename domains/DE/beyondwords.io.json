@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "audio"
+        "audio",
+        "metrics"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -69,7 +70,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "32a37b9ca2c5de651a9b172233556e768e780ff6137f4fc17ba07deb7cd3213c"
+                "8f34cd647c0dbb192065d92876c10fba4fcdb0252e247c86160f51c02004d988"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -100,6 +101,48 @@
                 "berliner-zeitung.de",
                 "www.berliner-zeitung.de"
             ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berliner-zeitung.de",
+                "www.berliner-zeitung.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berliner-zeitung.de",
+                "www.berliner-zeitung.de"
+            ]
         }
     ],
     "categories": [],
@@ -108,15 +151,19 @@
     "topInitiators": [
         {
             "domain": "requestmetrics.com",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Preflight": 4,
-        "Fetch": 4
+        "Preflight": 6,
+        "Fetch": 6
     },
     "nameservers": [
-        "lee.ns.cloudflare.com",
-        "kate.ns.cloudflare.com"
+        "kate.ns.cloudflare.com",
+        "lee.ns.cloudflare.com"
     ]
 }

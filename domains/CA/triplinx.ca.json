@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "whitelabel"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "triplinx\\.ca\\/en\\/trip-planner\\/4\\/JourneyPlanner",
@@ -24,7 +24,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a4b7bb3b90772aba22e24320c04dc3b7d320eed31be8cb3f40401cf0dc4861e7"
+                "d4b481ed95188f9dde0519f7fcf5dd4873a0aedfdc6d872015d44e3c2f943758"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -79,7 +79,7 @@
             ]
         },
         {
-            "rule": "triplinx\\.ca\\/Content\\/css\\/LinesColor-v638229024000000000\\.css",
+            "rule": "triplinx\\.ca\\/Content\\/css\\/LinesColor-v638250624000000000\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -90,7 +90,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2b4741021311a3515f51f7a41db3469f8e4d9d7e2dffd80cf0616a8dfb526b20"
+                "784cea9743ec3c38e5ef6457d3b66587b818417dacdd363cd6db5280a755a793"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -102,7 +102,7 @@
         },
         {
             "rule": "triplinx\\.ca\\/Content\\/css\\/standalone\\/white-label-637970872864063931\\.css",
-            "cookies": 0.000201,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "whitelabel"
@@ -146,7 +146,7 @@
         },
         {
             "rule": "triplinx\\.ca\\/Scripts\\/Plugins\\/File\\/Base-vendor-637970872864063931\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "whitelabel"
@@ -155,7 +155,10 @@
                 "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie setter": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -164,7 +167,14 @@
                 "90b38af3255d09c413492a211331c84badb8230ab4b434088b350256204319ea"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cityWay.cookies.map.rememberLayer": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ttc.ca",
@@ -181,7 +191,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.appVersion": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -229,7 +240,9 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.platform": 2,
-                "Navigator.prototype.hardwareConcurrency": 2
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "URL.createObjectURL": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -247,7 +260,7 @@
         },
         {
             "rule": "triplinx\\.ca\\/Scripts\\/Project\\/bundle-map-637970872864063931\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "whitelabel"
@@ -325,7 +338,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7666c54c891d299899e635b6d2ed351b08245acded255478113d799e3a753a52"
+                "aeaf5477347c126911e5e2af337821e8eedfa34c6955db72ecc9746cda19a941"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -381,7 +394,7 @@
         },
         {
             "rule": "triplinx\\.ca\\/Map\\/Embedded\\/templates\\/popup\\/default\\/portion-route-popup-template\\.html",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "whitelabel"
@@ -404,7 +417,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
@@ -419,8 +432,8 @@
         "XHR": 10
     },
     "nameservers": [
-        "ns1.metrolinx.com",
         "ns2.metrolinx.com",
+        "ns1.metrolinx.com",
         "ns3.metrolinx.com"
     ]
 }

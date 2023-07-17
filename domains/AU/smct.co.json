@@ -7,10 +7,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000802,
-    "sites": 8,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
-        "events"
+        "ls"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,54 +23,54 @@
             "apis": {
                 "window.sessionStorage": 4
             },
-            "sites": 8,
-            "prevalence": 0.000802,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
                 "8a29c7d92812de51e17017fc8c0e2998310189b3368e7b2aa5bd07f8d3c4b5d1",
+                "8de930ac3c2825f8f0f364c9233d29f2d30a2b6ba821f5ef3ea62dddf48ac8a3",
                 "76d8990343040d1c796ac808162bafa25a40a8e42cf1c29f5b66600dd0cd18d0",
                 "ba80bdb896be451d027698f1b305b76523f1b5687874769cd4d39358dc1aa771",
-                "bd52c29c9bf25076ae8382d7efc9c78b28a1b6249df523ac0d426c4c66d22e60",
-                "d3c5accfd899c8a9752115a3bc71d23c57ff71a57398c213f4c2df987d85418f",
-                "6d1bea18a003df0e2dfd3df1ea08d97c0bd68266a99957d9962475585d68aff9",
-                "1b766770681bb5f240f5fdf5022736297e6b6f4cd25ed3fa3a4bbc1bfcefa87d"
+                "6299379d676253b2ca09767ef17e574d818eed3cda8b509e5e0ca5c40343f2cc",
+                "4cc549d76ef4e88f7511ba4377b7953a8aa6222a19a4b8f78d99551d85abf891"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00010063399416322834
+            },
             "exampleSites": [
                 "classiccars.com",
                 "www.birdsnest.com.au",
+                "www.datacamp.com",
                 "www.forevernew.com.au",
                 "www.lovehoney.com.au",
-                "www.politix.com.au",
                 "www.sunglasshut.com",
-                "www.tangerinetelecom.com.au",
-                "www.wildsecrets.com.au"
+                "www.tangerinetelecom.com.au"
             ]
         },
         {
-            "rule": "smct\\.co\\/event",
+            "rule": "smct\\.co\\/lse1\\.3\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "events"
+                "ls"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "63f31f9a5988f712d22db3ca02b89ba5603b65abffe69cb8d7900bbf21264b34"
+                "017217e952a763a6a3ac2688bb3c1c17db0a42721148434b9060158bd08716d6"
             ],
-            "type": "Image",
+            "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "smc_uid": 0.00020058168689198675
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "politix.com.au",
-                "www.politix.com.au"
+                "datacamp.com",
+                "www.datacamp.com"
             ]
         }
     ],
@@ -80,33 +80,37 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "smct.io",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "rakuten.com",
-            "prevalence": 0.18181818181818182
-        },
-        {
-            "domain": "cfjump.com",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.09090909090909091
         },
         {
             "domain": "rmtag.com",
             "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "cfjump.com",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 8,
-        "Image": 2
+        "Script": 7,
+        "Document": 2
     },
     "nameservers": [
-        "ns-2014.awsdns-59.co.uk",
         "ns-96.awsdns-12.com",
-        "ns-753.awsdns-30.net",
-        "ns-1303.awsdns-34.org"
+        "ns-1303.awsdns-34.org",
+        "ns-2014.awsdns-59.co.uk",
+        "ns-753.awsdns-30.net"
     ]
 }

@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "sas.customdomains",
-        "astminternational.customdomains"
+        "logon.customdomains",
+        "servicenowsignon.customdomains"
     ],
     "cnames": [
         {
@@ -19,8 +20,12 @@
             "resolved": "sas.customdomains.okta.com"
         },
         {
-            "original": "iam.astm.org",
-            "resolved": "astminternational.customdomains.okta.com"
+            "original": "logon.bcg.com",
+            "resolved": "logon.customdomains.okta.com"
+        },
+        {
+            "original": "ssosignon.servicenow.com",
+            "resolved": "servicenowsignon.customdomains.okta.com"
         }
     ],
     "fingerprinting": 0,
@@ -42,7 +47,7 @@
                 }
             ],
             "responseHashes": [
-                "0cf84afe665ef53d1a70b3db8be8b42e1a7912ce5f69d88949e06ac94c138c52"
+                "9b7f9a7084a127a73e3e5cde1a9db68a27632c7f8c75c4d4690801aa1bd810c5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -54,23 +59,66 @@
         },
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "sas.customdomains",
-                "astminternational.customdomains"
+                "logon.customdomains",
+                "servicenowsignon.customdomains"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "auth.sas.com",
                     "resolved": "sas.customdomains.okta.com"
                 },
                 {
-                    "original": "iam.astm.org",
-                    "resolved": "astminternational.customdomains.okta.com"
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
+                },
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "2ef30dbcff4bddcdc913409ba297ef8824e3af3a855dc5d4e81f9bbb9adfe6f1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "www.bcg.com",
+                "www.servicenow.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains",
+                "logon.customdomains",
+                "servicenowsignon.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                },
+                {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
+                },
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
                 }
             ],
             "responseHashes": [],
@@ -79,13 +127,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sas.com",
-                "www.astm.org"
+                "www.bcg.com",
+                "www.servicenow.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "oktacdn.com",
@@ -94,16 +143,17 @@
     ],
     "types": {
         "XHR": 2,
-        "Preflight": 2
+        "Fetch": 3,
+        "Preflight": 3
     },
     "nameservers": [
+        "edns5.ultradns.biz",
         "edns5.ultradns.com",
-        "ns-285.awsdns-35.com",
-        "edns5.ultradns.org",
         "edns5.ultradns.net",
-        "ns-1563.awsdns-03.co.uk",
-        "ns-684.awsdns-21.net",
+        "edns5.ultradns.org",
         "ns-1459.awsdns-54.org",
-        "edns5.ultradns.biz"
+        "ns-1563.awsdns-03.co.uk",
+        "ns-285.awsdns-35.com",
+        "ns-684.awsdns-21.net"
     ]
 }

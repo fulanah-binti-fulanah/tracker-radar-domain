@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
-    "sites": 5,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "auth"
     ],
@@ -17,14 +17,14 @@
     "resources": [
         {
             "rule": "faithlife\\.com\\/v1\\/users\\/autosignin",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "auth"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -32,13 +32,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "biblia.com",
+                "community.logos.com",
                 "www.logos.com"
+            ]
+        },
+        {
+            "rule": "faithlife\\.com\\/scripts\\/api\\/faithlifeads\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a56a5cd90bf0e35acc9ffda134cd9b6a28aa36651241a49fc3b99f60e56bc643"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biblia.com",
+                "community.logos.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "first party",
@@ -46,12 +70,13 @@
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1923.awsdns-48.co.uk",
         "ns-734.awsdns-27.net",
+        "ns-381.awsdns-47.com",
         "ns-1114.awsdns-11.org",
-        "ns-381.awsdns-47.com"
+        "ns-1923.awsdns-48.co.uk"
     ]
 }

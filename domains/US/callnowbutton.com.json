@@ -4,31 +4,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "static",
-        "stats",
-        "user"
+        "stats"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "callnowbutton\\.com\\/js\\/client\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "PerformanceTiming.prototype.navigationStart": 1
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "window.innerWidth": 1,
+                "Screen.prototype.orientation": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "33a09cdc7c5eade01b4d570a717614406dd3ba6e04f665f8d81272c3f2c2d608"
@@ -37,8 +39,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "ahoffmanawning.com",
                 "pestideas.com",
-                "www.projet-voltaire.fr"
+                "quickelectricity.com",
+                "www.projet-voltaire.fr",
+                "www.reliablecouriers.com"
             ]
         },
         {
@@ -49,60 +54,47 @@
                 "stats"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ecf155892ea62ddd89c1d41a1b9c74f612108c5c9af53d1e2bdf025759f1424a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pestideas.com",
-                "www.projet-voltaire.fr"
-            ]
-        },
-        {
-            "rule": "callnowbutton\\.com\\/api\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "stats"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "ahoffmanawning.com",
                 "pestideas.com",
-                "www.projet-voltaire.fr"
+                "quickelectricity.com",
+                "www.projet-voltaire.fr",
+                "www.reliablecouriers.com"
             ]
         },
         {
-            "rule": "callnowbutton\\.com\\/domain_80f41f0d_8630_4c81_baa4_07dff9e49ac3\\.js",
+            "rule": "callnowbutton\\.com\\/api\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "user"
+                "stats"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "3f09d5e584d5ac993ce26beaf371ee21b978e130a3c1cc2bef0016fa8d9da0fb"
+                "7a3903ed12fd9f18cde23bb9900d2455cbfeeb106afe526dd2163682c01eb039",
+                "c9ec6086e5f6b036f6168c66b6b5a551fa787150102b626016be42c848ae3e9b",
+                "82dc4f2b734803507b710f4a02a8dd043603b773919bd93bab5b6e9d9e8b4b6b",
+                "dffc8bd670957d37e300345da4552db7bb9110a778d1883c525447fb2515f8d4"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "projet-voltaire.fr",
-                "www.projet-voltaire.fr"
+                "ahoffmanawning.com",
+                "pestideas.com",
+                "quickelectricity.com",
+                "www.projet-voltaire.fr",
+                "www.reliablecouriers.com"
             ]
         }
     ],
@@ -116,9 +108,9 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 5,
+        "Preflight": 5,
+        "Fetch": 5
     },
     "nameservers": [
         "cass.ns.cloudflare.com",

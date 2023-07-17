@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
+        "frts-tnew-prod",
+        "myst-tnew-prod",
         "mfah-tnew-prod",
+        "nash-tnew-prod",
         "natt-tnew-prod",
         "nmsc-tnew-test"
     ],
@@ -17,6 +20,18 @@
             "resolved": "mfah-tnew-prod.tnhs.cloud"
         },
         {
+            "original": "ramp.mysticaquarium.org",
+            "resolved": "myst-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "secure.thefreight.org",
+            "resolved": "frts-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "tickets.nashvillesymphony.org",
+            "resolved": "nash-tnew-prod.tnhs.cloud"
+        },
+        {
             "original": "tickets.nationaltheatre.org.uk",
             "resolved": "natt-tnew-prod.tnhs.cloud"
         }
@@ -24,20 +39,57 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frts-tnew-prod",
+                "myst-tnew-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "secure.thefreight.org",
+                    "resolved": "frts-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "ramp.mysticaquarium.org",
+                    "resolved": "myst-tnew-prod.tnhs.cloud"
+                }
+            ],
+            "responseHashes": [
+                "50ba343c714853e74ad6d16137f4dff9cad5318b8cd9ea007c495526fb3f5ef6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreight.org",
+                "www.mysticaquarium.org"
+            ]
+        },
+        {
             "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "mfah-tnew-prod",
+                "nash-tnew-prod",
                 "natt-tnew-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [
                 {
                     "original": "my.mfah.org",
                     "resolved": "mfah-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "tickets.nashvillesymphony.org",
+                    "resolved": "nash-tnew-prod.tnhs.cloud"
                 },
                 {
                     "original": "tickets.nationaltheatre.org.uk",
@@ -45,8 +97,9 @@
                 }
             ],
             "responseHashes": [
-                "ff6936f79a2b83e9c9a5b270e4ec2f684d35a5d11407a7418090e29617a9697f",
-                "e2e116a93f71058b83bf5c3acebc289ff05bcab7f27aabfb5029ef182c90b641"
+                "5e05b73ff4a5fc0166f244b363cf473fcf5b76e142f90044022910c19928ebd4",
+                "7fee98169da76e019cfdbc93d5f2ea611ed39b8ba4534493bfd1c11b8ac2cf33",
+                "1ccb291fa80c284b1495f880bf4de2464eef78cdd80743e7a941029001b4200a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -54,27 +107,8 @@
             "exampleSites": [
                 "mfah.org",
                 "www.mfah.org",
+                "www.nashvillesymphony.org",
                 "www.nationaltheatre.org.uk"
-            ]
-        },
-        {
-            "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nmsc-tnew-test"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nms.ac.uk",
-                "www.nms.ac.uk"
             ]
         },
         {
@@ -100,21 +134,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000408,
+    "cookies": 0.0000681,
     "topInitiators": [
         {
             "domain": "cloudflare.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "d35y46dv539h1e.cloudfront.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 3,
-        "Other": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns-1438.awsdns-51.org",
         "ns-477.awsdns-59.com",
+        "ns-1438.awsdns-51.org",
         "ns-885.awsdns-46.net",
         "ns-1737.awsdns-25.co.uk"
     ]

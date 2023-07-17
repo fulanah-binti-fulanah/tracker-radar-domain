@@ -4,27 +4,37 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "user",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "conscent\\.in\\/",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "sdk"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.product": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "window.innerWidth": 1
+            },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "bb5ec16ad0ccc7c13e02a4ce3f154107c568c58260a0ee7b5ee2c048f300a8e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,6 +43,150 @@
                 "indiatoday.in",
                 "www.mid-day.com",
                 "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/user-status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "fa22545030e68eee077c7c842cb2c975838b4c7f83506fbf4b4a59496d7d4f44"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/api\\/v1\\/user\\/cohorts-and-journeys",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "116cd2c63237a5f427cbc2a554815a7aa657b872c7866b43f6c2953cc0b1c7dc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/css\\/main\\.dd7a2185\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b263255a0e3845ab8aa8880d4ee1baff6f1a05e017815001e634e380c33f9382"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/js\\/8\\.3675b7e6\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3ec31a75006a7a12b58095f8710a985abb5ae20836fe57c805a36808019cd117"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/js\\/main\\.04a847ec\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "46c63c3871a2b30e8299827b2a4f8db812212add11df919926e52f40a5dd51d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/api\\/v1\\/user\\/validate-sessionId",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aa477ec82adf12afb24cda07a032b48382cbac70a53ab3ad550241727ba4a722"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.mid-day.com"
             ]
         }
     ],
@@ -50,12 +204,15 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 7,
+        "Document": 3,
+        "XHR": 5,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns-469.awsdns-58.com",
         "ns-1537.awsdns-00.co.uk",
         "ns-1506.awsdns-60.org",
-        "ns-469.awsdns-58.com",
         "ns-625.awsdns-14.net"
     ]
 }

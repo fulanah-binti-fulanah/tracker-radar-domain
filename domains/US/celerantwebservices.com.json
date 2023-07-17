@@ -4,14 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "celerantwebservices\\.com\\/jquery\\/3\\.6\\.0\\/jquery-3\\.6\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "catofashions.com",
+                "www.catofashions.com"
+            ]
+        },
         {
             "rule": "celerantwebservices\\.com\\/plugins\\/bootstrap\\/4\\.3\\.1\\/bootstrap\\.min\\.css",
             "cookies": 0,
@@ -182,9 +209,11 @@
             ],
             "apis": {
                 "Element.prototype.getClientRects": 3,
-                "Event.prototype.timeStamp": 3,
                 "window.innerHeight": 3,
-                "window.innerWidth": 3
+                "window.innerWidth": 3,
+                "Event.prototype.timeStamp": 3,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -209,8 +238,9 @@
                 "cdn"
             ],
             "apis": {
+                "window.innerWidth": 3,
                 "Navigator.prototype.userAgent": 1,
-                "window.innerWidth": 2
+                "Navigator.prototype.maxTouchPoints": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -235,8 +265,8 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "window.innerWidth": 1
+                "window.innerWidth": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -333,7 +363,7 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -359,11 +389,11 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Event.prototype.timeStamp": 3,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.platform": 1,
-                "window.devicePixelRatio": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 2,
+                "Event.prototype.timeStamp": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -506,12 +536,12 @@
         }
     ],
     "types": {
+        "Script": 35,
         "Stylesheet": 21,
-        "Script": 33,
         "Font": 4
     },
     "nameservers": [
-        "demi.ns.cloudflare.com",
-        "anirban.ns.cloudflare.com"
+        "anirban.ns.cloudflare.com",
+        "demi.ns.cloudflare.com"
     ]
 }

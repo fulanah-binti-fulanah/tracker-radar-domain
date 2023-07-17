@@ -9,16 +9,89 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
+        "wcpstatic",
+        "browser.events.data",
         "browser.pipe.aria",
         "eu-mobile.events.data",
-        "browser.events.data"
+        "edge-auth"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c688d3f2135b6b51617a306a0b1a665324402a00a6bceba475881af281503ad9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "microsoft.github.io",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "4ee27c67621e77415407e0343d7aa36562a662f27c226d623b330e37a0751413",
+                "093dc3b2bb286931764c0ee8eab1d8a27883da1988835c9170a705d248746345",
+                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "education.minecraft.net",
+                "www.minecraft.net",
+                "www.trekbikes.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -28,8 +101,8 @@
                 "eu-mobile.events.data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -40,31 +113,54 @@
             "exampleSites": [
                 "clevelandclinic.org",
                 "my.clevelandclinic.org",
-                "www.benu.nl"
+                "www.benu.nl",
+                "www.lynkco.com",
+                "www.maxaro.nl"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.0001,
+            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "browser.events.data"
+                "edge-auth"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "474c642e72d90634a0ab6490f876c9fdf91b44388ab3b4ab9ba4cd0135c92a35",
-                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
+                "ca51fd614f01533949cc36632afe148d5a8e9ffc47941cca669c61fac6e1345a"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "minecraft.net",
-                "www.minecraft.net",
-                "www.trekbikes.com"
+                "benzinga.com",
+                "www.salon.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.pipe.aria",
+                "eu-mobile.events.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lynkco.com",
+                "www.lynkco.com"
             ]
         }
     ],
@@ -75,28 +171,39 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5833333333333334
+            "domain": "azureedge.net",
+            "prevalence": 0.48148148148148145
         },
         {
-            "domain": "azureedge.net",
-            "prevalence": 0.3333333333333333
+            "domain": "first party",
+            "prevalence": 0.37037037037037035
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.07407407407407407
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.037037037037037035
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.037037037037037035
         }
     ],
     "types": {
-        "XHR": 6
+        "Script": 5,
+        "XHR": 9,
+        "Preflight": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns1-39.azure-dns.com",
+        "ns3-39.azure-dns.org",
         "ns2-39.azure-dns.net",
-        "ns4-39.azure-dns.info",
-        "ns3-39.azure-dns.org"
+        "ns1-39.azure-dns.com",
+        "ns4-39.azure-dns.info"
     ]
 }
