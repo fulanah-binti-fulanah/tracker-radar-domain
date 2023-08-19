@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000546,
+    "prevalence": 0.0000545,
     "sites": 8,
     "subdomains": [
         "cdn"
@@ -53,7 +53,9 @@
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "BRAND_MESSENGER_companyKey": 0.000013635774818814642
+            },
             "exampleSites": [
                 "lastpass.com",
                 "www.lastpass.com"
@@ -75,7 +77,9 @@
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "BRAND_MESSENGER_companyKey": 0.000013635774818814642
+            },
             "exampleSites": [
                 "lastpass.com",
                 "www.lastpass.com"
@@ -155,13 +159,15 @@
         },
         {
             "rule": "lmiutil\\.com\\/lpassets\\/munchkin-v12\\/munchkin-client\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -170,7 +176,14 @@
                 "3186cec9e2f7c4a00e6d3119aee9fffab59d38f7e124f5a020b99e21c6117da4"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "SAMESITE_COOKIE1": {
+                    "ttl": 2592002,
+                    "length": 37,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lastpass.com",
@@ -189,7 +202,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "17172a52906986b14fa861d488dd8d2952b72052d2c14319335ee474bb5f94f8"
+                "2582b29ff0efe0aa30ff85d61a4ae725ce36901872df92abcde344380a9e1ca3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -223,21 +236,23 @@
         },
         {
             "rule": "lmiutil\\.com\\/lpassets\\/munchkin-v12\\/munchkin\\.157\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "84f9d7f06daa9d04861e3941c4c3eff61144eed17a19bc3c75ee55c81ad517f1"
+                "ed07382b10d9e3f4ab02abe41ed4236e71b89b679f05787d5278334cda3cbebd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -275,7 +290,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -287,11 +302,11 @@
         "Script": 15
     },
     "nameservers": [
-        "a3-66.akam.net",
-        "a18-64.akam.net",
         "a2-65.akam.net",
-        "a12-67.akam.net",
         "a7-67.akam.net",
-        "a1-208.akam.net"
+        "a12-67.akam.net",
+        "a1-208.akam.net",
+        "a3-66.akam.net",
+        "a18-64.akam.net"
     ]
 }

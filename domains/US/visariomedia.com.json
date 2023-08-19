@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000171,
-    "sites": 25,
+    "prevalence": 0.000184,
+    "sites": 27,
     "subdomains": [
         "www"
     ],
@@ -13,7 +13,7 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "visariomedia\\.com\\/tesseract\\.min\\.js",
+            "rule": "visariomedia\\.com\\/creative\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
@@ -21,6 +21,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
                 "window.outerWidth": 2,
                 "window.innerWidth": 2,
                 "window.devicePixelRatio": 2,
@@ -33,14 +35,54 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c75bfec9325b968ee0b7712c78a3202d0fe6d747e4c66a0a2411ae66d068e394"
+                "f63846887e9274136240ba82cbdc817627b096de42ccb1905d7dfc9e35b949c2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_popprepop": {
                     "ttl": 21606,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vcrot.online",
+                "xviral.net"
+            ]
+        },
+        {
+            "rule": "visariomedia\\.com\\/tesseract\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f066f6aae4b2f4154efd32019642277deca1031701a87c16ce0df7fb50b55d64"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_popprepop": {
+                    "ttl": 21614,
+                    "length": 1,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -73,14 +115,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "83924f4df4fff525a78d9bbbc3a7f355ba5f01d3fee443b41e585dad3ad8b761"
+                "ff3a489504a2af48a97ec035726b4ac04054f92bc2f175f01c99be488ecf0e61"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_popprepop": {
-                    "ttl": 21608,
+                    "ttl": 21611,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -118,9 +160,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_popprepop": {
-                    "ttl": 21608,
+                    "ttl": 21605,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -139,6 +181,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
                 "window.outerWidth": 2,
                 "window.innerWidth": 2,
                 "window.devicePixelRatio": 2,
@@ -151,14 +195,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb456409c88a4c0552ec71ed22efba782eb0652e8e591f2d31830b329fb48808"
+                "766fbf03f9c635736a6a3a068e1afdcf876eaa6c106c31b1d4101a4af844827a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_popprepop": {
-                    "ttl": 21607,
+                    "ttl": 21609,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -171,7 +215,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000171,
+    "cookies": 0.000184,
     "topInitiators": [
         {
             "domain": "adsco.re",
@@ -179,25 +223,29 @@
         },
         {
             "domain": "first party",
-            "prevalence": 0.4166666666666667
+            "prevalence": 0.40625
         },
         {
             "domain": "dbcrot.click",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.078125
+        },
+        {
+            "domain": "xviral.net",
+            "prevalence": 0.015625
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 10
     },
     "nameservers": [
         "ns1.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com",
+        "ns-1364.awsdns-42.org",
         "ns-1817.awsdns-35.co.uk",
-        "ns-850.awsdns-42.net",
+        "ns2.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com",
+        "ns-850.awsdns-42.net",
         "ns3.dnsmadeeasy.com",
         "ns4.dnsmadeeasy.com",
-        "ns-156.awsdns-19.com",
-        "ns-1364.awsdns-42.org"
+        "ns-156.awsdns-19.com"
     ]
 }

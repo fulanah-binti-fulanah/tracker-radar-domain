@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000375,
-    "sites": 55,
+    "prevalence": 0.00117,
+    "sites": 172,
     "subdomains": [
         "prod.tahoe-analytics.publishers.advertising",
-        "assets.brightspot.abebooks"
+        "assets.brightspot.abebooks",
+        "redirect.prod.experiment.routing.cloudfront.aws"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -26,60 +27,162 @@
                 "prod.tahoe-analytics.publishers.advertising"
             ],
             "apis": {},
-            "sites": 42,
-            "prevalence": 0.000287,
+            "sites": 160,
+            "prevalence": 0.00109,
             "cnames": [],
             "responseHashes": [
-                "262876cc2b67b39953726d73ad8cd82004dd0c44bff3b69aff9f201151fb10f9",
-                "834b65ef4761166faf9a314b127d3de12a6de44ef9a7ffc7bd75c43c25472ac1",
-                "d568289072ceb98640060b09a74dc1c5e79b324a025f96230d343ceb494cfb19",
-                "d47a7346c668333aa3102a88905b07b34bb651f01b43f8c90d0e433d2cb3af6d",
-                "1674d1d7381b1d976f22944a10b21a97389463bb47abea960cf59dbdbd5524cd",
-                "88d63582907aa3fb969d85d7e675a43618d1aa88cf0dc930023d86388bb0a22c",
-                "7bfb1a5819cd0dd36ffd8737ac9fc3e38e54d9d1345bd6a6fe6772e7f06410bf",
-                "084ca4e210d9d52bb333dce62756f86191076223fb9a36566857abfa7bcc3807",
-                "c71a95d50888af131b68a031f3741e5aeba630201025ea421081c52f8b71fd3e",
-                "b5e4448130e3061f6e748ac1e6fd7844960691f74581fe1c40f70308e49473c9",
-                "10672200049eb1a24ba649f2a7256c3deef68dde71dec6ee1843f7e2c8f3601e",
-                "62de9bc832fda1f74c72086cfef669d14cbb005b91e1c2aa78bf54513a42bbb9",
-                "6bcfe5c943cf8e271e693d0e0f97225116fa8a89f82de3207501219eb55bfd92",
-                "7ddc7c2395ce50b1924c6cb8ca4d94e5d0bb86fc4128946b2ca11917e9b63228",
-                "0b8052b487744ecccccce17119c65504265f42f34d2839daacf5db13dd6d70ba",
-                "b0ea68e230811f40c2fdab3b3f5cca1978f9d789c5a9c618266ed82651ae2c07",
-                "d16d32c8ddaa52c63b56c1e89845c6b4975dfe9d359cc405b45ca2167dd9f3a7",
-                "d460b2900a922a6f559f337f9d0d298a2fb0098728d3b613b40947f31e0041e0",
-                "2d5b7455206c6ac64ebc95ead9809818dcdbaf2c6759111b2f987d3b40104fff",
-                "ee1a8346d4d3f95710c318f1bafb86866cb69a0204797d4142cef9acd253c411",
-                "91cb8ca92a28182b6585c0569567eef216baf261658f5db0c2e8ab51ad47fe2e",
-                "c94b01a823e4fe433afc7167d095ef7685a0d009ddd480c27c5c564f4afef462",
-                "489834943ac54de0ac3fba144841cfb81646668f71dc6a8ab17492acb37924d5",
-                "b84f27176007d9469118d2a4525b93550db96b001d2921d1720c1f653a1f725a",
-                "412cf14ad3de3442b8ba62d1521b5647460e51fda59d30d4a80ca23f972e3a8b"
+                "9f2ad7a8dbc76f76bbf1040fc93c16d3853bde8b0895b540787c681f1af772bb",
+                "45ba5995463beebab8289247429b18db6b5679772d71e5f41b839a05004406d6",
+                "36527236f6a24286303bff2b13a6734d2695e0efceccfd2644137d3d25b42370",
+                "dafdbaac5664c55cc7fb0e1e6602f638b597b204d919692f6a9ba23cfa572802",
+                "d3441a49673f27c2234078e5a6b132db766c90172548c174fbac91baa4d4d0a3",
+                "b29aeeeddc294d9333be4e964d453aea31038785e489fb557dd8b348036021b6",
+                "5de01fdcb9126604bed640ea22a6d05d26581a1077c4c7ddea8c6942f03099d6",
+                "78f294f2b02a597d289149e504a803ad2514d2e623bb3506b937b87f83142850",
+                "6dbd41423de54d6e79fb2bfd590e2ce652c1561a6b0e6d153e18ca72915a3634",
+                "88c0df14d0eccb974702c79434ffbcee7577803f401b346be2f1dad6f5cafaea",
+                "0bfe3bcec010d8969e561262ed77bac5dd43f0df944693878613fabd0f40ee32",
+                "09694a063beb208ae8cd0fd4650b0098b49e4ee0a33b8264565727fd5960f5de",
+                "59650c2ac0d2587ea4ebe444dedfc2dbca2893c4ad0c614c6813b60b105659a2",
+                "1df26800457d798a50c4c213b3e887d9e25bf0f8b5cd4cfb2a0830e6d4b1a5fd",
+                "75083aa4f44143af8742b12f94fabd51db16764788e01fb91d871f5ad84bfdfd",
+                "c18158df4d8d66530b6babeff596c0eaee8629cf3ab84872bdc5239923872a66",
+                "42142a38061b00e71f768472d34dc68fafbbc7ae7b4a408b82a18bbad82eb0c3",
+                "78ca9b1fc74100c7fac147da8fcaf7877bc855fa0f4c0e0534dbc8deaea83d4b",
+                "0f955e760e4fe4e868ff152f9c456c8868f18e177832e7a27bd9c322dbd51fab",
+                "54dae7cddd2629c02f6008cb64ce32d37ae7c6e1f3c9d67c0c7fecd5e5532be3",
+                "1766fd40c82885e10ce54445bb9b512c6459c57a63d1dc5dbdd8c894374bf042",
+                "c18c6ddb87ee16f7b6da57e73ded42e98d0d3fbe3c6d398cb7d0383cd62e6104",
+                "95501cf3013299c126a7eb9165d2a290d3139029cd272e1bb1fa047762897687",
+                "af430bca2e8bb45a54a5b87814fc2d1d44e7aa07938fd40a320b2c478a2930a9",
+                "210422dbce2e5d0067c02bd2dcadd77e6f1af2ae5d2c143f7cd77b8d5c1db252",
+                "db65eade4614f0e2e5c552682ea474e07ea04ddc9992343cd65f97f64242136d",
+                "d7d05445d2dfa5ef5bd2009b5147f62540c99607199ae2ac204f69a0823b3404",
+                "e7a00bea6614f3daa3a6def6e20f3ced3cf2db38b1353bf9e85b465c5acda249",
+                "45866955f5da0911c75ea86f80ed6d651f3bcb4d437b3469c905def15a3cf6e5",
+                "cd47e6fd987d1a29ab18a50ba82396703e245b42bf5837f18e4d8edcd01cb1cd",
+                "0aea611ce33c36c85a1a2ffd44e305224a9357d9672eb6b7e706694bb7f10468",
+                "6bba4550603b3fc5774ece3797eb97e96b22094e5677f696b3cf0e20813ea8b6",
+                "185b7ab6311331ee845acc7456a3b6803944299df2e02a2b73824ddb2de408d0",
+                "e8147c1ccf0f0b6a542f041042452ac3de2102ca8cce6fe07fcddca53c8a0e2d",
+                "a2d4b2e56e342424a16be9eb02a8128930e3e267c4c5b508fec36a2fecc7aac3",
+                "dbf5fa348a225a86c7727e4158180577ce8142ea194a2316df103b3e232e0972",
+                "86a6a1c3fe90739e9fa80b33e803c34414bbe88e07821ffe83eeee21d69942a1",
+                "83a90fa6ef17f78061093f3f9d1a471c299ecc0b2e8e382a7fbaf1a61ac39c02",
+                "756acc194717a8ef6e11bda60ef45b81730eecd480645c703632b03edfa87e78",
+                "ede0a7e70b806d25b095eac7a8788554153e8b8a44e319bcd1f22416aeaac991",
+                "ac97133712cd18aa6065a82ac36006d0bfe9269bc2bfeba1a8c215a541bd35de",
+                "67337946885e79edd603a5908055e95863f9c80171ca33e7e2af0308d4b01b17",
+                "282c71778d9485c9e20c093a4c0d640b2a2bc87f00049726b3e3fbb11becac0a",
+                "10ef93558bb8a8fe65986b26dea49faab116f961c5fea082ec365976a2a70c29",
+                "1d08a49903a7a774e3ebaffb8c96d4ad68aee918944317e48ff02110978ee688",
+                "b9af42996ee89b28b61f775fd4d4ff25a59ee6b1a6600c36be17c65b113c8efa",
+                "330dc798e5dbb83f9c4413830a1d8af3d2f0e104214995a67d2406f00ef5bb22",
+                "f55b81bbb773483f3374bfce376b18aa1c59a2c127d89db3303eb9a99bde1f1c",
+                "4cad73f8ac9bf8f9ba786f01ce093286b1f6754db57a349abfa7aba1af1fa509",
+                "eeb0ecf74c05a54209c2ddc9b1e0409e93b5bbd591f9d10f94fa58a09e0d4eb5",
+                "31ef92f468551c8eec7cd7f8d43bc3dc8346896818c27028e730e460c8a4aa43",
+                "03bdd5535aa3374ea97c2284a1da6c00b21a283618547f79cd11baa307c3b6f5",
+                "2a709145b05ab64c62ab3fd4d65ca07f55dab115c9ddd8e22e781c7f3912ef45",
+                "af943aafa96f679bd18beec0fa477880efdaa5c8430ae81e2c12cc4fb7cbad77",
+                "dc71e9f7da4fef14416244b9edae05dabefe4e642c95e9597e6d3111a7903d4f",
+                "697f5ede791add5446fd8328e0becddbb3fe07f10f0351f2b952e27d24e82637",
+                "c4d96d43898969bd4acaacb8991ba47d02264a19754bdcd9466207701f021b8d",
+                "d80d3b213ebfdd4fc6bc89adbf56fb9ffac964f88e8a3b5c45a50ed89e817986",
+                "b1a0e9c2f2b0ea83c3bd2c6d15d64a207e040fa4755d8745b21a49255b8c8686",
+                "816b4e1e7efd5d9459939e59dbaf715c5d4cf7a4e4d7c9d8566df789367b866f",
+                "3b56a0f0fd9417b266db4dba4e5fa5a6b929a3ce111f414439996b31b69a8419",
+                "61b017422b66be8bb8d359387059b1d09b225fa473102d5df2be7ddc9c81a73d",
+                "05fd03eed1397b71bd66c36d605899c57ae8578a4b92f8f040c0280fdc8af123",
+                "3732d19451526b1be79889ea20301522747193cdaab5a2210e63e0c388fab1f8",
+                "5b1490e4e8c2d304e2efac9cf35f2b6112fc4444143ed6415e7eb9d8163c27b9",
+                "2b0e9384c09349358be864302f5e465347b8a03f9e92360dfac1660fc5a4ac40",
+                "c34297420ed87223fdb148ef4cfe14bf94ffffd282d84b850e3d2b0d4aea2972",
+                "c95b6b6d24c668124810e8fa1eb24d80df8bf5550710ca6d80b2ec1c2500dda8",
+                "01a0e5be5a4cfa7943f61673337fa44a988bdcf2888314d3aaf24ab0234e06f6",
+                "ffda24e4900d5791344ea5abcb375761893c20b3dec1e4ad2af8d535d5794fa3",
+                "30ac3e60fdf1b164837d03c70fa99a8daeca0c049182fadfed5e6a15d12e2308",
+                "472d7f8ccd6e3735db9708567222f9930143f680abde3b40a5739f6b69c32e44",
+                "95ac6e1106cc7be5942627a46927f33c447e3bbdd8244a6092abe446b3a08624",
+                "97c7439acb996202bb04bae871cdf86b7ae4eb842f7fb159248d413f63b5c396",
+                "d4ed9cb87e200343dff932cfb043f22f0d87aeb4d5e535411c3eb7fcf0dabaad",
+                "7619f30a3d29237b92d02e4116f0ae4b0c7ce70b9b956e91931a046ab5d6634b",
+                "fecfe483f7c7a72d42e80f7662d57f828c77097d48be9e59a5b4062738986dbd",
+                "508573ab909cbe13d27778cbe13ef75452a48fa886efd24a39bc9eec61744475",
+                "33daaa8457cdcbbfbc1d4cf1c46630399f1eeed4b20ef0d3bf9af5e375d235c4",
+                "d4437b0e17cc98d8091daca3cefb9c535f095b3f742a7508c97ee8b85bc1e6f6",
+                "3f5e63a16fe9187dce12bf03c0c9b7fbd29766c81c5fa6b78c514a14bbdcf733",
+                "86843f73383e50a299c8aae1ac8ee18bb2d24c0b5b4129ee9fbb822d75cc2a44",
+                "ca4f8af4efe79630b6caa75c7a524d0d9fbfe0e6df16892135609c0cd80e7fdf",
+                "2392d0d0a5ec37084764c291b95fd1346cea7c422edcafba8f15e6c2d30a7377",
+                "979183e9a3a3ac64fe5957f712a8e71c727e693fa5883d977c8f58505a51c370",
+                "f85045a27db0d5180d6f34c5d6baa044aff83e5cf9df1566375ec8e1891d26a5",
+                "38409e9ae4513a6847d45ff3fad5cf831bd3a51511d4e050af9c15e0b67a6b55",
+                "6e599f07ed2d7effe861ff7708a0a4d8d96fded25a1c5b408102846c0b9f0efc",
+                "aba5feb83c502a638416408c26c667c7a98d1ab552121fef4ecd2a8791687215",
+                "3162dd08a9f04a04e726adce73e3703f18c86d3cff0b88ba058f0ee581516b78",
+                "dd440646922c84d56b99e5e9ee379cbba123adcb24bc798a38c33d99b21c242d",
+                "5b547900fe5bf2d6f0bee078db920cf76353fff45fc37876776a082155776df5",
+                "9a8846d7a9c46b99e43071219a6e08bd62a1ae7aa9c90417bf7c9b9a32483272",
+                "5ab597d230d1ea4aaa29e7885091d4eb3db29e90228782468d04127a36e9ee62",
+                "f889d1316b1141b23ba3fecf831448856969b3b52358a523ce02232d8fa65e9a",
+                "029e4de044f9f045b2c8001a4b4ea4afc67e7de2bf17cd9e0f9af5bfeca02196",
+                "a54ccd2faa959d58cad506cec986a8f8e4427d37c94802385acd515169aaea5c",
+                "95e276cd6039ee6f54004fc01153b59c7793d84603a3f85cc8bfafa3aacd23ac",
+                "5c2b01d59379a0d3f1649a36bbc7b6990c28abc4441941f88453deecab530630",
+                "ad8fa00a9fd8ad52d7c8b15d0e36e0edf351395e37347cf484d58a3f70d16f0c",
+                "0e5dbfad1259b936468b75eb712831a4ea8a101fe1d8a4266332a0034040f2c7",
+                "f03aa4095ee34d1628e199070771a389e90625957440312aae15c68ef9e29a35",
+                "4988f453806bf453062f712b8c36d9626c4c818daea5aca7e907db140b9e9a40",
+                "3b3aa35e2ee839b66b34b0cf604f92591550960b568d0d823aa2bcc76aac7891",
+                "c8fef7dc75f0afb900537df31ee69f2c205cf0f419711ac55b892220e8de2204",
+                "71d84e8312daafe995571e32c4286c50457aae0fcea0f0ece0b678cca202b692",
+                "c8286efbc8529c02a15a3c3e2ead4482aac01f33bc0569a50aa918217affd406",
+                "8cb11d10551e74962c30233888d78f1b17a618ccdffe9e35c58dc818da98c0fa",
+                "e9283b7e35ec2500dc6a50149064b9658a81d4555731150936feeb95c82487e9",
+                "59adf8f715f6d6cf8de40a97fc6a7107b1c46f7a29bb9d0fae5d612a2f1db15c",
+                "51e8fced3b6774cf6cc9274d7d759b286828e66409205673b750490cdd3ce900",
+                "f8dda8c8c5925613a614f74eb2a496a400ecc711cbc50401de06ff3e95adbe04",
+                "b087a9dd2cb80119e88781f7e748c3dd8ea2c4ce8b78b923b307865f2f1e503b",
+                "58d61052b7ff0719db04ec7c978118a76726503058de82ed32c764c7cc33a34b",
+                "42e2b95fa976f62a879df70f07439c5db3bc6fe1f69d894fede7f4d3b31c1cba",
+                "7536bb3e4324c81b4350f187ce1237bdb58574710ee2a44585fcde47446c92d0",
+                "cdf9cf1bd99dd0df919c30a5b54e91a19e567b1509c3af79d6a78f2837aa4a60",
+                "c57b268e4c7538e080ad428f5f63c02a6e7c1ad3583908f4b617f3b96ca7bc02",
+                "fb80fef5dc2bba0b2c68837ed180bc199000e5cdfcac8e3f5766883a53e562cd",
+                "c7e6a8cd376e974472fba9ffa96334d36faa28e01a6bbd124deeee224633321b",
+                "1ae4e87680f1354bdcb792d7400b91d32d128250d08469a598674a1876d8dabe",
+                "057cd769d8dc374196eec0492164591a15c3bb5ab8ccd4f3b467dba45e457b10",
+                "c804edbc40b271562dc84c60314a8b2d94b53f00a420c561a289e0868f36b659",
+                "1e6501a70a1d2f3c063453469cc576f2a268405cf5522f43fb6f899ba170f659",
+                "e0663e01f0be6883f3bbd0f99504d72ff33c06b4a489151bfec08f6c555bdbd8",
+                "60283fcde4e9c2c865a34bbfd620c8d09dd7db095b30a2042eb19ec7e21f3e1b",
+                "cf61af3061003cd4d7a1abc3ac442e40f43cfc71b24426cca2db67d4ecded296"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kodify.net",
-                "selectbaseballteams.com",
-                "methodshop.com",
-                "www.zeroto60times.com",
-                "gutadvisor.com",
-                "obits.syracuse.com",
-                "endante.com",
-                "www.owltail.com",
-                "www.clevescene.com",
-                "travel.usnews.com",
-                "faurit.com",
-                "tractorproblems.com",
-                "cryptoguiding.com",
-                "bonk.io",
+                "money.cnn.com",
+                "weather.com",
+                "www.practicallyfunctional.com",
+                "thecoinexpert.co.uk",
                 "diabetestalk.net",
-                "www.ole.com.ar",
-                "winkgo.com",
-                "dailyentertainmentnews.com",
-                "elpopular.pe",
-                "www.lawlessfrench.com"
+                "en.climate-data.org",
+                "iupilon.com",
+                "www.thurrott.com",
+                "cbs2iowa.com",
+                "www.discussfastpitch.com",
+                "www.surfchex.com",
+                "downshiftology.com",
+                "mathcracker.com",
+                "www.morningjournal.com",
+                "www.nutritionadvance.com",
+                "www.wltx.com",
+                "gutadvisor.com",
+                "www.guitarlobby.com",
+                "www.thecut.com",
+                "lovelygreens.com"
             ]
         },
         {
@@ -90,34 +193,34 @@
                 "prod.tahoe-analytics.publishers.advertising"
             ],
             "apis": {},
-            "sites": 42,
-            "prevalence": 0.000287,
+            "sites": 159,
+            "prevalence": 0.00108,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "forums.minecraftforge.net",
-                "www.bestlittlebaby.com",
-                "endante.com",
-                "www.smartrvguide.com",
-                "iupilon.com",
-                "www.smartcycleguide.com",
-                "suggesthow.com",
-                "www.razon.com.mx",
-                "hiplatina.com",
-                "bonk.io",
-                "www.clevescene.com",
-                "www.idrlabs.com",
-                "www.healthycholesterolclub.com",
-                "glutenbee.com",
-                "www.ole.com.ar",
-                "www.zeroto60times.com",
-                "www.owltail.com",
-                "obits.syracuse.com",
-                "elpopular.pe",
-                "selectbaseballteams.com"
+                "money.cnn.com",
+                "weather.com",
+                "www.getsurrey.co.uk",
+                "shipping.fandom.com",
+                "brownswire.usatoday.com",
+                "secure.cincinnatibell.net",
+                "www.westernslopenow.com",
+                "www.dailylocal.com",
+                "www.nutritionadvance.com",
+                "coachlevi.com",
+                "www.lawlessfrench.com",
+                "horseracingsense.com",
+                "deepbluembedded.com",
+                "www.touchtapplay.com",
+                "www.discussfastpitch.com",
+                "recipeteacher.com",
+                "bgr.com",
+                "quotecatalog.com",
+                "gazette.com",
+                "recipes.howstuffworks.com"
             ]
         },
         {
@@ -128,13 +231,13 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.platform": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ed24b047cdf0b764cc4f29b3b5dd553bb52a009bac5c3f4092a44727187f09ae"
@@ -144,8 +247,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -156,8 +258,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d63de9b9e0025000ddf993f25aef5532853822bd24d001bd1307b37c9d47af95"
@@ -167,8 +269,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -179,8 +280,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "aa445b04ab8ac1ac940b20311031ca3c69e99d524bfaa4c0ed1ed1c9cfe1f834"
@@ -190,8 +291,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -202,8 +302,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d168091114030449c7e543f3b46d6c485b874f97278fc9a748eae7e5d4ceb5f7"
@@ -213,8 +313,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -225,8 +324,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4e4395881ab13c883630a0d7f289151c2e572c62890314069eb5755968248e87"
@@ -236,8 +335,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -270,8 +368,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "26bf656f44363f832b0f3b93530e86265c38a8fd5e24cf4efe5cb98713df87fb"
@@ -281,8 +379,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -403,8 +500,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5df4edd93318ca9006b94b4eb6993efd698e15b9c9f0ffc7d3746a666d1530d8"
@@ -414,8 +511,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -426,8 +522,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b60a0db9b564be892795c7d0dbe1ff002df6a20b07cf9bc2ca8f259a7797eb0f"
@@ -437,8 +533,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -449,8 +544,8 @@
                 "assets.brightspot.abebooks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4d83178cc0ca4afa207c511771131d13acdd429b7de22e25f09dc0407e4aead2"
@@ -460,8 +555,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.com",
-                "www.zvab.com"
+                "www.abebooks.com"
             ]
         },
         {
@@ -487,6 +581,28 @@
                 "abebooks.com",
                 "www.abebooks.com"
             ]
+        },
+        {
+            "rule": "a2z\\.com\\/x\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "redirect.prod.experiment.routing.cloudfront.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookdepository.com",
+                "www.noise11.com"
+            ]
         }
     ],
     "categories": [],
@@ -495,41 +611,61 @@
     "topInitiators": [
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.8121546961325967
         },
         {
             "domain": "first party",
-            "prevalence": 0.25
-        },
-        {
-            "domain": "sentry-cdn.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.12154696132596685
         },
         {
             "domain": "abebookscdn.com",
-            "prevalence": 0.027777777777777776
+            "prevalence": 0.011049723756906077
         },
         {
-            "domain": "fullstory.com",
-            "prevalence": 0.013888888888888888
+            "domain": "blogherads.com",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "d2uap9jskdzp2.cloudfront.net",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "usersnap.com",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "d9esmwyn3ffr1.cloudfront.net",
+            "prevalence": 0.0055248618784530384
+        },
+        {
+            "domain": "d1g3myji5lplsh.cloudfront.net",
+            "prevalence": 0.0055248618784530384
         }
     ],
     "types": {
-        "Fetch": 42,
-        "Preflight": 42,
-        "Script": 8,
-        "Stylesheet": 3,
-        "Font": 9,
-        "Image": 21
+        "Fetch": 160,
+        "Preflight": 159,
+        "Script": 6,
+        "Stylesheet": 2,
+        "Font": 6,
+        "Image": 20
     },
     "nameservers": [
         "ns2.amzndns.com",
-        "ns2.amzndns.org",
-        "ns2.amzndns.co.uk",
         "ns1.amzndns.org",
-        "ns2.amzndns.net",
-        "ns1.amzndns.net",
         "ns1.amzndns.co.uk",
+        "ns2.amzndns.co.uk",
+        "ns1.amzndns.net",
+        "ns2.amzndns.org",
+        "ns2.amzndns.net",
         "ns1.amzndns.com"
     ]
 }

@@ -72,11 +72,12 @@
         },
         {
             "rule": "javhahaha\\.us\\/js\\/jquery\\.cookie\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -85,7 +86,26 @@
                 "75aef2e95ea7f3a70999396fba0c2ab866f4ff06313cf1b07780d800a5fc1ebc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "file_id": {
+                    "ttl": 36007,
+                    "length": 7,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "aff": {
+                    "ttl": 36007,
+                    "length": 3,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "ref_url": {
+                    "ttl": 36007,
+                    "length": 10,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "javbigo.com",
@@ -115,13 +135,17 @@
         {
             "rule": "javhahaha\\.us\\/player\\/jw8\\/jwplayer\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.localStorage": 1,
+                "MediaSource.isTypeSupported": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -189,9 +213,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "8b55e50784a75453612a9c9847e794f1563edd4c9505383791af99fc84789f09"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -203,7 +225,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
@@ -215,7 +237,7 @@
         "Script": 16
     },
     "nameservers": [
-        "rick.ns.cloudflare.com",
-        "elisa.ns.cloudflare.com"
+        "elisa.ns.cloudflare.com",
+        "rick.ns.cloudflare.com"
     ]
 }

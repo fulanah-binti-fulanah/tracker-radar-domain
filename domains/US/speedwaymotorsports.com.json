@@ -14,7 +14,7 @@
         "ads"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "speedwaymotorsports\\.com\\/services\\/lib\\/fancybox\\/jquery\\.fancybox\\.min\\.css",
@@ -46,6 +46,7 @@
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "Document.cookie getter": 2,
                 "window.devicePixelRatio": 2
             },
@@ -115,6 +116,7 @@
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -134,11 +136,15 @@
         {
             "rule": "speedwaymotorsports\\.com\\/services\\/lib\\/tinyslider\\/tiny-slider\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -231,7 +237,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bde35f9149b8fdd3499dc6d2146a278673d3849b9f7024beb4a4521d5f4e7957"
+                "dbb527b3bc8ca242d3558920eb67c7c7616acf261ace1a74490b11fe0d3dbdb7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},

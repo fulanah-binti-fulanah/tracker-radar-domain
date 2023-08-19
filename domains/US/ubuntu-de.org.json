@@ -14,7 +14,7 @@
         "media-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ubuntu-de\\.org\\/style\\/main\\.css",
@@ -239,11 +239,13 @@
         {
             "rule": "ubuntu-de\\.org\\/js\\/overall\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -457,6 +459,28 @@
             ]
         },
         {
+            "rule": "ubuntu-de\\.org\\/linkmap\\/icons\\/wikipedia\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f96d7e79c82580947010113ca6eb7840f072689933ca84883fb7ca4fb5d756c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubuntuusers.de",
+                "wiki.ubuntuusers.de"
+            ]
+        },
+        {
             "rule": "ubuntu-de\\.org\\/img\\/search_expander\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -490,7 +514,7 @@
     ],
     "types": {
         "Stylesheet": 10,
-        "Image": 24,
+        "Image": 26,
         "Script": 8
     },
     "nameservers": [

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00015,
-    "sites": 22,
+    "prevalence": 0.00017,
+    "sites": 25,
     "subdomains": [
-        "s"
+        "s",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,15 +21,18 @@
                 "s"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "aff9d6edb33c644d8d66f6a5b98191978c4f285aa46c37566e7627ec67840258"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "banggood.com",
+                "usa.banggood.com",
                 "www.banggood.com"
             ]
         },
@@ -40,18 +44,43 @@
                 "s"
             ],
             "apis": {
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5f1c44f2fdda98d0b53f68682b36da8664a0f90e701aaf3c86e5002e544debe8"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "banggood.com",
+                "usa.banggood.com",
                 "www.banggood.com"
+            ]
+        },
+        {
+            "rule": "retargeted\\.co\\/match",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79e376c6a86b6083983a0913f984af8f0b97197cd80a1043e2ae747a179bba47"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "usa.banggood.com"
             ]
         },
         {
@@ -185,14 +214,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "35b9149897313d8d65757daf273c52240586bea138fd74a095edb65b6684eecd"
+                "8934677f7b0efa83d314a9228c221a5837f2bb074f3fcdc2ae845073dabb89cf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__rtVx260x": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -200,6 +229,80 @@
             "exampleSites": [
                 "esrgear.com",
                 "www.esrgear.com"
+            ]
+        },
+        {
+            "rule": "retargeted\\.co\\/1\\/YrRbvY\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "06a5c8a66e4a3b21859afa492fe00268982d18f225a76066fea04e5ccc144629"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com"
+            ]
+        },
+        {
+            "rule": "retargeted\\.co\\/2\\/YrRbvY\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "a16f065b69da8290e82e3e4edbfe34cb16732c54672b65a1ee2abf2434a90469"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com"
+            ]
+        },
+        {
+            "rule": "retargeted\\.co\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [
+                "f172f0417b325312e274df68a076e9301ef36d07440a74ffb0a394e3d4c888bc",
+                "2cd31386d142e7a3510bf9b87f8ce7df166e145a16c00858018e3f24fa7e22fd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com",
+                "www.sodapdf.com"
             ]
         },
         {
@@ -301,38 +404,43 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.34615384615384615
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "first party",
-            "prevalence": 0.2692307692307692
+            "prevalence": 0.21212121212121213
         },
         {
             "domain": "22admedia.com",
-            "prevalence": 0.19230769230769232
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.06060606060606061
+        },
+        {
+            "domain": "movavi.io",
+            "prevalence": 0.06060606060606061
         },
         {
             "domain": "belboon.com",
-            "prevalence": 0.07692307692307693
-        },
-        {
-            "domain": "facebook.net",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.06060606060606061
         },
         {
             "domain": "belboon.de",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.030303030303030304
         },
         {
             "domain": "cfjump.com",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "Script": 24
+        "Script": 32,
+        "XHR": 6
     },
     "nameservers": [
-        "sid.ns.cloudflare.com",
-        "mira.ns.cloudflare.com"
+        "mira.ns.cloudflare.com",
+        "sid.ns.cloudflare.com"
     ]
 }

@@ -4,17 +4,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
-    "sites": 7,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
-        "cdn",
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "seel\\.com\\/releases\\/scripts\\/shopify-bp\\/bp-embedded\\.min\\.js",
+            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anbernic.com",
+                "urbanedcsupply.com"
+            ]
+        },
+        {
+            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anbernic.com",
+                "urbanedcsupply.com"
+            ]
+        },
+        {
+            "rule": "seel\\.com\\/prod\\/scripts\\/garmentory\\/1\\.0\\.0\\/marketplace-embedded\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
@@ -22,6 +64,7 @@
             ],
             "apis": {
                 "window.innerWidth": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.vendor": 2,
                 "OfflineAudioContext.prototype.constructor": 2,
                 "Screen.prototype.availTop": 2,
@@ -37,7 +80,6 @@
                 "Navigator.prototype.deviceMemory": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.sessionStorage": 2,
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.platform": 2,
@@ -54,162 +96,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a430c267000a2b76c997fd3e0825e83b81040bc0298f9984c7000ff9c86e0433"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1692233424,
-                    "length": 1,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anbernic.com",
-                "store.geekvape.com"
-            ]
-        },
-        {
-            "rule": "seel\\.com\\/releases\\/scripts\\/shopify-bp\\/seel_stylesheet_base\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ef187228f348904b1d330fe57657eb8316bf2fe9637e6306ed07727cf4ff2755"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anbernic.com",
-                "store.geekvape.com"
-            ]
-        },
-        {
-            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [
-                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anbernic.com",
-                "store.geekvape.com",
-                "urbanedcsupply.com",
-                "www.garmentory.com"
-            ]
-        },
-        {
-            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anbernic.com",
-                "store.geekvape.com",
-                "urbanedcsupply.com",
-                "www.garmentory.com"
-            ]
-        },
-        {
-            "rule": "seel\\.com\\/gateway\\/merchant-service\\/api\\/cart-configs-v2\\/geekvape-store\\.myshopify\\.com",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8472d2df2b70551115caf57cf174ec2e64edd5693262244e2447542ac33218d0"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geekvape.com",
-                "store.geekvape.com"
-            ]
-        },
-        {
-            "rule": "seel\\.com\\/prod\\/scripts\\/garmentory\\/1\\.0\\.0\\/marketplace-embedded\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 3,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.vendor": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
-                "Screen.prototype.availTop": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availLeft": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.languages": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.plugins": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "window.innerWidth": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
                 "dfb0acabecd3d98e1e8d194da688b5086b4397d48e167458ba93ec76be85b315"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1692189258,
+                    "ttl": -1692387425,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -222,7 +116,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000478,
+    "cookies": 0.0000409,
     "topInitiators": [
         {
             "domain": "first party",
@@ -230,15 +124,14 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Stylesheet": 2,
-        "Fetch": 6,
-        "Preflight": 4
+        "Fetch": 2,
+        "Preflight": 2,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1814.awsdns-34.co.uk",
-        "ns-164.awsdns-20.com",
         "ns-1209.awsdns-23.org",
-        "ns-994.awsdns-60.net"
+        "ns-164.awsdns-20.com",
+        "ns-994.awsdns-60.net",
+        "ns-1814.awsdns-34.co.uk"
     ]
 }

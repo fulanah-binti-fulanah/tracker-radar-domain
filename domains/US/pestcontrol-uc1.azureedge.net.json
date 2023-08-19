@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "pestcontrol-uc1\\.azureedge\\.net\\/Resources\\/css\\/RaidSite\\/raid\\.min\\.css",
@@ -37,13 +37,21 @@
         },
         {
             "rule": "pestcontrol-uc1\\.azureedge\\.net\\/Resources\\/js\\/main\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
+            "cookies": 0.00000682,
+            "fingerprinting": 3,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
+                "Navigator.prototype.plugins": 1,
+                "window.indexedDB": 1,
                 "Date.prototype.getTime": 2,
                 "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
                 "Navigator.prototype.appVersion": 1,
                 "Element.prototype.getClientRects": 1,
                 "window.devicePixelRatio": 2
@@ -55,7 +63,14 @@
                 "958908928eda65cf231b2752983e78e2b165f88cebd9ded0d5f4aeb2fe41f3d7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1692354993,
+                    "length": 1,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "raid.com",
@@ -968,8 +983,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -1110,7 +1125,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",

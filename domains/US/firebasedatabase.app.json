@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
         "wsm-prod-2d223.europe-west1",
         "bundesliga-web-prod.europe-west1",
+        "s-euw1b-nss-200.europe-west1",
+        "stopcock.europe-west1",
         "hauteskundeak.europe-west1"
     ],
     "cnames": [],
@@ -21,11 +23,12 @@
             "subdomains": [
                 "wsm-prod-2d223.europe-west1",
                 "bundesliga-web-prod.europe-west1",
-                "hauteskundeak.europe-west1"
+                "s-euw1b-nss-200.europe-west1",
+                "stopcock.europe-west1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -34,6 +37,30 @@
             "exampleSites": [
                 "wallstmemes.com",
                 "www.bundesliga.com",
+                "www.eitb.eus",
+                "www.grube.de"
+            ]
+        },
+        {
+            "rule": "firebasedatabase\\.app\\/\\.lp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hauteskundeak.europe-west1",
+                "s-euw1b-nss-200.europe-west1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d14e96bd08692f39b357173c908dcb0b21ee11d0bdb29b963ce7fcc836eb4fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eitb.eus",
                 "www.eitb.eus"
             ]
         }
@@ -44,16 +71,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "sizekick.io",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "WebSocket": 3
+        "WebSocket": 4,
+        "Script": 2
     },
     "nameservers": [
-        "ns-cloud-d2.googledomains.com",
-        "ns-cloud-d1.googledomains.com",
         "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d2.googledomains.com",
         "ns-cloud-d3.googledomains.com"
     ]
 }

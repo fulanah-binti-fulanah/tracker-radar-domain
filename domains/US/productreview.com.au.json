@@ -7,27 +7,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "productreview\\.com\\.au\\/assets\\/widgets\\/loader\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000273,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "061ae38534cf6b4201950d74dfc0252354314d3ad9bd411971c3a3cb54904d28"
+                "1abd397c0c3e56066d6f554c24ea30d20b95486cc97531fe6d38081fd0903581",
+                "0ca2dbf869b5f7a914c43c67b677db605e19db7a06eb2916e74565370166f7be"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,25 +37,57 @@
             "exampleSites": [
                 "boost.com.au",
                 "www.allmowerspares.com.au",
+                "www.domain.com.au",
+                "www.hrblock.com.au"
+            ]
+        },
+        {
+            "rule": "productreview\\.com\\.au\\/api\\/services\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "94e8915ed7c6cf59026fe29495d73c4ad066ebeef6828b797278fd970dcccacd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "domain.com.au",
                 "www.hrblock.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000409,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7272727272727273
+            "prevalence": 0.5333333333333333
         },
         {
             "domain": "addme.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.2
+        },
+        {
+            "domain": "domainstatic.com.au",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "raygun.io",
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "todd.ns.cloudflare.com",

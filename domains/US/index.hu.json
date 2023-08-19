@@ -8,11 +8,10 @@
     "sites": 2,
     "subdomains": [
         "indexstat",
-        "kep",
         "cdn.contrec"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "index\\.hu\\/stat\\.min\\.js",
@@ -39,50 +38,6 @@
             ]
         },
         {
-            "rule": "index\\.hu\\/1\\/0\\/5039\\/50390\\/503909\\/50390971_3841503_5ca139abd812660ec29712bd03344cc2_wm\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kep"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "74724aa5d88aefe6ff4427ce0eb8d7570c61c865d107e19dd0a87c84b6f26b0e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "femina.hu",
-                "sobors.hu"
-            ]
-        },
-        {
-            "rule": "index\\.hu\\/1\\/0\\/5033\\/50338\\/503385\\/50338535_3837511_ce1522b807fa73bbaaabfdd490bcabe8_wm\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kep"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4a6029aa5549f9cf0fe9e9f69532cdd250bd019635d981c07cb81216ecf26857"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "femina.hu",
-                "sobors.hu"
-            ]
-        },
-        {
             "rule": "index\\.hu\\/icwsMin2\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -99,7 +54,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d89bed41a8130100a40254c9e3dbb4992157c2b2c4238b33ad3e5b70813c58b3"
+                "ba16474ed9577fa4f45389d17f8acb747ac5300c1576879ab3dcf20f01382325"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -111,27 +66,28 @@
         },
         {
             "rule": "index\\.hu\\/f\\.html",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.contrec"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "266d5a8eb1e857f218e86142b1c35515721552d8344f438b07271b15a8570b20"
+                "fb9c00687c1d994faebfc98af6e7ac092b4683a7113dbf4d66c0cd36927fbd19"
             ],
             "type": "Document",
             "firstPartyCookies": {
                 "tpc1": {
                     "ttl": 2419207,
                     "length": 39,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -158,7 +114,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ident": 0.00001364424008404852
+                "ident": 0.000013635774818814642
             },
             "exampleSites": [
                 "femina.hu",
@@ -168,7 +124,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -177,11 +133,11 @@
     ],
     "types": {
         "Script": 4,
-        "Image": 6,
-        "Document": 2
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns2.index.hu",
-        "ns.index.hu"
+        "ns.index.hu",
+        "ns2.index.hu"
     ]
 }

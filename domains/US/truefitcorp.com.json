@@ -12,8 +12,8 @@
     "subdomains": [
         "consumer",
         "ds-dev",
-        "lnb-cdn",
         "cdn",
+        "lnb-cdn",
         "pga-cdn",
         "eof-cdn",
         "fol-cdn",
@@ -31,7 +31,7 @@
     "resources": [
         {
             "rule": "truefitcorp\\.com\\/fitconfig",
-            "cookies": 0.000102,
+            "cookies": 0.000109,
             "fingerprinting": 0,
             "subdomains": [
                 "consumer",
@@ -42,10 +42,10 @@
             "prevalence": 0.000164,
             "cnames": [],
             "responseHashes": [
+                "728a69ee2be5e339731a24a333db5955ff081380ac2e5954a6dc765f37750a1a",
                 "e4684ddf08faec7df5bd0af2a032e06061d0d62b2199a8d69b00c81f970c5801",
                 "01050e97ab12ed2a112de3a611199214206493653294592f173ee90871f654b3",
                 "725db0d0f4a55329a13a2eaf22538bafd548fa32be52e3efa95f2c98ea75f79a",
-                "01e9d461fd89754858ca3831a72df9b336e9530d88c14dc6dc3ae5805baf700f",
                 "bbc6dc5e231ea92a059e6a77aadd8592d64c0ce578775cb7a7ea0d230e2d4824",
                 "b52d95277b5c0d12292ef9d3362799a71d92fe6426841b004ee2493520328ef8",
                 "db2a9472c1122cee1e1c4a3b507bfdfdd65e0f09f5b80de91fa5115ec2ac8d36",
@@ -57,7 +57,7 @@
                 "45d7a5494c8bf1bec640034813727fe6ce4ee2e0fda9f473bf2094ae33654f02",
                 "f85e00d97e4d69bd49b1bc7ee7d2a7d9e24fb752d61e36805d86823b8d4ccf68",
                 "5567abffa61802a59910cdcfaec285da1effd3521c86ade1c62e9d7868a68af7",
-                "8b44a179af89f8b19722f4c6ff10c3afd716a3249fcee69d847c030f304b0318",
+                "daaece917eeff393ca13d6ce64a8e0db73b8e936b8a89b91d6d0b49f5fa87aa3",
                 "5399a3099fb0e296eb531b63ca414ad940f6d885a03db4342cea7c13f2f6f4e1",
                 "651a8748e3cb4d8beba6467249dfb27035a55f6c19fa216bfcc3ca0f8d2652ef",
                 "1ae3e32e01b29ecf25fd1804e1093c2c13b007be4d1558aec1e572557590b394",
@@ -67,26 +67,63 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.soccer.com",
-                "www.basspro.com",
                 "lanebryant.com",
-                "www.marmot.com",
-                "www.pgatoursuperstore.com",
                 "www.madewell.com",
-                "www.toddsnyder.com",
-                "www.target.com.au",
-                "www.lululemon.com.au",
-                "www.brooksrunning.com",
-                "www.shoestation.com",
-                "www.cabelas.com",
-                "www.carhartt.com",
                 "olukai.com",
-                "www.kmart.co.nz",
-                "www.skechers.com.au",
-                "www.lanebryant.com",
-                "www.exofficio.com",
+                "www.marmot.com",
                 "www.platypusshoes.com.au",
-                "www.moosejaw.com"
+                "www.pgatoursuperstore.com",
+                "bcbg.com",
+                "www.lululemon.com.au",
+                "www.soccer.com",
+                "www.exofficio.com",
+                "www.pearlizumi.com",
+                "www.kmart.co.nz",
+                "www.shoestation.com",
+                "roark.com",
+                "www.skechers.com.au",
+                "www.cabelas.com",
+                "www.moosejaw.com",
+                "gap.com",
+                "www.brooksrunning.com",
+                "www.carhartt.com"
+            ]
+        },
+        {
+            "rule": "truefitcorp\\.com\\/consumer-ux\\/7\\.0-localized-202308071643\\.32\\/resources\\/fitrec\\/js\\/application\\.js",
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn",
+                "ds-dev"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "7cb36848a82836b08888251c432d5a667f69a42cec994c80dfcc4c577995ef65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "tfc-l": {
+                    "ttl": 315360000,
+                    "length": 244,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gap.com",
+                "www.lululemon.co.uk",
+                "www.lululemon.com.au"
             ]
         },
         {
@@ -137,20 +174,20 @@
         },
         {
             "rule": "truefitcorp\\.com\\/consumer-ux\\/7\\.0-latest-202308071639\\.115\\/resources\\/fitrec\\/js\\/application\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4,
-                "Document.cookie getter": 4,
-                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 1,
                 "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "d6d5ec12686f64f998596715405b614031161a020d3bc87eb2f119fdb950cda0"
@@ -160,13 +197,13 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 244,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 },
                 "tfc-s": {
                     "ttl": null,
                     "length": 44,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 }
             },
@@ -174,8 +211,7 @@
             "exampleSites": [
                 "lanebryant.com",
                 "www.lanebryant.com",
-                "www.moosejaw.com",
-                "www.shoestation.com"
+                "www.moosejaw.com"
             ]
         },
         {
@@ -202,7 +238,7 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -224,7 +260,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e85c932cb99a6d2b325ad0141e922727e238722c7b6ab32ef681cf3f433bdfa6"
+                "5c17ed880d66d857ad60351c839489e31a820dfef39f6080efbfea3e26d47ce6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -346,7 +382,7 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -368,7 +404,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "459187e92a7528d168cb0a6e32c6160a8a863b237495bde70d8e158bacb64685"
+                "3d2ca9deaa7eefb403d783bbd457ab355527e6565dc2e97539399ae3cacdcd6a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -428,8 +464,9 @@
                 "lul-cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
@@ -443,10 +480,34 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lululemon.co.uk",
+                "www.lululemon.com.au"
+            ]
+        },
+        {
+            "rule": "truefitcorp\\.com\\/fitrec\\/lul\\/js\\/fitrec\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lul-cdn.staging"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f877d7dd3d815c2674e7cd447ff38a2550ad2d03eb6c70bb5dccc1483f69e384"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lululemon.co.uk",
@@ -465,33 +526,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "75d0ad45afde477d5361f34e35e0b35a8061b786abe89c4efdf6bf9cb7f037a6"
+                "76d0df726c2f7d10b4c4c17210fe4eb476bedced6a1573c8396e9f7b7940c222"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lululemon.co.uk",
-                "www.lululemon.com.au"
-            ]
-        },
-        {
-            "rule": "truefitcorp\\.com\\/fitrec\\/lul\\/js\\/fitrec\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "lul-cdn.staging"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f877d7dd3d815c2674e7cd447ff38a2550ad2d03eb6c70bb5dccc1483f69e384"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -556,31 +593,6 @@
                 "20216a8e2ba23a8cd32384f100ecff4e035a8cfb45de7a100ae11bfb5d1b96bd"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lululemon.co.uk",
-                "www.lululemon.com.au"
-            ]
-        },
-        {
-            "rule": "truefitcorp\\.com\\/consumer-ux\\/7\\.0-localized-202308071643\\.32\\/resources\\/fitrec\\/js\\/application\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ds-dev"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7cb36848a82836b08888251c432d5a667f69a42cec994c80dfcc4c577995ef65"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -660,7 +672,7 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -682,7 +694,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c006d3066330d0f3f8dc45108a0bef2bdb6ff763d0376be5751c5a09c126470d"
+                "bad4ccd2c4c39df140ae077af2ee9a4ab1b8740b8aab3f75a304b2050b344fd6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -758,7 +770,7 @@
                 "tfc-l": {
                     "ttl": 315360000,
                     "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -780,29 +792,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0ee528c767a973358ce828fbc4b6638b598d37840f9bd097de9e3c3499ae0986"
+                "4fdff831de2cf9d6ebc085ba229fbdad23ad495fa64f6a825a535d2a33fc9bc9"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pacsun.com",
-                "www.pacsun.com"
-            ]
-        },
-        {
-            "rule": "truefitcorp\\.com\\/profile\\/public\\/v3\\/pac\\/analytics\\/tracking",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "consumer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -833,8 +825,28 @@
             ]
         },
         {
+            "rule": "truefitcorp\\.com\\/profile\\/public\\/v3\\/pac\\/analytics\\/tracking",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "consumer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pacsun.com",
+                "www.pacsun.com"
+            ]
+        },
+        {
             "rule": "truefitcorp\\.com\\/fitrec\\/qvc\\/js\\/tf-integration\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "qvc-cdn"
@@ -924,8 +936,8 @@
             "firstPartyCookies": {
                 "tfc-l": {
                     "ttl": 315360000,
-                    "length": 87,
-                    "prevalence": 0.00001364424008404852,
+                    "length": 47,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -1043,7 +1055,7 @@
         },
         {
             "rule": "truefitcorp\\.com\\/fitrec\\/tsn\\/js\\/fitrec\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "tsn-cdn"
@@ -1098,43 +1110,43 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5384615384615384
+            "prevalence": 0.5585585585585585
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.16346153846153846
+            "prevalence": 0.16216216216216217
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.0673076923076923
+            "prevalence": 0.06306306306306306
         },
         {
             "domain": "reamaze.com",
-            "prevalence": 0.057692307692307696
+            "prevalence": 0.05405405405405406
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.04807692307692308
+            "prevalence": 0.04504504504504504
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.038461538461538464
-        },
-        {
-            "domain": "ensighten.com",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.036036036036036036
         },
         {
             "domain": "quiq-cdn.com",
-            "prevalence": 0.019230769230769232
+            "prevalence": 0.036036036036036036
+        },
+        {
+            "domain": "ensighten.com",
+            "prevalence": 0.018018018018018018
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.019230769230769232
+            "prevalence": 0.018018018018018018
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.009615384615384616
+            "prevalence": 0.009009009009009009
         }
     ],
     "types": {
@@ -1147,8 +1159,8 @@
     },
     "nameservers": [
         "ns-60.awsdns-07.com",
-        "ns-1125.awsdns-12.org",
         "ns-1659.awsdns-15.co.uk",
-        "ns-553.awsdns-05.net"
+        "ns-553.awsdns-05.net",
+        "ns-1125.awsdns-12.org"
     ]
 }

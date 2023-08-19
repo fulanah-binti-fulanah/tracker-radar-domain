@@ -8,7 +8,9 @@
     "sites": 3,
     "subdomains": [
         "tg1",
-        "servt"
+        "servt",
+        "serv",
+        "servr"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -28,8 +30,8 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "8defd8738ed336384ae2f5e435bc8d00377c07725aca523f8c14b47f9cee7511",
-                "cf5a67858ef4ac369f7c38226aaa5a4ad6855698b9073b108af62e8eec7fa4d0"
+                "648982aa651149dae7ba3686574ffd29ee5db2c50df359901b55834eb0c4d42e",
+                "f5418c33e0309323411ae0e4843d2dc835b57a85e2ce72cfde7aef3fe04d1021"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -57,12 +59,60 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00001364424008404852
+                "lotame_domain_check": 0.000013635774818814642
             },
             "exampleSites": [
                 "footballstreams.top",
                 "stad.yalla-shoot.io",
                 "www.youm7.com"
+            ]
+        },
+        {
+            "rule": "modoro360\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e90200ff0dc874154ce62dfa3042e1add64d90e6f97fa8a53bba2d56f31deab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006817887409407321
+            },
+            "exampleSites": [
+                "footballstreams.top",
+                "stad.yalla-shoot.io"
+            ]
+        },
+        {
+            "rule": "modoro360\\.com\\/api\\/adserver\\/s2s",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006817887409407321
+            },
+            "exampleSites": [
+                "footballstreams.top",
+                "stad.yalla-shoot.io"
             ]
         },
         {
@@ -82,7 +132,7 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00000682212004202426
+                "lotame_domain_check": 0.000006817887409407321
             },
             "exampleSites": [
                 "footballstreams.top",
@@ -96,24 +146,34 @@
     "topInitiators": [
         {
             "domain": "aniview.com",
-            "prevalence": 0.8235294117647058
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "greeter.me",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "a-mo.net",
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "first party",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
         "Script": 3,
         "Image": 3,
+        "XHR": 2,
+        "Fetch": 2,
         "Ping": 2
     },
     "nameservers": [
-        "elmo.ns.cloudflare.com",
-        "maya.ns.cloudflare.com"
+        "maya.ns.cloudflare.com",
+        "elmo.ns.cloudflare.com"
     ]
 }

@@ -26,7 +26,7 @@
                 "assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -69,30 +69,6 @@
             ]
         },
         {
-            "rule": "poool-subscribe\\.fr\\/vendor-buddy\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "520e94e70a4282b2a3a9b2c2c62bb75363693510dcc79d06b508c9615e70e0a6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "larousse.fr",
-                "www.larousse.fr"
-            ]
-        },
-        {
             "rule": "poool-subscribe\\.fr\\/vendor-subscribe\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -115,25 +91,22 @@
             ]
         },
         {
-            "rule": "poool-subscribe\\.fr\\/identity\\.html",
+            "rule": "poool-subscribe\\.fr\\/vendor-buddy\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "proxy"
+                "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "abonnement.larousse.fr",
-                    "resolved": "proxy.poool-subscribe.fr"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [
-                "e9657283b50d134187cb463e936223eb3b1acab58130fe4cc9b51e931c2ac871"
+                "520e94e70a4282b2a3a9b2c2c62bb75363693510dcc79d06b508c9615e70e0a6"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -167,6 +140,33 @@
                 "larousse.fr",
                 "www.larousse.fr"
             ]
+        },
+        {
+            "rule": "poool-subscribe\\.fr\\/identity\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "abonnement.larousse.fr",
+                    "resolved": "proxy.poool-subscribe.fr"
+                }
+            ],
+            "responseHashes": [
+                "e9657283b50d134187cb463e936223eb3b1acab58130fe4cc9b51e931c2ac871"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "larousse.fr",
+                "www.larousse.fr"
+            ]
         }
     ],
     "categories": [],
@@ -187,7 +187,7 @@
         "Document": 4
     },
     "nameservers": [
-        "ara.ns.cloudflare.com",
-        "oswald.ns.cloudflare.com"
+        "oswald.ns.cloudflare.com",
+        "ara.ns.cloudflare.com"
     ]
 }

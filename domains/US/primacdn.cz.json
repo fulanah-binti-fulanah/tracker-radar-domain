@@ -34,9 +34,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "eupubconsent-v2": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 10,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -68,9 +68,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "prima_device_id": {
-                    "ttl": 31622404,
+                    "ttl": 31622406,
                     "length": 38,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -89,7 +89,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.vendor": 3
+                "Navigator.prototype.vendor": 3,
+                "window.localStorage": 1
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -103,28 +104,6 @@
             "exampleSites": [
                 "iprima.cz",
                 "cnn.iprima.cz",
-                "fresh.iprima.cz"
-            ]
-        },
-        {
-            "rule": "primacdn\\.cz\\/sso\\/version\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "authstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e705f40b1bd50de44e9f14e2a96cc06632a8bf2ed005c09408ccaf09ae6fda43"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iprima.cz",
                 "fresh.iprima.cz"
             ]
         },
@@ -151,13 +130,37 @@
             ]
         },
         {
-            "rule": "primacdn\\.cz\\/sso\\/watch\\.js",
+            "rule": "primacdn\\.cz\\/sso\\/version\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "authstatic"
             ],
             "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e705f40b1bd50de44e9f14e2a96cc06632a8bf2ed005c09408ccaf09ae6fda43"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
+            "rule": "primacdn\\.cz\\/sso\\/watch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "authstatic"
+            ],
+            "apis": {
+                "window.name": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],

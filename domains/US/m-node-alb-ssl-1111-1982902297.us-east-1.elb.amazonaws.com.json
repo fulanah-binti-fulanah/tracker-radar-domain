@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [],
     "cnames": [
         {
@@ -37,12 +37,37 @@
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
             ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yahoo.com",
+                "www.n.rivals.com"
+            ]
+        },
+        {
+            "rule": "m-node-alb-ssl-1111-1982902297\\.us-east-1\\.elb\\.amazonaws\\.com\\/admax\\/adEvent\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "prod-m-node-1111.ssp.advertising.com",
+                    "resolved": "m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "www.autoblog.com"
+                "washingtonstate.rivals.com"
             ]
         }
     ],
@@ -54,14 +79,15 @@
     "topInitiators": [
         {
             "domain": "yimg.com",
-            "prevalence": 0.5
+            "prevalence": 0.75
         },
         {
-            "domain": "yahoo.com",
-            "prevalence": 0.5
+            "domain": "geoedge.be",
+            "prevalence": 0.25
         }
     ],
     "types": {
+        "XHR": 2,
         "Image": 2
     },
     "nameservers": []

@@ -12,9 +12,9 @@
     "prevalence": 0.0000409,
     "sites": 6,
     "subdomains": [
-        "marketapi.intoday",
-        "recengine.intoday",
         "feeds.intoday",
+        "recengine.intoday",
+        "marketapi.intoday",
         "auth.indiatoday"
     ],
     "cnames": [
@@ -38,6 +38,114 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "in\\.edgesuite\\.net\\/livetv\\/ver-3-0\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "feeds.intoday"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "feeds.intoday.in",
+                    "resolved": "feeds.intoday.in.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "561c9ade4970ed8f80b29443c97dfe7478086d424f7afefa3f3695b4a81c37d1"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businesstoday.in",
+                "www.businesstoday.in"
+            ]
+        },
+        {
+            "rule": "in\\.edgesuite\\.net\\/recengine\\/bt\\/getmixarticles",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recengine.intoday"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "recengine.intoday.in",
+                    "resolved": "recengine.intoday.in.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "0843cf6f0f5e329519ea4478a608636723401cf14253ad522faedcf4483bbfbd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businesstoday.in",
+                "www.businesstoday.in"
+            ]
+        },
+        {
+            "rule": "in\\.edgesuite\\.net\\/livetv\\/ver-3-0\\/livetv-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "feeds.intoday"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "feeds.intoday.in",
+                    "resolved": "feeds.intoday.in.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "589a07c2eb84cb9f2d02cd7990ded9f12a93a52dd848c795f776e75ebe4836a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businesstoday.in",
+                "www.businesstoday.in"
+            ]
+        },
+        {
+            "rule": "in\\.edgesuite\\.net\\/livetv\\/ver-3-0\\/livetv-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feeds.intoday"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "feeds.intoday.in",
+                    "resolved": "feeds.intoday.in.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "9248d4f47522f0a92fe63b72172c8ef2dbd15cb6258ecf3d75099f6c01a12904"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businesstoday.in",
+                "www.businesstoday.in"
+            ]
+        },
+        {
             "rule": "in\\.edgesuite\\.net\\/widget\\/tvtnindices\\/view",
             "cookies": 0,
             "fingerprinting": 0,
@@ -54,34 +162,7 @@
                 }
             ],
             "responseHashes": [
-                "3fc7d8ec9c890617dee68a6e5d2bdffb1a7e384fb47b1a986303ff3a9ccd2cd3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "businesstoday.in",
-                "www.businesstoday.in"
-            ]
-        },
-        {
-            "rule": "in\\.edgesuite\\.net\\/widget\\/tvtnticker\\/view",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "marketapi.intoday"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "marketapi.intoday.in",
-                    "resolved": "marketapi.intoday.in.edgesuite.net"
-                }
-            ],
-            "responseHashes": [
-                "7929c17328413b06ca7a598a33d47b8be1cf91cb55a5fbcc99ed640b7bb230eb"
+                "f8c8bebf0888728fb94b73e5242ed95ed23c6c1e1f58151fbd226266970be031"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -162,7 +243,6 @@
                 }
             ],
             "responseHashes": [
-                "976359ff0e11dbdb34f23aa22a2e290042bdd4b9ba90af893415d747a6e9cd00",
                 "04be4f23e1135a2993e7a58d5e23a4868f331c1c9cd3f09482f054ac0006f4d7"
             ],
             "type": "XHR",
@@ -201,7 +281,34 @@
             ]
         },
         {
-            "rule": "in\\.edgesuite\\.net\\/widget\\/pricechart\\/view",
+            "rule": "in\\.edgesuite\\.net\\/video_stream\\/livetv_ids\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feeds.intoday"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "feeds.intoday.in",
+                    "resolved": "feeds.intoday.in.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "8365a55fa25812288ffa2b6d2779b366777042d31db4e800e83826202b8489d5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businesstoday.in",
+                "www.businesstoday.in"
+            ]
+        },
+        {
+            "rule": "in\\.edgesuite\\.net\\/widget\\/tvtnticker\\/view",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -217,7 +324,7 @@
                 }
             ],
             "responseHashes": [
-                "054ca9a3542f025759a33cb40883a31a4802ea00130ec00e5c9f9713d2f3b41d"
+                "0b08b84b12bcd3be70cbfcd82f4805b63c927963c38883db1c145f40e2a3db12"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -225,62 +332,6 @@
             "exampleSites": [
                 "businesstoday.in",
                 "www.businesstoday.in"
-            ]
-        },
-        {
-            "rule": "in\\.edgesuite\\.net\\/recengine\\/uaparser\\/getmodelprice",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "recengine.intoday"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [
-                {
-                    "original": "recengine.intoday.in",
-                    "resolved": "recengine.intoday.in.edgesuite.net"
-                }
-            ],
-            "responseHashes": [
-                "988775f09abf877891edd347231825857c99a870dc0fef40537d91eebc9dbfc5"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "businesstoday.in",
-                "www.businesstoday.in",
-                "www.indiatoday.in"
-            ]
-        },
-        {
-            "rule": "in\\.edgesuite\\.net\\/geocheck",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "feeds.intoday"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [
-                {
-                    "original": "feeds.intoday.in",
-                    "resolved": "feeds.intoday.in.edgesuite.net"
-                }
-            ],
-            "responseHashes": [
-                "c9b8247c41608b5f8312ecb60e825d42e6211bc76334cab6f37bf81328aa50a2"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "businesstoday.in",
-                "www.businesstoday.in",
-                "www.indiatoday.in"
             ]
         },
         {
@@ -300,7 +351,7 @@
                 }
             ],
             "responseHashes": [
-                "12bf46ac0d0875b07aa8a2da1de9ff7279bf194b4f0c7de4e30a573a33a4b492"
+                "99828125634efb514deb37b240c6d542cca16bbcf25cebb9de44c7c1ef6b9833"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -319,21 +370,23 @@
     "topInitiators": [
         {
             "domain": "tosshub.com",
-            "prevalence": 0.7941176470588235
+            "prevalence": 0.75
         },
         {
             "domain": "first party",
-            "prevalence": 0.14705882352941177
+            "prevalence": 0.21875
         },
         {
             "domain": "highcharts.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.03125
         }
     ],
     "types": {
-        "XHR": 18,
-        "Preflight": 6,
-        "Document": 2
+        "Document": 4,
+        "XHR": 14,
+        "Script": 2,
+        "Stylesheet": 2,
+        "Preflight": 6
     },
     "nameservers": []
 }

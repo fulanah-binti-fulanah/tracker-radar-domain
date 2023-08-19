@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000205,
+    "sites": 3,
     "subdomains": [
         "assets-prod.sumo.prod.webservices"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mozgcp\\.net\\/static\\/screen\\.48f819c505ea9c73\\.css",
@@ -37,11 +37,14 @@
         {
             "rule": "mozgcp\\.net\\/static\\/672\\.2aa5f418a3ec2171\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets-prod.sumo.prod.webservices"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -57,34 +60,37 @@
             ]
         },
         {
-            "rule": "mozgcp\\.net\\/static\\/common\\.6968c88d57044d85\\.js",
-            "cookies": 0.00000682,
+            "rule": "mozgcp\\.net\\/static\\/common\\.6f91e3a2bc8e4120\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "assets-prod.sumo.prod.webservices"
             ],
             "apis": {
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1393fff5f5a91868777d3d746508266674eb6fba87f96bc9a92a77e72d3ffd26"
+                "9d01b982f3c554cfd2123ff77413e26452e028c5c68372b9f0aa01019b541c72"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "geoip_country_name": {
                     "ttl": null,
                     "length": 15,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
                 },
                 "geoip_country_code": {
                     "ttl": null,
                     "length": 2,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -96,11 +102,13 @@
         {
             "rule": "mozgcp\\.net\\/static\\/common\\.fx\\.download\\.7c161292b0ad1beb\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets-prod.sumo.prod.webservices"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -118,11 +126,14 @@
         {
             "rule": "mozgcp\\.net\\/static\\/gtm-snippet\\.c572a96f8b784ca0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets-prod.sumo.prod.webservices"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -172,28 +183,6 @@
             "cnames": [],
             "responseHashes": [
                 "193fedf09d4635992ad46ab9566c89f21e25ab047e2af6ad60a7f3b68ea3a2b4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mozilla.org",
-                "support.mozilla.org"
-            ]
-        },
-        {
-            "rule": "mozgcp\\.net\\/static\\/reader-mode\\.1d40422a5274c27c\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets-prod.sumo.prod.webservices"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1e1e0e0bbb559b1f50f8faf011a26cb853de894504a903a47618d83e57848f37"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -426,7 +415,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -436,13 +425,13 @@
     "types": {
         "Stylesheet": 2,
         "Script": 10,
-        "Image": 16,
+        "Image": 14,
         "Font": 8
     },
     "nameservers": [
-        "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com"
     ]
 }

@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
-    "sites": 7,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "cdn.create",
+        "www",
+        "pm",
         "customerservice"
     ],
     "cnames": [
@@ -227,28 +229,25 @@
             ]
         },
         {
-            "rule": "web\\.com\\/prweb\\/PRRestService\\/NBASVCS\\/V1\\/AdobeEvents",
+            "rule": "web\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "customerservice"
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "pm.networksolutions.com",
-                    "resolved": "customerservice.web.com"
-                }
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "networksolutions.com",
-                "www.networksolutions.com"
+                "homestead.com",
+                "www.homestead.com"
             ]
         },
         {
@@ -256,6 +255,7 @@
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
+                "pm",
                 "customerservice"
             ],
             "apis": {},
@@ -274,34 +274,64 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "networksolutions.com",
+                "homestead.com",
+                "www.networksolutions.com"
+            ]
+        },
+        {
+            "rule": "web\\.com\\/prweb\\/PRRestService\\/NBASVCS\\/V1\\/AdobeEvents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pm",
+                "customerservice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pm.networksolutions.com",
+                    "resolved": "customerservice.web.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homestead.com",
                 "www.networksolutions.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000205,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9512195121951219
+            "prevalence": 0.9285714285714286
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.04878048780487805
+            "prevalence": 0.047619047619047616
+        },
+        {
+            "domain": "fullstory.com",
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
         "Stylesheet": 2,
-        "Image": 6,
+        "Image": 8,
         "Script": 8,
         "Font": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "nia.ns.cloudflare.com",
-        "ian.ns.cloudflare.com"
+        "ian.ns.cloudflare.com",
+        "nia.ns.cloudflare.com"
     ]
 }

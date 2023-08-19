@@ -69,16 +69,19 @@
         },
         {
             "rule": "prod-cdn-v1-widgets\\.azureedge\\.net\\/apps\\/widget\\/main\\.esm\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "cookies": 0.0000205,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 5,
                 "Date.prototype.getTime": 5,
-                "window.innerWidth": 4,
-                "window.innerHeight": 4,
+                "window.innerWidth": 5,
+                "window.innerHeight": 5,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTimezoneOffset": 2,
                 "Document.cookie getter": 3,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 3
             },
             "sites": 5,
             "prevalence": 0.0000341,
@@ -89,9 +92,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__prz_uid": {
-                    "ttl": 2592013,
+                    "ttl": 2592010,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 1
                 }
             },
@@ -103,25 +106,85 @@
                 "www.kitchenwarehouse.com.au",
                 "www.target.com.au"
             ]
+        },
+        {
+            "rule": "prod-cdn-v1-widgets\\.azureedge\\.net\\/apps\\/widget\\/common\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08605c2264fe5a35006e4421bd6de8aa16f8a9be0f76cb26efc25d847941b12f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guitarcenter.com",
+                "www.guitarcenter.com"
+            ]
+        },
+        {
+            "rule": "prod-cdn-v1-widgets\\.azureedge\\.net\\/apps\\/widget\\/preezie-selector\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5fccfa4b1a0fb5e216dab1574125d642d07be50aa47a2793e756beec0eaffadb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guitarcenter.com",
+                "www.guitarcenter.com"
+            ]
+        },
+        {
+            "rule": "prod-cdn-v1-widgets\\.azureedge\\.net\\/apps\\/widget\\/preezie-workflow\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "39ce8f379becea063ef4489bcbfa29136e55af84f00bb1b2c11ca1fcda9977e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guitarcenter.com",
+                "www.guitarcenter.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000205,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6470588235294118
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 15
+        "Script": 21
     },
     "nameservers": []
 }

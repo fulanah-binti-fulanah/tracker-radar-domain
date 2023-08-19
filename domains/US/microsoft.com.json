@@ -9,18 +9,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00162,
-    "sites": 238,
+    "prevalence": 0.00204,
+    "sites": 299,
     "subdomains": [
-        "wcpstatic",
+        "adsdk",
         "browser.pipe.aria",
         "eu-mobile.events.data",
-        "adsdk",
         "browser.events.data",
         "us-mobile.events.data",
         "tb.events.data",
         "noam.events.data",
         "eu-office.events.data",
+        "wcpstatic",
         "target",
         "www",
         "c1",
@@ -32,9 +32,7 @@
         "edge-auth",
         "docs",
         "mtag",
-        "8b37d229e429b6a211f091865314a3f0.measure",
-        "6665dd52e75251a0757b2752cf96bcb5.measure",
-        "832230e26336a75f624f700d6d8bd899.measure"
+        "a1e085d56e9d9929d7c46fe35c30d859.measure"
     ],
     "cnames": [
         {
@@ -43,6 +41,10 @@
         },
         {
             "original": "fpt.bellhelmets.com",
+            "resolved": "fpt.dfp.microsoft.com"
+        },
+        {
+            "original": "fpt.blackburndesign.com",
             "resolved": "fpt.dfp.microsoft.com"
         },
         {
@@ -81,41 +83,47 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.0000273,
+            "rule": "microsoft\\.com\\/native-to-display\\/sdk\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "wcpstatic"
+                "adsdk"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Document.cookie setter": 4
+                "Navigator.prototype.userAgent": 106,
+                "Date.prototype.getTime": 122,
+                "window.localStorage": 73
             },
-            "sites": 7,
-            "prevalence": 0.0000478,
+            "sites": 127,
+            "prevalence": 0.000866,
             "cnames": [],
             "responseHashes": [
-                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
+                "6d217af9105d69f82cd5e29239c0caea643aa9af6854a7ed32da9452a9634ec0"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "MSCC": {
-                    "ttl": 86403,
-                    "length": 2,
-                    "prevalence": 0.00002046636012607278,
-                    "uniqueness": 0.3333333333333333
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mojang.com",
-                "education.minecraft.net",
-                "forums.obsidian.net",
-                "microsoft.github.io",
-                "minecrafthelp.zendesk.com",
-                "www.flightsimulator.com",
-                "www.minecraft.net"
+                "www.dicasonline.com",
+                "es.piliapp.com",
+                "milehighgrillandinn.com",
+                "www.hipaaspace.com",
+                "www.pronouncehippo.com",
+                "felomena.com",
+                "sugoren.com",
+                "www.rbbtoday.com",
+                "www.permaculturenews.org",
+                "www.footmarseillais.com",
+                "bookanalysis.com",
+                "www.pricepulse.app",
+                "yaytext.com",
+                "www.activewpgroups.com",
+                "meaning-dictionary.com",
+                "www.prospektmaschine.de",
+                "en.gameslol.net",
+                "www.businessinsider.jp",
+                "www.healthsoothe.com",
+                "www.binarytranslator.com"
             ]
         },
         {
@@ -127,8 +135,8 @@
                 "eu-mobile.events.data"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.000171,
+            "sites": 27,
+            "prevalence": 0.000184,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -137,76 +145,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "www.trugreen.com",
+                "www.haier.com",
+                "my.clevelandclinic.org",
+                "andis.com",
+                "www.superfeet.com",
+                "www.mi.com",
+                "www.cornwall.gov.uk",
+                "www.coverstore.com",
+                "www.aepenergy.com",
+                "www.lexmark.com",
+                "www.mrcooper.com",
+                "americancollectors.com",
+                "us.ecoflow.com",
+                "www.infineon.com",
+                "my.bswhealth.com",
+                "www.hearusa.com",
                 "www.bettermusic.com.au",
                 "www.techstreet.com",
-                "www.prada.com",
-                "www.gotransit.com",
-                "www.haier.com",
-                "bydanjohnson.com",
-                "andis.com",
-                "www.coverstore.com",
-                "us.ecoflow.com",
                 "www.hartstichting.nl",
-                "www.inspirahealthnetwork.org",
-                "www.fremontbank.com",
-                "www.aepenergy.com",
-                "cafc.uscourts.gov",
-                "my.clevelandclinic.org",
-                "clevelandclinic.org",
-                "www.mrcooper.com",
-                "www.infineon.com",
-                "americancollectors.com",
-                "www.trugreen.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/native-to-display\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "adsdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 57,
-                "Date.prototype.getTime": 61,
-                "window.localStorage": 44
-            },
-            "sites": 66,
-            "prevalence": 0.00045,
-            "cnames": [],
-            "responseHashes": [
-                "66c86a2c54f6f0e838b14c4d312d360cc0d8eac65520440bf5e03b29d55a0e3d",
-                "2822a8d8aaa528d2fa4683936eb2b0fd23c86f723ad4f0aad795e4f091f90008"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "osxdaily.com",
-                "www.eastvalleytribune.com",
-                "divisible.info",
-                "www.liveoutdoors.com",
-                "tellymix.co.uk",
-                "gourmet-note.jp",
-                "podborkino.com",
-                "southpawers.com",
-                "steampricehistory.com",
-                "fontsgeek.com",
-                "www.trekbbs.com",
-                "spitopi.com",
-                "techxreviews.com",
-                "www.msze.info",
-                "tokusengai.com",
-                "www.butterflyidentification.org",
-                "ffxiv.gamerescape.com",
-                "cobby.jp",
-                "car-recalls.eu",
-                "downtownreport.net"
+                "www.benu.nl"
             ]
         },
         {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.0000682,
+            "cookies": 0.0000818,
             "fingerprinting": 0,
             "subdomains": [
                 "browser.events.data",
@@ -216,45 +179,47 @@
                 "eu-office.events.data"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.000171,
+            "sites": 27,
+            "prevalence": 0.000184,
             "cnames": [],
             "responseHashes": [
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58",
-                "e21c0b0d64aa4b4077f7f88f6c1ff8678091cdfb23214eac04f6292de66488d4",
-                "d024b27474dc932b3f57d05fbeeeb38f63d89db16ec542e2c1844965c308c7ec",
-                "adff07c46f6346562556822f6a69814cfae9bd034611ade05083bc27bcd1013b",
-                "ed7a49af035d920c4b1a0c82628d1fea955cd372e4d8bc9a41bac2d374b2adab",
-                "914f1becd82165eaff79bab76e5d3f661df4ea0543e442d1ef83555563e89cf3",
-                "c5287a6313fc929ce23e1037e95b99482489556eba0901d0e06decbe9db44a30",
-                "97bfe7064f4fdad698e646730fb262d7232c981e8c5a3be4e9b2a3b965eece84",
-                "5b6862b9de20370aad503eda889bc81f7f4aef8d6239da8260a6935ef5bde915",
-                "179d2785438efe945351afaea33cd08f1a1627687bf99b0557415833ee8dcdb1"
+                "c9f1e0627436368cf078108bd04e3550ceb92f2e041bc8dff0631bd8bb6e4232",
+                "7bb2df05eddb0b3796b8cacbaaf05988505b36300f6fe7fbfce437f1f070f543",
+                "90f2c42a02c47cc43adc38047d2cf301129b78614fb2ffaf93b47f035e36a5ff",
+                "ec97c0d7f9f1fb49d7cd1d7b3a0437efff7fc52a66ea9ec5900b14d3f00dfc39",
+                "ea988ce54d5e2932ab5e08df2cd1b6340d798ac3be54b4e1030227e11d9f6e42",
+                "36bfdbbdd71d1081542fb37e6c1c9efababba6a8f047806ea17c8fca63d7a773",
+                "dca4ea0e719067ac2f043955cc9d33afee7e0b42e7ed1e676024111d79c8c129",
+                "3c6bbe2dd2f00d02e3001a6bd977416c024eff7b83237fb1095f6f477cae113b",
+                "04b5e87452ff6fc2eb9941dc9cc21873a944fdeb24826e78d8c3e6643356d5e3",
+                "03e16c41011f18f7b5b23541f82f4664119c82e4c8b037b4b07b485d9c2685f0",
+                "6367407b5f8e9ef02f58127ec6909c6499c94c741387ff287d1dc0b45c3ec98c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "electra.trekbikes.com",
-                "mylu.liberty.edu",
-                "customersupport.spirit.com",
-                "support.fender.com",
+                "mywings.unf.edu",
                 "www.swimmingpool.com",
                 "faq.ssa.gov",
-                "woodbine.com",
                 "www.13cabs.com.au",
-                "www.trekbikes.com",
-                "gonctd.com",
                 "trekbikes.com",
-                "education.minecraft.net",
-                "www.swalife.com",
-                "feedback.minecraft.net",
-                "www.gtcountymi.gov",
                 "www.piedmontng.com",
-                "minecrafthelp.zendesk.com",
-                "www.minecraft.net",
                 "dvagov-btsss.dynamics365portals.us",
-                "my.unh.edu"
+                "www.supercars.com",
+                "customersupport.spirit.com",
+                "feedback.minecraft.net",
+                "support.fender.com",
+                "www.gtcountymi.gov",
+                "electra.trekbikes.com",
+                "webmail.apps.mil",
+                "www.transferexpress.com",
+                "mylu.liberty.edu",
+                "education.minecraft.net",
+                "info.flip.com",
+                "portal.311.nyc.gov",
+                "helpcenter.trendmicro.com"
             ]
         },
         {
@@ -269,34 +234,72 @@
                 "eu-office.events.data"
             ],
             "apis": {},
-            "sites": 20,
-            "prevalence": 0.000136,
+            "sites": 21,
+            "prevalence": 0.000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "www.minecraft.net",
+                "woodbine.com",
+                "support.fender.com",
+                "minecrafthelp.zendesk.com",
+                "helpcenter.trendmicro.com",
+                "www.transferexpress.com",
+                "mywings.unf.edu",
+                "faq.ssa.gov",
+                "gonctd.com",
+                "www.gtcountymi.gov",
+                "education.minecraft.net",
+                "storageauctions.com",
                 "spirit.com",
                 "customersupport.spirit.com",
-                "dvagov-btsss.dynamics365portals.us",
-                "education.minecraft.net",
-                "faq.ssa.gov",
                 "feedback.minecraft.net",
-                "gonctd.com",
-                "helpcenter.trendmicro.com",
-                "minecrafthelp.zendesk.com",
-                "my.unh.edu",
-                "mylu.liberty.edu",
-                "portal.311.nyc.gov",
-                "storageauctions.com",
-                "support.fender.com",
-                "woodbine.com",
-                "www.gtcountymi.gov",
-                "www.minecraft.net",
                 "www.piedmontng.com",
-                "www.swalife.com",
-                "www.transferexpress.com"
+                "www.scps.k12.fl.us",
+                "dvagov-btsss.dynamics365portals.us",
+                "portal.311.nyc.gov",
+                "webmail.apps.mil"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0.0000273,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 4
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSCC": {
+                    "ttl": 86402,
+                    "length": 2,
+                    "prevalence": 0.000027271549637629285,
+                    "uniqueness": 0.25
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "education.minecraft.net",
+                "forums.obsidian.net",
+                "microsoft.github.io",
+                "minecrafthelp.zendesk.com",
+                "www.flightsimulator.com",
+                "www.minecraft.net"
             ]
         },
         {
@@ -311,8 +314,9 @@
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "65ccf05c03479926917dc8ac7a86b33fc1dcfb25a947e8d68b835a263897f0f2",
-                "ff65d732a24484a05268a97db5e1def47ac3e9c26ab430b85790d422a234f760"
+                "24ffef8a7426898f435a73fa6e47a02d863de36a601a144eae04b4e06800ae7b",
+                "32618cf9c0f2d5215690bbde0797aabe8f7217820e78c16960fed5eacafc50bc",
+                "ffde6505f8de21722e6d5fce2eba9caa9c8b12627f682fd741550d2ca498e6f7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -404,15 +408,15 @@
         },
         {
             "rule": "microsoft\\.com\\/mscc\\/lib\\/v3\\/wcp-consent\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "wcpstatic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -423,10 +427,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "MSCC": {
-                    "ttl": 86401,
+                    "ttl": 86403,
                     "length": 2,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -443,20 +447,22 @@
                 "powerva"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "ab5b5762b5bbcc141b66f0ada5394c2ca8bc9187fbf1df53644703d7bae11cb5"
+                "03a6866c058470e46600383a17cfb3c1c63f2c1c2b2f5cba2b9177296736155a",
+                "a8c4fae749129b51019a1f7ce627c75b41fff80f54c5ab03a1ac291089601d56"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "channel": 0.00000682212004202426
+                "channel": 0.000006817887409407321
             },
             "exampleSites": [
                 "virginatlantic.com",
-                "www.cheshireeast.gov.uk"
+                "www.cheshireeast.gov.uk",
+                "www.perlick.com"
             ]
         },
         {
@@ -540,7 +546,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000478,
+            "prevalence": 0.0000477,
             "cnames": [
                 {
                     "original": "dfp-fpt.dor.wa.gov",
@@ -568,12 +574,12 @@
                 }
             ],
             "responseHashes": [
-                "6b77cbd98ac7f753d3472d0e0fdf9fce170ff0732f99f43f3aa6001a34c69369",
-                "4159ba310feedacc064234a14d74a5eb189175a1be7f9723e540dfc421b52cc4",
-                "f0c62b61d7e87f9a0ec4cb15a9cb9947082e7e703e875ccb875d06ec0773b9c6",
-                "026fe41889b8289eddda0fa467a6adbe4c2bb63ba9cbe5dbd6b5897150532e45",
-                "b812b08f3ebe3ac707be661864f995fbf776c1757111db44b834481f2b93abfb",
-                "155bd25da9110c134056ae62105e9e669ba25f6a367aa9e6fc44114b7e2f5c1c"
+                "00a8d685757d9b0c0d8b1dfbab1739daa007cb9560c4d339fa76a58c97ea4176",
+                "b8acda549eae542a26458336b654b8dbe7cf316c45d0f73022caa7eeb8458e67",
+                "8710a61a1fd27fcee67c1a91e9091759d26ef5159c5fa0bf798b119e0e41e417",
+                "b548583f8545e6308a30e96bfc56395e6a8fea2248f5e298f86fa9350171b8f5",
+                "43808674f7e9546b108238c462a3dad1e00e5961f1c51aca295b2ecd90906f88",
+                "1976549a0e9ade2214030eea5c40958472729ee73eb7e47c15a8f3f317efec04"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -596,8 +602,8 @@
                 "fpt.dfp"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 11,
+            "prevalence": 0.000075,
             "cnames": [
                 {
                     "original": "dfp-fpt.dor.wa.gov",
@@ -609,6 +615,10 @@
                 },
                 {
                     "original": "fpt.bellhelmets.com",
+                    "resolved": "fpt.dfp.microsoft.com"
+                },
+                {
+                    "original": "fpt.blackburndesign.com",
                     "resolved": "fpt.dfp.microsoft.com"
                 },
                 {
@@ -641,14 +651,15 @@
                 }
             ],
             "responseHashes": [
-                "5460ebcd5fc1521aff638bad1850cfdf9e92fd8ef178fa056fb20fda9a5f5b8c",
-                "f5a900c7571fd410c2ee513cbf27551631edbe0ad63b12598049a7cf2e35e00f",
-                "048cf96d09ef5a680b7575011e9e65f4f55fa7c5c57b0f099935fe642ce8579b",
-                "76d9e3679e490090dd3e9030e005f1afdd38151b825739f631884c8a13c06e7f",
-                "0eafadefb5cd11d50f825a099eb35e92be2f3707dcb92d1f3b69714ce09090bf",
-                "f7384c3940c9693f54acd9e7232272302f87ae97e4f12370212ea4466a6ef01a",
-                "ecff3ec2ef5ac15db83e8ea1602a5795a098f441fc5971c4cfe82acc06205b07",
-                "26b766629a12515a63835a499d56bcfd77c80e69bb84e5dda97d68d73b7b479a"
+                "8ac8dd0dd5ffc17990329498afd2ccabd14fda4fa0370e66b054fb8d83f3e5f3",
+                "4087ebfe0907d1c0fc1a02909bcb16d394dbaa80bdd914922252e57248263f1e",
+                "29ab9c6d680be834ff23192d5e1f836b65311dee2e366d1ef093c6159c222323",
+                "789b2b8280eb9df8ba2cb07799f0d6daa33c542925c5e17bb4522a30ec2d2eb7",
+                "565e43991afc8ab03357f33a30002eee4bcc9be78fc9fddc63699d3766625d17",
+                "76411fc149391d1ba31da369ea10705ddf77c0442186bc5e9fd71284ee2affab",
+                "60a376371d6c271d75efec3461270c5f3db6942e6049bc75ea662db26ddc8efc",
+                "8ab6693142310e6b331afb909e7d95fe30374d77397e2bb6eff66ed399b355c6",
+                "e30978f49471d65cafe8b142fe48fc285e64b99dfdaa10b7852d7ac2d2b2ac47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -657,6 +668,7 @@
                 "wa.gov",
                 "us.britax.com",
                 "www.bellhelmets.com",
+                "www.blackburndesign.com",
                 "www.bushnell.com",
                 "www.camelbak.com",
                 "www.cci-ammunition.com",
@@ -668,7 +680,7 @@
         },
         {
             "rule": "microsoft\\.com\\/Clear\\.HTML",
-            "cookies": 0.0000819,
+            "cookies": 0.0000818,
             "fingerprinting": 1,
             "subdomains": [
                 "fpt.dfp"
@@ -677,20 +689,20 @@
                 "window.localStorage": 2
             },
             "sites": 12,
-            "prevalence": 0.0000819,
+            "prevalence": 0.0000818,
             "cnames": [],
             "responseHashes": [
-                "3c754defabfd0ff1053b2d59dd008af7f614b64d172bfae0de790c673b1fd389",
-                "f6a7498db841dd7be6db7695102506030c7f3671fa8f7e6565f15893fed3ded6",
-                "6a5b13e29f53013e6ed72ebba2cdcadbcf126263413fb7c5f1d6016a0aa525e6",
-                "a52f3e482c3c2b20b2f7726a2779da47b04ed8b00467dd5b69b71f86227087be",
-                "98d2401dd945c394aab04f4feed75923e7a4f50beab56fcedb1be0de5aae9d36",
-                "9bfcdf7c7ae62d09de1d7da599a1c06b4012bbd4829310117d3dd217f0ca76e8",
-                "2f33ce7af1e4973271dbc1f0593dd07385c02ae861f8b7d07fe3c5a3b37cdafd",
-                "f52ae485069dd3384a2ce36fd9d8dcae30047773c47418d52be78771036f2430",
-                "c9afef6654a2e105afd3f0db55a5fa258ce1c1aaf54ef39beffbdca0427a9975",
-                "18b705a69010e4a4c846fee3d204b5fa50ddb0c2b9414437b4b97e330c828b43",
-                "c562cd611d8472b382ed5de23232975a37277bbfdd04ef77b721ad220595d635"
+                "55355409249c7af877ec6b9e1576c6b7b1e7dd04286fbc95cf3c08429cce0404",
+                "f835a186379097f0ca09b45aff79c331ff7eadb1a093c5c26252405259a6d3ba",
+                "f60d3b749a60eccc296612fac7f19daf8f1bd460f5d575176dcf38896b150172",
+                "c4fc722549b23ea5b81f3af04aac59e1c1b0cf3ad45aed0a168ba240aae7c5a9",
+                "de5697e4a36d448bd8bc29822e3ee7f32729fabcce375fce6314d664876155db",
+                "4a729075cb38a916a5a2ed5230cfdf44f5156eb25ab920f742f051eb2bdac7c1",
+                "aced29684d91a0cbfc852afc4d5a9f0c8da5db6fcf6aebce1d0f7ba054fabab0",
+                "b4a17263266659068b9310a0808c6beca3c3b0606c2ade22a4797a4a7d7c88a4",
+                "05226fc4c6470489f1e1980d168702f68ef78ef7cf3084bb5847105ea651e688",
+                "619c3231062af37c62a1e72db3b6c10ad524362298823fc68fdfb96625f54629",
+                "989b8629244cf47dd2cd3e52da54678256442dcfbeb92e5d9a8cb3656be8a431"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -769,9 +781,9 @@
                 "ajax"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.appVersion": 3
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -871,7 +883,7 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "ca51fd614f01533949cc36632afe148d5a8e9ffc47941cca669c61fac6e1345a"
+                "60858ac4eee78c3815d57d6ce7941b5bd338033a39d7bcb796caeb46a87f4184"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -890,8 +902,8 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "5b36865605f0eacc3b64a9b18af34cc18e6e9a6401924fc652344957a62df356"
@@ -902,7 +914,6 @@
             "exampleSites": [
                 "big4.com.au",
                 "www.crackerbarrel.com",
-                "www.hlrbo.com",
                 "www.petfood.express"
             ]
         },
@@ -915,7 +926,7 @@
             ],
             "apis": {
                 "Navigator.prototype.hardwareConcurrency": 2,
-                "URL.createObjectURL": 2,
+                "URL.createObjectURL": 1,
                 "Navigator.prototype.onLine": 2,
                 "window.sessionStorage": 1,
                 "window.localStorage": 1,
@@ -926,8 +937,8 @@
                 "CanvasRenderingContext2D.prototype.getImageData": 1,
                 "Date.prototype.getTime": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a46ef8a199abae7a289e58f57a35a39fe5a59910e3ddfe4e5797b948ecaa0cc9"
@@ -937,8 +948,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "big4.com.au",
-                "www.crackerbarrel.com",
-                "www.hlrbo.com"
+                "www.crackerbarrel.com"
             ]
         },
         {
@@ -1061,8 +1071,8 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "552271586aa18efbe298131c496ee590daed41ef97260fa72e3203bff9cee579"
@@ -1073,7 +1083,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1106,12 +1115,11 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "38b71ab3539de12f3d2f68dc0de3b376d36324fedfa86b49d523a6cdf2615956",
-                "4250adc27ff1c2def3ccb7cd82755090e1dfdd967c08bac9ff1c0dcc24b717e9"
+                "38b71ab3539de12f3d2f68dc0de3b376d36324fedfa86b49d523a6cdf2615956"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1119,7 +1127,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1131,12 +1138,10 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "727ee136ba9fe1e92734480090fc7c1163e3a689f2dbdb9aa9b48a206b581914",
-                "ae0cb2512e7dc2ff933355fbbd2988e424362c13b47fa13b60c2c5372286b9c7",
                 "6527df3ad96c43648dc7fb004d7a9a87f307f7e90ddaef6cd43c501b333dc406"
             ],
             "type": "Fetch",
@@ -1145,7 +1150,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1178,8 +1182,8 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1188,7 +1192,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1200,12 +1203,11 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "e2ba4c32462a6629bf83698de9bed48b15cc4f713554ec0dd5dd3f5048a0312d",
-                "cecca9d2ae214fbe43a20b79f0ccb3abb9fe3b6db4437768f2480ff49ce3fb6d",
                 "f3d2db98fa25971d7cdc6db73ab4c967d419b8a33007514553ad5b7ed45874a7"
             ],
             "type": "Fetch",
@@ -1214,7 +1216,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1266,12 +1267,11 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "466c16dce621b59c87477b9f53746c7439de12550b99d0c153cce8575bc2e360",
-                "971908998ed0b45d9bc2a34e9f40590429423e33afd6eb5af1eedc3d395b03f7"
+                "c6007790d6ca65c274efda0dd6bf4804f42cad91ce281daa2e944d6bffeb656b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1279,7 +1279,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1291,12 +1290,11 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "d39a1d863f1aa09bd4dd232648dacaddcaef530f25da33f228dd35c3b95b01c4",
-                "4b4b82723f595116ba20a272c2c532d0b2288f28957a1a7b2a9465cc3137d839"
+                "0e3ac1944475db3ea59afc8b0c7f5d024cce3d89c55044cbab2b284abc6be81f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1304,7 +1302,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
                 "www.i9sports.com"
             ]
         },
@@ -1316,12 +1313,32 @@
                 "atlas"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "www.crackerbarrel.com",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/map\\/tile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "8973f533fd87659aaeb19152e64d7bebd74f3eb479eae28084ac9250715319e2",
-                "6a3453c027b6fb37dda9f1ae9b86df34e2faf41122d5521eb2f77c4bf8e7dd35",
+                "7ff330706cb43f29792f370eef0f537440542384fd764c93be1ea049eec280a7",
                 "38479007506b7ffcccc64568abf77c3d1187523212e31d9a07339e4116d718a5"
             ],
             "type": "Fetch",
@@ -1330,115 +1347,6 @@
             "exampleSites": [
                 "crackerbarrel.com",
                 "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/map\\/tile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
-                "www.crackerbarrel.com",
-                "www.fuelwatch.wa.gov.au",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Bold\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "92428b9706cf9bef8143578473078fc50f1f8fd44a500a774dad392c7b4b8b85"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
-                "www.crackerbarrel.com",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Bold\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Regular\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "8cf5be2006d24929cdd335fc6e3176679cab0e1537bc5718cc4704c971e4642d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
-                "www.crackerbarrel.com",
-                "www.i9sports.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Regular\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "atlas"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crackerbarrel.com",
                 "www.i9sports.com"
             ]
         },
@@ -1488,6 +1396,92 @@
             ]
         },
         {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "92428b9706cf9bef8143578473078fc50f1f8fd44a500a774dad392c7b4b8b85"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "www.crackerbarrel.com",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "8cf5be2006d24929cdd335fc6e3176679cab0e1537bc5718cc4704c971e4642d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "www.crackerbarrel.com",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "www.i9sports.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/styling\\/glyphs\\/Roboto-Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atlas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "www.i9sports.com"
+            ]
+        },
+        {
             "rule": "microsoft\\.com\\/tags\\/14293651161987\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1510,39 +1504,15 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/tags\\/14018773254734\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mtag"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fdfec55e6baaac916673069892c9c167d3996dbed6153e8f0e0cdd8618e319b2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "isc2.org",
-                "www.isc2.org"
-            ]
-        },
-        {
             "rule": "microsoft\\.com\\/apc\\/trans\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "8b37d229e429b6a211f091865314a3f0.measure",
-                "6665dd52e75251a0757b2752cf96bcb5.measure",
-                "832230e26336a75f624f700d6d8bd899.measure"
+                "a1e085d56e9d9929d7c46fe35c30d859.measure"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -1551,10 +1521,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ithaca.edu",
-                "www.ithaca.edu",
-                "www.markknopfler.com",
-                "www.tednugent.com"
+                "lylelovett.com",
+                "www.lylelovett.com"
             ]
         },
         {
@@ -1609,63 +1577,63 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000232,
+    "cookies": 0.000252,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4298440979955457
+            "prevalence": 0.3682092555331992
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.133630289532294
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.08685968819599109
-        },
-        {
-            "domain": "powerapps.com",
-            "prevalence": 0.06904231625835189
+            "prevalence": 0.1891348088531187
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.044543429844097995
+            "prevalence": 0.10261569416498995
+        },
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.07847082494969819
+        },
+        {
+            "domain": "powerapps.com",
+            "prevalence": 0.060362173038229376
         },
         {
             "domain": "azure.com",
-            "prevalence": 0.042316258351893093
-        },
-        {
-            "domain": "atmrum.net",
-            "prevalence": 0.0400890868596882
-        },
-        {
-            "domain": "minecraft.net",
-            "prevalence": 0.022271714922048998
+            "prevalence": 0.04627766599597585
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.0200445434298441
+            "prevalence": 0.018108651911468814
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.017817371937639197
+            "domain": "minecraft.net",
+            "prevalence": 0.018108651911468814
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.018108651911468814
+        },
+        {
+            "domain": "bushnell.com",
+            "prevalence": 0.01609657947686117
         }
     ],
     "types": {
-        "Script": 132,
-        "XHR": 65,
-        "Preflight": 45,
+        "Script": 191,
+        "XHR": 67,
+        "Preflight": 44,
         "Image": 9,
-        "Fetch": 39,
+        "Fetch": 33,
         "Document": 19,
-        "Stylesheet": 4,
+        "Stylesheet": 3,
         "Ping": 4
     },
     "nameservers": [
-        "ns4-39.azure-dns.info",
-        "ns3-39.azure-dns.org",
         "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net"
+        "ns2-39.azure-dns.net",
+        "ns3-39.azure-dns.org",
+        "ns4-39.azure-dns.info"
     ]
 }

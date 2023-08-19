@@ -10,7 +10,7 @@
         "lolg-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "porofessor\\.gg\\/style\\.css",
@@ -46,7 +46,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5828f3dc921542716c32228cd9a8a697bc23a00f92aac6e67080e6f731869a2d"
+                "75792525c53f14898918b36b6b7df2d1b3bab7088adba2e45d5d2109fae635f3"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -59,11 +59,14 @@
         {
             "rule": "porofessor\\.gg\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "lolg-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1,
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -191,18 +194,21 @@
         {
             "rule": "porofessor\\.gg\\/app\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "lolg-cdn"
             ],
             "apis": {
-                "CanvasRenderingContext2D.prototype.measureText": 2
+                "window.innerWidth": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "CanvasRenderingContext2D.prototype.measureText": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7b93092d6871e7436a7043abda45a7f79c60a9a659839c449ef6fb7c85f21b20"
+                "43d99910aa46f2ccee13b06134e9798f78a9b3674532b3decdcd5b80172ec215"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -235,7 +241,7 @@
             ]
         },
         {
-            "rule": "porofessor\\.gg\\/img\\/d\\/sprites\\/13\\.15\\/tiny_champion2\\.png",
+            "rule": "porofessor\\.gg\\/img\\/d\\/sprites\\/13\\.16\\/tiny_champion2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [

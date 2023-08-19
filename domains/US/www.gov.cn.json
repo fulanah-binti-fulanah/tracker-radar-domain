@@ -10,7 +10,7 @@
         "english"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "www\\.gov\\.cn\\/static\\/2023GW\\/css\\/swiper-bundle\\.min\\.css",
@@ -125,15 +125,22 @@
         {
             "rule": "www\\.gov\\.cn\\/static\\/2023GW\\/js\\/swiper-bundle\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "english"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "31a49b13d5977f4c83be61f9e928dd07198f76d86d34a18ace9573b72b2d6621"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -189,11 +196,15 @@
         {
             "rule": "www\\.gov\\.cn\\/static\\/common\\/js\\/jweixin-1\\.0\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "english"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -349,6 +360,26 @@
                 "chinadaily.com.cn",
                 "www.chinadaily.com.cn"
             ]
+        },
+        {
+            "rule": "www\\.gov\\.cn\\/static\\/common\\/js\\/atrk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "english"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chinadaily.com.cn",
+                "www.chinadaily.com.cn"
+            ]
         }
     ],
     "categories": [],
@@ -362,12 +393,12 @@
     ],
     "types": {
         "Stylesheet": 8,
-        "Script": 12,
+        "Script": 14,
         "Image": 12
     },
     "nameservers": [
-        "ns2.cdns.cn",
         "ns3.cdns.cn",
+        "ns2.cdns.cn",
         "ns1.cdns.cn"
     ]
 }

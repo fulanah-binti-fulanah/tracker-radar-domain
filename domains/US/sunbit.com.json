@@ -8,9 +8,9 @@
     "sites": 2,
     "subdomains": [
         "apply",
-        "mixpanel-proxy",
         "fp",
-        "api"
+        "api",
+        "mixpanel-proxy"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -175,6 +175,28 @@
                 "efc7ccd5a24a0f0ca6bdf35aed8847ea811b2e8dfc220770ba20e0f9f3fdbfa1"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hondamarysville.com",
+                "www.toyotadirect.com"
+            ]
+        },
+        {
+            "rule": "sunbit\\.com\\/ufxs3M\\/LEcVt\\/xau8\\/Cdva4u\\/gOD",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb0a8ac8d681ead3c3b6c39a0d2978671997318e18ff94c84d73b6383a2e48f4"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -472,28 +494,6 @@
             ]
         },
         {
-            "rule": "sunbit\\.com\\/track\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mixpanel-proxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e39a8118ec6cdf6ac33e6961518e9fe6ba3f6caf099aeeaec1389c2108ba90ba"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hondamarysville.com",
-                "www.toyotadirect.com"
-            ]
-        },
-        {
             "rule": "sunbit\\.com\\/",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -505,7 +505,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f240c6112b74a75c9f501f100c3ff6d87311413b1109052d042dd8f2fc190725"
+                "65b9e6367460c38675c4369a33e71af71d263406b85c556fcdb75334c713b8d6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -556,6 +556,28 @@
                 "hondamarysville.com",
                 "www.toyotadirect.com"
             ]
+        },
+        {
+            "rule": "sunbit\\.com\\/track\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mixpanel-proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e39a8118ec6cdf6ac33e6961518e9fe6ba3f6caf099aeeaec1389c2108ba90ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hondamarysville.com",
+                "www.toyotadirect.com"
+            ]
         }
     ],
     "categories": [],
@@ -563,17 +585,17 @@
     "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "fpnpmcdn.net",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "fpnpmcdn.net",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
         "Script": 12,
-        "XHR": 12,
+        "XHR": 14,
         "Image": 22,
         "Preflight": 2
     },

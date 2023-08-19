@@ -65,7 +65,7 @@
         },
         {
             "rule": "relationshop\\.net\\/js\\/tracker\\.php",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "track1"
@@ -73,6 +73,8 @@
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "window.name": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.mimeTypes": 2,
@@ -80,10 +82,8 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.platform": 2,
-                "Document.cookie getter": 1,
-                "window.name": 1,
-                "Document.cookie setter": 1,
-                "window.devicePixelRatio": 1
+                "Document.cookie setter": 2,
+                "window.devicePixelRatio": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -94,16 +94,16 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.7.321b": {
-                    "ttl": 33955203,
+                    "ttl": 33955205,
                     "length": 28,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 },
                 "_pk_ses.7.321b": {
-                    "ttl": 1802,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -189,18 +189,18 @@
                 "bigy-cloud"
             ],
             "apis": {
+                "window.indexedDB": 2,
                 "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.javaEnabled": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.appVersion": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -327,6 +327,50 @@
             ]
         },
         {
+            "rule": "relationshop\\.net\\/js\\/tracker\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bigy.com",
+                "www.bigy.com"
+            ]
+        },
+        {
+            "rule": "relationshop\\.net\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bigy.com",
+                "www.bigy.com"
+            ]
+        },
+        {
             "rule": "relationshop\\.net\\/dxp\\/dxp-component299\\/p-24cb8820\\.entry\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -382,53 +426,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a36bcb764b7f1c37d1903795fd3ac825b000a09f31dbb01933ea97765a0c1e21"
+                "18a2a1dfbf0f5ac84eb873af701f11eb6222498143c25420825536510a60d9fe"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bigy.com",
-                "www.bigy.com"
-            ]
-        },
-        {
-            "rule": "relationshop\\.net\\/js\\/tracker\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "track1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bigy.com",
-                "www.bigy.com"
-            ]
-        },
-        {
-            "rule": "relationshop\\.net\\/matomo\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "track1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -733,26 +733,6 @@
             ]
         },
         {
-            "rule": "relationshop\\.net\\/cms\\/v1\\.0\\/api\\/Widget\\/GetWidgetData\\/2483",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bigy-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bigy.com",
-                "www.bigy.com"
-            ]
-        },
-        {
             "rule": "relationshop\\.net\\/cms\\/v1\\.0\\/api\\/Widget\\/GetWidgetData\\/403",
             "cookies": 0,
             "fingerprinting": 0,
@@ -783,10 +763,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "f28878063e02184bf91b87a800db9483ff2fca9b222cc35b35992c2e0420b72d"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -807,6 +785,28 @@
             "cnames": [],
             "responseHashes": [
                 "7e3de40b48bb53f5cc57e13949c1e0b72a140bd81078c093a7b686c34f8902a1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bigy.com",
+                "www.bigy.com"
+            ]
+        },
+        {
+            "rule": "relationshop\\.net\\/cms\\/v1\\.0\\/api\\/Widget\\/GetWidgetData\\/2483",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigy-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f28878063e02184bf91b87a800db9483ff2fca9b222cc35b35992c2e0420b72d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -948,9 +948,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "COOKIE_SESSION_ID": {
-                    "ttl": 86411,
+                    "ttl": 86409,
                     "length": 16,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -1212,7 +1212,7 @@
                 "unitedcloud"
             ],
             "apis": {
-                "window.localStorage": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -1346,7 +1346,7 @@
                 "unitedcloud"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -1373,10 +1373,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "c70752d16a620e8eef64ca5af65d58da9d7e47c5d258b28260aa1fb2b5e7084c"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1395,8 +1393,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "4aae95443e3c546d0bde19385d0ba34891b6e8d62899650e80237b7be878758a"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1435,27 +1435,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.4.8c4a": {
-                    "ttl": 33955204,
+                    "ttl": 33955205,
                     "length": 28,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 },
                 "_pk_ses.4.8c4a": {
-                    "ttl": 1804,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 },
                 "_pk_id.3.e73a": {
-                    "ttl": 33955208,
+                    "ttl": 33955206,
                     "length": 28,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 },
                 "_pk_ses.3.e73a": {
-                    "ttl": 1807,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 }
             },
@@ -1524,6 +1524,50 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketstreetunited.com",
+                "www.unitedsupermarkets.com"
+            ]
+        },
+        {
+            "rule": "relationshop\\.net\\/RSData\\/Default\\/20230801153942_23Digi0850DigitalCreative2023_SummerWidgets_SummerCleaning_690x1351\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unitedcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "913660eddc778f3b944711cba7ce05ff45ae101705d81e9f33d1367c694751ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketstreetunited.com",
+                "www.unitedsupermarkets.com"
+            ]
+        },
+        {
+            "rule": "relationshop\\.net\\/RSData\\/Default\\/20230801154358_23Digi0850DigitalCreative2023_SummerWidgets_HydrationStation_690x1351\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unitedcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7a811df9f7ec6dff8c46dda8122020ba07192dfb063c4a9d805bf0604fa35d3d"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1632,50 +1676,6 @@
             "cnames": [],
             "responseHashes": [
                 "94d2b33bf6ded927754b66eeac099d7b2c837095063bb9e24f9698ab04adf163"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marketstreetunited.com",
-                "www.unitedsupermarkets.com"
-            ]
-        },
-        {
-            "rule": "relationshop\\.net\\/RSData\\/Default\\/20230801153942_23Digi0850DigitalCreative2023_SummerWidgets_SummerCleaning_690x1351\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unitedcloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "913660eddc778f3b944711cba7ce05ff45ae101705d81e9f33d1367c694751ef"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marketstreetunited.com",
-                "www.unitedsupermarkets.com"
-            ]
-        },
-        {
-            "rule": "relationshop\\.net\\/RSData\\/Default\\/20230801154358_23Digi0850DigitalCreative2023_SummerWidgets_HydrationStation_690x1351\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unitedcloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7a811df9f7ec6dff8c46dda8122020ba07192dfb063c4a9d805bf0604fa35d3d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1812,7 +1812,7 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "COOKIE_SESSION_ID": 0.00002046636012607278
+                "COOKIE_SESSION_ID": 0.000020453662228221962
             },
             "exampleSites": [
                 "marketstreetunited.com",
@@ -1827,19 +1827,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9583333333333334
+            "prevalence": 0.952755905511811
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.047244094488188976
         }
     ],
     "types": {
         "Stylesheet": 2,
         "Script": 90,
+        "Ping": 7,
         "Preflight": 18,
         "Fetch": 18,
-        "Ping": 7,
         "Image": 28
     },
     "nameservers": [

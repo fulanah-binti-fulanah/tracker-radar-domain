@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
+    "prevalence": 0.0000477,
     "sites": 7,
     "subdomains": [
         "cdn"
@@ -20,8 +20,6 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.appName": 4,
                 "Date.prototype.getTime": 4,
                 "NavigatorUAData.prototype.getHighEntropyValues": 3,
                 "Date.prototype.getTimezoneOffset": 3,
@@ -32,7 +30,9 @@
                 "Navigator.prototype.javaEnabled": 3,
                 "Screen.prototype.pixelDepth": 3,
                 "window.innerWidth": 3,
-                "window.innerHeight": 3
+                "window.innerHeight": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3
             },
             "sites": 4,
             "prevalence": 0.0000273,
@@ -45,15 +45,15 @@
                 "s_cc": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         },
@@ -75,9 +75,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
+                "www.ionos.it"
+            ]
+        },
+        {
+            "rule": "ionos\\.de\\/guides\\/9c2134ba72b4\\/047afaab1ab6\\/2ba2c8369ecc\\/RCe6e3b8944dbc44e59cb35ce6b459618c-source\\.min\\.js",
+            "cookies": 0.0000205,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "05e064cbfc47ab60e1ad99f21faf532e3cbb41219d5ea0b5351bf5e7e3655d42"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ionos.es",
+                "www.ionos.com",
                 "www.ionos.it"
             ]
         },
@@ -99,9 +122,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         },
@@ -123,9 +146,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         },
@@ -147,9 +170,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         },
@@ -171,9 +194,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         },
@@ -195,32 +218,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ionos.fr",
+                "ionos.es",
+                "www.ionos.fr",
                 "www.ionos.com",
-                "www.ionos.it",
-                "www.ionos.es"
-            ]
-        },
-        {
-            "rule": "ionos\\.de\\/guides\\/9c2134ba72b4\\/047afaab1ab6\\/2ba2c8369ecc\\/RCe6e3b8944dbc44e59cb35ce6b459618c-source\\.min\\.js",
-            "cookies": 0.0000205,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "05e064cbfc47ab60e1ad99f21faf532e3cbb41219d5ea0b5351bf5e7e3655d42"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ionos.com",
-                "www.ionos.es",
                 "www.ionos.it"
             ]
         }
@@ -231,11 +231,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9841269841269841
+            "prevalence": 0.9761904761904762
         },
         {
             "domain": "ionos.com",
-            "prevalence": 0.015873015873015872
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
@@ -243,8 +243,8 @@
     },
     "nameservers": [
         "ns-1and1.ui-dns.biz",
-        "ns-1and1.ui-dns.org",
+        "ns-1and1.ui-dns.de",
         "ns-1and1.ui-dns.com",
-        "ns-1and1.ui-dns.de"
+        "ns-1and1.ui-dns.org"
     ]
 }

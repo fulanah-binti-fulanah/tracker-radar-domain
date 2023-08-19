@@ -10,7 +10,7 @@
         "assets"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "rpglogs\\.com\\/css\\/global\\.e3b36183ac3b6726\\.css",
@@ -165,7 +165,7 @@
                 "isAdBlocking": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 0.5
                 }
             },
@@ -183,7 +183,7 @@
                 "assets"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -207,8 +207,7 @@
                 "assets"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -342,6 +341,31 @@
             ]
         },
         {
+            "rule": "rpglogs\\.com\\/js\\/app\\.f8252d8b2cbbae30\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a421989b9f8f2f6747465c608eeaadde30e90507878f1bb5010c63a20d7b58cc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "warcraftlogs.com",
+                "www.warcraftlogs.com"
+            ]
+        },
+        {
             "rule": "rpglogs\\.com\\/libs\\/moment\\.js@2\\.24\\.0\\/moment-with-locales\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -434,11 +458,14 @@
         {
             "rule": "rpglogs\\.com\\/libs\\/axios@0\\.19\\.2\\/axios\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -887,14 +914,14 @@
     ],
     "types": {
         "Stylesheet": 12,
-        "Script": 32,
+        "Script": 34,
         "Image": 28,
         "Font": 4
     },
     "nameservers": [
         "ns-686.awsdns-21.net",
-        "ns-1186.awsdns-20.org",
         "ns-455.awsdns-56.com",
+        "ns-1186.awsdns-20.org",
         "ns-1772.awsdns-29.co.uk"
     ]
 }

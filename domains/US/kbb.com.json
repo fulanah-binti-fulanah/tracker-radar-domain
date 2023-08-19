@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000682,
-    "sites": 10,
+    "prevalence": 0.0000818,
+    "sites": 12,
     "subdomains": [
         "www",
-        "ddc.plugin.syndication"
+        "ddc.plugin.syndication",
+        "tradeinadvisor"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -46,16 +47,16 @@
                 "www"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.localStorage": 1,
                 "Date.prototype.getTime": 3,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 1
             },
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "81f064ba1c6d2601ade8c23b97810899ce57647d9e580733405ff274b57ab3e7",
-                "475762b99e8b21cc5abe7df2540253e51f9c92b5d8a2e31866d6990a80f0f630"
+                "1c04d1d92872b3aaeff0fca68a03cf41f44614874b30bb62b65bc32a405673de",
+                "81488e7d41ec2978d273d515f21fb52a74cb3a93f274fa1d566aaa5f45e18f5d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -172,8 +173,8 @@
                 "ddc.plugin.syndication"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "4159843cb77b9358cc6c5d80bc7d49b334476628589356a09229fd892416060c"
@@ -183,8 +184,97 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fredandersontoyota.com",
+                "www.fredbeans.com",
                 "www.kingstoyota.com",
                 "www.offleaseonly.com"
+            ]
+        },
+        {
+            "rule": "kbb\\.com\\/scripts\\/predictive-search\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tradeinadvisor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa50caf7af8a938ccade5ae72b82112bde554fab60143df353f62e30a136824e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garycrossleyford.com",
+                "www.kingstoyota.com"
+            ]
+        },
+        {
+            "rule": "kbb\\.com\\/images\\/kbb-logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tradeinadvisor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8667c5831040c95e550771bba4562d0a1075d719dd8d8a5fb7499ab0ab621a6b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garycrossleyford.com",
+                "www.kingstoyota.com"
+            ]
+        },
+        {
+            "rule": "kbb\\.com\\/images\\/close\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tradeinadvisor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8641a01d3ca50c0a9fa0f06f9f2692f35a4d4d008ff846f55ff8499773a36876"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garycrossleyford.com",
+                "www.kingstoyota.com"
+            ]
+        },
+        {
+            "rule": "kbb\\.com\\/images\\/where-is-my-vin\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tradeinadvisor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d49007227a169477e30ffa1a740cb46b6340375a601f74b17828d723b0002db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garycrossleyford.com",
+                "www.kingstoyota.com"
             ]
         }
     ],
@@ -194,19 +284,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Image": 2,
+        "Image": 8,
         "Document": 3,
-        "Script": 9,
+        "Script": 12,
         "Stylesheet": 2
     },
     "nameservers": [
-        "pdns164.ultradns.net",
         "pdns164.ultradns.biz",
-        "pdns164.ultradns.com",
-        "pdns164.ultradns.org"
+        "pdns164.ultradns.org",
+        "pdns164.ultradns.net",
+        "pdns164.ultradns.com"
     ]
 }

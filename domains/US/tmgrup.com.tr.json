@@ -11,26 +11,26 @@
     "sites": 6,
     "subdomains": [
         "i",
-        "ad01",
-        "ipcheck",
         "iahbr",
         "itkv",
+        "ipcheck",
+        "ad01",
         "idsb"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "tmgrup\\.com\\.tr\\/tmd-consent\\/j\\/tmdconsent-v2\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000205,
             "fingerprinting": 1,
             "subdomains": [
                 "i"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
                 "Document.cookie getter": 4,
-                "Document.cookie setter": 2
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 3
             },
             "sites": 4,
             "prevalence": 0.0000273,
@@ -41,21 +41,70 @@
             "type": "Script",
             "firstPartyCookies": {
                 "tmd_gdpr": {
-                    "ttl": 86405,
+                    "ttl": 86402,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000020453662228221962,
+                    "uniqueness": 0.3333333333333333
                 },
                 "CookieConsent": {
-                    "ttl": 604801,
+                    "ttl": 604806,
                     "length": 147,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ahaber.com.tr",
+                "www.fotomac.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
+            "rule": "tmgrup\\.com\\.tr\\/site\\/v3\\/c\\/breadcrumb\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iahbr",
+                "itkv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05b3925d25d4d2d17106e50e93680fa4e65074109c807229bb316b0d6521504c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
+            "rule": "tmgrup\\.com\\.tr\\/ipcheck\\/getcountry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ipcheck"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "de0c31ebb5ed4cb7bdb6db8b9aa381235d39fb0e42c99a162614a74789db6077"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.aspor.com.tr",
+                "www.dailysabah.com",
                 "www.fotomac.com.tr",
                 "www.sabah.com.tr",
                 "www.takvim.com.tr"
@@ -87,43 +136,77 @@
             ]
         },
         {
-            "rule": "tmgrup\\.com\\.tr\\/bd\\/hb\\/prebid_v7\\.js",
+            "rule": "tmgrup\\.com\\.tr\\/bd\\/hb\\/prebid_v8\\.js",
             "cookies": 0.0000409,
             "fingerprinting": 2,
             "subdomains": [
                 "ad01"
             ],
             "apis": {
+                "window.sessionStorage": 5,
                 "Navigator.prototype.appName": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "window.localStorage": 6,
-                "Document.cookie getter": 6,
-                "Document.cookie setter": 6,
-                "Date.prototype.getTime": 6,
-                "NavigatorUAData.prototype.getHighEntropyValues": 6,
-                "window.innerWidth": 6,
-                "window.innerHeight": 6,
-                "Navigator.prototype.doNotTrack": 6,
                 "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.language": 6,
-                "Navigator.prototype.connection": 6,
                 "Screen.prototype.width": 6,
                 "Screen.prototype.height": 6,
-                "window.sessionStorage": 5
+                "Date.prototype.getTime": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Date.prototype.getTimezoneOffset": 6,
+                "Navigator.prototype.language": 6,
+                "Navigator.prototype.vendor": 6,
+                "Navigator.prototype.appVersion": 6,
+                "window.localStorage": 6,
+                "Navigator.prototype.cookieEnabled": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6,
+                "NavigatorUAData.prototype.getHighEntropyValues": 6,
+                "Navigator.prototype.doNotTrack": 6,
+                "Navigator.prototype.connection": 6,
+                "window.name": 6
             },
             "sites": 6,
             "prevalence": 0.0000409,
             "cnames": [],
             "responseHashes": [
-                "52bb76e042373f112b1a2ab96e1175d328a1238af50de7d2631db3d0339326e1"
+                "a4835dd4a6675233a0b7d8a2a05c120fb351ae5ee7468ca38947d96e78b0df29"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592006,
+                    "ttl": 2592008,
                     "length": 16,
-                    "prevalence": 0.00004093272025214556,
+                    "prevalence": 0.000040907324456443923,
                     "uniqueness": 0.16666666666666666
+                },
+                "_sharedid": {
+                    "ttl": 31536008,
+                    "length": 36,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "pbjs-unifiedid": {
+                    "ttl": 5184018,
+                    "length": 151,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696001,
+                    "length": 324,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696001,
+                    "length": 231,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "_pubCommonId": {
+                    "ttl": 157680014,
+                    "length": 36,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -137,29 +220,25 @@
             ]
         },
         {
-            "rule": "tmgrup\\.com\\.tr\\/ipcheck\\/getcountry",
+            "rule": "tmgrup\\.com\\.tr\\/tmd\\/usercountry\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ipcheck"
+                "i"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "de0c31ebb5ed4cb7bdb6db8b9aa381235d39fb0e42c99a162614a74789db6077"
+                "10632043b4e9dcc467a070411e5aee49468e0b19714740264b06da0beb4b66d6"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ahaber.com.tr",
-                "www.aspor.com.tr",
-                "www.dailysabah.com",
-                "www.fotomac.com.tr",
-                "www.sabah.com.tr",
-                "www.takvim.com.tr"
+                "www.fotomac.com.tr"
             ]
         },
         {
@@ -176,52 +255,6 @@
             "cnames": [],
             "responseHashes": [
                 "74669fe5428a3ff1dfc657dfa0aecf30dfde79325725565f74604a162660c8be"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ahaber.com.tr",
-                "www.takvim.com.tr"
-            ]
-        },
-        {
-            "rule": "tmgrup\\.com\\.tr\\/site\\/v3\\/c\\/breadcrumb\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iahbr",
-                "itkv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "05b3925d25d4d2d17106e50e93680fa4e65074109c807229bb316b0d6521504c"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ahaber.com.tr",
-                "www.takvim.com.tr"
-            ]
-        },
-        {
-            "rule": "tmgrup\\.com\\.tr\\/site\\/v3\\/c\\/swiper\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iahbr",
-                "itkv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8a6c851a591cfeaa6c1babe22e4aa1353f36aac6f66963221c87f5525d58f145"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -339,9 +372,9 @@
                 "itkv"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Navigator.prototype.userAgent": 1
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -365,7 +398,7 @@
                 "i"
             ],
             "apis": {
-                "window.localStorage": 4
+                "window.localStorage": 5
             },
             "sites": 5,
             "prevalence": 0.0000341,
@@ -411,6 +444,28 @@
             ]
         },
         {
+            "rule": "tmgrup\\.com\\.tr\\/uyelik\\/popupauth\\/j\\/popupauthentication\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e69aa44e19f04a0d5de04ede7b933b5493c994a007d6bacddb7aea28fe1e9c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
             "rule": "tmgrup\\.com\\.tr\\/editor-menu\\/menu2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -446,10 +501,10 @@
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "3586441435db4bd787ea6ef84eb86363fe2dfb709a1febb82258035e2036814b",
-                "fa55ba49da58aab33a23aa3d6eb69aafe015efdc0b7d4b82cdd196e42eb3e744",
-                "5736fa18bc5ca85ec6162c5f47a07abd6251ab8c5fd70d11ce614d30a1a3293b",
-                "80838d10867d1015d3cae78daae816759e834a9abf118f5eff78051b59cfdf45"
+                "949293904f5cb2485a5bcdffba27001cbe0f4582559e6a795752653e7ca3fde8",
+                "e544e72d76192a744bb272f3056585a06b81b66fae7722597a3f7bcaa54bcb95",
+                "0cfae48db7dca1e1b80fcbca8f10ae12e89e6ce19725f04312d8c3c8ce268167",
+                "d0c3265bb27459956beb5cd01d2d3e053a5c4d5f9e2eb1698c5cf55801ec183a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -538,11 +593,13 @@
         {
             "rule": "tmgrup\\.com\\.tr\\/bd\\/dfp\\/customadmodels\\/cornerstick\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "ad01"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 4,
             "prevalence": 0.0000273,
             "cnames": [],
@@ -654,11 +711,13 @@
         {
             "rule": "tmgrup\\.com\\.tr\\/tmd\\/mobile-detect\\/md\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "i"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -682,23 +741,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9865319865319865
+            "prevalence": 0.9573770491803278
+        },
+        {
+            "domain": "vidoomy.com",
+            "prevalence": 0.029508196721311476
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.013468013468013467
+            "prevalence": 0.013114754098360656
         }
     ],
     "types": {
-        "Script": 54,
+        "Script": 58,
+        "Stylesheet": 13,
         "XHR": 11,
-        "Stylesheet": 15,
         "Image": 6
     },
     "nameservers": [
-        "ns-365.awsdns-45.com",
-        "ns-623.awsdns-13.net",
+        "ns-1710.awsdns-21.co.uk",
         "ns-1434.awsdns-51.org",
-        "ns-1710.awsdns-21.co.uk"
+        "ns-623.awsdns-13.net",
+        "ns-365.awsdns-45.com"
     ]
 }

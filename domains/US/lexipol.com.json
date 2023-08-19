@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000546,
+    "prevalence": 0.0000545,
     "sites": 8,
     "subdomains": [
         "cross-frontend.cdn",
         "lid.cdn",
+        "media.cdn",
         "go",
-        "id",
-        "media.cdn"
+        "id"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -174,10 +174,10 @@
                 "lid.cdn"
             ],
             "apis": {
-                "window.sessionStorage": 3,
-                "window.localStorage": 5,
                 "Date.prototype.getTime": 5,
                 "Document.cookie getter": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 2,
                 "Document.cookie setter": 4
             },
             "sites": 5,
@@ -189,27 +189,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cubUserTokenOriginIdP": {
-                    "ttl": 0,
+                    "ttl": 1,
                     "length": 9,
-                    "prevalence": 0.00002728848016809704,
+                    "prevalence": 0.000027271549637629285,
                     "uniqueness": 0.25
                 },
                 "cubUserTokenOverrideXSSSO": {
-                    "ttl": 0,
+                    "ttl": 1,
                     "length": 9,
-                    "prevalence": 0.00002728848016809704,
+                    "prevalence": 0.000027271549637629285,
                     "uniqueness": 0.25
                 },
                 "cubUserToken": {
-                    "ttl": 0,
+                    "ttl": 1,
                     "length": 9,
-                    "prevalence": 0.00002728848016809704,
+                    "prevalence": 0.000027271549637629285,
                     "uniqueness": 0.25
                 },
                 "cubOrganizationId": {
-                    "ttl": 0,
+                    "ttl": 1,
                     "length": 9,
-                    "prevalence": 0.00002728848016809704,
+                    "prevalence": 0.000027271549637629285,
                     "uniqueness": 0.25
                 }
             },
@@ -223,15 +223,14 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/js\\/head-sync-noncritical\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/js\\/head-sync-noncritical\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cross-frontend.cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.vendor": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -248,7 +247,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/js\\/dfp\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/js\\/dfp\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -270,20 +269,20 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/js\\/head\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/js\\/head\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cross-frontend.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.devicePixelRatio": 2,
                 "Date.prototype.getTime": 2,
-                "window.innerWidth": 2,
                 "Element.prototype.getClientRects": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.devicePixelRatio": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -300,7 +299,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/js\\/search\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/js\\/search\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -322,7 +321,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/images\\/logo\\/logo-white-lexipol\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/images\\/logo\\/logo-white-lexipol\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -344,7 +343,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/images\\/logo\\/logo\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/images\\/logo\\/logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -366,7 +365,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/correctionsone\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
+            "rule": "lexipol\\.com\\/static\\/1001\\/correctionsone\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -380,6 +379,28 @@
                 "7481f5148fa9bd29923a20db06fa490667aac0d8a7e6c0ff14fad85a838ef54b"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corrections1.com",
+                "www.corrections1.com"
+            ]
+        },
+        {
+            "rule": "lexipol\\.com\\/article-images\\/Drone%20at%20Night\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa945a084614438afffbaca25f9f8b38995ccb0ff502e7ef043f556b0fab5e17"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -419,7 +440,7 @@
                 "id"
             ],
             "apis": {
-                "Document.cookie getter": 3
+                "Document.cookie getter": 4
             },
             "sites": 5,
             "prevalence": 0.0000341,
@@ -430,7 +451,7 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
+                "lotame_domain_check": 0.00003408943704703661
             },
             "exampleSites": [
                 "corrections1.com",
@@ -466,80 +487,6 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/Norway\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "736f3e53e14d7f7d4a27f6b5e3a3dff248371e1b573d9e79bcd26ba38b3e2e64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "corrections1.com",
-                "www.corrections1.com"
-            ]
-        },
-        {
-            "rule": "lexipol\\.com\\/article-images\\/Screenshot%202023-06-20%20095939\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9a39d7e8c6acf5db517b934aed1a7ad9ef378808b06a72d07322c59dff47b61d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "corrections1.com",
-                "www.corrections1.com"
-            ]
-        },
-        {
-            "rule": "lexipol\\.com\\/v1\\/sites\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "id"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
-            "cnames": [],
-            "responseHashes": [
-                "113cfa4533725a00090210688bdede0299af5ca0173b309e179cc7ed96ddb343",
-                "ab85618f8fccb02c13cf113ab18ea1f2b8d48a9762d8d69824d92c45a0322cd7",
-                "26eca0866452a618b721654ace82b86c69412a0fc35fe9d827267966e8c66b79",
-                "64c5c57531bf0797bb6c6e77d27220eaba4ec4c5c270965e1f0bb586e190c359"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
-            },
-            "exampleSites": [
-                "corrections1.com",
-                "www.corrections1.com",
-                "www.ems1.com",
-                "www.firerescue1.com",
-                "www.police1.com"
-            ]
-        },
-        {
             "rule": "lexipol\\.com\\/api\\/impressions\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -556,6 +503,36 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corrections1.com",
+                "www.corrections1.com",
+                "www.ems1.com",
+                "www.firerescue1.com",
+                "www.police1.com"
+            ]
+        },
+        {
+            "rule": "lexipol\\.com\\/v1\\/sites\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5b7f0277ba3733505f15d18bd0618a03d8e41acbd2a8dfe66a990ce6a08e3ea4",
+                "c97f8ae27aeb53c9667059d8c3f1b09532b5412a85fc50ab545d84b4cc8a1063",
+                "400852956adbf6518325ac3e5f5af779f277a644aa2f2c7596247b7e026715c7",
+                "350bce7c8732d5cb42882bb3b87885d1e51d354d73877a962b3e11cbaec1b6e8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00003408943704703661
+            },
             "exampleSites": [
                 "corrections1.com",
                 "www.corrections1.com",
@@ -606,7 +583,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
+                "lotame_domain_check": 0.00003408943704703661
             },
             "exampleSites": [
                 "corrections1.com",
@@ -642,7 +619,7 @@
                 "usprivacy": {
                     "ttl": 31536002,
                     "length": 126,
-                    "prevalence": 0.0000341106002101213,
+                    "prevalence": 0.00003408943704703661,
                     "uniqueness": 1
                 }
             },
@@ -667,15 +644,15 @@
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "ecd94adcabdf3e894cfc0014f0ef9cf30ebcacd219ae3126756958dac89737d3",
-                "c12582d052b96505193bc9da213c190ce0d576e9acf54eb300a6852e706d4131",
-                "d1ca2f7296332b86860f1eb100e47bc539d37025748d73f10d277adf01a9d43b",
-                "4e68541ea2de8416464e9d652792a8daa2fdcd80cab4373d03071956e54d935f"
+                "c981b6414fab57ce47127456027f5a0e746bf44aeb86b0eba0bc88e7e117a945",
+                "c20ef47ff4b35be3c61e90e606cc5a3afe0cb79e0945885d5cc98d9f75db62fa",
+                "f896fea00d48fcaba94442e90b47c4ad412852956efb1792a3600aaa3a7c564f",
+                "365dca1bca050ad33cc371e35b9f6e2aabba934c046e84bfced288f16f1618fe"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
+                "lotame_domain_check": 0.00003408943704703661
             },
             "exampleSites": [
                 "corrections1.com",
@@ -711,7 +688,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/20230721-AMX-US-NEWS-FOUR-PLEAD-GUILTY-ROLE-DEADLY-1-CS\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/DetentionCenters\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -722,7 +699,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3d20000ce61e53b5517790468297f20aa0b7878928dd484cafe3d31bd690c760"
+                "6c79024a2ef8738dce6353ba2e7e493b65ac40c3e12d2c8d507fdcd6427777ef"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -733,7 +710,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/20230705-AMX-US-NEWS-MARYLAND-CORRECTIONAL-OFFICERS-GET-13-1-BZ\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/rikers_11520_news\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -744,7 +721,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a666fa3299775b37eaac635fa99d486e18de9c71999574386f520f43f581c5a8"
+                "fe2681e225e1be5bf36dd058344029a0f2a312615a28d9f05416e2700132221c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -762,8 +739,8 @@
                 "media.cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "51a3bd99dac3cc97b43f402e4679be9fb8c14b43bae60918d36f795d5641e398"
@@ -773,11 +750,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "corrections1.com",
+                "www.firerescue1.com",
                 "www.police1.com"
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/js\\/head-sync-noncritical\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/js\\/head-sync-noncritical\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -802,7 +780,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/js\\/dfp\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/js\\/dfp\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -824,18 +802,18 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/js\\/head\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/js\\/head\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cross-frontend.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.innerHeight": 1,
-                "window.devicePixelRatio": 1,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
                 "Date.prototype.getTime": 2,
-                "window.innerWidth": 1,
+                "window.innerWidth": 2,
                 "Element.prototype.getClientRects": 2,
                 "Document.cookie getter": 2
             },
@@ -854,7 +832,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/js\\/search\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/js\\/search\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -876,7 +854,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/images\\/logo\\/logo-white-lexipol\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/images\\/logo\\/logo-white-lexipol\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -898,7 +876,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/images\\/logo\\/logo\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/images\\/logo\\/logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -920,7 +898,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/ems1\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
+            "rule": "lexipol\\.com\\/static\\/1001\\/ems1\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -949,11 +927,78 @@
                 "media.cdn"
             ],
             "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5351148e5e61437399157d74ffb84355a191368703aa86eb25368b49beb3d6a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ems1.com",
+                "www.firerescue1.com"
+            ]
+        },
+        {
+            "rule": "lexipol\\.com\\/article-images\\/Article-4-Transport\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "92cf76644f044219a746208f6863f6656a9382d114e41c0af41b32b747b7280c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ems1.com",
+                "www.ems1.com"
+            ]
+        },
+        {
+            "rule": "lexipol\\.com\\/article-images\\/ScottCountyEMS\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e1d988361fa92eb472347cc9aa49aadaeb9333cf70254cbeb6b1d477d657e71e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ems1.com",
+                "www.ems1.com"
+            ]
+        },
+        {
+            "rule": "lexipol\\.com\\/article-images\\/AP23230056267880\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.cdn"
+            ],
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "5351148e5e61437399157d74ffb84355a191368703aa86eb25368b49beb3d6a0"
+                "54f60c3a2fa1f691e3a99bb49699fed7d0c16133e3e27c7636fd35a5e7b8fca4",
+                "6cc8898a1d3208495f25f8714d8ce5967e2b569e81b7a5028f2761cd68728f2c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -965,7 +1010,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/Shaun%20Ford\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/AP21244553740752\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -976,18 +1021,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "77543e9ec16c04ebc8785490835599c72ccd20173242e607c1787bca9a2dbaca"
+                "78cf78aab34c5ba7a51f6ecd0e68c2a2c1bcd634a6eb94afa407929f590ffeb4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ems1.com",
-                "www.ems1.com"
+                "www.firerescue1.com"
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/CityofSuffolkDepartmentofFireRescue\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/JessB-ProofofLife\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -998,36 +1043,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d3647d9bdd6b49391be53b5451b55695a681b80b0dea2f860952676daa97cded"
+                "61e345cefb05d95d65ed3ad9ab35eaf4ef964eef6cefbbeb4115bef8f9130d76"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ems1.com",
-                "www.ems1.com"
-            ]
-        },
-        {
-            "rule": "lexipol\\.com\\/article-images\\/TwinFallsCountySheriffsOffice\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e4e5a7cc5a9375f30b64186f77e7be489f240a11aaeb95da43258f932fe13e04"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ems1.com",
-                "www.ems1.com"
+                "www.firerescue1.com"
             ]
         },
         {
@@ -1042,9 +1065,9 @@
             "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "cecd073c540ea6518ee9a9d796ac19e72e0599ed3dcf9efdfea92c5acd799e63",
-                "824480889eeeb79fe824c32fa42ec32d1db665dc05a2372079e8680b93b94d9a",
-                "d2245d79379dee6ab4fb2205352e7c761c8566977dfd77264eeb3595a629ef39"
+                "1c9108218923fcee1762713a2ce3bc16e7473c64599e335797d496d53fd413d7",
+                "e37e82e370ba40603ac559966ebb95baae482a75b8c236abd08b778fd2463818",
+                "46e4d707874d2e85cefc072ae21e4c20d44b24e1c8f43a79524dd72172ae5e10"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1057,7 +1080,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/js\\/head-sync-noncritical\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/js\\/head-sync-noncritical\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -1081,7 +1104,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/js\\/dfp\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/js\\/dfp\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1103,20 +1126,20 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/js\\/head\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/js\\/head\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cross-frontend.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.devicePixelRatio": 2,
-                "window.innerWidth": 2,
                 "Date.prototype.getTime": 2,
                 "Element.prototype.getClientRects": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.devicePixelRatio": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -1133,7 +1156,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/js\\/search\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/js\\/search\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1155,7 +1178,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/images\\/logo\\/logo-white-lexipol\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/images\\/logo\\/logo-white-lexipol\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1177,7 +1200,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/images\\/logo\\/logo\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/images\\/logo\\/logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1199,7 +1222,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/AP23227492872082\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/US-NEWS-BALTIMORE-FIRE-2-BZ%20\\(3\\)\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1210,7 +1233,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5547556af0a2e470baeb54cb6d4ec7fdd65936a63e4a2c3b087f00605b0e8cea"
+                "6b89da6ebad05f82da29d47c286abacebda673f8cdfa918a52720c444ed15713"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1221,7 +1244,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/firerescue1\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
+            "rule": "lexipol\\.com\\/static\\/1001\\/firerescue1\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1243,7 +1266,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/20230815-AMX-US-NEWS-LIFE-SENTENCE-FOR-DRIVER-WHO-1-PLD\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/20230405-AMX-US-NEWS-VETERAN-FIRE-LIEUTENANT-DIES-FOLLOWING-1-TB\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1254,7 +1277,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d5cc6f758e227fc7dd50a1fd7f4ab3f80490b1e8cb58fe2d9e47acd522d81585"
+                "53cdbb885cb99ed3c2078d51e9b898ffb89b7481c15ba8213fae73719d89ba7d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1265,29 +1288,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/GettyImages-502458074\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4ab3435c65a28c5098deb5fcc1e61a4b0b351ee8d9903461b1b366d26038247b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firerescue1.com",
-                "www.firerescue1.com"
-            ]
-        },
-        {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/js\\/performance\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/js\\/performance\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1309,7 +1310,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/js\\/head-sync-noncritical\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/js\\/head-sync-noncritical\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -1334,7 +1335,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/js\\/dfp\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/js\\/dfp\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1356,7 +1357,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/js\\/head\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/js\\/head\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -1386,7 +1387,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/js\\/search\\.js",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/js\\/search\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1408,7 +1409,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/images\\/logo\\/logo-white-lexipol\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/images\\/logo\\/logo-white-lexipol\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1430,7 +1431,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/images\\/logo\\/logo\\.svg",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/images\\/logo\\/logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1452,7 +1453,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/middletownofficerattacked\\.png",
+            "rule": "lexipol\\.com\\/article-images\\/AP23230111088539\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1463,7 +1464,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "156c9cdd6d421d9ce0ae2e9d779cca40dca9eeb4e5359a8cbac0e81b062e88ab"
+                "19825121d84ce90025c042b7a96dee01efd527f5ddb261f673dadbcbca0d7f6a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1474,7 +1475,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/static\\/1000\\/policeone\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
+            "rule": "lexipol\\.com\\/static\\/1001\\/policeone\\/fonts\\/fontello\\/font\\/fontello\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1496,7 +1497,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/goodhue\\.png",
+            "rule": "lexipol\\.com\\/article-images\\/AP23229618380383\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1507,7 +1508,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b0b91a0da985aba12f74b691e932d60b8333b3bce1a03f1c8d1a6640b8886df3"
+                "45fe3cfd0bdb55147caf53659c8b4fff29338cf16770f9e261b5d9b0c02f16e9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1518,7 +1519,7 @@
             ]
         },
         {
-            "rule": "lexipol\\.com\\/article-images\\/ipiccy_image%20\\(2\\)-3\\.jpg",
+            "rule": "lexipol\\.com\\/article-images\\/Screenshot%202023-08-15%20070805\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1529,7 +1530,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1785eebc38b3bad01fddfa47dea60e44299163c4e2eb772f1b68c99d95de937f"
+                "7a5271493d7aae69a54e0d94c681aead1b74507409c168066d3ba82f3d26fccd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1542,35 +1543,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000546,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8576923076923076
+            "prevalence": 0.8432835820895522
         },
         {
             "domain": "sentry-cdn.com",
-            "prevalence": 0.11153846153846154
+            "prevalence": 0.11940298507462686
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.03076923076923077
+            "prevalence": 0.029850746268656716
+        },
+        {
+            "domain": "pardot.com",
+            "prevalence": 0.0037313432835820895
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.0037313432835820895
         }
     ],
     "types": {
         "Font": 38,
         "Script": 54,
-        "Image": 51,
+        "Image": 52,
         "Ping": 9,
         "Document": 5,
         "Stylesheet": 10,
         "XHR": 10
     },
     "nameservers": [
-        "ns0.dnsmadeeasy.com",
-        "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
         "ns4.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com",
-        "ns1.dnsmadeeasy.com"
+        "ns3.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com"
     ]
 }

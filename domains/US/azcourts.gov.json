@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "azcourts\\.gov\\/",
@@ -28,7 +28,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d0b9901315ce4ed014680b9d754b65f6e7e1785acb15d34603eb22cb69c6bcf0"
+                "a97a3810c3972eb9af90235710b6945f4caf60b5f196a0970eccb98e49f522b0"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -41,11 +41,15 @@
         {
             "rule": "azcourts\\.gov\\/ScriptResource\\.axd",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -63,11 +67,13 @@
         {
             "rule": "azcourts\\.gov\\/js\\/dnn\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -91,7 +97,7 @@
         "Script": 4
     },
     "nameservers": [
-        "tim.ns.cloudflare.com",
-        "maisie.ns.cloudflare.com"
+        "maisie.ns.cloudflare.com",
+        "tim.ns.cloudflare.com"
     ]
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
-    "sites": 3,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "app"
     ],
@@ -20,45 +20,84 @@
                 "app"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "9712cd227a170d7eda2b318c1292a9e04daf5809e2124cb24046273cedb4d789",
-                "ec47bd717b33715a41b541175e54feb3226dc922f3285d0d54f5fbc8bd7f2a7c"
+                "8ad4f8aaa8855a125f926555cf14701bd199de42512ccc29b938bd6d25ae5bd0",
+                "267fc9dbf1eab73d4ee73b83e09206ed586bed35d0c59ad5fc10a8f3b7615e45",
+                "b4d138b4b90be958a3c73b15abeda47e0961b2076b0480b6d84c114a8f949c57"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "daiwa.us",
+                "finmodelslab.com",
                 "omaxhealth.com",
                 "www.casparionline.com"
+            ]
+        },
+        {
+            "rule": "1clickpopup\\.com\\/widget\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fa042bce874c770b38979209b3efb418ed4357781b3b5491e75eb1a6d3bfa02"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_one_click_popup_sessions_count": {
+                    "ttl": 2628003,
+                    "length": 1,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finmodelslab.com",
+                "omaxhealth.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.5714285714285714
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.2
+            "prevalence": 0.2857142857142857
         },
         {
             "domain": "d6pdbsry9vgf5.cloudfront.net",
-            "prevalence": 0.2
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Fetch": 3
+        "Fetch": 4,
+        "Script": 2
     },
     "nameservers": [
-        "pdns2.registrar-servers.com",
-        "pdns1.registrar-servers.com"
+        "pdns1.registrar-servers.com",
+        "pdns2.registrar-servers.com"
     ]
 }

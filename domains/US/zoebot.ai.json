@@ -118,26 +118,6 @@
             ]
         },
         {
-            "rule": "zoebot\\.ai\\/decrypt-embedvalue",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "belgard.com",
-                "www.belgard.com"
-            ]
-        },
-        {
             "rule": "zoebot\\.ai\\/static\\/css\\/client\\/main\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -196,6 +176,26 @@
                 "f2c543e5db717279d05d475ea8279d37ed916c5bba7bb519d265464458e415e5"
             ],
             "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belgard.com",
+                "www.belgard.com"
+            ]
+        },
+        {
+            "rule": "zoebot\\.ai\\/decrypt-embedvalue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -299,9 +299,9 @@
                 "web"
             ],
             "apis": {
-                "window.name": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "window.name": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -347,8 +347,8 @@
                 "web"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -372,8 +372,8 @@
                 "web"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -502,68 +502,6 @@
             ]
         },
         {
-            "rule": "zoebot\\.ai\\/get-theme-configuration",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fe1ace481e75aeb0a0b88645211425d9ea8558cbbf5c317c8605da7c30a2456f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "belgard.com",
-                "www.belgard.com"
-            ]
-        },
-        {
-            "rule": "zoebot\\.ai\\/sites\\/all\\/files\\/public\\/icon-close-white_0_9\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5c7ce3d8cd1fa138eb2743a822cb560a2b7c291896dc893a5b1ab13cce6d17cd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "belgard.com",
-                "www.belgard.com"
-            ]
-        },
-        {
-            "rule": "zoebot\\.ai\\/sites\\/all\\/files\\/public\\/branding\\/embed\\/icon\\/belgard_launcher_icon\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "da0de8db99b7ce3bc603025dc668d07de6967e16761ec18a844405cdab20fd32"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "belgard.com",
-                "www.belgard.com"
-            ]
-        },
-        {
             "rule": "zoebot\\.ai\\/socket\\.io\\/",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -576,6 +514,28 @@
             "cnames": [],
             "responseHashes": [
                 "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belgard.com",
+                "www.belgard.com"
+            ]
+        },
+        {
+            "rule": "zoebot\\.ai\\/get-theme-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe1ace481e75aeb0a0b88645211425d9ea8558cbbf5c317c8605da7c30a2456f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -636,6 +596,46 @@
             "cnames": [],
             "responseHashes": [
                 "47fc096a13dd777a9a49ca581e8c9dbc9ce85dffbc4546614267258b3576300c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belgard.com",
+                "www.belgard.com"
+            ]
+        },
+        {
+            "rule": "zoebot\\.ai\\/sites\\/all\\/files\\/public\\/icon-close-white_0_9\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c7ce3d8cd1fa138eb2743a822cb560a2b7c291896dc893a5b1ab13cce6d17cd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belgard.com",
+                "www.belgard.com"
+            ]
+        },
+        {
+            "rule": "zoebot\\.ai\\/sites\\/all\\/files\\/public\\/branding\\/embed\\/icon\\/belgard_launcher_icon\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da0de8db99b7ce3bc603025dc668d07de6967e16761ec18a844405cdab20fd32"
             ],
             "type": "Image",
             "firstPartyCookies": {},

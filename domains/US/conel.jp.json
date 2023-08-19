@@ -10,10 +10,37 @@
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "conel\\.jp\\/static\\/popup\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "982a5ce1ed02f4c5c893f8b1056115fb6cca6a2d74ef6535cea954c3b8b158ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovely-media.jp",
+                "machicon.jp"
+            ]
+        },
+        {
+            "rule": "conel\\.jp\\/static\\/popup-style\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,9 +51,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "50156b1dad770ba524d0bbdb5c0543a246363a229b915b696c6d9a2a8346e9b2"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -49,12 +76,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-1388.awsdns-45.org",
-        "ns-1842.awsdns-38.co.uk",
         "ns-624.awsdns-14.net",
-        "ns-383.awsdns-47.com"
+        "ns-383.awsdns-47.com",
+        "ns-1388.awsdns-45.org",
+        "ns-1842.awsdns-38.co.uk"
     ]
 }

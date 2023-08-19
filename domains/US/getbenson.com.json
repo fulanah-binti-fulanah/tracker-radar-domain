@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
-    "sites": 3,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "delivery"
     ],
@@ -13,22 +13,28 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "getbenson\\.com\\/v1\\/stats\\/event\\/add",
+            "rule": "getbenson\\.com\\/v1\\/b\\/benson-eASdCYVNrJsqEHdvMUQ0",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "delivery"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "678812d74df7c724f0e2ee5a378a3707f34c397181d8df13d7f1fd65947a51e8"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "handheldlegend.com",
+                "earthrunners.com",
                 "www.earthrunners.com"
             ]
         },
@@ -50,29 +56,23 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "handheldlegend.com",
+                "earthrunners.com",
                 "www.earthrunners.com"
             ]
         },
         {
-            "rule": "getbenson\\.com\\/v1\\/b\\/benson-eASdCYVNrJsqEHdvMUQ0",
+            "rule": "getbenson\\.com\\/v1\\/stats\\/event\\/add",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "delivery"
             ],
-            "apis": {
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "window.sessionStorage": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "45171425c959a1ad47a2508f6833b83122ab19ab988ebb85371220572c6262ad"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -91,14 +91,14 @@
         }
     ],
     "types": {
-        "Preflight": 2,
+        "Script": 2,
         "Fetch": 2,
-        "Script": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c4.googledomains.com",
         "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c2.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c4.googledomains.com"
     ]
 }

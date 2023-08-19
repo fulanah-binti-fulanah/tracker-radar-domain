@@ -20,7 +20,7 @@
             "resolved": "www.cibconline.cibc.com.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cibc\\.com\\.edgekey\\.net\\/maintenance\\/login\\.json",
@@ -50,6 +50,33 @@
             ]
         },
         {
+            "rule": "cibc\\.com\\.edgekey\\.net\\/ebm-pno\\/api\\/v1\\/json\\/productRatesLegacy",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.cibconline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.cibconline.cibc.com",
+                    "resolved": "www.cibconline.cibc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f8fa4b53ecc789280cb94cdfc41d56903798caf0eef1d9eaaddc1bc8e0ad7339"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cibc.com",
+                "www.cibc.com"
+            ]
+        },
+        {
             "rule": "cibc\\.com\\.edgekey\\.net\\/ebm-resources\\/public\\/banking\\/cibc\\/client\\/web\\/olbtxn\\/index\\.html",
             "cookies": 0.0000136,
             "fingerprinting": 2,
@@ -66,7 +93,7 @@
                 }
             ],
             "responseHashes": [
-                "36c2d1a4625bc9fb9db5b9960d54788e4479a948f9c9c4893a6fd33643ba032b"
+                "6d31cd1f8e6fae5608b0f0eb7003293e3166297d00a0c5bb024f72db9e6d02b7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -80,8 +107,19 @@
     "categories": [],
     "performance": {},
     "cookies": 0.0000205,
+    "topInitiators": [
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.5
+        }
+    ],
     "types": {
         "XHR": 2,
+        "Script": 2,
         "Document": 2
     },
     "nameservers": []

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
         "go",
         "www"
@@ -27,7 +27,9 @@
             "sites": 5,
             "prevalence": 0.0000341,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "fbba99cff57ebfbf55981ba2f0a4393ec2e582920012042ac859e54d78c0733d"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -51,10 +53,10 @@
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "33b010ce6758a91806663a75ff5f3cbf6e0ce8bd039c68f2b3ec7f64930dcb4d",
-                "d5c505f65bd5f235ba6c159675039e267c173cd91df6ed404b15a2b2b99e9222",
-                "de83c220ab97ce8bb19a01d5d4db7a6454118dcccd97e28d3dbb67721da1c56f",
-                "034f60032fe921797c3968ba2a5d5ef4212f1b26e48c7c77c7a28cffc392d2c9"
+                "2ce2794aa815c0fd0125a0f1725ed71add1ddc294d03941277f16c43a26bdae0",
+                "a426cc85b19315bede06b9ba5c92c3c0f5194790f134ed95cc4d2dcc316e4497",
+                "fbba99cff57ebfbf55981ba2f0a4393ec2e582920012042ac859e54d78c0733d",
+                "ee614f4f1af31393d34cdc8396ff32bf5568d2de3eaed9aa38fab6de2f9c3a84"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -118,26 +120,6 @@
             ]
         },
         {
-            "rule": "fold3\\.com\\/ads\\/acom\\/LDR-search\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "go"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rootsweb.com",
-                "homepages.rootsweb.com"
-            ]
-        },
-        {
             "rule": "fold3\\.com\\/i\\/fold3logo-sm\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -163,6 +145,31 @@
             ]
         },
         {
+            "rule": "fold3\\.com\\/ads\\/acom\\/LDR-search\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "go"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "e2fcf569aa0e19ec80518a55fa111d7203abd0ac2cfd0ec380e55ae96d87199e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006817887409407321
+            },
+            "exampleSites": [
+                "rootsweb.com",
+                "sites.rootsweb.com",
+                "www.genealogy.com"
+            ]
+        },
+        {
             "rule": "fold3\\.com\\/ads\\/acom\\/LDR-search",
             "cookies": 0,
             "fingerprinting": 0,
@@ -170,18 +177,21 @@
                 "go"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "699899a8378196089adfaa0a32c74a4bf7dbe50a00cea55b9bb103995929ce26"
+                "e2fcf569aa0e19ec80518a55fa111d7203abd0ac2cfd0ec380e55ae96d87199e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006817887409407321
+            },
             "exampleSites": [
                 "rootsweb.com",
-                "homepages.rootsweb.com"
+                "sites.rootsweb.com",
+                "www.genealogy.com"
             ]
         },
         {
@@ -203,7 +213,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rootsweb.com",
-                "homepages.rootsweb.com"
+                "sites.rootsweb.com"
             ]
         },
         {
@@ -225,7 +235,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rootsweb.com",
-                "homepages.rootsweb.com"
+                "sites.rootsweb.com"
             ]
         }
     ],
@@ -235,11 +245,15 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 1
+            "prevalence": 0.875
+        },
+        {
+            "domain": "confiant-integrations.net",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Document": 14,
+        "Document": 16,
         "Stylesheet": 7,
         "Script": 5,
         "Image": 7

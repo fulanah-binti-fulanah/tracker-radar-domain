@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
         "static",
         "static-banner",
         "onsite",
-        "events"
+        "events",
+        "recs"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -46,45 +47,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "chaordic_realUserId": {
-                    "ttl": -1692157238,
+                    "ttl": -1692356741,
                     "length": 1,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
+                    "uniqueness": 0.3333333333333333
+                },
+                "chaordic_testGroup": {
+                    "ttl": 604800,
+                    "length": 117,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 0.3333333333333333
                 },
                 "chaordic_browserId": {
                     "ttl": 31536000,
                     "length": 51,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 1
                 },
                 "chaordic_anonymousUserId": {
                     "ttl": 31536000,
                     "length": 56,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 1
                 },
                 "chaordic_session": {
                     "ttl": 1800,
-                    "length": 32,
-                    "prevalence": 0.00002046636012607278,
+                    "length": 33,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 1
                 },
-                "chaordic_testGroup": {
-                    "ttl": 604800,
-                    "length": 117,
-                    "prevalence": 0.00002046636012607278,
-                    "uniqueness": 0.3333333333333333
-                },
                 "lx_sales_channel": {
-                    "ttl": -1692157238,
+                    "ttl": -1692356741,
                     "length": 1,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 0.3333333333333333
                 },
                 "buscaHomolog": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 }
             },
@@ -134,15 +135,12 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "0e2f01581522db09fd57fb029962d044102183ebf3b9e9195bc0d2aa3462df36",
-                "2d0935d141904d13e4cc155e8bc02b7d35b49fc1e3d557968d2aa7dbac719735"
+                "a2df4b9e6152d21fc3ae958261beb3e2a6551d896b05c10e9b51376dd346d041",
+                "dfe73029073ad1915fff15fc054115f9bc2c2ba93eabe7f478a3ec396a6301c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "__uzmbj3": 0.00000682212004202426,
-                "__uzmdj3": 0.00000682212004202426
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "centauro.com.br",
                 "www.lojadomecanico.com.br",
@@ -170,6 +168,28 @@
                 "lojadomecanico.com.br",
                 "www.ultrafarma.com.br"
             ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/v0\\/impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ultrafarma.com.br",
+                "www.ultrafarma.com.br"
+            ]
         }
     ],
     "categories": [],
@@ -178,21 +198,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.8461538461538461
         },
         {
             "domain": "instana.io",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
         "Script": 9,
-        "Document": 2
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-232.awsdns-29.com",
-        "ns-1556.awsdns-02.co.uk",
         "ns-1521.awsdns-62.org",
+        "ns-1556.awsdns-02.co.uk",
+        "ns-232.awsdns-29.com",
         "ns-823.awsdns-38.net"
     ]
 }

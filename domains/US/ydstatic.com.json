@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
-        "shared"
+        "shared",
+        "oimagec7",
+        "oimagec8"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -18,11 +20,13 @@
         {
             "rule": "ydstatic\\.com\\/js\\/yatdk\\/3\\.0\\.0\\/pcBanner\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "shared"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 1
+            },
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],
@@ -60,9 +64,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__yadk_uid": {
-                    "ttl": 31536015,
+                    "ttl": 31536006,
                     "length": 32,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 0.6666666666666666
                 }
             },
@@ -72,11 +76,56 @@
                 "book.douban.com",
                 "movie.douban.com"
             ]
+        },
+        {
+            "rule": "ydstatic\\.com\\/js\\/yatdk\\/3\\.0\\.0\\/pcBanner\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shared"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4e780223f13b94f92958ca04b49e1e5509b3895d80b36fd306ee7df7122d16c3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "douban.com",
+                "movie.douban.com"
+            ]
+        },
+        {
+            "rule": "ydstatic\\.com\\/image",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oimagec7",
+                "oimagec8"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb1923de63fb19f7a35f977036eb203367fff3a211eec2002f913b00508c4ec1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "douban.com",
+                "movie.douban.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "doubanio.com",
@@ -84,10 +133,12 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "Stylesheet": 2,
+        "Image": 2
     },
     "nameservers": [
-        "rem2.yodao.net",
-        "rem1.yodao.net"
+        "rem1.yodao.net",
+        "rem2.yodao.net"
     ]
 }

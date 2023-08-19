@@ -10,11 +10,12 @@
         "cdn",
         "unleash-proxy",
         "platform-analytics-proxy",
+        "platform-ext",
         "platform-api",
         "api.data"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "streamsage\\.io\\/platform\\/platform\\.js",
@@ -24,10 +25,10 @@
                 "cdn"
             ],
             "apis": {
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -75,7 +76,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6be9b6fac1a13c0d1d067a53f729c76cef7c8d11c08ffb0146d0cb493b31aa1e"
+                "900615b9b297307cf194efe8df281f94b6a8ce2a4198ff201564288a5a4c2de3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -102,8 +103,8 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00000682212004202426,
-                "lotame_domain_check": 0.00001364424008404852
+                "_li_dcdm_c": 0.000013635774818814642,
+                "lotame_domain_check": 0.000013635774818814642
             },
             "exampleSites": [
                 "177milkstreet.com",
@@ -111,7 +112,29 @@
             ]
         },
         {
-            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyTooltipPanel",
+            "rule": "streamsage\\.io\\/panel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e569b99774f69a78aed69b8ac490103fd2e317ca55c46c9f5fb17d40e135db1"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyCartPanel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -122,7 +145,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c162f5b70455b9048f9b8cb1723899cfe266c20e51eb3c105e43852b3f45f9d2"
+                "bc03f5604dd90b7b8b642b1caf66a62f3f6187e875cd010f1db21f9bab8a68a7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -133,7 +156,7 @@
             ]
         },
         {
-            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyTooltipPanel",
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyCartPanel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -199,14 +222,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "platform-analytics-proxy"
+                "platform-analytics-proxy",
+                "platform-ext"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6d464925315fd267f52f4a5cc98ece537e2e45eca051fd29b177f38a01acfab7"
+                "10fabb04ba91230dd6fdf0294d60a7f5f6bbc93b0481f9dc3be60820f5587201"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -245,6 +269,99 @@
             ]
         },
         {
+            "rule": "streamsage\\.io\\/index\\.61f62f4ccf8ae5407525\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9217ae74a76704f78df26baadcf6cdfaaff31da2d5c9e194f0238a219cf8896c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/645\\.3a69629968214ea873ab\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0cbeb226b8a27ac48c6f65915ab7a62acfccfae2e8201e19ac924fbccaa93a5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/263\\.526b4ea8e29903585b70\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1bccc13b0194e19a28b20828dc2dba91c6c8a89237319df27d7604fecc41ac3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/panel-app\\.f7f917deca27d7e66e9e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9651ea956aea78dfc2529a7191ac586f3e0d3f8a358056a600312b579549498b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
             "rule": "streamsage\\.io\\/api\\/v1\\/public\\/store",
             "cookies": 0,
             "fingerprinting": 0,
@@ -265,6 +382,178 @@
                 "177milkstreet.com",
                 "www.177milkstreet.com"
             ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyToastsPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d0ca7fe28fd5d2d010cd5daba32602935f5c0320a92d2e8d11dff6f8ccf71ad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyToastsPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyItemDetailsPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a0eedcb812f20802bd1da6f1b797ed6abb934bf67a99befb44fa311e0ca07a8c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyItemDetailsPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/shopify-extension\\.9fd1d3ba74321bd28a18\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0821d9cd344c10f4054fc85c45c270d0c9ef5707243d6e00661cdfb5598092ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyTooltipPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyTooltipPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/shop-sage\\/fonts\\/Sage-Icons-18072022\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
         }
     ],
     "categories": [],
@@ -273,24 +562,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9
-        },
-        {
-            "domain": "streamsage.io",
-            "prevalence": 0.1
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 6,
-        "Preflight": 6,
-        "Fetch": 6,
-        "Document": 2,
-        "Ping": 2
+        "Script": 16,
+        "Preflight": 12,
+        "Fetch": 12,
+        "Document": 4,
+        "Ping": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-239.awsdns-29.com",
+        "ns-873.awsdns-45.net",
         "ns-1453.awsdns-53.org",
-        "ns-2012.awsdns-59.co.uk",
-        "ns-873.awsdns-45.net"
+        "ns-2012.awsdns-59.co.uk"
     ]
 }

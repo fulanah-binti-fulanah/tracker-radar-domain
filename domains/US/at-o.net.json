@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000396,
-    "sites": 58,
+    "prevalence": 0.000375,
+    "sites": 55,
     "subdomains": [
         "da-maif-fr-cddc",
+        "dimensions-mappy-com-cddc",
         "buf-lemonde-fr-cddc",
         "ama-wdr-de-cddc",
         "tm-urssaf-fr-cddc",
@@ -33,7 +34,6 @@
         "wareneingang-edeka-de-cddc",
         "checkpointcharlie-heizung-de-cddc",
         "images-kika-de-cddc",
-        "a-pourquoidocteur-fr-cddc",
         "conimicutlighthouse-viessmann-us-com-cddc",
         "severn-viessmann-co-uk-cddc",
         "salzwerk-viessmann-de-cddc",
@@ -47,10 +47,6 @@
         {
             "original": "a.hellowork.com",
             "resolved": "a-hellowork-com-cddc.at-o.net"
-        },
-        {
-            "original": "a.pourquoidocteur.fr",
-            "resolved": "a-pourquoidocteur-fr-cddc.at-o.net"
         },
         {
             "original": "a1.api.bbc.com",
@@ -111,6 +107,10 @@
         {
             "original": "da.rabobank.nl",
             "resolved": "da-rabobank-nl-cddc.at-o.net"
+        },
+        {
+            "original": "dimensions.mappy.com",
+            "resolved": "dimensions-mappy-com-cddc.at-o.net"
         },
         {
             "original": "image.mdr.de",
@@ -195,6 +195,33 @@
             ]
         },
         {
+            "rule": "at-o\\.net\\/dim\\.mappy",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dimensions-mappy-com-cddc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "dimensions.mappy.com",
+                    "resolved": "dimensions-mappy-com-cddc.at-o.net"
+                }
+            ],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mappy.com",
+                "fr.mappy.com"
+            ]
+        },
+        {
             "rule": "at-o\\.net\\/lmd",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -240,7 +267,7 @@
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.0000887,
+            "prevalence": 0.0000886,
             "cnames": [
                 {
                     "original": "ama.wdr.de",
@@ -306,34 +333,7 @@
             ]
         },
         {
-            "rule": "at-o\\.net\\/a009e5b5ecafa1f6f1f080eea1b6ffd689d0e2a9",
-            "cookies": 0.00000682,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lem-nouvelobs-com-cddc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "lem.nouvelobs.com",
-                    "resolved": "lem-nouvelobs-com-cddc.at-o.net"
-                }
-            ],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nouvelobs.com",
-                "la-conjugaison.nouvelobs.com"
-            ]
-        },
-        {
-            "rule": "at-o\\.net\\/ae4dc947d95aa5c1b5d06806a0a810128713d229",
+            "rule": "at-o\\.net\\/bbb9d491f65f29de787e795e32879257b7052837",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -369,8 +369,8 @@
                 "a-20minutes-fr-cddc"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [
                 {
                     "original": "a.20minutes.fr",
@@ -386,7 +386,6 @@
             "exampleSites": [
                 "20minutes.fr",
                 "maison.20minutes.fr",
-                "mesnotices.20minutes.fr",
                 "www.20minutes.fr"
             ]
         },
@@ -442,12 +441,13 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "convertedArticleId": 0.00000682212004202426,
-                "convertedArticleRealm": 0.00000682212004202426,
-                "convertedArticleMainCategory": 0.00000682212004202426,
-                "convertedArticleProductionType": 0.00000682212004202426,
-                "convertedArticlePriceType": 0.00000682212004202426,
-                "convertedArticlePublicationDate": 0.00000682212004202426
+                "convertedArticleId": 0.000006817887409407321,
+                "convertedArticleTitle": 0.000006817887409407321,
+                "convertedArticleRealm": 0.000006817887409407321,
+                "convertedArticleMainCategory": 0.000006817887409407321,
+                "convertedArticleProductionType": 0.000006817887409407321,
+                "convertedArticlePriceType": 0.000006817887409407321,
+                "convertedArticlePublicationDate": 0.000006817887409407321
             },
             "exampleSites": [
                 "sport1.de",
@@ -491,21 +491,20 @@
         },
         {
             "rule": "at-o\\.net\\/",
-            "cookies": 0.0000136,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "y1-arte-tv-cddc",
                 "wareneingang-edeka-de-cddc",
                 "checkpointcharlie-heizung-de-cddc",
                 "images-kika-de-cddc",
-                "a-pourquoidocteur-fr-cddc",
                 "conimicutlighthouse-viessmann-us-com-cddc",
                 "severn-viessmann-co-uk-cddc",
                 "salzwerk-viessmann-de-cddc"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000614,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [
                 {
                     "original": "y1.arte.tv",
@@ -522,10 +521,6 @@
                 {
                     "original": "images.kika.de",
                     "resolved": "images-kika-de-cddc.at-o.net"
-                },
-                {
-                    "original": "a.pourquoidocteur.fr",
-                    "resolved": "a-pourquoidocteur-fr-cddc.at-o.net"
                 },
                 {
                     "original": "conimicutlighthouse.viessmann-us.com",
@@ -552,7 +547,6 @@
                 "www.edeka.de",
                 "www.heizung.de",
                 "www.kika.de",
-                "www.pourquoidocteur.fr",
                 "www.viessmann-us.com",
                 "www.viessmann.co.uk",
                 "www.viessmann.de"
@@ -613,7 +607,7 @@
             ]
         },
         {
-            "rule": "at-o\\.net\\/ae4dc947d95aa5c1b5d06806a0a810128713d229",
+            "rule": "at-o\\.net\\/bbb9d491f65f29de787e795e32879257b7052837",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -642,45 +636,49 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000955,
+    "cookies": 0.0000886,
     "topInitiators": [
         {
             "domain": "aticdn.net",
-            "prevalence": 0.6615384615384615
-        },
-        {
-            "domain": "tagcommander.com",
-            "prevalence": 0.09230769230769231
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.07692307692307693
-        },
-        {
-            "domain": "lemde.fr",
-            "prevalence": 0.06153846153846154
+            "prevalence": 0.6119402985074627
         },
         {
             "domain": "usercentrics.eu",
-            "prevalence": 0.06153846153846154
+            "prevalence": 0.11940298507462686
+        },
+        {
+            "domain": "tagcommander.com",
+            "prevalence": 0.08955223880597014
+        },
+        {
+            "domain": "lemde.fr",
+            "prevalence": 0.05970149253731343
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05970149253731343
         },
         {
             "domain": "fmm.io",
-            "prevalence": 0.03076923076923077
+            "prevalence": 0.029850746268656716
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.014925373134328358
         },
         {
             "domain": "wdr.de",
-            "prevalence": 0.015384615384615385
+            "prevalence": 0.014925373134328358
         }
     ],
     "types": {
-        "Image": 38,
+        "Image": 36,
         "Ping": 17
     },
     "nameservers": [
-        "ns-792.awsdns-35.net",
         "ns-1614.awsdns-09.co.uk",
         "ns-1362.awsdns-42.org",
+        "ns-792.awsdns-35.net",
         "ns-15.awsdns-01.com"
     ]
 }

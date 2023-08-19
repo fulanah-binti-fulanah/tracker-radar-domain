@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "webchat-dialer.i6"
+        "webchat-dialer.i6",
+        "chat1-dialer.i6"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -38,15 +39,38 @@
                 "webchat-dialer.i6"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "259c9a959a3ff066cd8bfe5b251f15a3824179db11121473834f9738a0547f09"
+                "b4e302333878471fd324a20189d15c46f755b302edb243b459d319a007aa981e"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michaelkors.com",
+                "www.michaelkors.com"
+            ]
+        },
+        {
+            "rule": "ssgocc\\.com\\/inconcert\\/apps\\/webdesigner\\/MKENGPRODDEPLOYED2023\\.___start_minimized",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat1-dialer.i6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "456b53e5e39858b55bca9c8e0b87996f86babeb21a5f6bd5c55aae8fb275cf14"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,18 +85,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Document": 2
     },
     "nameservers": [
-        "ns13.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com",
-        "ns12.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com"
+        "ns12.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com"
     ]
 }

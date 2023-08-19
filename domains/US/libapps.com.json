@@ -4,27 +4,28 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000123,
-    "sites": 18,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
         "lgapi-us",
         "lgapi",
-        "gwumc",
-        "umich",
+        "ucla",
         "illinois",
+        "umich",
         "loc",
-        "yale",
-        "uw",
         "berkeley",
+        "gwumc",
+        "harvard",
+        "yale",
         "sll-state",
         "nyu",
-        "harvard",
+        "uw",
         "usc",
         "missouri",
         "law-utexas"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "libapps\\.com\\/widgets\\.php",
@@ -35,13 +36,14 @@
                 "lgapi"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
             "responseHashes": [
                 "64f194e6671a0b10f817a77c7824b620328a124b94f25b4a902b23abfb845cd5",
                 "19e49466d02df7c78e7120de904adeae8d9e97c6a740bc684d97b9fecaeade2e",
                 "7b80bf294afad9de954a641b16ee1d1454dc2ebc5ec4165c7cb3503f9ff79797",
+                "ea2eaa8be73a83495e75c1df1ba46f7ad8531de166ee6aaf391bf59588c141ca",
                 "9719c6ced35eec9be6a57c09a84dcf2bdaaaceb9e538bea524c65a9a875f1cd9"
             ],
             "type": "Script",
@@ -52,52 +54,8 @@
                 "guides.library.cornell.edu",
                 "guides.nyu.edu",
                 "libguides.usc.edu",
+                "www.lib.uidaho.edu",
                 "www.library.illinois.edu"
-            ]
-        },
-        {
-            "rule": "libapps\\.com\\/libapps\\/login_process\\/session",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gwumc",
-                "umich",
-                "illinois",
-                "loc",
-                "yale",
-                "uw",
-                "berkeley",
-                "sll-state",
-                "nyu",
-                "harvard",
-                "usc",
-                "missouri",
-                "law-utexas"
-            ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000887,
-            "cnames": [],
-            "responseHashes": [
-                "3198640b2393a65120a31565a794185cfa882d0b2faaecd8bb3c028df99130c7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gwu.edu",
-                "guides.lib.umich.edu",
-                "guides.library.illinois.edu",
-                "guides.loc.gov",
-                "guides.library.yale.edu",
-                "guides.lib.uw.edu",
-                "guides.lib.berkeley.edu",
-                "guides.sll.texas.gov",
-                "guides.nyu.edu",
-                "guides.library.harvard.edu",
-                "libguides.usc.edu",
-                "libraryguides.missouri.edu",
-                "tarlton.law.utexas.edu"
             ]
         },
         {
@@ -112,7 +70,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f1019a14d32e4dd185a14e183934feba5456c9211e42ebb2200283ad51e8c23f"
+                "a3d04369240f15ff4ed5450c84b5df9c457120ca12fecc3ec505ace43590d009"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -120,6 +78,53 @@
             "exampleSites": [
                 "harvard.edu",
                 "guides.library.harvard.edu"
+            ]
+        },
+        {
+            "rule": "libapps\\.com\\/libapps\\/login_process\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucla",
+                "illinois",
+                "umich",
+                "loc",
+                "berkeley",
+                "gwumc",
+                "harvard",
+                "yale",
+                "sll-state",
+                "nyu",
+                "uw",
+                "usc",
+                "missouri",
+                "law-utexas"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000955,
+            "cnames": [],
+            "responseHashes": [
+                "3198640b2393a65120a31565a794185cfa882d0b2faaecd8bb3c028df99130c7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ucla.edu",
+                "guides.library.illinois.edu",
+                "guides.lib.umich.edu",
+                "guides.loc.gov",
+                "guides.lib.berkeley.edu",
+                "guides.himmelfarb.gwu.edu",
+                "guides.library.harvard.edu",
+                "guides.library.yale.edu",
+                "guides.sll.texas.gov",
+                "guides.nyu.edu",
+                "guides.lib.uw.edu",
+                "libguides.usc.edu",
+                "libraryguides.missouri.edu",
+                "tarlton.law.utexas.edu"
             ]
         }
     ],
@@ -133,21 +138,21 @@
         },
         {
             "domain": "first party",
-            "prevalence": 0.4666666666666667
+            "prevalence": 0.46875
         },
         {
             "domain": "sirsi.net",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.03125
         }
     ],
     "types": {
-        "Script": 18,
+        "Script": 20,
         "XHR": 2
     },
     "nameservers": [
-        "ns-880.awsdns-46.net",
         "ns-387.awsdns-48.com",
-        "ns-1078.awsdns-06.org",
-        "ns-1667.awsdns-16.co.uk"
+        "ns-880.awsdns-46.net",
+        "ns-1667.awsdns-16.co.uk",
+        "ns-1078.awsdns-06.org"
     ]
 }

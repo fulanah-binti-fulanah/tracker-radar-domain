@@ -24,18 +24,18 @@
             "prevalence": 0.0000614,
             "cnames": [],
             "responseHashes": [
-                "d1b31952c800227aefbf2c9755720dfddefef30fcf115ae4206e2047f926dab6",
+                "3474b3c3b2c752f337c127a40132de0a78a2fa3e15b123d0925c3986a94b71cb",
                 "f8a448136be59e2c194e98ec7ef8dcb262e8433e1fd7598e38d29f53865ae711",
-                "750d0195830343647cdcc27d8c8dc85393d4146ef0a0d5a30e6a34cdf90e8a81",
-                "db458fe0ae10f08fbb2042fb41d0f71d849d69708810e7b2a9ded0dcaacfe14c",
-                "12a7131b10841ddcb9205ece7f9cb0b59a796a89e1c989ae9587fcba1419ee82",
-                "859ad0b5f9e8134880eab761748b64060a5317f740edd4a9bd4b6b508199c227",
-                "56a6d850900d6a881c51aa66b6f8b2c2e2a6e29bf7763f973d27b697a32f5fb3"
+                "50bedf5214a1ceaf3e5d71a9667c0ca1e77d22b246d048f91e77e68fec95de77",
+                "883caf963fe9ce9c41f0660f5103337ffaa3cd405b8548574e22b434fcd80817",
+                "ef6b55730f522421340ed6eb001b0368a932a8db84034e07730ce486fcfa2f17",
+                "b373360bb66197d44d2ff9a742a4b20475a71ecf38527711e773dec202a518d4",
+                "c54d96480c034a9ef4fd57e26ff242dc9a176435e52ef3c8243dedcd9318300e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gpv_URL": 0.00000682212004202426
+                "gpv_URL": 0.000006817887409407321
             },
             "exampleSites": [
                 "darktrace.com",
@@ -51,13 +51,16 @@
         },
         {
             "rule": "gatorleads\\.co\\.uk\\/Scripts\\/ssl\\/a3b372f5-7517-4460-80f2-9444d850944d\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "t"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -66,7 +69,26 @@
                 "a9bff1c66295fd22eb171ce6d7b57b84c9a7a098901e6961d5e2504bc4a2540a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "wow.anonymousId": {
+                    "ttl": 63072004,
+                    "length": 36,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 1
+                },
+                "wow.schedule": {
+                    "ttl": 1204,
+                    "length": 13,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 1
+                },
+                "wow.session": {
+                    "ttl": 1204,
+                    "length": 36,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tforcefreight.com",
@@ -76,7 +98,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000477,
     "topInitiators": [
         {
             "domain": "first party",
@@ -91,7 +113,7 @@
         "Script": 11
     },
     "nameservers": [
-        "brianna.ns.cloudflare.com",
-        "rory.ns.cloudflare.com"
+        "rory.ns.cloudflare.com",
+        "brianna.ns.cloudflare.com"
     ]
 }

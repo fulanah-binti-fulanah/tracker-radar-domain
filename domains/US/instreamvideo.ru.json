@@ -32,6 +32,58 @@
             ]
         },
         {
+            "rule": "instreamvideo\\.ru\\/core\\/vpaid\\/linear",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "32076b5535452ee5b5035759312e6e26be7c8849010713403b5f390793296f1b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberforum.ru",
+                "www.cyberforum.ru"
+            ]
+        },
+        {
+            "rule": "instreamvideo\\.ru\\/storage\\/linear\\/linear-vpaid\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb8bd0e3c46516dce377e525a1a62cb74418098c56f96d2f77a205dd7024518d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ohmybid_cmf": {
+                    "ttl": 86412,
+                    "length": 1,
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberforum.ru",
+                "www.cyberforum.ru"
+            ]
+        },
+        {
             "rule": "instreamvideo\\.ru\\/core\\/code\\.xml",
             "cookies": 0,
             "fingerprinting": 0,
@@ -41,7 +93,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "6a6efafc3c2fc2cf423dc6b76ce2a67cf38f91d3da260fe96d3f953a30028a9c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -78,19 +130,21 @@
     "topInitiators": [
         {
             "domain": "viadata.store",
-            "prevalence": 0.7272727272727273
+            "prevalence": 0.8636363636363636
         },
         {
             "domain": "adhigh.net",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.13636363636363635
         }
     ],
     "types": {
         "Image": 5,
+        "Fetch": 2,
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": [
-        "ns1.viaprog.eu",
-        "ns2.viaprog.eu"
+        "ns2.viaprog.eu",
+        "ns1.viaprog.eu"
     ]
 }

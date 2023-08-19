@@ -18,9 +18,12 @@
         {
             "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/cookie-consent-filter\\.85cf307034ef74ef6c6d\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.doNotTrack": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -38,9 +41,14 @@
         {
             "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/head\\.85cf307034ef74ef6c6d\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "Navigator.prototype.platform": 1,
+                "window.innerWidth": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -157,9 +165,9 @@
         "Stylesheet": 4
     },
     "nameservers": [
-        "ns-25.awsdns-03.com",
-        "ns-1161.awsdns-17.org",
         "ns-1770.awsdns-29.co.uk",
-        "ns-631.awsdns-14.net"
+        "ns-25.awsdns-03.com",
+        "ns-631.awsdns-14.net",
+        "ns-1161.awsdns-17.org"
     ]
 }

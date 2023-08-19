@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "700dealer\\.com\\/QuickQualify\\/3eb4da7e19c746c4bbac1ca25d1fe757-2022929",
@@ -21,13 +21,15 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2b17e8fea902c76b55b6d145600e5195b208514cdea01b09304595400b9559d3"
+                "c95a17692cf8d048e80e53e9baf844a7b2032ca61cbdec769b68174863e949cd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -62,11 +64,16 @@
         {
             "rule": "700dealer\\.com\\/Scripts\\/modernizr-2\\.6\\.2\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -155,8 +162,8 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 1
+                "window.name": 1,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -217,28 +224,6 @@
             ]
         },
         {
-            "rule": "700dealer\\.com\\/Areas\\/QuickQualify\\/Content\\/scripts\\/AddressAutoComplete\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fa9d39f47304af15dae84c0c4077e9c8aa72c0a68602cbb24d5dd821e4debbd0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bretzrv.com",
-                "www.bretzrv.com"
-            ]
-        },
-        {
             "rule": "700dealer\\.com\\/Areas\\/QuickQualify\\/Content\\/scripts\\/angularjs-dropdown-multiselect\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -253,50 +238,6 @@
                 "b8e14771718faa027fff2a551792dcf259c51f9182e55783ae486e810c8645a0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bretzrv.com",
-                "www.bretzrv.com"
-            ]
-        },
-        {
-            "rule": "700dealer\\.com\\/Areas\\/QuickQualify\\/Content\\/scripts\\/LogPostMessageExecuted\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "43a2b0e5808b27534867a3da2537aec4a5fb51e5e7f8f73f5187a03338653ece"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bretzrv.com",
-                "www.bretzrv.com"
-            ]
-        },
-        {
-            "rule": "700dealer\\.com\\/Common\\/Images\\/logo_loader\\.gif",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2ed4835f81be381f69b2e3b63836f2da08873ea84936fd4b5cd91045ceb1fffd"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -364,8 +305,7 @@
     "types": {
         "Document": 2,
         "Stylesheet": 8,
-        "Script": 18,
-        "Image": 2
+        "Script": 14
     },
     "nameservers": [
         "ns18.domaincontrol.com",

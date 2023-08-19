@@ -12,7 +12,7 @@
     "resources": [
         {
             "rule": "opticksprotection\\.com\\/o\\/a3994e872ca86e84",
-            "cookies": 0.00000682,
+            "cookies": 0,
             "fingerprinting": 3,
             "subdomains": [],
             "apis": {
@@ -22,6 +22,7 @@
                 "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Navigator.prototype.getBattery": 2,
                 "Navigator.prototype.storage": 2,
+                "Navigator.prototype.connection": 2,
                 "window.matchMedia(\"prefers-color-scheme\")": 2,
                 "Navigator.prototype.platform": 2,
                 "window.innerWidth": 2,
@@ -45,7 +46,6 @@
                 "Navigator.prototype.deviceMemory": 2,
                 "HTMLMediaElement.prototype.canPlayType": 2,
                 "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.language": 2,
                 "window.sessionStorage": 2,
                 "window.indexedDB": 2,
@@ -65,24 +65,34 @@
                 "NavigatorUAData.prototype.brands": 2,
                 "NavigatorUAData.prototype.platform": 2,
                 "Navigator.prototype.mimeTypes": 2,
-                "Performance.prototype.memory": 2,
-                "Document.cookie setter": 1
+                "Performance.prototype.memory": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1ff9968945793af42b2b89a5432f49b4f006790755c7cad5486b16663933d6f9"
+                "e5f1f770797fd9a2422905fe845ffbfb2b1b325e9dcaef26913547e7abc6b06e"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "opticksid": {
-                    "ttl": 1800,
-                    "length": 40,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "printful.com",
+                "www.printful.com"
+            ]
+        },
+        {
+            "rule": "opticksprotection\\.com\\/h\\/a3994e872ca86e84",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "printful.com",
@@ -92,23 +102,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000273,
+    "cookies": 0.0000205,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns3.dnsowl.com",
         "ns2.dnsowl.com",
-        "ns1.dnsowl.com"
+        "ns1.dnsowl.com",
+        "ns3.dnsowl.com"
     ]
 }

@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000225,
-    "sites": 33,
+    "prevalence": 0.000211,
+    "sites": 31,
     "subdomains": [
         "a80a9201ee101bbc3",
         "a3230edb2343ce6cc",
         "adcda2e93a61b1641",
+        "accb48bf8b967a6df",
         "ae6b5a65c402225de",
         "afb466b13a97b77c2.dualstack"
     ],
@@ -37,10 +38,43 @@
         {
             "original": "fnbnpl.scheels.com",
             "resolved": "adcda2e93a61b1641.awsglobalaccelerator.com"
+        },
+        {
+            "original": "person.wgu.edu",
+            "resolved": "accb48bf8b967a6df.awsglobalaccelerator.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a80a9201ee101bbc3"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "collector.cdp.cnn.com",
+                    "resolved": "a80a9201ee101bbc3.awsglobalaccelerator.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "cnnespanol.cnn.com",
+                "edition.cnn.com",
+                "money.cnn.com",
+                "us.cnn.com",
+                "www.cnn.com"
+            ]
+        },
         {
             "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
             "cookies": 0.0000409,
@@ -61,35 +95,6 @@
                 "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cnn.com",
-                "cnnespanol.cnn.com",
-                "edition.cnn.com",
-                "money.cnn.com",
-                "us.cnn.com",
-                "www.cnn.com"
-            ]
-        },
-        {
-            "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a80a9201ee101bbc3"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [
-                {
-                    "original": "collector.cdp.cnn.com",
-                    "resolved": "a80a9201ee101bbc3.awsglobalaccelerator.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -128,8 +133,8 @@
             "exampleSites": [
                 "spectrum.net",
                 "mail3.spectrum.net",
-                "www.spectrum.net",
-                "www.spectrumbusiness.net"
+                "www.spectrumbusiness.net",
+                "www.spectrum.net"
             ]
         },
         {
@@ -153,8 +158,8 @@
                 }
             ],
             "responseHashes": [
-                "115d1231558642234162c198a228397aa57b1314655e94365de44a7e38158c1c",
-                "8572657551e8effd903b4ddcd35c0c4f6bccaba3f974867e6a138634b746a747"
+                "8278ba0dc24ef7533b28f974f1ff1628928a57a345a41bdc67b270e83ea5cb58",
+                "c5cafa2ff9e97c3d4161a2f744a2905d0bf3196783a7abeb14e1e7afd4c4d3da"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -163,8 +168,8 @@
                 "spectrum.net",
                 "mail2.spectrum.net",
                 "mail3.spectrum.net",
-                "www.spectrum.net",
-                "www.spectrumbusiness.net"
+                "www.spectrumbusiness.net",
+                "www.spectrum.net"
             ]
         },
         {
@@ -210,8 +215,8 @@
                 }
             ],
             "responseHashes": [
-                "7963e2efd5dd192185deb782e49c70c29be2e63440c0bdd917a8f02744b5f36f",
-                "f2bd38b4e6ba60ddca7aa86948d2548abdb0c0cde4a5c166fd12fc112dbef9d8"
+                "e6fcefda19f4fc7e42963b4cfde8c755547110edbe4d6873262f9d6163f465fc",
+                "4b52b533f86b3b342305345484bf88a3e0984b93754f941c6360e525ba899ae6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -265,8 +270,8 @@
                 }
             ],
             "responseHashes": [
-                "b7bc6fa5a9d35736e709083a920b1d0f489646b9657c7c52de2ec215cc404f39",
-                "25fa7b68d49ba80976ba8aeaf1ccc9e0af4fb536151a2bac450eb26e3fde4ba1"
+                "14efee5969641aff773897f690bce4d3a2165df442f7ac92bbf324ab55d7eeb1",
+                "bacd48cb6b8b1b22c0e4282d87a7aaaf7a642be66156f6719832afa898012fb4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -329,6 +334,56 @@
             "exampleSites": [
                 "scheels.com",
                 "www.scheels.com"
+            ]
+        },
+        {
+            "rule": "awsglobalaccelerator\\.com\\/v2\\/person",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accb48bf8b967a6df"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "person.wgu.edu",
+                    "resolved": "accb48bf8b967a6df.awsglobalaccelerator.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wgu.edu",
+                "student-portal-mfe.wgu.edu"
+            ]
+        },
+        {
+            "rule": "awsglobalaccelerator\\.com\\/v2\\/person",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accb48bf8b967a6df"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "person.wgu.edu",
+                    "resolved": "accb48bf8b967a6df.awsglobalaccelerator.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wgu.edu",
+                "student-portal-mfe.wgu.edu"
             ]
         },
         {
@@ -400,7 +455,7 @@
                 }
             ],
             "responseHashes": [
-                "d1121fc1152d84da9168df04168d5d154f350481254d26626340eedc48f84dfa"
+                "5c5df978ad8187bff3f8e4eb9ec701b3661fed88737f7b5d334807132de333cc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -408,6 +463,33 @@
             "exampleSites": [
                 "flightradar24.com",
                 "www.flightradar24.com"
+            ]
+        },
+        {
+            "rule": "awsglobalaccelerator\\.com\\/api\\/website\\/siteRelation",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "afb466b13a97b77c2.dualstack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.fs.com",
+                    "resolved": "afb466b13a97b77c2.dualstack.awsglobalaccelerator.com"
+                }
+            ],
+            "responseHashes": [
+                "a998407a32c651d18a48be813f18029245e5ed9636b37584eb02de2aa78ecc87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fs.com",
+                "www.fs.com"
             ]
         },
         {
@@ -453,33 +535,6 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fs.com",
-                "www.fs.com"
-            ]
-        },
-        {
-            "rule": "awsglobalaccelerator\\.com\\/api\\/website\\/siteRelation",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "afb466b13a97b77c2.dualstack"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.fs.com",
-                    "resolved": "afb466b13a97b77c2.dualstack.awsglobalaccelerator.com"
-                }
-            ],
-            "responseHashes": [
-                "a998407a32c651d18a48be813f18029245e5ed9636b37584eb02de2aa78ecc87"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -569,7 +624,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000136,
+    "cookies": 0.00013,
     "topInitiators": [
         {
             "domain": "yottaa.com",
@@ -593,15 +648,15 @@
         }
     ],
     "types": {
-        "XHR": 27,
-        "Preflight": 24,
+        "Preflight": 26,
+        "XHR": 29,
         "Script": 2,
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns-1484.awsdns-57.org",
-        "ns-609.awsdns-12.net",
         "ns-409.awsdns-51.com",
+        "ns-609.awsdns-12.net",
+        "ns-1484.awsdns-57.org",
         "ns-1949.awsdns-51.co.uk"
     ]
 }

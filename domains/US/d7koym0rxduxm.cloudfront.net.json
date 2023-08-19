@@ -40,12 +40,17 @@
         },
         {
             "rule": "d7koym0rxduxm\\.cloudfront\\.net\\/sp\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Document.cookie getter": 3,
-                "window.localStorage": 3
+                "window.localStorage": 3,
+                "Document.cookie setter": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -54,7 +59,14 @@
                 "6f2293e478b0c9962e8f5a595e668e1676e4c8bd8a208d623bac4802a5797439"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_sp_tracking": {
+                    "ttl": 31536000,
+                    "length": 73,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
@@ -67,7 +79,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
@@ -79,8 +91,8 @@
     },
     "nameservers": [
         "ns-826.awsdns-39.net",
+        "ns-142.awsdns-17.com",
         "ns-1378.awsdns-44.org",
-        "ns-1793.awsdns-32.co.uk",
-        "ns-142.awsdns-17.com"
+        "ns-1793.awsdns-32.co.uk"
     ]
 }

@@ -20,7 +20,7 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 5
             },
             "sites": 11,
             "prevalence": 0.000075,
@@ -48,11 +48,14 @@
         {
             "rule": "rocket-push\\.com\\/sitepush\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 1,
+                "window.indexedDB": 1
+            },
             "sites": 5,
             "prevalence": 0.0000341,
             "cnames": [],
@@ -76,8 +79,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "49299acacc37ebf7cac32b23f72533bb9b9d264fbc4ccdbb76bdfd9b661e9441"
@@ -89,6 +92,7 @@
                 "docoic.com",
                 "manetatsu.com",
                 "matome.response.jp",
+                "response.jp",
                 "spicomi.net"
             ]
         },
@@ -98,8 +102,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -109,6 +113,7 @@
                 "docoic.com",
                 "manetatsu.com",
                 "matome.response.jp",
+                "response.jp",
                 "spicomi.net"
             ]
         },
@@ -130,10 +135,48 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "docoic.com",
                 "manetatsu.com",
                 "matome.response.jp",
+                "response.jp",
                 "spicomi.net"
+            ]
+        },
+        {
+            "rule": "rocket-push\\.com\\/movie\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "response.jp",
+                "www.gamespark.jp"
+            ]
+        },
+        {
+            "rule": "rocket-push\\.com\\/api\\/v1\\/movie_message_info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "response.jp",
+                "www.gamespark.jp"
             ]
         }
     ],
@@ -152,14 +195,15 @@
     ],
     "types": {
         "Script": 16,
-        "Fetch": 4,
-        "Preflight": 4,
-        "Other": 4
+        "Fetch": 7,
+        "Preflight": 5,
+        "Other": 4,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns-929.awsdns-52.net",
         "ns-1337.awsdns-39.org",
         "ns-1943.awsdns-50.co.uk",
-        "ns-929.awsdns-52.net",
         "ns-230.awsdns-28.com"
     ]
 }

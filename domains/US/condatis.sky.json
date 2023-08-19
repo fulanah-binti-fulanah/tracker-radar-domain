@@ -4,14 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "condatis\\.sky\\/weather\\/GetWeather\\/51782",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "14afb1b919bd2668243ba57b36745528a79f6c3bb37a355c672f784d5cb06ca0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sky.com",
+                "news.sky.com"
+            ]
+        },
         {
             "rule": "condatis\\.sky\\/weather\\/GetWeather\\/51782",
             "cookies": 0,
@@ -31,28 +53,6 @@
                 "sky.com",
                 "news.sky.com"
             ]
-        },
-        {
-            "rule": "condatis\\.sky\\/weather\\/GetWeather\\/51782",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "aa2541898774c483d1823687e603bc0fcff672aa9b8b7d20dfd6608c1c09f665"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sky.com",
-                "news.sky.com"
-            ]
         }
     ],
     "categories": [],
@@ -60,17 +60,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.6
+            "domain": "first party",
+            "prevalence": 0.5
         },
         {
-            "domain": "first party",
-            "prevalence": 0.4
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1.isp.sky.com",

@@ -13,7 +13,6 @@
         "cdn",
         "netapp-cloud-account",
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "cbk12-live",
         "ngs-sso-cd-jld6gzmeeiiulno0.edge.tenants",
         "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
         "acloudguru",
@@ -21,6 +20,7 @@
         "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
         "perch-homes-cd-1pcefojcihexf4hp.edge.tenants",
         "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants",
+        "toast-pos-cd-aw6nznlyniq8jo1s.edge.toasttab",
         "ransomed-heart-cd-uajd7keputygpx1q.edge.tenants",
         "wildearth-cd-pob2hj6igfl6yisn.edge.tenants.us",
         "withjoy",
@@ -115,6 +115,10 @@
             "resolved": "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us.auth0.com"
         },
         {
+            "original": "auth.toasttab.com",
+            "resolved": "toast-pos-cd-aw6nznlyniq8jo1s.edge.toasttab.auth0.com"
+        },
+        {
             "original": "auth.visionexpress.com",
             "resolved": "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu.auth0.com"
         },
@@ -202,6 +206,28 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/ulp\\/react-components\\/1\\.78\\.11\\/css\\/main\\.cdn\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "543aa11abb5f72a04a69b2257ce60a31af701d36af9eccae8db81788ae211927"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webpt.com",
+                "my.remarkable.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.22\\/auth0-spa-js\\.production\\.js",
             "cookies": 0.00000682,
             "fingerprinting": 1,
@@ -254,19 +280,19 @@
         },
         {
             "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000205,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Date.prototype.getTime": 8,
-                "Document.cookie setter": 2,
+                "Document.cookie setter": 3,
                 "Navigator.prototype.appName": 4,
                 "Navigator.prototype.userAgent": 4
             },
             "sites": 8,
-            "prevalence": 0.0000546,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
@@ -292,7 +318,6 @@
             "subdomains": [
                 "netapp-cloud-account",
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-                "cbk12-live",
                 "ngs-sso-cd-jld6gzmeeiiulno0.edge.tenants",
                 "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
                 "acloudguru",
@@ -300,6 +325,7 @@
                 "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
                 "perch-homes-cd-1pcefojcihexf4hp.edge.tenants",
                 "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants",
+                "toast-pos-cd-aw6nznlyniq8jo1s.edge.toasttab",
                 "ransomed-heart-cd-uajd7keputygpx1q.edge.tenants",
                 "wildearth-cd-pob2hj6igfl6yisn.edge.tenants.us",
                 "withjoy",
@@ -360,6 +386,10 @@
                 {
                     "original": "account.sonicdrivein.com",
                     "resolved": "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "auth.toasttab.com",
+                    "resolved": "toast-pos-cd-aw6nznlyniq8jo1s.edge.toasttab.auth0.com"
                 },
                 {
                     "original": "auth.wildatheart.org",
@@ -467,68 +497,67 @@
                 }
             ],
             "responseHashes": [
-                "de18edb88dd9e64d99c0021f36b9d6975a84c60613cca7a385e658a918b891fc",
-                "3fff9383c7892efd642ec4a1c3231023924bd0be90bdede7e30ed279645bb818",
-                "7998b8413f452eede7f49c7083862add71326a6b8f6257b2949776de4514f0dd",
-                "e754765b18d70cbc4485ae108201ad9181200a99525bc161050ffd0fcba46f0b",
-                "bf536fecd973de461fbf9f870dc3929ea43f7c6c7484ddc221746f1e8005fbd8",
+                "8b4601d09a0fd75c406739607581cdc808d17fd5f17e0775ac43e8ebbacd7917",
+                "88481dfbdeb2766a4927c7e89d992f9a27908a6ef8449c8f74e280d1dcb894c6",
+                "f48b19f066ef2c3a6f4fbee7b97cdb1fdf3188840683a95b527c16bb4aa3e72a",
+                "c75ed1dcb87397402b866303ace24d7d112dbe8599aa328f03f1474d38a49540",
                 "121cba02a7e5b6d6c4de28ba7dbb6751f7fd359583a51576f928c281e6a1c4bd",
-                "fb233ef749e2b9c0edb36707276eaa71e32ea139c0cbafea482fb129315eafec",
-                "7be38948ed16b36c44ae859480665ebaf94db28f23f68b942f3a9bbba157c8b0",
-                "02a95d0ab46f36d4051ea3161b312a3b7767967aedf1764dcbc2cb8d2339416e",
-                "a5f02e3760a5ca2cb8712450fc4bf5c14754f7a7e05666cbcc102a68e17e792b",
-                "dfb8ee1cd770f2ed2f66364c91661397dd426f7e127b8ce61fb270e2be94646a",
-                "bd87dbc4dd561362fc33500b5eff3bedb37b46c14a73b29253340f323f717bb7",
-                "3bc6918d46e7720466d6cc0f7ffed8c2217e8e08521223b0a88a406563624cce",
-                "12e119bf8a962fccb8db48f73806735e008d9151977591056d289a9fa9dbcc41",
-                "65541c01a57920d4c3528a7a8c963efe50fc513f6912f9db9adaa89853ec892f",
-                "d70041082f460c81a5520d0498bce80387b943f6e7719bee6b28a99049753399",
-                "c854cfdd7fe3976021b6a83235a6e2366401fab6375e873dd522cfdeb379e6d3",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "a809d280da15ad802063f07e01454f1806d6a91c94744aa7700e2441eb14e1c1",
-                "a7deaed4f168e86ff90ef4031b97098c1c2833de32ec29dbd7964673e75db6eb",
-                "0b61ec27d4f780bbf6c4a47db13a8a62aec4a46351e14d6035df7a403cf70e0d",
-                "5428dbc773551d38678449a0ab2d825e34f44606bad17ac5415a1f678e8eb433",
-                "ce8504af38feb800fa626a665e9a3cfa840232dbaacb3499c2b17011d6ae0f3b",
-                "e03d3c6d6bfb3c2497528a7087c69c3f65610846ac26a41beb8336f8077ee267",
-                "75889457ad752ed6b582b56f3f57fd0e09bd3fb443ae383758fdb4ab73794774",
-                "6e2028162a2e9b7b0cf9069123b85eb1cc9747f94c03a86efa8415cb1223050b",
-                "891e8ef40321993f6543cf48e43e931f9bbe96ccc6296277483a26f0dafc0eb3",
-                "eb14a96b00cde02d2313afcf8a07e0424815c21261587cd823cbd95ab4cbdfe9",
-                "905b08f61a93e018b3831b42ca4446d916ad8d88d12c671ec66a5b75885bbd72",
-                "72bd8914f5f1c51a30fc02647cf405ead6cde0836249c4efd1db7ad25b6f181a",
-                "ce9437ed816f0651c8b9d509d817e1f970c19861149466d021ebdee9a73e3578",
+                "f270597ba1c4d6ac41e65139fd5837de024d4a11d650d40a368417fb1998e3d3",
+                "631891dd538b375354fc053d53896d3e58dea22ec0a3ca9cf1dd99d25a238f54",
+                "e0593a8e43aa0998a1833ee4a513f5af57030f42167201d7a1a2813441a29b82",
+                "063500ddf4a25c673bf8f6950148d4d72f43ad29b0d4eaf7189e43fb2959b0a1",
+                "33d4583bfd23ceea4902c85bdd6d611a24648e9636ca1e9ae8978bef692e270e",
+                "7bed9f645ea2d7d329bcc593b368a6560552b938437779dab3f15770bc741983",
+                "a96ed6aee83b4779ae2988ddce7f9caec3578f15a6d3c05c3c98c15c05dac1cc",
+                "16807d7c61d87a8aff12073cd999fd84800d8e07c67d2c95a9004d2738340f7f",
+                "b80e4e7dd15716e2bee395b96ed528a645b55ce98530ce2c8b67e975eb3e38f7",
+                "8d4266d9c3a3d0e21478ec830db1b50078a2ea4aae283599eedc1be7363a10b3",
+                "7d1ab7896967adb46853db2c0172830a16d7bc3742545c2c1dc619bda5356e59",
+                "3ccc1a98713ec9064cc7a701110d8b16182e04c3cf19ec8b87ab1f2282f291b2",
+                "da429d5ef05ff69ade13cc2ade07b2a2d2c3a258e58397d624a7b119db10e6c6",
+                "33eb6abc1a6eee10bfd6898b8e9175dfd5611685bb7e9b694331a2c0a54fca54",
+                "561fe9773831204c6b3a317620c976cb6a0928ab112267458e1e0c3aa683bc2c",
+                "a85da040d669ad5688f841b41d36ea94dfbbad6ab3f110e7cbb65b6d147cf6ee",
+                "9da6219d8741f048af2c166d4096e0071d1db8e688b0428c348f7dec0ec7159a",
+                "a41398b87e4ecfbaa5aa42ad3bdf7e9f8ac92c43ce9b49b8d84c61940d28aac0",
+                "e962fd2a30457dfa4786a5ea417743786110b0e1c377c886453dca3d9372aa43",
+                "9fff75013e9ad17439755a7d4b01338d0743c50c5308ac159b71764ef6d8add2",
+                "7c58ed6411a7b2571ede1823f102c45dccdbe82ef78183ca049ad825af0390e9",
+                "d065dd4e7a19c7ab9457fc859031fd4bf2c3e715054216664dceb7051052c1da",
+                "693658b1a9abf767d6871c90b6bc65edb35fc7d7f7954b9aa765f52e0414ea7b",
+                "5f8c5fc24b4b9e2cbff2c7c3f0b74396ca7d4997a099e7b87b05b7e37b80ab74",
+                "42776b18de3f2eebeee83927a6ad00a681193e06e1809471c3ca58bbdac22022",
                 "86f644721b43d9ded6c4ddbbf582fee469f5746e7a30241af147132b73ab96ba",
-                "8d9d209cda8dacdb6bc2dc4f44fa2634849251fff01c21c1ab2e2d6591bf399d"
+                "7feff013b7d951597ee98de52650c34cce9b30622764196e768a4a4fc1687e3c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_hjTLDTest": 0.00000682212004202426,
-                "IR_gbd": 0.00000682212004202426,
-                "session_page_site_origin": 0.00000682212004202426
+                "_hjTLDTest": 0.000006817887409407321,
+                "IR_gbd": 0.000006817887409407321,
+                "session_page_site_origin": 0.000006817887409407321
             },
             "exampleSites": [
-                "docs.arduino.cc",
-                "e.givesmart.com",
-                "www.mindvalley.com",
-                "www.crown.com",
-                "wildatheart.org",
-                "www.acc.com",
-                "www.chapters.indigo.ca",
-                "learn.acloud.guru",
-                "orchard.com",
-                "www.subaru.jp",
-                "homes.co.nz",
-                "www.finder.com",
-                "www.nationalgeographic.org",
-                "www.native-instruments.com",
-                "wildearth.com",
-                "education.nationalgeographic.org",
-                "www.sothebys.com",
-                "nye.naf.no",
+                "www.chronicle.com",
+                "payroll.toasttab.com",
+                "www.airmiles.ca",
+                "www.designsforhealth.com",
                 "www.reed.co.uk",
-                "www.beautybay.com"
+                "www.cozycozy.com",
+                "www.native-instruments.com",
+                "www.visionexpress.com",
+                "login.patientfusion.com",
+                "www.iberostar.com",
+                "www.automationdirect.com",
+                "www.nationalgeographic.org",
+                "homes.co.nz",
+                "www.mindvalley.com",
+                "www.sothebys.com",
+                "www.ireland.com",
+                "www.beautybay.com",
+                "orchard.com",
+                "netapp.com",
+                "education.nationalgeographic.org"
             ]
         },
         {
@@ -557,35 +586,6 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.18\\/auth0\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [
-                "c01cdbf532e04e0405e5a197ca95d698bc179640c8e1945487a5db0a05923caa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "givesmart.com",
-                "www.chapters.indigo.ca",
-                "www.inquirer.com",
-                "www.ypulse.com"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.9\\/auth0-spa-js\\.production\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -597,7 +597,7 @@
                 "window.localStorage": 6
             },
             "sites": 7,
-            "prevalence": 0.0000478,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "7e170fb31d1c2cd73263298aa862807ab608864d9aac575b1f286a4d39502abb"
@@ -623,9 +623,10 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 1,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -763,28 +764,6 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/ulp\\/react-components\\/1\\.78\\.6\\/css\\/main\\.cdn\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8a8aa1287d1669c8870db32bba2d6ff262a253901b62b39351bfe5894c98c0b4"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "remarkable.com",
-                "tome.app"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
             "cookies": 0.00000682,
             "fingerprinting": 1,
@@ -792,15 +771,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 55,
-                "window.sessionStorage": 35,
+                "Navigator.prototype.userAgent": 56,
+                "window.sessionStorage": 38,
+                "window.localStorage": 39,
                 "Document.cookie getter": 1,
-                "window.localStorage": 36,
                 "URL.createObjectURL": 1,
                 "Document.cookie setter": 1
             },
-            "sites": 55,
-            "prevalence": 0.000375,
+            "sites": 56,
+            "prevalence": 0.000382,
             "cnames": [],
             "responseHashes": [
                 "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
@@ -809,26 +788,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.morningjournal.com",
-                "www.pasadenastarnews.com",
-                "www.lowellsun.com",
-                "www.thereporteronline.com",
-                "www.dailylocal.com",
-                "www.redlandsdailyfacts.com",
-                "www.sgvtribune.com",
-                "www.eastbaytimes.com",
+                "www.ocregister.com",
+                "www.chicoer.com",
                 "www.clarin.com",
-                "www.pilotonline.com",
-                "www.orlandosentinel.com",
-                "www.dailybulletin.com",
-                "www.pressandguide.com",
-                "www.eptrail.com",
-                "www.courant.com",
-                "www.dailybreeze.com",
-                "www.bostonherald.com",
+                "webapp.simplisafe.com",
                 "www.reporterherald.com",
-                "www.montereyherald.com",
-                "www.theoaklandpress.com"
+                "www.pilotonline.com",
+                "www.pottsmerc.com",
+                "www.timescall.com",
+                "www.saratogian.com",
+                "www.dailyfreeman.com",
+                "www.thereporter.com",
+                "www.mercurynews.com",
+                "www.dailypress.com",
+                "www.dailynews.com",
+                "www.greeleytribune.com",
+                "www.marinij.com",
+                "www.pressenterprise.com",
+                "www.dailybulletin.com",
+                "www.sbsun.com",
+                "www.bostonherald.com"
             ]
         },
         {
@@ -883,15 +862,16 @@
         },
         {
             "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -900,7 +880,14 @@
                 "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "com.auth0.auth.Pa8aaRlE.~p64Dt8t.KJz80O06YsUPER": {
+                    "ttl": 1807,
+                    "length": 105,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wandb.ai",
@@ -971,7 +958,7 @@
                 }
             ],
             "responseHashes": [
-                "8c1a1c75f6739da5edc38275b0aafd9171588a000c4aa64e7b4c3206f686c015"
+                "7481a99dfe2bb617e238c04586e7780b69bd5d0f7f0d738b92d84757f15af13b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -991,7 +978,9 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -1008,16 +997,41 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.12\\/auth0-spa-js\\.production\\.js",
-            "cookies": 0,
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.18\\/auth0\\.min\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.userAgent": 1
             },
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "c01cdbf532e04e0405e5a197ca95d698bc179640c8e1945487a5db0a05923caa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indigo.ca",
+                "www.chapters.indigo.ca",
+                "www.inquirer.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.12\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -1138,54 +1152,54 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000437,
+    "cookies": 0.000457,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8831168831168831
+            "prevalence": 0.8859649122807017
         },
         {
             "domain": "auth0.com",
-            "prevalence": 0.03463203463203463
+            "prevalence": 0.03508771929824561
         },
         {
             "domain": "dvh1deh6tagwk.cloudfront.net",
-            "prevalence": 0.017316017316017316
+            "prevalence": 0.017543859649122806
         },
         {
             "domain": "lr-ingest.com",
-            "prevalence": 0.008658008658008658
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "ddrrprxi1bder.cloudfront.net",
-            "prevalence": 0.008658008658008658
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "remine.com",
-            "prevalence": 0.008658008658008658
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.008658008658008658
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "grandvision.io",
-            "prevalence": 0.008658008658008658
+            "prevalence": 0.008771929824561403
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.004329004329004329
+            "prevalence": 0.0043859649122807015
         },
         {
             "domain": "screencast.com",
-            "prevalence": 0.004329004329004329
+            "prevalence": 0.0043859649122807015
         }
     ],
     "types": {
+        "Stylesheet": 5,
         "Script": 108,
         "Document": 40,
         "Image": 5,
-        "Stylesheet": 5,
         "Preflight": 3,
         "XHR": 6
     },

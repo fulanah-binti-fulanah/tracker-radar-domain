@@ -72,11 +72,12 @@
         },
         {
             "rule": "embed\\.icu\\/js\\/jquery\\.cookie\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -85,7 +86,26 @@
                 "75aef2e95ea7f3a70999396fba0c2ab866f4ff06313cf1b07780d800a5fc1ebc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "file_id": {
+                    "ttl": 36006,
+                    "length": 5,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "aff": {
+                    "ttl": 36006,
+                    "length": 1,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                },
+                "ref_url": {
+                    "ttl": 36006,
+                    "length": 103,
+                    "prevalence": 0.000006817887409407321,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tamilyogi.band",
@@ -115,11 +135,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "tamilyogi.band",
+            "prevalence": 0.5
         }
     ],
     "types": {
@@ -128,7 +152,7 @@
         "Image": 2
     },
     "nameservers": [
-        "sonny.ns.cloudflare.com",
-        "luciane.ns.cloudflare.com"
+        "luciane.ns.cloudflare.com",
+        "sonny.ns.cloudflare.com"
     ]
 }

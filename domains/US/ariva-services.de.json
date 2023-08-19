@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000205,
+    "sites": 3,
     "subdomains": [
-        "bfw-api-prod"
+        "bfw-api-prod",
+        "prodo-api"
     ],
     "cnames": [
         {
@@ -59,7 +60,7 @@
                 }
             ],
             "responseHashes": [
-                "da75ca13e5dade8793e723fd042ab4327043b7728c9cc7d20c2b9843cd040bb8"
+                "ec065ba9fea61ce0b504c94342e143e694301e35b2ae9fcf63959f2738b9bb04"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -67,6 +68,28 @@
             "exampleSites": [
                 "boerse-frankfurt.de",
                 "www.boerse-frankfurt.de"
+            ]
+        },
+        {
+            "rule": "ariva-services\\.de\\/clientjs\\/ProdoClient\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodo-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b9ade11bc56921663461aee136c867b048311f5e3b52f0dd7feeb33e3e4cd06"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faz.net",
+                "www.faz.net"
             ]
         }
     ],
@@ -81,7 +104,8 @@
     ],
     "types": {
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
         "ens1.ariva.de",

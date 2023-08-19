@@ -4,14 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
         "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "barnebys\\.sh\\/js\\/btag4\\.4\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b538a9164b5019653e82a37f18ff9256c3f156cf1d2b5cc5704609cbc715aff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barnebys.com",
+                "www.barnebys.com"
+            ]
+        },
         {
             "rule": "barnebys\\.sh\\/js\\/prebid3\\.19\\.0\\.js",
             "cookies": 0,
@@ -20,12 +42,15 @@
                 "static"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
                 "Date.prototype.getTime": 1,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "7c56d510e7f20c19948b29bf77cdc10696cd41c151a37d96dddfe19498fb05ec"
@@ -35,6 +60,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "barnebys.com",
+                "www.barnebys.com",
                 "www.collectorsweekly.com"
             ]
         },
@@ -46,8 +72,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "e6a8d9c4000a89009fdc8b61c585644d60f160e7026ceb1d1ad485687bb55a17"
@@ -57,6 +83,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "barnebys.com",
+                "www.barnebys.com",
                 "www.valuemystuff.com"
             ]
         },
@@ -95,13 +122,13 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Font": 2
+        "Script": 7,
+        "Font": 3
     },
     "nameservers": [
-        "ns1-09.azure-dns.com",
         "ns3-09.azure-dns.org",
+        "ns2-09.azure-dns.net",
         "ns4-09.azure-dns.info",
-        "ns2-09.azure-dns.net"
+        "ns1-09.azure-dns.com"
     ]
 }

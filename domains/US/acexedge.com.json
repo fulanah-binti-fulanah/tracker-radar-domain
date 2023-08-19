@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000205,
+    "sites": 3,
     "subdomains": [
         "s"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "acexedge\\.com\\/2\\/tm75\\/analytics\\.js",
@@ -23,22 +23,27 @@
                 "s"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "84bbbe4e370e8e3cc63913781d1cd839f664f899c51f17566cda2c1836099ce3"
+                "e78ca9d3d74f2307ae37594cd541f22b24a6b380b6849b320c118e4ad99a172f",
+                "0012d88e5c0838fb547c73a03ea0fed6eee320d1e97149498e3cc7fd586d8da0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000020453662228221962,
+                "_li_dcdm_c": 0.000006817887409407321
+            },
             "exampleSites": [
-                "happymag.tv",
-                "news.livedoor.com"
+                "netdoktor.de",
+                "www.tellows.ch",
+                "www.thebugsquad.com"
             ]
         },
         {
-            "rule": "acexedge\\.com\\/2\\/2\\.100\\.0\\/main\\.js",
+            "rule": "acexedge\\.com\\/2\\/2\\.101\\.0\\/tm75\\/AjF0m6wCBNqw1Tso\\/postback",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -49,14 +54,87 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "dc0317e78eb246ebb95145e23ecb35d6d93c2428d8f5324fddc48a987ebe0c34"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000027271549637629285
+            },
+            "exampleSites": [
+                "netdoktor.de",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "acexedge\\.com\\/2\\/2\\.101\\.0\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Performance.prototype.memory": 1,
+                "window.devicePixelRatio": 1,
+                "window.name": 1,
+                "console.memory": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.appCodeName": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.onLine": 1,
+                "Navigator.prototype.webdriver": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.plugins": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Screen.prototype.availLeft": 1,
+                "Screen.prototype.availTop": 1,
+                "Screen.prototype.orientation": 1,
+                "window.screenX": 1,
+                "window.screenY": 1,
+                "window.screenLeft": 1,
+                "window.screenTop": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "BarProp.prototype.visible": 1,
+                "window.outerHeight": 1,
+                "window.outerWidth": 1,
+                "Navigator.prototype.connection": 1,
+                "Date.prototype.getTime": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.permissions": 1,
+                "speechSynthesis.__proto__.getVoices": 1,
+                "OfflineAudioContext.prototype.constructor": 1,
+                "AudioBuffer.prototype.getChannelData": 1,
+                "Navigator.prototype.getBattery": 1,
+                "URL.createObjectURL": 1,
+                "NavigatorUAData.prototype.brands": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Notification.permission": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "happymag.tv",
-                "news.livedoor.com"
+                "netdoktor.de",
+                "www.thebugsquad.com"
             ]
         }
     ],
@@ -66,11 +144,16 @@
     "topInitiators": [
         {
             "domain": "tubemogul.com",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "ns1.acexedge.com",

@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000457,
-    "sites": 67,
+    "prevalence": 0.000443,
+    "sites": 65,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "assets"
     ],
     "cnames": [
+        {
+            "original": "assets.espn.com",
+            "resolved": "assets.espn.com.edgesuite.net"
+        },
         {
             "original": "cdn.espn.com",
             "resolved": "cdn.espn.com.edgesuite.net"
@@ -24,7 +29,7 @@
     "resources": [
         {
             "rule": "espn\\.com\\.edgesuite\\.net\\/onetrust\\/otCCPAiab\\.js",
-            "cookies": 0.000259,
+            "cookies": 0.000266,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
@@ -44,9 +49,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "usprivacy": {
-                    "ttl": 31536006,
+                    "ttl": 31536005,
                     "length": 4,
-                    "prevalence": 0.00020466360126072779,
+                    "prevalence": 0.00020453662228221963,
                     "uniqueness": 0.03333333333333333
                 }
             },
@@ -55,23 +60,51 @@
                 "abcnews.go.com",
                 "espn.com",
                 "www.espn.com",
-                "www.freeform.com",
-                "abc7chicago.com",
-                "www.goodmorningamerica.com",
-                "www.espncricinfo.com",
-                "www.starwars.com",
-                "insider.espn.com",
-                "abc7ny.com",
+                "espndeportes.espn.com",
+                "movies.disney.com",
                 "africa.espn.com",
-                "fivethirtyeight.com",
-                "www.espn.in",
-                "abc13.com",
-                "projects.fivethirtyeight.com",
-                "abc.com",
-                "www.espn.co.uk",
+                "fxnow.fxnetworks.com",
+                "www.disney.com",
+                "abc7.com",
                 "news.disney.com",
-                "www.espn.com.br",
-                "abc.go.com"
+                "www.espn.co.uk",
+                "m.espn.com",
+                "www.nationalgeographic.com",
+                "global.espn.com",
+                "plus.espn.com",
+                "fantasy.espn.com",
+                "ondisneyplus.disney.com",
+                "www.espncricinfo.com",
+                "abc7chicago.com",
+                "www.marvel.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\.edgesuite\\.net\\/i\\/espnplus\\/espnPlusAllWhite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [
+                {
+                    "original": "assets.espn.com",
+                    "resolved": "assets.espn.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "bc6531f16b30b277b6693464193fcad8e174fc59c4de05f75427620838394a88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com",
+                "m.espn.com",
+                "www.espn.com"
             ]
         }
     ],
@@ -79,11 +112,15 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.00045,
+    "cookies": 0.000443,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9545454545454546
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "espncdn.com",
+            "prevalence": 0.13636363636363635
         },
         {
             "domain": "espn.net",
@@ -91,7 +128,8 @@
         }
     ],
     "types": {
-        "Script": 39
+        "Script": 39,
+        "Image": 3
     },
     "nameservers": []
 }

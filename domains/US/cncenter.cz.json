@@ -12,10 +12,14 @@
     "subdomains": [
         "w",
         "w-cached",
-        "img",
-        "gtm"
+        "gtm",
+        "img"
     ],
     "cnames": [
+        {
+            "original": "analytics.ahaonline.cz",
+            "resolved": "gtm.cncenter.cz"
+        },
         {
             "original": "analytics.recepty.cz",
             "resolved": "gtm.cncenter.cz"
@@ -62,7 +66,7 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "710a993c7d7193ff8c08f71d1cf9d7a54ee81d4a7247d32b73caf46b58ef0c3d"
+                "7ad1ac26b477aa4816707b23f85fcf9cbd8e4b5cd20d2e0198dbf270bd6f456e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,7 +78,7 @@
             ]
         },
         {
-            "rule": "cncenter\\.cz\\/js\\/cnc-ads-controller\\.MtT9Av0AjK\\.min\\.js",
+            "rule": "cncenter\\.cz\\/js\\/cnc-ads-controller\\.LZXsF61Con\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -89,13 +93,50 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "1b2aedbbcba717947e9578d77cba4302d919071b1cb5b8e31667e8e76a10e7e4"
+                "62c3028d152ed3f4b0886d42ce69491235ff8b3e250839af3977f4212b5444f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ahaonline.cz",
+                "www.recepty.cz",
+                "www.zive.cz"
+            ]
+        },
+        {
+            "rule": "cncenter\\.cz\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [
+                {
+                    "original": "analytics.ahaonline.cz",
+                    "resolved": "gtm.cncenter.cz"
+                },
+                {
+                    "original": "analytics.recepty.cz",
+                    "resolved": "gtm.cncenter.cz"
+                },
+                {
+                    "original": "analytics.zive.cz",
+                    "resolved": "gtm.cncenter.cz"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaonline.cz",
+                "www.ahaonline.cz",
                 "www.recepty.cz",
                 "www.zive.cz"
             ]
@@ -124,38 +165,6 @@
                 "recepty.cz",
                 "www.zive.cz"
             ]
-        },
-        {
-            "rule": "cncenter\\.cz\\/g\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gtm"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [
-                {
-                    "original": "analytics.recepty.cz",
-                    "resolved": "gtm.cncenter.cz"
-                },
-                {
-                    "original": "analytics.zive.cz",
-                    "resolved": "gtm.cncenter.cz"
-                }
-            ],
-            "responseHashes": [
-                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "recepty.cz",
-                "www.recepty.cz",
-                "www.zive.cz"
-            ]
         }
     ],
     "categories": [],
@@ -164,25 +173,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.78125
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.125
+            "prevalence": 0.2
         },
         {
             "domain": "1884403144.rsc.cdn77.org",
-            "prevalence": 0.09375
+            "prevalence": 0.08571428571428572
         }
     ],
     "types": {
         "Stylesheet": 3,
         "Script": 8,
-        "XHR": 3
+        "XHR": 4
     },
     "nameservers": [
         "ns1.webglobe.cz",
-        "ns3.webglobe.com",
-        "ns2.webglobe.cz"
+        "ns2.webglobe.cz",
+        "ns3.webglobe.com"
     ]
 }

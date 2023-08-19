@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000218,
-    "sites": 32,
+    "prevalence": 0.000232,
+    "sites": 34,
     "subdomains": [
         "shared",
         "auth-featureflags"
@@ -21,12 +21,12 @@
                 "shared"
             ],
             "apis": {
-                "window.sessionStorage": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Navigator.prototype.appName": 7
+                "window.sessionStorage": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.appName": 9
             },
-            "sites": 7,
-            "prevalence": 0.0000478,
+            "sites": 9,
+            "prevalence": 0.0000614,
             "cnames": [],
             "responseHashes": [
                 "5c808610417e4ac333d206a3a0b89b0eb0e0248c8a05801f7e6c10f22b0f9103"
@@ -37,6 +37,8 @@
             "exampleSites": [
                 "vrt.be",
                 "njam.tv",
+                "radio2.be",
+                "radio1.be",
                 "sporza.be",
                 "www.gva.be",
                 "www.hbvl.be",
@@ -67,7 +69,7 @@
                 "Screen.prototype.height": 1
             },
             "sites": 13,
-            "prevalence": 0.0000887,
+            "prevalence": 0.0000886,
             "cnames": [],
             "responseHashes": [
                 "103b42400151679e3c60d769c6e03ff701e289a525708b942a7084117ee28247"
@@ -154,8 +156,9 @@
                 "window.innerHeight": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2
+                "Document.cookie setter": 1,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
             "sites": 6,
             "prevalence": 0.0000409,
@@ -263,7 +266,6 @@
             "prevalence": 0.000075,
             "cnames": [],
             "responseHashes": [
-                "82a04088b862e32b418e34f63120d57ece22e7a3b6ad5dd3d32209cc73fc928e",
                 "b21f70251785ff67971f6e98c3fec5049a813810f774311db4e68f212fe18070"
             ],
             "type": "Script",
@@ -330,11 +332,14 @@
         {
             "rule": "mediahuis\\.be\\/ka-ching\\/autovisie\\/ka-ching\\.umd\\.js",
             "cookies": 0.00000682,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "shared"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -696,13 +701,11 @@
         {
             "rule": "mediahuis\\.be\\/ka-ching\\/telegraaf\\/ka-ching\\.umd\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "shared"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -720,27 +723,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000218,
+    "cookies": 0.000232,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9022556390977443
+            "prevalence": 0.8759124087591241
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.045112781954887216
+            "prevalence": 0.08759124087591241
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.03759398496240601
-        },
-        {
-            "domain": "gigya.com",
-            "prevalence": 0.015037593984962405
+            "prevalence": 0.0364963503649635
         }
     ],
     "types": {
-        "Script": 67,
+        "Script": 69,
         "Image": 16,
         "Preflight": 10,
         "Fetch": 10,
@@ -748,7 +747,7 @@
         "Font": 16
     },
     "nameservers": [
-        "elliot.ns.cloudflare.com",
-        "erin.ns.cloudflare.com"
+        "erin.ns.cloudflare.com",
+        "elliot.ns.cloudflare.com"
     ]
 }

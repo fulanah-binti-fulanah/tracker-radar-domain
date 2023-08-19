@@ -10,14 +10,66 @@
     "prevalence": 0.000102,
     "sites": 15,
     "subdomains": [
-        "plugin",
         "p3",
-        "api",
-        "static"
+        "static",
+        "plugin",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "3playmedia\\.com\\/p3sdk\\.1\\.10\\.7\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p3"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "1167cfa18b73144fc7da9d4fce934c6122181b3738b332e9d6f7e1b89b3f0119"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indeed.com",
+                "es.indeed.com",
+                "hk.indeed.com",
+                "ie.indeed.com",
+                "mx.indeed.com",
+                "sg.indeed.com",
+                "www.cruiseamerica.com",
+                "www.scholarshare529.com"
+            ]
+        },
+        {
+            "rule": "3playmedia\\.com\\/p\\/projects\\/42961\\/files\\/8353956\\/transcript",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5704791f465e39dbd8e8a78a864d6c39432a0903ae71b4be0ea4352d7c99cdd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indeed.com",
+                "ca.indeed.com"
+            ]
+        },
         {
             "rule": "3playmedia\\.com\\/show",
             "cookies": 0,
@@ -89,36 +141,6 @@
             ]
         },
         {
-            "rule": "3playmedia\\.com\\/p3sdk\\.1\\.10\\.7\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "p3"
-            ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 8,
-            "prevalence": 0.0000546,
-            "cnames": [],
-            "responseHashes": [
-                "1167cfa18b73144fc7da9d4fce934c6122181b3738b332e9d6f7e1b89b3f0119"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "indeed.com",
-                "hk.indeed.com",
-                "ie.indeed.com",
-                "mx.indeed.com",
-                "sg.indeed.com",
-                "uk.indeed.com",
-                "www.cruiseamerica.com",
-                "www.scholarshare529.com"
-            ]
-        },
-        {
             "rule": "3playmedia\\.com\\/files\\/1_ba69x2wn",
             "cookies": 0,
             "fingerprinting": 0,
@@ -171,8 +193,28 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cruiseamerica.com",
+                "www.scholarshare529.com"
+            ]
+        },
+        {
+            "rule": "3playmedia\\.com\\/p3sdk-fa\\/fonts\\/fontawesome-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
             "responseHashes": [
-                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+                "5a7bc16b6e77a7ade644d4611cfa959a950c431938e2c82f7117a477081ef098"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -233,29 +275,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.5405405405405406
         },
         {
             "domain": "originp3.s3.amazonaws.com",
-            "prevalence": 0.3142857142857143
+            "prevalence": 0.2972972972972973
         },
         {
             "domain": "brightcove.net",
-            "prevalence": 0.11428571428571428
+            "prevalence": 0.10810810810810811
+        },
+        {
+            "domain": "d2j13mq6epx4cg.cloudfront.net",
+            "prevalence": 0.05405405405405406
         }
     ],
     "types": {
+        "Script": 10,
+        "XHR": 8,
         "Document": 3,
         "Image": 2,
         "Stylesheet": 4,
-        "Script": 10,
-        "XHR": 6,
-        "Font": 2
+        "Font": 4
     },
     "nameservers": [
-        "ns-1502.awsdns-59.org",
-        "ns-1689.awsdns-19.co.uk",
         "ns-50.awsdns-06.com",
-        "ns-692.awsdns-22.net"
+        "ns-692.awsdns-22.net",
+        "ns-1689.awsdns-19.co.uk",
+        "ns-1502.awsdns-59.org"
     ]
 }

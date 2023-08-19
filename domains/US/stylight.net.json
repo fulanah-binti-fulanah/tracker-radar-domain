@@ -9,8 +9,8 @@
     "subdomains": [
         "cdn.sales.partner",
         "stats-bq",
-        "images",
-        "stats.production.ps"
+        "stats.production.ps",
+        "images"
     ],
     "cnames": [
         {
@@ -101,6 +101,43 @@
             ]
         },
         {
+            "rule": "stylight\\.net\\/track\\/12751cfd1aed6b3e6aee551fe78fe43d\\/wwin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats.production.ps"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [
+                {
+                    "original": "stats.stylight.com",
+                    "resolved": "stats.production.ps.stylight.net"
+                },
+                {
+                    "original": "stats.stylight.co.uk",
+                    "resolved": "stats.production.ps.stylight.net"
+                },
+                {
+                    "original": "stats.stylight.de",
+                    "resolved": "stats.production.ps.stylight.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stylight.com",
+                "www.stylight.com",
+                "www.stylight.co.uk",
+                "www.stylight.de"
+            ]
+        },
+        {
             "rule": "stylight\\.net\\/raw\\/upload\\/static\\/js\\/search-new\\.vc19803\\.js",
             "cookies": 0.0000205,
             "fingerprinting": 2,
@@ -116,7 +153,8 @@
                 "window.indexedDB": 3,
                 "window.innerWidth": 3,
                 "Navigator.prototype.onLine": 3,
-                "Document.cookie setter": 3
+                "Document.cookie setter": 3,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -127,52 +165,16 @@
             "type": "Script",
             "firstPartyCookies": {
                 "st_visitor": {
-                    "ttl": 31536006,
+                    "ttl": 31536005,
                     "length": 139,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020453662228221962,
                     "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stylight.co.uk",
-                "www.stylight.com",
-                "www.stylight.de"
-            ]
-        },
-        {
-            "rule": "stylight\\.net\\/track\\/12751cfd1aed6b3e6aee551fe78fe43d\\/wwin",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "stats.production.ps"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [
-                {
-                    "original": "stats.stylight.co.uk",
-                    "resolved": "stats.production.ps.stylight.net"
-                },
-                {
-                    "original": "stats.stylight.com",
-                    "resolved": "stats.production.ps.stylight.net"
-                },
-                {
-                    "original": "stats.stylight.de",
-                    "resolved": "stats.production.ps.stylight.net"
-                }
-            ],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "stylight.co.uk",
-                "www.stylight.com",
+                "stylight.com",
+                "www.stylight.co.uk",
                 "www.stylight.de"
             ]
         },
@@ -188,11 +190,11 @@
             "prevalence": 0.0000205,
             "cnames": [
                 {
-                    "original": "stats.stylight.co.uk",
+                    "original": "stats.stylight.com",
                     "resolved": "stats.production.ps.stylight.net"
                 },
                 {
-                    "original": "stats.stylight.com",
+                    "original": "stats.stylight.co.uk",
                     "resolved": "stats.production.ps.stylight.net"
                 },
                 {
@@ -207,8 +209,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stylight.co.uk",
-                "www.stylight.com",
+                "stylight.com",
+                "www.stylight.co.uk",
                 "www.stylight.de"
             ]
         }
@@ -219,33 +221,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.9212121212121213
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.06593406593406594
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "px-cloud.net",
-            "prevalence": 0.03296703296703297
+            "prevalence": 0.01818181818181818
         },
         {
             "domain": "trackjs.com",
-            "prevalence": 0.03296703296703297
+            "prevalence": 0.01818181818181818
         },
         {
             "domain": "quince.com",
-            "prevalence": 0.01098901098901099
+            "prevalence": 0.006060606060606061
         }
     ],
     "types": {
         "Script": 12,
-        "Image": 8
+        "Image": 9
     },
     "nameservers": [
-        "ns-1780.awsdns-30.co.uk",
-        "ns-573.awsdns-07.net",
         "ns-311.awsdns-38.com",
+        "ns-573.awsdns-07.net",
+        "ns-1780.awsdns-30.co.uk",
         "ns-1487.awsdns-57.org"
     ]
 }

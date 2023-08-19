@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "cdn",
         "concierge",
@@ -22,20 +22,20 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
-                "BroadcastChannel.prototype.constructor": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.indexedDB": 1,
+                "BroadcastChannel.prototype.constructor": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.product": 1,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5c92a8cff7880959b25a5342007565589586f7dba1ea194dd889e0c0be1c945a"
+                "536f6c141f170718cdca9c50a86e85d635547235179af70e29f80256a5ccc8be"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -56,8 +56,11 @@
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e8229a51e6a6b3d760865aa3f31c3e76a72bff7769a9251fd3e4a05c43ba16d2",
+                "6161c277a43f2008f2d2e54d2001df7a6f58327f178ec603a992b0d92888586c"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -77,11 +80,8 @@
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],
-            "responseHashes": [
-                "e8229a51e6a6b3d760865aa3f31c3e76a72bff7769a9251fd3e4a05c43ba16d2",
-                "6161c277a43f2008f2d2e54d2001df7a6f58327f178ec603a992b0d92888586c"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,7 +136,7 @@
         },
         {
             "rule": "capacity\\.com\\/api\\/session",
-            "cookies": 0.0000136,
+            "cookies": 0.0000205,
             "fingerprinting": 0,
             "subdomains": [
                 "concierge"
@@ -146,8 +146,8 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "5b1abae54d671319de0ac2ec4775b3bf216f4d06c37f06ce16680e83fe05b4a4",
-                "8d8f8b1e8d7d168e8ba290b2f1a8a6ebbb3717a10c7c668307ebff19325de8ba"
+                "4ecc3863086c38ca2c190809f0db120957772a218f00008231742a6eca9ef485",
+                "0fd0ef529d2e1b7510f8fa2d5cd6b41b47c51920af4bbb5f8d6e50ef5f8f429b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -157,11 +157,53 @@
                 "planethomelending.com",
                 "www.cmgfi.com"
             ]
+        },
+        {
+            "rule": "capacity\\.com\\/api\\/p\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "concierge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lakeview.com",
+                "www.cmgfi.com"
+            ]
+        },
+        {
+            "rule": "capacity\\.com\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "concierge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lakeview.com",
+                "www.cmgfi.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "aisoftware.com",
@@ -174,13 +216,15 @@
     ],
     "types": {
         "Script": 2,
+        "XHR": 9,
         "Preflight": 6,
-        "XHR": 9
+        "Image": 2,
+        "WebSocket": 2
     },
     "nameservers": [
-        "ns-1221.awsdns-24.org",
-        "ns-557.awsdns-05.net",
         "ns-217.awsdns-27.com",
+        "ns-557.awsdns-05.net",
+        "ns-1221.awsdns-24.org",
         "ns-1950.awsdns-51.co.uk"
     ]
 }

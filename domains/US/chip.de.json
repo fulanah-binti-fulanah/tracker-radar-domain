@@ -12,13 +12,14 @@
     "subdomains": [
         "content",
         "www",
+        "videoplayer",
         "im",
         "ssl.1.damoh",
         "cmp",
         "media-video"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "chip\\.de\\/cac\\/styles\\.css",
@@ -132,6 +133,33 @@
             ]
         },
         {
+            "rule": "chip\\.de\\/p\\/player\\/latest\\/tfa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "videoplayer"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20f7721611b91a9e39614daaa75d8a533c300f2b125c6d326d2d6aec2bdbc69f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "ratgeber.bunte.de"
+            ]
+        },
+        {
             "rule": "chip\\.de\\/cac\\/adconfig\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -224,7 +252,7 @@
             ]
         },
         {
-            "rule": "chip\\.de\\/praxistipps\\/3055280460_9419341006\\.png",
+            "rule": "chip\\.de\\/praxistipps\\/3055572122_4ecdd3d8a4\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -295,13 +323,13 @@
                 "_sp_su": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 },
                 "consentUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 }
             },
@@ -356,7 +384,7 @@
             ]
         },
         {
-            "rule": "chip\\.de\\/f6876ff40f5a74303c2b874c26eeb219bb08a0e6\\/6e73db55122d26a73c0e81b99757624aff23bced\\/POSTER_USER\\/v0\\/cz_red_Curt_Clean%20Eating-%20So%20funktioniert%20der%20gesunde%20Erna%CC%88hrungstrend_thumbnail\\.jpg",
+            "rule": "chip\\.de\\/f6876ff40f5a74303c2b874c26eeb219bb08a0e6\\/4fa6287d77583e797990d5b56d0aa234f9b829f3\\/POSTER_USER\\/v0\\/Abnehmen_durch_Schwimmen_Chip_20072021_1-60f6ab5604732008a8bb09da_1_Jul_20_2021_11_04_43_poster\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -367,7 +395,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8ac96bd1a42f280c9d2504eff736e9441b6241487fed63f40d8ac9e242beba13"
+                "d1ea942080f7eab1457fd9230a4dd4e82141e726abc13ceef2eaa3008791784d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -398,16 +426,16 @@
     "types": {
         "Stylesheet": 3,
         "Font": 11,
-        "Script": 15,
+        "Script": 17,
         "Image": 5,
         "XHR": 2
     },
     "nameservers": [
-        "a2-64.akam.net",
         "a7-67.akam.net",
+        "a16-67.akam.net",
+        "a2-64.akam.net",
         "a5-66.akam.net",
         "a28-65.akam.net",
-        "a1-118.akam.net",
-        "a16-67.akam.net"
+        "a1-118.akam.net"
     ]
 }

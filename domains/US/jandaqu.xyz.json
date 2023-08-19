@@ -123,8 +123,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -190,11 +190,11 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "window.localStorage": 3,
                 "Date.prototype.getTime": 3,
+                "CanvasRenderingContext2D.prototype.getImageData": 3,
                 "HTMLMediaElement.prototype.canPlayType": 3,
-                "CanvasRenderingContext2D.prototype.getImageData": 3
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000205,
@@ -242,14 +242,52 @@
             "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "1777b7392dc47cb94dfc2c52494323d1cc6716ef77a059eb090c273dcc4a5479",
-                "96cdd93ba9a667a72a54cd47e07cf1f9076cfdc4e840c59922c7ca191fce6c5a"
+                "1777b7392dc47cb94dfc2c52494323d1cc6716ef77a059eb090c273dcc4a5479"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bbokep.xyz",
+                "bokepindonesiaviral.bio",
+                "streamingbokeponline.store"
+            ]
+        },
+        {
+            "rule": "jandaqu\\.xyz\\/ps\\/hb7kuT\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bbokep.xyz",
+                "bokepindonesiaviral.bio",
+                "streamingbokeponline.store"
+            ]
+        },
+        {
+            "rule": "jandaqu\\.xyz\\/api\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "633f5960f58349ab5fa267c8e9b1ee71342fc2a93d60e97302d36908986e4f1d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "bokepindonesiaviral.bio",
                 "streamingbokeponline.store"
             ]
@@ -260,21 +298,23 @@
     "cookies": 0.0000205,
     "topInitiators": [
         {
-            "domain": "jwpcdn.com",
-            "prevalence": 0.6666666666666666
+            "domain": "first party",
+            "prevalence": 0.5714285714285714
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "domain": "jwpcdn.com",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
         "Stylesheet": 3,
         "Script": 27,
-        "Image": 3
+        "Image": 3,
+        "Other": 3,
+        "XHR": 2
     },
     "nameservers": [
-        "kami.ns.cloudflare.com",
-        "eric.ns.cloudflare.com"
+        "eric.ns.cloudflare.com",
+        "kami.ns.cloudflare.com"
     ]
 }

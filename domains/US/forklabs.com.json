@@ -15,11 +15,14 @@
         {
             "rule": "forklabs\\.com\\/js\\/plausible\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "hawk"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.webdriver": 1,
+                "window.localStorage": 1
+            },
             "sites": 3,
             "prevalence": 0.0000205,
             "cnames": [],

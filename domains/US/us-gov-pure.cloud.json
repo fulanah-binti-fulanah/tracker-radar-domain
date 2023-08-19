@@ -110,11 +110,13 @@
         {
             "rule": "us-gov-pure\\.cloud\\/messenger\\/messenger\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "apps.use2"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -137,7 +139,8 @@
                 "apps.use2"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -253,7 +256,7 @@
                 "apps.use2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.platform": 1,
                 "Navigator.prototype.languages": 1
             },
@@ -354,8 +357,8 @@
     },
     "nameservers": [
         "ns-1949.awsdns-51.co.uk",
+        "ns-1467.awsdns-55.org",
         "ns-91.awsdns-11.com",
-        "ns-944.awsdns-54.net",
-        "ns-1467.awsdns-55.org"
+        "ns-944.awsdns-54.net"
     ]
 }

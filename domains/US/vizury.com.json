@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000198,
-    "sites": 29,
+    "prevalence": 0.000205,
+    "sites": 30,
     "subdomains": [
         "cdn26",
         "in-tags",
@@ -16,8 +16,8 @@
         "tags",
         "cdn6",
         "eu-tags",
-        "us-pl",
         "sg-pl",
+        "us-pl",
         "pl",
         "onsite"
     ],
@@ -34,7 +34,9 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.vendor": 2,
-                "Notification.permission": 2
+                "Notification.permission": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -61,7 +63,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "857ff05e66fdb64cb13df9fb944d80b42c1f2ed5ae7a8acf4cf1ecae6679a168"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -72,18 +76,18 @@
         },
         {
             "rule": "vizury\\.com\\/ssp\\/US_GlassesUSA\\/wpn5035\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn26"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Notification.permission": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.vendor": 1,
+                "Notification.permission": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -94,9 +98,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "vizury_optin": {
-                    "ttl": 94608014,
+                    "ttl": 94608011,
                     "length": 80,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000006817887409407321,
                     "uniqueness": 1
                 }
             },
@@ -108,7 +112,7 @@
         },
         {
             "rule": "vizury\\.com\\/analyze\\/pixel\\.php",
-            "cookies": 0.0000819,
+            "cookies": 0.000102,
             "fingerprinting": 1,
             "subdomains": [
                 "in-tags",
@@ -120,12 +124,12 @@
             "apis": {
                 "Document.cookie getter": 18,
                 "Date.prototype.getTime": 18,
-                "Document.cookie setter": 12,
+                "Document.cookie setter": 15,
                 "window.localStorage": 3,
                 "Navigator.prototype.userAgent": 1
             },
-            "sites": 19,
-            "prevalence": 0.00013,
+            "sites": 20,
+            "prevalence": 0.000136,
             "cnames": [],
             "responseHashes": [
                 "aabc1cceb796a0be7ebbcae080840141c000cd4e8c0bf3190ac15d98656ea277",
@@ -145,9 +149,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_vz": {
-                    "ttl": 31536008,
+                    "ttl": 31536004,
                     "length": 17,
-                    "prevalence": 0.00008186544050429111,
+                    "prevalence": 0.00010226831114110982,
                     "uniqueness": 1
                 }
             },
@@ -166,6 +170,7 @@
                 "www.ironplanet.com",
                 "www.lightingdirect.com",
                 "www.magazines.com",
+                "www.pullsdirect.com",
                 "www.radiopopular.pt",
                 "www.rbauction.com",
                 "www.ritchielist.com",
@@ -175,34 +180,8 @@
             ]
         },
         {
-            "rule": "vizury\\.com\\/analyze\\/analyze\\.php",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us-pl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00001364424008404852,
-                "dy_fs_page": 0.00001364424008404852,
-                "_vz": 0.00001364424008404852
-            },
-            "exampleSites": [
-                "glassesusa.com",
-                "www.glassesusa.com"
-            ]
-        },
-        {
             "rule": "vizury\\.com\\/analyze\\/cookieCallback\\.php",
-            "cookies": 0.0000819,
+            "cookies": 0.000102,
             "fingerprinting": 1,
             "subdomains": [
                 "ssl",
@@ -210,30 +189,23 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 18,
-                "Document.cookie setter": 12
+                "Document.cookie setter": 15
             },
             "sites": 18,
             "prevalence": 0.000123,
             "cnames": [],
             "responseHashes": [
                 "15096e8b79cd9103943e68fe8c4c59ddc6cbc2e45a00199c6d9569b96b66cea3",
-                "2916fd25007d4b9da8a62c9081d9ed2b0f96a797d688568f79b25b0feaf42c69",
-                "3f08de9eff8445caa01ecb266034e4e3a5df2df43544ba11fdbd4d716d94df0e",
-                "f7d6d7a131830364c1399c4b60b52bd570d860edcd98236b587f85531e20ca52"
+                "21780bdfbef71b102321b26fda929f4516fd4b5f51ed72904cd1ff05940f850d",
+                "59e85bb32eb05d3d33f8acdbe55299b4eb972e3955a6b4441b7bf28c791c6768"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_vz": {
-                    "ttl": 63072012,
-                    "length": 17,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00001364424008404852,
-                "lotame_domain_check": 0.00000682212004202426,
-                "MobileMonkeyCookieDomain": 0.00000682212004202426
+                "IR_gbd": 0.000006817887409407321,
+                "lotame_domain_check": 0.000006817887409407321,
+                "dy_fs_page": 0.00003408943704703661,
+                "MobileMonkeyCookieDomain": 0.000006817887409407321
             },
             "exampleSites": [
                 "glassesusa.com",
@@ -242,40 +214,18 @@
                 "www.discountfilters.com",
                 "www.faucet.com",
                 "www.faucetdirect.com",
-                "www.glassesusa.com",
                 "www.govplanet.com",
                 "www.handlesets.com",
                 "www.interstateplastics.com",
                 "www.ironplanet.com",
                 "www.lightingdirect.com",
                 "www.magazines.com",
+                "www.pullsdirect.com",
                 "www.radiopopular.pt",
                 "www.rbauction.com",
                 "www.ritchielist.com",
                 "www.ventingdirect.com",
                 "www.zoomcar.com"
-            ]
-        },
-        {
-            "rule": "vizury\\.com\\/ssp\\/US_GlassesUSA\\/sw5035\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn26"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ec84826b879149d3555244a0e8fcdd0e1f6ee63f934271c68c82371d81407d8b"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "glassesusa.com",
-                "www.glassesusa.com"
             ]
         },
         {
@@ -288,19 +238,16 @@
                 "pl"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.000075,
+            "sites": 10,
+            "prevalence": 0.0000682,
             "cnames": [],
-            "responseHashes": [
-                "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glassesusa.com",
                 "www.discountfilters.com",
-                "www.glassesusa.com",
                 "www.govplanet.com",
                 "www.interstateplastics.com",
                 "www.ironplanet.com",
@@ -321,19 +268,16 @@
                 "pl"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000614,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
-            "responseHashes": [
-                "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glassesusa.com",
                 "www.discountfilters.com",
-                "www.glassesusa.com",
                 "www.govplanet.com",
                 "www.interstateplastics.com",
                 "www.ironplanet.com",
@@ -344,7 +288,7 @@
         },
         {
             "rule": "vizury\\.com\\/analyze\\/analyze\\.php",
-            "cookies": 0.0000955,
+            "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
                 "sg-pl",
@@ -352,8 +296,8 @@
                 "pl"
             ],
             "apis": {},
-            "sites": 16,
-            "prevalence": 0.000109,
+            "sites": 17,
+            "prevalence": 0.000116,
             "cnames": [],
             "responseHashes": [
                 "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
@@ -362,10 +306,11 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00000682212004202426,
-                "_vz": 0.00007504332046226685,
-                "MobileMonkeyCookieDomain": 0.00000682212004202426,
-                "_li_dcdm_c": 0.00000682212004202426
+                "lotame_domain_check": 0.000006817887409407321,
+                "_vz": 0.00009545042373170249,
+                "dy_fs_page": 0.000040907324456443923,
+                "MobileMonkeyCookieDomain": 0.000006817887409407321,
+                "_li_dcdm_c": 0.000006817887409407321
             },
             "exampleSites": [
                 "commonfloor.com",
@@ -379,6 +324,7 @@
                 "www.ironplanet.com",
                 "www.lightingdirect.com",
                 "www.magazines.com",
+                "www.pullsdirect.com",
                 "www.radiopopular.pt",
                 "www.rbauction.com",
                 "www.ritchielist.com",
@@ -410,9 +356,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "vizury_optin": {
-                    "ttl": 94608011,
+                    "ttl": 94608009,
                     "length": 80,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -468,9 +414,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "vizury_optin": {
-                    "ttl": 94608009,
+                    "ttl": 94608008,
                     "length": 80,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013635774818814642,
                     "uniqueness": 1
                 }
             },
@@ -551,8 +497,8 @@
                 "vizury_optin": {
                     "ttl": 94608007,
                     "length": 80,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013635774818814642,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -568,31 +514,31 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8068181818181818
+            "prevalence": 0.8023255813953488
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.13636363636363635
+            "prevalence": 0.13953488372093023
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.022727272727272728
+            "prevalence": 0.023255813953488372
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.022727272727272728
+            "prevalence": 0.023255813953488372
         },
         {
             "domain": "kuikr.com",
-            "prevalence": 0.011363636363636364
+            "prevalence": 0.011627906976744186
         }
     ],
     "types": {
-        "Script": 49,
+        "Script": 48,
         "Image": 2,
-        "Other": 6,
-        "Fetch": 23,
-        "Document": 16
+        "Fetch": 21,
+        "Document": 17,
+        "Other": 4
     },
     "nameservers": [
         "demi.ns.cloudflare.com",

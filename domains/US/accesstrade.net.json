@@ -4,11 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000205,
-    "sites": 30,
+    "prevalence": 0.000211,
+    "sites": 31,
     "subdomains": [
-        "h",
-        "a.image"
+        "h"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,8 +20,8 @@
                 "h"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "8b8a96b0a7b3767d6b09f8031002cee40c1b7f30eea8120f735dce786a1a25b1"
@@ -33,6 +32,7 @@
             "exampleSites": [
                 "shinyusha.co.jp",
                 "4meee.com",
+                "aumo.jp",
                 "haraheri.net",
                 "tabichannel.com",
                 "tabicoffret.com",
@@ -50,38 +50,19 @@
             "sites": 5,
             "prevalence": 0.0000341,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "942fa519ebb6234f59c3d8c8c66c6b2671b69364c1c31a6788f722e4baca9a94",
+                "f5d97b05c6a467921718c96fdd0ffa976335e7ba1a1a3840b102af6486dc7edd"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "careergarden.jp",
                 "diamond.jp",
                 "garumax.com",
+                "nikkei225jp.com",
                 "pc.moppy.jp",
                 "talking-english.net"
-            ]
-        },
-        {
-            "rule": "accesstrade\\.net\\/images\\/null_image\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a.image"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "942fa519ebb6234f59c3d8c8c66c6b2671b69364c1c31a6788f722e4baca9a94"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "careergarden.jp",
-                "garumax.com"
             ]
         },
         {
@@ -120,6 +101,28 @@
                 "www.sevenbank.co.jp",
                 "www.soundhouse.co.jp"
             ]
+        },
+        {
+            "rule": "accesstrade\\.net\\/js\\/nct\\/lp\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "h"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7ffd76bbcc60b51ec3c1804a1007ce2264b115419262dc3604182b39ef9c1f48"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mercari.com",
+                "www.mercari.com"
+            ]
         }
     ],
     "categories": [],
@@ -128,11 +131,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.66
+            "prevalence": 0.54
         },
         {
             "domain": "googletagmanager.com",
             "prevalence": 0.3
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.08
+        },
+        {
+            "domain": "mercdn.net",
+            "prevalence": 0.04
         },
         {
             "domain": "adobedtm.com",
@@ -144,13 +155,14 @@
         }
     ],
     "types": {
-        "Script": 23,
-        "Image": 7
+        "Script": 24,
+        "Image": 5,
+        "Fetch": 2
     },
     "nameservers": [
         "ns03.idc.jp",
-        "name01v.interspace.ne.jp",
+        "ns02.idc.jp",
         "name00v.interspace.ne.jp",
-        "ns02.idc.jp"
+        "name01v.interspace.ne.jp"
     ]
 }

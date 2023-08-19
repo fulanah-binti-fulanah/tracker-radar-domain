@@ -12,12 +12,22 @@
     "prevalence": 0.0000341,
     "sites": 5,
     "subdomains": [
-        "platform"
+        "platform",
+        "twimg",
+        "dualstack.video"
     ],
     "cnames": [
         {
+            "original": "cdn.syndication.twimg.com",
+            "resolved": "twimg.twitter.map.fastly.net"
+        },
+        {
             "original": "static.ads-twitter.com",
             "resolved": "platform.twitter.map.fastly.net"
+        },
+        {
+            "original": "video.twimg.com",
+            "resolved": "dualstack.video.twitter.map.fastly.net"
         }
     ],
     "fingerprinting": 1,
@@ -75,6 +85,60 @@
                 "twitter.com",
                 "developer.twitter.com"
             ]
+        },
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/tweet-result",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "twimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.syndication.twimg.com",
+                    "resolved": "twimg.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "bcfa9515dbcc838e2bec8c8024887a3338db5f05693c79e3effec86973d11462"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "developer.twitter.com"
+            ]
+        },
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/ext_tw_video\\/1428051799705985028\\/pu\\/vid\\/1280x720\\/vwfMqJyXrzDpMH52\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.video"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "video.twimg.com",
+                    "resolved": "dualstack.video.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fc0f2579b0158fbc802a14cfbe57a39bc771b51f4e060604d58789333276c7e0"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "developer.twitter.com"
+            ]
         }
     ],
     "categories": [
@@ -96,7 +160,9 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 2,
+        "Media": 2
     },
     "nameservers": []
 }

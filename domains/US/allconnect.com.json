@@ -4,34 +4,85 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000682,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "www",
         "make-ingest"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "allconnect\\.com\\/v2\\/t",
+            "rule": "allconnect\\.com\\/wp-content\\/themes\\/allconnect\\/public\\/css\\/chameleon-inline\\.bundle\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "make-ingest"
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c051e0b9bab885cede94f4e9ae538eaac623ca4a3fe4f960595e0c67179bc253"
+                "7e2435dce51157d041525b8ef7ebabd291c704fe2e9891fe84532be0eb54d2c3"
             ],
-            "type": "XHR",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bandwidthplace.com",
-                "www.bandwidthplace.com"
+                "www.cnet.com"
+            ]
+        },
+        {
+            "rule": "allconnect\\.com\\/wp-content\\/themes\\/allconnect\\/public\\/chameleon\\/js\\/bootstrap-new-relic\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab459a7c5268da8d1c1787540e35f6faf42be295aca6e02be51e4e217fee9539"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandwidthplace.com",
+                "www.cnet.com"
+            ]
+        },
+        {
+            "rule": "allconnect\\.com\\/wp-content\\/themes\\/allconnect\\/public\\/chameleon\\/vendor\\/new-relic\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a615f303734f3b114477df7be44f8ff598dfc7360e57e5bfbe40b7c020d9a79e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandwidthplace.com",
+                "www.cnet.com"
             ]
         },
         {
@@ -42,8 +93,8 @@
                 "make-ingest"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -51,31 +102,85 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bandwidthplace.com",
-                "www.bandwidthplace.com"
+                "www.bandwidthplace.com",
+                "www.cnet.com"
+            ]
+        },
+        {
+            "rule": "allconnect\\.com\\/v2\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "make-ingest"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "376087cc248e1b50441d3b15afa0a6555108b2a0d1acfc42fb71803d5504a437",
+                "852694a33e9e2035763ec4ba6ce746926871b63022786d942a606ee922ef4de7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandwidthplace.com",
+                "www.bandwidthplace.com",
+                "www.cnet.com"
+            ]
+        },
+        {
+            "rule": "allconnect\\.com\\/wp-json\\/wp\\/v2\\/resultsappproviders",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c881996acaddf73858d828a857456f026b5c3392b36a94c2ba2cc936e5235486"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandwidthplace.com",
+                "www.cnet.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "cohesionapps.com",
-            "prevalence": 0.5555555555555556
+            "prevalence": 0.6923076923076923
         },
         {
             "domain": "myfinance.com",
-            "prevalence": 0.4444444444444444
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "Stylesheet": 2,
+        "Script": 4,
+        "Preflight": 3,
+        "XHR": 3,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-84.awsdns-10.com",
         "ns-717.awsdns-25.net",
         "ns-1518.awsdns-61.org",
-        "ns-1764.awsdns-28.co.uk",
-        "ns-84.awsdns-10.com"
+        "ns-1764.awsdns-28.co.uk"
     ]
 }
