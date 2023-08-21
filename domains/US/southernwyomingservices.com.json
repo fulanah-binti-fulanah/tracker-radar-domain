@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "southernwyomingservices\\.com\\/places\\/widget\\/js:1\\/type:300x600",
@@ -40,7 +40,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3d0350a6f2dfe675a61540527bc17be90c9fd178ba961e65a2544c9bde829a74"
+                "715f30afe60af69a12c0e7c9c13dd0f3a311e12f7e01262ddc0a5d2b0cfade70"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -113,9 +113,11 @@
         {
             "rule": "southernwyomingservices\\.com\\/js\\/widget\\/widget\\.wehaa\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -151,8 +153,8 @@
             ]
         },
         {
-            "rule": "southernwyomingservices\\.com\\/places\\/track\\/widgetview\\/no-cache:73dd51651f735bc7734754f6f90d6738\\/fk:127",
-            "cookies": 0.0000136,
+            "rule": "southernwyomingservices\\.com\\/css\\/widget\\/imgs\\/loading\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
@@ -160,9 +162,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bf6e68c02c78e6d9e65622991e517df720c68c03619dbc06af053883480743db"
+                "59664171648d21db08cb4e6fdae5efdc7f869e8e6a6d52be77d315077bf30959"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -177,14 +179,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 8,
+        "Script": 6,
         "Document": 2,
         "Stylesheet": 4,
-        "Image": 2
+        "Image": 4
     },
     "nameservers": [
         "ns1.wehaa-server10.com",

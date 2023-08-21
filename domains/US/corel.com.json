@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000546,
-    "sites": 8,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "www",
         "data"
@@ -27,7 +27,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "36726a1802462137c38158e6e94e5448008da9dc4c236b60bea6164c71dde0e1"
@@ -49,8 +49,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "552f9eadb68ccb4f2f0f41c6c9ff9e0866bae0532c228ad958080c735ec82e1b"
@@ -64,12 +64,95 @@
                 "kb.parallels.com",
                 "www.paintshoppro.com",
                 "www.parallels.com",
+                "www.videostudiopro.com",
                 "www.wordperfect.com"
             ]
         },
         {
-            "rule": "corel\\.com\\/px",
+            "rule": "corel\\.com\\/330-22629\\.js",
             "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.onLine": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "514d92c682dc3ef34b37db8407e4c35af972c67793a82ab152b068a8454708bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "flx1_session_id_22629": {
+                    "ttl": 904,
+                    "length": 12,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paintshoppro.com",
+                "www.videostudiopro.com"
+            ]
+        },
+        {
+            "rule": "corel\\.com\\/flx1-jquery\\/1\\.11\\.2-20170607\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0be0b579a29f7069b801525582b66a22720fb8cb06b2bc6546373c9631d5c936"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paintshoppro.com",
+                "www.videostudiopro.com"
+            ]
+        },
+        {
+            "rule": "corel\\.com\\/px",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "flx1_session_id_22629": 0.000020449897750511246
+            },
+            "exampleSites": [
+                "paintshoppro.com",
+                "www.paintshoppro.com",
+                "www.videostudiopro.com"
+            ]
+        },
+        {
+            "rule": "corel\\.com\\/ia",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "data"
@@ -81,33 +164,34 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "flx1_session_id_22629": 0.00001364424008404852
+                "flx1_session_id_22629": 0.000013633265167007499
             },
             "exampleSites": [
                 "paintshoppro.com",
-                "www.paintshoppro.com"
+                "www.videostudiopro.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6923076923076923
+            "prevalence": 0.7333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.3076923076923077
+            "prevalence": 0.26666666666666666
         }
     ],
     "types": {
-        "Script": 5,
-        "XHR": 6
+        "Script": 10,
+        "XHR": 7,
+        "Ping": 2
     },
     "nameservers": [
         "ns-90.awsdns-11.com",

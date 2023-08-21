@@ -10,7 +10,7 @@
         "payment-amount"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "acornfinance\\.com\\/v4\\/acorn-finance\\.min\\.css",
@@ -37,11 +37,13 @@
         {
             "rule": "acornfinance\\.com\\/v4\\/acorn-finance\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "payment-amount"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -94,9 +96,9 @@
         "Fetch": 2
     },
     "nameservers": [
-        "ns-157.awsdns-19.com",
-        "ns-1752.awsdns-27.co.uk",
         "ns-666.awsdns-19.net",
-        "ns-1484.awsdns-57.org"
+        "ns-1752.awsdns-27.co.uk",
+        "ns-1484.awsdns-57.org",
+        "ns-157.awsdns-19.com"
     ]
 }

@@ -7,20 +7,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000164,
-    "sites": 24,
+    "prevalence": 0.000157,
+    "sites": 23,
     "subdomains": [
         "gdc",
         "www",
         "pxl",
-        "autocomplete"
+        "autocomplete",
+        "apply"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "indeed\\.com\\/ads\\/apiresults\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "gdc",
@@ -28,7 +29,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "95aa4a182b681198b4057f9dfea67d034ad6947348dda4664a5377dc35337693"
@@ -44,14 +45,14 @@
         },
         {
             "rule": "indeed\\.com\\/rpc\\/apilog",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "gdc"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -67,14 +68,14 @@
         },
         {
             "rule": "indeed\\.com\\/usersync",
-            "cookies": 0.0000887,
+            "cookies": 0.0000886,
             "fingerprinting": 0,
             "subdomains": [
                 "pxl"
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.0000887,
+            "prevalence": 0.0000886,
             "cnames": [],
             "responseHashes": [
                 "7d313f32ad7ce382a2df2cd1dcaa8bc48187b20382e323b4369587ec54ae3d64"
@@ -84,17 +85,17 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glassdoor.ca",
-                "www.glassdoor.co.in",
                 "www.glassdoor.ca",
                 "www.glassdoor.co.uk",
                 "www.glassdoor.com.au",
                 "www.glassdoor.com.mx",
+                "www.glassdoor.co.in",
                 "www.glassdoor.com",
                 "www.glassdoor.com.br",
-                "www.glassdoor.de",
                 "www.glassdoor.es",
-                "www.glassdoor.fr",
+                "www.glassdoor.de",
                 "www.glassdoor.ie",
+                "www.glassdoor.fr",
                 "www.glassdoor.sg"
             ]
         },
@@ -107,7 +108,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
@@ -121,6 +122,72 @@
                 "www.simplyhired.ca",
                 "www.simplyhired.co.uk"
             ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/appliedstatus",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c3f43c2c4b504762c1a930c0c4b46341e442b8d9738100ff25c3fab700184e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simplyhired.ca",
+                "www.simplyhired.ca"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/plq",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eb9372437cabfdd5baa5532fd61907bfa8ade6832c6462a598f432ee9793b813"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simplyhired.ca",
+                "www.simplyhired.ca"
+            ]
+        },
+        {
+            "rule": "indeed\\.com\\/indeedapply\\/rpc\\/log",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apply"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2577fd1470fa192497cc292750833b14ebbc8cb92283449b928b9edc36de5df8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simplyhired.ca",
+                "www.simplyhired.ca"
+            ]
         }
     ],
     "categories": [],
@@ -128,23 +195,31 @@
     "cookies": 0.000143,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.6071428571428571
+            "domain": "first party",
+            "prevalence": 0.5277777777777778
         },
         {
-            "domain": "first party",
-            "prevalence": 0.39285714285714285
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4166666666666667
+        },
+        {
+            "domain": "indeed.tech",
+            "prevalence": 0.027777777777777776
+        },
+        {
+            "domain": "d3fw5vlhllyvee.cloudfront.net",
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
-        "Script": 3,
-        "Image": 16,
+        "Script": 7,
+        "Image": 18,
         "Fetch": 3
     },
     "nameservers": [
-        "dns4.p01.nsone.net",
         "dns3.p01.nsone.net",
-        "dns1.p01.nsone.net",
-        "dns2.p01.nsone.net"
+        "dns2.p01.nsone.net",
+        "dns4.p01.nsone.net",
+        "dns1.p01.nsone.net"
     ]
 }

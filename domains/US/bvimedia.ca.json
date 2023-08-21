@@ -10,7 +10,7 @@
         "specs"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "bvimedia\\.ca\\/css\\/concat\\/reset\\.css,style\\.css",
@@ -36,12 +36,16 @@
         },
         {
             "rule": "bvimedia\\.ca\\/js\\/concat\\/jquery\\.js,jquery\\.cookie\\.js,jquery\\.ui\\.js,jquery\\.ui\\.touch-punch\\.js,jquery\\.number\\.js,boat+models\\.js,common\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
             "subdomains": [
                 "specs"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -49,7 +53,14 @@
                 "d1aa67667d8d263e2f3ee384bac1303fef94fceea2b9d2dabd5428fcf1b708a5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "compare": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boatguideweb.com",
@@ -81,7 +92,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
@@ -93,7 +104,7 @@
         "Script": 4
     },
     "nameservers": [
-        "ns2.bvimedia.ca",
-        "ns1.bvimedia.ca"
+        "ns1.bvimedia.ca",
+        "ns2.bvimedia.ca"
     ]
 }

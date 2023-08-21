@@ -7,13 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000362,
-    "sites": 53,
+    "prevalence": 0.000354,
+    "sites": 52,
     "subdomains": [
         "pixall",
         "cs",
+        "cs-qa",
+        "pixall-qa",
         "adse",
+        "adsw",
         "pixe",
+        "pixw",
         "s.update",
         "banners2",
         "banners",
@@ -27,231 +31,240 @@
     "resources": [
         {
             "rule": "esm1\\.net\\/cookie-first\\.js",
-            "cookies": 0.000171,
+            "cookies": 0.000184,
             "fingerprinting": 1,
             "subdomains": [
                 "pixall"
             ],
             "apis": {
-                "Document.cookie setter": 19
+                "Document.cookie setter": 23
             },
-            "sites": 25,
-            "prevalence": 0.000171,
+            "sites": 27,
+            "prevalence": 0.000184,
             "cnames": [],
             "responseHashes": [
-                "6505399a7c37f2a60d51532a7d1c8951a7efa05124903b9da12ece7cc8df845d",
-                "063e1130f787d3de373eb7ec552815736ad6bee772d963d1a526c834512810e1",
-                "1814dbb7effe274221a91cfe845f78452a636e7c5dc4b86886a55ee3aafcb333",
-                "3bd6ed0bc7a9bc481ee59924532d489b2c64df74de7800da7c63dfa38b06614e",
-                "e31a0f2f88469aba93cee02a9f43c7358b0069b198228d9584cb846aa2fcb48f",
-                "dfe6959af45edaf7455451c9cfa139d8a6c1009e64c05a5f1daa272712079977",
-                "8191fad34ed000a46a65e3f4ec217acdeba5bc97361479bd9ccd3f08e7181f44",
-                "000bbaf92f9d20a651b119bc7db87e6d40db576535d8579e99d6e683e41edede",
-                "c5a1e6a9e7b973ae3d35144e108903bae94610f0d952fa6fc79b1e13a5f299cb",
-                "f88662d53888700bf8575fec145d4097beecc2b6eeefb3fa3f16e434688b257c",
-                "7ccf98ecef09a34bb442d9abcaf0727ea689c1251de6da9b23b9a29a5d260115",
-                "94fd231c09ac27bc6deb882626d48930affbf85b88eb2ed2877af99452867a32",
-                "eb6e7f25267b57ba1b316b673c99be6ea2b5a1b3c41c56045ced159fb7d75217",
-                "f0c5282fb2c368d3b0f0b1266a3813ce2956de5952fce89a237ad4b70822b06f",
-                "9b15a2d74394b838b52350500f5377bbae28d43c81daf7eeedf2c5c7d919ccf7",
-                "84b3c07b1c48fbd388de97cab9901b8ca8bbdf8b0c931bded3909feebbe563e7",
-                "0d46e1080b70c4920a4c86d55ceed42b41371a9750978362108a9d03a1b7030d",
-                "83ca7ffa5c4577abc012cdb455a4ab8a52f35e2218453909e523941ed481ddc0",
-                "14e5c15f07d818a2815e997d813453b9d3a1f907af6c73637cd6e37005ee5ff1",
-                "d56d81b57e994b1472830d3d2efa68394ad95bde35853dd29df1c7a8bfeafbcf",
-                "f429ad7ab89f222dbc9123d3e96dde2f8ce4075350b5303d6a6c1d96f2efe616",
-                "9a692db4f6564d52ac40d4a9ccdba760904c23cfe9e3e707aabd7a75a0e6ae48",
-                "964a9734580b72425b7acc56ab6094adeff10fafb679172a5f5f9bc9f99d2510",
-                "0e213f1de0f574427be16229fcf78467b2d9194a3e19d4a1be028934808d3d4b"
+                "9eecfb9fd7208002aa7afa2a5881dd3d198f9b5d533247cc03f82107260b446d",
+                "38da657f3e7b113447a290b1ad700c8eddfff18e774387cc1bffd55fe6fa1917",
+                "93e5a541b6cbddd22e9a1ba083ca4087f414df9324c9c1075b627fe7ca59345e",
+                "94bd48aa52c75d5ac7d8ab842cbf89c8790158f16c8fbed5f6442d03c65e37fc",
+                "5b03768f869f968d6db201f30c5993683ce8d345178db91280c1204fb1d2f610",
+                "e74597fe538d5e07050821003fa22e54b282ebaf52de1f1b77aecc8ce6cc240f",
+                "624851d819a26062741770e8d05e4719b2341aa6d88e2b5975ec60ae2ece89b8",
+                "09d05d7a43917f9a5eed8b669609bf0fa7d402264b353d9ad899c2380feda96f",
+                "5f28e35e7994fb357b269f011649cda6534efb451ec34da6a9a3d2e90622277b",
+                "3c7180cdc6be83107163e59fa29beb20dd43044fe92b0e6171ca2ff809406c7a",
+                "b18b6c93bbc2a94fdbd5dde1b37541b176421bbe64b5bfee9e009fdf7f26175a",
+                "a0abed1b43883711f99d2e367067f16f2f6ebf1b731d9e74b92e9ce66f241621",
+                "fdfb3a7d3a9533be88005910eaf57a46795e6396213f8011e7b5b83b4fb557de",
+                "fe65a2eb3ba36cb61957e18431a8f68e67fb7010b5cc868c49150a02f3dd7b7f",
+                "d9f65b3af2d153fa3d9d5b459baa1fb0500d0a816676c92cd359728d1a9dd890",
+                "bd29fb8c5fc37cb8e6578909fa749e99341208333a231e9337e06760d4cf6311",
+                "274c5c641579723307734e58d537c0da8f2a4d4de52c4f59c749dc06d4cebfb2",
+                "b8220b3a2759d9c73097229c610054271f379d29bc718e7396ee2902b8ca70cb",
+                "f5b3d43548134108844f1bbba504f81b35a11b6b4c84c6bfd4d6f72bc5860df1",
+                "c0df32a2e4e020788ec4ecc1a8272f871317061ad368d182041a8e62c361220e",
+                "d2a12a3a78d23960d4d7af7d3c348faf06572067232b62c11fb342c266e9633d",
+                "5dbc0d2c549138aedb972f0d85bb1b1e6008989e668d088cbc695b1081201068",
+                "a6108525e12b499a5143fd113e479ec6bf695de7135607562534eb7d9364cd96",
+                "75320676ceecb3895daaf793cd7196bbc9aa39637f29cc1bab37ba2df0918d81",
+                "8bb4c45d0a2d7bc49ca89ff5b36ab33305ca7ee4c4cd6c7d040d9661dd057ec9",
+                "b762902cca89cef4cf182216446d6f86f95cd1ced4c09bc7a600420276d23dfe"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "abc": {
                     "ttl": 31536000,
                     "length": 24,
-                    "prevalence": 0.00012962028079846092,
+                    "prevalence": 0.00015678254942058623,
                     "uniqueness": 1
                 },
                 "pxa_ipv4": {
                     "ttl": 31536000,
                     "length": 13,
-                    "prevalence": 0.00012962028079846092,
-                    "uniqueness": 0.05263157894736842
+                    "prevalence": 0.00015678254942058623,
+                    "uniqueness": 0.043478260869565216
                 }
             },
             "firstPartyCookiesSent": {
-                "abc": 0.00012962028079846092
+                "abc": 0.00015678254942058623
             },
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
+                "www.maplewoodtoyota.com",
                 "www.hertzcarsales.com",
+                "www.kingstoyota.com",
+                "www.parkplacelexusplano.com",
+                "www.planetsubaru.com",
                 "www.mountainstatestoyota.com",
-                "www.freemantoyota.com",
-                "www.stevinsontoyotawest.com",
-                "www.americantoyota.com",
+                "www.autotrader.com",
                 "www.toyotaofgreenville.com",
-                "www.kbb.ca",
-                "www.lithia.com",
+                "www.cavendertoyota.com",
+                "www.liftedtrucks.com",
                 "www.hendrickcars.com",
+                "www.davesmith.com",
+                "www.autonationdrive.com",
                 "www.offleaseonly.com",
                 "www.autonationusa.com",
-                "www.fredandersontoyota.com",
-                "www.davesmith.com",
-                "www.kbb.com",
-                "www.liftedtrucks.com",
-                "www.kingstoyota.com",
-                "www.corvetteworlddallas.com",
-                "www.maplewoodtoyota.com"
+                "www.kbb.ca",
+                "www.lithia.com",
+                "www.corvetteworlddallas.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/iframe",
-            "cookies": 0.000184,
+            "cookies": 0.000204,
             "fingerprinting": 0,
             "subdomains": [
                 "cs",
-                "pixall"
+                "pixall",
+                "cs-qa"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.000184,
+            "sites": 30,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "146c68842d03fa234f38db9beefe91ead25f2aff0a6deb007b8261290576145f",
-                "1165a98586c055c65a55c93debf04b98fe6a58507ef38b89c2f010d355fafd2e",
-                "0b9274a56e6c9b7fd1cae5a3f9734c9278f388e6a974469a6c730d61a6744add",
-                "5332909bc815ac61940e004576e632907800cc2b4f17985d7395e8518b95a21a",
-                "d06f0c32772df580633f3950b68121078ce1b8cd26683e59b97d4e648215fdc0",
-                "8f99a2206a3d5699e29f78703e300a53a12362524859566818e519cb70517d94",
-                "b1553c5935f026cff68cce08a6d54a7536e62143c075325429b8276be8ab3839",
-                "057175b2fe540534d56f4a81b243a96b5cd48babdb2ae3b0b73cd9b4e4208219",
-                "d4b0c19bbd1bf1b65b8f0ff7986ede997547f22e864566e6e2e61386c8c8bf39",
-                "0736abf97226f47a89c401c74d7e7139ad3822f03ea25841324b8711c157430f",
-                "8a7c79a2139c81a47f4e84a59f4483817b64170c2b0b1d98e3cd69c80a3e8a28",
-                "aaa31de045432147f4b46bffb64fe43bb0c9b59aa352820caa8091568fa6adfe",
-                "28a8faf8ad1c0a2f65eb82265037beb1d224cd100b7da5d5764b17ee76ce3fe0",
-                "95920545098c56b3e34377cfc898732e7d1d09ebe3f84b7489aaefffd4106ee9",
-                "04428e343ebdbeecd0b64bb22aa05aeca3543df65c986591ba98e85e61f383c1",
-                "8089980405ad204aa76f4c3fe55f8b1911466a58c08d5709fa867cf6d7f24577",
-                "80e388c05184424cf95602cb2135ee36e1551885c390a9bc75a7b7a390a242a3",
-                "7b803f7a0af781a7f83107e02f847d370d46d6dec7a6f8431aeb52518c2c9660",
-                "7622f23d8c7c0bf24feb9b7c4593be2bc1258f258029583785a9a03475d7597b",
-                "d1284b53096e723cf70a83a595eb2f79b1bd23e9becffb030030904145de94f1",
-                "3ebcff787fa25f653bcc9074be27e760a372c6b9535563be9eaf823f34c1e525",
-                "ee4592174e86c40a03bd9c00e9460bc751ef3b96767dd2c0ee67c83db58c79f0",
-                "e509d40be5c073bfd3e86aaa83f8ea489b0e48a59a20be99aac06fdfaf9f7a4a",
-                "4a0f0d424ef26dac2e812dfe2367a775a856c95379f3e618eb4c86d59a0dc383",
-                "7af677b5f833642ad0fd0dab1063e3de4fc5063fa9b2fb7a7e62c1f67cb55f50"
+                "5da9f2bed29d4f9cfc086eaf4972c5487c0c3a9f4a653715b2cd3cee40e5d5d1",
+                "79d84ea15b62563cda5fb1b4256d15ece9787711e8146a7ab06fd4ea0b188d47",
+                "e0e53e2d3d89a4f840606ba74f854791a0ad7eadfc003889452bf47c9c3c3e5a",
+                "0d35416bf13ede676d5d2e4aa2af10d0b866baf2608a3a0fa433ed94b4aa48af",
+                "80a99d386c032072118cc0febd758746550aaf8d3a8e22748f1f62c793901124",
+                "640c31487c12d811a976d18fb9d542a71f68ad3511eb1397461838dc0051dadb",
+                "67db284aad8722e658c21707bcb5b1a8605981d72a9e1c08f549ac5d08bad812",
+                "3badf77d526ab77db19794bbb351700e617d61d629416589beb33e4eaf0d631f",
+                "dd5f36ef9e8ac8a04bfd2d87ead6cfd4176ec03fcd5d2c91545abd6a19f9a66f",
+                "639c288c2dc1a37a9fdc0403ad592641159528c06983b6e2715dad06aa846769",
+                "777bcefbccf7b4729401dd81becdc3d8cbb11f6376d0835b004ee27f398e2ea0",
+                "1a992d06744799ab79e7e6fba176c9d664d34e0df32bb60350e992c2b47c13d1",
+                "f6271ba9367ba5a1d1d084d178d6bf11da507847736cb0b0c7f34150e33b5461",
+                "f70b370debd085dd9e9fb6495c796cdccf41c44574cc185dbe124f3ea8237623",
+                "801018b0692631a5ec1d2a7f868b4f3295a96d679600852c70d014308f21af28",
+                "d6f9080efb9494574622660e60ad3b983cc0ef740be15d88cdc13179b0aff38e",
+                "165ab8b2681ea87beef49517f9c53de8cd7c86f21303a95ad8cf3ba1e2030766",
+                "65d99ec8436f28a2537f136ff727fb101ba752f7dc019805ab35d837c286834f",
+                "b88c3136bd2cfe9354359c998ebca7a0f2876deea129e828ea9120eb6088c355",
+                "90e011901ed500d10c08c646b7ce79a43b561e7c5fc42c18bb1144849f48d442",
+                "923bd19b78a654d340ca38d067ab9d8daab15323af5daf5cbed044cda35b8bf4",
+                "85352ab12129bbf57448dc89cbab874e11e1f916ab194252a71ff692043614ad",
+                "6c54dfb624cfb77e3d57edf5202e25c242f1cc96ed39ff23a6240b7f6557ac9b",
+                "d9cb98b76ca0a8f8e88bd250748423a83b0f24c9ff8e2307c147e1ac0585c38d",
+                "75560f2cf8a0b2d3dca5069aafc66594fe41aa009dd1b12a75198b813da797ac",
+                "69e0953b68752e071fec130721445f95dff952440aa9a64208d0526f296670ea",
+                "8a41b256b9880f29ede72baff86919cc6c7bd99cf6e826c8a884dc65bb428735"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "abc": 0.00012962028079846092,
-                "s_pltp": 0.00000682212004202426,
-                "pxa_id": 0.00002046636012607278,
-                "lotame_domain_check": 0.00002728848016809704
+                "abc": 0.00014996591683708247,
+                "s_pltp": 0.000006816632583503749,
+                "pxa_id": 0.000027266530334014997,
+                "lotame_domain_check": 0.000020449897750511246
             },
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
-                "www.davesmith.com",
-                "www.mountainstatestoyota.com",
-                "www.stevinsontoyotawest.com",
-                "www.kbb.com",
-                "www.autonationdrive.com",
-                "www.kbb.ca",
-                "www.subaru.com",
-                "www.offleaseonly.com",
-                "www.freemantoyota.com",
-                "www.hendrickcars.com",
-                "www.rivardbuickgmc.com",
-                "www.kingstoyota.com",
-                "www.americantoyota.com",
-                "www.audiusa.com",
-                "www.liftedtrucks.com",
-                "www.camelbacktoyota.com",
                 "www.aviscarsales.com",
-                "www.fredandersontoyota.com"
+                "www.hendrickcars.com",
+                "www.kbb.ca",
+                "www.autotrader.com",
+                "www.toyotaofgreenville.com",
+                "www.subaru.com",
+                "www.parkplace.com",
+                "www.fredandersontoyota.com",
+                "www.fredbeans.com",
+                "www.mountainstatestoyota.com",
+                "www.offleaseonly.com",
+                "www.davesmith.com",
+                "www.rivardbuickgmc.com",
+                "www.parkplacelexusplano.com",
+                "www.liftedtrucks.com",
+                "www.autonationdrive.com",
+                "www.kingstoyota.com",
+                "www.cavendertoyota.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/attribution\\/iframe",
-            "cookies": 0.000184,
+            "cookies": 0.000204,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall"
+                "pixall",
+                "pixall-qa"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.000184,
+            "sites": 30,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "689dece02049d17c16c16ce077454a1e37fbfa57cf7803ac6d2b9c8958525adb",
-                "36c721b18fa931503439ab558043d1426d8833dd1ed0d13380ce9203c43b1093",
-                "6d905b7178f4dc9c4dc33e8250cd4edfc27be8f0c60d4655a120901127931d3f",
-                "931b6c5a8832b648de727ae248683d276d1f804b3b832045fd8d9c61fe78a192",
-                "c02aee6c718019c849f05416651ddb83159518216dcc3c58de3b1ed3160619bc",
-                "c4d18b62aff83f60cddf77c1f48d1b6528f233a4b519706f1c12f75590845259",
-                "b2d7bb4df5766c420e97e9ba7f7f075057de11f02504ca46fccfbc86404fa5f9",
-                "668a99ec3699637f880d70832710555b3edbd1efd50a4b66bda79ddf9a1d2d3c",
-                "74f6a062476d308531d3a07417ff74a4488d98304dbcdeba25f534ac779d7c9c",
-                "e2ef9b5b73d1075f1c66635e5f58f0fe86817cd29ab14a625674524b3a91b35a",
-                "f495f7a715086ab53bba5e1bc8255d947cf9e2aa4ba75247ec639858a5f929aa",
-                "20a3a13ec6b5a7acddeff389eff667ae6237085ba85f8768390444a2946f559e",
-                "2bb303b8e3a4848c2201cf4737e261c66ec641fd80ad8f95de2459d4e40ecf45",
-                "99e0036d666c1e76985f923b142522d4d1cdb5a2e9804d603df4c3fb1e62e858",
-                "ded6395916fd002256a8b3741aeb7aab8527bd4efd02cee099dee09ff4d57171",
-                "05b4b9363247d5b3221be0f50bd97e16fc328882f047571b4bc503b4d3e26a95",
-                "f51b25506ef6b69dc5150c71b21b49bc0a8afdd846b7b973722dd6dd1032323e",
-                "fafc65cfc6d7f2c610ecd43dac60dffca2c08cb375de6c8f97aac0c34bb97aef",
-                "9d81cb691d8a7f62d62183cd77765e63fd0ad72570b2d274d4a8d87b0a5009be",
-                "3020c7db737e640f11dc20d9e0dfd4e31f888e5ed00d741ffbef1061a53d132a",
-                "81f2f996cd52f2644ba01e4efe6ec0d7a507da6c6832d9004138e75561dbe4f1",
-                "2df9d664b882295dc0161f4496bc0f5ad938cc145d229a8b2f7fd0d550ee1670",
-                "36b5d8d1a5509a691ab79b4e212f4467bffe7239efc79c759369862cd869da06",
-                "5d9e580df07d0067414004bbfc3a9ceb862416dfcab913323f3f22d4cdb6e19d",
-                "22fd7e91c4308ae15fa500cb930f11fc8cf22001374d97f40c11dfd21312bfa7"
+                "00446f02db436996f9ee24aeea7ddbc0745aed33b18bd03bd0b5b2060a2c50ab",
+                "baf2d54a340cbe2a43e721b0e5a090b5a5df7e4e5841ce713729abb7c0e2a6e2",
+                "7a25e581d2c8c2716992d6d95bd6bc95a505fae912e0faead7379e52416f6733",
+                "89df2dda8268dd9aadfead27c375bcaa2c608b643bb4e7fb62ecbc1b49744968",
+                "4a91df731ee59f39f85ace255c9d9059e151136edbff039b92d068ca4467d31e",
+                "64b8c8efc764ed803b338bc53a6947f9585cba9f3f563a49125ad0c87ec17420",
+                "9b37e6e9a6a4f980aced129ecbf29ed5b5ddb776cb0dd73fc3734e44e9d7f9cd",
+                "3575e9af8d608fb4660861c79175446dac15f2371a315de836199976168331b0",
+                "8d9125bf5f8f6760e1540cae7c90c68de4841780caaf9f008a0473d1ffe54471",
+                "b4b3415549c783816ab9c55e67be948d6dfc0ee7e38dbf6d872648b515cfa3b8",
+                "a00c36480d32692f89129cf646888c41fb1e328d5a4c88baf1b368c690971d29",
+                "8085e9d5db04c688bb05965bcdd2f7790f51e3874d0251115e12a07f6bdf8373",
+                "439979c6227e154eae72de80aad056171f72b1f953b5032091169a205bdb521d",
+                "ee5a6de6ca3552816e237111c47fc8c1cddbfea4bec0f01f78ec664b0d0819e9",
+                "68fb726e84efbc5eaee829f3f5846e6d9af6952cc0f5793a4937ba0c3ccad313",
+                "860c4ff8906af4d5ea00811ef83088c44ecd0d8175daf239dc80df4b3ee0e267",
+                "ef89ab01e8882882228e1d2da0aaf8595b04c9cf356f96d620818174a3039946",
+                "23aa8ca40cf1bf64fda1e358dc1fc09db91ccbadbb8f69c69d52064f5cf27274",
+                "5bb65130a11962b732fa7f03c4ddef087683be30d7978af246d46dcc6c7f62ae",
+                "f78c650398ed2b9ecbff1407ed668384a223d65abf76a85c6f5c46c20d69f205",
+                "51aa486cd697250267399f2b8e495dce00d13c284616fa65a1d4b936c70f760c",
+                "884d49f58120d16a90fbd5aaabe648fd875505fdfaa07b878227d915f8b9b89a",
+                "e9148d7156b801aa0d079455f776eb16b664f66e179564cf70dda4c856b9e855",
+                "7c2b227530d673ec93ca0f7bc893d03f647ed88edd2afec7c1bcba09012fab11",
+                "eced9ba5206cb9585568ac8f123a0a7333d0136f71308a7453463bc37c363d01",
+                "4bf1a6078fcbb2e62fc976c74b54ddaccf035afbf97d553044b561ab7ea7eaf5",
+                "a0032d1d88b86267d454da88c552f1ce8b5f81f26a705e31936156c3124b00a4",
+                "048c88ff66d8a25b49f1ed0162a56810156ea59327861bee14e4a86e42ede85c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "abc": 0.00012962028079846092,
-                "pxa_id": 0.00002046636012607278
+                "abc": 0.00014996591683708247,
+                "pxa_id": 0.000027266530334014997
             },
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
-                "www.rivardbuickgmc.com",
-                "www.audiusa.com",
-                "www.davesmith.com",
-                "www.kbb.ca",
-                "www.corvetteworlddallas.com",
                 "www.stevinsontoyotawest.com",
-                "www.autonationusa.com",
-                "www.autonationdrive.com",
-                "www.liftedtrucks.com",
-                "www.mountainstatestoyota.com",
-                "www.freemantoyota.com",
-                "www.kingstoyota.com",
+                "www.fredandersontoyota.com",
+                "www.rivardbuickgmc.com",
+                "www.autotrader.com",
                 "www.toyotaofgreenville.com",
+                "www.subaru.com",
+                "www.kingstoyota.com",
                 "www.kbb.com",
+                "www.lithia.com",
+                "www.autonationusa.com",
                 "www.offleaseonly.com",
-                "www.camelbacktoyota.com",
                 "www.hendrickcars.com",
-                "www.maplewoodtoyota.com"
+                "www.maplewoodtoyota.com",
+                "www.fredbeans.com",
+                "www.autonationdrive.com",
+                "www.mountainstatestoyota.com",
+                "www.cavendertoyota.com",
+                "www.parkplace.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/exchange\\/callback\\/adx",
-            "cookies": 0.000177,
+            "cookies": 0.000198,
             "fingerprinting": 0,
             "subdomains": [
                 "cs"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 29,
+            "prevalence": 0.000198,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -262,36 +275,37 @@
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
-                "www.americantoyota.com",
+                "www.autonationusa.com",
                 "www.subaru.com",
-                "www.hendrickcars.com",
-                "www.davesmith.com",
-                "www.kbb.ca",
-                "www.maplewoodtoyota.com",
-                "www.offleaseonly.com",
-                "www.audiusa.com",
-                "www.rivardbuickgmc.com",
-                "www.hertzcarsales.com",
-                "www.liftedtrucks.com",
-                "www.toyotaofgreenville.com",
-                "www.aviscarsales.com",
+                "www.planetsubaru.com",
                 "www.mountainstatestoyota.com",
-                "www.camelbacktoyota.com",
-                "www.autonationdrive.com",
-                "www.fredandersontoyota.com",
-                "www.autonationusa.com"
+                "www.freemantoyota.com",
+                "www.parkplacelexusplano.com",
+                "www.stevinsontoyotawest.com",
+                "www.toyotaofgreenville.com",
+                "www.kingstoyota.com",
+                "www.audiusa.com",
+                "www.liftedtrucks.com",
+                "www.parkplace.com",
+                "www.aviscarsales.com",
+                "www.rivardbuickgmc.com",
+                "www.maplewoodtoyota.com",
+                "www.autotrader.com",
+                "www.hendrickcars.com",
+                "www.cavendertoyota.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/liveramp\\/callback",
-            "cookies": 0.000177,
+            "cookies": 0.000198,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall"
+                "pixall",
+                "pixall-qa"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 29,
+            "prevalence": 0.000198,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -302,36 +316,36 @@
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
-                "www.lithia.com",
-                "www.aviscarsales.com",
-                "www.stevinsontoyotawest.com",
-                "www.toyotaofgreenville.com",
-                "www.liftedtrucks.com",
-                "www.maplewoodtoyota.com",
-                "www.camelbacktoyota.com",
                 "www.davesmith.com",
-                "www.autonationusa.com",
-                "www.rivardbuickgmc.com",
-                "www.corvetteworlddallas.com",
+                "www.cavendertoyota.com",
                 "www.kingstoyota.com",
-                "www.mountainstatestoyota.com",
-                "www.autonationdrive.com",
-                "www.audiusa.com",
+                "www.liftedtrucks.com",
+                "www.hendrickcars.com",
+                "www.stevinsontoyotawest.com",
+                "www.offleaseonly.com",
+                "www.hertzcarsales.com",
+                "www.parkplace.com",
+                "www.corvetteworlddallas.com",
+                "www.fredbeans.com",
+                "www.maplewoodtoyota.com",
                 "www.fredandersontoyota.com",
-                "www.kbb.ca",
-                "www.americantoyota.com"
+                "www.subaru.com",
+                "www.autonationdrive.com",
+                "www.autonationusa.com",
+                "www.aviscarsales.com",
+                "www.mountainstatestoyota.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/exchange\\/callback\\/pub",
-            "cookies": 0.000177,
+            "cookies": 0.000198,
             "fingerprinting": 0,
             "subdomains": [
                 "cs"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 29,
+            "prevalence": 0.000198,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -342,24 +356,24 @@
             "exampleSites": [
                 "autotrader.com",
                 "kbb.com",
-                "www.corvetteworlddallas.com",
-                "www.hertzcarsales.com",
-                "www.kbb.ca",
-                "www.autonationusa.com",
                 "www.stevinsontoyotawest.com",
-                "www.camelbacktoyota.com",
-                "www.parkplace.com",
-                "www.toyotaofgreenville.com",
-                "www.rivardbuickgmc.com",
-                "www.lithia.com",
                 "www.offleaseonly.com",
-                "www.autonationdrive.com",
-                "www.aviscarsales.com",
-                "www.americantoyota.com",
-                "www.mountainstatestoyota.com",
-                "www.audiusa.com",
+                "www.kingstoyota.com",
+                "www.freemantoyota.com",
+                "www.corvetteworlddallas.com",
+                "www.planetsubaru.com",
+                "www.hendrickcars.com",
+                "www.davesmith.com",
+                "www.autotrader.com",
                 "www.subaru.com",
-                "www.maplewoodtoyota.com"
+                "www.maplewoodtoyota.com",
+                "www.aviscarsales.com",
+                "www.liftedtrucks.com",
+                "www.toyotaofgreenville.com",
+                "www.fredandersontoyota.com",
+                "www.rivardbuickgmc.com",
+                "www.autonationdrive.com",
+                "www.autonationusa.com"
             ]
         },
         {
@@ -367,49 +381,49 @@
             "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
-                "adse"
+                "adse",
+                "adsw"
             ],
             "apis": {},
             "sites": 15,
             "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
-                "3c9cf7c866d9b9411a5a3fd66a6488c8538ddff464caccf2316ae7b178623d6d",
-                "72a3b472990f759442a89db117729ca0c537e01fc44812ca7be0a1e4e61928f5",
-                "8ad7ac9c44673268c158ee3eeaee5763220044a901b30f5022b59a874f68e135",
-                "c396ae342dd47707039bc3798a7c3d5aee43ee14bc28feffa0781ccf4b98724c",
-                "1caf2a865595e014592370cf0b7637cb33a0267831e32efefcfdfa238fca173a",
-                "a158480a3b374c2bbfb2d06fea911deb026fbca644c8886521db59a6b980c204",
-                "0c99cd5966ab81e0465832b0669f7f9692815acd96a1cd03eb0947ac1a2535c4",
-                "e7da53eafd1af4ea8e475ec67373bf01151cf3ff1492c2eb2fe4c600a97faeca",
-                "7c44ad0508950bf99770104ff63ed910b6a1ea341e2a66bee62224c7fdac9058",
-                "14ea01e2b43fea756d161bd79d65e52b70e1b8ae75c980490872078062e56c67",
-                "c6cd33158086544b48d3307dda165ec028f79f91397b882947a9d5ccf7fb5826",
-                "23ac05445f66c7081cc0fa1adbabeb84a3950f52f53e058179559fe096a76939",
-                "c87cad32d7b3f64e7ecf28906ed6890c0b46643d53aa7ccb7dcf329150a4ab9f",
-                "eb7b661f58bc68b066072045b8a78bfe24c612801a607b6ab0d942e399e17417"
+                "b10c6b9aa90e2d10529906d97034a7b9e27b4e1f4471d231f183e7ce4cbc2268",
+                "a86f99782c177a11c051088b66094176f7b3b2b684b02be20ebe2596d778b41b",
+                "296ee3aaed76b6ebab226a553c9d406be9fdc6c15a83cae6e46e436577bb8d01",
+                "0d1fea63adfb553074055e2ab5095bc8a504b7d93b921fbd98fb2c77517be7f9",
+                "9e64b32b0b0ca8ed945bfdc11bc3e1594bc268a813070705b27052f469089234",
+                "d532851fb0277134ce1fbabcff0ae862503231bd1ca050e794bd9b2e686538a0",
+                "100c2ab3560897f7e5cb11d1c4e955e5b69008c00ef195741fc60f6f852cced4",
+                "4f19dbb455d093a862155c81b367f835a8cbaba36c7c7b4795a5f60d085e93f4",
+                "de5922c58f80b78075acdc7ebc23202f7cd9e108bba4a470936fbbc727dd6e18",
+                "089968cf371bdfadcb3b9ebc04673ae66ecf69202012cccfc0507efe222a14b8",
+                "13052dc1dd5f72a948f28cd7c04e593884b6a679b2b7ec0680e9c855fd39b390",
+                "be959e181a004948e158e6c3b4d3f0fdb89b96c1c52e453803512a84a65bd033"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
+                "muuid_origin": 0.000006816632583503749,
+                "lotame_domain_check": 0.00003408316291751875
             },
             "exampleSites": [
-                "beachgrit.com",
                 "bodyheightweight.com",
                 "cars.usnews.com",
-                "www.4devs.com.br",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "ew.com",
+                "kbb.com",
+                "technical.city",
+                "tides.willyweather.com.au",
+                "www.autotrader.com",
+                "www.f150lightningforum.com",
                 "www.ironmountaindailynews.com",
-                "www.kenkenpuzzle.com",
                 "www.liquor.com",
-                "www.mininggazette.com",
-                "www.nextbigfuture.com",
-                "www.salisburypost.com",
-                "www.timesleaderonline.com",
+                "www.mopedarmy.com",
+                "www.myrecipes.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com",
-                "www.woodmagazine.com"
+                "www.vindy.com"
             ]
         },
         {
@@ -417,7 +431,8 @@
             "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
-                "pixe"
+                "pixe",
+                "pixw"
             ],
             "apis": {},
             "sites": 15,
@@ -430,21 +445,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "beachgrit.com",
                 "bodyheightweight.com",
                 "cars.usnews.com",
-                "www.4devs.com.br",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "ew.com",
+                "kbb.com",
+                "technical.city",
+                "tides.willyweather.com.au",
+                "www.autotrader.com",
+                "www.f150lightningforum.com",
                 "www.ironmountaindailynews.com",
-                "www.kenkenpuzzle.com",
                 "www.liquor.com",
-                "www.mininggazette.com",
-                "www.nextbigfuture.com",
-                "www.salisburypost.com",
-                "www.timesleaderonline.com",
+                "www.mopedarmy.com",
+                "www.myrecipes.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com",
-                "www.woodmagazine.com"
+                "www.vindy.com"
             ]
         },
         {
@@ -455,146 +470,45 @@
                 "s.update"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
+            "sites": 13,
+            "prevalence": 0.0000886,
             "cnames": [],
             "responseHashes": [
-                "8264112f9123953fff53459d825c16c7f47d0abd66384889a6cb7fa990e8871b",
-                "0e874343e248a292977e5834019d6b8d11cab85cfc51d916cbdc8424cbfdbc19",
-                "b0bfed95dc1c4b674fb34f59dfa5bb5dd77cd3a763324febbb3155ee8bd7a360",
-                "2439b1730fea55265b8635e38dfbcce332d4ff11a9038d1422ab679d800b128a",
-                "6f277b07afad772f9b665df60071c7c56e52546ebe9557281c8ed3de10b62c07",
-                "fa91a76793133174975b108c92825d66230d5fbcf050cb7a09eaf90ff8f2f92c",
-                "6c66a769370f1904646614ef937257b3d58c5bbb178ed22180f5d1bd7fad5e7f",
-                "74abb898849675d3bb649a2fed482227a38302ad7f637a5c76ace91b3bd403ad",
-                "42d0e6784524f903d1076f0c2e459c9eda75a388271ec39a90f195c2bf04e7d8",
-                "a7f8ed7257e4841218ae4bb09545c0af4ebfb74ce329422bcfe504b119259552"
+                "e98d11fe52c4a1637ef226d7ce9ca312f803820ceb25ba511da3be9d254a19f7",
+                "4b0a76eb3e317d7583897b46c5aa31ebe4f64bf640707b4b38121f5f02dc5adc",
+                "7708982c26fa2c767da2cd98c5702bf7db6b6338e501d12223faddb197f1b91b",
+                "040b10f7ee2872d1ce705f48a288e07977678253c88465b18da3f75b2308296f",
+                "6c2f7d69da1aec65d6eb79e5aec95c95247c35b733646d99a3d608c1ddceb587",
+                "8bc3047fcf078820f206b57bd7d99d6b139ffadf56e1a4f63b0e8f1baa521546",
+                "5567580888f1efb7197be04fb639d0c125da8b0507758f9b0e383247adf0397f",
+                "50713b61c19b214652f758e7f6160f39b79fe86d04578aab9de1e041f691eaa7",
+                "7944c7e8038bbf09884105d46a2e73f54bbc44bc6b1534c8a5db2479d8a5b74b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000341106002101213
+                "muuid_origin": 0.000006816632583503749,
+                "lotame_domain_check": 0.000027266530334014997,
+                "abc": 0.000006816632583503749
             },
             "exampleSites": [
-                "beachgrit.com",
                 "bodyheightweight.com",
                 "cars.usnews.com",
-                "www.4devs.com.br",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "ew.com",
+                "kbb.com",
+                "tides.willyweather.com.au",
+                "www.autotrader.com",
                 "www.ironmountaindailynews.com",
-                "www.kenkenpuzzle.com",
                 "www.liquor.com",
-                "www.mininggazette.com",
-                "www.nextbigfuture.com",
-                "www.salisburypost.com",
-                "www.timesleaderonline.com",
+                "www.mopedarmy.com",
+                "www.myrecipes.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com",
-                "www.woodmagazine.com"
+                "www.vindy.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/ford_t2_fdaf_virginia_discover_summer_bronco_cl\\/1\\/adUtils-v3\\.0\\.0\\/155831892\\/155831892\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "banners2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beachgrit.com",
-                "bodyheightweight.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {
-                "Navigator.prototype.vendor": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Performance.prototype.memory": 3,
-                "window.devicePixelRatio": 3,
-                "window.name": 3,
-                "console.memory": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.appCodeName": 3,
-                "Navigator.prototype.languages": 3,
-                "Navigator.prototype.onLine": 3,
-                "Navigator.prototype.webdriver": 3,
-                "Navigator.prototype.mediaDevices": 3,
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "Navigator.prototype.deviceMemory": 3,
-                "Navigator.prototype.plugins": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
-                "Screen.prototype.availWidth": 3,
-                "Screen.prototype.availHeight": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.colorDepth": 3,
-                "Screen.prototype.pixelDepth": 3,
-                "Screen.prototype.availLeft": 3,
-                "Screen.prototype.availTop": 3,
-                "Screen.prototype.orientation": 3,
-                "window.screenX": 3,
-                "window.screenY": 3,
-                "window.screenLeft": 3,
-                "window.screenTop": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.maxTouchPoints": 3,
-                "BarProp.prototype.visible": 3,
-                "window.outerHeight": 3,
-                "window.outerWidth": 3,
-                "Navigator.prototype.connection": 3,
-                "Date.prototype.getTime": 3,
-                "Date.prototype.getTimezoneOffset": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
-                "Navigator.prototype.permissions": 3,
-                "speechSynthesis.__proto__.getVoices": 3,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
-                "Navigator.prototype.getBattery": 2,
-                "URL.createObjectURL": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Notification.permission": 2
-            },
-            "sites": 9,
-            "prevalence": 0.0000614,
-            "cnames": [],
-            "responseHashes": [
-                "dc0317e78eb246ebb95145e23ecb35d6d93c2428d8f5324fddc48a987ebe0c34"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bodyheightweight.com",
-                "cars.usnews.com",
-                "www.4devs.com.br",
-                "www.autolist.com",
-                "www.flickchart.com",
-                "www.ironmountaindailynews.com",
-                "www.mininggazette.com",
-                "www.timesleaderonline.com",
-                "www.vehiclehistory.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/18644224\\.html",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/39665544\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -602,22 +516,22 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e532a144d8bb02a296f9e198f497d6970d0058e2f31f79122d4f5d304370ee18"
+                "1b43510484e5fc7b99a69a8f7dfacd507ef2508868c0eb328babda616029a764"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_5RJ4NBZUojj8x\\/postback",
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjG6YCQKBNV34E87\\/postback",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -639,26 +553,82 @@
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/HYPE_dynamicScripts_v1_Filter\\.js",
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
-                "banners2"
+                "s.update"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "apis": {
+                "Navigator.prototype.vendor": 7,
+                "Navigator.prototype.userAgent": 7,
+                "Performance.prototype.memory": 4,
+                "window.devicePixelRatio": 4,
+                "window.name": 5,
+                "console.memory": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.appCodeName": 5,
+                "Navigator.prototype.languages": 5,
+                "Navigator.prototype.onLine": 5,
+                "Navigator.prototype.webdriver": 4,
+                "Navigator.prototype.mediaDevices": 4,
+                "Navigator.prototype.hardwareConcurrency": 5,
+                "Navigator.prototype.deviceMemory": 4,
+                "Navigator.prototype.plugins": 4,
+                "window.innerWidth": 5,
+                "window.innerHeight": 5,
+                "Screen.prototype.availWidth": 5,
+                "Screen.prototype.availHeight": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5,
+                "Screen.prototype.pixelDepth": 5,
+                "Screen.prototype.availLeft": 5,
+                "Screen.prototype.availTop": 5,
+                "Screen.prototype.orientation": 5,
+                "window.screenX": 4,
+                "window.screenY": 4,
+                "window.screenLeft": 4,
+                "window.screenTop": 4,
+                "Navigator.prototype.platform": 5,
+                "Navigator.prototype.maxTouchPoints": 5,
+                "BarProp.prototype.visible": 5,
+                "window.outerHeight": 5,
+                "window.outerWidth": 5,
+                "Navigator.prototype.connection": 5,
+                "Date.prototype.getTime": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
+                "Navigator.prototype.permissions": 5,
+                "speechSynthesis.__proto__.getVoices": 4,
+                "OfflineAudioContext.prototype.constructor": 4,
+                "AudioBuffer.prototype.getChannelData": 5,
+                "Navigator.prototype.getBattery": 5,
+                "URL.createObjectURL": 4,
+                "NavigatorUAData.prototype.brands": 5,
+                "NavigatorUAData.prototype.platform": 5,
+                "NavigatorUAData.prototype.getHighEntropyValues": 5,
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Notification.permission": 5
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "34d8932afaf63cb1b99ba9ac5969ea901494d885602c818f88f7a02a2f9929ac"
+                "5dcc48a087d06f2e0815bcff27b2e06175bc251d9cdff31d5263a87e4395f659"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
-                "www.vehiclehistory.com"
+                "kbb.com",
+                "www.autotrader.com",
+                "www.ironmountaindailynews.com",
+                "www.mopedarmy.com",
+                "www.respostas.com.br",
+                "www.vehiclehistory.com",
+                "www.vindy.com"
             ]
         },
         {
@@ -669,10 +639,10 @@
                 "banners"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 3
+                "Event.prototype.timeStamp": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "beb9f5e32ed61fbce010497242a9b6b8219242b5ffc636038e7891510c773725"
@@ -682,8 +652,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "kbb.com",
+                "www.mopedarmy.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com"
             ]
         },
@@ -696,7 +667,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e04faed4e3b564a70079dc839b8bed607e51883e741c035d34fe7bacaf2c6051"
@@ -706,7 +677,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
@@ -718,10 +689,10 @@
                 "assets2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "9feb0c4b5d845086a8b8f4285cfc365a896050635d73aa4f65aa233b52f8e23b"
@@ -731,8 +702,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "kbb.com",
+                "www.mopedarmy.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com"
             ]
         },
@@ -744,8 +716,8 @@
                 "banners"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "ba3d250b42557680515858f03f30d00878cba1f2aeecf670c6635610f60e0d4a"
@@ -755,8 +727,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "kbb.com",
+                "www.mopedarmy.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com"
             ]
         },
@@ -768,8 +741,8 @@
                 "banners"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "ea59a37f18bd317b9ada4bf3e11edc2bee50621aa5e2e6c704f8f3bda7de72cd"
@@ -779,8 +752,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
-                "www.flickchart.com",
+                "kbb.com",
+                "www.mopedarmy.com",
+                "www.respostas.com.br",
                 "www.vehiclehistory.com"
             ]
         },
@@ -792,10 +766,10 @@
                 "banners"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "94f137c233766bb0015876c6cfbf8c28125aca4cb3a826d4f7a0495a38a8f3a5"
@@ -805,37 +779,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/lincolndynamicnew01728x90_hype_generated_script\\.js",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/kiadynamicnew01728x90_hype_generated_script\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "banners2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "49abf909a38e6fc05a7790529af506e5972e7d306d7a4f3de16ad2d810b540df"
+                "da45af6096685731f5611e0e9d354cbf73a47cfd6cf775ad4927792ff0d26dd3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/593282",
+            "rule": "esm1\\.net\\/894048",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -843,22 +817,22 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "26b5373f3ded0345d0a8dc7b37f22199a9af4259859205951f1cfb98d99d7985"
+                "9cf6fe940f66dd8f24d653e741400672cd3cfe25aa46ec23a51c2df726eb43be"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/ce479f5c0a0e087f40e2f29b39708b9f",
+            "rule": "esm1\\.net\\/2251bb510a0e094a47c687775665ead3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -866,22 +840,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "249d62eef5f25adbcf42ac9b0c666e91022e351cc1b93929ea7830a9c1da82ab"
+                "65a23a53757218eaea68d6081b6c25efe054b0a14c2f59ac652a7d04b88d7eb7",
+                "517c991a7de15e05f0b19ba69f829452e5457cbc61414d4735327d7de8b815cc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/86c33ce00a0e0a9301159cb0c5c27aab",
+            "rule": "esm1\\.net\\/922be02a0a0e0a9a7455024259912b8a",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -889,22 +864,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "7206be7bbc4f8b58bc965858c9632cc715bf952f69443be6594eea641d6235f1"
+                "3d0b127a14ce7b9897039276aabbd03dcdc1042b1584dd43af4d814a3d9572ff",
+                "6d94d28c918ea72392fe264f41d5a15d3e075ea67437a7efa423774236778fbd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2ea5886c0a0e0a9a6301a6fd1da0cd0f",
+            "rule": "esm1\\.net\\/922c10760a0e0a9a74550242f907f24c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -912,22 +888,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "93f4244b332bb0e9022b431eb2756ccdb7989c0e32c90c9252b35271e9299e62"
+                "4d539e69205e65db22fff1495da1bff78c2a1748d73715f7d1365e9289136ee4",
+                "11b35100512c01a78e34a90691ddf42e6dc089f636884be6771ab2cd310fbcaa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/4b6411870a0e087f2c9ad11123760541",
+            "rule": "esm1\\.net\\/25ff392b0a0e0a931927c0c33482c66f",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -935,22 +912,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "c3ffa0db4b5b54130b06e8c550035a04d5e5557db8b205a92f571543390f921f"
+                "f2f00952e7c094eb85fc6ab9d7b761f5d45edbc3992eb3919b713fa78600bb2b",
+                "ba41f1b50012ef3945a08003bd2abc80fd0c2461217422f75f4c8b9a43332986"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/5e7aa54d0a0e0a93754fa067d2f898b8",
+            "rule": "esm1\\.net\\/922bd5680a0e0a9333590c122b7395e2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -958,22 +936,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "89abca52eff4e5a1877ec349e1d5d80aa3cb710464917c99beba7c674243fa27"
+                "4dbaa818385f7ba692ffb30118ab1fb1df196d7ca70c6cf7c090a7bb4e755c71",
+                "8bcc9355d32e69d34593a6fcb493091c628364410eeb8943e9971f207a218f6c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/49d849930a0e087f23ca16ceda9c0c17",
+            "rule": "esm1\\.net\\/eed7dbf80a0e0a906720eae740ee5389",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -981,22 +960,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5ed1b36b776423f21b1d1db0674b7432b67ac84d7f9ceaa11f86045126ec28f6"
+                "188c69b6a055dd48d6d41f527ec8514ee7219a097224969b1d4f0eb8340835e7",
+                "cc3c0656f49319023b35a582b5e7edeba8a0b030680c47d2788269c91b674861"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/06f48eb50a0e081d3aca7c24cb785999",
+            "rule": "esm1\\.net\\/922be2890a0e0a9a745502429175ac27",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1004,22 +984,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "67c482c8842de03f532189a6e3f17c081d63dbf8ff1d48162e41eb396d763c37"
+                "09e8cbf10e1d31ee8cb777ef8c2675f5b618c0ef863b18c3967eea7d1173254c",
+                "b7754d300695b0e9d5b6b364500ed2ef9ae598a93129dd09cc84324ff449be18"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2ea595630a0e0a9a6301a6fde4128c4a",
+            "rule": "esm1\\.net\\/eed7ab4f0a0e0a906720eae748075ec5",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1027,22 +1008,23 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "42775b28d5a09271ade6e5e30a65e2c498d30cc9348c9096979bfcd3cb7f2e09"
+                "618d83beca2ecf862136f3019358f8220465cfabb14ab0aa282564a00385b571",
+                "9cfb1833b1756d01de42aa87c4d7d33532b51797bde047cfa0c5daa057f5dcd6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/324ceaf70a0e087f78ac9134a27d8de7",
+            "rule": "esm1\\.net\\/95ce1e710a0e0a990b088589b70886d2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1050,78 +1032,57 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "01cdc767e50a354aed60435d586056f3eea61aeb6ff12911937e1211d2ddf5ea"
+                "b35c56797370561f90fb70c94c3535bd9378ddb16137de7cd69edf2b4160e920",
+                "59bd97760d5306d937d8da1ab3484b9cf13c9e5a1614bd142289eeaeff3e67b4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
-                "www.autolist.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/d78344f60a0e0a9157172dea7ddef2f4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vehicles"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "fff4c3cec97de24c8dd0a81226b055634438ff625bf659f8a8062deffad4addd"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usnews.com",
-                "www.autolist.com",
-                "www.vehiclehistory.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/HYPE-601\\.thin\\.min\\.js",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/HYPE-734\\.thin\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "banners2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 3,
                 "window.devicePixelRatio": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "7316a423e347265a1388ec6f584ee87447b0d8a0cd16039fbb61b68e22f6c102"
+                "a5b8a09f98fe3daed619464cbd428f1c43dd42241ca261bb03e726abcd3e9080"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/x\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/x\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "acfb89b2d8effe1615e10fe1463059445cda192f6fb9fb5f944ccd219da49a55"
@@ -1131,63 +1092,66 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/hand\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/hand\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "d692d1e713d95654d5f6cddbd6596a6bb0c42358b3cf3fa9e6c36c6acbaddf14"
+                "c392fa8095225cc4490ac97d65c961b1ff30a506fd304a5aa0c2f921aaa38b72"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/blackArrow\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/blackArrow\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "c5bc8434c07533e81e8a50bd666fd5e946bd29c1962bc3c75d87b234f05c64ba"
+                "a1a61ced0d88e87375b30e9b9c40150bc7dff3a2cc5c3944b6132cdaa2306067"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/whiteArrow\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/whiteArrow\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6a44988145a0229dc6ae65a185e625bc05ecd1d3107f00de5d05b4ada4b9304d"
@@ -1197,165 +1161,268 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/arrow\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/KiaLogo\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "43eafc6cd8850e5000582d8570a56c4888a93821e9f2d1ec196170373dbb4fe3"
+                "9395d1b47bb11eb0bf18f2ab87dbe41301cbaf5a82b894f9380832b76d91f6c7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/lincoln_dynamic_new_01\\/18\\/adUtils-v3\\.0\\.0\\/18644224\\/lincoln_dynamic_new_01_728x90\\.hyperesources\\/lincoln_horz\\.png",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/arrow\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "a2dd7a00b3de8783c78e341d9257e428d1c75000f630dd7d85c1de52c3ec8c6c"
+                "2f4d6e010a79bf12f8cde6c0439e2a569eadaa0d3927e3ea3ee56bea09780ee1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/ProximaNova-Bold\\/ProximaNova-Bold\\.woff",
+            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/kia_dynamic_new_01\\/20\\/adUtils-v3\\.0\\.0\\/39665544\\/kia_dynamic_new_01_728x90\\.hyperesources\\/bg728x90\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "banners2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7e60336cfa3ab0a06032e51ceceb0040b6eed82789c66ddc9edf6ca14539f407"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usnews.com",
+                "kbb.com",
+                "www.vehiclehistory.com"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/KiaSignatureRegular\\/KiaSignatureRegular\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "b93d1f2349c119393cd2351e0b0f8ac691a8708f377d6b823a780e59ce07a54c"
+                "94805f1429ef9e5a4fce4289ef48213aff9e6bec0c34014dd6781352e020d9d8"
             ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/ProximaNova-Regular\\/ProximaNova-Regular\\.woff",
+            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/KiaSignatureBold\\/KiaSignatureBold\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "banners"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "3edbd077f0e9274169ade51482728aa641cde9cce9ca6e5c9a7e25164ac5d33d"
+                "a829c6bdd2365900fbe0ec202f59b0c6d86c59199cab174ef2b799cf8b53c141"
             ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/MillerBanner-SemiboldItalic\\/MillerBanner-SemiboldItalic\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "banners"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "234c96da45d7762a1186f0858761754944480eae77cbd7acdf0840b7a4d89590"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usnews.com",
-                "www.vehiclehistory.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/images\\/pictures\\.dealer\\.com\\/5c2a613a-1bee-4853-b294-56a8680f49bb",
+            "rule": "esm1\\.net\\/images\\/images\\.dealer\\.com\\/d743a261-fa40-41b1-9345-ed2f2f09252f",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "a5d3f0510d7374a19522170c4238f8e00830c6d79c1c250f2a8f2638f6554e6d"
+                "2847b42e343f4c16d6b5dd1bbca63bbb03ef632c4eb2d152efa277d395c70594"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/images\\/pictures\\.dealer\\.com\\/33528ab2-9947-46a7-825b-997881dab7e9",
+            "rule": "esm1\\.net\\/images\\/pictures\\.dealer\\.com\\/bfc2c3c9-8909-4907-a7a1-8d221566d532",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "b078e464ffd158c89ce8d79bf1231cb1bbdfd9dcf80217adfae04be674277118"
+                "a6e88b04733268c276f9df3945f922e75b586d998dc9a37c20e3c857f625d284"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usnews.com",
+                "kbb.com",
                 "www.vehiclehistory.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/adstra",
+            "cookies": 0.000164,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixall",
+                "pixall-qa"
+            ],
+            "apis": {},
+            "sites": 24,
+            "prevalence": 0.000164,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "pxa_bc": 0.000006816632583503749
+            },
+            "exampleSites": [
+                "kbb.com",
+                "www.autonationdrive.com",
+                "www.fredbeans.com",
+                "www.toyotaofgreenville.com",
+                "www.parkplacelexusplano.com",
+                "www.corvetteworlddallas.com",
+                "www.freemantoyota.com",
+                "www.cavendertoyota.com",
+                "www.hertzcarsales.com",
+                "www.mountainstatestoyota.com",
+                "www.stevinsontoyotawest.com",
+                "www.maplewoodtoyota.com",
+                "www.lithia.com",
+                "www.planetsubaru.com",
+                "www.kingstoyota.com",
+                "www.davesmith.com",
+                "www.autonationusa.com",
+                "www.liftedtrucks.com",
+                "www.hendrickcars.com",
+                "www.aviscarsales.com"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/93a3b0960a0e081d2055119d6e82307a",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vehicles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac39d3a4034a2b9cc9dca6d3400de6c094992dee6de9e2fc9a9301265303e64b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kbb.com",
+                "www.vehiclehistory.com"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/v2\\/pageload",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixall",
+                "pixall-qa"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "s_pltp": 0.000013633265167007499,
+                "pxa_id": 0.00003408316291751875,
+                "lotame_domain_check": 0.000006816632583503749
+            },
+            "exampleSites": [
+                "audiusa.com",
+                "www.audiusa.com",
+                "www.kbb.ca",
+                "www.rivardbuickgmc.com",
+                "www.subaru.com"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/cookie",
             "cookies": 0.00015,
             "fingerprinting": 0,
             "subdomains": [
@@ -1366,162 +1433,168 @@
             "prevalence": 0.00015,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kbb.com",
-                "www.kingstoyota.com",
-                "www.liftedtrucks.com",
-                "www.davesmith.com",
-                "www.maplewoodtoyota.com",
-                "www.americantoyota.com",
-                "www.camelbacktoyota.com",
-                "www.kbb.ca",
-                "www.toyotaofgreenville.com",
-                "www.mountainstatestoyota.com",
-                "www.autonationusa.com",
-                "www.fredandersontoyota.com",
-                "www.hertzcarsales.com",
-                "www.lithia.com",
-                "www.aviscarsales.com",
-                "www.offleaseonly.com",
-                "www.corvetteworlddallas.com",
-                "www.autonationdrive.com",
-                "www.parkplace.com",
-                "www.stevinsontoyotawest.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/cookie",
-            "cookies": 0.000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pixall"
-            ],
-            "apis": {},
-            "sites": 20,
-            "prevalence": 0.000136,
-            "cnames": [],
-            "responseHashes": [
-                "e03fb1acb3f05a3e8f914d591ec179ea93bb8363928e8f1e436f320e2378c5d7",
-                "3599ccae9446afbb9f6fdc31e6a49a028443aac2d77cdc032dfe94fbe0372f6f",
-                "cb76f996310f79e0e884b9f17df9f1d1e0d4db661731e1bdc0bc7e86feb11243",
-                "93026aedebd400f41566b0051de6f95d69210d5be8e42f57c9ba338128dafaba",
-                "4ef613538e1838de38b2fb578a696eb6d21f107fd7027cfd6394bd9430b295c9",
-                "5228616b2b8cbdda1d87c53533961a774f4b32eff1863000e33d16e40a1aa50c",
-                "9afac9364f0a70cbe47feecf37e37d2a983c074dc3af53795279c9d22de00d83",
-                "e8e51c92ce92daaff5d98d3bf99ba5d047879d55e9072887bd27a0bcc2c1b50c",
-                "1df8d68c141d9d76b73c7c03c2b92d517a3e62666af4cc2d0400b160ba2c8b18",
-                "5c5ff4c791b523ea6518e489c61666e635c5c8efb2530ef6ce7c780bf8be275c",
-                "66c68b205f324b5645f4155f6eb59e864f43264ed23460ebc9fa5d14dd358e0a",
-                "9e8d3bb1feb36c884e7e4d7c2bb683ab5c0f44ac539906af5b7e577e1b7aeafc",
-                "6ecea459d31dccceb837a88bf0d76b0e6ed7b1f49b7cf481877d1a52a1750bb0",
-                "f43979176cd7751fb422e5558c64af30737a5244f707c8e8d1005642b38ee468",
-                "b32cdc6d499f47d88ab3eea3b6f214a70a068c8aefa3e14599be94a55c95d6a4",
-                "d288b5c0ba1096405d7f0e4b28d258fd92b76b3d476f629281602f8b0ebb4841",
-                "ce7c33698ba4f2a35791c6d5e3a32f3ad38c30c5b94cc2918caa338263a3510c",
-                "2e78e5bbbf33abce9837680f2d65e01db38a75b003d92500c017430179712f26",
-                "e9775bb22530cdc1a0bce86b65a14872db5ca608da7a5659145e5ad2d5d40e96"
+                "d9f89abcca64b0540da2ba3bf4e8966888abc4cc4c66b00c01e11de311001015",
+                "e091d98293aea788ac4c9e96fcda1eb11b653f0705ecd4c8a4f356dae84ece82",
+                "d2edffd426a79192ef99e6e979cf8614d467f775f7df9d8c99127cc659b2967d",
+                "5d911a7369a43426674ddce663afa23f7544e913dfaaf07838e99445d43c0bd5",
+                "506077f3a5b4570d5d10db70c8e226d58e4fd4cde2490bf6cf4f4438da9f7444",
+                "15cc22ef9894da32d39890df62db7cce3200de42db69ec7cceb26e0f33667646",
+                "3007b0cee872c336d9a242db3c3fd55c2d8425ccfa64643fbe409a397dc64ba1",
+                "b14cde496f38d42eb65bbc7d3112d795b7a3609ecdc252d3507b192508a9f759",
+                "581eff1f407a5954d2495ee3d8bec19183df9b047d87f083d0310c88b3151d7a",
+                "be48d23dd3cde722c5c2947d3017799eae5fffc3bc1ab06d5591b119bb29852f",
+                "dc532ab7785411392768e46a077164f3a1fda19d2a1338f1def5ffd53bb8e2ad",
+                "ba5633431a3e8cf1bbf96396144e12583d1b4bba8803ca93f0b1eb892267ee27",
+                "508526baee4849a87d33802771ac904743a64b674826084f1ffc470acbc4071f",
+                "c525c191a8fa2acebaf4ea310ac587c9c386173cf1ba5f0c29c28090512b26c7",
+                "30d94a911581e5856fa066436a73536a9ce5177209f08289fcf3e394242f9774",
+                "8a60248d8c4ae9d98c7e8b20e8948e8538b38eb3d716e7397fcb9d0b400eec28",
+                "bf31add8c476c0c7d79e0903b2b94c80e91c02c5d5f2de94025455c22a2a337a",
+                "17c9df0224b02bcc8f8e98ad05d10ecf2894b44e270706ff9d896d813c6d7819",
+                "9f496559a82e3fddca2aa251472b4bc0c375318bceaa2cfe1961d7d7f551ee61",
+                "59b70c3349ddbe6a6af812c549913e10fbcad39ea14255e6f61056306a941861",
+                "a5605678af7f50c942e30ca01de5e3b2adc52ee41531715dd7e9cd637f0fe4c3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "americantoyota.com",
-                "www.autonationdrive.com",
-                "www.autonationusa.com",
                 "www.aviscarsales.com",
-                "www.camelbacktoyota.com",
-                "www.corvetteworlddallas.com",
-                "www.davesmith.com",
-                "www.fredandersontoyota.com",
-                "www.freemantoyota.com",
                 "www.hendrickcars.com",
-                "www.hertzcarsales.com",
-                "www.kingstoyota.com",
-                "www.liftedtrucks.com",
-                "www.lithia.com",
-                "www.maplewoodtoyota.com",
-                "www.mountainstatestoyota.com",
+                "www.planetsubaru.com",
+                "www.fredbeans.com",
+                "www.fredandersontoyota.com",
+                "www.toyotaofgreenville.com",
+                "www.parkplacelexusplano.com",
                 "www.offleaseonly.com",
+                "www.freemantoyota.com",
                 "www.parkplace.com",
+                "www.maplewoodtoyota.com",
+                "www.cavendertoyota.com",
+                "autonationdrive.com",
+                "www.autonationusa.com",
                 "www.stevinsontoyotawest.com",
-                "www.toyotaofgreenville.com"
+                "www.liftedtrucks.com",
+                "www.kingstoyota.com",
+                "www.mountainstatestoyota.com",
+                "www.corvetteworlddallas.com",
+                "www.davesmith.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/v2\\/pageload",
-            "cookies": 0.0000273,
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjIGllIHBZSKIjvH\\/postback",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall"
+                "s.update"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ironmountaindailynews.com",
+                "www.ironmountaindailynews.com"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjHsL5QJBZ-V0iz5\\/postback",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.update"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "s_pltp": 0.00001364424008404852,
-                "pxa_id": 0.00002728848016809704,
-                "lotame_domain_check": 0.00000682212004202426
+                "lotame_domain_check": 0.000027266530334014997
             },
             "exampleSites": [
-                "audiusa.com",
-                "www.audiusa.com",
-                "www.rivardbuickgmc.com",
-                "www.subaru.com"
+                "mopedarmy.com",
+                "www.mopedarmy.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/AjACHnIDBMx1IrHO\\/postback",
+            "rule": "esm1\\.net\\/creative\\/gsap\\/3\\.0\\/min\\/gsap\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "s.update"
+                "banners"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "responseHashes": [
+                "386a292b805ec5376c149711c08d9013658fd08879a7ac9a62a99e14310c397a"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autolist.com",
-                "www.autolist.com"
+                "mopedarmy.com",
+                "www.respostas.com.br"
             ]
         },
         {
-            "rule": "esm1\\.net\\/fl\\/ad\\/publish\\/ford_t2_fdaf_virginia_discover_summer_f150_cl\\/1\\/adUtils-v3\\.0\\.0\\/155833522\\/155833522\\.html",
+            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/FordAntenna-Semibold\\/FordAntenna-Semibold\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "banners2"
+                "banners"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
+            "responseHashes": [
+                "7ff34eef27ea8f4b016dcb1f226f6c21b16b4d1bcd01b0926ddbe77568cf416a"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flickchart.com",
-                "www.mininggazette.com"
+                "mopedarmy.com",
+                "www.respostas.com.br"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_NUUYPBM81Bj4J\\/postback",
+            "rule": "esm1\\.net\\/creative\\/fonts\\/files\\/FordAntenna-Regular\\/FordAntenna-Regular\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "banners"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d9c5c88929bf38f64ad5fdf5716f525d0552ceb1c76da2e2648d0def00e49bd2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mopedarmy.com",
+                "www.respostas.com.br"
+            ]
+        },
+        {
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjIDaTwLBNKhaS-F\\/postback",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1536,114 +1609,16 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013633265167007499
+            },
             "exampleSites": [
-                "flickchart.com",
-                "www.flickchart.com"
+                "respostas.com.br",
+                "www.respostas.com.br"
             ]
         },
         {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_y9BwGBM7W3Uln\\/postback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ironmountaindailynews.com",
-                "www.ironmountaindailynews.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_y9EIDBM4dvEoc\\/postback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ironmountaindailynews.com",
-                "www.ironmountaindailynews.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_uaDMBBNRCWfTQ\\/postback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mininggazette.com",
-                "www.mininggazette.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_uaEEJBNThsfnI\\/postback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mininggazette.com",
-                "www.mininggazette.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_3XHERBNAphCia\\/postback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.update"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "timesleaderonline.com",
-                "www.timesleaderonline.com"
-            ]
-        },
-        {
-            "rule": "esm1\\.net\\/2\\/2\\.100\\.0\\/716255\\/Ai_6pkkKBM-s7lSK\\/postback",
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjINjJkLBMmTffME\\/postback",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1663,52 +1638,78 @@
                 "vehiclehistory.com",
                 "www.vehiclehistory.com"
             ]
+        },
+        {
+            "rule": "esm1\\.net\\/2\\/2\\.101\\.0\\/716255\\/AjHe0XcXBNEp05wO\\/postback",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.update"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vindy.com",
+                "www.vindy.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000362,
+    "cookies": 0.000354,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6777251184834123
-        },
-        {
-            "domain": "amazon-adsystem.com",
-            "prevalence": 0.11374407582938388
+            "prevalence": 0.7216981132075472
         },
         {
             "domain": "dealer.com",
-            "prevalence": 0.08056872037914692
+            "prevalence": 0.09905660377358491
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.052132701421800945
-        },
-        {
-            "domain": "pubmatic.com",
-            "prevalence": 0.037914691943127965
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.0660377358490566
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.02843601895734597
+            "prevalence": 0.04245283018867924
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.02830188679245283
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.018867924528301886
         },
         {
             "domain": "esm1.net",
-            "prevalence": 0.009478672985781991
+            "prevalence": 0.014150943396226415
+        },
+        {
+            "domain": "dusegdgs87n8b.cloudfront.net",
+            "prevalence": 0.009433962264150943
         }
     ],
     "types": {
-        "Script": 94,
-        "Document": 76,
-        "Image": 120,
-        "XHR": 71,
-        "Font": 6
+        "Script": 97,
+        "Document": 78,
+        "Image": 143,
+        "XHR": 66,
+        "Font": 10
     },
     "nameservers": [
-        "ns-1266.awsdns-30.org",
-        "ns-1567.awsdns-03.co.uk",
         "ns-613.awsdns-12.net",
-        "ns-275.awsdns-34.com"
+        "ns-275.awsdns-34.com",
+        "ns-1567.awsdns-03.co.uk",
+        "ns-1266.awsdns-30.org"
     ]
 }

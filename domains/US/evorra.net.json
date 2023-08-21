@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "p22"
+        "p22",
+        "api.p22"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -60,26 +61,26 @@
         },
         {
             "rule": "evorra\\.net\\/lib\\/sp\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "p22"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -90,18 +91,60 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_tr_ses.d06a": {
-                    "ttl": 1812,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 0.5
                 },
                 "_tr_id.d06a": {
-                    "ttl": 33669012,
+                    "ttl": 33669006,
                     "length": 108,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "petitfute.com",
+                "www.petitfute.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/spin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.p22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61229688e39e2148e3f10f8dfef3afc796a61ebdc9e78c3582c53c57c2af546f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "petitfute.com",
+                "www.petitfute.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/spin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.p22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petitfute.com",
@@ -111,7 +154,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -119,12 +162,14 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns-2008.awsdns-59.co.uk",
         "ns-1353.awsdns-41.org",
-        "ns-897.awsdns-48.net",
         "ns-311.awsdns-38.com",
-        "ns-2008.awsdns-59.co.uk"
+        "ns-897.awsdns-48.net"
     ]
 }

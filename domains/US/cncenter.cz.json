@@ -7,15 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
         "w",
         "w-cached",
-        "img",
-        "gtm"
+        "gtm",
+        "img"
     ],
     "cnames": [
+        {
+            "original": "analytics.ahaonline.cz",
+            "resolved": "gtm.cncenter.cz"
+        },
         {
             "original": "analytics.recepty.cz",
             "resolved": "gtm.cncenter.cz"
@@ -36,7 +40,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ed91a809e2d278d32c184fdd557f464721a8f463a7fe331182c9d0a29a0e7ac0"
@@ -59,10 +63,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "710a993c7d7193ff8c08f71d1cf9d7a54ee81d4a7247d32b73caf46b58ef0c3d"
+                "7ad1ac26b477aa4816707b23f85fcf9cbd8e4b5cd20d2e0198dbf270bd6f456e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,7 +78,7 @@
             ]
         },
         {
-            "rule": "cncenter\\.cz\\/js\\/cnc-ads-controller\\.MtT9Av0AjK\\.min\\.js",
+            "rule": "cncenter\\.cz\\/js\\/cnc-ads-controller\\.LZXsF61Con\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -86,10 +90,10 @@
                 "window.innerWidth": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "1b2aedbbcba717947e9578d77cba4302d919071b1cb5b8e31667e8e76a10e7e4"
+                "62c3028d152ed3f4b0886d42ce69491235ff8b3e250839af3977f4212b5444f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -101,31 +105,6 @@
             ]
         },
         {
-            "rule": "cncenter\\.cz\\/js\\/default\\/standalone\\/gtmService-3\\.0\\.2\\.didomi\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5c50f646a1a977e3ad4f3bfea215c8332c8f73b53e3ed83f72f545dfd71d7d68"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "recepty.cz",
-                "www.zive.cz"
-            ]
-        },
-        {
             "rule": "cncenter\\.cz\\/g\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
@@ -133,9 +112,13 @@
                 "gtm"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [
+                {
+                    "original": "analytics.ahaonline.cz",
+                    "resolved": "gtm.cncenter.cz"
+                },
                 {
                     "original": "analytics.recepty.cz",
                     "resolved": "gtm.cncenter.cz"
@@ -152,8 +135,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "recepty.cz",
+                "ahaonline.cz",
+                "www.ahaonline.cz",
                 "www.recepty.cz",
+                "www.zive.cz"
+            ]
+        },
+        {
+            "rule": "cncenter\\.cz\\/js\\/default\\/standalone\\/gtmService-3\\.0\\.2\\.didomi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c50f646a1a977e3ad4f3bfea215c8332c8f73b53e3ed83f72f545dfd71d7d68"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "recepty.cz",
                 "www.zive.cz"
             ]
         }
@@ -164,25 +173,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.78125
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.125
+            "prevalence": 0.2
         },
         {
             "domain": "1884403144.rsc.cdn77.org",
-            "prevalence": 0.09375
+            "prevalence": 0.08571428571428572
         }
     ],
     "types": {
         "Stylesheet": 3,
         "Script": 8,
-        "XHR": 3
+        "XHR": 4
     },
     "nameservers": [
         "ns1.webglobe.cz",
-        "ns3.webglobe.com",
-        "ns2.webglobe.cz"
+        "ns2.webglobe.cz",
+        "ns3.webglobe.com"
     ]
 }

@@ -41,21 +41,23 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "o2\\.shared\\.global\\.fastly\\.net\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "rule": "o2\\.shared\\.global\\.fastly\\.net\\/analytics\\.js\\/v1\\/s0hIGpUTiIeOrE15UJ0NCMABpNleLMBK\\/analytics\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "graph.goodrx.com",
+                    "original": "segment-cdn.goodrx.com",
                     "resolved": "o2.shared.global.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "cdf8a3ba8c766acc5d5389b1be528d5ab2a9830142b84cc1946bdab4bf3abe91"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -89,23 +91,21 @@
             ]
         },
         {
-            "rule": "o2\\.shared\\.global\\.fastly\\.net\\/analytics\\.js\\/v1\\/s0hIGpUTiIeOrE15UJ0NCMABpNleLMBK\\/analytics\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
+            "rule": "o2\\.shared\\.global\\.fastly\\.net\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "segment-cdn.goodrx.com",
+                    "original": "graph.goodrx.com",
                     "resolved": "o2.shared.global.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "cdf8a3ba8c766acc5d5389b1be528d5ab2a9830142b84cc1946bdab4bf3abe91"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -202,7 +202,9 @@
                     "resolved": "o2.shared.global.fastly.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "cae962a70d36874622214e00e5f0da33974facafc55fb443757d8615359c413a"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -243,7 +245,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "segment-api.goodrx.com",
@@ -292,6 +294,31 @@
             ]
         },
         {
+            "rule": "o2\\.shared\\.global\\.fastly\\.net\\/v1\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "segment-api.goodrx.com",
+                    "resolved": "o2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f1ea07a1e51a389c8de07120ae5c2e432e9dd8f4fbd6f92489f185b0523a3fd4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodrx.com",
+                "www.goodrx.com"
+            ]
+        },
+        {
             "rule": "o2\\.shared\\.global\\.fastly\\.net\\/content",
             "cookies": 0,
             "fingerprinting": 0,
@@ -306,7 +333,7 @@
                 }
             ],
             "responseHashes": [
-                "25c899e644d3e34a36bab96b0a5076c7e341cb3fdae63b264722e8adb4959fbb"
+                "0639b550d5b50f20e3d918f9cfb32574de1c25751822c0a649b59b39eb89d91d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -505,29 +532,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5168539325842697
-        },
-        {
-            "domain": "grxstatic.com",
-            "prevalence": 0.20224719101123595
+            "prevalence": 0.45098039215686275
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.20224719101123595
-        },
-        {
-            "domain": "dealnews.a.ssl.fastly.net",
-            "prevalence": 0.06741573033707865
+            "prevalence": 0.19607843137254902
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.011235955056179775
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "grxstatic.com",
+            "prevalence": 0.12745098039215685
+        },
+        {
+            "domain": "dealnews.a.ssl.fastly.net",
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Preflight": 4,
-        "Fetch": 9,
         "Script": 10,
+        "Fetch": 11,
+        "Preflight": 4,
         "XHR": 2,
         "Stylesheet": 6,
         "Font": 6

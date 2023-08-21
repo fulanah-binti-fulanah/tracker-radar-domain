@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
         "widgets"
@@ -15,15 +15,19 @@
         {
             "rule": "stores-bloomingdales\\.com\\/cookies\\/manager",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widgets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1c9be1a4baf04a6cc403bbdffbd3518e3c901d1af234a43d5e0c423f657fe287"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -33,23 +37,17 @@
             ]
         },
         {
-            "rule": "stores-bloomingdales\\.com\\/vendor\\/vendor\\.min\\.20230811153843\\.js",
+            "rule": "stores-bloomingdales\\.com\\/vendor\\/vendor\\.min\\.20230817103010\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "widgets"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7d23cc8b06964a055bce5845d1b281fbb28377871162ce8d6fdedac3f83d1f9b"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -61,7 +59,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
@@ -73,9 +71,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e1.googledomains.com",
         "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e4.googledomains.com"
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
     ]
 }

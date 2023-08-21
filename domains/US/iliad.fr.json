@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "api.scw"
+        "api.scw",
+        "apm.tools.scw"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -51,6 +52,28 @@
                 "free.fr",
                 "assistance.free.fr"
             ]
+        },
+        {
+            "rule": "iliad\\.fr\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm.tools.scw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "free.fr",
+                "assistance.free.fr"
+            ]
         }
     ],
     "categories": [],
@@ -64,14 +87,14 @@
     ],
     "types": {
         "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4
     },
     "nameservers": [
-        "ns-scw.proxad.net",
-        "ns1.proxad.net",
-        "ns2.iliad.fr",
         "ns0.proxad.net",
         "ns.iliad.fr",
+        "ns2.iliad.fr",
+        "ns-scw.proxad.net",
+        "ns1.proxad.net",
         "ns1.iliad.fr"
     ]
 }

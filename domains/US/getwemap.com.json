@@ -7,10 +7,11 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "livemap"
+        "livemap",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "getwemap\\.com\\/js\\/sdk\\.min\\.js",
@@ -37,7 +38,7 @@
             ]
         },
         {
-            "rule": "getwemap\\.com\\/f8d49b55-f93e-43ae-ab3e-66f4db3ce764",
+            "rule": "getwemap\\.com\\/a73d421b-5bf5-42d9-948a-5f8d5d49ab63",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -57,6 +58,26 @@
                 "bretagne.com",
                 "www.bretagne.com"
             ]
+        },
+        {
+            "rule": "getwemap\\.com\\/v3\\.0\\/pinpoints\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bretagne.com",
+                "www.bretagne.com"
+            ]
         }
     ],
     "categories": [],
@@ -65,15 +86,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "getwemap.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Script": 2,
-        "Other": 2
+        "Other": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "tricia.ns.cloudflare.com",
-        "clyde.ns.cloudflare.com"
+        "clyde.ns.cloudflare.com",
+        "tricia.ns.cloudflare.com"
     ]
 }

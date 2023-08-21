@@ -113,7 +113,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "598fc8405adb7897eaca2810be2a6a289b10d31a1af3a6135049dcfa32fcc650"
+                "8803e4039bc2918f89b117a8894a8095238d69a6877eec6e9cfe592897beb1a4"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -131,7 +131,13 @@
                 "evaluation"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -155,7 +161,8 @@
                 "evaluation"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -262,11 +269,13 @@
         {
             "rule": "canadapost-postescanada\\.ca\\/jfe\\/static\\/dist\\/c\\/jsApi\\.20cd89c833fdac8ea3d2\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "evaluation"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -289,6 +298,7 @@
                 "evaluation"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -328,28 +338,6 @@
             ]
         },
         {
-            "rule": "canadapost-postescanada\\.ca\\/track-reperage\\/assets\\/images\\/icons\\/spinner_reg\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b77a314e29e36f96dcb60bae938b58a862e072b89e7bfb9b516a657933a5a4f4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadapost.ca",
-                "www.canadapost.ca"
-            ]
-        },
-        {
             "rule": "canadapost-postescanada\\.ca\\/track-reperage\\/rs\\/track\\/json\\/package",
             "cookies": 0,
             "fingerprinting": 0,
@@ -366,7 +354,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "CPC_Track_Searches": 0.00001364424008404852
+                "CPC_Track_Searches": 0.000013633265167007499
             },
             "exampleSites": [
                 "canadapost.ca",
@@ -392,7 +380,7 @@
         }
     ],
     "types": {
-        "Image": 8,
+        "Image": 6,
         "Other": 2,
         "Document": 2,
         "Script": 16,
@@ -401,10 +389,10 @@
     },
     "nameservers": [
         "a2-64.akam.net",
-        "a13-67.akam.net",
         "a1-226.akam.net",
-        "a7-66.akam.net",
         "a6-65.akam.net",
+        "a7-66.akam.net",
+        "a13-67.akam.net",
         "a8-67.akam.net"
     ]
 }

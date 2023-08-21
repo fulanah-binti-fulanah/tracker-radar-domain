@@ -4,51 +4,83 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000518,
-    "sites": 76,
+    "prevalence": 0.000225,
+    "sites": 33,
     "subdomains": [
-        "servedbydoceree",
-        "bidder"
+        "bidder",
+        "servedbydoceree"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "doceree\\.com\\/v1\\/cookiesync",
+            "cookies": 0.0000613,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "findagrave.com",
+                "www.8thcivic.com",
+                "www.ascentforums.com",
+                "www.chevymalibuforum.com",
+                "www.clubxterra.org",
+                "www.cumminsforum.com",
+                "www.ducatimonster.org",
+                "www.duramaxforum.com",
+                "www.elementownersclub.com",
+                "www.goodnewsnetwork.org",
+                "www.kianiroforum.com",
+                "www.ktmforums.com",
+                "www.taurusclub.com",
+                "www.terrainforum.net",
+                "www.volkswagenownersclub.com"
+            ]
+        },
+        {
             "rule": "doceree\\.com\\/script\\/render-header\\.js",
-            "cookies": 0.0000614,
+            "cookies": 0.0000477,
             "fingerprinting": 1,
             "subdomains": [
                 "servedbydoceree"
             ],
             "apis": {
-                "Document.cookie setter": 9,
-                "Document.cookie getter": 8,
-                "Date.prototype.getTime": 9
+                "Date.prototype.getTime": 8,
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 7
             },
-            "sites": 9,
-            "prevalence": 0.0000614,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "9609a8009222df24fc798caa921f29f0bb6d243181cd375a132fa992b1349ad0"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_docereeId": {
-                    "ttl": null,
-                    "length": 70,
-                    "prevalence": 0.000047754840294169814,
-                    "uniqueness": 1
-                },
                 "_docereeDmdContext": {
                     "ttl": 2592005,
                     "length": 8,
-                    "prevalence": 0.00006139908037821834,
-                    "uniqueness": 0.1111111111111111
+                    "prevalence": 0.000047716428084526244,
+                    "uniqueness": 0.14285714285714285
+                },
+                "_docereeId": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.000027266530334014997,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "healthday.com",
                 "dermnetnz.org",
                 "radiologyassist.com",
                 "radiopaedia.org",
@@ -67,15 +99,14 @@
                 "bidder"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.000075,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "healthday.com",
                 "dermnetnz.org",
                 "globalrph.com",
                 "radiologyassist.com",
@@ -84,38 +115,34 @@
                 "www.clinicaladvisor.com",
                 "www.cureus.com",
                 "www.drugs.com",
-                "www.mdapp.co",
                 "www.renalandurologynews.com"
             ]
         },
         {
             "rule": "doceree\\.com\\/v1\\/doceree-init",
-            "cookies": 0.000075,
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
                 "bidder"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.000075,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "e270a1989a254d214772c49290a067d4080fb7e131af3b78f0b0ead74ae941cb",
-                "7ca466b3b45747021c5e138891c21a8cd0b564f6b3ace10710eba47e5d65e862",
-                "fc1ac37d3d12cb89060b5a945bf48e1596bc834953c5b7df09d7bdc476bec90d",
-                "4b74df5d8005ba9e8246dcae0ce323df24f34d143cb024ba6db0ded4dc72d61e",
-                "8c34cc55295bebec631a3a00d7d5cd17ec9156cbf137907b5f41cfde4f4215f5",
-                "7530d130f4ae66cee7c5bc33cda4b2e1d0939f44e1d7056b1ab7f17fe92ed5f2",
-                "44d5ff5df176cf5a6d63ac26400886c4b3a8675f21bf3b9136faeff3fdee29b9",
-                "29b747a07f226f8f694775b15aad3fe5b508a77dde7ea80d0e7171cfc3ed19f2",
-                "c44da6ffd15529e3cf4369f73b7a06d1491c6d0d79d3eb19e4851eb550e3fbe8",
-                "08c10ad720ab564c08eb589064919f211df61a0ca8c1c091c2bd4de275cf5f21"
+                "6533bcd2d5c88eb85e063788c24842e025dae2c33e608c4364ea02f570e9a899",
+                "4cf5829518d71317a00eac2b298bbaa588fb8a1a602b0d1087fd4b0fee5514a1",
+                "658575021a6d68fe83f8945861f9ad469e1dcca3530bf06710cab0123e7fc1fb",
+                "17e7f3cfc602a1d4d8d2ffb7eb8ff69b27f6c978131f0cd21f7f4d8016c81933",
+                "2f07f4f1c984e4f3319de9a7d16c1eea546c8747a04f56ca62e9a71870da5f6f",
+                "5497b67e206b7e199d1683de5b39646b6c81acb9bfc2385e04d2f6d4a5ce3d86",
+                "aedaad0e9fd0d64332b12ce98b3bb80d5e05f7107c1adb7540e949cc3f496c2d",
+                "85d831ddc963395b1869b18d8450f12b03c80e2ad9b4dbb40a62be0c0df7263f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "healthday.com",
                 "dermnetnz.org",
                 "globalrph.com",
                 "radiologyassist.com",
@@ -124,7 +151,6 @@
                 "www.clinicaladvisor.com",
                 "www.cureus.com",
                 "www.drugs.com",
-                "www.mdapp.co",
                 "www.renalandurologynews.com"
             ]
         },
@@ -136,8 +162,8 @@
                 "bidder"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -146,7 +172,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "healthday.com",
+                "dermnetnz.org",
+                "globalrph.com",
+                "radiologyassist.com",
+                "radiopaedia.org",
+                "www.cancertherapyadvisor.com",
+                "www.clinicaladvisor.com",
+                "www.cureus.com",
+                "www.drugs.com",
+                "www.renalandurologynews.com"
+            ]
+        },
+        {
+            "rule": "doceree\\.com\\/v1\\/initliveintent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "dermnetnz.org",
                 "globalrph.com",
                 "radiologyassist.com",
@@ -160,105 +214,31 @@
         },
         {
             "rule": "doceree\\.com\\/v1\\/adrequest",
-            "cookies": 0.0000136,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "bidder"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000478,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "575f625e7e1a7339aa7f26cff61dbd2d26ffc4c295cdb3719671e25a14888d0c",
-                "2179c7f32da5361220e340f211735be62ed0822dc29ff04c83f4014e7ac7e7d5",
-                "e341ea719caa4400630da1aab9f61682a24fdd7c887f85075f4c3e22756df1e0",
-                "eecdf4430148d3098d9a07631034c24ebe8c795f322befbe52fb3bc5ba26377e",
-                "6dd6bbd3d2e903fa3d54b629cea7a2458c92fe5beac753c2353bae0cbd8d3a04",
-                "4e7c189b7bc1b83257a335d1150f620a7311be6288d069a60d624b6749cae707"
+                "5322f8bd5cebf6937498077c143c3d133fc9630c0837823a0c040d21b63972a1",
+                "3803fbfdf0161e8762ead7d6706907cdf2f5cf24b5167f0809862178105e3946",
+                "8f6190eda6bda59cbed2ef4be7cb47a528246cc44c8b2e5d87aa6470c415618c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_docereeDmdContext": 0.00000682212004202426,
-                "lotame_domain_check": 0.00000682212004202426
+                "_docereeDmdContext": 0.000006816632583503749,
+                "lotame_domain_check": 0.000006816632583503749
             },
             "exampleSites": [
-                "healthday.com",
-                "consumer.healthday.com",
                 "globalrph.com",
                 "www.cureus.com",
                 "www.drugs.com",
-                "www.goodrx.com",
-                "www.mdapp.co"
-            ]
-        },
-        {
-            "rule": "doceree\\.com\\/v1\\/initliveintent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bidder"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000682,
-            "cnames": [],
-            "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "healthday.com",
-                "dermnetnz.org",
-                "globalrph.com",
-                "radiologyassist.com",
-                "radiopaedia.org",
-                "www.cancertherapyadvisor.com",
-                "www.clinicaladvisor.com",
-                "www.cureus.com",
-                "www.drugs.com",
-                "www.renalandurologynews.com"
-            ]
-        },
-        {
-            "rule": "doceree\\.com\\/v1\\/cookiesync",
-            "cookies": 0.000287,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bidder"
-            ],
-            "apis": {},
-            "sites": 53,
-            "prevalence": 0.000362,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.personalitycafe.com",
-                "www.triumphrat.net",
-                "www.tractorforum.com",
-                "www.chessjournal.com",
-                "www.thecombineforum.com",
-                "grammarbrain.com",
-                "www.lxforums.com",
-                "www.carolinashootersclub.com",
-                "www.nissanclub.com",
-                "selectbaseballteams.com",
-                "www.supraforums.com",
-                "www.kianiroforum.com",
-                "www.gatorforums.net",
-                "www.off-road.com",
-                "www.plantedtank.net",
-                "www.460ford.com",
-                "www.rangerovers.net",
-                "www.impalaforums.com",
-                "www.mazda3forums.com",
-                "www.jeeppatriot.com"
+                "www.goodrx.com"
             ]
         },
         {
@@ -270,7 +250,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "796180f41c816d21375c7a821612b0d096798b23b93fa6d2cfd90e57d63823cf"
@@ -286,17 +266,18 @@
         },
         {
             "rule": "doceree\\.com\\/resources\\/p\\/render-es6\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "servedbydoceree"
             ],
             "apis": {
                 "Document.cookie getter": 3,
-                "Document.cookie setter": 3
+                "Document.cookie setter": 3,
+                "Date.prototype.getTime": 1
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "cb204c603a3cbedd22d88a83367572a9205665e15febee493b146aabc0c7e564"
@@ -306,7 +287,7 @@
                 "_docereeId": {
                     "ttl": 31536000,
                     "length": 70,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -320,55 +301,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000437,
+    "cookies": 0.000184,
     "topInitiators": [
         {
             "domain": "media.net",
-            "prevalence": 0.5076923076923077
-        },
-        {
-            "domain": "lngtdv.com",
-            "prevalence": 0.12307692307692308
+            "prevalence": 0.2807017543859649
         },
         {
             "domain": "first party",
-            "prevalence": 0.11538461538461539
+            "prevalence": 0.2631578947368421
         },
         {
             "domain": "adpushup.com",
-            "prevalence": 0.1076923076923077
+            "prevalence": 0.24561403508771928
         },
         {
             "domain": "rubiconproject.com",
-            "prevalence": 0.09230769230769231
-        },
-        {
-            "domain": "ay.delivery",
-            "prevalence": 0.023076923076923078
+            "prevalence": 0.15789473684210525
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.015384615384615385
-        },
-        {
-            "domain": "lngtd.com",
-            "prevalence": 0.007692307692307693
+            "prevalence": 0.03508771929824561
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.007692307692307693
+            "prevalence": 0.017543859649122806
         }
     ],
     "types": {
-        "Script": 15,
-        "Preflight": 11,
-        "XHR": 18,
-        "Image": 73
+        "Image": 33,
+        "Script": 14,
+        "Preflight": 9,
+        "XHR": 13
     },
     "nameservers": [
-        "ns-214.awsdns-26.com",
-        "ns-1908.awsdns-46.co.uk",
+        "ns-1241.awsdns-27.org",
         "ns-1006.awsdns-61.net",
-        "ns-1241.awsdns-27.org"
+        "ns-214.awsdns-26.com",
+        "ns-1908.awsdns-46.co.uk"
     ]
 }

@@ -12,8 +12,8 @@
     "subdomains": [
         "kasambaresources",
         "siteimages",
-        "expertsimages",
         "apis",
+        "expertsimages",
         "marketing-kasamba"
     ],
     "cnames": [],
@@ -21,13 +21,15 @@
     "resources": [
         {
             "rule": "kassrv\\.com\\/bundles\\/js\\/l",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 2,
             "subdomains": [
                 "kasambaresources"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
                 "Navigator.prototype.language": 1,
                 "Navigator.prototype.cookieEnabled": 1,
                 "window.devicePixelRatio": 1,
@@ -41,7 +43,14 @@
                 "388289ac74d308795bb172face9276125048068eb52b961297ed124171b8ecb7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kasamba.com",
@@ -139,28 +148,6 @@
             ]
         },
         {
-            "rule": "kassrv\\.com\\/images\\/session-selector\\/loader\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "siteimages"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kasamba.com",
-                "www.kasamba.com"
-            ]
-        },
-        {
             "rule": "kassrv\\.com\\/JS\\/TM\\/PixelT\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -183,42 +170,20 @@
             ]
         },
         {
-            "rule": "kassrv\\.com\\/experts-pictures\\/big\\/pic2716787\\.jpg",
+            "rule": "kassrv\\.com\\/images\\/session-selector\\/loader\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "expertsimages"
+                "siteimages"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9bcd3d66f46283d7da59ffb4e71af078959cc4ce73613bea6b505623b335d169"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kasamba.com",
-                "www.kasamba.com"
-            ]
-        },
-        {
-            "rule": "kassrv\\.com\\/experts-pictures\\/big\\/pic273891\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "expertsimages"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "09be293848966738db266a2fb719f513e28f3345f35dcf249b9b3ad2c1ba406c"
-            ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -612,9 +577,75 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b8737b7e3d3564a49d76cdc5fe16c7b31be30e9e4cf5792f0591897d3501cfa6"
+                "0e56eee36c6f65393446814c757910a1605ad63890885963e614e5426c443748"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kasamba.com",
+                "www.kasamba.com"
+            ]
+        },
+        {
+            "rule": "kassrv\\.com\\/experts-pictures\\/big\\/pic273891\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expertsimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe19196c8d178cd870d4936256100ec1b0ded2938b81dc330ee2fe44624b2148"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kasamba.com",
+                "www.kasamba.com"
+            ]
+        },
+        {
+            "rule": "kassrv\\.com\\/experts-pictures\\/big\\/pic310053\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expertsimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6136f17573c33ccb3fbb63f92985ebfd5b18dbb3c37a9b58cbd9a935c5803a36"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kasamba.com",
+                "www.kasamba.com"
+            ]
+        },
+        {
+            "rule": "kassrv\\.com\\/experts-pictures\\/big\\/pic606201\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expertsimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f3f4f55aee90182eb6da93c07ac0f0bf89552715ae4ea190658e8d9afeafbaa"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -724,7 +755,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7b0a5899143786fcb38b75936bc8b386b602a4e32c85ecd66121c27270ef6f0f"
+                "87f46f8d17d7fb207c97c9a55c0f5566beade8e07c978413f5e2cc601907c5a3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -737,20 +768,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.936
+            "prevalence": 0.9365079365079365
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.064
+            "prevalence": 0.06349206349206349
         }
     ],
     "types": {
         "Script": 28,
-        "Image": 32,
+        "Image": 34,
         "Other": 2,
         "Stylesheet": 2
     },

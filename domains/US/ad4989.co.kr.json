@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000075,
-    "sites": 11,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "ad",
         "adgrp1",
@@ -26,8 +26,8 @@
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "42a744ea59b6110cfcf9245e7d76c86b22e50499f7fb318e11ab2210e48d28af",
-                "68564b82d7bbe6d1f2ebc5248386ff280661362f54f994d120e1c89209d8d2b9",
+                "1056ef42abbef0ed25233fc7a9266427b56f68380bfcb1022df271fceca1b2b5",
+                "b187577e0ba1d878dd56146ba5921e89c87e1068a2b4cb59d9e5c56d196f1e52",
                 "ee7d83606843be05f7c9af77bf655b931f2f80410edd705cd7968c793a27df9d",
                 "327c060eea13dee6bfcbc4d69f07928a85f8f2cd7781baff3eb54f91778585ea"
             ],
@@ -44,18 +44,20 @@
         },
         {
             "rule": "ad4989\\.co\\.kr\\/cgi-bin\\/PelicanC\\.dll",
-            "cookies": 0.0000205,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "ad",
                 "adgrp1"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 4,
             "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "b2294185055d15fb013bf9f9f6a889427f9dd323adb70b1bf0df887d6d922a3c",
+                "6b45aea323f1d65a21e8c97fc313446a9a6ce2654c56a99cf91d004ce34104e8",
                 "46802bdb73d0d13c5a978fb50a10992f6be82456d11e5e67d77dce8c6efa3b0a",
                 "fa047d50a036343748c7b8a3839adccaae994b044773b95402f088f0a05a8f44"
             ],
@@ -77,12 +79,12 @@
                 "js"
             ],
             "apis": {
-                "Date.prototype.getTime": 10,
-                "window.localStorage": 10,
-                "Navigator.prototype.userAgent": 10
+                "Date.prototype.getTime": 9,
+                "Navigator.prototype.userAgent": 9,
+                "window.localStorage": 9
             },
-            "sites": 11,
-            "prevalence": 0.000075,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "1e18c00f7d939493d0e4c97c057493a49da1e1d7847b151fbd2772f3ac502904",
@@ -93,11 +95,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gifsf.com",
-                "koreajoongangdaily.joins.com",
                 "m.ilbe.com",
                 "mlbpark.donga.com",
                 "www.chosun.com",
-                "www.etoland.co.kr",
                 "www.hankyung.com",
                 "www.heye.kr",
                 "www.ilbe.com",
@@ -107,18 +107,18 @@
         },
         {
             "rule": "ad4989\\.co\\.kr\\/common\\/js\\/tend_child\\.js",
-            "cookies": 0.0000546,
+            "cookies": 0.0000409,
             "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "window.localStorage": 8,
                 "Date.prototype.getTime": 8,
-                "Document.cookie setter": 8
+                "window.localStorage": 7,
+                "Document.cookie setter": 6
             },
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "825bb65c3cf6d63f4db6c3c26793dd0cc7e2c846b5732bffd8eaea2f0612ac87"
@@ -128,7 +128,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gifsf.com",
-                "koreajoongangdaily.joins.com",
                 "m.ilbe.com",
                 "mlbpark.donga.com",
                 "www.chosun.com",
@@ -162,59 +161,83 @@
                 "www.heye.kr",
                 "www.ilbe.com"
             ]
+        },
+        {
+            "rule": "ad4989\\.co\\.kr\\/common\\/jquery\\/jquery-1\\.12\\.3\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "69a3831c082fc105b56c53865cc797fa90b83d920fb2f9f6875b00ad83a18174"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donga.com",
+                "www.issuya.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000614,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "tend-table.com",
-            "prevalence": 0.2962962962962963
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.2777777777777778
-        },
-        {
-            "domain": "mediacategory.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.2708333333333333
         },
         {
             "domain": "adpnut.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.125
+        },
+        {
+            "domain": "mediacategory.com",
+            "prevalence": 0.08333333333333333
         },
         {
             "domain": "reople.co.kr",
-            "prevalence": 0.05555555555555555
-        },
-        {
-            "domain": "googlesyndication.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.0625
         },
         {
             "domain": "aceplanet.co.kr",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.041666666666666664
         },
         {
-            "domain": "acrosspf.com",
-            "prevalence": 0.037037037037037035
-        },
-        {
-            "domain": "linkadx.com",
-            "prevalence": 0.018518518518518517
+            "domain": "googlesyndication.com",
+            "prevalence": 0.020833333333333332
         },
         {
             "domain": "realclick.co.kr",
-            "prevalence": 0.018518518518518517
+            "prevalence": 0.020833333333333332
+        },
+        {
+            "domain": "acrosspf.com",
+            "prevalence": 0.020833333333333332
+        },
+        {
+            "domain": "ajitad.co.kr",
+            "prevalence": 0.020833333333333332
         }
     ],
     "types": {
-        "Script": 26,
+        "Script": 25,
         "Document": 8
     },
     "nameservers": [
-        "ns2.4in.co.kr",
-        "ns1.4in.co.kr"
+        "ns1.4in.co.kr",
+        "ns2.4in.co.kr"
     ]
 }

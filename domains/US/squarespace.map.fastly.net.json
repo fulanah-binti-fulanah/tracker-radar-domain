@@ -9,16 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "static",
         "prod"
     ],
     "cnames": [
         {
-            "original": "images.squarespace-cdn.com",
-            "resolved": "squarespace.map.fastly.net"
+            "original": "assets.squarespace.com",
+            "resolved": "static.squarespace.map.fastly.net"
         },
         {
             "original": "static1.squarespace.com",
@@ -31,6 +31,34 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "squarespace\\.map\\.fastly\\.net\\/universal\\/fonts\\/squarespace-clarkson-v2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "assets.squarespace.com",
+                    "resolved": "static.squarespace.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5134e5baa3f3748039048798ba0994ab1cbd3cefbd1d3e66c9fd2c8fe438e6e7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "squarespace.com",
+                "account.squarespace.com",
+                "forum.squarespace.com"
+            ]
+        },
         {
             "rule": "squarespace\\.map\\.fastly\\.net\\/sentinel\\/5bc47ca89c301f3b1dd6ff5076e3902c\\/oauth\\.en-US\\.css",
             "cookies": 0,
@@ -61,7 +89,7 @@
         {
             "rule": "squarespace\\.map\\.fastly\\.net\\/sentinel\\/5bc47ca89c301f3b1dd6ff5076e3902c\\/oauth\\.en-US\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
@@ -113,28 +141,84 @@
             ]
         },
         {
-            "rule": "squarespace\\.map\\.fastly\\.net\\/content\\/v1\\/54b6d5fee4b071c8f270f996\\/1679703107963-1WHPV9AC04SJ87QIHRR1\\/specialmix\\.jpg",
+            "rule": "squarespace\\.map\\.fastly\\.net\\/@sqs\\/polyfiller\\/1\\.6\\/modern\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "images.squarespace-cdn.com",
-                    "resolved": "squarespace.map.fastly.net"
+                    "original": "assets.squarespace.com",
+                    "resolved": "static.squarespace.map.fastly.net"
                 }
             ],
             "responseHashes": [
-                "3070bab30cb9a52f72f59ca9a5f04c90aed005e995d84b02f1706b3d6b4e4e79"
+                "54e832663426c696b1f603379026e5e15720e8c812bbbc60d63aa2ad8a479f75"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "squarespace.com",
-                "david-angelo.squarespace.com"
+                "www.squarespace.com"
+            ]
+        },
+        {
+            "rule": "squarespace\\.map\\.fastly\\.net\\/universal\\/scripts-compressed\\/extract-css-runtime-61eff3a9c94c8ef7edb2e-min\\.en-US\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.squarespace.com",
+                    "resolved": "static.squarespace.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "534611d8f7af997a5ceaa1d35bba5a0aa75b7895dc310f91713747ed683ce221"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "squarespace.com",
+                "www.squarespace.com"
+            ]
+        },
+        {
+            "rule": "squarespace\\.map\\.fastly\\.net\\/universal\\/scripts-compressed\\/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min\\.en-US\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.squarespace.com",
+                    "resolved": "static.squarespace.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a59acd7a8cbaf68d5d628ac09c501f01a2f3f42c9affa8f3d101f2860d1cc3f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "squarespace.com",
+                "www.squarespace.com"
             ]
         },
         {
@@ -176,17 +260,10 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
-    "topInitiators": [
-        {
-            "domain": "first party",
-            "prevalence": 1
-        }
-    ],
+    "cookies": 0.00000682,
     "types": {
-        "Stylesheet": 2,
-        "Script": 6,
-        "Image": 2
+        "Stylesheet": 5,
+        "Script": 12
     },
     "nameservers": []
 }

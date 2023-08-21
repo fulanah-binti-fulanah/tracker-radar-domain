@@ -9,7 +9,8 @@
     "subdomains": [
         "tg1",
         "player",
-        "servs"
+        "servs",
+        "servr"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,12 +27,12 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1e307755cf684f7c7e19b7c61495f5a4285d31796d7b1b16a9aff7eff75f85cd"
+                "3ff347443a2ea0863721fb86aafbaf71cf2392fb74199ebb27f70eb1744a3fda"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00002046636012607278
+                "lotame_domain_check": 0.000020449897750511246
             },
             "exampleSites": [
                 "diariouno.com.ar",
@@ -73,6 +74,7 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.orientation": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.vendor": 2,
                 "Date.prototype.getTime": 2,
@@ -83,7 +85,7 @@
                 "window.localStorage": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Navigator.prototype.languages": 2
+                "Navigator.prototype.languages": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -108,13 +110,13 @@
             ],
             "apis": {
                 "window.sessionStorage": 2,
-                "Date.prototype.getTime": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.cookieEnabled": 1,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
                 "Document.cookie setter": 1,
                 "Document.cookie getter": 1,
                 "window.localStorage": 1
@@ -124,6 +126,31 @@
             "cnames": [],
             "responseHashes": [
                 "677bab83edbaf28095393d59cebb7929d4d06499ca6ece8081a430f0fd2efa9d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diariouno.com.ar",
+                "www.meganoticias.cl"
+            ]
+        },
+        {
+            "rule": "positive-ads\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.51\\.0a3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "037b69bf203f77dabbe685265b84d2422a365f2c517400cf0b63a03a78750c35"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -163,18 +190,22 @@
             ]
         },
         {
-            "rule": "positive-ads\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.51\\.0a3\\.js",
+            "rule": "positive-ads\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.51\\.0a1\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "player"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "037b69bf203f77dabbe685265b84d2422a365f2c517400cf0b63a03a78750c35"
+                "01c3a025b0c8fb03bc17b1bfb5d0e40ff081556e844abfb19044728a9fa1310a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -186,14 +217,14 @@
         },
         {
             "rule": "positive-ads\\.com\\/cookiesyncendpoint",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "servs"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -208,24 +239,27 @@
             ]
         },
         {
-            "rule": "positive-ads\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.51\\.0a1\\.js",
+            "rule": "positive-ads\\.com\\/api\\/adserver\\/s2s",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "player"
+                "servr"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "01c3a025b0c8fb03bc17b1bfb5d0e40ff081556e844abfb19044728a9fa1310a"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000027266530334014997
+            },
             "exampleSites": [
                 "diariouno.com.ar",
+                "www.diariouno.com.ar",
                 "www.meganoticias.cl"
             ]
         }
@@ -236,23 +270,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.8421052631578947
         },
         {
             "domain": "pubmatic.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.10526315789473684
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
         "Script": 14,
-        "Document": 3
+        "Document": 3,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns10.wixdns.net",
-        "ns11.wixdns.net"
+        "ns11.wixdns.net",
+        "ns10.wixdns.net"
     ]
 }

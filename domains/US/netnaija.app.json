@@ -10,7 +10,7 @@
         "hallway"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "netnaija\\.app\\/deliver\\.1\\.6\\.js",
@@ -37,11 +37,14 @@
         {
             "rule": "netnaija\\.app\\/deliver\\.1\\.5\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "hallway"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -68,7 +71,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "a35df7f6ca4f3f3c8aad864e67ac1d8d9c3d8fa60e1c34fdb53a42887cda0ead"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -119,11 +122,33 @@
                 "thenetnaija.net",
                 "www.thenetnaija.net"
             ]
+        },
+        {
+            "rule": "netnaija\\.app\\/display\\/529502485623218176\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hallway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "80f3e651babdaa0763c4b8b361e78130d39de4535616418e34cf37bf3976b866"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thenetnaija.net",
+                "www.thenetnaija.net"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -134,7 +159,7 @@
         "Script": 4,
         "XHR": 2,
         "Preflight": 2,
-        "Image": 2
+        "Image": 4
     },
     "nameservers": [
         "ian.ns.cloudflare.com",

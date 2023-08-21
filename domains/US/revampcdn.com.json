@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.0000954,
+    "sites": 14,
     "subdomains": [
         "spn-v1"
     ],
@@ -20,7 +20,7 @@
                 "spn-v1"
             ],
             "apis": {
-                "window.sessionStorage": 1,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -38,7 +38,7 @@
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 0.5
                 }
             },
@@ -64,26 +64,26 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3ee06acab4fc4c3f99b22027a9a7062b5a1d9643f03976aa300ab637984479eb"
+                "8ed91b6fd389d3bda2e114e17dd053ab2fa61ebb9e61051469015a199f08b2ea"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rv_prebid_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "rv_test_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -114,19 +114,19 @@
                 "rv_prebid_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "rv_test_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -139,13 +139,21 @@
         {
             "rule": "revampcdn\\.com\\/prebid\\/prebid\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "spn-v1"
             ],
             "apis": {
-                "window.sessionStorage": 1,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie getter": 1,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -163,43 +171,20 @@
         },
         {
             "rule": "revampcdn\\.com\\/publishers\\/ghacks\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "spn-v1"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "window.innerHeight": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ea95d3d5bf21b78958215ab0b6d04b2ba5dd3148759b42386169b92894e0f315"
+                "e32193b4f5f9b3ac5083374af4a172b59741b1ccb9749da9fb1e0d70d6f4cd61"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "rv_prebid_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_google_ppid": {
-                    "ttl": 31536000,
-                    "length": 36,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ghacks.net",
@@ -208,41 +193,18 @@
         },
         {
             "rule": "revampcdn\\.com\\/publishers\\/ghacks\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "spn-v1"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "window.innerHeight": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
-            "firstPartyCookies": {
-                "rv_prebid_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_google_ppid": {
-                    "ttl": 31536000,
-                    "length": 36,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ghacks.net",
@@ -257,7 +219,6 @@
                 "spn-v1"
             ],
             "apis": {
-                "window.sessionStorage": 1,
                 "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.cookieEnabled": 1,
@@ -275,7 +236,7 @@
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -293,40 +254,22 @@
                 "spn-v1"
             ],
             "apis": {
+                "window.innerHeight": 1,
                 "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "window.innerHeight": 1
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c0b12997170e339550ce5ac9da736131d2e10911cffde8a3dfcc0dcda8369af7"
+                "90c794c19068ee253f4ef3080d8d33d1e460cdbf155cf8cac96c3bb649badca3"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "rv_prebid_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_variant": {
-                    "ttl": 1800,
-                    "length": 1,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -344,9 +287,9 @@
                 "spn-v1"
             ],
             "apis": {
+                "window.innerHeight": 1,
                 "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "window.innerHeight": 1
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -354,28 +297,10 @@
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {
-                "rv_prebid_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_position": {
-                    "ttl": 1800,
-                    "length": 3,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "rv_test_variant": {
-                    "ttl": 1800,
-                    "length": 1,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -401,26 +326,26 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a3bdb9d8d6e646c33c545c69d4961cd2f7cc43d334edd1b3ecb76ed51b65722d"
+                "64b341edee1eac26b22d974107ca6e62561b88f17c5d78371a4eeff285af8675"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rv_prebid_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "rv_test_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -454,9 +379,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592003,
+                    "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -487,19 +412,19 @@
                 "rv_prebid_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "rv_test_position": {
                     "ttl": 1800,
                     "length": 3,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "rv_google_ppid": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -512,15 +437,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000887,
+    "cookies": 0.000075,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8709677419354839
+            "prevalence": 0.8666666666666667
         },
         {
             "domain": "coolrom.com.au",
-            "prevalence": 0.12903225806451613
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
@@ -528,9 +453,9 @@
         "Fetch": 8
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e4.googledomains.com",
-        "ns-cloud-e3.googledomains.com"
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
     ]
 }

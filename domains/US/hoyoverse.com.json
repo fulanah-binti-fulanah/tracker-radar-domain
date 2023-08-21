@@ -14,14 +14,15 @@
         "webstatic-sea",
         "sg-public-data-api",
         "log-upload-os",
-        "sentry.eks",
         "devlog-upload-os",
+        "sentry.eks",
         "act",
         "genshin",
         "api-os-takumi-static",
         "sg-public-api",
-        "minor-api-os",
+        "fastcdn",
         "sentry-sea",
+        "minor-api-os",
         "abtest-api-data-sg"
     ],
     "cnames": [],
@@ -36,9 +37,9 @@
                 "webstatic-sea"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "Document.cookie getter": 1,
                 "Document.cookie setter": 1,
-                "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.appName": 1,
                 "Navigator.prototype.language": 1,
                 "Date.prototype.getTime": 1,
@@ -70,25 +71,25 @@
                 "_MHYUUID": {
                     "ttl": 31536002,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "DEVICEFP": {
                     "ttl": 31536002,
                     "length": 13,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "DEVICEFP_SEED_ID": {
                     "ttl": 31536002,
                     "length": 16,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "DEVICEFP_SEED_TIME": {
                     "ttl": 31536002,
                     "length": 13,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -100,21 +101,21 @@
         },
         {
             "rule": "hoyoverse\\.com\\/dora\\/biz\\/mihoyo-analysis\\/v2\\/main\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "webstatic"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.language": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.platform": 3,
+                "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "a85cf96db9c16a2a8a19b1f53cc7173922cef60ad59b3ec157e945c7a17c6937"
@@ -122,9 +123,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_MHYUUID": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 36,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -143,8 +144,9 @@
                 "webstatic"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -169,7 +171,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "b5547b2e6f14bec21becb4c025e46c49de7de1217e9153d288e5e95effc3626f"
@@ -256,7 +258,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "7a97b9b4d758a3929b8a2be53fbe189c9ba9378d6fbb8190d37f7cc14f5cf5d3"
@@ -271,28 +273,6 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/api\\/10\\/envelope\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sentry.eks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "act.hoyolab.com"
-            ]
-        },
-        {
             "rule": "hoyoverse\\.com\\/h5\\/upload",
             "cookies": 0,
             "fingerprinting": 0,
@@ -304,9 +284,7 @@
             "sites": 4,
             "prevalence": 0.0000273,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -318,6 +296,26 @@
             ]
         },
         {
+            "rule": "hoyoverse\\.com\\/api\\/10\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry.eks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hoyolab.com",
+                "act.hoyolab.com"
+            ]
+        },
+        {
             "rule": "hoyoverse\\.com\\/device-fp\\/api\\/getFp",
             "cookies": 0,
             "fingerprinting": 0,
@@ -326,7 +324,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -347,11 +345,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "87dcb55fc28b368a6e723cee510314d7a0531c729f5e952ad3aa950ce46a4119",
-                "37fbe564880a34481fc8cc233c6860ded381678e5c019b2eb9c61ff2329d5d12"
+                "aaf1d60cab16107c4e4daad4cde84200d7633bb27c87a93a7d65083c34f1806d",
+                "b7368c1bcdea7fa087ad716c949225e815e76cc381e2b7349ef3ec236787841e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -363,7 +361,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/f92ef4f5ef38c04a3b47f6e48e48a413_679428724686901874\\.png",
+            "rule": "hoyoverse\\.com\\/map_manage\\/20230808\\/b18fe22ba1cb368dc8244415154b2502_7313544846867294768\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -374,7 +372,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e379328094230d2625f03a2cfc7e885ea2d5bec3d985391bb3af50ce1c2f618c"
+                "1533d5d5fbc94cd0d91af9fbe54a7a56d449359b4839437de7c83047517c3edc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -385,7 +383,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/e9c57fdb5888832174ebaf59832ef36d_8662334368415995503\\.png",
+            "rule": "hoyoverse\\.com\\/map_manage\\/20230808\\/2a2d0bff8df240ed60bf80780c77d8f9_9086840960063967039\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -396,7 +394,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "00962c1193254a02ffb3ffda0826de6043bd4014613277ee5863354bafb58109"
+                "4154c3bd0fe8f802ef59b742568b27c7faf96b936b5168f64806a4009839d70a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -407,7 +405,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/c41795ed79f107691836b2ab13e7fe40_8049678478943455379\\.png",
+            "rule": "hoyoverse\\.com\\/map_manage\\/20230808\\/f91b6aa81cc968eb93550b3018b06f4d_2941613289049051931\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -418,7 +416,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d82683d41d97edfa5524034226e5a12ea515ee9255a8f515955ab1fc642021c7"
+                "3df3c72082c1a0a881fb1422603274438ac9030bd1b17b3b01ad329b59db660b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -429,7 +427,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/b3de4cafb74bb90f7f2a4c3d37481e4d_8879011006779968912\\.png",
+            "rule": "hoyoverse\\.com\\/map_manage\\/20230808\\/6389ecc76d0577c74b2eba1e6d3ecab2_1439667394777754388\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -440,7 +438,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e7250fd948e417da8ffb553622e2fd2268ade75164c0c1af2c39bb52559cc6a0"
+                "9cea444ffd8d2c26534a5811dbcb0ee8e3bbe340eb999e6b69bd96634a6fcf6a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -451,7 +449,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/982b0a0100f48225f9ca0651bd37d0f2_1294895063725069057\\.png",
+            "rule": "hoyoverse\\.com\\/map_manage\\/20230808\\/662eb1438f68776f95b85b44ec0a6f05_6319968268655760763\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -462,90 +460,8 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d82683d41d97edfa5524034226e5a12ea515ee9255a8f515955ab1fc642021c7"
+                "410fce0045a5a4f79b164da75b492fd28c9632cdb15d48e13244910cc17c1c7c"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "act.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/3defa753ad955339f66a79313ba00918_2022138876267985572\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "act"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1f4a0fc4f978772b21b18d2ac296bd9d457ecb41280236b721701ba931e57119"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "act.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/ff166a2ad91b93a0fc00da8d334d95b7_3865881864108399959\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "act"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "act.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/363edf05ea347d46e93d715b19175028_2874828104697761864\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "act"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "act.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/map_manage\\/20230316\\/456f6948bdd39dd384f4570315f752c0_3613551708345776383\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "act"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -566,7 +482,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "247184981eb6f698a94e431a83d68c6b0df623cce57b6e29dc5a6c11e23aa195"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -589,7 +507,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "06f1f1151af0012d43d4db4cbc3d4a224a337629445f6dc63ec76c60160c0ad4"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -607,14 +527,14 @@
                 "webstatic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1,
-                "window.innerHeight": 1
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "735fab02c7ac4bf5160c8dbf4ae16508cf12f76c7366d28b52e04600a778be8f"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -624,7 +544,7 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/_nuxt\\/cd8cf5719e25abb9eac4\\.js",
+            "rule": "hoyoverse\\.com\\/_nuxt\\/14495c3fbcc7e268ce83\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -635,7 +555,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8a8cf3f1878d4ba64b976effdbb49c5ca6f220cd59aa9611e86a8728469c9809"
+                "723e0a5d69444d477554b2a3e418f4fad96f69720ae937b2582b9a5f879e0728"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -647,13 +567,15 @@
         },
         {
             "rule": "hoyoverse\\.com\\/_nuxt\\/94aa3b9b66c3984c6c15\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "genshin"
             ],
             "apis": {
-                "Document.cookie setter": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -662,14 +584,7 @@
                 "09a6a8c01abe14a30f79aaf1a8bece2a68ad1879a6fffe390dc6b2a984b17c49"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "genshinLang": {
-                    "ttl": 207360000008,
-                    "length": 2,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mihoyo.com",
@@ -679,13 +594,21 @@
         {
             "rule": "hoyoverse\\.com\\/_nuxt\\/4763b83179be0c0caae4\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "genshin"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.orientation": 2,
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
             },
@@ -704,18 +627,23 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/_nuxt\\/151ea92327d8ea2bb668\\.js",
+            "rule": "hoyoverse\\.com\\/_nuxt\\/050da894d918423a5400\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "genshin"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "166b7d5a71f394d4d781da63ee98ee03ffd3d7c60813adcb5ca890ee5f40ae0e"
+                "d54369656ec96270e40e0e86c6645a04bb0e807aa7a8bc694fca42320ab52c3d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -727,22 +655,28 @@
         },
         {
             "rule": "hoyoverse\\.com\\/dora\\/biz\\/hoyoverse-account-sdk\\/main\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 3,
             "subdomains": [
                 "webstatic"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.orientation": 3,
+                "Navigator.prototype.product": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Navigator.prototype.language": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
                 "Document.cookie getter": 3,
                 "Document.cookie setter": 3,
-                "Navigator.prototype.userAgent": 3,
                 "window.outerHeight": 3,
                 "window.outerWidth": 3,
                 "window.devicePixelRatio": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.maxTouchPoints": 3,
                 "Navigator.prototype.languages": 3,
                 "Navigator.prototype.platform": 3,
+                "Navigator.prototype.plugins": 3,
+                "Navigator.prototype.deviceMemory": 3,
                 "Navigator.prototype.hardwareConcurrency": 3,
                 "WebGLRenderingContext.prototype.getExtension": 3,
                 "WebGLRenderingContext.prototype.getParameter": 3,
@@ -752,16 +686,10 @@
                 "Screen.prototype.availWidth": 3,
                 "Screen.prototype.height": 3,
                 "Screen.prototype.availHeight": 3,
-                "Navigator.prototype.productSub": 3,
-                "Screen.prototype.orientation": 1,
-                "Navigator.prototype.product": 1,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.deviceMemory": 1
+                "Navigator.prototype.productSub": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ea9e0ec93f40340a94a9a240d5aeebcd7f045c99a78b08f1a82221da26ded329"
@@ -769,39 +697,39 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_MHYUUID": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "HYV_LOGIN_PLATFORM_OPTIONAL_AGREEMENT": {
                     "ttl": null,
                     "length": 18,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "DEVICEFP": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 13,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "DEVICEFP_SEED_ID": {
-                    "ttl": 31536002,
-                    "length": 16,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                },
-                "DEVICEFP_SEED_TIME": {
-                    "ttl": 31536002,
-                    "length": 13,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "HYV_LOGIN_PLATFORM_TRACKING_MAP": {
                     "ttl": null,
-                    "length": 184,
-                    "prevalence": 0.00000682212004202426,
+                    "length": 2,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "DEVICEFP_SEED_ID": {
+                    "ttl": 31536004,
+                    "length": 16,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "DEVICEFP_SEED_TIME": {
+                    "ttl": 31536004,
+                    "length": 13,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -810,6 +738,55 @@
                 "mihoyo.com",
                 "genshin.mihoyo.com",
                 "www.hoyolab.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/_nuxt\\/11f039bde5680709b42c\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "genshin"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d9ce2603591fded2b002311cf8f0ff71201b8ba3d8e5f50936ea51451425d24a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/_nuxt\\/de0b35818174dd9d9a00\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "genshin"
+            ],
+            "apis": {
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "498c273a05324d2600a9c75c3a09278a1774cf2f2791a1a2a2608a152e88a7e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
             ]
         },
         {
@@ -823,7 +800,7 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "de3f73712d62ccb2233d983ff3a829f8c085cd409a8823f8aca5d4da452d9eca"
@@ -860,64 +837,20 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/admin\\/mi18n\\/hk4e_global\\/m20230605hy15aec7wg\\/m20230605hy15aec7wg-en-us\\.json",
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/index\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "webstatic"
+                "act"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "74bc221c4a0e21278c2e7750e44955873e5654f73bcaeb544dcfe0edba16cb4f"
+                "cbcfe2f7d9d6790bcce078260c8c5e1b12cd04440c08b63a91f81185e207fc5a"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mihoyo.com",
-                "genshin.mihoyo.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/admin\\/mi18n\\/hk4e_global\\/m12021633011271\\/m12021633011271-en-us\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7e45416eb2f56bbfcb71ad108025bdaffc897455b588945cfbdad747ae7fdf98"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mihoyo.com",
-                "genshin.mihoyo.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/admin\\/mi18n\\/hk4e_global\\/20190418_5cb846baa14bd\\/20190418_5cb846baa14bd-en-us\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "be0f82644b06fef922aebc798e4b4a714de64e7e669badf9dd84f759a740393e"
-            ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -937,29 +870,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e9185ae275428d324b895a4d8032db266fd5c64d8535ca6dda85f5e6ce9bdea6"
+                "382693e6fd04f1ec5ee8cdda0c960a5ce22d2f621d23cea4306c4ec7ab9a8f39"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mihoyo.com",
-                "genshin.mihoyo.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/account\\/ma-passport\\/token\\/verifyCookieToken",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sg-public-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -982,6 +895,26 @@
                 "f4acc310dc81ff51ed593bef7dc68a599405d77a077d55ce8cd8ea59d69d74a7"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/account\\/ma-passport\\/token\\/verifyCookieToken",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sg-public-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1022,7 +955,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "f5b21804782f860372f268c91eac8c60083ef34908a12c5ae9ae912755637fd8"
+            ],
             "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1032,18 +967,314 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/02\\/02\\/6d41c6960e73a2f264132bdbbff60ce3_3994663197512018697\\.png",
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/config\\.a0d765ab8fc282e9d9f21bd02d1837da\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "webstatic-sea"
+                "act"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "34d8ce6ba8b79035ea265a2e26c076db76e2e9e77b48ebb05eebecb9b5eaa083"
+                "25b2b4f69a87d9e551d8aa83a582f67be863a7afc9ee017bb8efe2f62109165d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/main\\.7965b5eb\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 2,
+                "WebGL2RenderingContext.prototype.getExtension": 2,
+                "WebGL2RenderingContext.prototype.getShaderPrecisionFormat": 1,
+                "WebGL2RenderingContext.prototype.getParameter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "221da9bc74147763f871a9fecf344173473858e43fa72c8380ec6e6ab6e44239"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/main\\.0e2d3a38\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "76b6c142019a409c2615170ffd231bc8c4a98b237b3e6213fb574b7ff4de4ae5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/11\\/52d621d1f41cea798a5ba9ad4522b9dc_6405319067834209871\\.atlas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "516655b4cee518132715698e76f39a97350388a09fb18910bdd95f1235cd32f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/11\\/bf1a765aa468c0b9fba6423a9b1cf4c4_3523087209937114095\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e2edca9a24f9b43991d689cd864f0ccb72eba5536075651d9ee7a177f5a3616"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/c3516c5617cfa8cc2df7326e40155100_649058755881776115\\.atlas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fdc46526e1a32981f51bec9fbb44b0c6c811bab22f3f1321999fc7605dbba926"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/feff18b722a803ed52d23a84eea002a2_759681163230734469\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa312f4b2dc0ef7c6954b16f88c06c9159657b190167659c7857e575c0b37d4d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/ca0c047bd47cf7cc0e9fa4a5f2a52f1a_1379327585887517585\\.atlas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9221136a8be972e36884dfe90ccc4e954d0d74e75989c13769bee343cbc10b2b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/17c4020374f712ba88f22b834f13b722_8127911277448255111\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae58ebdf087bb2055eb98bf0de80334d4ef3906fcc13c866385212e25fbd4d8e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/11\\/b30b95eb6b38012dade089f4fce34e76_7415329893479843428\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fd24f9882a437897704f9c6634489ecbbded890265752e22cee9b297f4225d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/11\\/7311ce2da77b783a686f634c9f995c86_7615022855729985293\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b59bd8cd8ddfff2e99b2bed997ff1c8e1982f3ef31f780bca5d206beea321bfe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/11\\/fa1cde518a8ad9e6231bf0aac7d38ebe_2224420853467630986\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7a1f40dbe6a25df544968e2813feb66114108b63690fdb5053afe7d0cb37a3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/dora\\/biz\\/hoyoverse-footer\\/v2\\/footer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5be7e38a7066885134cd92c40a8a46e074e753f14a522f150afe437df2eaadd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/4571db40a756970f0af4be1266e129c2_4738540530039281587\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "21da889974a421e4700c2401be43fe9a83bda1667ca6030f5b1bfb838f678f98"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1054,47 +1285,971 @@
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/common\\/h5log\\/log\\/batch",
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7a9e977a025e005265968e986c745b41_5742064567134034110\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "minor-api-os"
+                "act"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9f6cfe51033e7ce01032230aa1e13620d3d106fb18380b191341d5476aa93789"
+                "25b07849b782be35ac144287766300b4a56695af8e8ebd4bbfb57d0d09e1a832"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mihoyo.com",
-                "genshin.mihoyo.com",
-                "www.hoyolab.com"
+                "genshin.mihoyo.com"
             ]
         },
         {
-            "rule": "hoyoverse\\.com\\/common\\/h5log\\/log\\/batch",
+            "rule": "hoyoverse\\.com\\/upload\\/event\\/2023\\/08\\/14\\/2265857342519462a9125948e15b9a0a_9198258329028163702\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "minor-api-os"
+                "webstatic"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f38d4c1e662e636809692fa0c02406774e9ea26d0b1f6cda501562da4403c590"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mihoyo.com",
-                "genshin.mihoyo.com",
-                "www.hoyolab.com"
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/962fe9f760e023b4514f7dbf3dbcc177_628470848189874605\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30281db45cc94d914ab049fc811dc03ca6b158966bcd2056fe2c9d1ea81c789c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/f044b28e005ef3bd314670d85b316128_6911738235934857655\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1090f0ea46d6b5870860d3009c6fff9cb3acba2b7d668e68eaa64150f331755b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/10\\/01587d21ac6e7a532f625d24e856dab0_8355940806770163276\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3bb01499c2843a1c347d2673b7b5bfd762caa1f8d1dd2b162b2dfe59c075c7d0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/3297f1c2210b8f6f99b853988e03e24b_2221740397420428056\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f5f25bd0e24a43ff98959a8caafaa6f81ec484668bd35ee15dad5d766506dbf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/ba6c31058994645542bfc2b7bde3aa87_6579769865492157164\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bbfbd38dd6f35b54e7bd26ea54e95f46fe4b096b06d5d9f4cdf8da9d7441152e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d60fed644525e382749b9e044cdb76dd_48791272153669813\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c25d4894c27f8fc7b97e1b952f70a246bc977efeed1c4be757ab314b6329f5a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/dd53d653d044d8e5e9e45556d69f7c14_3087496191121221366\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ede14f777866bce4779f85920c9705186b28b3242fabc4d706f244b98f6d7ab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/03bdcd3128e7097e1d60ff0d5a5a5b6b_5347561162926480319\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "611f4d5a34fa230eef9395b162698428801cd4596b756e62992e0110931d67cd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/144fd839924b73690c1f539d882b94d4_5412510570282287657\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f3192a97a126c5a0da1a9f7660d74efd1d6af4606000ddd87e0a2e33d8577e6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/17\\/2c31ba2bf598d4eb218dd78b879bd530_2551972100418864915\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a9675134c7b77805b0d564eb442a6a000d24aee21fed8ddff2d3a8ba604a35f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/17\\/0cf24fce3597b99d323de79885278f9f_4269716423073865390\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d54c69112b9c3944d9425fbfca2970444a2b6238505c1c2cb5c3c5962582017a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/17\\/967fcf207dc8aebd922a2d4044085e3b_2737798427490388144\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b659423befb6c701efa4cd2d3bc8a53cb42b7f18b282fab53fa61452d4a17ee9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d504b60253d08aefba696fbff05d42b8_7589625795456140267\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f81e96bfc1a2c6e6ce1c463e714594c9f3ac86334363a9445da53bf607e089a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7e86b3d76b14d56dc02f04d78250fac8_8702116760237747892\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3773c6fa4a13c257cf778d578e2350d22346c06844657cd6a48202d25547b0e8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/cae4570782f8ef1bf4d3403bee4c9520_3799855960431001436\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb4609c7f28b19239255be69d5c70f75726061749a19fa56a099582d4e2271c8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/4116f5dfdad6add4716d8d6aad3a9029_3198708801204976854\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a8cbcf269b9516ef3dc0d3a9c9e2f2411723186aac964b790100b3117aaf207f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/a04e638752319c68ae0fac5fc80b2342_5870383149792468481\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e08ca8c8c4c6434612fc36ff7e77e2320d27c33b556cd3144b1f37efd683fdf5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/5050638c60bff96fa9de8467ba140a4c_7929902237046789392\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e81cf84eccbc248c0b8fdfe90e6062745d47e38e374619837ba843cf819e6796"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/f4580a0fd1176073bcb5731c36638fbe_6623498740414717193\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77b507e847bc8bf5cf2237ecf2ff560b2661ac67ad029839b6f65458b4f05f7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/f4580a0fd1176073bcb5731c36638fbe_6492043199570401224\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77b507e847bc8bf5cf2237ecf2ff560b2661ac67ad029839b6f65458b4f05f7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/6ef80cf9cf26b8b600f586c92d821cda_2090771375538529595\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c414e9f70daed0ea440aeccc7235c9731b4ca77ad3e9dea09135bfceffdfed9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/86f496a14c1a8ad2c60547c3b54f1366_651008189643651501\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e22b4a3fad9dddef408795b8f7d1f69851c76bfaafbf16fdb64aff17b36f68fd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/62b1d61d4c56b6db9b0d6b7c158d464b_6097474622536684382\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d226cf3bc0ea2532b813bae0a4d8985bc3c3437b728c59dae58bc82eebd5a60"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/08baa3fb3968b7486e43fd768afcb150_6353962486927667467\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0e90bee6ccd0b43b87ea78a750ce572e90216cc7e3786a3f9ece3da8d165cbc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/849072ce70fb65b7630bdb39407df8e9_529677272877760470\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "205dec0aa1e323067fc61190d23399ead05684019046fe1d9ed7cd8d6d176148"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/734967146a08cf6be23f125da05eb42c_5747290169381201160\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c52e363e4d41df79b3a870d09f65dda9c5d725762bf2b4c835059fe8464712bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/73f4e44109f27bddc4abee5b23ce902d_1260256228823723092\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "132a55b37ea8d6f45dda5bc1baf3b66cec5351de961b36dcc9d064a6481dfbdb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/eb3715f0a1b45c48e6a60101931bdaee_4433242611423915121\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "94d8166c9c5d6aec6ccf474be08f14c3a53fc58f7f9d7b8a93c8b82e87805925"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/84cc7b9086f03eaf3fa5cb1e6353a472_827162400967766911\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "556c6bd96a54bd86e291b129a4873f3574fad99afd80da6273b908e1cf9097a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/63327a33be1ee6a742423958286a3f69_2809941071303328433\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb69b9fab4e0ff8532264beeb8d180ad13eafbbda837a81762139b76ac0fc108"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/a69dbf2a386a17af0326428cacebe7e8_2203944322915180554\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65b5e7ff67d7e945733226cfe984b46eca7bb9a4466382be0cddafe6d331200f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/89bb81dc5765e0aee5cca556f7d6d04d_4903408860660278504\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "263044cb7dde31dbc4bc01c7bf1ab421d176ccb49844e03566a1757042eb7b90"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/6f7eda66928a60ad56f6899776fa33d1_8100075535964832075\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f952901d289baeb2e50657b33a6b69c1cdd71a321b769cbe60e3fcacb907845"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/df3a80194c22e6337f3bc71d5298b4b2_1669397905359020810\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c0a3e0c78c1e2bdca5b59479c97aa589a2e37e0400638e422ad58fa35cc3390"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/a0851b8d53b4c291b335044141d4dafd_962308683198382956\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a32aff17f3b7783701a374b5cce6e8772147e90a4824d3c7d470b2d11917d11e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/5c44d00c8ee9ca969a9e7d764a142e54_3994354050570666153\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4317d0923ef75f90a5b9519401b84255ffcf020491347203cec917baf588528"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/1685e6de8aa3b4e675ff532588d410f5_6846498626662062364\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d9d567e3f0a29fca0ab73eabcc1fe20c6c9c58cf03575098433784368498158c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/2ffe99bb944f3c1dca361c317424fea9_8223997558852184448\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87b621f66de06e41bb7f8bdf84c8a05752135f94e7fbe05dc93848fae71a268d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/b94b32d04dcebb01a34dc14a8d47608f_2359716808802968328\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c0be5af2ee9da6fff7e069cb5cdb326bfe019cea10683e9cb7c6d3da6ce35a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/b60d27f43385e9897b0da29698f6c7f4_991021196876852937\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35608b2c7cbba504c0c36dbdc2ae92720731a349a5a6b9a4e61ff07311cfc52b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/e3c454bb709d616e78f0f036b731ce76_8086200856254741188\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9be0ccb64ab388c0792fd0587f6af31ca5394e0c3b2a5a014710f27236aefdc2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/4897a3e3a10d1ed872b14dd91f81e0c7_8773967976380204851\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9deccc452f604d2ffc0002d645dfb2a03aced499dde32b33ce7914d597357060"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
             ]
         },
         {
@@ -1110,6 +2265,556 @@
             "cnames": [],
             "responseHashes": [
                 "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_8670905533663794293\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/3e98909ba52dc31dee3f719e6f52d22d_8248378357142155130\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e9b1f721cc1553b23350a4b10930f4901047e4426ea083510ccf8f546d0131a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/33029137be4907940b0085eee049c02b_3275029974809432933\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a57de8ba20e933754399cb27f2ae5a81ef14bda4c688f28155b6fe9a3cf75220"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/d2c539e2cecf066d10980df534419943_8620225033683972707\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9106a66f04cc2da080551c9a32fa9f0e5a327e9dd0510c38ecadb320d09b966"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/7317f46f810d580819c847833e5349e7_7954426226488363209\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "92e4c106ba52c138ca2d3ddd679d7df0486f84f63a5ab74764c188e66d12fe9f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/574b190ac70f293aebda615c28210d11_6892732892703040514\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b4c5a213e22f3ad01dd0ad03d13ebc28e09c9f739d23c2a23ffcdb883491d25"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/0b25f6700595959731a7cb2db4e5018f_6429294888205324562\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c7cd63357ce094d7f0559623719ba3b62bcf57c12e5b56ade9ed416c0383044"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/5050638c60bff96fa9de8467ba140a4c_3592739375842684138\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e81cf84eccbc248c0b8fdfe90e6062745d47e38e374619837ba843cf819e6796"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/33e99349abea7c31a3afe62d800a4b41_597731639195015097\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2db56f7b99726105becb81aca3bc9777019f323e5dbb509815146cd5c56d4de1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/e06556fe1b2a6688e29886a97e4f36a7_5428812680799264498\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bf3456b16903d304ac8bac73ac5b0fd41beec84d3592c9d6d0bf8c757b90294"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_8351349874165710570\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_7124192017153135405\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/ee7a0d69cbbb6ce68b03cb516e894a7c_3982314661147401227\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8412be354b8c674660f9a948ceb27ebcb878f760876f7d5a1f1e7775575cc3b3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/event\\/2023\\/08\\/14\\/775a1665a2d476bbea9fc593e247d309_6157510560628675532\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ad26545cdd4cc8ca3ab22289ec3f65878bdf596f663d8979fc4faeff9feeb41"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/15\\/db503a7251c7517a1eaf53eacd85ba66_5222278806316698922\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "69a7b3c56fb3badb3be7969e7a45b9cf0475f724b4f38baeb77000ee542e5310"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/267951c085f106615aeedd4129750253_8836179050555176130\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44652a94643af9fdc7fb82c0e58bf107c96507dd9cb922c547be273d6d251932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/5050638c60bff96fa9de8467ba140a4c_1015970499278061997\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e81cf84eccbc248c0b8fdfe90e6062745d47e38e374619837ba843cf819e6796"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/event\\/2023\\/08\\/14\\/fa1eea84eb992cfc1966ceef7f7bdce4_6078250686645728105\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b1c5b69fdafafddcbbe46f07423c93e03fa22ab61df33c45f3b7aa47d7ce9ab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/15\\/eaad1643873c460f02ef3785c10996f9_6059298202079231502\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee7a01d301d86152c7e77d210bf24686afc7811b3cf9545df8fd5ec01c60236e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/14\\/255d86c5b4fbe9ed5faaee06da384c21_1020522842952510972\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "584cb3f941b14d5d0151482e04bbf2ddd5f061cbd965f54ff03646c1a17c3789"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/14\\/ce6cfd72dd559ac5f0223c2bb3bf9262_4510839651394328618\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c2b3ca786b4647713e35c6098dd72a5c8f2b30a944077c476bcc38cf8fd4bca6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/76dfbeba7edd66951f70406a3ac00d53_6768142652128911885\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4413ae325ba346549ca3a464b5cfec09de3ab4bf9f46ef2c05b9f71ca89d5b0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/274eebc133a054abfed0ab95729e7c96_7751007535464297335\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "39614a1d47cc429f63498769dad470123cbe4e770ecaa55b55d28ad1fb6acce2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/5ebae02e2d26223a6ff203c5bdeccb9c_8795362114065680409\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e57585e595aac7ad6ec8d75091c99163de70aa88d0e609da077d3bb4b6e33b97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/e0cd78984b4d39b6112654dd8a5915ec_2292616549079366725\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "63b4380af134b9c0a26aff7aa80686e3e2e8e82c388009925998515a647a3aa7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1164,6 +2869,182 @@
             ]
         },
         {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d98d1257d4877281649ef6df868ac023_4099006325428071338\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6558bae94cdc9dea622d186da266d6fb6cc70df637f131b49d7b7921018e2026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d98d1257d4877281649ef6df868ac023_7251574332861189693\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6558bae94cdc9dea622d186da266d6fb6cc70df637f131b49d7b7921018e2026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d98d1257d4877281649ef6df868ac023_7502382099889973102\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6558bae94cdc9dea622d186da266d6fb6cc70df637f131b49d7b7921018e2026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d98d1257d4877281649ef6df868ac023_6688985271269424549\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6558bae94cdc9dea622d186da266d6fb6cc70df637f131b49d7b7921018e2026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/d98d1257d4877281649ef6df868ac023_8713192838411395968\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6558bae94cdc9dea622d186da266d6fb6cc70df637f131b49d7b7921018e2026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/06\\/27\\/6aa7446d0a918934c1a4a6ae3dcd6587_3276720046272556870\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2788951a80f4b5ec907ba8e57928a74bf49aee2b86fe4217110b6d0f34285e5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/06\\/27\\/9af28a34cb235d3d14f7d376305d2390_6106445206810263330\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "605fff4d346c532d01c1aabd211ab1b48dd1720d08e971f5be61822d84d3f2bf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_7651735355492072612\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
             "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_2067978419559514332\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1208,6 +3089,948 @@
             ]
         },
         {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_8749307796903691285\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_3379527247779813394\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/fbb9652e600e309096373c8892a62ccb_113900894265056605\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a7c69dbad102f434dba6d55b56747453c9373682ce4dd4c95f80d6616e48407"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/02\\/20\\/a6889de4426e6bd34cd50d6dffab5775_7598699739895689553\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9a7863b4482b45b811dcb8465a40d960a372af184e84224827b0416f37f4d1c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/02\\/20\\/a7e6ae2faba79ece805cf12a9c44ed9f_1613265542534006365\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d01361915ec1e8a8193e292087a6e9cafafff945613b50834135894bde5bcdf4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/02\\/20\\/bd77940a4beba92483ddcc8aab544113_7707923708437624889\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e3f605ff489251b5c5c254ff710fb459235fe95854f904a05fc5afbb6e90be5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/02\\/20\\/a252a5b296421dc38742dd876aa87689_991447037693392598\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "43531d119b24d203072b9b9a33eabe5d0eeea3be547fa57eef2eca925fc63857"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/15\\/db503a7251c7517a1eaf53eacd85ba66_5222278806316698922\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/08\\/15\\/eaad1643873c460f02ef3785c10996f9_6059298202079231502\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/04\\/f697e7e86964f6cdea76dd93bac954c7_3071809028084896404\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "75028aaa1b4357777c464b3080a2b07eefe321df9cb1d0a143076a77f6c64ea7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/a3cfd78740ab16dff7f5366b3f2aa23d_4080468843757148538\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "849a3c669588e7401e7f4735746b30386a83b5cf4f2513abb2843b4a338209c5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/a90c305524423ec144086423aba26161_5007939456358224404\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56538ccc4ee77992996c237c566ced225646e6b54b2bb92c0232de34048773f2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/69d17d6980a98346299fc6f58add74f8_2718790819252666008\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1dfb6de7853d4d39f223cd54a676bec4132dfb3e5a3b0ad024256a466a3577ed"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_8238050642161673542\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_5462292162803533561\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_2070282026618231203\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_1000100364914621062\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/14\\/fd379f020a683fba7ff1d4db0fb41534_2885764996381740172\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4e26c7841d7a691cb8f3e0db41f1c7b74ff0e2223b6fa8274e6c1026328776ab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/14\\/85dadebd3d911e4c906d8ecbd2f9a057_5365266188712562637\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c9da6fc327520a9674334e344c7082b304f3fcd5b91096c29d2891c31220061"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/76dfbeba7edd66951f70406a3ac00d53_1440329238424528596\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4413ae325ba346549ca3a464b5cfec09de3ab4bf9f46ef2c05b9f71ca89d5b0a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/5ebae02e2d26223a6ff203c5bdeccb9c_4085793853706870233\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e57585e595aac7ad6ec8d75091c99163de70aa88d0e609da077d3bb4b6e33b97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/15\\/e0cd78984b4d39b6112654dd8a5915ec_8409375379805413556\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "63b4380af134b9c0a26aff7aa80686e3e2e8e82c388009925998515a647a3aa7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_5428529824005543747\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_409271351266168398\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/7c3e35ff4891a2587495c34817d1b098_7426434863247103439\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dda2a06b021c4487eee4fcb51e2e25c65f99826668e50a6064ca01245d54a1e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_2456653215096782534\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_680196621442140314\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_6796690702779648602\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/upload\\/puzzle\\/2023\\/08\\/03\\/87f9737456031bdb75bb6b4452c66a90_2838833852985722898\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8c4592d2b9d4bfce9caa149a17fa32f83196afb31a3d9b01afdf13a8db32950"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/460015780819e04a69a61790fa7d09e4_285981162815258231\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d024ed1688cfdfdcdafb45baac13a35e8bc30effe441e087f43bbca2767a12e1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2022\\/06\\/06\\/0bad7e44461088a69ef6eb70d1b1e62d_8610050683954156153\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f953c9789881a09229a5b33f9fd943c7ad23ffc2146ea74c9e334d13092dc90e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/be624205f79dadf26cf7bbbee117f03f_3529277478144132310\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fdd3352678350e6d145c24460300242d3e72cc18f0a1b9aa83b14d0371a79a07"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/e215f55b31f9ffb2a092ff5ef17e67f1_2413593655697833579\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a3edc3d079b31c1fd33ede77bcd33e08cb15c44b920a6779f887346653f64cc9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/22e55df9b1abe6ae282849180c828309_70866549761462732\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73c5a2e750f54862447cf3ed76e5a9a9054832bf5fecc1947e537336f1cbad3c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/e820fe55be5b25b89ce597311d266bb6_6406623030435573706\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "57aa1d69eb37110505439058f7d5f61bb19365d31fd2f9015901d63f8e1bd20c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/6320209f032c96f4876807d4e542728d_2215324309656972492\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dd2d9a0c9754b8ff6a293b612b918b5611b9f04d3d3cb00a563b9036078c0c51"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/27\\/d5c7272c0b78879d05b286f3f0ffb6ee_5450230982813429557\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24654f6075e52b38253ef4e8115e146fdd67bb1dc79c527ad65ec617d669f09e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2023\\/02\\/09\\/e79f5650d79d8aa47aea1094386fe45d_6975470948611381860\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5bdfe26789118ff9f99caa48b27120d2680bd716084d3cd41c6287c63fec3c8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/static-resource-v2\\/2023\\/08\\/09\\/dfc5efc59bf0689416f650135ff6811b_5960214878413766193\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fastcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c97561ac58d6d683880baa8abf0f8cfd4a0455c4529691dbac8d88ec008e7d87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/11\\/0fe2664468c2200d214011f70b56c7d7_2293821793859324498\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5dcbed08aaac7e7c83a529ca47d86f8f1bfc7b30ef2ca06d003471845026ea7a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/4595ae66822a5d2c9d0bd95a4783bcb4_2341733040047938899\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84cb0f2c0193eef04fc37be0bcfa1a52a8ba68c1613df0928984b76163bd1e92"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/fc697d2161263cfd54c160117c6c3f81_2131070789384004419\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5755981044c61f0a50e4788feb1a6f631803096b2adfae402af603ac3c1f8f62"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/puzzle\\/hk4e\\/pz_qU_XDEsGGe\\/resource\\/puzzle\\/2023\\/08\\/16\\/4e4f3be7029c08d53cbacf3fe033a416_821310105811004851\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ade58186e92a42fb9070422808cf9cafa24e8b132d52ff487f310497bb572de"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
             "rule": "hoyoverse\\.com\\/api\\/9\\/store\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1219,7 +4042,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4de523bac0ce6c1113e11844b18436888f85df066a69815ca117ecd4e1b98405"
+                "3c3800df71aeb3704b8c6d4f9aeb6b2d3e6e1e3f6a9bc09f79aac74c197d39a5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1227,6 +4050,72 @@
             "exampleSites": [
                 "mihoyo.com",
                 "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2023\\/02\\/02\\/6d41c6960e73a2f264132bdbbff60ce3_3994663197512018697\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic-sea"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "34d8ce6ba8b79035ea265a2e26c076db76e2e9e77b48ebb05eebecb9b5eaa083"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/common\\/h5log\\/log\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "minor-api-os"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9f6cfe51033e7ce01032230aa1e13620d3d106fb18380b191341d5476aa93789"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com",
+                "www.hoyolab.com"
+            ]
+        },
+        {
+            "rule": "hoyoverse\\.com\\/common\\/h5log\\/log\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "minor-api-os"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mihoyo.com",
+                "genshin.mihoyo.com",
+                "www.hoyolab.com"
             ]
         },
         {
@@ -1287,7 +4176,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e905a5b3ce4b64a301c979ddcf559598233094d9f03d8e2f6effbccabb77c2a6"
+                "bd955aa6dd0558e6a44df8a683eec27770d99acaaa2caf99682c92b661bff5e4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1394,32 +4283,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2022\\/02\\/23\\/03185fd4de1a2eca54e98bddfd104262_8699433121737777339\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webstatic-sea"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d7560554c31548c2746cd0012850aa3cacc4dc6ebd7fe1a5f54d77f22c92bbab"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1538,6 +4403,28 @@
             ]
         },
         {
+            "rule": "hoyoverse\\.com\\/upload\\/static-resource\\/2022\\/02\\/23\\/03185fd4de1a2eca54e98bddfd104262_8699433121737777339\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstatic-sea"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d7560554c31548c2746cd0012850aa3cacc4dc6ebd7fe1a5f54d77f22c92bbab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hoyolab.com",
+                "www.hoyolab.com"
+            ]
+        },
+        {
             "rule": "hoyoverse\\.com\\/upload\\/op-public\\/2022\\/08\\/04\\/ff1419346528dfd64d77c35701ecd106_7596171599082743274\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1558,99 +4445,6 @@
                 "hoyolab.com",
                 "www.hoyolab.com"
             ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/dora\\/lib\\/sentry-lazy\\/1\\.3\\.0\\/sentry-lazy\\.global\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2344bcf171928d58d59e34f5935b17cef79284e6fa405edfaad839c9a1799df3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/admin\\/mi18n\\/plat_oversea\\/m04131715591001\\/m04131715591001-en-us\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4809334f3a18fb204f3929e09e25f5a3f340f73f33ae134d75d4d34eb6cc77cd"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/dora\\/lib\\/sentry\\/7\\.19\\.0\\/sentry-tracing\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "webstatic"
-            ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.connection": 1,
-                "Navigator.prototype.hardwareConcurrency": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "317abeabc89780e10dc4b55beb895fe511a3b989ea5cadc91828e14587b0eaab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
-            ]
-        },
-        {
-            "rule": "hoyoverse\\.com\\/api\\/7\\/envelope\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sentry.eks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
-            ]
         }
     ],
     "categories": [],
@@ -1659,25 +4453,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9931972789115646
+            "prevalence": 0.9534883720930233
         },
         {
             "domain": "hoyoverse.com",
-            "prevalence": 0.006802721088435374
+            "prevalence": 0.046511627906976744
         }
     ],
     "types": {
-        "Script": 33,
-        "Fetch": 16,
-        "XHR": 28,
+        "Script": 39,
+        "Fetch": 12,
+        "XHR": 108,
         "Preflight": 14,
         "Ping": 4,
-        "Image": 46,
-        "Stylesheet": 2,
-        "Media": 2
+        "Image": 208,
+        "Stylesheet": 4,
+        "Document": 2,
+        "Media": 6
     },
     "nameservers": [
-        "ns3.dnsv5.com",
-        "ns4.dnsv5.com"
+        "ns4.dnsv5.com",
+        "ns3.dnsv5.com"
     ]
 }

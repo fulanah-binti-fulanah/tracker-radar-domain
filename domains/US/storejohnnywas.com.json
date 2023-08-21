@@ -16,18 +16,16 @@
         {
             "rule": "storejohnnywas\\.com\\/cookies\\/manager",
             "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "widgets"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8166b05785df304e8db5bec48dba32c9513ea7870ed40f52a395c1eb21652acf"
+                "b2f2375e9ea94f0d4054af791ace6f43b6309770ab42ff4fea7d38db979be3f0"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -38,7 +36,7 @@
             ]
         },
         {
-            "rule": "storejohnnywas\\.com\\/vendor\\/vendor\\.min\\.20230811153843\\.js",
+            "rule": "storejohnnywas\\.com\\/vendor\\/vendor\\.min\\.20230817103010\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -47,9 +45,11 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Element.prototype.getClientRects": 2,
-                "Date.prototype.getTime": 2,
                 "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.product": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -77,7 +77,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "91de764fc5478ac680d4a981d7efcacbf5979379a54337663f4d205e118d7045"
+                "8b051550c434d8dc2b9df128d6683ba46ef55b6e306564e51c0b96fe598666f7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -104,10 +104,10 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "sf_wdt_session_expiration_session": 0.00000682212004202426,
-                "sf_wdt_customer_id": 0.00000682212004202426,
-                "sf_wdt_fingerprint": 0.00000682212004202426,
-                "sf_wdt_sidebar_store": 0.00000682212004202426
+                "sf_wdt_session_expiration_session": 0.000006816632583503749,
+                "sf_wdt_customer_id": 0.000006816632583503749,
+                "sf_wdt_fingerprint": 0.000006816632583503749,
+                "sf_wdt_sidebar_store": 0.000006816632583503749
             },
             "exampleSites": [
                 "johnnywas.com",
@@ -122,19 +122,19 @@
                 "widgets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5612835e3d7ea6a1bc1f95ab5c48f2499955e4391025c7b936b2da51c419771a"
+                "c8ec34156403b3c53e02555f23ebf9a7d76890e4516b7e412557c44b63f66b85"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "sf_wdt_customer_id": 0.00001364424008404852,
-                "sf_wdt_sidebar_store": 0.00001364424008404852
+                "sf_wdt_customer_id": 0.000013633265167007499,
+                "sf_wdt_sidebar_store": 0.000013633265167007499
             },
             "exampleSites": [
                 "johnnywas.com",
@@ -173,9 +173,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5090ec356f6c15fe5ee413ce5f1fb14bf370dff1daf1c6b87526f485027f9051"
+                "187aef1ff5ffac800fca3da36452e7b1162edc5460760323b919d40996843c31"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "johnnywas.com",
+                "www.johnnywas.com"
+            ]
+        },
+        {
+            "rule": "storejohnnywas\\.com\\/event-queue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -204,26 +224,6 @@
                 "johnnywas.com",
                 "www.johnnywas.com"
             ]
-        },
-        {
-            "rule": "storejohnnywas\\.com\\/event-queue",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "johnnywas.com",
-                "www.johnnywas.com"
-            ]
         }
     ],
     "categories": [],
@@ -245,8 +245,8 @@
     },
     "nameservers": [
         "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c4.googledomains.com",
         "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c4.googledomains.com"
+        "ns-cloud-c3.googledomains.com"
     ]
 }

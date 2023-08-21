@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00015,
-    "sites": 22,
+    "prevalence": 0.000177,
+    "sites": 26,
     "subdomains": [
         "ss",
-        "pp"
+        "pp",
+        "cp"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -46,18 +47,18 @@
                 "ss"
             ],
             "apis": {
-                "Navigator.prototype.webdriver": 9,
-                "Document.cookie getter": 9,
-                "window.innerWidth": 9,
-                "window.innerHeight": 9,
-                "Notification.permission": 9,
-                "Navigator.prototype.plugins": 9,
-                "Navigator.prototype.vendor": 9,
+                "Navigator.prototype.webdriver": 8,
+                "Document.cookie getter": 8,
+                "window.innerWidth": 8,
+                "window.innerHeight": 8,
+                "Notification.permission": 8,
+                "Navigator.prototype.plugins": 8,
+                "Navigator.prototype.vendor": 8,
                 "Navigator.prototype.platform": 7,
                 "Navigator.prototype.userAgent": 7
             },
             "sites": 9,
-            "prevalence": 0.0000614,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "24b05a7f551a61746572b9c72e45608f295268e9e69bcbb27ffeaa3c2c9669ca"
@@ -75,6 +76,122 @@
                 "www.liveomek2.cam",
                 "www.pelitorrent.com",
                 "xasia.pics"
+            ]
+        },
+        {
+            "rule": "mndsrv\\.com\\/l",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ss"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "basecarita.blogspot.com",
+                "liveomek.com",
+                "omeklive.com",
+                "www.liveomek.com",
+                "www.pelitorrent.com"
+            ]
+        },
+        {
+            "rule": "mndsrv\\.com\\/ctatic\\/a8d39a3b-8bc9-45e5-b189-bd63791b7cb9\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ss"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Notification.permission": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "138d351d33c6d9b7b0cf61e937c3da66b13459ac0f11cc6796a6bb5a8cfa3d44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveomek.com",
+                "www.liveomek.com"
+            ]
+        },
+        {
+            "rule": "mndsrv\\.com\\/v1\\/0cc6237a-40c4-4e70-b630-337a0758f9eb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveomek.com",
+                "www.liveomek.com"
+            ]
+        },
+        {
+            "rule": "mndsrv\\.com\\/worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ss"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [
+                "5e35ebdaa263d2deceb62de5e53d5b23d7ad07409cdd1f9b9b0c08237ace6a66"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveomek.com",
+                "omeklive.com",
+                "www.liveomek.com",
+                "www.pelitorrent.com"
+            ]
+        },
+        {
+            "rule": "mndsrv\\.com\\/v1\\/a8d39a3b-8bc9-45e5-b189-bd63791b7cb9\\/pr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveomek.com",
+                "www.liveomek.com"
             ]
         },
         {
@@ -139,16 +256,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9705882352941176
+            "prevalence": 0.9787234042553191
         },
         {
             "domain": "disqus-cdn.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.02127659574468085
         }
     ],
     "types": {
-        "Script": 17,
-        "XHR": 2
+        "Script": 19,
+        "Ping": 5,
+        "XHR": 4,
+        "Other": 4,
+        "Fetch": 2
     },
     "nameservers": [
         "dns1.registrar-servers.com",

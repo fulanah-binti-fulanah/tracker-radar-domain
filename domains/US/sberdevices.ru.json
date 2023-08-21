@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "metrics.prom.third-party-app"
+        "metrics.prom.third-party-app",
+        "layer-in-image.prom.app",
+        "cdn-app"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -33,24 +35,110 @@
                 "sber.ru",
                 "apps.sber.ru"
             ]
+        },
+        {
+            "rule": "sberdevices\\.ru\\/info\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "layer-in-image.prom.app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c79a70ed2e4d65328d816498b7e07d6d9e8e26e7987d3cbe30c9a5a017d89bf8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lisa.ru",
+                "www.kp.ru"
+            ]
+        },
+        {
+            "rule": "sberdevices\\.ru\\/layer-in-image\\.f4d1bc3e\\.js",
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
+            "subdomains": [
+                "layer-in-image.prom.app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "window.localStorage": 1,
+                "Screen.prototype.width": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f22ad75acf8fb383aadaa389a6ab365c06dbee457b2b7015096a99fdaed582d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "layerUserId": {
+                    "ttl": 863913625,
+                    "length": 21,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lisa.ru",
+                "www.kp.ru"
+            ]
+        },
+        {
+            "rule": "sberdevices\\.ru\\/shared-static\\/0\\.0\\.0\\/styles\\/SBSansText\\.0\\.1\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e6bb47b6ccdb958b4efe2b89cb7b3abf6fc9fda8f506f5089a3dcc475a8869f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lisa.ru",
+                "www.kp.ru"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.972972972972973
+        },
+        {
+            "domain": "yastatic.net",
+            "prevalence": 0.02702702702702703
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 2,
+        "Fetch": 2,
+        "Script": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "cloud-ns1.sberdevices.ru",
+        "cloud-ns2.sberdevices.ru",
         "cloud-ns3.sberdevices.ru",
-        "cloud-ns4.sberdevices.ru",
-        "cloud-ns2.sberdevices.ru"
+        "cloud-ns4.sberdevices.ru"
     ]
 }

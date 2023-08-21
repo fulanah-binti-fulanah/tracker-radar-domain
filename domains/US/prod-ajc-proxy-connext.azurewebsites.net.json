@@ -9,29 +9,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000546,
-    "sites": 8,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "prod-ajc-proxy-connext\\.azurewebsites\\.net\\/api\\/views",
-            "cookies": 0,
+            "cookies": 0.0000409,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "bf7da55ef6be4cdd0d0932dd1e689a423b9b04c68e3cc9b083d4c099bf0e0ec9"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "anonDeviceId": 0.0000341106002101213
+                "anonDeviceId": 0.000027266530334014997
             },
             "exampleSites": [
-                "dayton.com",
+                "ajc.com",
+                "www.ajc.com",
                 "www.dayton.com",
                 "www.daytondailynews.com",
                 "www.journal-news.com",
@@ -40,23 +43,22 @@
         },
         {
             "rule": "prod-ajc-proxy-connext\\.azurewebsites\\.net\\/api\\/views",
-            "cookies": 0.0000341,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
-            "responseHashes": [
-                "bf7da55ef6be4cdd0d0932dd1e689a423b9b04c68e3cc9b083d4c099bf0e0ec9"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "anonDeviceId": 0.0000341106002101213
+                "anonDeviceId": 0.000027266530334014997
             },
             "exampleSites": [
-                "dayton.com",
+                "ajc.com",
+                "www.ajc.com",
                 "www.dayton.com",
                 "www.daytondailynews.com",
                 "www.journal-news.com",
@@ -68,16 +70,20 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000546,
+    "cookies": 0.0000682,
     "topInitiators": [
         {
             "domain": "ajc.com",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Preflight": 5,
-        "Fetch": 5
+        "Fetch": 6,
+        "Preflight": 6
     },
     "nameservers": []
 }

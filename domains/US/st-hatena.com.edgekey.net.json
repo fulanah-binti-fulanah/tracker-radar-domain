@@ -9,13 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
-        "cdn-ak2.favicon",
         "cdn.pool",
+        "cdn-ak2.favicon",
         "cdn-ak-scissors.favicon",
-        "cdn.blog"
+        "cdn.blog",
+        "cdn.profile-image"
     ],
     "cnames": [
         {
@@ -33,10 +34,41 @@
         {
             "original": "cdn.pool.st-hatena.com",
             "resolved": "cdn.pool.st-hatena.com.edgekey.net"
+        },
+        {
+            "original": "cdn.profile-image.st-hatena.com",
+            "resolved": "cdn.profile-image.st-hatena.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/valve\\/valve\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.pool"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.pool.st-hatena.com",
+                    "resolved": "cdn.pool.st-hatena.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1a9834a43a88415d5befa4d52616e70b5dfa6432d17b41142aedfca1091d0326"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatena.ne.jp",
+                "q.hatena.ne.jp"
+            ]
+        },
         {
             "rule": "st-hatena\\.com\\.edgekey\\.net\\/64",
             "cookies": 0,
@@ -63,9 +95,9 @@
             ]
         },
         {
-            "rule": "st-hatena\\.com\\.edgekey\\.net\\/valve\\/valve\\.js",
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/valve\\/dmp\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn.pool"
             ],
@@ -79,7 +111,7 @@
                 }
             ],
             "responseHashes": [
-                "1a9834a43a88415d5befa4d52616e70b5dfa6432d17b41142aedfca1091d0326"
+                "0f91185aa9a4c7b49f791e9241c6847171021b7c98a9bd0dacaab9c6d9a2e61d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -87,6 +119,87 @@
             "exampleSites": [
                 "hatena.ne.jp",
                 "q.hatena.ne.jp"
+            ]
+        },
+        {
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/a81d17d43fb98621b1c3567650364e65fef89b98\\/backend=imagemagick",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-ak-scissors.favicon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn-ak-scissors.favicon.st-hatena.com",
+                    "resolved": "cdn-ak-scissors.favicon.st-hatena.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6343e09bc3cdb89b125e124d8ff344479f6d9dfcb8888e35ff129733c0286b60"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatena.ne.jp",
+                "b.hatena.ne.jp"
+            ]
+        },
+        {
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/e65003f5842ff37eadc064df10b9563eeaedad25\\/backend=imagemagick",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-ak-scissors.favicon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn-ak-scissors.favicon.st-hatena.com",
+                    "resolved": "cdn-ak-scissors.favicon.st-hatena.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "60b1f9b39d86e21b676f8b15ea475b5d8e1ba1b41aa4c9a58c20c12d8a2420a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatena.ne.jp",
+                "b.hatena.ne.jp"
+            ]
+        },
+        {
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/c5c92b95d8dadc8db4bdadb15f81cbc2bcabef9d\\/backend=imagemagick",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-ak-scissors.favicon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn-ak-scissors.favicon.st-hatena.com",
+                    "resolved": "cdn-ak-scissors.favicon.st-hatena.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "97dd352e0e3d86ba2f0f098d66430d60f2a983e1a568c8ffbcf6d07b0af29541"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatena.ne.jp",
+                "b.hatena.ne.jp"
             ]
         },
         {
@@ -117,7 +230,34 @@
             ]
         },
         {
-            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/fd1590e661b5c3b8a4ecfd47b6ad86279b665fe8\\/backend=imagemagick",
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/valve\\/dmp-config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.pool"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.pool.st-hatena.com",
+                    "resolved": "cdn.pool.st-hatena.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "df47b5f6656706e27b9b77893dfc362cf9dea1392e88e7a9d5371b18085ea2d8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatena.ne.jp",
+                "q.hatena.ne.jp"
+            ]
+        },
+        {
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/99be2bbd5cd9203438d949e0b16ae97d53f5f33c\\/backend=imagemagick",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -133,7 +273,7 @@
                 }
             ],
             "responseHashes": [
-                "dc0de27c7990b291b7cd06597c010fc1fdf97479458de6de89e5c693eec1d2c0"
+                "414b33bf29dc2d581a9cdaaa95f6edb7cb309df93a3b60caf02cbf2b95d18fbc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -144,7 +284,7 @@
             ]
         },
         {
-            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/56a984819d40412d3d6501afff6f75dc03279a03\\/backend=imagemagick",
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/d04c409a2fc115281887150e8f4aa90a64ca7c12\\/backend=imagemagick",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -160,34 +300,7 @@
                 }
             ],
             "responseHashes": [
-                "1384320aba7e2ad5321f78c8da53edb9d0fe49fa5e4a5f16ad601e65ced34aa1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hatena.ne.jp",
-                "b.hatena.ne.jp"
-            ]
-        },
-        {
-            "rule": "st-hatena\\.com\\.edgekey\\.net\\/image\\/favicon2\\/da11cde5b3edfcd4ef71b4cd62c164e0f97fd08f\\/backend=imagemagick",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn-ak-scissors.favicon"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "cdn-ak-scissors.favicon.st-hatena.com",
-                    "resolved": "cdn-ak-scissors.favicon.st-hatena.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "9ff810fdcae5810c4b28baaaf46657cbfc3a2dfc420c70d3709614e3a58e04f8"
+                "9c0e586247bd1e535221cb98570656a3f6cdb0fc68ba5bcfa760560face6958a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -225,30 +338,30 @@
             ]
         },
         {
-            "rule": "st-hatena\\.com\\.edgekey\\.net\\/js\\/texts-ja\\.js",
+            "rule": "st-hatena\\.com\\.edgekey\\.net\\/default_profile_images\\/profile_l\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn.blog"
+                "cdn.profile-image"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.blog.st-hatena.com",
-                    "resolved": "cdn.blog.st-hatena.com.edgekey.net"
+                    "original": "cdn.profile-image.st-hatena.com",
+                    "resolved": "cdn.profile-image.st-hatena.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "805d787bc26b9f92abd811a948f122021962eeef36510d8f2cff56bf20f91627"
+                "3430f5693d6699c90d37cbf8273b9248e2f32066b2328dce38732087855e79cc"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hatenablog.com",
-                "carislife.hatenablog.com"
+                "hatena.ne.jp",
+                "q.hatena.ne.jp"
             ]
         }
     ],
@@ -258,17 +371,13 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9560439560439561
-        },
-        {
-            "domain": "hatena.ne.jp",
-            "prevalence": 0.04395604395604396
+            "prevalence": 1
         }
     ],
     "types": {
-        "Image": 8,
         "Script": 6,
-        "Fetch": 2
+        "Image": 14,
+        "Fetch": 4
     },
     "nameservers": []
 }

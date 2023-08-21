@@ -4,27 +4,84 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
-    "sites": 7,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "irisplaza.search",
+        "amiami.search",
         "palcloset.search",
+        "irisplaza.search",
         "kohnan.search"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "zetacx\\.net\\/static\\/zd_register_prd\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "amiami.search",
+                "palcloset.search"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d2a7254efa6320fe3abe0cb3122377f4d6101297b5613e3450b55370e151c24e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "zd-cookie-user-id": {
+                    "ttl": 86400008,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "zd-cookie-session-id": {
+                    "ttl": 1808,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "zd_cookie_user_id": {
+                    "ttl": 86400005,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "zd_cookie_session_id": {
+                    "ttl": 1805,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amiami.com",
+                "www.palcloset.jp"
+            ]
+        },
+        {
             "rule": "zetacx\\.net\\/static\\/__zd\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "amiami.search",
                 "irisplaza.search",
                 "palcloset.search"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -32,13 +89,14 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "zd-cookie-user-id": 0.00000682212004202426,
-                "zd-cookie-session-id": 0.00000682212004202426,
-                "zd_cookie_user_id": 0.00000682212004202426,
-                "zd_cookie_session_id": 0.00000682212004202426
+                "zd-cookie-user-id": 0.000013633265167007499,
+                "zd-cookie-session-id": 0.000013633265167007499,
+                "zd_cookie_user_id": 0.000006816632583503749,
+                "zd_cookie_session_id": 0.000006816632583503749
             },
             "exampleSites": [
-                "irisplaza.co.jp",
+                "amiami.com",
+                "www.irisplaza.co.jp",
                 "www.palcloset.jp"
             ]
         },
@@ -54,7 +112,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0076409d29fdff8fc6d4b980f2d466209d3af0a86802ddb74871008a40d1b2f4"
+                "380800c3737ccffff9a7eaf3a20667b352a5e005cd8aeac706d6d2921246c5f0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -67,23 +125,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000205,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.7
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.2
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Image": 2,
+        "Script": 2,
+        "Image": 3,
         "XHR": 2
     },
     "nameservers": [

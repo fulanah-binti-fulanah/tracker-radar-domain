@@ -7,29 +7,27 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "new",
         "vinelink-mobile",
         "edge-prod",
-        "vinelink"
+        "vinelink",
+        "new"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "vineapps\\.com\\/utilities",
-            "cookies": 0.00000682,
+            "rule": "vineapps\\.com\\/api\\/v1\\/enums\\/IExStaticText",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "new"
+                "vinelink-mobile"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7e54990e666ab632e6e4183a4cefbad39b74549571b5a6079db03b44c1a2318f"
-            ],
-            "type": "Document",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -38,11 +36,11 @@
             ]
         },
         {
-            "rule": "vineapps\\.com\\/api\\/v1\\/enums\\/IExStaticText",
+            "rule": "vineapps\\.com\\/api\\/v1\\/states",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "vinelink-mobile"
+                "edge-prod"
             ],
             "apis": {},
             "sites": 2,
@@ -70,6 +68,28 @@
             "cnames": [],
             "responseHashes": [
                 "7bcdb75dc6f39fb927edbcdcf285cf1abe4a7cbd7eca90bd596427c1ad6d5b81"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vinelink.com",
+                "www.vinelink.com"
+            ]
+        },
+        {
+            "rule": "vineapps\\.com\\/api\\/v1\\/states",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9612828d9a104562ff83fb98c5afef4b3e0089835556fa7eb4ca21ace8f55c09"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -122,19 +142,22 @@
             ]
         },
         {
-            "rule": "vineapps\\.com\\/api\\/v1\\/states",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "rule": "vineapps\\.com\\/search\\/NY\\/Person",
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
             "subdomains": [
-                "vinelink-mobile",
-                "edge-prod"
+                "vinelink"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "c5afbfeffc8d7444c266d3bee30f9126597c20f484a46bfa9a796d65188e1d4b"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -143,19 +166,20 @@
             ]
         },
         {
-            "rule": "vineapps\\.com\\/api\\/v1\\/states",
-            "cookies": 0.0000136,
+            "rule": "vineapps\\.com\\/utilities",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vinelink-mobile",
-                "edge-prod"
+                "new"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "responseHashes": [
+                "7e54990e666ab632e6e4183a4cefbad39b74549571b5a6079db03b44c1a2318f"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -198,30 +222,6 @@
                 "cf7d1287739c4a36363d161e7a15ecad6b8c8c28b018720ebefe1c2c6d196b61"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vinelink.com",
-                "www.vinelink.com"
-            ]
-        },
-        {
-            "rule": "vineapps\\.com\\/search\\/NY\\/Person",
-            "cookies": 0.00000682,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vinelink"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "65921bc16bbd4434787bc20a198e775e9e4added80259938eaa2da393e12c6ae"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -414,14 +414,14 @@
         }
     ],
     "types": {
-        "Document": 4,
         "Preflight": 14,
-        "XHR": 18
+        "XHR": 18,
+        "Document": 4
     },
     "nameservers": [
         "ns-720.awsdns-26.net",
+        "ns-362.awsdns-45.com",
         "ns-1979.awsdns-55.co.uk",
-        "ns-1482.awsdns-57.org",
-        "ns-362.awsdns-45.com"
+        "ns-1482.awsdns-57.org"
     ]
 }

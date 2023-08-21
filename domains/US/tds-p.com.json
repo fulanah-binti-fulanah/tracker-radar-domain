@@ -7,9 +7,9 @@
     "prevalence": 0.0000409,
     "sites": 6,
     "subdomains": [
+        "collect-com.prod",
         "cart-flyin.prod",
-        "apigee",
-        "collect-com.prod"
+        "apigee"
     ],
     "cnames": [
         {
@@ -36,6 +36,33 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "tds-p\\.com\\/gtm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "collect-com.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "collect.conrad.com",
+                    "resolved": "collect-com.prod.tds-p.com"
+                }
+            ],
+            "responseHashes": [
+                "15634a8f4aa92d8065017c306a28538c4db844ee0bc46db1149e8e93b9ef79bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.com",
+                "www.conrad.com"
+            ]
+        },
+        {
             "rule": "tds-p\\.com\\/bundle\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -43,7 +70,7 @@
                 "cart-flyin.prod"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.product": 4,
                 "Document.cookie getter": 4
             },
@@ -215,9 +242,9 @@
                 }
             ],
             "responseHashes": [
-                "6f7f9922b90acec5d4c9f6c60f9c0497e7bf336d2c1fffaac506ba1866c0928e",
-                "77e270f6f1eeafe4b0d60909340fd9c67cf60726a7d5dbf8820f9776ccce2da8",
-                "3455929ca27b133b57d79d5745caa28d63b90a93b05d66bdf802acba2b0e152e"
+                "7bb6dca0c6c3ce360f7bca37bbb3e3579d4565ec933cffd430e37a30b7383aba",
+                "f862ea7e6d2e9cbfa21920e5aa8d885aec514d87c48e77679150d12ad32e8e00",
+                "b0752271a6c06941aef8579b141ec59db2011fd49493d449ed05eef9bd743f78"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -296,12 +323,8 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [
-                "366138d08bc01b1b64aa73e420ecb39140f0f044f3ac22f03be5a2e280188794",
-                "a4613ebf22d56d8e33d8f60d99306a3b96f8fb96b9c2535def5307b2ec73e7e3",
-                "360f5480ca901388dcac7f1847544b6c9cd9a10bb65041013da28c6516b2c896"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -339,8 +362,12 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "aed4535217e87a4f8019b3fdd9f92decdee1cb1df86dc6a2493527fc373466ba",
+                "f8598b9986baceb6145170ab73c7a7e826be9b0f077a13793a641495fde5da2c",
+                "d5cf77b8a5d73738730778bc1fe00b8650242536d80e3a467049d13811948cae"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -351,58 +378,6 @@
             ]
         },
         {
-            "rule": "tds-p\\.com\\/gtm\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "collect-com.prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "collect.conrad.com",
-                    "resolved": "collect-com.prod.tds-p.com"
-                }
-            ],
-            "responseHashes": [
-                "a66e29e0ba48eae381d7c88fe0d722e4417bb1795ba29dc7648d62b931e61d90"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.com",
-                "www.conrad.com"
-            ]
-        },
-        {
-            "rule": "tds-p\\.com\\/price-availability\\/4\\/CQ_DE_B2C\\/facade",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apigee"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.conrad.de",
-                    "resolved": "apigee.tds-p.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.de",
-                "www.conrad.de"
-            ]
-        },
-        {
             "rule": "tds-p\\.com\\/price-availability\\/4\\/CQ_DE_B2C\\/facade",
             "cookies": 0,
             "fingerprinting": 0,
@@ -419,7 +394,7 @@
                 }
             ],
             "responseHashes": [
-                "c2c2b43f2a8bb0919d7da7ac985c4a404db2c1e7c40f29eeb6c957fb3fd40d9f"
+                "b7180cdba5cf6b46a0ef834fccddff840bc38f81e7c73bac4a34831bcb82be63"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -465,7 +440,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -495,7 +470,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -507,8 +482,8 @@
                 }
             ],
             "responseHashes": [
-                "8f1c1b059b5f583effa97ef96afd068c3ca926ef77d5406a3f3c535368ba9a06",
-                "b9dac3e6ebf6c1ef56e0500ec66d0e35d76375ce0a585c7ceeb39cb295af4375"
+                "3cd38f75c1055213814df0d6dfef5267a5f802d3668a46a52c4ffadc68fd9968",
+                "9aa9e6cc2e45d1d6ec3a4d8cc81b4704416b1117062785d29bf12c238e8e0a1e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -563,7 +538,7 @@
                 }
             ],
             "responseHashes": [
-                "e72ed94359e7be8c61007cd981d91992f6eebe418bc283fc00a4f3296d0f05c4"
+                "f553b2ab8a989dc926bdd7cf80c6ac85b36c7d8239eb4899e26b0154b736a2cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -580,28 +555,28 @@
     "topInitiators": [
         {
             "domain": "conrad.com",
-            "prevalence": 0.7804878048780488
+            "prevalence": 0.7857142857142857
         },
         {
             "domain": "first party",
-            "prevalence": 0.0975609756097561
+            "prevalence": 0.09523809523809523
         },
         {
             "domain": "tds-p.com",
-            "prevalence": 0.0975609756097561
+            "prevalence": 0.09523809523809523
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.024390243902439025
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
         "Script": 10,
-        "Preflight": 18,
+        "Preflight": 16,
         "XHR": 24
     },
     "nameservers": [
-        "kurt.ns.cloudflare.com",
-        "sofia.ns.cloudflare.com"
+        "sofia.ns.cloudflare.com",
+        "kurt.ns.cloudflare.com"
     ]
 }

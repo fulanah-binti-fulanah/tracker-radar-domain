@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000955,
-    "sites": 14,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "jcc",
         "carsoncity",
         "pensacola",
+        "elkgrove",
         "fortworthgov",
         "ousd",
         "slocounty",
@@ -31,31 +32,37 @@
                 "jcc",
                 "carsoncity",
                 "pensacola",
+                "elkgrove",
                 "fortworthgov",
                 "ousd",
                 "slocounty"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 7,
+                "Date.prototype.getTime": 1
             },
-            "sites": 7,
-            "prevalence": 0.0000478,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "81dcada9c8c37cf670c254e79abc51675f7fbef8c523dd55c129acf77b9e7f51",
-                "930533096611d6acc2a3133e4cb1c2808e1cdbd629bf3ddf68a3adb834cdd681",
-                "b3d6f8b57958a5065c3ac6f877b40e5ce9670637ed40015ffca979c54e397be4",
-                "0f73570daa7734bedb98e04222ae3905aa42a58e262667022d0a7f970138007c",
-                "6c6d12d94d7c378d1370a9d1689ad274f666139bf76fcc1034269b4d6e1bf929"
+                "26f3401ab481511a1f355d171c9d8ee277d960c73366643545992a89124bf55b",
+                "a21b6aef0b2f369ed814736c3e2721dc3b650b5d7987798837d7d7d550597a30",
+                "c08752c9fd51fc33c1529c15db6fb7c17989e2f28895b7954efad7b61adfab8e",
+                "1e660b549c66cd40ac6596c2022bc78278a417c0e648c21395cba2d44ca77329",
+                "a8ca21af2150825811a9406ba92b5248b4ba1d1d3cf9c7203a83730f64415acc",
+                "2424e8eef2da1a5d9e7d3e2dca6ba945826b6cecd0f7791965b76a9eeccc9651",
+                "0bfd1f95d90493c36d43b8ea3434a6b293f9a6106eacfdcc24ddb34f72bee3f3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ca.gov",
+                "supreme.courts.ca.gov",
                 "www.carson.org",
                 "www.cityofpensacola.com",
                 "www.courts.ca.gov",
+                "www.elkgrovecity.org",
                 "www.fortworthtexas.gov",
                 "www.ousd.org",
                 "www.slocounty.ca.gov"
@@ -72,11 +79,11 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "b705678c6e47bdef7c10f1d9efeb66375ba924916d7104c846b0b4059d5f45a1",
-                "a97231939197e9d8ce9a419fc900e06a94a3ec21a3a28ad4bdd1645fe61a0ef9"
+                "1a6d1844daa1d04b5cf0fdba950633aef54044f466c797fb3b6be030b6b1404c",
+                "b135241d7e840429482099f344fde90d81e56c993f44dcf9b2cfaa8a47f952f9"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -147,11 +154,11 @@
                 "ousd"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "581a36cd2c06dbbbf9d3456490f2acd33e28740afcf7f3cc63ebd6a0dd4ffaaf"
@@ -412,7 +419,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "99beb5a6c2e3ec1e3e66dfeec875069eeb72ba50985664ecb801aee0110602ca"
+                "450348b636fe1b2965fcc3c708e1568916075a20f43a0ec73c75fbc5ab7e7d10"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -431,8 +438,8 @@
                 "ousd"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -442,7 +449,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fortworthtexas.gov",
-                "www.fortworthtexas.gov",
                 "www.ousd.org"
             ]
         }
@@ -453,20 +459,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9411764705882353
+        },
+        {
+            "domain": "jssdk.js",
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Document": 12,
+        "Document": 14,
         "Script": 23,
         "Stylesheet": 6,
         "Image": 2,
-        "Other": 3
+        "Other": 2
     },
     "nameservers": [
-        "ns-871.awsdns-44.net",
         "ns-176.awsdns-22.com",
-        "ns-1329.awsdns-38.org",
-        "ns-1823.awsdns-35.co.uk"
+        "ns-871.awsdns-44.net",
+        "ns-1823.awsdns-35.co.uk",
+        "ns-1329.awsdns-38.org"
     ]
 }

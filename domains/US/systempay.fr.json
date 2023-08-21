@@ -10,7 +10,7 @@
         "static"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "systempay\\.fr\\/static\\/js\\/krypton-client\\/V4\\.0\\/stable\\/kr-payment-form\\.min\\.js",
@@ -22,12 +22,13 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Event.prototype.timeStamp": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.language": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
+                "window.innerWidth": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.availWidth": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -35,50 +36,6 @@
             "cnames": [],
             "responseHashes": [
                 "250f4f4cc11a2a73511297546280f6efeca1ad9bbeabcbdf2dc8a0f5051fdc2c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lanouvellerepublique.fr",
-                "www.lanouvellerepublique.fr"
-            ]
-        },
-        {
-            "rule": "systempay\\.fr\\/static\\/js\\/krypton-client\\/V4\\.0\\/ext\\/classic-reset\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "457e58898f0f6981f49592ce53a934e2fa275db32b766b11e17518e892cd09c7"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lanouvellerepublique.fr",
-                "www.lanouvellerepublique.fr"
-            ]
-        },
-        {
-            "rule": "systempay\\.fr\\/static\\/js\\/krypton-client\\/V4\\.0\\/ext\\/classic\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d1a6f7bc425499cd4109b0ce361ffc0966ef78de7d0a663a8f98bd5e220f2818"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -99,8 +56,7 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Stylesheet": 2
+        "Script": 2
     },
     "nameservers": [
         "dns2.cscdns.net",

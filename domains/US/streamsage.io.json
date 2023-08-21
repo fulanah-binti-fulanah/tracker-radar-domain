@@ -10,24 +10,26 @@
         "cdn",
         "unleash-proxy",
         "platform-analytics-proxy",
+        "platform-ext",
         "platform-api",
         "api.data"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "streamsage\\.io\\/platform\\/platform\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2,
+                "window.devicePixelRatio": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -102,9 +104,31 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00000682212004202426,
-                "lotame_domain_check": 0.00001364424008404852
+                "_li_dcdm_c": 0.000013633265167007499,
+                "lotame_domain_check": 0.000013633265167007499
             },
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/panel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e569b99774f69a78aed69b8ac490103fd2e317ca55c46c9f5fb17d40e135db1"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "177milkstreet.com",
                 "www.177milkstreet.com"
@@ -134,6 +158,48 @@
         },
         {
             "rule": "streamsage\\.io\\/public\\/panels\\/shopifyTooltipPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyCartPanel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc03f5604dd90b7b8b642b1caf66a62f3f6187e875cd010f1db21f9bab8a68a7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/public\\/panels\\/shopifyCartPanel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -199,6 +265,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "platform-ext",
                 "platform-analytics-proxy"
             ],
             "apis": {},
@@ -207,6 +274,36 @@
             "cnames": [],
             "responseHashes": [
                 "6d464925315fd267f52f4a5cc98ece537e2e45eca051fd29b177f38a01acfab7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/index\\.61f62f4ccf8ae5407525\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.hardwareConcurrency": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9217ae74a76704f78df26baadcf6cdfaaff31da2d5c9e194f0238a219cf8896c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -235,6 +332,98 @@
             "cnames": [],
             "responseHashes": [
                 "405ebd2ecfeeba5bc7d5f99743fc577641a13fe71bf3cffffd5c6ecc4e1b33f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/645\\.3a69629968214ea873ab\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0cbeb226b8a27ac48c6f65915ab7a62acfccfae2e8201e19ac924fbccaa93a5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/263\\.526b4ea8e29903585b70\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1bccc13b0194e19a28b20828dc2dba91c6c8a89237319df27d7604fecc41ac3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/panel-app\\.f7f917deca27d7e66e9e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9651ea956aea78dfc2529a7191ac586f3e0d3f8a358056a600312b579549498b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "177milkstreet.com",
+                "www.177milkstreet.com"
+            ]
+        },
+        {
+            "rule": "streamsage\\.io\\/shopify-extension\\.9fd1d3ba74321bd28a18\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "platform-ext"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0821d9cd344c10f4054fc85c45c270d0c9ef5707243d6e00661cdfb5598092ae"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -281,16 +470,16 @@
         }
     ],
     "types": {
-        "Script": 6,
-        "Preflight": 6,
-        "Fetch": 6,
-        "Document": 2,
+        "Script": 16,
+        "Preflight": 8,
+        "Fetch": 8,
+        "Document": 4,
         "Ping": 2
     },
     "nameservers": [
+        "ns-2012.awsdns-59.co.uk",
         "ns-239.awsdns-29.com",
         "ns-1453.awsdns-53.org",
-        "ns-2012.awsdns-59.co.uk",
         "ns-873.awsdns-45.net"
     ]
 }

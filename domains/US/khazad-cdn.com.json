@@ -213,9 +213,11 @@
         {
             "rule": "khazad-cdn\\.com\\/javascript\\/prototype_1\\.7\\.3_prototype\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -273,9 +275,11 @@
         {
             "rule": "khazad-cdn\\.com\\/javascript\\/mousetrap_1\\.6\\.5_mousetrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.platform": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -316,7 +320,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -448,7 +453,7 @@
         "Script": 22
     },
     "nameservers": [
-        "patrick.ns.cloudflare.com",
-        "saanvi.ns.cloudflare.com"
+        "saanvi.ns.cloudflare.com",
+        "patrick.ns.cloudflare.com"
     ]
 }

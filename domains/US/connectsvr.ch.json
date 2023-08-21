@@ -13,6 +13,32 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "connectsvr\\.ch\\/lila\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tc"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "88a21e0a28000162b4432d39187040d7fe279d2db742743f26ae3fd53d95f4e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manor.ch",
+                "www.manor.ch"
+            ]
+        },
+        {
             "rule": "connectsvr\\.ch\\/lila\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -24,12 +50,12 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4444b6924c8bda1a8e18ecb0d4467152cdfaf8d714f23038a43092afda205b55"
+                "86e52809850bfd262d20f8bedeb6c4c38fc0c1937905eb48b405c9b28d068484"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gb_lh": 0.00001364424008404852
+                "_gb_lh": 0.000013633265167007499
             },
             "exampleSites": [
                 "manor.ch",
@@ -43,14 +69,19 @@
     "topInitiators": [
         {
             "domain": "behamics.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
+        },
+        {
+            "domain": "bly.ch",
+            "prevalence": 0.25
         }
     ],
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": [

@@ -33,7 +33,7 @@
                 "window.name": 1
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "3f5bc2754f6675a3160fe9e29301321d20c04c10db348dd3f99c472a237e219e"
@@ -43,13 +43,13 @@
                 "bg_sid": {
                     "ttl": 7201,
                     "length": 24,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "bg_pid": {
                     "ttl": 315360001,
                     "length": 24,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -88,15 +88,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "bg_sid": {
-                    "ttl": 7209,
+                    "ttl": 7205,
                     "length": 24,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "bg_pid": {
-                    "ttl": 315360009,
+                    "ttl": 315360005,
                     "length": 24,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -108,16 +108,22 @@
         },
         {
             "rule": "buyergenomics\\.com\\/lib\\/v2\\/bgbot-v2\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -126,7 +132,20 @@
                 "a6388902c6c82bfabe615d8ce98da80dbba9f5af5206ac672acf6f7987c6bec4"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "bg_sid": {
+                    "ttl": 7202,
+                    "length": 24,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 1
+                },
+                "bg_pid": {
+                    "ttl": 315360002,
+                    "length": 24,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "steris.com",
@@ -136,7 +155,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000273,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "first party",
@@ -156,8 +175,8 @@
     },
     "nameservers": [
         "ns-cloud-a3.googledomains.com",
-        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a2.googledomains.com",
+        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a4.googledomains.com"
     ]
 }

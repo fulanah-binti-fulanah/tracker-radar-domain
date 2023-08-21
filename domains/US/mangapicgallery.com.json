@@ -9,15 +9,15 @@
     "subdomains": [
         "pic1",
         "pic",
-        "i8",
-        "i2",
-        "i0",
-        "i9",
-        "i6",
-        "i5",
-        "i4",
-        "i3",
         "i1",
+        "i5",
+        "i9",
+        "i4",
+        "i6",
+        "i2",
+        "i3",
+        "i8",
+        "i0",
         "oalb"
     ],
     "cnames": [],
@@ -201,14 +201,19 @@
         },
         {
             "rule": "mangapicgallery\\.com\\/js\\/eff\\/jquery\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "pic1"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -217,7 +222,14 @@
                 "ba3de36ac50478e29e66e0713709df3fe489adc3c142c4f92b643a6b63b64ea9"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_mtma": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mangago.me",
@@ -227,11 +239,13 @@
         {
             "rule": "mangapicgallery\\.com\\/js\\/eff\\/jquery\\.tools\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pic1"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.plugins": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -249,11 +263,13 @@
         {
             "rule": "mangapicgallery\\.com\\/js\\/eff\\/lz\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pic1"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -427,11 +443,13 @@
         {
             "rule": "mangapicgallery\\.com\\/js\\/eff\\/snowfall\\.jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pic1"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -454,7 +472,8 @@
                 "pic1"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -559,7 +578,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/93\\/u2398481_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/b5\\/u877006_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -569,9 +588,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "bcc86a070120ccd15cbe7c481d6b914bf49d372452d336e6a8614c19105ed203"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -581,7 +598,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/55\\/u687164_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/ce\\/u3108499_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -592,7 +609,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "96c56d15367e51b08fc01efdfcb8280eb5394e7f34236062c1cd2155aea301c0"
+                "d107f8774120a11bdfcfc5c08f4abd666b40c3c2ab8cc1a81823b8c12454699f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -625,28 +642,6 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/images\\/home\\/user-blank-50x50\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ff4018df6b34bf017f97e35f16e2b22e82ee23a930655e28840607079d5cfba2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
             "rule": "mangapicgallery\\.com\\/images\\/home\\/home-comment-1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -659,28 +654,6 @@
             "cnames": [],
             "responseHashes": [
                 "e486ccc2fbea5ef17165969ffb9868fa5dda0a005ce6e3dac4b00f24353459b9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/images\\/manga_closed\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "61828490b99918ab92678e5f6f0dda589f63795f0261bfbbc1abccdf326ebf26"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -713,7 +686,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/js\\/keyword\\.js",
+            "rule": "mangapicgallery\\.com\\/images\\/manga_closed\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -724,9 +697,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d893ba03373c39e5a639ad75e361d7c21eb792eb240eee2a4fadfcab7aa12fae"
+                "61828490b99918ab92678e5f6f0dda589f63795f0261bfbbc1abccdf326ebf26"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -735,7 +708,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/js\\/search\\.js",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/0e\\/u2580146_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -746,9 +719,75 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "db60c1a359808f3f0a27102773639a1228850955130459dd0b42c988b9b80c18"
+                "b3cff4c8199eaaf8e8a1f97659b67e782e4e94f1c30a34f23cdc45868a7f5aac"
             ],
-            "type": "Script",
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/55\\/u687164_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7aafd89f8f5a92d46aa8582b71e2a016162a2b0275312f6401a7390d33b8c708"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/images\\/home\\/user-blank-50x50\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff4018df6b34bf017f97e35f16e2b22e82ee23a930655e28840607079d5cfba2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/4a\\/u1304066_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bbf3dba4b8b0c034b167712ed6025515d7f8ef62a40d37abedeebbfd7d7b226b"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -793,6 +832,50 @@
                 "051b5b10d25d66e769b606481e321e95d1fbbe762ee7ec98b22b8c8768f57be9"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/js\\/keyword\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77c83766c6f932bde5651cd4d339bfef63f77d964bd1269cebfd124c8cc563ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/js\\/search\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db60c1a359808f3f0a27102773639a1228850955130459dd0b42c988b9b80c18"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -867,126 +950,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HpmCL9mmW4eXpBEbTM8jOoEvtE__uB9AUH77sQfqoOPDnWC5VpNEJAX6WfP7eRb_iQS0ZXe6hhWpgSzzWUkO4Yag-PjIukSEzdik_tsynWXS6kwvomSX3m2m9ZFxnZD_4WeAerkoFsQCFH3n9o6K8\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMkmSoQGeUYRcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i8"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HfkSK8mmW4eWJBGaTgrnCog_d0Y_sc68XnD0ocHUlX_iGXTt7I69_X9PK\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e07756ba607d62da91f047806c11f2c37318309421cae2e81057e5ac2e33321d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5fAowwwyPHcwmDVB-N\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b9c78f02d24474874e44f8f1c521b024f85cab0d27e761d9f368e92f4b690aa6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HykCr3mWm9eI51yW0c-nSoc1tAUEzsAxCYX7_sQPoW_qAXTZALpMJKwgrjPkyghvIpdVIJ3LydNrfkSiFYmqwUGABLQv4mCEz\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i9"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6b9b6450f343d0de04eeca144c381b8bb30e6c5dc39f1bdd358d68871599a88f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlmiX1knd8eI5h-XDY5o-oEvtE__ethCU0W8rhnUPnyLTbnapYF17aTkx\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i6"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2919cedaad67caa31f74f90cedde8bf895a5d4b7b944a03b9f64dd3cbfb6c046"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4HXzf5XikweBwxdwVEVXCEntq1XPmCYWZ7LWYKLgkuifvBgUbAdQO5JXLzbfGtXviFiDVAK2FwKwvDXPL8d00AqgZSUnLweezEoi67bFahR44DMho_XvQ0nEIcsuB5Vof9edOyYP2EXDl9KGUR\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i6"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "dc0f40748747fc20c38dbb31127e09ee9d85efc1dae2767754f407b217678961"
+                "ea0fd69f5f7e357b480ac05ab4a173b8cd61764794b1c8735deb6f548edb9fc0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1019,19 +994,81 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfLCfgoQBkFUHcx-BVB-N\\.png",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HykCr3mWm9eI51yW0c-nSoc1tAUEzsAxCYX7_sQPoW_qAXTZALpMJKwgrjPkyghvIpdVIJ3LydNrfkSiFYmqwUGABLQv4mCEz\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i2"
+                "i9"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4f5d34ddcbc2413c4ab9138815ed5f7c38acea637a08f096095585beee66c128"
+                "6b9b6450f343d0de04eeca144c381b8bb30e6c5dc39f1bdd358d68871599a88f"
             ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMhlDoQSuhfAcx-BVB-N\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fa92e2f0f21509750cc507a8a57817d692ec32b7b1bdbb4d5d61d3b7bf3229f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfL-nSorClj0hcwmDVB-N\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlmiX1knd8eI5h-XDY5o-oEvtE__ethCU0W8rhnUPnyLTbnapYF17aTkx\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1063,18 +1100,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0jCj8WjR6eJV1yZz03jSoAtu03-pA6AHI_2nBbxnynBWFtAJW8AXTgwVycwr0k0edW1KnSDoQXdYvWFZTt7JWEBKUAwsWfkwgRfBpgJFVULucdbbYv2-iDV6JW9wKAT_Xfb-d00AqgZT\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4JWgb5YCP_fxvJe9W1VkCBcgi1kyXzZmWuKJUKLDf6Y_rFeUY1edC1JUe-bvG0ZP3tXjZ6JY4EKgXBX_r6s1M1q960UHKKbQ7xpibtmzudT2hDUjo3fiY_pBMRu8W4aY-KbdiwZfuHXTh-Jz8R\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i9"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ab08527c8a6abda094b3bdb6dc11fcf1f35f90e3bee0c8a7a7faa969e6e3ff91"
+                "2c38cdbea29c321256a4a112273cd5ae1e45462edb798c542ddf3a21001163a9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1085,18 +1122,62 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAE-qhNCYUXjwsRfukje9gDp6JV4IKgb5XvP_ehvCqN9HVkjxowavXCaAXzyvK2Z1KAfBWyfAeRYzpdRLUEGEbfGtXfWCiDVAJW9wLwX_X_bCd00AqgZSUnLwegOxeT3TdFyiXlxpYxMyjDMDklsvqQZ5Vof9edOyXvuDYjdAJmcR\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0jCj8WjR6eJV1yZz03jSoAtu03-pA6AHHDwo_HfmDrzn3d5SGUBKPL-jeIxfgHEqwRIJkWAcdnijvqGZmh9VGUJWUAn7Xygtghsxp9REV0KFndLejCmGiDp8J2UJVAbCXBHBgRj-rx-6\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i0"
+                "i6"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0cdd264def373ad6d58c62dfb7a3d0138939f840a343961dc2a399fbb0bc1ea1"
+                "86475db323e1d05d1511dc0bede5be38c294da1e5fa54a63b10b76533b0c6e7d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfLCfgoQBkFUHcx-BVB-N\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f5d34ddcbc2413c4ab9138815ed5f7c38acea637a08f096095585beee66c128"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rUROHYUm8aA-qmizxkWJ4eY5RFJEc-lzoUxdEAxswa0HEC-ddOuWCf9o2m8I5lBXAMAZPP_fxfDdNFMKUWN\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8607b682670cac68cbebf46ba025cba3ceb08994d4a0e4ef5bfadd5e3cac8d6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1151,7 +1232,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/3d\\/u2564191_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/fb\\/u101675_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1171,7 +1252,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/c9\\/u2114180_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/7d\\/u3050834_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1182,7 +1263,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e331e9760f55e861a466eceac6c8441b2802f941b60a87a3c5e9902aa5ac6ac7"
+                "23fee34ac31170dae533736d0c2b38276064a5ff5ddf3c185da01512ff1ac3fa"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1193,18 +1274,38 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMhlDoQSuhfAcx-BVB-N\\.png",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/42\\/u3422246_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i4"
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/9a\\/u329724_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7fa92e2f0f21509750cc507a8a57817d692ec32b7b1bdbb4d5d61d3b7bf3229f"
+                "6e1ee2f7723c2d8ae6ae870734df8ffc37be8e557227e0f84f65caf798a751a2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1215,7 +1316,417 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HpjiL1jmivebV1AUazr5kSoAtrEgDcAy0X3bua9iuZfe-W3S4WG4CLwT_W_PCeBPA\\.png",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/6d\\/u2026433_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/b6\\/u1955498_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f7552f9af85c5c6520fafa8cf7e30aaec94421d503c9eaffc57da88d84c0ee72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/c7\\/u954847_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aaeafe4a2934ab03e1b17ac59b29122f65595e037205cbd39a2ae94d980a2e4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/f7\\/u1378130_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "88077e0fd39197321b4154f571313b5209cb2972dd967d7aac506093e4ea0408"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/66\\/u3043076_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9cbb2475908bc590bae8d7094a0145343210832701fc314a30a51fab0dbdb2c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/e0\\/u3219855_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/2c\\/u3444487_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0f13fb44bfe4a89da84a9e023deeba671dc96ac2e7436627db5826f0a1d8e5a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/4a\\/u317711_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c753abeabe12cfab099391b3929f2f983a3f4b9615c17ea9d539c747df15b96d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/1d\\/u949676_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aaf19d5c0338b3dd03890e9f6c25b003316656845f01e588c4b1dbb38e90672f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/57\\/u3428419_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eaac26a2b6bc4c59c465f1d620931ba783c9234fc627e0d08d983c702313d915"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/73\\/u1545242_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "26b9519bf8ea4c57e86de09fe02ac00ace71a8513de669899d9f6a7a811cb0bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/dd\\/u58704_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "60347f80c94bc88386447a8d1355f288dbb5491924c1c6728a65b9b247afd6cd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/db\\/u1083251_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "567368e19f9aaffd78839456e7fb02340f8be715e38f6afc2cdad469993db749"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/b1\\/u2066948_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0d78a5994f1a05fa1e04853c46d5ef5949f5aecd4949c7735aa2b606d88aec0c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/28\\/u297072_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/3c\\/u689478_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e758d2402c441681e892b787fa829eac1f691f63ebf392bf98eeeb71b4235e4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/71\\/u527813_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb65d4a19b6efe864de77915416fca084cfcae44fe6af45a944475706822b870"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/15\\/u431349_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e71bf44502d7b1ccffee4ab4ca93b3495480957853815ad403e43d6cef7a9ecf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/a1\\/u3323870_50x50\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hlmiu8mmW4eWJB5WkcU_VjoYxdBQ5sgZCVVvxgeSpgAKAY0u3QYEAYTMBVTc7dko1uMyAajz1shXejiLyWmO4IpxKJkczjCf6s1M3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1225,9 +1736,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "793ffaa6e4297d3deba6e11d6202a50b2591242fb61b7227805a47987e16a359"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1237,73 +1746,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMXoAoQ8fjgRcwmDVE6_\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7c3b6172b5666ba7e52cb14fa784de2133cf1dc2aa8b1281405b7d79dbf091c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XzZBeI5FybTcxVioY7tgIErRSAUz7kcUtKsWCX7nW15Jm9yJAT6iScwfxTAdtRDUkfwcdjdYv3zjDR7JGR1KTj9ivgxrkPIewNHJ0jsbdKwZRO_YTh-UGMKMQf7W-E2uUg3gAC2UEzYkdjdnTjXgnyUZphSZQs7bRsywU4hawSLYUy-ctitX_WFYz1-\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i6"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c7a6fff8a8e266092e79646df49b3db13cd87ee8f6dec86b2b98005bbd51d53c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlYuL7jmKxeVq96WDsrlCo8xu1v-pA6AHIG8sBLfmDrznyO-XZRwW0Y5kyg6pFU5swayZXf2r_HpjjbAlmWxWo5IYjA2hyktsUk8vpg2MZHDGawzsk_O_XjpAKmMBKwP6Y8LM\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i5"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2e4db797ce7ada9681c2b532318ee0e46bc2b53371d18c010dcc3b77dc885159"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfM9awoQFtVYUcwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYUm8aAvpk-L7jmKxeVpdyaEj4myof7ekUw9q86hNl3Pfs-vdCLTZjq2RF5FazU9k-A7rwAErQRAUH7CqxbvWirvmm22bl17aTrJWMLM\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1314,7 +1757,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "545268b46b99fae77f55b5536df5e9a607c5af4d84500d8fd21e06befe02f464"
+                "9a620279d5bb3ac937d845e3ee13e45a3294f5ba100949259f0504647f63afff"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1325,11 +1768,11 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5gQoY0kybJcwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAE-qhNCYXjwsURfukje9gDp6JV4EWAX5WyX-qBrHpdNIUHG-owfejvvwXTp_LpQGXwkujPPDehw0pdZHKkXxcfG1ZPTtZjt_UGADMQPAX-E2uUg3gAC2UEzBhdetgQO7hUOAPHVyYRMPmgsmlEE3awSLYUy-ctSyX_WCYTRA\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i8"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
@@ -1345,18 +1788,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XzRBeI5FybTcxVioI-rAIErRSAUz7kcUtKsWCX7nW15Wm8HJDj6XfYyghQxdQNMJkaDbwaxjCbvkTetWWQELAsuW_bCrxoyfdC0UEbsddKsi_WBXTipKWMIKwP_Vi08rknPpgK2LoXjbOP1gyfldHpBJZNfbhL6XxMzf0n2qheDLkCDc9O0Yf2FXzdK\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HpmCL9mmW4eXpBEbTM8jOoEvtE__uB9AUH77sQfqoOPDnWC5VpNEJAX6WfP7eRb_iQS0ZXe6hhWpgSzzWUkO4Yag-PjIukSEzdik_tsynWXS6kwvomSX3m2m9ZFxnZD_4WeAerkoFsQCFH3n9o6K8\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i3"
+                "i8"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "142367a515afebfd05991ad677928068b6bf88e15b884203901fd9a4bd4ccd3e"
+                "5bade98c0a42cdd190164dafc3858d442f92540c3f49fdfc74dad43a0910efe8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1367,7 +1810,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4JWgb5YCP_fxvJe9W1VkCBcgi1kyXzZmWuKJUKLDf6Y_rFeUY1edC1JUe-bvG0ZP3tXjZ6JY4EKgXBX_r6s1M1q960UHKKbQ7xpibtmzudT2hDUjo3fiY_pBMRu8W4aY-KbdiwZfuHXTh-Jz8R\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HiliDzWniyeapxzJzErliootuUQCr82BVoO8k9isXOPvjCN7Wl5yWAUvY_YxgRjBqwNLI0jucge0kP2GZTpDWpMHWgz-WvotfUhQxqQO0TECBbdmvYxOBXTSpKWIBJz46jsLM\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1378,7 +1821,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2c38cdbea29c321256a4a112273cd5ae1e45462edb798c542ddf3a21001163a9"
+                "67230b097eb9c1fcdcb39e9db3e9339bc77ddf018edae8441438bb11b8a8c45b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1389,7 +1832,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfL-nSorClj0hcwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0jCj8WjR6eJV1yZz03jSoAtu03-pA6AHHDwo_HfmDrzn3d5SGUBKPL-WOItrgHEdgC4UkODngOzXie_XTurJUmECMTX6WPT8eUjJedS1InGDn9qxYirxiDZ9LWICLCLBWfMrghnCcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1400,7 +1843,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f03ebdfc08394ef9df46d422068b19a883e5463f915184661ad25d83423d7b71"
+                "fc5c30fd19fc75baf2c9ae31b90a51eef6d7478b9a7ce42c1a691c6264c9ece7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1411,7 +1854,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HfkSK8mmW4eWJBGaTgrnCog_d0Y_sc68XnD0ocHUlX_y_XDlCI69_X9PK\\.png",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HnljfBmmW4eWJA_YjH5nzoL5qEI-uQSBZT7CrQ7rjijBWDZ6J2AAKQb5cQkQlir9hA6JVoG6gAHxnyHzoSGdVJB_a_D7YPYEeUxnIcdBAIkiAtNSzZOG_WjVDJKcDLAv4kjMz\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1422,7 +1865,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "580a0a658f1564a9471dd7e2d4747a198858eea351d89ed5d727058fe39febc2"
+                "3577ee8316e79251b1b244eea06318c64bf7828e56aedc50ac33753876317f72"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1433,7 +1876,71 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAE-qUhNCYXjwsRfukje9gDp6JV4FLgP5X_f8fRfHdtNGU0Dun9mxjfyBXztAW5MKXjf7WygyrkjBdQFLVkPvb_G0XPTtXjV9KI4CMQv-YPv6s1M1q960UHKKruetefSEYF64aqY-KEkXjSw-ozs8lcW0Xo-IohrsafWEXDR8LmAKLQbK\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HiliDzWniyeapxzJzErliootuUQCr82BVoO8k9isXOO_kSNBWl4CXQsvjPr_r0kzp9e5JXSFb9a1jv2BkWmvKWYGLjT6j_X9gUXGpUddITEiAddmyi_iGXVNBJ28_Y0Qx\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae1fa3a34e35a4f9c576ed89091a0708f27766bbe228058c830b52b354dec2ed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7lWh6eLl1zWkgtjuoE7u0n_uQeIXnG8kU9isXOPvmnSzIGR3XvL_jijBfEjHeAVIJnSAddLgXPTxjjhCKmEDWATAYSktfxgzpdNIVUjwm9isXROGYjypJmEIKwjBVi08rknPpgK2LmHlivy0dzjygnigKoU-ZzL-Y_sXuVn2qheDLkCDdNeuYPWBXzRK\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYXjwsURfukje9gDp6JV53Xzj5jikxqhvCpABHJ0-Fn9LgY_W-kWp8LmMHXTkrj_vCrRnAeNhFIki-dfGwYvvtYzl6UGgEMQX_Vi08rknPpgK2LlLDgujFkRPGg3eDQn5LRD7CWikyozP2qheDLkCDcNu1X_u-ZTVK\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i5"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b6faf35e0f4a3ddab11da90ff037524dfff86e72b9a9d01a1cb9a15400c4ece"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMvk_owYvhgacwmDVnaN\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1444,7 +1951,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1ae12e2bba8e2ce5aa4888340dbb928d816a0ac81d21aac7ee9912452dd35a03"
+                "b04a1d5dcd9d9d49d7c99a5330b9e4dd16bbfb5cdb6c27b7704301690305e8c9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1455,18 +1962,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5dzooveS0FcwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7omx6eJV1zWkgtjuoE7u0n_uQeIXnG8k9isXUOPvmnSzIGNyMPL-iPsyrRLBqNhLIXKGnwSujve_YDZAWpEIWwYsjicvqEbAdgFGI0Pum9OyXROAXDapLmcILvI0mCgzhEQzp9xLMFCGgurLjzrUklujQqZ1RBE0VSUDb0gItNxEJ0eCbNauYPeC\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i3"
+                "i9"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e03c51f2f1e4f514397f7a1cef6e34992240ccbdecbcd76ef53773608894afad"
+                "d8dbee4c6969665054aea4706d33bda93b23d8f703775f3b4860f2bfa3d6289c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1477,18 +1984,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsUAxCYXjwsRfukje9gDp6JV4HWjX5XiQurxrHfQO1IEi9c9neYfuAYjuuVmB2Wjj8WCguqxnCdtO4Jka_cvGzXvTtXjR8KY4CLQb6YPL6s1M1q960UHKKfxXkfSv7jjq5RIFWaEg_dBr5ghTBq8W0Xo-IohrsafWEYT17K2ICLwjK\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfL6lyookjEo9cwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i3"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1dc12919525e16e4534fc296860c9ddf3690afd2efa16ffa0ac21f0b6753343e"
+                "3346d39c7fc7bfaaf7becbfc89bfd80f20a375e3b75ab0e477206a3a6881f8d9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1499,7 +2006,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hlmiu8mmO9eaaFybzk2lCog-d0Y_sc6IYXv8ngbvWCU37jmuvZF50ZDEzizX7fxvDfNRCZXfCqgTqji36W3S4WD8R\\.png",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfM4kvoMOulofcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1510,7 +2017,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0310e2b33df2b1e37bd72dcce624cb46e891ba22a22bec3b79189c6dfb34f4cd"
+                "312ee9004a9c61bd96dd29bf6f874bb99ae4bdf3734f39eacc1013c9b59edc1b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1521,18 +2028,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0jCj8WjR6eJV1yZz03jSoAtu03-pA6AHHDwo_HfmDrzn3d5SGUBKPLCjOHCeAHIqdVGVnXvbte1ZPzvkjZBVUG8EMQksjicxqEXJqdJDJnCEb9uuYyfwiDp6LWAIMSL7YPT8pBPDe9dBW4_0\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5gAocAtzMIcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i4"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fdd70b2206270408175c834794b662a2927d420878726ec1f62dadc59c6734fe"
+                "cb2a628b666b024594915d367ae04cc322fc8c1b2b8dde79324b5e6746047b58"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1543,18 +2050,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HiliDzWniyeapxzJzErliootuUQCr82BVoO8k9isXOPxXSOsWV50KTYujPovfxfJfQNHI3K_odStYvXwXD2wK2QCKTb7WyjDqUBTEewNMTEGGctuvXhOFXzWpJm8DLPI0mCnM\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAE-qUhNCYXjwsRfukje9gDp6JV5yXQb5iSb_qBjDqwRLUHLzbdqtYPmAkTyrJWEEKDf7iyUxeRMxewO0IHTwcvGxXfTtYzx6UGADKgjBXuE2uUg3gAC2UEzUqwbOdBvQeVebZZV9REc5lQomkigHawCAYUrytRK5XfqBXzZ_KWMHLtPK\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i2"
+                "i5"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ed636f312ae16d99216a3585292e53cc9f43b51d66a950771f1ce2390b16e8e7"
+                "734a46c5ddf2278869377d07bec0480e97cc6056356bb2ea48695ed53a5e438f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1565,18 +2072,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HiliDzWniyeapxzJzErliootuUQCr82BVoO8k9isXOO-kiOwKl4BXjn_WfYxeEbCd9VIUkCAcdWujvSCYmerJWAHLgz8WvsveU0fDe9O1TECBbtWzYBOCZTmpJGMFJz46jsLM\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfMrXwo7CgS0JcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i2"
+                "i6"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "27f09aa0cf28c1b617bf512fed464a2a3b55c7c8e060f179d8082cb4c74ad3ae"
+                "4047d450051f46de35cc1120f2d13cebfb337054e0185e13f395d409e6d773ec"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1587,18 +2094,18 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rUROHYUm8aA-qmizxkWJ4eY5RFJEc-lzoUxdEAxswa0HEC-ddOuWCf9o2m8I5lBXAMAZPP_fxfDdNFMKUWN\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HpjiL1jmivebV1AUazr5kSoAtrEgDcAy0X3bua9ezZPqFW266WG4CLwP_XfTBghbA\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i3"
+                "i1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e8607b682670cac68cbebf46ba025cba3ceb08994d4a0e4ef5bfadd5e3cac8d6"
+                "a0fe78305f12e5c1e26ac77b0e7bd19dbd770fac2943618d9321e4133467ed06"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1609,7 +2116,29 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/d1\\/u783924_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5kzowEnksKcwmDVB-N\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i5"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d2ba7f71d7a7158c64228ee3fad8e9be2737cac54619c22d9eb194787644ef3c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/6a\\/u1972867_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1621,7 +2150,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "921f15918a886d8a04fe539e198993d42c4b5506e5a64deab19f6c564a24e73a"
+                "ff4018df6b34bf017f97e35f16e2b22e82ee23a930655e28840607079d5cfba2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1632,7 +2161,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/e3\\/u614723_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/92\\/u1629015_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1644,7 +2173,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "679ec6394f13f4545d718d0b16fb6ccfe69c21a49d5b076a1ecda3dbc0c70fbe"
+                "818fe913efa27f5219713bf5d95c3fd8a3e9de1a4ed16a310a4d43c4dc38f765"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1655,7 +2184,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/43\\/u1876042_50x50\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/6d\\/u594548_50x50\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1667,7 +2196,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f099c204b52be0aec5a4b753d0a132a91984390c899317832eb3960ea23b771b"
+                "f40cc4182f94b576577bef4b80295997c43b3cd7079d6d3c309dfa42f0b5e110"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1678,164 +2207,7 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/57\\/u546950_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/47\\/u544922_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "712908a59537283b737358adc11925cf686ed308540a9685338a69ffc3101108"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/45\\/u950518_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9d8674d306ea12947ff54945143de882892cc6dcf635f059e387322e8a87de96"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/d8\\/u3330829_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/0e\\/u1633516_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "dc6580d2bfc056d089df57e9f743c1fcb60bd018562b4ed858333af6585cd96a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/avatar\\/a6\\/u394780_50x50\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pic1",
-                "oalb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "078b2db98e568f2cbe7dbbf6af8d7a1e06a14ab4a01bc350a4903a169a1a1fef"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hdozi8mm-1eYZJ1UZ0nAnCog5uQEzsAxCIkC8ssGuYuG_Yzl_LmYDKAf8Vi08r-LQ\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i4",
-                "pic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cb3e649fa9fca943227555058e265d3cf2ab3fa69a2c992502802e7647aa4427"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangago.me",
-                "www.mangago.me"
-            ]
-        },
-        {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8GtnDj5lne9eYpB_XDT4kSoH7vFL9pA6BZXT7sMHxnSD9jUmi9IGEBKwX5W_r7vUs1cgSLXIHwphXwWiX8kSG-XZQ-aDwzkywzqkA5cg65HoP1oc_woCn6o2l3XZRybzk4lDv5rEg-qhG0XYK6pgCpjiL9oWyvZ1xIZEY2j-_9ghYIdtZLH3n9o6K8\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4JWAf5YCXAfBTGqtVDIki-ddXgkfzzXDh_WpV0MTX_WfbFqBM2fdi3VUGGoPG1YvTtXjd_Lo4DKAj-Y_P6s1M1q960UHKKtwfxpQeGXjuLXJ1DbwYzizMZti81lcW4aY-KbdivY_yBYDR9JD8R\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1847,7 +2219,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3bf61d113d80193c805d1e0326cf004c0ba0ae27dd15da37208bb6de076cb20d"
+                "f9555def99b400fd787876b31b8510fccc03418196c8ad053787c14013e5ad02"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1858,7 +2230,30 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5dioYWrxwdcwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAE-qUhNCYXjwsRfukje9gDp6JV4IKAT5XvX9eUc1qNNEKUKBddngjfuAXjZ_VmYDMTjBYPj9eEfAeQG1UnCAdfG1YfbtXjpCJo4DMQn9XfL6s1M1q960UHKKswvKjjz7eEGkUJ58JicCdPo5jU08hcW0Xo-IohrsafWEXzl-K2gBLwnK\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i6",
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "770a33b7405e7960d2d9cae613fcfb071e4b2f8524fd3f657414bfde9072fcdc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5fCoUimijJcwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1870,7 +2265,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa484138ffb56abf4741c64ff61c41d23f4619f0430bc05700d451d3fc34522c"
+                "9a985e4e5fca448a40a9c6d94c712d6b6f214c76a7f9f347225933e7b1407d21"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1881,11 +2276,11 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5lDoYOviI_cwmDVB-N\\.jpg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8Hvmy3U-j2OreZ5M_YjL5YAokPnis2cwmDVB-N\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i0",
+                "i9",
                 "pic"
             ],
             "apis": {},
@@ -1893,7 +2288,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "48f7579883a21d95ed4606c2249c09031f63be6bde5003d31bf3cdb2382ca6f9"
+                "74f02e0b0812de468e7d023674089d3704389deaf586ebc0c89bc642f485c1b2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1904,11 +2299,11 @@
             ]
         },
         {
-            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8HlWy3U7kHm8eI5JAZfM2kioAFiEkVcwmDVnaN\\.jpeg",
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV53Lzb5jfkvfxfFetNLV0KAcAPdXSiGXzlAWmcDKgkrXSf_rhrGeQNFKkSGb_GzXvTtXjR9Ko4CKQrAWPj6s1M1q960UHKKlhnjhhnvb2K-RXQIL0QrWA_9rDw2q8W4aY-KbdiwY_yBXT17JD8R\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i0",
+                "i3",
                 "pic"
             ],
             "apis": {},
@@ -1916,7 +2311,53 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9484c9fe097dbf221141235983605a043a4052e217359ded9d4711b69319b213"
+                "5821c463af6d84a4cff3f6b8885dcc4d2ab7b6caf0618cbd2e1737ac9cbdf602"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4KXQr5YSbDeUPDptW4JHDwbdjiXP2_kTZ6WZQDLwzAY_Uvfxc0fde5JkbwoPGyYPTtXjR6JY4DLgT8WPb6s1M1q960UHKKnwrOoRjwXEONOG9mWiY4oDzBiz0mq8W4aY-KbdiwYvW_XDx9Jj8R\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i5",
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "319a215bd3a4903e87dd910cee4241b0e4e20dff4c7e0c0d62d5ceccab60bfb5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mangago.me",
+                "www.mangago.me"
+            ]
+        },
+        {
+            "rule": "mangapicgallery\\.com\\/r\\/coverlink\\/rROHYYKHa8H0kze7XTR6eI5B_YjEvlSoQ-sAEzsAxCYUXjwsRfukje9gDp6JV4EXwX5Wyj-rxXApgG0VXXubgTej_ryZTp7J28GXTjBWPotrRPDd9C4IkOAbPGwZPTtYz16UGYDMgX7Vi08rknPpgK2LnX4qhaxhS7PXVywQnhAPBj6eOAFsSP2pgyDKHTFrN-tYveFYDZ_J2QK\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i4",
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "13a678b8bde12bb5946c44b41cb786f1df6a454bc7faf5d5fb137be01533ac85"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1938,7 +2379,7 @@
     ],
     "types": {
         "Stylesheet": 18,
-        "Image": 126,
+        "Image": 166,
         "Script": 28
     },
     "nameservers": [

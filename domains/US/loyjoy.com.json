@@ -4,14 +4,68 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000682,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
-        "stable"
+        "cdn",
+        "stable",
+        "app-stable"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "loyjoy\\.com\\/p\\/7b\\/7b648071-9f97-42b3-8d29-717503a25e18\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d227961579f2e9fada2d8ad9d2430027063b65b1b5c973c6f6df771bbefad2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ottobock.us",
+                "shop.ottobock.us"
+            ]
+        },
+        {
+            "rule": "loyjoy\\.com\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "stable"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "window.innerWidth": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Event.prototype.timeStamp": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a82a1eb8ba137d89a74e4dd5f8ac726b3dd6aff5299a33eb6ce15a1f1ad427ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ottobock.us",
+                "www.puky.de"
+            ]
+        },
         {
             "rule": "loyjoy\\.com\\/fonts\\/material-icons\\/MaterialIcons-Outlined\\.woff2",
             "cookies": 0,
@@ -20,8 +74,8 @@
                 "stable"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "2934a1f772267b6839e4f15155a9ac58d7417558318393fe771a4513d79c3b09"
@@ -30,7 +84,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "puky.de",
+                "ottobock.us",
+                "shop.ottobock.us",
                 "www.puky.de"
             ]
         },
@@ -42,8 +97,8 @@
                 "stable"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ae2095f9a3918e7b85f7942f30c964360d8518141ef42b355beb693447edb35d"
@@ -52,7 +107,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "puky.de",
+                "ottobock.us",
+                "shop.ottobock.us",
                 "www.puky.de"
             ]
         },
@@ -64,8 +120,8 @@
                 "stable"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "1c9343158723696a2c0c1e2d92711be1138ceca234193fa96b9a01472841d8c8"
@@ -74,8 +130,53 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "puky.de",
+                "ottobock.us",
+                "shop.ottobock.us",
                 "www.puky.de"
+            ]
+        },
+        {
+            "rule": "loyjoy\\.com\\/bot\\/chatui\\/signal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-stable"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ottobock.us",
+                "shop.ottobock.us"
+            ]
+        },
+        {
+            "rule": "loyjoy\\.com\\/t\\/7531a0eca0e74a803e8ff6cfa626c2cae18794f750a58bf1a6b8901a0c643b6f\\/assets\\/3147f5fe-b1ca-4fe5-bccc-7805a2905f33\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49517b4b1908cc020663e8d1c2f89a5d194c8e365a15954e490abc4380e648f8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ottobock.us",
+                "shop.ottobock.us"
             ]
         }
     ],
@@ -85,11 +186,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Font": 6
+        "XHR": 4,
+        "Script": 2,
+        "Font": 11
     },
     "nameservers": [
         "jake.ns.cloudflare.com",

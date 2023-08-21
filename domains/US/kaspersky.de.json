@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000682,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "sgtm"
     ],
@@ -17,35 +17,46 @@
     "resources": [
         {
             "rule": "kaspersky\\.de\\/gtm\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "sgtm"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.appVersion": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "028c9a8e1ef43f8cafc70eaf6f6e8945d06e518c71cdfce8367f1e979e64190d"
+                "c00ba80b8c274b9d0052a5c49ac7588184e29d0de5f2a019ea43d8696cd36f83",
+                "79ad4a86a906813f6d1bca53383445ebb78d7b797bee2b14183a404a49facc4c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "CookieConsent": {
+                    "ttl": 86400002,
+                    "length": 16,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kaspersky.fr",
-                "www.kaspersky.fr"
+                "kaspersky.ru",
+                "www.kaspersky.fr",
+                "www.kaspersky.ru"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
@@ -53,7 +64,7 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 3
     },
     "nameservers": [
         "ns2.kasperskylabs.net",

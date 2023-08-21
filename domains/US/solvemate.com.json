@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
         "widget"
@@ -31,7 +31,7 @@
                 "Screen.prototype.height": 2
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "c1fabc131dec02540910a72feef5ec3ab38f60d8c97c0fc410d9802f4fdbbccf"
@@ -136,11 +136,13 @@
         {
             "rule": "solvemate\\.com\\/v2\\/solvemate-widget-button\\/solvemate-widget-button-bundle\\.745d4d4f42e0f3b6b872\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -222,6 +224,28 @@
             ]
         },
         {
+            "rule": "solvemate\\.com\\/v2\\/solvemate-widget-button\\/671afbe5c7687f8c4a79\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "71ec411caafe27bdd58b5a8fe1e21d943ca31a8fd5cf2fdcd1be26e7faa910e1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hobbii.com",
+                "www.wildling.shoes"
+            ]
+        },
+        {
             "rule": "solvemate\\.com\\/v2\\/solvemate-widget-image-viewer\\/solvemate-widget-image-viewer-bundle\\.07187e3ebaa9258bad5a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -258,28 +282,6 @@
                 "46fd462196f78f61971f8ac93dba76bfd8fe74c057243cfe1627fee51956b460"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hobbii.com",
-                "www.wildling.shoes"
-            ]
-        },
-        {
-            "rule": "solvemate\\.com\\/v2\\/solvemate-widget-button\\/671afbe5c7687f8c4a79\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "71ec411caafe27bdd58b5a8fe1e21d943ca31a8fd5cf2fdcd1be26e7faa910e1"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -332,8 +334,8 @@
     },
     "nameservers": [
         "ns-cloud-d1.googledomains.com",
-        "ns-cloud-d4.googledomains.com",
         "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d2.googledomains.com"
+        "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d4.googledomains.com"
     ]
 }

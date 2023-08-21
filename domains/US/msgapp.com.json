@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000819,
-    "sites": 12,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
         "hostssl",
+        "eu.hostssl",
         "www",
         "recaptcha"
     ],
@@ -17,12 +18,20 @@
             "resolved": "hostssl.msgapp.com"
         },
         {
+            "original": "emails.aspenavionics.com",
+            "resolved": "hostssl.msgapp.com"
+        },
+        {
             "original": "emails.kellymoore.com",
             "resolved": "hostssl.msgapp.com"
         },
         {
             "original": "emails.robertshaw.com",
             "resolved": "hostssl.msgapp.com"
+        },
+        {
+            "original": "emails.stuttgart-tourist.de",
+            "resolved": "eu.hostssl.msgapp.com"
         },
         {
             "original": "emails.waclighting.com",
@@ -48,12 +57,29 @@
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "hostssl"
+                "hostssl",
+                "eu.hostssl",
+                "www"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000478,
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 10,
+            "prevalence": 0.0000682,
             "cnames": [
+                {
+                    "original": "emails.aspenavionics.com",
+                    "resolved": "hostssl.msgapp.com"
+                },
                 {
                     "original": "emails.kellymoore.com",
                     "resolved": "hostssl.msgapp.com"
@@ -79,6 +105,10 @@
                     "resolved": "hostssl.msgapp.com"
                 },
                 {
+                    "original": "emails.stuttgart-tourist.de",
+                    "resolved": "eu.hostssl.msgapp.com"
+                },
+                {
                     "original": "emails.waclighting.com",
                     "resolved": "hostssl.msgapp.com"
                 }
@@ -90,26 +120,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "aspenavionics.com",
                 "kellymoore.com",
                 "www.avenza.com",
                 "www.jayco.com.au",
                 "www.jbweld.com",
                 "www.robertshaw.com",
                 "www.starrett.com",
-                "www.waclighting.com"
+                "www.stuttgart-tourist.de",
+                "www.waclighting.com",
+                "www.zaner-bloser.com"
             ]
         },
         {
             "rule": "msgapp\\.com\\/web-next\\.gif",
-            "cookies": 0.0000409,
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
-                "hostssl"
+                "hostssl",
+                "eu.hostssl",
+                "www"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [
+                {
+                    "original": "emails.aspenavionics.com",
+                    "resolved": "hostssl.msgapp.com"
+                },
                 {
                     "original": "emails.kellymoore.com",
                     "resolved": "hostssl.msgapp.com"
@@ -131,6 +170,10 @@
                     "resolved": "hostssl.msgapp.com"
                 },
                 {
+                    "original": "emails.stuttgart-tourist.de",
+                    "resolved": "eu.hostssl.msgapp.com"
+                },
+                {
                     "original": "emails.waclighting.com",
                     "resolved": "hostssl.msgapp.com"
                 }
@@ -142,12 +185,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "aspenavionics.com",
                 "kellymoore.com",
                 "www.avenza.com",
                 "www.jayco.com.au",
                 "www.jbweld.com",
                 "www.starrett.com",
-                "www.waclighting.com"
+                "www.stuttgart-tourist.de",
+                "www.waclighting.com",
+                "www.zaner-bloser.com"
             ]
         },
         {
@@ -170,7 +216,7 @@
                 "Date.prototype.getTimezoneOffset": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "b719a1493474468906f924abad3f8c8c43870df196e6feaf4a4f51ba7ae7cc66"
@@ -186,14 +232,14 @@
         },
         {
             "rule": "msgapp\\.com\\/web\\.gif",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "a2492aab8fd8c10293bb9e0729ccbbc28601112a98157ae21d92fe382225b256"
@@ -232,29 +278,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000075,
+    "cookies": 0.000102,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "first party",
-            "prevalence": 0.36363636363636365
-        },
-        {
-            "domain": "youtube.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 12,
-        "Image": 9
+        "Script": 15,
+        "Image": 12
     },
     "nameservers": [
+        "ns-911.awsdns-49.net",
         "ns-9.awsdns-01.com",
-        "ns-1686.awsdns-18.co.uk",
         "ns-1377.awsdns-44.org",
-        "ns-911.awsdns-49.net"
+        "ns-1686.awsdns-18.co.uk"
     ]
 }
