@@ -7,10 +7,11 @@
     "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
-        "site-images"
+        "site-images",
+        "static-us-east-1"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "similarcdn\\.com\\/image",
@@ -21,11 +22,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "c3b39d479e16d3fe787021051b0fc4085a34e22a47048f99b4ee9a3f7fd1f493",
-                "7c54155650eff94d71a76c32a86c565f8f467a3f09799280c75bc4ae72eec826"
+                "b4978053516d2a1569c26c6316336d3b37830801a71b06bbc8b0cbaa7a71114d",
+                "5bd8dbdfb09c90d09869d8cba9be3b5602881cb7cd52f1971b5aa029b387149c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -33,6 +34,31 @@
             "exampleSites": [
                 "similarsites.com",
                 "www.similarsites.com",
+                "www.similarweb.com"
+            ]
+        },
+        {
+            "rule": "similarcdn\\.com\\/build\\/20230816\\.master\\.803aac4\\/dist\\/scripts\\/lite-app\\/client\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-us-east-1"
+            ],
+            "apis": {
+                "console.memory": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f5339032166c1d9548756a934aeab0ad0e5bc7e0f702934f5a3c038b2bd9875"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "similarweb.com",
                 "www.similarweb.com"
             ]
         },
@@ -48,7 +74,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8de73df9a1e3d40db0e5fad89f45f7e11d3f6d546efac0851d3e4050b4f3a6d3"
+                "d971bc452a64f8c84575f7caa3134c48c436f66fcacbbe442149ce5f268ab81f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -65,21 +91,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9375
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.0625
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Image": 3,
+        "Script": 2,
         "Fetch": 2
     },
     "nameservers": [
         "ns-1330.awsdns-38.org",
-        "ns-933.awsdns-52.net",
+        "ns-2019.awsdns-60.co.uk",
         "ns-341.awsdns-42.com",
-        "ns-2019.awsdns-60.co.uk"
+        "ns-933.awsdns-52.net"
     ]
 }

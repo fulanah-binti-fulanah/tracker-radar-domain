@@ -16,8 +16,6 @@
         "36ad",
         "3ad",
         "59ad",
-        "10ad",
-        "26ad",
         "55ad",
         "35ad",
         "45ad",
@@ -26,6 +24,8 @@
         "21ad",
         "1ad",
         "64ad",
+        "10ad",
+        "26ad",
         "52ad",
         "56ad",
         "58ad",
@@ -38,11 +38,13 @@
         {
             "rule": "itocd\\.net\\/www\\/app\\/libs\\/polyfill\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "24ad"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -126,61 +128,18 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/img\\/popup-close-button\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "10ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "63882cbb091642551371fcfddf79f90d71b1a3c8c5f832d9f78d7a7947c0481f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/Specials\\/img\\/spinner\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "26ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fcac3fa5a1d5279639f35531b8ad7b35c9f2b41796fa413f55bb84bdb0a2db8f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/js\\/main\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "55ad",
                 "35ad"
             ],
             "apis": {
-                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.appVersion": 2,
                 "Date.prototype.getTimezoneOffset": 1,
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -189,7 +148,14 @@
                 "68fb72f044fdf84c6fa30c30d8e3d61a90d2f0b1a48d6b5d818a0a387d3d19c8"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "timezoneIndex": {
+                    "ttl": 86402,
+                    "length": 4,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anastasiadate.com",
@@ -227,7 +193,7 @@
                 "25ad"
             ],
             "apis": {
-                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.platform": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -304,6 +270,50 @@
                 "8406669d6702eb7121b9e35651fa70bc1f808f332b1084042e0d6a739088dedd"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/img\\/popup-close-button\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "10ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "63882cbb091642551371fcfddf79f90d71b1a3c8c5f832d9f78d7a7947c0481f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/Specials\\/img\\/spinner\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "26ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fcac3fa5a1d5279639f35531b8ad7b35c9f2b41796fa413f55bb84bdb0a2db8f"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -488,6 +498,50 @@
             ]
         },
         {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/jquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "81944992af5b48d476d55edbb465486b91946e4ebad8f5c54556ed80a45abdea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/window\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e97f2ea09972448b36a556c05637f2893ea8dd88c0bcd55208db7759ae2298a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
             "rule": "itocd\\.net\\/www\\/app\\/packages\\/events\\/events\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -576,74 +630,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/storage\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "46b3a5b6bad042347a4a8683d5be7b4344710b17b909d7dd2520ff2ce2d65a84"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/jquery\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "81944992af5b48d476d55edbb465486b91946e4ebad8f5c54556ed80a45abdea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/features\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "11cc360a6149e30480e1c37027b699f48c81e035903dcc5238f0e10c6ffefa67"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/modules\\/html\\/linker\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -666,50 +652,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/window\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e97f2ea09972448b36a556c05637f2893ea8dd88c0bcd55208db7759ae2298a3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "dcac95e75c18596c5ce7999bb41f3d950445ab01ff4f3974ec6bcb7af2b93024"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/universal-storage\\/index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -722,28 +664,6 @@
             "cnames": [],
             "responseHashes": [
                 "b27e1be23764db001b7297ebef9b31ed0d76fb54e401ceac20e9f5422439af13"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/libs\\/mustache\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7194311ca7c04908147c3b926f000e654bc376fa65fba740caa97f3468a5b568"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -798,7 +718,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/feature-resolver\\/features\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/helpers\\/classCallCheck\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -809,7 +729,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "64556f0a464e14490f2bc6d59611c83ef91845be3e53ff45b258abfea1d76aef"
+                "f0a7f77db1738f780366539fada8320c6bf6f84f23d16d527cee8bf2bc0537cb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -820,7 +740,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/globals\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/storages-by-path\\/xdls\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -831,7 +751,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5e02c089daade4ff83b013592c374c3b49b72195aadddffb9a6687126437df27"
+                "7a297547f92d41569d754e819aae2605d9539abbafabde973e4d782fdaa0f959"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -842,7 +762,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/server\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/storages-by-path\\/local\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -853,7 +773,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "36434318ed6ac5a26a8d6c1ec6f7b97f114d696eaca9f38973b1f36f8d5517f0"
+                "7bb35fb0785e71071c529880125f532d4e7ef69d6c5e23090e601f58edcb6146"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/singleton\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52039a6a304efc042a28ab319a657ab11f642c08ecf6fb4522c6ba02d5fbb9ff"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -876,6 +818,50 @@
             "cnames": [],
             "responseHashes": [
                 "50af81267e5ccd24035e1bf7974b041cf39d054d6a967f374d717b3b82940988"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/feature-resolver\\/features\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "64556f0a464e14490f2bc6d59611c83ef91845be3e53ff45b258abfea1d76aef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/server\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36434318ed6ac5a26a8d6c1ec6f7b97f114d696eaca9f38973b1f36f8d5517f0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -996,116 +982,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/helpers\\/classCallCheck\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f0a7f77db1738f780366539fada8320c6bf6f84f23d16d527cee8bf2bc0537cb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/storages-by-path\\/xdls\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7a297547f92d41569d754e819aae2605d9539abbafabde973e4d782fdaa0f959"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\/interface\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8862cf4cdce39d531423250fd4aee6e8945ff785e5a1c84d1ae5fa333b7fb64f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/storages-by-path\\/local\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7bb35fb0785e71071c529880125f532d4e7ef69d6c5e23090e601f58edcb6146"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/singleton\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "52039a6a304efc042a28ab319a657ab11f642c08ecf6fb4522c6ba02d5fbb9ff"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/Specials\\/config\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1120,118 +996,6 @@
                 "c63908c41c15d8b8c7d442f281b1c800d8fd4222d8991a4b154ffa88274df4a4"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/packages\\/platform\\/platform\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "96c9cdef49761331b9d8cfc9d6259e4c39815a1b5f330723906c431b765a7fed"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/html\\/axes\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7e4ba0ad83359ab9cb21b51401f3cfe884979a5d9ec8277cadf4d580a5cc16e8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/packages\\/crc32\\/lib\\/crc32\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "41a65065842fcf8955feba35abd8c9f8049df888899f8095aa0a7e659289ba5c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/document\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a366ed4116ee52efa359ae5935d46c51b8c3c71a8ec69bfb694adfdd07956c75"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/packages\\/querystring\\/querystring\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6d7e9f6146c1a1680a198824b89cbdd85fe801f52fbb07c10de4ed368f335d4d"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1372,7 +1136,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\/loader\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/packages\\/querystring\\/querystring\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1383,7 +1147,121 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "707c53c52f5d68b81ccc4391ba2f80f33696189ef7e6a5912dbcae9cf6108fa7"
+                "6d7e9f6146c1a1680a198824b89cbdd85fe801f52fbb07c10de4ed368f335d4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/packages\\/crc32\\/lib\\/crc32\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41a65065842fcf8955feba35abd8c9f8049df888899f8095aa0a7e659289ba5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/document\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a366ed4116ee52efa359ae5935d46c51b8c3c71a8ec69bfb694adfdd07956c75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/packages\\/platform\\/platform\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96c9cdef49761331b9d8cfc9d6259e4c39815a1b5f330723906c431b765a7fed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/html\\/axes\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e4ba0ad83359ab9cb21b51401f3cfe884979a5d9ec8277cadf4d580a5cc16e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/storage\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "46b3a5b6bad042347a4a8683d5be7b4344710b17b909d7dd2520ff2ce2d65a84"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1406,6 +1284,28 @@
             "cnames": [],
             "responseHashes": [
                 "813dc5beee1c3b7f42d5db325938fe11ccae30f90723f592a3679ad20bf71b65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/features\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "11cc360a6149e30480e1c37027b699f48c81e035903dcc5238f0e10c6ffefa67"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1460,6 +1360,28 @@
             ]
         },
         {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcac95e75c18596c5ce7999bb41f3d950445ab01ff4f3974ec6bcb7af2b93024"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/symbol\\/iterator\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1482,6 +1404,28 @@
             ]
         },
         {
+            "rule": "itocd\\.net\\/www\\/app\\/libs\\/mustache\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7194311ca7c04908147c3b926f000e654bc376fa65fba740caa97f3468a5b568"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/symbol\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1494,6 +1438,28 @@
             "cnames": [],
             "responseHashes": [
                 "78e9d4a10e5487b6b9943f62b1e36475200dca7b2511fe2d4f28808b59148fc4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/object\\/define-property\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "881a140046e96bf3ad566dcde9d0a984c1978f94fd6d8f0c190304dd2dfe50e9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1570,28 +1536,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/object\\/define-property\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "881a140046e96bf3ad566dcde9d0a984c1978f94fd6d8f0c190304dd2dfe50e9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/symbol\\/index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1604,94 +1548,6 @@
             "cnames": [],
             "responseHashes": [
                 "a54b4134247310559d79084bc983e7d6b1d490288310621760d53ee9475a10ca"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_string-at\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e8fc8c13b6aa6a2b806327f2251ad9c1f99d91f3f7e9ddfa48cdb309489a2217"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_iter-define\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ad9dfe25e89725784eea351da849e9049b48154ccdcf14453c56d1633fb3117f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-integer\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "05ef734446e0bde92c5b637275325f6fafe568e3f20707fbf19adafe5767b27f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_defined\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fac80fb921668f4c5829c554d2035c91b480344ebfb89dbb81a5f4f5e2a2ed21"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1746,7 +1602,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/me\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_string-at\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1757,7 +1613,73 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9ddf45d719d7e62ed3d2352ec678da609b1356e28661408f0e80974071655505"
+                "e8fc8c13b6aa6a2b806327f2251ad9c1f99d91f3f7e9ddfa48cdb309489a2217"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_iter-define\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ad9dfe25e89725784eea351da849e9049b48154ccdcf14453c56d1633fb3117f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_wks\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fdfd55f8627c3758f101c7dcfa23bf7c98eeafec3961c2357fe3ef503cd6699d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/globals\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e02c089daade4ff83b013592c374c3b49b72195aadddffb9a6687126437df27"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1780,6 +1702,28 @@
             "cnames": [],
             "responseHashes": [
                 "1fd71a8cecc3edc2b8713ce0df01677dec96edacaa2831dbeeac289a6b332b31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\/interface\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8862cf4cdce39d531423250fd4aee6e8945ff785e5a1c84d1ae5fa333b7fb64f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1856,7 +1800,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_library\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/es6\\.array\\.iterator\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1867,7 +1811,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b988d4bf3793a6a09ff6c166ecda782d9fd9579c561c1a7cea3f6c0509397fe0"
+                "2ff57fc7c39b32ce22fe2365a5034fd513dd7160da93312b4005d52da0c9ed68"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1878,7 +1822,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_export\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_global\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1889,29 +1833,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8769c97103911ecb2130d68ede486f25f9f45ac27c739c75024866b0c8b5f0f5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_redefine\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9d41622a2b4b77ae28971ed7d34615b669303aaf6a44dadef0739a99b516d554"
+                "f2c6ec500c9de4f8cab15c897f1480dde1a0c17e03c812ea7872431c7bcf87b2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1944,28 +1866,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_descriptors\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "40e2bd757298ba9e0ccad61ce50cf16821ea93fe22e1f06f88868d410c6b5fe4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_iterators\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1988,6 +1888,50 @@
             ]
         },
         {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_export\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8769c97103911ecb2130d68ede486f25f9f45ac27c739c75024866b0c8b5f0f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_descriptors\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "40e2bd757298ba9e0ccad61ce50cf16821ea93fe22e1f06f88868d410c6b5fe4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_object-dp\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2000,6 +1944,160 @@
             "cnames": [],
             "responseHashes": [
                 "51d360adc363218b02519dfc74c9660bd1cd2f7e2f26f710fa3ee8b8d2fab1f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-integer\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05ef734446e0bde92c5b637275325f6fafe568e3f20707fbf19adafe5767b27f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_defined\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fac80fb921668f4c5829c554d2035c91b480344ebfb89dbb81a5f4f5e2a2ed21"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_shared\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "45a60dce8757ed3f2d48a1a1f5cd9a59458187bd1209230f00d0b0a1aaf6fb22"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_uid\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a133043af6efcac98f4b7f1a00a1e3ed2dce7cb00f2a01238d6c563bfffd1af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/templates\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "707c53c52f5d68b81ccc4391ba2f80f33696189ef7e6a5912dbcae9cf6108fa7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_library\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b988d4bf3793a6a09ff6c166ecda782d9fd9579c561c1a7cea3f6c0509397fe0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_redefine\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d41622a2b4b77ae28971ed7d34615b669303aaf6a44dadef0739a99b516d554"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2076,94 +2174,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_wks\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fdfd55f8627c3758f101c7dcfa23bf7c98eeafec3961c2357fe3ef503cd6699d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/es6\\.array\\.iterator\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2ff57fc7c39b32ce22fe2365a5034fd513dd7160da93312b4005d52da0c9ed68"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_global\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f2c6ec500c9de4f8cab15c897f1480dde1a0c17e03c812ea7872431c7bcf87b2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_wks-define\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "27fcb6edd4135d86bad9afc04706a50bb5ebde24a152fc232fdd8432bde39c27"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_ctx\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2208,28 +2218,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_meta\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2d857a03909cea6e41c3363f5ff7ab1797b6d5b5cf41ceb7251aac0368836a8d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_fails\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2252,7 +2240,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_shared\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_an-object\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2263,7 +2251,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "45a60dce8757ed3f2d48a1a1f5cd9a59458187bd1209230f00d0b0a1aaf6fb22"
+                "1ee4e87ec0d5151b6e82f5c1114e44fd023d39141d9b1a58c7b884b9b749aa72"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2274,7 +2262,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_uid\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_ie8-dom-define\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2285,7 +2273,73 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5a133043af6efcac98f4b7f1a00a1e3ed2dce7cb00f2a01238d6c563bfffd1af"
+                "a23bc324f8de8232521787227186f38fd813870397d6bce5d2e53031bebb310f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-primitive\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "413a47083d240b7c49ee41a28a53c3be36009bea6970f19d25ee81b5f2bde64a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_meta\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2d857a03909cea6e41c3363f5ff7ab1797b6d5b5cf41ceb7251aac0368836a8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_wks-define\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27fcb6edd4135d86bad9afc04706a50bb5ebde24a152fc232fdd8432bde39c27"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2340,28 +2394,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_an-object\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1ee4e87ec0d5151b6e82f5c1114e44fd023d39141d9b1a58c7b884b9b749aa72"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_is-object\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2396,28 +2428,6 @@
             "cnames": [],
             "responseHashes": [
                 "a114787a0902c2b5bb252437ed264745428ec12d123debeb8d6e9746baaba007"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-primitive\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "413a47083d240b7c49ee41a28a53c3be36009bea6970f19d25ee81b5f2bde64a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2604,50 +2614,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-object\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "292e1aceccdbe12af61c2cd5a1f2c67cb73ad67daa01eba27b3e92e641081deb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_shared-key\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "26a1c9ae471d92869d842e6bbea4c1bedc1151d631b5790269b0d538b200e778"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_add-to-unscopables\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2692,7 +2658,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_object-keys-internal\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_a-function\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2703,7 +2669,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f8a0a3c968277fc2309cbf857e59aa4c336a7e334ce28bb32982d5d52f914d79"
+                "a2bd9294322fb252df2563da4306ff3764816b507ccd14da5a9f5c20b8980196"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2714,7 +2680,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_enum-bug-keys\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_to-object\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2725,7 +2691,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ecb017981d45ff31315d89abcce7679d3fc909008dfa5edb7320087f86618872"
+                "292e1aceccdbe12af61c2cd5a1f2c67cb73ad67daa01eba27b3e92e641081deb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2736,7 +2702,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_ie8-dom-define\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_shared-key\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2747,7 +2713,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a23bc324f8de8232521787227186f38fd813870397d6bce5d2e53031bebb310f"
+                "26a1c9ae471d92869d842e6bbea4c1bedc1151d631b5790269b0d538b200e778"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_dom-create\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "16cacd5061db0a9ac1c90dce5f2a43666f3426e034d1ec807cfae2e2f0b2f13c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2824,7 +2812,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_dom-create\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_enum-bug-keys\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2835,29 +2823,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "16cacd5061db0a9ac1c90dce5f2a43666f3426e034d1ec807cfae2e2f0b2f13c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_a-function\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a2bd9294322fb252df2563da4306ff3764816b507ccd14da5a9f5c20b8980196"
+                "ecb017981d45ff31315d89abcce7679d3fc909008dfa5edb7320087f86618872"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2880,6 +2846,28 @@
             "cnames": [],
             "responseHashes": [
                 "901c98d9677d9233870205605a50dee735652550a32c1b9e3a83213c6c4bd64d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_object-keys-internal\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8a0a3c968277fc2309cbf857e59aa4c336a7e334ce28bb32982d5d52f914d79"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3089,7 +3077,7 @@
                 "session-storage": {
                     "ttl": null,
                     "length": 70,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -3112,6 +3100,28 @@
             "cnames": [],
             "responseHashes": [
                 "8f40fb82dc39c94077d6b9ce6444ded7b9fc481d66213b056db17044ccab97aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/me\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ddf45d719d7e62ed3d2352ec678da609b1356e28661408f0e80974071655505"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3256,28 +3266,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/env\\/window\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b46c651bd1630ccdb9d08ce4fd3026596444a84fb80d759a16b3e1dc60d453e0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/modules\\/html\\/relationships\\/widget\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -3290,6 +3278,28 @@
             "cnames": [],
             "responseHashes": [
                 "34e80a5af618c117fca496c2cc58ea7f09473cf239ec5b684d3d12d179968c39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/commons\\/env\\/window\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b46c651bd1630ccdb9d08ce4fd3026596444a84fb80d759a16b3e1dc60d453e0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3334,360 +3344,6 @@
             "cnames": [],
             "responseHashes": [
                 "20712bc6fe3dfacecd4e6dc6ea681ce8d62fbd803099a7be17fb0804a06997b9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/authorization\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "19df4c24028434adfb093a64185294157b34ba84095dd9b5d9063f60e830eedb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/cross-product-authorization\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "731452207374372e53930f68e55c28d8d664facc9f7cd22351c82dcd30ad4180"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/logger\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "34a5d3c86e14df4d742cfc9fb2055497013de103af84d02c182c41af309c4dbe"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/params\\/emitter\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c37181f3d6351497deef347e4031a2e2640fddc5133283cd4efc3df2ffbdd0ab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/roles\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "023cad4c2ffbd911b3a5a0ac6f8d96b4a5ba4c5263c76568e1e8e86bae05bc29"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/google\\/authorization\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0eeb5cfa6c549b79c0a5a1ee6e2feb34caf4829a45976c4382e8319cd1ee1ae3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.00001364424008404852
-            },
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/subscriptions\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0c096da7494cf9d583bebbe12ccc79ef7172eb46e020aeccbaf6e24f67812564"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/subscriptions\\/change\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6efd87e9189d2406f1b4f5ca5da85f1cc496e4d0d60ef018f0ab02373a3e2191"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/module\\/subscription\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "bf3f33444d7b1bb3046922824d40cd94cab412dfeb936761cb3fea417b301d19"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/informer\\/change-subscription\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e7ad2238bef93980aa415f15001242ff321fecf9c874a51d6aa03ed10c74eb6a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/module\\/purchase\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "30902024973534f72b34eee33701ca4a8a9ab268fe700c2e25b01b7f3fb4f8c6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/stores\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7145141cd1efb0c8d22a953cdd4afb3015f78c3e63fb758f059f1a852adf11f0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/informer\\/purchase\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f245f9c79c6fd4274d90f9d3cd36abe7c936b0f0bdd1e5c3c41bfb089edb3475"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/data-layer\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "37f4b08481a7bbdd359b3971cb0a20666f487ba54f5a33759f48c284b036d8be"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/data-layer\\/purchase\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9f56b8acca14d77daa1b92e8a0dc7334a91101f915925c631cb92fc8eb322f50"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/analytics\\/tracking\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "05db8c0eeb6a7ac008f843c175a4fe46e01a516046b624c1331657f848419084"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4534,7 +4190,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/metrics\\/index\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/authorization\\/main\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4545,7 +4201,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "60bc6d53f36c9d7b0177cb8aba4351e50221a2b68bb2a476b46011ab6d4e6811"
+                "19df4c24028434adfb093a64185294157b34ba84095dd9b5d9063f60e830eedb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4556,7 +4212,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/xerox-coreg\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/cross-product-authorization\\/main\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4567,7 +4223,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b55d2bde6dafdc9cb78b662f5e00fae45887dd73a5d00f42b1936478db5cde58"
+                "731452207374372e53930f68e55c28d8d664facc9f7cd22351c82dcd30ad4180"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4578,7 +4234,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/timezone\\/main\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/logger\\/main\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4589,7 +4245,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8630e45c79c60a485119d4b00589e248c4bc36bea910f002308a229768f1c3e6"
+                "34a5d3c86e14df4d742cfc9fb2055497013de103af84d02c182c41af309c4dbe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4600,7 +4256,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/cross-product\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/params\\/emitter\\/main\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4611,7 +4267,273 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7bfa6e5285ca64c9611957fca0afe30a711509e0b1060021de21e1325175816f"
+                "c37181f3d6351497deef347e4031a2e2640fddc5133283cd4efc3df2ffbdd0ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/roles\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "023cad4c2ffbd911b3a5a0ac6f8d96b4a5ba4c5263c76568e1e8e86bae05bc29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/google\\/authorization\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0eeb5cfa6c549b79c0a5a1ee6e2feb34caf4829a45976c4382e8319cd1ee1ae3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "G_ENABLED_IDPS": 0.000013633265167007499
+            },
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/subscriptions\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0c096da7494cf9d583bebbe12ccc79ef7172eb46e020aeccbaf6e24f67812564"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/subscriptions\\/change\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6efd87e9189d2406f1b4f5ca5da85f1cc496e4d0d60ef018f0ab02373a3e2191"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/module\\/subscription\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bf3f33444d7b1bb3046922824d40cd94cab412dfeb936761cb3fea417b301d19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/informer\\/change-subscription\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7ad2238bef93980aa415f15001242ff321fecf9c874a51d6aa03ed10c74eb6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/module\\/purchase\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30902024973534f72b34eee33701ca4a8a9ab268fe700c2e25b01b7f3fb4f8c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/stores\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7145141cd1efb0c8d22a953cdd4afb3015f78c3e63fb758f059f1a852adf11f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/informer\\/purchase\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f245f9c79c6fd4274d90f9d3cd36abe7c936b0f0bdd1e5c3c41bfb089edb3475"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/data-layer\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37f4b08481a7bbdd359b3971cb0a20666f487ba54f5a33759f48c284b036d8be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/data-layer\\/purchase\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f56b8acca14d77daa1b92e8a0dc7334a91101f915925c631cb92fc8eb322f50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/monitoring\\/analytics\\/tracking\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05db8c0eeb6a7ac008f843c175a4fe46e01a516046b624c1331657f848419084"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4644,7 +4566,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/services\\/logger\\/publisher\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/forms\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4655,7 +4577,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2469729ebf07b32bbf24d7256a2d6d8623826230a47c94ad98c1ed3fccdc1081"
+                "76f31e3b9a3f9d739d996f8f65afbf62fb310d09800b322fdf9668e5fbe9b7e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4666,7 +4588,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/params\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/widgets\\/module\\/purchase\\/form\\/card\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4677,7 +4599,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8ab2e3818161eb0fd08a3caa390433020a0250c0b3927e0e02aea4b8a5c76ece"
+                "5798eaaf0242914969474484994a8d73f84c5ff3d3fea8f71c2bd96ab471a08d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4688,7 +4610,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/router\\/map\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/purchase\\/moto\\/exo\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4699,7 +4621,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb21535798a2d3a776b50be0c1c4f693949fb2f1add8912d86ee8cbcdba7e56a"
+                "4773eadfce5031fb86780962b7b7d6a134f51437bde5e24af7d625df963669fc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4710,7 +4632,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/google\\/auth\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/widgets\\/forms\\/inputs\\/connect\\/share\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4721,253 +4643,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "07de4048fde3b936046dc4d2654e2fb99b852282feb11ac6cc0ae386d220cce1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.00001364424008404852
-            },
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/credits\\/mall\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8afc1dc489929e2b15d9192adc33c765e0f071d90aa0c9ba7d64a8fcbfb77516"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/credits\\/subscriptions\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6e6a24aac344a0f9d5fbf546e5078d2446cc2d6aaa4a5165e7930ccafab13c97"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/l10n\\/repository\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4c1d454ff0911a1662e022642db1d43a77fba52f9eb5b265cb36a45a1ced8828"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/helpers\\/slicedToArray\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "395068d4cb4eb1968105b5bc62c842b6e9a05d1e4c26b0f50972a6f00bdfb633"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/users\\/tags\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "00151461f96e3ca9b988fb17d3ec565e2e6db61c5c42480794bb75062894de06"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/purchase\\/vat-converter\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "bca6839a7ad6c73f99a59e92b6e9ee47e89cc3771de17afc18d9c437d21b5ec2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/session\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "eba10291a5eca6d4ea581ddd0b1cbf4f28b39d002cf2a3fac9bc3e1b1cf8ad45"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/services\\/landing\\/data\\/collector\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "70cea07839f926b3de3aaccc5a027acbee86216059b78f24c298a77122350a78"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/services\\/landing\\/data\\/sender\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3e6029b1af9d018f669c3be05d5f39f1dc9afbbc08230b3f0846ce0ed04d0ed"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/landing\\/data\\/collector\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "82bb7faafc5de5bfffc7fc6f3cf91646200035314b8fe071ae56f084afb3ac05"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/landing\\/data\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "87c65fe7952587f8e8cbb6869fcd486863b934ae8a01d9206df9f52caa9ef110"
+                "20aea673bbcf47a9fbd614e8325a7326bd0ba91162fd30b8637e616780e5943b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4990,28 +4666,6 @@
             "cnames": [],
             "responseHashes": [
                 "450db59e1148ee146cc95ec4524c47950d72f1fab7006d58913ed3f14125af1e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/date\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8402a2a7567c381e3486c14deec3141c3392d17cc0ec41503226e071054a6ad2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5090,7 +4744,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/forms\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/l10n\\/repository\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5101,7 +4755,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "76f31e3b9a3f9d739d996f8f65afbf62fb310d09800b322fdf9668e5fbe9b7e1"
+                "4c1d454ff0911a1662e022642db1d43a77fba52f9eb5b265cb36a45a1ced8828"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5112,7 +4766,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/forms\\/autofocus\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/helpers\\/slicedToArray\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5123,7 +4777,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "863a86b3037b869ad9d58ff7de666e88a3e8e6250188342a09930d5773e6a630"
+                "395068d4cb4eb1968105b5bc62c842b6e9a05d1e4c26b0f50972a6f00bdfb633"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5134,7 +4788,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/hotkeys\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/credits\\/mall\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5145,7 +4799,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e2507c97404fe5fdb03b4717f2ed9ae5309f1fe3a9de247d68bd8a39fdb28ac0"
+                "8afc1dc489929e2b15d9192adc33c765e0f071d90aa0c9ba7d64a8fcbfb77516"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5156,7 +4810,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/css\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/users\\/tags\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5167,7 +4821,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cbfddf6d3d58e6f6f4b883c825e909d5266f8d7c741bf38fc05db338119bd124"
+                "00151461f96e3ca9b988fb17d3ec565e2e6db61c5c42480794bb75062894de06"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5178,7 +4832,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/events\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/purchase\\/vat-converter\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5189,7 +4843,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ac6a76b8be940743c82833017c48b50c37e67266cfddb9ac9c11d872ac55f9c2"
+                "bca6839a7ad6c73f99a59e92b6e9ee47e89cc3771de17afc18d9c437d21b5ec2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5200,7 +4854,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/controlflow\\/immediate\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/date\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5211,51 +4865,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ebb113442d28187b69dad4850fdee5a2940c1ccd84a6be578965251cd1c5960c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/noop\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "33ba9a6f355dd640ce45dfb62cbd76dacf5f86d3cf19806a1aab00d686d11eb6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/noargs\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "43748e2de0ece5aab70453d32e695136eefbee43a18d098524324de36c8ddb0c"
+                "8402a2a7567c381e3486c14deec3141c3392d17cc0ec41503226e071054a6ad2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5288,7 +4898,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/widgets\\/module\\/purchase\\/form\\/card\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/credits\\/subscriptions\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5299,51 +4909,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5798eaaf0242914969474484994a8d73f84c5ff3d3fea8f71c2bd96ab471a08d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/purchase\\/moto\\/exo\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4773eadfce5031fb86780962b7b7d6a134f51437bde5e24af7d625df963669fc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/widgets\\/forms\\/inputs\\/connect\\/share\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "20aea673bbcf47a9fbd614e8325a7326bd0ba91162fd30b8637e616780e5943b"
+                "6e6a24aac344a0f9d5fbf546e5078d2446cc2d6aaa4a5165e7930ccafab13c97"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5480,6 +5046,696 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/forms\\/autofocus\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "863a86b3037b869ad9d58ff7de666e88a3e8e6250188342a09930d5773e6a630"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/hotkeys\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2507c97404fe5fdb03b4717f2ed9ae5309f1fe3a9de247d68bd8a39fdb28ac0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/controlflow\\/immediate\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ebb113442d28187b69dad4850fdee5a2940c1ccd84a6be578965251cd1c5960c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/google\\/auth\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "07de4048fde3b936046dc4d2654e2fb99b852282feb11ac6cc0ae386d220cce1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "G_ENABLED_IDPS": 0.000013633265167007499
+            },
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/css\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cbfddf6d3d58e6f6f4b883c825e909d5266f8d7c741bf38fc05db338119bd124"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/features\\/events\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac6a76b8be940743c82833017c48b50c37e67266cfddb9ac9c11d872ac55f9c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/noop\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "33ba9a6f355dd640ce45dfb62cbd76dacf5f86d3cf19806a1aab00d686d11eb6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/noargs\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "43748e2de0ece5aab70453d32e695136eefbee43a18d098524324de36c8ddb0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/metrics\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "60bc6d53f36c9d7b0177cb8aba4351e50221a2b68bb2a476b46011ab6d4e6811"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/xerox-coreg\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b55d2bde6dafdc9cb78b662f5e00fae45887dd73a5d00f42b1936478db5cde58"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/timezone\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8630e45c79c60a485119d4b00589e248c4bc36bea910f002308a229768f1c3e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/cross-product\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bfa6e5285ca64c9611957fca0afe30a711509e0b1060021de21e1325175816f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/services\\/logger\\/publisher\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2469729ebf07b32bbf24d7256a2d6d8623826230a47c94ad98c1ed3fccdc1081"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/params\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8ab2e3818161eb0fd08a3caa390433020a0250c0b3927e0e02aea4b8a5c76ece"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/router\\/map\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eb21535798a2d3a776b50be0c1c4f693949fb2f1add8912d86ee8cbcdba7e56a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/env\\/session\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eba10291a5eca6d4ea581ddd0b1cbf4f28b39d002cf2a3fac9bc3e1b1cf8ad45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/services\\/landing\\/data\\/collector\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70cea07839f926b3de3aaccc5a027acbee86216059b78f24c298a77122350a78"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/services\\/landing\\/data\\/sender\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3e6029b1af9d018f669c3be05d5f39f1dc9afbbc08230b3f0846ce0ed04d0ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/landing\\/data\\/collector\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "82bb7faafc5de5bfffc7fc6f3cf91646200035314b8fe071ae56f084afb3ac05"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/repositories\\/landing\\/data\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87c65fe7952587f8e8cbb6869fcd486863b934ae8a01d9206df9f52caa9ef110"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/api\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0eafe56a78beb723b0214d0d0b588d31fe9a20c222d686f79c2c5ce46ef9b92d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/internal\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab55f4c95fc5654ce27783ff9c7ed33761cdcd2760849d8edb4e49e22a1c0b05"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/templates\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5de10745291c438651673b6c9be9698c2d439f4a64a4df309c6afa2f15fda842"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/packages\\/genesis\\/genesis\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "330321010cb94bbf81aedfb6ec0b7a0a179cb23804b2f78372e445cc7652e706"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/packages\\/sharding\\/src\\/sharding\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ccf1d0b7f2079a72b3505f8a53252d65b2d7c14c115e3306d17382d4f3e51aa9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/core-js\\/is-iterable\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0f3bfa052acec9d141e1927bb0d9eb6fcf0dfd10920a921dddc645593e0b1f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/core-js\\/get-iterator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a56655b3e0f499167e428374d5b6fcdcff9cd2535ed95bd90a4714b03617ff8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/header\\/application\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c2d281d1a7135b53541b5ed5e69bd90f395dca1b2adef923ee4ba9fbe6e2b92e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/console\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c177520a64d2e9100e6df3ea8a5df7459726c5d237ec5435a98a1e91bde49772"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/promisify\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f40eddd10d585e9b9bcabd3a5790c787280c95a3c713bbf63a76e334c6820a19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/google\\/load\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "54aa9576c13254bed4a09fccb6f4eaf2d39ab2d50e73a2fdecedb12055778b17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "G_ENABLED_IDPS": 0.000013633265167007499
+            },
             "exampleSites": [
                 "anastasiadate.com",
                 "www.anastasiadate.com"
@@ -6170,184 +6426,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/base64\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "466cec6d13c9ed1a8b980a68f6f12da0a64d44cb6387105117dbe75fbeac1275"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/google\\/load\\/index\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "54aa9576c13254bed4a09fccb6f4eaf2d39ab2d50e73a2fdecedb12055778b17"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.00001364424008404852
-            },
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/header\\/application\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c2d281d1a7135b53541b5ed5e69bd90f395dca1b2adef923ee4ba9fbe6e2b92e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/console\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c177520a64d2e9100e6df3ea8a5df7459726c5d237ec5435a98a1e91bde49772"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/api\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0eafe56a78beb723b0214d0d0b588d31fe9a20c222d686f79c2c5ce46ef9b92d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/internal\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ab55f4c95fc5654ce27783ff9c7ed33761cdcd2760849d8edb4e49e22a1c0b05"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/domains\\/templates\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5de10745291c438651673b6c9be9698c2d439f4a64a4df309c6afa2f15fda842"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/packages\\/sharding\\/src\\/sharding\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ccf1d0b7f2079a72b3505f8a53252d65b2d7c14c115e3306d17382d4f3e51aa9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/img\\/icons\\/cards\\/visa\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -6480,6 +6558,28 @@
             ]
         },
         {
+            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/base64\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "466cec6d13c9ed1a8b980a68f6f12da0a64d44cb6387105117dbe75fbeac1275"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anastasiadate.com",
+                "www.anastasiadate.com"
+            ]
+        },
+        {
             "rule": "itocd\\.net\\/www\\/app\\/packages\\/domain\\/domain\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -6524,7 +6624,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/modules\\/utils\\/promisify\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/is-iterable\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6535,7 +6635,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f40eddd10d585e9b9bcabd3a5790c787280c95a3c713bbf63a76e334c6820a19"
+                "1ee920d111b36468e72b21bc33d4e5f3b7124718bd11e1e9b85bb6149d1ba204"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6546,7 +6646,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/core-js\\/is-iterable\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/get-iterator\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6557,53 +6657,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c0f3bfa052acec9d141e1927bb0d9eb6fcf0dfd10920a921dddc645593e0b1f1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/babel-runtime\\/core-js\\/get-iterator\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a56655b3e0f499167e428374d5b6fcdcff9cd2535ed95bd90a4714b03617ff8f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/packages\\/genesis\\/genesis\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "330321010cb94bbf81aedfb6ec0b7a0a179cb23804b2f78372e445cc7652e706"
+                "2f220d09083edb2761b7fd270127bc53479411a0d94cc036f9d209fe5a319d3f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6661,7 +6715,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/is-iterable\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/core\\.is-iterable\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6672,7 +6726,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1ee920d111b36468e72b21bc33d4e5f3b7124718bd11e1e9b85bb6149d1ba204"
+                "156cdc183abe5337d759e106f9f14d2b3c905bcbffc90dc5d2f5c4319daddcb0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6683,7 +6737,7 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/fn\\/get-iterator\\.js",
+            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/core\\.get-iterator\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6694,7 +6748,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2f220d09083edb2761b7fd270127bc53479411a0d94cc036f9d209fe5a319d3f"
+                "21ed5c7aea960b8da6a18d0aa83cb792c6ddbfe4b25f65629a42b494a931f34a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6795,50 +6849,6 @@
             ]
         },
         {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/core\\.is-iterable\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "156cdc183abe5337d759e106f9f14d2b3c905bcbffc90dc5d2f5c4319daddcb0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
-            "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/core\\.get-iterator\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1ad"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "21ed5c7aea960b8da6a18d0aa83cb792c6ddbfe4b25f65629a42b494a931f34a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "anastasiadate.com",
-                "www.anastasiadate.com"
-            ]
-        },
-        {
             "rule": "itocd\\.net\\/www\\/app\\/core-js\\/library\\/modules\\/_classof\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -6889,15 +6899,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.873015873015873
+            "prevalence": 0.8738738738738738
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "communicationservicesplatform.com",
-            "prevalence": 0.015873015873015872
+            "prevalence": 0.12612612612612611
         }
     ],
     "types": {
@@ -6908,9 +6914,9 @@
     },
     "nameservers": [
         "ns.itocd.net",
-        "ns1-105.akam.net",
-        "ns5-64.akam.net",
+        "ns7-65.akam.net",
         "ns4-65.akam.net",
-        "ns7-65.akam.net"
+        "ns5-64.akam.net",
+        "ns1-105.akam.net"
     ]
 }

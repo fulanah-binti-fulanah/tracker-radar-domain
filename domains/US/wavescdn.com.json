@@ -11,7 +11,7 @@
         "front"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "wavescdn\\.com\\/fonts\\/roboto\\/roboto\\.css",
@@ -126,11 +126,13 @@
         {
             "rule": "wavescdn\\.com\\/js\\/jscssver12\\/site-header-min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "front"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -153,10 +155,11 @@
                 "front"
             ],
             "apis": {
+                "Screen.prototype.width": 2,
                 "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
                 "Document.cookie getter": 2,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -202,6 +205,7 @@
                 "front"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2
             },
@@ -314,7 +318,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9487179487179487
+        },
+        {
+            "domain": "gstatic.com",
+            "prevalence": 0.05128205128205128
         }
     ],
     "types": {
@@ -323,9 +331,9 @@
         "Font": 8
     },
     "nameservers": [
-        "ns-1067.awsdns-05.org",
-        "ns-1697.awsdns-20.co.uk",
         "ns-13.awsdns-01.com",
-        "ns-696.awsdns-23.net"
+        "ns-696.awsdns-23.net",
+        "ns-1067.awsdns-05.org",
+        "ns-1697.awsdns-20.co.uk"
     ]
 }

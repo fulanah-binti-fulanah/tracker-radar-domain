@@ -14,7 +14,7 @@
         "ads"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "speedwaymotorsports\\.com\\/services\\/lib\\/fancybox\\/jquery\\.fancybox\\.min\\.css",
@@ -46,6 +46,7 @@
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "window.devicePixelRatio": 2
             },
@@ -115,6 +116,7 @@
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -134,11 +136,15 @@
         {
             "rule": "speedwaymotorsports\\.com\\/services\\/lib\\/tinyslider\\/tiny-slider\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -231,7 +237,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bde35f9149b8fdd3499dc6d2146a278673d3849b9f7024beb4a4521d5f4e7957"
+                "3f7b31903487ebf0acdc1abdde940557833ac9e80b569cc835769f1a8d664d23"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -243,14 +249,14 @@
         },
         {
             "rule": "speedwaymotorsports\\.com\\/www\\/delivery\\/lg\\.php",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "ads"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
@@ -304,7 +310,7 @@
         "Image": 5
     },
     "nameservers": [
-        "yadiel.ns.cloudflare.com",
-        "lovisa.ns.cloudflare.com"
+        "lovisa.ns.cloudflare.com",
+        "yadiel.ns.cloudflare.com"
     ]
 }

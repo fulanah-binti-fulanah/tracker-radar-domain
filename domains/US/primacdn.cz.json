@@ -7,45 +7,13 @@
     "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
+        "authstatic",
         "static",
-        "authstatic"
+        "c3"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "primacdn\\.cz\\/sas\\/cmp\\/iprima-cmp\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c33d98aae23ee08d6023cbcafc6709dd136c326d1b509f74ab21510c4724dcb1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "eupubconsent-v2": {
-                    "ttl": 31536005,
-                    "length": 10,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iprima.cz",
-                "fresh.iprima.cz"
-            ]
-        },
         {
             "rule": "primacdn\\.cz\\/sso\\/device_id\\.js",
             "cookies": 0.0000136,
@@ -70,7 +38,7 @@
                 "prima_device_id": {
                     "ttl": 31622404,
                     "length": 38,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -88,11 +56,12 @@
                 "authstatic"
             ],
             "apis": {
+                "window.localStorage": 3,
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.vendor": 3
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "184ce4475e8709b3b4bf4871c40a1aa59c7de6d5b3bfc772089d6a526e6c9773"
@@ -129,6 +98,30 @@
             ]
         },
         {
+            "rule": "primacdn\\.cz\\/sso\\/watch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "authstatic"
+            ],
+            "apis": {
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "615daebeedf12ffdc5be40f5351f4a53c1882136b34268f2189117c6dc25633b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
             "rule": "primacdn\\.cz\\/scripts\\/cmp\\/images\\/whitebg\\/iprima2x\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -151,20 +144,20 @@
             ]
         },
         {
-            "rule": "primacdn\\.cz\\/sso\\/watch\\.js",
+            "rule": "primacdn\\.cz\\/sites\\/default\\/files\\/styles\\/landscape_large\\/public\\/f\\/e0\\/6277491-rizoto\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "authstatic"
+                "c3"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "615daebeedf12ffdc5be40f5351f4a53c1882136b34268f2189117c6dc25633b"
+                "a88dede99b6200393b8e366b904feae0a85842bb20ed6662788c43f17c8c2d8b"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -225,19 +218,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9047619047619048
+            "prevalence": 0.9090909090909091
         },
         {
             "domain": "privacy-center.org",
-            "prevalence": 0.09523809523809523
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 15,
-        "Image": 2
+        "Script": 13,
+        "Image": 4
     },
     "nameservers": [
-        "ali.ns.cloudflare.com",
-        "ajay.ns.cloudflare.com"
+        "ajay.ns.cloudflare.com",
+        "ali.ns.cloudflare.com"
     ]
 }

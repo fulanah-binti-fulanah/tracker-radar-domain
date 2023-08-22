@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
         "execution--ci360-infos-dkb-de",
+        "user--api--immobilien-sparkasse-de",
+        "proxy--immobilien-sparkasse-de",
         "scw-hugendubel-de"
     ],
     "cnames": [
@@ -16,8 +18,16 @@
             "resolved": "execution--ci360-infos-dkb-de.ax4z.com"
         },
         {
+            "original": "proxy-immobilien.sparkasse.de",
+            "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+        },
+        {
             "original": "scw.hugendubel.de",
             "resolved": "scw-hugendubel-de.ax4z.com"
+        },
+        {
+            "original": "user-api-immobilien.sparkasse.de",
+            "resolved": "user--api--immobilien-sparkasse-de.ax4z.com"
         }
     ],
     "fingerprinting": 3,
@@ -39,7 +49,7 @@
                 }
             ],
             "responseHashes": [
-                "b79aebd629ec2272ac455387ad09caf3d1608e1905780cb751d75f9c83809bca"
+                "5fe9aad93b0e82d531ef5241088cb9d04f74f6320a1abab2020c69c6c070d5ea"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -47,6 +57,85 @@
             "exampleSites": [
                 "dkb.de",
                 "banking.dkb.de"
+            ]
+        },
+        {
+            "rule": "ax4z\\.com\\/api\\/backend\\/user\\/details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user--api--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "user-api-immobilien.sparkasse.de",
+                    "resolved": "user--api--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [
+                "32460949c58d8afc72c9d51a7b345c6d963249d5b1e49d14c5da4f796ab6696f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
+            ]
+        },
+        {
+            "rule": "ax4z\\.com\\/ajax\\/ajaxToAPI\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "proxy-immobilien.sparkasse.de",
+                    "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
+            ]
+        },
+        {
+            "rule": "ax4z\\.com\\/ajax\\/ajaxToAPI\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "proxy-immobilien.sparkasse.de",
+                    "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [
+                "a5c1683dabff90917e2bc48bc44438c86a41f1a69dc3c05eae2ca719e15f8f9e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
             ]
         },
         {
@@ -58,7 +147,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "scw.hugendubel.de",
@@ -86,7 +175,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "scw.hugendubel.de",
@@ -114,7 +203,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "scw.hugendubel.de",
@@ -146,9 +235,10 @@
         }
     ],
     "types": {
-        "XHR": 5,
-        "Script": 3,
-        "Preflight": 3
+        "XHR": 7,
+        "Fetch": 2,
+        "Preflight": 5,
+        "Script": 3
     },
     "nameservers": [
         "a.ax4z.com",

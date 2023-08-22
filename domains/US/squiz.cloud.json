@@ -7,14 +7,77 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
+        "uoab-search",
+        "forsythtech-search.funnelback",
         "mon4-search"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "search.forsythtech.edu",
+            "resolved": "forsythtech-search.funnelback.squiz.cloud"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/css\\/funnelback\\.autocompletion-2\\.6\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uoab-search",
+                "forsythtech-search.funnelback"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.forsythtech.edu",
+                    "resolved": "forsythtech-search.funnelback.squiz.cloud"
+                }
+            ],
+            "responseHashes": [
+                "65c60db819e2bcfdbb09f0b3fcb92d8ca645ad37847cf0ced2ca2cdf980314c0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abdn.ac.uk",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion-2\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uoab-search",
+                "forsythtech-search.funnelback"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.forsythtech.edu",
+                    "resolved": "forsythtech-search.funnelback.squiz.cloud"
+                }
+            ],
+            "responseHashes": [
+                "61e4a67f1a10f30fd6203b0fbed830f9538163bf310d1a057cae955aeac6c97a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abdn.ac.uk",
+                "www.forsythtech.edu"
+            ]
+        },
         {
             "rule": "squiz\\.cloud\\/stencils\\/resources\\/autocompletion\\/js\\/handlebars\\.min-v4\\.0\\.5\\.js",
             "cookies": 0,
@@ -48,11 +111,12 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Stylesheet": 2,
+        "Script": 4
     },
     "nameservers": [
-        "ns2.squiz.net",
+        "ns1.squiz.net",
         "ns3.squiz.net",
-        "ns1.squiz.net"
+        "ns2.squiz.net"
     ]
 }

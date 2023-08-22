@@ -19,26 +19,20 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "senvie.com",
-                "www.clubfurniture.com",
-                "www.fff.org",
-                "www.logolynx.com",
-                "www.quotemaster.org",
-                "www.visitnordic.com"
+                "hellosubscription.com",
+                "www.tvtime.com"
             ]
         },
         {
-            "rule": "freegeoip\\.net\\/shutdown",
+            "rule": "freegeoip\\.net\\/json\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -53,9 +47,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "senvie.com",
-                "www.clubfurniture.com",
-                "www.logolynx.com",
+                "clubfurniture.com",
+                "www.electricwheelchairsusa.com",
+                "www.fff.org",
+                "www.quotemaster.org",
+                "www.visitnordic.com"
+            ]
+        },
+        {
+            "rule": "freegeoip\\.net\\/shutdown",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clubfurniture.com",
+                "www.electricwheelchairsusa.com",
                 "www.quotemaster.org",
                 "www.visitnordic.com"
             ]
@@ -67,15 +83,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.8
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.25
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 11
+        "XHR": 2,
+        "Script": 9
     },
     "nameservers": [
         "ram.ns.cloudflare.com",

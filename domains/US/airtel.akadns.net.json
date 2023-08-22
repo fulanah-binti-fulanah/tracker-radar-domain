@@ -12,41 +12,36 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "sentry",
         "digianalytics"
     ],
     "cnames": [
         {
             "original": "digianalytics.airtel.in",
             "resolved": "digianalytics.airtel.akadns.net"
-        },
-        {
-            "original": "sentry.airtel.in",
-            "resolved": "sentry.airtel.akadns.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "airtel\\.akadns\\.net\\/sentrynew\\/api\\/23\\/envelope\\/",
+            "rule": "airtel\\.akadns\\.net\\/analytics\\/pixel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sentry"
+                "digianalytics"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "sentry.airtel.in",
-                    "resolved": "sentry.airtel.akadns.net"
+                    "original": "digianalytics.airtel.in",
+                    "resolved": "digianalytics.airtel.akadns.net"
                 }
             ],
             "responseHashes": [
-                "18836503f8afb384873c592acb1f5003458de99a33949588e0b67b6a700a3679"
+                "09466b32b9454e0ecf75a4c61acdd9be0e56485de260d5c8b9fb7089e0a10a23"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -80,33 +75,6 @@
                 "airtel.in",
                 "www.airtel.in"
             ]
-        },
-        {
-            "rule": "airtel\\.akadns\\.net\\/analytics\\/pixel",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "digianalytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "digianalytics.airtel.in",
-                    "resolved": "digianalytics.airtel.akadns.net"
-                }
-            ],
-            "responseHashes": [
-                "09466b32b9454e0ecf75a4c61acdd9be0e56485de260d5c8b9fb7089e0a10a23"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airtel.in",
-                "www.airtel.in"
-            ]
         }
     ],
     "categories": [
@@ -121,7 +89,6 @@
         }
     ],
     "types": {
-        "Fetch": 2,
         "XHR": 4
     },
     "nameservers": []

@@ -142,9 +142,11 @@
         {
             "rule": "d2201k5v4hmrsv\\.cloudfront\\.net\\/js\\/commons\\.1\\.18\\.4\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -165,7 +167,9 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -212,26 +216,6 @@
             "cnames": [],
             "responseHashes": [
                 "473842579288c04e865ecfa63ae67a45d6e9a0871c9cf2aea4db32637cf7bbb8"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstthings.com",
-                "www.firstthings.com"
-            ]
-        },
-        {
-            "rule": "d2201k5v4hmrsv\\.cloudfront\\.net\\/fonts\\/ico\\.ttf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6f70f24b3c45064c5a1305589afbcc2090bc219ac43208e449e88eb32f36496f"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -296,13 +280,13 @@
     "types": {
         "Stylesheet": 8,
         "Script": 10,
-        "Font": 4,
+        "Font": 2,
         "Image": 4
     },
     "nameservers": [
         "ns-473.awsdns-59.com",
-        "ns-1746.awsdns-26.co.uk",
+        "ns-513.awsdns-00.net",
         "ns-1315.awsdns-36.org",
-        "ns-513.awsdns-00.net"
+        "ns-1746.awsdns-26.co.uk"
     ]
 }

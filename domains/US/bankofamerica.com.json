@@ -7,15 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000682,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "www",
         "sofa",
-        "tilt"
+        "tilt",
+        "target"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "bankofamerica\\.com\\/pa\\/global-assets\\/external\\/demandbase\\/js_min\\/OrchestratorMain\\.js",
@@ -25,6 +26,8 @@
                 "www"
             ],
             "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -49,22 +52,24 @@
                 "sofa"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "728d552bad540d01380fe0fd9242ee062f546652cc56f9acb775d869cd9a1ba3"
+                "1c9a14b98eee3179b29bca4c466e7c78165915b5b20c18d691daec5577a5d71c",
+                "51f380e4abbdf4b680c54f673835d4dd976e5355955a71f3b12191dbff588a82"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bofa.com",
-                "business.bofa.com"
+                "business.bofa.com",
+                "www.merrill.com"
             ]
         },
         {
-            "rule": "bankofamerica\\.com\\/6353\\/js\\/events\\/v10\\/session\\.json",
+            "rule": "bankofamerica\\.com\\/3335\\/js\\/events\\/v10\\/session\\.json",
             "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
@@ -75,7 +80,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a607e567734709214cc16041f039d6fc9fac88b48b11fa18af7856c573b4a933"
+                "7e85cc28ce95744e074e46c8429f00e148080dc14b9afdd91fa83a123b1fa749"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -87,6 +92,29 @@
         },
         {
             "rule": "bankofamerica\\.com\\/eluminate",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sofa"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4f49e616d278a16d9cd55a6d5fe19c99ebd37d7d3848d14422190618b67011e0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bofa.com",
+                "business.bofa.com",
+                "www.merrill.com"
+            ]
+        },
+        {
+            "rule": "bankofamerica\\.com\\/cm",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -104,11 +132,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bofa.com",
-                "business.bofa.com"
+                "www.merrill.com"
             ]
         },
         {
-            "rule": "bankofamerica\\.com\\/6353\\/1306043892120097883\\/js\\/events\\/v10\\/jsEvent\\.json",
+            "rule": "bankofamerica\\.com\\/m2\\/bankofamerica\\/mbox\\/json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "target"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "193046be0d120f8e97d731af2e03c85e673cd2d2ff77bbd6e3d2e9fcdfcbbc7b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bofa.com",
+                "www.merrill.com"
+            ]
+        },
+        {
+            "rule": "bankofamerica\\.com\\/3335\\/972777519643789416\\/js\\/events\\/v10\\/jsEvent\\.json",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -119,7 +169,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "64b867e374613c13568866d96e9772f1161330ee5dd46490b135bd33b6a18f04"
+                "9119973e48fabee3162c2888f8a4c727233095d3053dd5fbbb4cdc55fb52c430"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -128,29 +178,55 @@
                 "bofa.com",
                 "business.bofa.com"
             ]
+        },
+        {
+            "rule": "bankofamerica\\.com\\/4389\\/909727124855375870\\/js\\/events\\/v10\\/jsEvent\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87cf5b1e4d96ef5983981f4b54cfc8eb2016efe5ce47e2d90d649a46748f4a62"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "merrill.com",
+                "www.merrill.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "tiqcdn.com",
-            "prevalence": 1
+            "prevalence": 0.71875
+        },
+        {
+            "domain": "bac-assets.com",
+            "prevalence": 0.28125
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 4,
-        "Image": 2
+        "Script": 5,
+        "XHR": 8,
+        "Image": 5
     },
     "nameservers": [
-        "ns8.bac.com",
-        "ns7.bac.com",
         "ns10.bac.com",
-        "ns5.bac.com",
-        "ns12.bac.com",
+        "ns7.bac.com",
         "ns6.bac.com",
-        "ns11.bac.com"
+        "ns12.bac.com",
+        "ns11.bac.com",
+        "ns5.bac.com",
+        "ns8.bac.com"
     ]
 }

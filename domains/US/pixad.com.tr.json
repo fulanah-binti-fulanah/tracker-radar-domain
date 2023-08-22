@@ -4,14 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
-    "sites": 3,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "mynet.rtb",
         "melon.rtb",
         "admatic.rtb",
         "static.cdn",
         "rtb.impression",
+        "static",
+        "user.service",
         "prebid"
     ],
     "cnames": [],
@@ -27,18 +29,17 @@
                 "admatic.rtb"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mynet.com",
                 "www.haberler.com",
+                "www.mynet.com",
                 "www.sondakika.com"
             ]
         },
@@ -48,20 +49,21 @@
             "fingerprinting": 0,
             "subdomains": [
                 "mynet.rtb",
-                "melon.rtb",
                 "admatic.rtb"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mynet.com",
-                "www.haberler.com",
+                "www.mynet.com",
                 "www.sondakika.com"
             ]
         },
@@ -73,14 +75,14 @@
                 "static.cdn"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f61ca3f722222f6dd49334d7dcf49fc08d7ee445ef65e8d00bb97af048f5330c"
+                "2e985178bd7060ee35545acac05cb1fec3d12df2858430248eed951e2b700efc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -98,18 +100,19 @@
                 "static.cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "c40f38d24db75c6721afda818b408cb8c4868f96ccaa2b4057b143cad23bc9db"
+                "9c2b57d002f5c157bd8fe86d4272703f7335ca4d455d9d246e7ba9bb93ad267d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "haberler.com",
-                "www.haberler.com"
+                "www.haberler.com",
+                "www.sondakika.com"
             ]
         },
         {
@@ -135,6 +138,66 @@
             ]
         },
         {
+            "rule": "pixad\\.com\\.tr\\/dist\\/prebid8\\.9\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d87171724d347201ccbe942c66929d993d18af84d355adcfdf05f5233893403"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.sondakika.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/pb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "melon.rtb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.sondakika.com"
+            ]
+        },
+        {
             "rule": "pixad\\.com\\.tr\\/all",
             "cookies": 0,
             "fingerprinting": 0,
@@ -142,8 +205,8 @@
                 "rtb.impression"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
@@ -153,7 +216,77 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "haberler.com",
-                "www.haberler.com"
+                "www.haberler.com",
+                "www.sondakika.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/sync\\.html",
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4e729e6d80bd1fb62f9792f63d42eb7cb578e084a7c2d048f33714cad36312cb"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.sondakika.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/sync\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user.service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.sondakika.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/setuid",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.sondakika.com"
             ]
         },
         {
@@ -167,47 +300,54 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "haberler.com",
-                "www.haberler.com"
+                "www.sondakika.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
+            "domain": "mynetreklam.com",
+            "prevalence": 0.18181818181818182
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "hbrcdn.com",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "mynetreklam.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "adscale.de",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "sdacdn.com",
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "admatic.com.tr",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "XHR": 5,
-        "Preflight": 3,
-        "Script": 2,
-        "Fetch": 4,
-        "Image": 2
+        "Preflight": 4,
+        "XHR": 6,
+        "Script": 4,
+        "Fetch": 8,
+        "Document": 6,
+        "Image": 3
     },
     "nameservers": [
         "ursula.ns.cloudflare.com",

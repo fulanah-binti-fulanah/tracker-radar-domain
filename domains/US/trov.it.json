@@ -23,7 +23,10 @@
                 "st1"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -42,11 +45,13 @@
         {
             "rule": "trov\\.it\\/includes\\/js\\/utils\\/helpers\\/deviceHelper\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "st1"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -185,9 +190,9 @@
         "Script": 14
     },
     "nameservers": [
-        "ns-1793.awsdns-32.co.uk",
+        "ns-560.awsdns-06.net",
         "ns-1268.awsdns-30.org",
         "ns-488.awsdns-61.com",
-        "ns-560.awsdns-06.net"
+        "ns-1793.awsdns-32.co.uk"
     ]
 }

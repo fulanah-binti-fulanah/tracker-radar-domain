@@ -4,12 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000819,
-    "sites": 12,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "t",
         "tracker",
-        "analytics.api"
+        "analytics.api",
+        "durhamtech.shell",
+        "forsythtech.shell",
+        "sites-management-api",
+        "durhamtech.messenger",
+        "forsythtech.messenger",
+        "durhamtech.rt",
+        "forsythtech.rt"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,8 +32,8 @@
             "apis": {
                 "Document.cookie getter": 10
             },
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 13,
+            "prevalence": 0.0000886,
             "cnames": [],
             "responseHashes": [
                 "5a81602357225a383791831b547b5a4affce62c518bb74fb9e96721d42608289"
@@ -39,11 +46,14 @@
                 "semo.edu",
                 "www.blinn.edu",
                 "www.durhamtech.edu",
+                "www.forsythtech.edu",
                 "www.fscj.edu",
                 "www.gtcc.edu",
                 "www.longwood.edu",
                 "www.njit.edu",
+                "www.otterbein.edu",
                 "www.slu.edu",
+                "www.tamusa.edu",
                 "www.waketech.edu"
             ]
         },
@@ -55,8 +65,8 @@
                 "analytics.api"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 11,
+            "prevalence": 0.000075,
             "cnames": [],
             "responseHashes": [
                 "aaeb5aa7aa053a3b7b8fc76adfc05e6ce7fa66de54aae4718dda6e1763c56e3f"
@@ -69,12 +79,60 @@
                 "semo.edu",
                 "www.blinn.edu",
                 "www.durhamtech.edu",
-                "www.fscj.edu",
+                "www.forsythtech.edu",
                 "www.gtcc.edu",
                 "www.longwood.edu",
                 "www.njit.edu",
                 "www.slu.edu",
+                "www.tamusa.edu",
                 "www.waketech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "durhamtech.shell",
+                "forsythtech.shell"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d886939eb4f8f40724a5dc4a99721f7a8b6ea05fd3894e0b49b6edf01ea46766"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/site",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sites-management-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f9e14ec82490bb7d0da880c08948c719fbe61a64bfae589073a7be9ab67af1e0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
             ]
         },
         {
@@ -97,6 +155,304 @@
             "exampleSites": [
                 "durhamtech.edu",
                 "www.durhamtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.messenger",
+                "forsythtech.messenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da177cd816dae5da8af5e3f296d8c5def66a4e0afac247ba1c5882531cb9368d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/runtime\\.bef872f3d9db2f28\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.messenger",
+                "forsythtech.messenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02b162465fc0fff10ae94e66b221448527d27b93e7fb5968690b0b0f1d942322"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/polyfills\\.0254432c7eb892d2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "durhamtech.messenger",
+                "forsythtech.messenger"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "28d8bfa96d246ae98473d01dcd7d55d69c3762d26448fc18d9d43db2a44703a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/main\\.e4c6dcfd5778ce09\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "durhamtech.messenger",
+                "forsythtech.messenger"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7cacf9b1c1a59c99bb62207b7d79d4a07bd28a0ea0ca6019a3a4213fcab0c78f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/styles\\.8b6f7291092bd8e8\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.messenger",
+                "forsythtech.messenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a254bb34f4ac5c35348f3cc11c0111f40e3f2f81350b8471e3b918672e146a23"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/conversations\\/auth",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/conversations\\/auth",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da45136c29ebacfd57bf76c5f35a642934b926e5dc138c2182fe1ce189cf8493"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/messenger\\/config",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/external\\/conversations",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/messenger\\/config",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "97861a0ff289aa7f6ca878882e02fb99ed530463a7bd4b603d9274c77ad480ff"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/external\\/conversations",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "durhamtech.rt",
+                "forsythtech.rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37c3f0b49f00bdfcf056b249751b8b7e8052882b65dc469329d0fbcf2a74436f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "durhamtech.edu",
+                "www.forsythtech.edu"
+            ]
+        },
+        {
+            "rule": "451\\.io\\/token\\/fd4xNuzV8szX518NVIL2AJTTG0a0yzg905SMzAeu\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f5bdf606df59688642c25b8c8f1fc0a3dcbd5159c714658ef3963703080c3e0d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forsythtech.edu",
+                "www.forsythtech.edu"
             ]
         },
         {
@@ -146,37 +502,42 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.4642857142857143
+            "prevalence": 0.42424242424242425
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.35714285714285715
-        },
-        {
-            "domain": "sparksites.io",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.3939393939393939
         },
         {
             "domain": "first party",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "sparksites.io",
+            "prevalence": 0.06060606060606061
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.03571428571428571
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "Script": 10,
-        "Image": 10,
-        "XHR": 6
+        "Script": 21,
+        "Image": 11,
+        "Fetch": 2,
+        "XHR": 14,
+        "Document": 2,
+        "Stylesheet": 2,
+        "Preflight": 6,
+        "WebSocket": 2
     },
     "nameservers": [
-        "ns-10.awsdns-01.com",
         "ns-784.awsdns-34.net",
+        "ns-10.awsdns-01.com",
         "ns-1996.awsdns-57.co.uk",
         "ns-1228.awsdns-25.org"
     ]

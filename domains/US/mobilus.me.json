@@ -4,19 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
         "guest-agent",
-        "cdn.agent"
+        "cdn.agent",
+        "agent"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mobilus\\.me\\/web\\/mobi-agent-client-frame-loader\\.min\\.js",
-            "cookies": 0.0000205,
-            "fingerprinting": 1,
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
             "subdomains": [
                 "guest-agent"
             ],
@@ -25,21 +26,46 @@
                 "Navigator.prototype.appVersion": 3,
                 "window.localStorage": 3,
                 "window.innerHeight": 3,
-                "window.innerWidth": 3
+                "window.innerWidth": 3,
+                "Notification.permission": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "bba51eac074170c55a403fc9108a247008c3a16d08c56ba61b9f5eec27653129"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookies": {
+                "jp.co.mobilus.konnect.cookies.userid": {
+                    "ttl": 3153600029,
+                    "length": 31,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "jp.co.mobilus.konnect.cookies.token": {
+                    "ttl": 3153600029,
+                    "length": 176,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "jp.co.mobilus.konnect.cookies.domainId": {
+                    "ttl": 3153600029,
+                    "length": 7,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "jp.co.mobilus.konnect.cookies.domainId": 0.000013633265167007499
+            },
             "exampleSites": [
-                "misumi-ec.com",
-                "www.eki-net.com",
-                "www.mizuhobank.co.jp"
+                "hp.com",
+                "jp.misumi-ec.com",
+                "www.eki-net.com"
             ]
         },
         {
@@ -51,7 +77,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "bba51eac074170c55a403fc9108a247008c3a16d08c56ba61b9f5eec27653129"
@@ -60,32 +86,80 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "misumi-ec.com",
-                "www.eki-net.com",
-                "www.mizuhobank.co.jp"
+                "hp.com",
+                "jp.misumi-ec.com",
+                "www.eki-net.com"
+            ]
+        },
+        {
+            "rule": "mobilus\\.me\\/api\\/globalPublicFiles\\/mst\\/hpstore\\/callcenterClientOption\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "agent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "jp.co.mobilus.konnect.cookies.domainId": 0.000027266530334014997
+            },
+            "exampleSites": [
+                "hp.com",
+                "jp.ext.hp.com"
+            ]
+        },
+        {
+            "rule": "mobilus\\.me\\/api\\/globalPublicFiles\\/mst\\/hpstore\\/callcenterClientOption\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "agent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fda2eb14e5184e35de60c466fa3540cd39a6016ebc339d63e42a53216027285a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "jp.co.mobilus.konnect.cookies.domainId": 0.000027266530334014997
+            },
+            "exampleSites": [
+                "hp.com",
+                "jp.ext.hp.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000205,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.8947368421052632
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "domain": "adobedtm.com",
+            "prevalence": 0.10526315789473684
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1329.awsdns-38.org",
         "ns-60.awsdns-07.com",
-        "ns-985.awsdns-59.net",
-        "ns-1787.awsdns-31.co.uk"
+        "ns-1787.awsdns-31.co.uk",
+        "ns-1329.awsdns-38.org",
+        "ns-985.awsdns-59.net"
     ]
 }

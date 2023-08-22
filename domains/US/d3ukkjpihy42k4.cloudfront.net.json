@@ -9,18 +9,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
-    "sites": 3,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/cookie-consent-filter\\.85cf307034ef74ef6c6d\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.doNotTrack": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -38,9 +41,13 @@
         {
             "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/head\\.85cf307034ef74ef6c6d\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "Navigator.prototype.platform": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -74,71 +81,6 @@
                 "blizzard.com",
                 "www.blizzard.com"
             ]
-        },
-        {
-            "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/css\\/homepage\\.a728bfb6bf2113a79f8fa631608236e9cacf01ee\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "06ee51a5ea07d10090be1fa45b4fe14b706fb830d513d56ccca14e0bc44f0188"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blizzard.com",
-                "www.blizzard.com"
-            ]
-        },
-        {
-            "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/masthead\\.85cf307034ef74ef6c6d\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Date.prototype.getTime": 1,
-                "window.innerWidth": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "eef5158f796002c613d33c1ba1b581057078d82080f754ba6ac08d23772e503b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blizzard.com",
-                "www.blizzard.com"
-            ]
-        },
-        {
-            "rule": "d3ukkjpihy42k4\\.cloudfront\\.net\\/js\\/products\\.85cf307034ef74ef6c6d\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e20451687b1c2de5f021630c23ef6f64da65c12a5fd5efda6255978d9badde45"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blizzard.com",
-                "www.blizzard.com"
-            ]
         }
     ],
     "categories": [
@@ -153,13 +95,13 @@
         }
     ],
     "types": {
-        "Script": 8,
-        "Stylesheet": 4
+        "Script": 4,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-25.awsdns-03.com",
         "ns-1161.awsdns-17.org",
         "ns-1770.awsdns-29.co.uk",
+        "ns-25.awsdns-03.com",
         "ns-631.awsdns-14.net"
     ]
 }

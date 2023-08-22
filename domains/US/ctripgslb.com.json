@@ -35,7 +35,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "pages.trip.com",
@@ -97,12 +97,8 @@
                     "resolved": "slb-trip-aws.ctripgslb.com"
                 }
             ],
-            "responseHashes": [
-                "c4b0d7e6ff829431ca01b9ae2833c43d64f977983e8aa5aa5fd1ffaa512acff7",
-                "80f26207bfe54259257432033371cb500a66a7107c553f7f374f3fbccc250612",
-                "c474629fbb6f3e3d62c938f19b30971c682efc985d94702589dd4133df9dc162"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -128,8 +124,12 @@
                     "resolved": "slb-trip-aws.ctripgslb.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e715b1978923c81b55777cd3164d6dc7fdca35811fe2beb90553c8d316ab7910",
+                "344fb3ad55a09b33e3f8bf537159118c6f5b604f3be50ca298f3ab8b92af8bc0",
+                "cf69de48dcea575c1eac1f9e945da914cd72fe6bc84b8bb8a9ecb4704b5d9069"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -221,6 +221,35 @@
             ]
         },
         {
+            "rule": "ctripgslb\\.com\\/restapi\\/soa2\\/18088\\/getAppConfig\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "slb-trip-aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "m.trip.com",
+                    "resolved": "slb-trip-aws.ctripgslb.com"
+                }
+            ],
+            "responseHashes": [
+                "5581f49be412fa192d084c4643f097b0dc52e28920e9fa29118915494b972249",
+                "1d7752154932d30eb14ecc4b00c1d5c247299bf0496d306415271160346eef3a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "us.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
             "rule": "ctripgslb\\.com\\/images\\/app-download\\/qrcode\\/logo\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -264,36 +293,9 @@
                 }
             ],
             "responseHashes": [
-                "182b03d8bc787c5f193b82c66d6dc9b1b620469c3286e2384294764b40ce9272"
+                "8670dab4aad610607fc5a0d7c691182e1235a27edce1e8ef99f67f5ec90d4cc0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trip.com",
-                "www.trip.com"
-            ]
-        },
-        {
-            "rule": "ctripgslb\\.com\\/restapi\\/soa2\\/18088\\/getAppConfig\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "slb-trip-aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "m.trip.com",
-                    "resolved": "slb-trip-aws.ctripgslb.com"
-                }
-            ],
-            "responseHashes": [
-                "46a8218ff0382c2aea598d3272b98f2123c4b93e9991fbdf36f12fd774701e89"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -321,15 +323,15 @@
     ],
     "types": {
         "Image": 13,
-        "Fetch": 4,
         "Preflight": 4,
-        "Script": 2,
-        "XHR": 2
+        "Fetch": 4,
+        "XHR": 3,
+        "Script": 2
     },
     "nameservers": [
         "cns1.zdnscloud.net",
-        "vns1.zdnscloud.biz",
         "ins1.zdnscloud.com",
+        "vns1.zdnscloud.biz",
         "dns1.zdnscloud.info"
     ]
 }

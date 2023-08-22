@@ -24,25 +24,93 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bacardi.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "liquidcheckout\\.com\\/api\\/v1\\/liquid\\/sessions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
             "responseHashes": [
-                "63293d7eda9c173021ffcd98159bac846b1c9ddfedd160eccf2595765aeef08f"
+                "10da07c4b39c53d5261013176fd9a7965cd4d8cb1a923769160e4c3b9ee02303",
+                "a74c011af64938d81b146844641d1c38f758d59b1cb1e0756bec29eaa03460b8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "liquidcheckout\\.com\\/api\\/v1\\/storefront\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bacardi.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "liquidcheckout\\.com\\/api\\/v1\\/storefront\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4fff51b3f6c422e15d08620c6155e9cd72e554cbe00f45e04a800b905f3800a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bacardi.com",
+                "www.jamesonwhiskey.com"
             ]
         },
         {
             "rule": "liquidcheckout\\.com\\/liquid-sdk-8854276d1724590b1ffa39761d1caa88\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -50,7 +118,20 @@
                 "e79757bbc26d0f5df1d0f839b0726afab134fb3e011f763575e057b461cceb9b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_liquid_gift_order": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                },
+                "_liquid_session_id": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jamesonwhiskey.com",
@@ -60,7 +141,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -68,11 +149,12 @@
         }
     ],
     "types": {
-        "Fetch": 2,
+        "Preflight": 4,
+        "Fetch": 5,
         "Script": 2
     },
     "nameservers": [
-        "imani.ns.cloudflare.com",
-        "kyrie.ns.cloudflare.com"
+        "kyrie.ns.cloudflare.com",
+        "imani.ns.cloudflare.com"
     ]
 }

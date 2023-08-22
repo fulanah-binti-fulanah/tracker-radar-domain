@@ -9,15 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000136,
-    "sites": 20,
+    "prevalence": 0.00015,
+    "sites": 22,
     "subdomains": [
         "cdn",
         "c",
         "ad-thd-east",
+        "officedepot",
         "bjs.ms",
-        "newegg.ms",
-        "officedepot"
+        "adorama.ms",
+        "ad-dickssportinggoods-prod"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -31,7 +32,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "7a09cbde79d68050868dcaf98e3e0c12d79aaf8e48d830e3f221417b1a5a9121"
@@ -47,14 +48,14 @@
         },
         {
             "rule": "tagdelivery\\.com\\/c\\.gif",
-            "cookies": 0.0000682,
+            "cookies": 0.000075,
             "fingerprinting": 0,
             "subdomains": [
                 "c"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000682,
+            "sites": 11,
+            "prevalence": 0.000075,
             "cnames": [],
             "responseHashes": [
                 "8f84c4ced509262009163e45994b45ed7ee9d4dbac88674be5f2db5c9e5be38e"
@@ -66,6 +67,7 @@
                 "bws.com.au",
                 "kohls.com",
                 "m.kohls.com",
+                "officedepot.com",
                 "tires.bjs.com",
                 "www.bjs.com",
                 "www.danmurphys.com.au",
@@ -81,9 +83,8 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ad-thd-east",
-                "bjs.ms",
-                "newegg.ms",
-                "officedepot"
+                "officedepot",
+                "bjs.ms"
             ],
             "apis": {},
             "sites": 5,
@@ -97,37 +98,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "homedepot.com",
+                "officedepot.com",
                 "www.bjs.com",
                 "www.homedepot.com",
-                "www.newegg.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "tagdelivery\\.com\\/request",
-            "cookies": 0.0000273,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bjs.ms",
-                "newegg.ms",
-                "officedepot"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [
-                "e51f6b19928673d1862955d36a97ab67ad2d551d6c0e05148ee5eb7614b82e38",
-                "fdfd70c483021b6a8c7956aecb7f66c10d2619df565c55b9dcad84ed865e89f8",
-                "3792ba077a9fc6bd7ec8e27972164b39b4021ec237d40edc4b063e1f8512b60e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bjs.com",
-                "www.bjs.com",
-                "www.newegg.com",
                 "www.officedepot.com"
             ]
         },
@@ -152,46 +125,71 @@
                 "officedepot.com",
                 "www.officedepot.com"
             ]
+        },
+        {
+            "rule": "tagdelivery\\.com\\/request",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "officedepot",
+                "adorama.ms",
+                "bjs.ms",
+                "ad-dickssportinggoods-prod"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "f4c9e8abb016884b0646269f0f8f7c09d0b7462f0618a89ce91719e217b0ee4e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "officedepot.com",
+                "www.adorama.com",
+                "www.bjs.com",
+                "www.dickssportinggoods.com",
+                "www.officedepot.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00013,
+    "cookies": 0.000143,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.44642857142857145
+            "domain": "bing.com",
+            "prevalence": 0.5161290322580645
         },
         {
-            "domain": "bing.com",
-            "prevalence": 0.42857142857142855
+            "domain": "first party",
+            "prevalence": 0.3870967741935484
+        },
+        {
+            "domain": "glassboxcdn.com",
+            "prevalence": 0.04838709677419355
         },
         {
             "domain": "thdstatic.com",
-            "prevalence": 0.03571428571428571
-        },
-        {
-            "domain": "neweggimages.com",
-            "prevalence": 0.03571428571428571
-        },
-        {
-            "domain": "osano.com",
-            "prevalence": 0.03571428571428571
+            "prevalence": 0.03225806451612903
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.017857142857142856
+            "prevalence": 0.016129032258064516
         }
     ],
     "types": {
         "Script": 5,
-        "Image": 15,
-        "XHR": 4
+        "Image": 16,
+        "XHR": 5
     },
     "nameservers": [
-        "ns3-01.azure-dns.org",
         "ns2-01.azure-dns.net",
+        "ns4-01.azure-dns.info",
         "ns1-01.azure-dns.com",
-        "ns4-01.azure-dns.info"
+        "ns3-01.azure-dns.org"
     ]
 }

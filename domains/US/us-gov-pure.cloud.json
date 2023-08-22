@@ -110,11 +110,13 @@
         {
             "rule": "us-gov-pure\\.cloud\\/messenger\\/messenger\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "apps.use2"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -137,7 +139,10 @@
                 "apps.use2"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -161,7 +166,8 @@
                 "apps.use2"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.name": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -248,14 +254,15 @@
         {
             "rule": "us-gov-pure\\.cloud\\/messenger\\/main\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "apps.use2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.platform": 1,
-                "Navigator.prototype.languages": 1
+                "window.outerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,

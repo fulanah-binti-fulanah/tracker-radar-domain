@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000614,
-    "sites": 9,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [
         "chat-cdn.production",
         "chat"
@@ -61,7 +61,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00001364424008404852
+                "_li_dcdm_c": 0.000013633265167007499
             },
             "exampleSites": [
                 "downshiftology.com",
@@ -211,7 +211,10 @@
                 "chat"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.connection": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -235,8 +238,8 @@
                 "chat"
             ],
             "apis": {
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -308,7 +311,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c108d600247e9cf71e3c614f32006a13bc87aeafa2be165ce664c3cdfdbd9c9f"
+                "19d7ef660846a37cac6ebf55c5065113d63d4f6493ce33e306c1a2b1bcbc83b8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -335,8 +338,30 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00001364424008404852
+                "_li_dcdm_c": 0.000013633265167007499
             },
+            "exampleSites": [
+                "averiecooks.com",
+                "www.averiecooks.com"
+            ]
+        },
+        {
+            "rule": "raptive\\.ai\\/_next\\/static\\/media\\/2aaf0723e720e8b9-s\\.p\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cd21d27925814226c156b75d99b697f742388affc6db6e98ae2e1c21e3d3fd08"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "averiecooks.com",
                 "www.averiecooks.com"
@@ -356,12 +381,13 @@
         "Script": 21,
         "Fetch": 7,
         "Stylesheet": 4,
-        "Document": 2
+        "Document": 2,
+        "Font": 2
     },
     "nameservers": [
-        "ns-1612.awsdns-09.co.uk",
-        "ns-831.awsdns-39.net",
         "ns-198.awsdns-24.com",
-        "ns-1138.awsdns-14.org"
+        "ns-831.awsdns-39.net",
+        "ns-1138.awsdns-14.org",
+        "ns-1612.awsdns-09.co.uk"
     ]
 }

@@ -9,12 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [],
     "cnames": [
         {
             "original": "app.bluegolf.com",
+            "resolved": "prd-web-alb-star-971042528.us-east-1.elb.amazonaws.com"
+        },
+        {
+            "original": "course.bluegolf.com",
             "resolved": "prd-web-alb-star-971042528.us-east-1.elb.amazonaws.com"
         }
     ],
@@ -22,12 +26,12 @@
     "resources": [
         {
             "rule": "prd-web-alb-star-971042528\\.us-east-1\\.elb\\.amazonaws\\.com\\/util\\/api\\/fav\\.json",
-            "cookies": 0.0000205,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "app.bluegolf.com",
@@ -35,14 +39,38 @@
                 }
             ],
             "responseHashes": [
-                "e70bc9d4218a98b304632b7c88c5a1d602ab574133ec7da5f7b6ae81e2c76e94"
+                "e70242321d007fd75e9d6f1dce42b0b17c8cdeafd3337914800a355a3d924b74"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bluegolf.com",
-                "course.bluegolf.com",
+                "course.bluegolf.com"
+            ]
+        },
+        {
+            "rule": "prd-web-alb-star-971042528\\.us-east-1\\.elb\\.amazonaws\\.com\\/js\\/i18n\\/en\\.js",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "course.bluegolf.com",
+                    "resolved": "prd-web-alb-star-971042528.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e1739338983d1ffb3c831b7ccf9e5eff21bf4e86130c18bc6f1f7ff6ac91b168"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluegolf.com",
                 "www.bluegolf.com"
             ]
         }
@@ -51,9 +79,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000205,
+    "cookies": 0.0000136,
     "types": {
-        "Fetch": 3
+        "Fetch": 2,
+        "Script": 2
     },
     "nameservers": []
 }

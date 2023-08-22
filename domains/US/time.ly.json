@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000614,
+    "prevalence": 0.0000613,
     "sites": 9,
     "subdomains": [
         "appcd",
         "calendar",
-        "timelyapp"
+        "timelyapp",
+        "timelyapp-static"
     ],
     "cnames": [
         {
@@ -673,8 +674,8 @@
             "apis": {
                 "Date.prototype.getTime": 5,
                 "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 5
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
+                "window.localStorage": 4
             },
             "sites": 6,
             "prevalence": 0.0000409,
@@ -685,7 +686,7 @@
                 }
             ],
             "responseHashes": [
-                "527c3a23f2567750451e8e10cc29ec65f695782e2981ccdd5112ba0d80039a8f"
+                "d28adc06c02430aff268736660edb150261b59f66e1972df97025a1de44287de"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -771,7 +772,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "bdf3650198c1fe73cf1f2b2622bdb8118a242d422c520d80b5b757fb8411798c"
@@ -817,7 +818,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9ff6ab158b229fc4bb1741d6d0a498207543c769f8151e6da4d63d94dd20481e"
+                "303c5ac924d5e9902a3009014df63314a075316c8ab90a8564439c40058ee3d1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -825,6 +826,28 @@
             "exampleSites": [
                 "boerne.tx.us",
                 "www.ci.boerne.tx.us"
+            ]
+        },
+        {
+            "rule": "time\\.ly\\/images\\/54703905\\/CCFR_3c%20%281%29_s8jY_medium\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "timelyapp-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc6ceb4f86302f912c9a406dcf8eef7f0e736d802675a86b22ef38169b45c255"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "historycolorado.org",
+                "www.historycolorado.org"
             ]
         },
         {
@@ -839,7 +862,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9195cd3d5e9faf9ff2fe29a6060d14005fb5bb3ca19e54512ec8f08ab7166bc9"
+                "4de04c73351e8b33c0ef8cf9955f503653cb7bb60bff6ee57a0ef9059c1db572"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -881,7 +904,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2973cc91a20713ee5cf137111bf1282f699dbd9ef5abd48c6d5e692c32634bb6"
+                "3e597976e66c8695076cf70aada7bf80a624b42af7aff4d42622e1a3523d014b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -911,12 +934,13 @@
         "Font": 8,
         "Preflight": 4,
         "XHR": 4,
+        "Image": 2,
         "Document": 2
     },
     "nameservers": [
-        "ns-261.awsdns-32.com",
         "ns-1820.awsdns-35.co.uk",
-        "ns-892.awsdns-47.net",
-        "ns-1252.awsdns-28.org"
+        "ns-261.awsdns-32.com",
+        "ns-1252.awsdns-28.org",
+        "ns-892.awsdns-47.net"
     ]
 }

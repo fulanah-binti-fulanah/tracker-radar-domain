@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000259,
-    "sites": 38,
+    "prevalence": 0.000252,
+    "sites": 37,
     "subdomains": [
         "accor-group-prod-prod",
         "cisco-dsc-prod",
@@ -19,6 +19,7 @@
         "costco-prd",
         "mns-00.dn",
         "pearson-prod",
+        "toolstation-prod",
         "fandom-prod",
         "zoro-prod"
     ],
@@ -50,6 +51,10 @@
         {
             "original": "dsc.cisco.com",
             "resolved": "cisco-dsc-prod.apigee.net"
+        },
+        {
+            "original": "ecom-api.toolstation.com",
+            "resolved": "toolstation-prod.apigee.net"
         },
         {
             "original": "login.pearson.com",
@@ -112,23 +117,21 @@
         },
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "accor-group-prod-prod"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.accor.com",
                     "resolved": "accor-group-prod-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "5fe8ca427580bc5ef40231500d899efa5dde05c8a5f7997cc73f8e9e4ce3e021"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -136,6 +139,31 @@
                 "accor.com",
                 "all.accor.com",
                 "ibis.accor.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
             ]
         },
         {
@@ -166,31 +194,6 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/countries",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "accor-group-prod-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.accor.com",
-                    "resolved": "accor-group-prod-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "accor.com",
-                "all.accor.com"
-            ]
-        },
-        {
             "rule": "apigee\\.net\\/referentials\\/v1",
             "cookies": 0,
             "fingerprinting": 0,
@@ -207,7 +210,7 @@
                 }
             ],
             "responseHashes": [
-                "5789d01bcd78214d25f067f56c661f33c6ce77350c3e81b5de3f6b17cc87c541"
+                "97edfdc289d88eff30d7b2547d08a3f6281fcdb7c87482ceed930eb0670805f7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -234,9 +237,9 @@
                 }
             ],
             "responseHashes": [
-                "13a896fbf969e49032df61ed12234bbc2251f5e2baccf02823966191c70d19f1",
-                "703026bc2d81d3ac511c604f682159f6c145d49a3010404da0770bb40be76274",
-                "a9f9587d5e2c01a09491ae00cbe7c81c373d7d478938671a14d2a0b15094d3b2"
+                "ac2e4471e1b472169c6645c5f3a2cc3c988770dc1066ebcf4917464edddbd93d",
+                "69bcf21bdc770f92603c4b9f57a29a648aad3fd804b32429b073f357e4d78d7e",
+                "2c7e54c8e1de16183087072ec8cd1d859e8469085e83e1473b0c06f686af76b6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -290,8 +293,7 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "ba4b1272d05930ed40e78801d8ea0e42b6d92c913315b2c5ad238e594cd75a37"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -340,7 +342,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.costco.com",
@@ -366,14 +368,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.costco.com",
                     "resolved": "costco-prd.apigee.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "245ed5501b8db6a40150fb7c72067874d75abcad0595875f832f5fc2f5cbb5fb"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -392,7 +396,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.costco.com",
@@ -400,7 +404,8 @@
                 }
             ],
             "responseHashes": [
-                "656ba585cd3dd02012f33677ef9b6b293fda04bb82961d411a8d87c1908ce6fe"
+                "026862892c1ee927c52a448db32f62bc7823a1afe3b46df116c29618d90ff0b4",
+                "0a170eda79e93cc9b5c91cb40ca228e86d56fb7f525b4b5f6059505cac8bad4d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -572,6 +577,58 @@
             ]
         },
         {
+            "rule": "apigee\\.net\\/ecom\\/v1\\/stock\\/getStock",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toolstation-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ecom-api.toolstation.com",
+                    "resolved": "toolstation-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "e0642f732fd6e83dcdefe54ccdff966cdb69e68ca3b134154465ff2c0e29606e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toolstation.com",
+                "www.toolstation.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/ecom\\/v1\\/stock\\/getStock",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toolstation-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ecom-api.toolstation.com",
+                    "resolved": "toolstation-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toolstation.com",
+                "www.toolstation.com"
+            ]
+        },
+        {
             "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
             "cookies": 0,
             "fingerprinting": 0,
@@ -583,7 +640,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "247c86f3fbab0bd1224a9b3670bc629843026f45524ffa851383ee775935ddfc"
+                "73295fcd2b72b545a0d2accced27047632588fbf62d687ae06197ed49cc0768e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -605,7 +662,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "173516d446e24fc6a75bf759ccf0100c7687cbecb8f2f68f76a646c969959918"
+                "879a8a366259538de38f2269d83e6b03e2f4f6e7d2c54deb1e8cc1a1468468cc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -728,34 +785,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5813953488372093
+            "prevalence": 0.6097560975609756
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.20930232558139536
+            "prevalence": 0.1951219512195122
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.09302325581395349
+            "prevalence": 0.0975609756097561
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.046511627906976744
+            "prevalence": 0.04878048780487805
         },
         {
             "domain": "mparticle.com",
-            "prevalence": 0.046511627906976744
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.023255813953488372
+            "prevalence": 0.04878048780487805
         }
     ],
     "types": {
-        "Preflight": 13,
+        "Preflight": 15,
         "Fetch": 4,
         "Document": 12,
-        "XHR": 20,
+        "XHR": 22,
         "Script": 10
     },
     "nameservers": [

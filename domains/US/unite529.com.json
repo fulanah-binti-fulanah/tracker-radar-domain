@@ -45,7 +45,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "0bbc4fca5983113df27701f84f9eaf2e85dd597fae1d002b7d7dc962f0b1822a"
@@ -68,7 +68,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ba3fe63eac33e099b1600d123a80bc075696219926d63f6adc4b9401aad71ca9"
@@ -288,9 +288,9 @@
                 "cdn"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -300,6 +300,39 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nysaves.org",
+                "www.nysaves.org"
+            ]
+        },
+        {
+            "rule": "unite529\\.com\\/jcdn\\/generated-resources\\/bd1ffa6a693fdb9ca13f898deedf62\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1eefadb4671e8ea7639443b03742dfb1008c508c1b881c0e10c1b797bb35dc2b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "wem-profile-id": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nysaves.org",
@@ -417,8 +450,30 @@
             ]
         },
         {
+            "rule": "unite529\\.com\\/jcdn\\/files\\/NYD\\/images\\/VG_NY529_JUNE_2023_Q2_D-Spot_FNL_2934846\\.png",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6afde91d7982cf5566f02049b27e2dc767d36e8cc28c83e8df8b98bb443d3b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nysaves.org",
+                "www.nysaves.org"
+            ]
+        },
+        {
             "rule": "unite529\\.com\\/jcdn\\/files\\/NYD\\/images\\/logo_vanguard_001_2x\\.png",
-            "cookies": 0.00000682,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
@@ -715,8 +770,8 @@
     "types": {
         "Stylesheet": 25,
         "Font": 9,
-        "Script": 2,
-        "Image": 30
+        "Script": 4,
+        "Image": 32
     },
     "nameservers": [
         "dns2.acs529.com",

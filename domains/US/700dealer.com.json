@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "700dealer\\.com\\/QuickQualify\\/3eb4da7e19c746c4bbac1ca25d1fe757-2022929",
@@ -21,13 +21,15 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2b17e8fea902c76b55b6d145600e5195b208514cdea01b09304595400b9559d3"
+                "db0647b6f19b4bce58d34e3dbbc04aa4de0dba19f4a92e4f5acbf813d1a02dbc"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -62,11 +64,16 @@
         {
             "rule": "700dealer\\.com\\/Scripts\\/modernizr-2\\.6\\.2\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -155,8 +162,8 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 1
+                "window.name": 1,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,

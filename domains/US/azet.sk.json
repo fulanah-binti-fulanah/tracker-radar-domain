@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
+    "prevalence": 0.0000477,
     "sites": 7,
     "subdomains": [
         "tracker",
         "azetbutton"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "azet\\.sk\\/redirect",
@@ -42,11 +42,13 @@
         {
             "rule": "azet\\.sk\\/livemonitor\\/iframeTracker\\.html",
             "cookies": 0.0000409,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tracker"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 1
+            },
             "sites": 6,
             "prevalence": 0.0000409,
             "cnames": [],
@@ -103,9 +105,7 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "redirectUri": 0.00000682212004202426
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aktuality.sk",
                 "www.aktuality.sk"
@@ -114,7 +114,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000478,
+    "cookies": 0.0000477,
     "topInitiators": [
         {
             "domain": "aimg.sk",
@@ -132,7 +132,7 @@
     },
     "nameservers": [
         "ns.rintech.net",
-        "ns.rintech.sk",
-        "ns.rintech.eu"
+        "ns.rintech.eu",
+        "ns.rintech.sk"
     ]
 }

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000478,
-    "sites": 7,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [
         "files",
         "player",
@@ -44,11 +44,11 @@
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [
                 {
                     "original": "interaktiv.alt.dk",
@@ -65,6 +65,9 @@
                 "kaksplus.fi",
                 "viivilla.se",
                 "www.alt.dk",
+                "www.charlieintel.com",
+                "www.dexerto.com",
+                "www.dexerto.es",
                 "www.haarlemsdagblad.nl"
             ]
         },
@@ -172,7 +175,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5474ee8921895995993d2e2360f6fb9ade26aab74d749c68823e23b6ae562808"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -258,7 +263,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a96fd259f81e8e68ddac5f2eed6572b576c87e9d9a110ad24a858787f780cbb7"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -290,11 +297,13 @@
         {
             "rule": "qualifio\\.com\\/kit\\/elastic-apm-opentracing\\.umd\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "files"
             ],
-            "apis": {},
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -316,7 +325,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "participacion.diariodemallorca.es",
@@ -451,6 +460,77 @@
                 "haarlemsdagblad.nl",
                 "www.haarlemsdagblad.nl"
             ]
+        },
+        {
+            "rule": "qualifio\\.com\\/charts\\/static\\/js\\/manifest\\.c094a3234bf7c4edec2a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1f0346c09620530089aa147ca94257d1d5f98f763f3b5483c8caaa0eeac54c85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haarlemsdagblad.nl",
+                "www.haarlemsdagblad.nl"
+            ]
+        },
+        {
+            "rule": "qualifio\\.com\\/charts\\/static\\/css\\/app\\.9f22b6855ac29ccb3ec48b2674d00c7d\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cfd9576d7b921e95bbc98217c0d862d5faa0f6cb8cfd80d6e17905613bb241a6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haarlemsdagblad.nl",
+                "www.haarlemsdagblad.nl"
+            ]
+        },
+        {
+            "rule": "qualifio\\.com\\/charts\\/static\\/js\\/vendor\\.492c8dbc8cd63420e2d8\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51e9cfb296965f608e4c029e356b79cd3d1a722ad50561637b70199b33d2b8f9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haarlemsdagblad.nl",
+                "www.haarlemsdagblad.nl"
+            ]
         }
     ],
     "categories": [],
@@ -459,26 +539,30 @@
     "topInitiators": [
         {
             "domain": "hollandmediacombinatie.qualifioapp.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5957446808510638
         },
         {
             "domain": "viivilla.qualifioapp.com",
-            "prevalence": 0.30952380952380953
+            "prevalence": 0.2765957446808511
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.10638297872340426
         },
         {
             "domain": "first party",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.02127659574468085
         }
     ],
     "types": {
-        "Script": 23,
-        "Stylesheet": 10,
+        "Script": 30,
+        "Stylesheet": 12,
         "Font": 4,
         "XHR": 2
     },
     "nameservers": [
-        "ns-97-c.gandi.net",
         "ns-226-a.gandi.net",
-        "ns-32-b.gandi.net"
+        "ns-32-b.gandi.net",
+        "ns-97-c.gandi.net"
     ]
 }

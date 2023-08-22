@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000682,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "wbs",
         "futures"
@@ -32,8 +32,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wbs",
-                "futures"
+                "wbs"
             ],
             "apis": {},
             "sites": 2,
@@ -42,14 +41,114 @@
                 {
                     "original": "wbs.mexc.com",
                     "resolved": "wbs.mexc.com.edgesuite.net"
-                },
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mexc.com",
+                "www.mexc.com"
+            ]
+        },
+        {
+            "rule": "mexc\\.com\\.edgesuite\\.net\\/api\\/v1\\/contract\\/detail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "futures"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
                 {
                     "original": "futures.mexc.com",
                     "resolved": "futures.mexc.com.edgesuite.net"
                 }
             ],
             "responseHashes": [],
-            "type": "WebSocket",
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mexc.com",
+                "www.mexc.com"
+            ]
+        },
+        {
+            "rule": "mexc\\.com\\.edgesuite\\.net\\/api\\/v1\\/contract\\/detail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "futures"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "futures.mexc.com",
+                    "resolved": "futures.mexc.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "31c8828f240841c45d558e9f6242a8d7661e3d12f66239f0365104d4d23730d9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mexc.com",
+                "www.mexc.com"
+            ]
+        },
+        {
+            "rule": "mexc\\.com\\.edgesuite\\.net\\/api\\/v1\\/contract\\/ticker",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "futures"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "futures.mexc.com",
+                    "resolved": "futures.mexc.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "bd6fea02f4faed99f9462d5375c4baba29b6d933e6bd19c3151c6aa04e6aaed0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mexc.com",
+                "www.mexc.com"
+            ]
+        },
+        {
+            "rule": "mexc\\.com\\.edgesuite\\.net\\/api\\/v1\\/contract\\/ticker",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "futures"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "futures.mexc.com",
+                    "resolved": "futures.mexc.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -70,7 +169,9 @@
         }
     ],
     "types": {
-        "WebSocket": 2
+        "WebSocket": 2,
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": []
 }

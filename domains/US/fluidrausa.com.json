@@ -10,7 +10,7 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "fluidrausa\\.com\\/shared\\/css\\/bootstrap-theme\\.min\\.css",
@@ -191,12 +191,18 @@
         {
             "rule": "fluidrausa\\.com\\/siteglobaltheming\\/dist\\/universal\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.innerHeight": 2
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.platform": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -215,11 +221,13 @@
         {
             "rule": "fluidrausa\\.com\\/siteglobaltheming\\/dist\\/fontawesome\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -237,11 +245,13 @@
         {
             "rule": "fluidrausa\\.com\\/siteglobalsearch\\/sharedcomponents\\/dist\\/search-workspace\\/polyfills\\.7aaaf0b62e7c33e90ecd\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -264,7 +274,8 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -363,8 +374,8 @@
         "Media": 2
     },
     "nameservers": [
-        "ns1.a2.impervasecuredns.net",
+        "ns1.a1.impervasecuredns.net",
         "ns1.a0.impervasecuredns.net",
-        "ns1.a1.impervasecuredns.net"
+        "ns1.a2.impervasecuredns.net"
     ]
 }

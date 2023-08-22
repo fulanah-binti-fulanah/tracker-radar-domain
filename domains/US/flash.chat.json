@@ -4,16 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "widget",
         "s",
+        "widget",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "flash\\.chat\\/api\\/2\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f5f977dcba700a365da3578f451e72be87baa3a352bea9a277b25ab61314611"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tsescorts.com",
+                "m.tsescorts.com"
+            ]
+        },
         {
             "rule": "flash\\.chat\\/flash-chat-widget\\.js",
             "cookies": 0.0000136,
@@ -22,7 +44,7 @@
                 "widget"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
                 "window.localStorage": 2,
@@ -39,9 +61,9 @@
                 "Navigator.prototype.languages": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.deviceMemory": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
                 "window.sessionStorage": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.plugins": 2,
@@ -62,9 +84,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1692176074,
+                    "ttl": -1692523997,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 0.5
                 }
             },
@@ -171,16 +193,16 @@
         }
     ],
     "types": {
+        "Fetch": 4,
         "Script": 2,
-        "Fetch": 2,
         "Media": 2,
         "XHR": 2,
         "Preflight": 2
     },
     "nameservers": [
-        "ns34.cloudns.net",
-        "ns33.cloudns.net",
+        "ns31.cloudns.net",
         "ns32.cloudns.net",
-        "ns31.cloudns.net"
+        "ns33.cloudns.net",
+        "ns34.cloudns.net"
     ]
 }

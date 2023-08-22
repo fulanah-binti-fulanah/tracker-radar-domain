@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000109,
-    "sites": 16,
+    "prevalence": 0.000123,
+    "sites": 18,
     "subdomains": [
         "s.d",
         "d",
@@ -15,6 +15,28 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "adup-tech\\.com\\/ads\\/display\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d0c79b59764cf0b13445b383da7fc82c5809a3c2e2378d5237b62f67a2071017"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "city-tourist.de",
+                "www.50plus.de"
+            ]
+        },
+        {
             "rule": "adup-tech\\.com\\/jsapi",
             "cookies": 0,
             "fingerprinting": 1,
@@ -22,11 +44,12 @@
                 "s.d"
             ],
             "apis": {
-                "window.innerHeight": 4,
-                "window.innerWidth": 3
+                "Document.cookie getter": 2,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "8a7d16937038d7ae961ab9c458e61f86d6d5e1f8ad2327a062dd1ec99c135dcc"
@@ -36,7 +59,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "city-tourist.de",
+                "www.50plus.de",
                 "www.businessinsider.de",
+                "www.petitfute.com",
                 "www.reise-klima.de",
                 "www.reiseuhu.de",
                 "www.urlaubsguru.de"
@@ -54,14 +79,15 @@
             "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "b16471b517b23fff5ba449b853e8cae0309d808afbb79c83cff46b47a80fca3a",
-                "8a685e69705d7bc0d6aaf82eb5c333ddee86011a072563daea90ff4ecadfa032",
-                "ce6e307a82ecdc4ac03d42d85eefe2e683f4706cc6c508644fddb9f931ebb084"
+                "989a16e6196f8a9ae4300c3d2cdaf9125e19966338035547ee43d2ef142a1493",
+                "d98a9cae77ba8d309ea605cbb07f725460238e4c0f8e9258d8664f90298b9e24",
+                "a96cca652537c2f9e6ec36cb8bc1bde4a35afb8adc1e963472dcbc65bc822df8"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__cmpconsentx25108": 0.00000682212004202426
+                "__cmpconsentx25108": 0.000006816632583503749,
+                "__pid": 0.000006816632583503749
             },
             "exampleSites": [
                 "city-tourist.de",
@@ -71,8 +97,34 @@
             ]
         },
         {
+            "rule": "adup-tech\\.com\\/iframe",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4e98af56505c2b915ea5fbffd4531e11470fa7a14aec013b0f293df668632d7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__cmpconsentx25108": 0.000006816632583503749,
+                "__cmpconsent10444": 0.000006816632583503749,
+                "lotame_domain_check": 0.000013633265167007499
+            },
+            "exampleSites": [
+                "city-tourist.de",
+                "www.50plus.de"
+            ]
+        },
+        {
             "rule": "adup-tech\\.com\\/prebid\\/mediaimpact_bid",
-            "cookies": 0.0000205,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "rtb.d"
@@ -92,6 +144,34 @@
                 "www.businessinsider.de",
                 "www.finanzen.net",
                 "www.sport1.de"
+            ]
+        },
+        {
+            "rule": "adup-tech\\.com\\/t\\/uid",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "bf05a9bc3a37382ed65be29a674184dc67bb14c2ebdd2d26a0b3a8d4434cceac",
+                "12984a334bdcb1d063e0f0352f095a06f8869ceecb9c6866219582ffb42fb0c6",
+                "300d2a14c8c468fe75efeb6c37df697074ebb3d627243fdb970eb7bb8cf37440",
+                "8fb025c3402abebf8006aa0b279a1d78244f80cf6e6383f248dae482352cd480"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "50plus.de",
+                "www.businessinsider.de",
+                "www.condor.com",
+                "www.reiseuhu.de",
+                "www.travelzoo.com"
             ]
         },
         {
@@ -167,32 +247,6 @@
             ]
         },
         {
-            "rule": "adup-tech\\.com\\/t\\/uid",
-            "cookies": 0.0000273,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
-            "cnames": [],
-            "responseHashes": [
-                "55a187393deb10a0d685ca365c90ce468a59218896b180fef4cb7c3d3a817328",
-                "f22f4a23de5302919bc20b75e48fd1e1e3683f67d4131cdc003c273f632dd032",
-                "fde53ceba848f654e08fcea9dac476cbf1aa25f4d000e2e6aa5947a45c51fd29"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "condor.com",
-                "www.condor.com",
-                "www.reiseuhu.de",
-                "www.travelzoo.com"
-            ]
-        },
-        {
             "rule": "adup-tech\\.com\\/services\\/retargeting\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -219,59 +273,59 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000614,
+    "cookies": 0.0000682,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.2894736842105263
+            "prevalence": 0.3488372093023256
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.21052631578947367
-        },
-        {
-            "domain": "asadcdn.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.18604651162790697
         },
         {
             "domain": "usercentrics.eu",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.09302325581395349
         },
         {
             "domain": "consentmanager.net",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.06976744186046512
+        },
+        {
+            "domain": "asadcdn.com",
+            "prevalence": 0.06976744186046512
         },
         {
             "domain": "conative.network",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.046511627906976744
         },
         {
             "domain": "d1x3cbuht6sy0f.cloudfront.net",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.046511627906976744
         },
         {
             "domain": "un-iq.de",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.046511627906976744
         },
         {
             "domain": "blogcluster.nl",
-            "prevalence": 0.02631578947368421
+            "prevalence": 0.023255813953488372
         },
         {
-            "domain": "cookiebot.com",
-            "prevalence": 0.02631578947368421
+            "domain": "googlesyndication.com",
+            "prevalence": 0.023255813953488372
         }
     ],
     "types": {
-        "Script": 15,
-        "Document": 4,
+        "Script": 20,
+        "Document": 6,
         "XHR": 6,
         "Image": 2
     },
     "nameservers": [
         "ns-173.awsdns-21.com",
-        "ns-702.awsdns-23.net",
+        "ns-1134.awsdns-13.org",
         "ns-1932.awsdns-49.co.uk",
-        "ns-1134.awsdns-13.org"
+        "ns-702.awsdns-23.net"
     ]
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000682,
-    "sites": 10,
+    "prevalence": 0.000075,
+    "sites": 11,
     "subdomains": [
         "ads",
         "helloworld"
@@ -16,11 +16,63 @@
         {
             "rule": "holid\\.io\\/prebid_stored\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9a9433cc32ad2835220f5006f568c63e41b4d4782480426789aa2a9630711f4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podtail.com",
+                "synonymerna.se",
+                "www.kokaihop.se"
+            ]
+        },
+        {
+            "rule": "holid\\.io\\/openrtb2\\/auction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "helloworld"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "52424b5c2ff1265d78e9e2299e72dd971557e0b361a61489208d56adadcca282",
+                "1a8711e7a8bf9d53769ef278977f97e8f099fc98cedcfbb23a9e7b9e4286e05a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobil.se",
+                "www.mobil.se",
+                "www.vibilagare.se"
+            ]
+        },
+        {
+            "rule": "holid\\.io\\/prebid8\\.5\\.0\\.1\\.js",
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "ads"
             ],
             "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 1,
@@ -39,64 +91,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9a9433cc32ad2835220f5006f568c63e41b4d4782480426789aa2a9630711f4e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "podtail.com",
-                "www.vibilagare.se"
-            ]
-        },
-        {
-            "rule": "holid\\.io\\/prebid8\\.5\\.0\\.1\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ads"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "NavigatorUAData.prototype.brands": 1,
-                "NavigatorUAData.prototype.platform": 1,
-                "window.sessionStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
                 "b1e79529cab34e8a3c245f8bbd1b767c5ba3e54dd8a342e6b255c1c2df79b6ca"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kokaihop.se",
-                "www.tradera.com"
-            ]
-        },
-        {
-            "rule": "holid\\.io\\/openrtb2\\/auction",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "helloworld"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "7caa628838e2ff6428f0f6b15cee1d94e86e13c2ff0ec8990b8febbe0819fa0a",
-                "9502a166a18e8077d1f64a6b18f8bc442ffd0f5cca2272ecda281c3136d63117"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mobil.se",
-                "www.mobil.se",
+                "tradera.com",
                 "www.vibilagare.se"
             ]
         }
@@ -107,23 +108,23 @@
     "topInitiators": [
         {
             "domain": "adnuntius.com",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.5454545454545454
         },
         {
             "domain": "first party",
-            "prevalence": 0.38095238095238093
+            "prevalence": 0.4090909090909091
         },
         {
             "domain": "tradera.net",
-            "prevalence": 0.047619047619047616
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 5,
         "XHR": 3
     },
     "nameservers": [
-        "sam.ns.cloudflare.com",
-        "betty.ns.cloudflare.com"
+        "betty.ns.cloudflare.com",
+        "sam.ns.cloudflare.com"
     ]
 }

@@ -12,13 +12,14 @@
     "subdomains": [
         "content",
         "www",
+        "videoplayer",
         "im",
         "ssl.1.damoh",
         "cmp",
         "media-video"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "chip\\.de\\/cac\\/styles\\.css",
@@ -29,7 +30,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "abe4d4e2a6ecc0cef2f69ce363563bf671b1cacec486ff74ea7b019462d99af4"
@@ -132,6 +133,33 @@
             ]
         },
         {
+            "rule": "chip\\.de\\/p\\/player\\/latest\\/tfa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "videoplayer"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.orientation": 2,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20f7721611b91a9e39614daaa75d8a533c300f2b125c6d326d2d6aec2bdbc69f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "ratgeber.bunte.de"
+            ]
+        },
+        {
             "rule": "chip\\.de\\/cac\\/adconfig\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -140,7 +168,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "3f8a508204785bcceadf842a3a5517f890d3a8656fbef966ad7042c25fcf5700"
@@ -163,7 +191,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6d2edd27ba89a15a55ceea6d1ee53c22679b94c058e62ce78012fad373db3e74"
@@ -186,7 +214,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "a2686af723685dff67062a12f5b8c4712d8e83fd9724223bb6a76bad73a32ccd"
@@ -209,7 +237,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "5b66cbf019f1638dbb8ccc84945b48bdf7d5d89fd93e680efe860b2c451dcb21"
@@ -224,7 +252,7 @@
             ]
         },
         {
-            "rule": "chip\\.de\\/praxistipps\\/3055280460_9419341006\\.png",
+            "rule": "chip\\.de\\/praxistipps\\/3055572122_4ecdd3d8a4\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -232,7 +260,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "9d2510c56eeeda01cf74538af9d2d79f28a33a7c76bfd5d3edaa8e5da245ace8"
@@ -295,13 +323,13 @@
                 "_sp_su": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 },
                 "consentUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00000682212004202426,
+                    "prevalence": 0.000006816632583503749,
                     "uniqueness": 1
                 }
             },
@@ -356,7 +384,7 @@
             ]
         },
         {
-            "rule": "chip\\.de\\/f6876ff40f5a74303c2b874c26eeb219bb08a0e6\\/6e73db55122d26a73c0e81b99757624aff23bced\\/POSTER_USER\\/v0\\/cz_red_Curt_Clean%20Eating-%20So%20funktioniert%20der%20gesunde%20Erna%CC%88hrungstrend_thumbnail\\.jpg",
+            "rule": "chip\\.de\\/f6876ff40f5a74303c2b874c26eeb219bb08a0e6\\/445ad1889d32b615b4e1504e3d76b72a2895acf2\\/POSTER_USER\\/v0\\/1603431913019-0_s7m8yg1b\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -367,7 +395,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8ac96bd1a42f280c9d2504eff736e9441b6241487fed63f40d8ac9e242beba13"
+                "b47388656b6d6a1572702dc6b4873ebb169fbaed06c10e04c56c7371b42f553e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -398,16 +426,16 @@
     "types": {
         "Stylesheet": 3,
         "Font": 11,
-        "Script": 15,
+        "Script": 17,
         "Image": 5,
         "XHR": 2
     },
     "nameservers": [
         "a2-64.akam.net",
-        "a7-67.akam.net",
-        "a5-66.akam.net",
+        "a16-67.akam.net",
         "a28-65.akam.net",
+        "a5-66.akam.net",
         "a1-118.akam.net",
-        "a16-67.akam.net"
+        "a7-67.akam.net"
     ]
 }

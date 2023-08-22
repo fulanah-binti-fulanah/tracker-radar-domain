@@ -47,10 +47,11 @@
                 "cdn-embed"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.mimeTypes": 1,
-                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.vendor": 2,
                 "Event.prototype.timeStamp": 2,
+                "HTMLMediaElement.prototype.canPlayType": 1,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
@@ -97,11 +98,13 @@
                 "cdn-embed"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.product": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -281,7 +284,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "51ef1846abb2e1fd08d80ac79b265e621593eae4b0810af2fdf300ef9ba5e098"
+                "4429cb17f2265a0209b03f84d5c22811aa1ee473a930065496ab1c603ee07712"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -298,14 +301,10 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.8
         },
         {
             "domain": "adswizz.com",
-            "prevalence": 0.2
-        },
-        {
-            "domain": "jsdelivr.net",
             "prevalence": 0.2
         }
     ],
@@ -317,9 +316,9 @@
         "XHR": 4
     },
     "nameservers": [
-        "ns-1650.awsdns-14.co.uk",
-        "ns-1252.awsdns-28.org",
         "ns-462.awsdns-57.com",
-        "ns-839.awsdns-40.net"
+        "ns-839.awsdns-40.net",
+        "ns-1650.awsdns-14.co.uk",
+        "ns-1252.awsdns-28.org"
     ]
 }

@@ -7,14 +7,59 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
+        "www",
         "st",
-        "www.mapper",
-        "7e1e52ae3a3a579ee.mapper",
-        "4e0e03ef235190522.mapper"
+        "www.mapper"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ntppool\\.org\\/static\\/\\.g\\/common\\.v7aca7f1d18\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a649002847a98f1cea39dbc307da51638826142bbb01a797d5fb3996f58ccc6e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntp.org",
+                "www.pool.ntp.org"
+            ]
+        },
+        {
+            "rule": "ntppool\\.org\\/static\\/\\.g\\/common\\.vf368152a6e\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a28f1607ac677d5f17a636f4b24944296325ab6482d59b6d56972bf7374f30db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntp.org",
+                "www.pool.ntp.org"
+            ]
+        },
         {
             "rule": "ntppool\\.org\\/js\\/script\\.js",
             "cookies": 0,
@@ -30,6 +75,28 @@
                 "021f0fd27042b279a49e982215c6dc3c3ab84e95b35553a119dfdbd50af6be94"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntp.org",
+                "www.pool.ntp.org"
+            ]
+        },
+        {
+            "rule": "ntppool\\.org\\/static\\/images\\/logo-2019@x2\\.v1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1baf0306f670e139c74cbbaffedf109cbb88fb2e356def535af70baa2d0d957e"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -80,51 +147,23 @@
                 "ntp.org",
                 "www.pool.ntp.org"
             ]
-        },
-        {
-            "rule": "ntppool\\.org\\/none",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "7e1e52ae3a3a579ee.mapper",
-                "4e0e03ef235190522.mapper"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ntp.org",
-                "www.pool.ntp.org"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
-    "topInitiators": [
-        {
-            "domain": "first party",
-            "prevalence": 1
-        }
-    ],
     "types": {
-        "Script": 4,
-        "XHR": 2,
-        "Image": 2
+        "Stylesheet": 2,
+        "Script": 6,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns2.us.bitnames.com",
-        "ns1.eu.bitnames.com",
-        "ns3.us.bitnames.com",
         "anyns.pch.net",
-        "ns1.us.bitnames.com",
-        "ns-g1.bitnames.com"
+        "ns-g1.bitnames.com",
+        "ns3.us.bitnames.com",
+        "ns1.eu.bitnames.com",
+        "ns1.us.bitnames.com"
     ]
 }

@@ -7,45 +7,48 @@
     "prevalence": 0.00000682,
     "sites": 1,
     "subdomains": [
-        "bot"
+        "assets.app"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "futr\\.ai\\/webchat\\/v1\\/t1fj2rE75LiL4SZea7soQy\\/189fd5d33f737b-05a687750f875c-1f3e6757-75300-189fd5d33f8ad7\\/en",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "futr\\.ai\\/webchat\\/futrwebchat\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
-                "bot"
+                "assets.app"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.vendor": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "denbypottery.com",
-                "www.denbypottery.com"
-            ]
-        },
-        {
-            "rule": "futr\\.ai\\/webchat\\/v1\\/languages",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bot"
+            "responseHashes": [
+                "dacd958c949e75d7cb7aa592076b0d5419bfd5979dda00ea4dc44fe3929230d2"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "mp_243bf68294619681130eced850c46148_mixpanel": {
+                    "ttl": 31536028,
+                    "length": 475,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "denbypottery.com",
@@ -59,20 +62,20 @@
     "topInitiators": [
         {
             "domain": "contentsquare.net",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.6
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 4
+        "Script": 2
     },
     "nameservers": [
-        "ns1.bdm.microsoftonline.com",
         "ns2.bdm.microsoftonline.com",
         "ns4.bdm.microsoftonline.com",
-        "ns3.bdm.microsoftonline.com"
+        "ns3.bdm.microsoftonline.com",
+        "ns1.bdm.microsoftonline.com"
     ]
 }

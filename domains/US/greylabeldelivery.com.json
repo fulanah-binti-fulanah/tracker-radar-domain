@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00104,
-    "sites": 152,
+    "prevalence": 0.00106,
+    "sites": 155,
     "subdomains": [
+        "tms.ace.aaa.com",
         "tags.synchronybank.com",
         "tms.oracle.com",
         "tags.asics.com",
@@ -30,7 +31,6 @@
         "t.waterpumpsdirect.com",
         "tagdelivery.mayoclinic.org.pc-mc",
         "collect.tommy.com",
-        "tms.ace.aaa.com",
         "tags.chip.de",
         "tags.focus.de",
         "tms-collect.sony.jp",
@@ -243,15 +243,42 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "greylabeldelivery\\.com\\/syf-bank-ser-acq-spa\\/prod\\/utag\\.js",
+            "rule": "greylabeldelivery\\.com\\/ace\\/prod\\/utag\\.sync\\.js",
             "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tms.ace.aaa.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tms.ace.aaa.com",
+                    "resolved": "tms.ace.aaa.com.greylabeldelivery.com"
+                }
+            ],
+            "responseHashes": [
+                "d60c24cf81f67419ba048e5e675273f9eb8dac479dae78e23208888f19a4f762"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aaa.com",
+                "account.app.ace.aaa.com"
+            ]
+        },
+        {
+            "rule": "greylabeldelivery\\.com\\/syf-bank-ser-acq-spa\\/prod\\/utag\\.js",
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.synchronybank.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.synchronybank.com",
@@ -272,14 +299,14 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/syf-bank-ser-acq-spa\\/prod\\/utag\\.2\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.synchronybank.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.synchronybank.com",
@@ -307,7 +334,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.synchronybank.com",
@@ -339,7 +366,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000478,
+            "prevalence": 0.0000477,
             "cnames": [
                 {
                     "original": "tms.oracle.com",
@@ -363,11 +390,11 @@
                 }
             ],
             "responseHashes": [
-                "f5832faf2a2b09b0a4a7979493fedb5fca7665272886eca56cb6bb39fd92be16",
-                "3a8ec4724f175002c5ec75ea39228b864a5d2fbba1f0cd65b88c44a5ae70bb6a",
+                "47fcba1f565ac6046232d45e8f708f6fd0ad002513ee61945f83d508ed94595d",
+                "f345e0f1ec8bb841c6b275b78fe836eb6bc3de549275305105d13adf8e5e02a5",
                 "68ff32b091a72ebd5fc7bd0158811dfbbf55952f9a7ea1de64fb1882fa6fc0a7",
-                "fb9f3f43e0a3078f4ae6531086f397f7c58570b4bbae62be583ad765191dca1d",
-                "d306d1ca3c15e047d8263f6b211b8a929927c53b83786eb46f13cc528fb9c1df"
+                "ea7f685d3f25aea1f4905ea9ea290e266378a72e1702de03e5576857df486fcf",
+                "7240874bbc04fa4ce5af770168b3e98db27cc3c47bcdf34c5f1b20b59d2d12e9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -489,42 +516,41 @@
                 }
             ],
             "responseHashes": [
-                "7502a4563873f11ba1f8c390f4b3e21d24937022aeaeee850f11e4584514d41a",
-                "e094302c7ae96e743ac443248dfe304238714d3f144380ca9c93e39cd0a4c8fe",
+                "e09dfa5d26f8b165ad8f7178cafa13dc6655261e5510daf8854566367783d2f8",
                 "2ab590756bf1786b8da1450157a2d5d4cecc1d608b5dca522ad72a7ed5881f6b",
                 "c5dbb47a3533bbb86562d4bd1de83deb6575cba2cf9ef344e569e2c34589b6cf",
                 "e8a973b09f5fcc21092936db7b2072bc79a4f10f9a0956aae292b35e047773e8",
                 "df1e47e0ef49a4126002467835ca361784e063ad9772401c4c2ae5ba0a7f36ef",
                 "82023d16312d920ded3abcb607952e72c7e7ff1d2812ada7b9ac7876522bcd98",
-                "0533321e93861dadfa5fd5d7bfcd90b0e12aa70394f95bc3ce555c5e6321d599",
+                "19b1b93b8d5e8f7db7e96b3c4c33e7f7dc93c0b011f2b16b1337e98d50a933b2",
                 "8785d81cbc782460fa209d853af02c2f498a361f880281c900a49c1dc8e99ca4",
                 "836056b277f461f5aaaa9637b0b5ffc78e8a427fe999298612661baef7b94c63",
-                "083d9589f3494228b0da7a8262d9e05bb67bd4c89f915e3e6e806245e200698c"
+                "e54533af25d64c4c7dd67212572627a4ee3c121282a8123ec9325fd858458ab6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.acwholesalers.com",
-                "www.ecomfort.com",
-                "www.kmart.com.au",
-                "www.logitech.com",
-                "www.shop.com",
-                "www.pressurewashersdirect.com",
-                "www.powerequipmentdirect.com",
+                "www.sumppumpsdirect.com",
                 "www.goertz.de",
+                "www.oracle.com",
+                "www.shop.com",
+                "www.logitech.com",
+                "mwg.aaa.com",
+                "community.oracle.com",
+                "www.f5.com",
+                "www.powerequipmentdirect.com",
+                "www.acwholesalers.com",
+                "www.tescomobile.com",
+                "www.ecomfort.com",
+                "www.nab.com.au",
+                "blogs.oracle.com",
+                "www.mowersdirect.com",
                 "oracle.com",
                 "www.waterpumpsdirect.com",
-                "www.tescomobile.com",
-                "www.f5.com",
-                "www.mowersdirect.com",
-                "www.nab.com.au",
                 "www.electricgeneratorsdirect.com",
-                "www.sumppumpsdirect.com",
                 "www.aircompressorsdirect.com",
-                "www.oracle.com",
-                "www.chainsawsdirect.com",
-                "blogs.oracle.com"
+                "www.pressurewashersdirect.com"
             ]
         },
         {
@@ -549,7 +575,7 @@
                 }
             ],
             "responseHashes": [
-                "ec3472b04aed1aee63f62c8b1aa8bddb285f924d4fa497c9ae032ad1070e0005",
+                "3754600dd0dbada8fdf329cba76c753eb4d98e1d06b7a2d1bd4bd3829142f235",
                 "f9b8960cbe86410eb8bed1d8f1223ee1974c3ab726eb77b978ae286a219affe0"
             ],
             "type": "Script",
@@ -581,7 +607,7 @@
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.0000887,
+            "prevalence": 0.0000886,
             "cnames": [
                 {
                     "original": "tms.oracle.com",
@@ -629,7 +655,7 @@
                 }
             ],
             "responseHashes": [
-                "618dcb1695c73cb2179bddd942a45b6ce82bba43e6ff225fa3d2316f3036f0fe",
+                "1bb9c47551aae61d9d52ad9af5e0f1fe4ec1f590c84a207998d54a2031be9925",
                 "0c1f9eacc8b7c5c7c967df29fe2d96b2f879ead7760d8183962791646052d86d"
             ],
             "type": "Script",
@@ -668,7 +694,7 @@
                 }
             ],
             "responseHashes": [
-                "243fc4aad36eae688d04e145de7160450fd19d934934134a4aa245692aada14a"
+                "ed118737ca75321d38e56382e6f7517997c88ac7fc54f023fd00440469c9a6dd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -741,7 +767,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -769,7 +795,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -780,7 +806,14 @@
                 "e2bb30b9f74a537dc2939103e362afe6faa02ad483df4428d6487ff7ecc5a593"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "utag_main": {
+                    "ttl": 31536002,
+                    "length": 141,
+                    "prevalence": 0.000006816632583503749,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "f5.com",
@@ -1015,7 +1048,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -1036,7 +1069,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/chip-web\\/prod\\/utag\\.js",
-            "cookies": 0.0000273,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.chip.de"
@@ -1094,7 +1127,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/focus-web\\/prod\\/utag\\.js",
-            "cookies": 0.0000341,
+            "cookies": 0.0000273,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.focus.de"
@@ -1179,7 +1212,7 @@
             ]
         },
         {
-            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/0189fce6f5b600a74c432b6538d801078004d07000590",
+            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/018a11b6566b00179ce151af12f301078004d07000590",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -1195,7 +1228,7 @@
                 }
             ],
             "responseHashes": [
-                "e036d4c0bab9dcd3d8ed9d625c2cdd24f4d0474f1a4232f0e7c9471aaf0cf470"
+                "e28b2e9543dd3ba0d0fb358bd9c75733071c22df697b8f3f443f133335ac6fc3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1207,14 +1240,14 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/air1\\/prod\\/utag\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.air1.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1242,7 +1275,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1270,7 +1303,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1298,7 +1331,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1326,7 +1359,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1354,7 +1387,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1382,7 +1415,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1410,7 +1443,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1438,7 +1471,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1466,7 +1499,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1494,7 +1527,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1522,7 +1555,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1550,7 +1583,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1632,7 +1665,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.air1.com",
@@ -1653,14 +1686,14 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/klove\\/prod\\/utag\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.klove.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1688,7 +1721,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1716,7 +1749,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1744,7 +1777,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1772,7 +1805,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1800,7 +1833,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1828,7 +1861,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1856,7 +1889,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1884,7 +1917,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1912,7 +1945,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1940,7 +1973,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -1968,7 +2001,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.klove.com",
@@ -2069,33 +2102,6 @@
             ]
         },
         {
-            "rule": "greylabeldelivery\\.com\\/dotorg-aem\\/prod\\/utag\\.2\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tagdelivery.mayoclinic.org.pc-mc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "tagdelivery.mayoclinic.org",
-                    "resolved": "tagdelivery.mayoclinic.org.pc-mc.greylabeldelivery.com"
-                }
-            ],
-            "responseHashes": [
-                "420454e77c098b0d6c946883e637b60762b18224bc1dc9cd4f2625595cb95956"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mayoclinic.org",
-                "www.mayoclinic.org"
-            ]
-        },
-        {
             "rule": "greylabeldelivery\\.com\\/dotorg-aem\\/prod\\/utag\\.sync\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2113,6 +2119,33 @@
             ],
             "responseHashes": [
                 "ce54f61c2ff01612c37f8c867b5a640d30db5f307d50c5693bdf7cc392617f2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mayoclinic.org",
+                "www.mayoclinic.org"
+            ]
+        },
+        {
+            "rule": "greylabeldelivery\\.com\\/dotorg-aem\\/prod\\/utag\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagdelivery.mayoclinic.org.pc-mc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagdelivery.mayoclinic.org",
+                    "resolved": "tagdelivery.mayoclinic.org.pc-mc.greylabeldelivery.com"
+                }
+            ],
+            "responseHashes": [
+                "420454e77c098b0d6c946883e637b60762b18224bc1dc9cd4f2625595cb95956"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2179,14 +2212,14 @@
         {
             "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.89\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tags.mwg.aaa.com",
                 "tms.tescomobile.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.mwg.aaa.com",
@@ -2199,7 +2232,7 @@
             ],
             "responseHashes": [
                 "2dcbacced8961c709ebeb4041e28827da8e976f9cca18b958b8beb6190cf844d",
-                "ae07cb389d8a95e70ada088f61ade74f31dce9caf790e29276f14d6b4f9ee027"
+                "de6b96dc4819e9959bd452d2abc8287b7996baab74f31c917e13b4017c6e2606"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2409,7 +2442,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tags.mwg.aaa.com",
@@ -2982,7 +3015,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -3003,14 +3036,14 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/myf5\\/prod\\/utag\\.js",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "mktg.tags.f5.com"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -3085,7 +3118,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/bunte-web\\/prod\\/utag\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.bunte.de"
@@ -3904,7 +3937,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "t.acwholesalers.com",
@@ -4307,7 +4340,7 @@
                 }
             ],
             "responseHashes": [
-                "e1dc3028881f6e696f04815f00715f5c92cc13f52801fc2a88e15b8c2cb745c0"
+                "d80948dd5839cd816af2fbc0314db004f6f8e88e3396dd3b750b6b59d56b6f61"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4319,7 +4352,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/douglas\\/www-douglas-at\\/2\\/i\\.gif",
-            "cookies": 0.0000205,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "tccd.douglas.de",
@@ -4328,7 +4361,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "tccd.douglas.de",
@@ -4419,7 +4452,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "mktg.tags.f5.com",
@@ -4432,7 +4465,7 @@
             ],
             "responseHashes": [
                 "9df104d588f314690b79ae2086e80687bfdf0672f430a15ce090f5cdf39c32f0",
-                "f901fb245d5e63dd1db322d4b18f77d582902020f3291f2e26cfc8fa088e0d1c"
+                "28a10278d97cfabd279f444b745e3326063caf7093ac8709f6d36aa815855b83"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4985,7 +5018,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/heathrow\\.com\\/prod\\/utag\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.heathrow.com"
@@ -5000,7 +5033,7 @@
                 }
             ],
             "responseHashes": [
-                "9e4bf580291bacfaf786a1ec26678ace0e17f61a34e83c42514ce8eacec32b3e"
+                "4bfe7e49869fd0ec879c7c19847f39fb2848e5683bbc6e5e4b67ba222de180bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5027,7 +5060,7 @@
                 }
             ],
             "responseHashes": [
-                "289bad49a016253e9f1cfe8b1bca5356f26b04df0fbe800bcc4c6371fffdd7c6"
+                "342d022a4531eae37b7a659b2591e2f864be224aa6e2260cfc3994ac410fa77a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6490,9 +6523,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "utag_main": {
-                    "ttl": 31536003,
+                    "ttl": 31536006,
                     "length": 211,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -6578,9 +6611,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "utag_main": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 211,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -6725,15 +6758,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mbox": {
-                    "ttl": 63244802,
+                    "ttl": 63244805,
                     "length": 103,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 },
                 "mboxEdgeCluster": {
-                    "ttl": 1861,
+                    "ttl": 1864,
                     "length": 2,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 0.5
                 }
             },
@@ -6765,9 +6798,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "utag_main": {
-                    "ttl": 31536006,
+                    "ttl": 31536004,
                     "length": 141,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 1
                 }
             },
@@ -6794,7 +6827,7 @@
                 }
             ],
             "responseHashes": [
-                "d25b39fc98e7e880aca6d3de0130778f4ac88fe96fdac9260ad3e5d90edb38eb"
+                "03c14e1fdc5a5ebcc594654a69b3bfb15ac48f86731eb872f8738b8b3124030f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6821,7 +6854,7 @@
                 }
             ],
             "responseHashes": [
-                "24bebfed082e6e9e55623f8d85f44a683b876264a932dd69ca6dfce425a90f8b"
+                "922b5eee8d9043323b504de9b8caf142e0972ad7cde35a94913d3621a556a5e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6848,7 +6881,7 @@
                 }
             ],
             "responseHashes": [
-                "1abdbcd386d920470ea05e59be8b947b71ee24b6137d03d89bc754c72dc3f5c1"
+                "3cba48763fad2dd774e1ef26e5d0acd660811d13d185cf32d4fa77925b4790c9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6968,7 +7001,7 @@
         },
         {
             "rule": "greylabeldelivery\\.com\\/usa2\\/prod\\/utag\\.sync\\.js",
-            "cookies": 0.00000682,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "tags.roberthalf.com"
@@ -7264,7 +7297,7 @@
             ]
         },
         {
-            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/0189fad0944700130976c8a7d66101078001c07000590",
+            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/018a0fc8dbf70040ed6a329f728001078001c07000590",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -7280,7 +7313,7 @@
                 }
             ],
             "responseHashes": [
-                "e036d4c0bab9dcd3d8ed9d625c2cdd24f4d0474f1a4232f0e7c9471aaf0cf470"
+                "b6f1dcceac9ad0b4f17ab96ec0d116da2b6d10ad8a066b44b4d258a50a0f31b7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7307,7 +7340,7 @@
                 }
             ],
             "responseHashes": [
-                "20e9b47c4085490c60aadcf6f5ee54344790d483b76a5527f9617dc048a8f181"
+                "7af42dd696afe3b54d17f8237b059beb966dca0b154189bcd984e8b00f47b501"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7318,7 +7351,7 @@
             ]
         },
         {
-            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/0189fd11956f00225ddd6e26600801078003007000590",
+            "rule": "greylabeldelivery\\.com\\/sony-marketing\\/main\\/018a11dbbb880004e10e21354b1301078003007000590",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -7347,57 +7380,57 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000928,
+    "cookies": 0.000941,
     "topInitiators": [
         {
             "domain": "yottaa.com",
-            "prevalence": 0.34049079754601225
+            "prevalence": 0.32840236686390534
         },
         {
             "domain": "powerequipmentdirect.com",
-            "prevalence": 0.2116564417177914
+            "prevalence": 0.22485207100591717
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.1656441717791411
+            "prevalence": 0.16863905325443787
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.1196319018404908
+            "prevalence": 0.11538461538461539
         },
         {
             "domain": "first party",
-            "prevalence": 0.05521472392638037
+            "prevalence": 0.05325443786982249
         },
         {
             "domain": "ensighten.com",
-            "prevalence": 0.04294478527607362
+            "prevalence": 0.04142011834319527
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.018404907975460124
+            "prevalence": 0.01775147928994083
         },
         {
             "domain": "byside.com",
-            "prevalence": 0.012269938650306749
+            "prevalence": 0.011834319526627219
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.009202453987730062
+            "prevalence": 0.008875739644970414
         },
         {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.006134969325153374
+            "domain": "computer-bild.de",
+            "prevalence": 0.008875739644970414
         }
     ],
     "types": {
-        "Script": 595,
+        "Script": 597,
         "XHR": 11
     },
     "nameservers": [
-        "ns-1920.awsdns-48.co.uk",
         "ns-1253.awsdns-28.org",
         "ns-183.awsdns-22.com",
-        "ns-529.awsdns-02.net"
+        "ns-529.awsdns-02.net",
+        "ns-1920.awsdns-48.co.uk"
     ]
 }

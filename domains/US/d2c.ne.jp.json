@@ -11,7 +11,8 @@
         "js.api.nidan",
         "alxc.allox",
         "alxd.allox",
-        "meas.hera"
+        "meas.hera",
+        "sync.daisy"
     ],
     "cnames": [
         {
@@ -25,6 +26,10 @@
         {
             "original": "nidan.addlv.smt.docomo.ne.jp",
             "resolved": "js.api.nidan.d2c.ne.jp"
+        },
+        {
+            "original": "sync.addlv.smt.docomo.ne.jp",
+            "resolved": "sync.daisy.d2c.ne.jp"
         }
     ],
     "fingerprinting": 1,
@@ -52,26 +57,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.hotespa.net",
-                "shingakunet.com",
-                "furunavi.jp",
-                "meetsmore.com",
-                "www.dot-st.com",
-                "www.minnanokaigo.com",
-                "jaf.or.jp",
-                "jpn.mizuno.com",
-                "himitsu.wakasa.jp",
-                "www.furusato-tax.jp",
                 "www.princehotels.co.jp",
-                "dcard.docomo.ne.jp",
-                "onlineshop.smt.docomo.ne.jp",
-                "ahamo.com",
+                "hands.net",
+                "meetsmore.com",
                 "business.nikkei.com",
                 "hitosara.com",
-                "www.livable.co.jp",
-                "hands.net",
+                "shingakunet.com",
+                "dcard.docomo.ne.jp",
+                "onlineshop.smt.docomo.ne.jp",
+                "www.furusato-tax.jp",
+                "jpn.mizuno.com",
                 "www.takarakuji-official.jp",
-                "www.jcb.co.jp"
+                "www.jcb.co.jp",
+                "himitsu.wakasa.jp",
+                "furunavi.jp",
+                "star.cocoloni.jp",
+                "www.hotespa.net",
+                "www.dot-st.com",
+                "ahamo.com",
+                "www.livable.co.jp",
+                "jaf.or.jp"
             ]
         },
         {
@@ -86,50 +91,51 @@
             "prevalence": 0.000143,
             "cnames": [],
             "responseHashes": [
-                "99b689b742f4d34677ab82391eb6563472c85a4d8c389d71d6e56f3a6b5077c1",
-                "08b5477a260d41316b72b20a8808f5732dcbf663dba36631661f1b6b085246bd",
-                "a14e19e8e1373f3220d89f46cc88a84b0fd45e407fd2de933bd4ac7ea67f05af",
-                "f0d62bae613e06bb33fa7538d7929032d1ba987823bc9e2aaaf0135545b1c1f4",
-                "6d6e00b232f82355061e67a9a97daa3f34f67589d95c5998a5f684b1e4409485",
-                "4b1e3455b98b89ebb77d48e9013ea4f40e563992b7af17f10f8f35ae220ddf1d",
-                "144cf8a904ca1a7317a9fdb73e72cc3994cb48c7699ac81065dc4c1d7bdfa1e0",
-                "c80e97756e198fc88d79911707bd065f7598c5526822fd37c2b7b2077506b550",
-                "6888256c0efb144b4ff29ba96e75077d68c386420a774c8cb3ad76628720ed15",
-                "852c19b7b3a7cc9e189fb0cddb9dbddfca8f81b9d162947334c5e030d1be3423",
-                "4b9ef37c5b41b8c9fd2e3b144863aeab400f0e1fe73154c197a6ed564806dfd8",
-                "e47353ad22ae1789aeec5319e7fd5cad31efd19814b9f42bd352b298ff6d6aed",
-                "bb9f3d4f72a6c6573d6505dca7a82613049727c3df5a0feaea334b278584ba64",
-                "491d2be1b3ec7ba4ddd2f3e2e958639898784517dee268bfbfd0474fa19549ca",
-                "28831badefb408aa6852cd31c4841d742d91bba3e74326111274de22ad7c2a92",
-                "edcf66d1681ed507f69f24ed5cb4aba0c66cd8ec997a08033292844c348de8da",
-                "457b27aa51fd05f2e03b75b697913a44576803813e3379ccbab0ab68a5f9a798",
-                "c01a4555ee64b0195c7651fe25aae5f8158c823a82144d8fdef38f4979852003",
-                "292bf82edb39296ecd8151f04816e3389b64a4eddd300a8f0852d44597228276"
+                "5d7ac2771fba83bffa1b6ceaca9018da3491982ccc032d7f47b155e03503410f",
+                "707a6f1462b06e484b11ce7d54f1fd4d212a854e9369176cadeee668a2f2ef7c",
+                "78cc003e88c9015b59b2c74106e34b7d995dcb780a0aba98d839e13dca022337",
+                "a0be4b916d95978baeadac34221a35fcb05059f9193cdf043e3a5c136bdd6bfd",
+                "abbcc286bd6062d3c493fc7b9d3627a30b35e2aea70a4fe810f8e5c8fe830cac",
+                "dbfdc10edd6a6cb848d7d08a291bd823360444261e2c255416c226ecfecc82b6",
+                "1b49e77d501ecf8be355aff3397f8fca3612ebb580a4dae50d0c5e2b97738a27",
+                "ed8f1a1aa8b84118dc4f1637a5c610c7452420f38c2ebf7971ebeb4bc310064d",
+                "ca8ea1a8533448d6ac283352181241ace309976b6fc3292db3015f530e06f98f",
+                "71d49d0fb3f114efe479589a55dce9782d15c763a6d3349279c2b06c1df5cade",
+                "0e9f6dc718d83455634b817f95c24dc04bfd8e401381505532985e564a6550e7",
+                "baa90c19e3d86ade87262e9de732cd5e31daecb1e9f5a5042769e21301c80921",
+                "dcb2f682cc1d5f18c70b75aaba61ce09e463311eac8c2e4e84916e36c63c897a",
+                "3e0a86dc3989579c6392cf5932bc08a38e536527cd99f8be370b6dbe0fafadc3",
+                "85afb1d46e1d1e92f32a5be8f6b02f382b0e54651b97d8581462ce1a19e89cea",
+                "53221d509bff74b1b9e9a0e87f6ce02a3d0b2ada6fe622ac0d9b390742193403",
+                "9d95cb69061586e8636ad4e69ee34eabac400a90982771c7a9cd4682ce9e7b24",
+                "d23103bade4785b881aa00e1e340982ee4e50cc5bddff4c30f44364347dd02fb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "tlb_sid": 0.000006816632583503749
+            },
             "exampleSites": [
-                "www.dot-st.com",
-                "himitsu.wakasa.jp",
-                "furunavi.jp",
-                "www.jcb.co.jp",
-                "jpn.mizuno.com",
-                "ahamo.com",
-                "www.hotespa.net",
-                "dcard.docomo.ne.jp",
-                "business.nikkei.com",
                 "jaf.or.jp",
-                "onlineshop.smt.docomo.ne.jp",
+                "himitsu.wakasa.jp",
+                "www.livable.co.jp",
                 "shingakunet.com",
+                "ahamo.com",
+                "www.minnanokaigo.com",
+                "www.princehotels.co.jp",
+                "www.jcb.co.jp",
+                "hands.net",
+                "www.hotespa.net",
+                "meetsmore.com",
+                "furunavi.jp",
+                "dcard.docomo.ne.jp",
+                "hitosara.com",
+                "business.nikkei.com",
+                "www.dot-st.com",
+                "www.furusato-tax.jp",
                 "www.takarakuji-official.jp",
                 "star.cocoloni.jp",
-                "meetsmore.com",
-                "www.furusato-tax.jp",
-                "www.princehotels.co.jp",
-                "hands.net",
-                "www.minnanokaigo.com",
-                "www.livable.co.jp"
+                "jpn.mizuno.com"
             ]
         },
         {
@@ -149,29 +155,29 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "tlb_sid": 0.00001364424008404852
+                "tlb_sid": 0.000006816632583503749
             },
             "exampleSites": [
-                "www.dot-st.com",
-                "jpn.mizuno.com",
                 "furunavi.jp",
-                "star.cocoloni.jp",
-                "himitsu.wakasa.jp",
-                "www.jcb.co.jp",
-                "jaf.or.jp",
-                "ahamo.com",
-                "meetsmore.com",
-                "www.princehotels.co.jp",
-                "www.furusato-tax.jp",
-                "shingakunet.com",
-                "dcard.docomo.ne.jp",
-                "business.nikkei.com",
                 "www.minnanokaigo.com",
-                "hands.net",
-                "onlineshop.smt.docomo.ne.jp",
+                "meetsmore.com",
+                "star.cocoloni.jp",
+                "ahamo.com",
                 "www.takarakuji-official.jp",
+                "onlineshop.smt.docomo.ne.jp",
                 "hitosara.com",
-                "www.hotespa.net"
+                "www.princehotels.co.jp",
+                "jaf.or.jp",
+                "jpn.mizuno.com",
+                "business.nikkei.com",
+                "www.jcb.co.jp",
+                "www.dot-st.com",
+                "www.hotespa.net",
+                "hands.net",
+                "dcard.docomo.ne.jp",
+                "himitsu.wakasa.jp",
+                "www.furusato-tax.jp",
+                "www.livable.co.jp"
             ]
         },
         {
@@ -210,7 +216,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "alxd.addlv.smt.docomo.ne.jp",
@@ -218,8 +224,8 @@
                 }
             ],
             "responseHashes": [
-                "9a920917bb9db08893208bf3dc870e70a60c6a085df0dfce103f5e95a08bc0fa",
-                "0ed1b8d380e278481360af3f335239688e9186d466396199febb05b436be08a6"
+                "a0c98ee9fa640eaaa1f356e29e34a1e7f24d637ddbccd071e5a44d0c868263dd",
+                "ba59cf679a6a1bab279e54a2ecce602072d15710c5e96d61fa44f46633e52a67"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -274,7 +280,7 @@
                 }
             ],
             "responseHashes": [
-                "6affa9ff14c222a43f3948e4d05b820c99a2baf6df26d76febe1838017b7cc76"
+                "34853aecc1ec222e7782f871e7e6be783fa12f8f4c265ec78ad796886a5b2351"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -415,6 +421,33 @@
                 "furusato-tax.jp",
                 "www.furusato-tax.jp"
             ]
+        },
+        {
+            "rule": "d2c\\.ne\\.jp\\/tafs\\/p\\/dsync",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync.daisy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sync.addlv.smt.docomo.ne.jp",
+                    "resolved": "sync.daisy.d2c.ne.jp"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntt.com",
+                "www.ntt.com"
+            ]
         }
     ],
     "categories": [],
@@ -423,46 +456,46 @@
     "topInitiators": [
         {
             "domain": "docomo.ne.jp",
-            "prevalence": 0.5
+            "prevalence": 0.49514563106796117
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.20652173913043478
+            "prevalence": 0.23300970873786409
         },
         {
             "domain": "first party",
-            "prevalence": 0.18478260869565216
+            "prevalence": 0.1650485436893204
         },
         {
             "domain": "geoedge.be",
-            "prevalence": 0.043478260869565216
+            "prevalence": 0.038834951456310676
         },
         {
             "domain": "d2c.ne.jp",
-            "prevalence": 0.021739130434782608
+            "prevalence": 0.019417475728155338
         },
         {
             "domain": "yjtag.jp",
-            "prevalence": 0.021739130434782608
-        },
-        {
-            "domain": "d2cdm.jp",
-            "prevalence": 0.010869565217391304
+            "prevalence": 0.019417475728155338
         },
         {
             "domain": "microad.jp",
-            "prevalence": 0.010869565217391304
+            "prevalence": 0.019417475728155338
+        },
+        {
+            "domain": "d2cdm.jp",
+            "prevalence": 0.009708737864077669
         }
     ],
     "types": {
         "Script": 72,
         "XHR": 8,
-        "Image": 4
+        "Image": 6
     },
     "nameservers": [
+        "ns-1903.awsdns-45.co.uk",
         "ns-320.awsdns-40.com",
         "ns-1270.awsdns-30.org",
-        "ns-866.awsdns-44.net",
-        "ns-1903.awsdns-45.co.uk"
+        "ns-866.awsdns-44.net"
     ]
 }

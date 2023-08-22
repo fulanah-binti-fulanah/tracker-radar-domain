@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000239,
-    "sites": 35,
+    "prevalence": 0.000259,
+    "sites": 38,
     "subdomains": [
         "c1",
         "a",
@@ -27,8 +27,8 @@
                 "c1"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000123,
+            "sites": 19,
+            "prevalence": 0.00013,
             "cnames": [],
             "responseHashes": [
                 "2192b6956e2c894b79e0ee84528984648b0df48fd5b9e69b6c58b62870bf3d49"
@@ -38,17 +38,18 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "navigation.com",
-                "gmnavdisc.navigation.com",
                 "hondanavi.navigation.com",
                 "legal.thomsonreuters.com",
+                "locations.tirediscounters.com",
                 "onestop.umn.edu",
                 "scheels.com",
                 "www.brambleberry.com",
+                "www.chevronlubricants.com",
                 "www.cnm.edu",
                 "www.cosmoprofbeauty.com",
+                "www.foreo.com",
                 "www.fullsail.edu",
                 "www.jamesavery.com",
-                "www.nationalbusinessfurniture.com",
                 "www.petsupermarket.com",
                 "www.prolinerangehoods.com",
                 "www.salesforce.org",
@@ -60,11 +61,13 @@
         {
             "rule": "sfdcstatic\\.com\\/enterprise\\/tableau\\/prod\\/6140\\/v1\\/oneTrust\\/scripttemplates\\/otSDKStub\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 4,
             "prevalence": 0.0000273,
             "cnames": [],
@@ -113,14 +116,14 @@
                 "a"
             ],
             "apis": {
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
                 "Navigator.prototype.doNotTrack": 3,
                 "Navigator.prototype.languages": 3,
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.vendor": 4,
-                "window.innerWidth": 4
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "window.innerWidth": 3
             },
             "sites": 4,
             "prevalence": 0.0000273,
@@ -133,7 +136,7 @@
                 "OptanonConsent": {
                     "ttl": 31536002,
                     "length": 11,
-                    "prevalence": 0.00002728848016809704,
+                    "prevalence": 0.000027266530334014997,
                     "uniqueness": 0.25
                 }
             },
@@ -296,9 +299,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "OptanonConsent": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 12,
-                    "prevalence": 0.0000341106002101213,
+                    "prevalence": 0.00003408316291751875,
                     "uniqueness": 0.2
                 }
             },
@@ -395,7 +398,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "cffbeeac67d2e82eaceba399d3d1b1fc227ef4cf3b047d433660911dab26b8a2"
@@ -418,7 +421,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "b7b54a0bd37af9909f5f0f335c581457b8c9e24caab860db2761c95d93f6960e"
@@ -441,7 +444,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "b5fdb98da86bff4f36cef702eb288c16d10f02b421eb4cdf9819f51c1c9e2fd2"
@@ -485,8 +488,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "2192b6956e2c894b79e0ee84528984648b0df48fd5b9e69b6c58b62870bf3d49"
@@ -495,34 +498,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fullsail.edu",
+                "tirediscounters.com",
+                "www.fullsail.edu",
                 "www.smilegeneration.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000075,
+    "cookies": 0.0000818,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.95
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Font": 31,
+        "Font": 33,
         "Script": 18,
         "XHR": 9,
         "Fetch": 27
     },
     "nameservers": [
-        "u2dns2.salesforce.com",
+        "dns06.salesforce.com",
+        "dns01.salesforce.com",
         "dns03.salesforce.com",
+        "u2dns1.salesforce.com",
         "dns05.salesforce.com",
         "dns04.salesforce.com",
-        "dns02.salesforce.com",
-        "dns01.salesforce.com",
-        "u2dns1.salesforce.com",
-        "dns06.salesforce.com"
+        "u2dns2.salesforce.com",
+        "dns02.salesforce.com"
     ]
 }

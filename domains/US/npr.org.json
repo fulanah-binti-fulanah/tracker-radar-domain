@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000075,
-    "sites": 11,
+    "prevalence": 0.0000954,
+    "sites": 14,
     "subdomains": [
-        "livesessions"
+        "livesessions",
+        "media"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "npr\\.org\\/embed\\/v2\\/songoftheday",
@@ -23,8 +24,8 @@
                 "livesessions"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "1dcf307ce64ae5c8e17bf3c0d5f974e393c582f609ff81d330388afbd5178c39"
@@ -34,7 +35,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wfuv.org",
+                "www.kcbx.org",
                 "www.wncw.org"
+            ]
+        },
+        {
+            "rule": "npr\\.org\\/assets\\/img\\/2023\\/08\\/18\\/gettyimages-1496904465-0b257c5b1f8ab79ab9ea6b03d4120dde042826a5\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "fb0d4adf305f8f92c8882d235bc638e0a1693dfb123620eaa634e35e55525c35",
+                "d5cb484da368e72831b723e02f1c7cb82118bc81f1e35ca8f7ec23fa26f2932c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "houstonpublicmedia.org",
+                "www.mprnews.org",
+                "www.wbur.org"
             ]
         }
     ],
@@ -46,20 +72,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9615384615384616
+            "prevalence": 0.5909090909090909
+        },
+        {
+            "domain": "uri.sh",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.022727272727272728
         },
         {
             "domain": "geoedge.be",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.022727272727272728
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Image": 3
     },
     "nameservers": [
+        "ns-1580.awsdns-05.co.uk",
         "ns-139.awsdns-17.com",
         "ns-1227.awsdns-25.org",
-        "ns-769.awsdns-32.net",
-        "ns-1580.awsdns-05.co.uk"
+        "ns-769.awsdns-32.net"
     ]
 }

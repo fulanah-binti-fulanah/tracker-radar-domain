@@ -7,16 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000819,
-    "sites": 12,
+    "prevalence": 0.0000886,
+    "sites": 13,
     "subdomains": [
         "cdn-cbc-v3",
         "acs.cdn-v3",
         "eus.cdn-v3",
-        "cdn-v3"
+        "cdn-v3",
+        "spotify-experiments-events"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "conductrics\\.com\\/ac-zNSqTXgWDt\\/v3\\/agent-api\\/js\\/f-vBLHMPIjsJ\\/dt-j8cr9H0FLuClP05ufJyktE9whuke2M",
@@ -38,7 +39,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "74cae7814c51276a7686450743250a3ccf002e3632204dbe869ee6c3814e2ec4"
+                "a48969a03081ba69a62edc995834b084e0b5bd5bddb3d13fe3915a70009947e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,30 +51,22 @@
         },
         {
             "rule": "conductrics\\.com\\/ac-wwCNWYiyTq\\/v3\\/agent-api\\/js\\/f-fgEHefvxuQ\\/dt-sMIQILzQvxMl05SVGCS1PIqjDdlOtd",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "acs.cdn-v3"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Document.cookie setter": 2
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "891b932ae2ae1ab5f89864e89be4a7f0703f34c773c679c74f7fcd076b5391a5"
+                "cc20a954ed11a88f258238c5b633b8e743340292f515937650e6a7966846a3d2"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "cp-sess": {
-                    "ttl": 2592000,
-                    "length": 197,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cancer.org",
@@ -82,36 +75,22 @@
         },
         {
             "rule": "conductrics\\.com\\/ac-SrjoSwdJnI\\/v3\\/agent-api\\/js\\/f-XnqTYqFYWu\\/dt-kTerm2DxYUCBpGda8ntcArikRxTAWJ",
-            "cookies": 0.00000682,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "eus.cdn-v3"
             ],
             "apis": {
-                "window.name": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.doNotTrack": 1,
-                "Document.cookie getter": 1,
-                "window.sessionStorage": 1,
-                "Document.cookie setter": 1
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cd2b3bbd0ba8601ff542e2d50bf7b7e00897fd38eac95a33c6643e8fb5f124a5"
+                "3509016e3805de7d7d746e50fadd988e1e8bd146e9ae33771284929cefa76e7e"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "cp-sess": {
-                    "ttl": 2592000,
-                    "length": 254,
-                    "prevalence": 0.00000682212004202426,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eurostar.com",
@@ -126,19 +105,19 @@
                 "cdn-v3"
             ],
             "apis": {
-                "window.name": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2
+                "window.name": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0cd20bd34219af086bb51dba86089de0b13555245f1f747e49a281f051a1899e"
+                "edf9416ed18c715873b683e6a2a339fea634b7038c6ba2d12c1963e3b4f0b44b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -147,28 +126,51 @@
                 "pfizer.com",
                 "www.pfizer.com"
             ]
+        },
+        {
+            "rule": "conductrics\\.com\\/661082963978\\/conductrics-30-spotify-queue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spotify-experiments-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spotify.com",
+                "www.spotify.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000273,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9166666666666666
+            "prevalence": 0.9230769230769231
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 8,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1817.awsdns-35.co.uk",
-        "ns-628.awsdns-14.net",
         "ns-1190.awsdns-20.org",
-        "ns-502.awsdns-62.com"
+        "ns-502.awsdns-62.com",
+        "ns-628.awsdns-14.net"
     ]
 }

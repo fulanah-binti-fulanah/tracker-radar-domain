@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d2sj6gv6213dvd\\.cloudfront\\.net\\/v2\\/assets\\/css\\/jquery-ui\\.css",
@@ -98,13 +98,17 @@
         {
             "rule": "d2sj6gv6213dvd\\.cloudfront\\.net\\/v2\\/assets\\/js\\/bundle\\/front\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2,
                 "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 2,
                 "Document.cookie setter": 2,
-                "window.localStorage": 2,
-                "Element.prototype.getClientRects": 2
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -114,23 +118,23 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "vid": {
-                    "ttl": 2678402,
-                    "length": 16,
-                    "prevalence": 0.00001364424008404852,
-                    "uniqueness": 1
-                },
                 "time_zone_dst": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 1,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 0.5
                 },
                 "time_zone_offset": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 8,
-                    "prevalence": 0.00001364424008404852,
+                    "prevalence": 0.000013633265167007499,
                     "uniqueness": 0.5
+                },
+                "vid": {
+                    "ttl": 2678401,
+                    "length": 16,
+                    "prevalence": 0.000013633265167007499,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -177,9 +181,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-1267.awsdns-30.org",
-        "ns-2034.awsdns-62.co.uk",
         "ns-121.awsdns-15.com",
-        "ns-894.awsdns-47.net"
+        "ns-1267.awsdns-30.org",
+        "ns-894.awsdns-47.net",
+        "ns-2034.awsdns-62.co.uk"
     ]
 }

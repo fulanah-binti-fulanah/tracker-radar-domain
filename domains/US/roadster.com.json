@@ -7,11 +7,34 @@
     "prevalence": 0.0000409,
     "sites": 6,
     "subdomains": [
-        "cdn1"
+        "cdn1",
+        "shop"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "roadster\\.com\\/roadster_frame_embed",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c652a628f35865605a955aa66fb699ad409901611131979d76fb186406969f2d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autolenders.com",
+                "www.buerklehonda.com"
+            ]
+        },
         {
             "rule": "roadster\\.com\\/roadster_dealer_analytics",
             "cookies": 0.0000273,
@@ -28,25 +51,91 @@
             "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "8d01ba2e6adcd0045bf31ce4371e4b14c18f8e0d7fbb7f1f5f4b8a28b5541c77",
-                "51e2eb0f2f916cc3616155837311bb2b6a1456cc724ee0bb0cb7fca8bfb1e5e6",
-                "cea9c1756bf03b21bcfa628c7f1bf9e2a177dfa9c98369f66b8f4418a73ca742"
+                "151e963ac79c2c17437e0474e3b5ce116313cc7910140d3c3f849ba8ddfc70d2",
+                "c1abf34807c48b041dd6583b2ec24ab27f34752ebd6ab6dadfa3b2aaed68967f",
+                "51e2eb0f2f916cc3616155837311bb2b6a1456cc724ee0bb0cb7fca8bfb1e5e6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rda_uu": {
-                    "ttl": 30325923,
+                    "ttl": 29914584,
                     "length": 25,
-                    "prevalence": 0.00002046636012607278,
+                    "prevalence": 0.000020449897750511246,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autolenders.com",
+                "www.buerklehonda.com",
                 "www.hyundaicanada.com",
-                "www.longotoyota.com",
-                "www.sewell.com"
+                "www.longotoyota.com"
+            ]
+        },
+        {
+            "rule": "roadster\\.com\\/assets\\/embedded-4a4266b18cae19faac2e8d6eb1a6f1f41189035503692ba61b304209c75615d8\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a4266b18cae19faac2e8d6eb1a6f1f41189035503692ba61b304209c75615d8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autolenders.com",
+                "www.buerklehonda.com"
+            ]
+        },
+        {
+            "rule": "roadster\\.com\\/assets\\/preloader-13807141dd1ff597c2d5e4d84fb56639174d1c2d62179ebcd79552042f32fc76\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b1e695c8c9556fd2bdb4651681ac64d408529adf324d73337181505738b62add"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autolenders.com",
+                "www.buerklehonda.com"
+            ]
+        },
+        {
+            "rule": "roadster\\.com\\/roadster_ddc_button\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce9af92bd03763bc3f169b8c8eb8c726411e659cbd7d56e364f2efe5099bd631"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cavendertoyota.com",
+                "www.kingstoyota.com"
             ]
         }
     ],
@@ -56,15 +145,13 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
-        },
-        {
-            "domain": "ansira.net",
-            "prevalence": 0.2857142857142857
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 8,
+        "Stylesheet": 2,
+        "Image": 2
     },
     "nameservers": [
         "emily.ns.cloudflare.com",

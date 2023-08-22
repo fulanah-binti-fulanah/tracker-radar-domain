@@ -11,13 +11,11 @@
         "eucentral1-widget",
         "uswest2-api",
         "eucentral1-api",
-        "api",
         "uswest2-nodeupload",
-        "eucentral1-nodeupload",
-        "static"
+        "eucentral1-nodeupload"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "whisbi\\.com\\/template\\/launcher\\.js",
@@ -48,15 +46,16 @@
         {
             "rule": "whisbi\\.com\\/template\\/polyfills\\.10ac1de4313e50cc2df9\\.bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "uswest2-widget",
                 "eucentral1-widget"
             ],
             "apis": {
-                "Animation.prototype.currentTime": 2,
-                "Animation.prototype.startTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "HTMLCanvasElement.prototype.toBlob": 1,
+                "Animation.prototype.currentTime": 1,
+                "Animation.prototype.startTime": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -104,7 +103,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9d9920fdcdbcc69f167518ea7206226547f719033f335516895f87d82bb9a1dc"
+                "3538c3f7addc0f73b9be3981c57c23c73b1a8d6a51ebfb559cbfcb10f3dce243"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -132,29 +131,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "firstnet.com",
-                "www.ford.fr"
-            ]
-        },
-        {
-            "rule": "whisbi\\.com\\/api\\/branches\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswest2-api",
-                "api",
-                "eucentral1-api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstnet.com",
-                "www.firstnet.com",
                 "www.ford.fr"
             ]
         },
@@ -187,33 +163,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "uswest2-api",
-                "api",
                 "eucentral1-api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000205,
-            "cnames": [],
-            "responseHashes": [
-                "1e69c0bc5d0015f9cc3273fe806f655eab3cf8a961b8cc37a07429a7c1d95a6e",
-                "1672dd5c7c0fc7f350a526d1066f444163168b05a1dd132b34ff406bf198753d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstnet.com",
-                "www.firstnet.com",
-                "www.ford.fr"
-            ]
-        },
-        {
-            "rule": "whisbi\\.com\\/roomInfo",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswest2-nodeupload",
-                "eucentral1-nodeupload"
             ],
             "apis": {},
             "sites": 2,
@@ -229,12 +179,35 @@
             ]
         },
         {
-            "rule": "whisbi\\.com\\/api\\/agents\\/",
+            "rule": "whisbi\\.com\\/api\\/branches\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "uswest2-api",
                 "eucentral1-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1672dd5c7c0fc7f350a526d1066f444163168b05a1dd132b34ff406bf198753d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstnet.com",
+                "www.ford.fr"
+            ]
+        },
+        {
+            "rule": "whisbi\\.com\\/roomInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uswest2-nodeupload",
+                "eucentral1-nodeupload"
             ],
             "apis": {},
             "sites": 2,
@@ -282,13 +255,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [
-                "81d84084ae41768b202e7ec124aea59722a8d6448998422ddb6fc75ca1163508",
-                "816d168b4c7a14dfe9f046550020c8fd3addefd6caad970ccf2f886547a8ca81"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -298,23 +268,28 @@
             ]
         },
         {
-            "rule": "whisbi\\.com\\/d23ad8ec-7004-4128-bcc7-c31aca47688d\\/fonts\\/HelveticaNeue-Rg\\.ttf",
+            "rule": "whisbi\\.com\\/api\\/agents\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static"
+                "uswest2-api",
+                "eucentral1-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
+            "responseHashes": [
+                "39e94afdc1c7ba84925df23cb7e62b3883d177f48621fc453b1d2424ad5b169d",
+                "816d168b4c7a14dfe9f046550020c8fd3addefd6caad970ccf2f886547a8ca81"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "firstnet.com",
-                "www.firstnet.com"
+                "www.firstnet.com",
+                "www.ford.fr"
             ]
         },
         {
@@ -372,7 +347,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4c7ab39cda2c67262b482d24fb37401bc3ab53f266d56a98f0cff024fcc79820"
+                "9bbaf3a129df60bb3b5022fbc8749afad60d2bf03fe0dc359161f3707447b7de"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -395,13 +370,13 @@
     "types": {
         "Script": 4,
         "Preflight": 13,
-        "XHR": 14,
-        "Font": 4
+        "XHR": 13,
+        "Font": 2
     },
     "nameservers": [
+        "ns-2017.awsdns-60.co.uk",
         "ns-302.awsdns-37.com",
-        "ns-738.awsdns-28.net",
         "ns-1054.awsdns-03.org",
-        "ns-2017.awsdns-60.co.uk"
+        "ns-738.awsdns-28.net"
     ]
 }

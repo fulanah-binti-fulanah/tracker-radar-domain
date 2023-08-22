@@ -7,10 +7,11 @@
     "prevalence": 0.0000341,
     "sites": 5,
     "subdomains": [
-        "survey-deploy"
+        "survey-deploy",
+        "survey-collect"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "platformrijksoverheid\\.nl\\/js\\/pastease\\.js",
@@ -20,15 +21,15 @@
                 "survey-deploy"
             ],
             "apis": {
+                "Date.prototype.getTime": 5,
                 "Document.cookie getter": 4,
-                "window.localStorage": 4,
-                "Date.prototype.getTime": 4
+                "window.localStorage": 4
             },
             "sites": 5,
             "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "c9be357be23cec4408a6f69de375654df794f7afa6907f83941ddf158628062b"
+                "9badde4b9c783e97cf91304697d217ecd4ec3f757452b9fe9be8d5b8285ee83b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,7 +54,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "519ff57bae30bfddfcdd0990405164a75e7deb67b4acf40ea45a88286c84d985"
+                "75a6aff5ac0cc74ab624046801f9bd93f853443364ac5670dd93ac42e0c1895a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -62,29 +63,60 @@
                 "government.nl",
                 "www.government.nl"
             ]
+        },
+        {
+            "rule": "platformrijksoverheid\\.nl\\/assets\\/surveys\\/2\\.0\\/js\\/survey\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "survey-collect"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Document.cookie getter": 3,
+                "window.innerWidth": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6fcd9246cebeec2b4f5491ca2a67843983de9af4640c94b60a8e6fa648f373bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "government.nl",
+                "www.nederlandwereldwijd.nl",
+                "www.rijksoverheid.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000682,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "rijksoverheid.nl",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.7857142857142857
         },
         {
             "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.21428571428571427
         }
     ],
     "types": {
-        "Script": 5,
+        "Script": 8,
         "XHR": 2
     },
     "nameservers": [
+        "ns0.rijksoverheidnl.com",
         "ns1.rijksoverheidnl.nl",
         "ns2.rijksoverheidnl.eu",
-        "ns0.rijksoverheidnl.com",
         "ns3.rijksoverheidnl.org"
     ]
 }

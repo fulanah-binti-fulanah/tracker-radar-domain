@@ -4,43 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
-        "be",
         "services",
         "reservations",
-        "controlcenter-p1"
+        "controlcenter-p1",
+        "be"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "synxis\\.com\\/public\\/widgets\\/libs\\/shs-widgets-best-price\\/web-component-with-libs\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "be"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e02820b27f6103604916b1eabb33513c0772fe0e084cb32da055acbefd0b0ffb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "outrigger.com",
-                "www.outrigger.com"
-            ]
-        },
         {
             "rule": "synxis\\.com\\/gw\\/product\\/v1\\/getLeadAvailability",
             "cookies": 0.0000136,
@@ -52,8 +26,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e2e549b305523950c72e4dd2e82d2afb7dfaca0663bda97daf5432c495fc8f87"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -72,10 +48,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "c835c9cf830c1e73904f3dc350c493495444aaf2b19958ac36f6d9e4af4ea55f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -117,9 +91,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "793ca675e5645a4faec1e08cf47e0641d8df94da50896c7c0a0926cdb25b1063"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -127,33 +99,59 @@
                 "aquaaston.com",
                 "www.aquaaston.com"
             ]
+        },
+        {
+            "rule": "synxis\\.com\\/public\\/widgets\\/libs\\/shs-widgets-best-price\\/web-component-with-libs\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "be"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e02820b27f6103604916b1eabb33513c0772fe0e084cb32da055acbefd0b0ffb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outrigger.com",
+                "www.outrigger.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.75
         },
         {
             "domain": "lpsnmedia.net",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
-        "Preflight": 2,
         "XHR": 4,
-        "Image": 2
+        "Preflight": 2,
+        "Image": 2,
+        "Script": 2
     },
     "nameservers": [
-        "a11-64.akam.net",
-        "a24-66.akam.net",
-        "a5-67.akam.net",
         "a8-64.akam.net",
-        "a14-65.akam.net",
-        "a1-53.akam.net"
+        "a24-66.akam.net",
+        "a1-53.akam.net",
+        "a11-64.akam.net",
+        "a5-67.akam.net",
+        "a14-65.akam.net"
     ]
 }
