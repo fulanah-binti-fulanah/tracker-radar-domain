@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "s",
-        "t"
+        "t",
+        "vis"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,17 +25,19 @@
                 "s"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "73e2ab96d2c2c3ac7b3ab6d4d4da89b1a568c4a4f13b7390c00d29207ad9696a"
+                "73e2ab96d2c2c3ac7b3ab6d4d4da89b1a568c4a4f13b7390c00d29207ad9696a",
+                "259c91685d115554c32330a3e9f830cfefcb6b4c1f0ef19047095b14f719f06c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "anime-planet.com",
+                "globalnews.ca",
+                "www.anime-planet.com",
                 "www.rogerebert.com"
             ]
         },
@@ -46,20 +49,22 @@
                 "s"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "5369b4323ab139726ca896f0d85277a814387d4e7d68815f33a7c30f7ed68cd6"
+                "7fbb3b0a98a3a8c9078d67c3c80832380a1d089feab04a0d70b158784c546cf4",
+                "b962e340b07cb01396fd9f721c9b4641d3f93c9abf52fcba5e457f258ae2d021"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "anime-planet.com",
+                "globalnews.ca",
+                "www.anime-planet.com",
                 "www.rogerebert.com"
             ]
         },
@@ -71,18 +76,46 @@
                 "t"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_cb_svref": 0.00010047221943132724,
+                "lotame_domain_check": 0.00010047221943132724
+            },
+            "exampleSites": [
+                "globalnews.ca",
+                "www.anime-planet.com",
+                "www.rogerebert.com"
+            ]
+        },
+        {
+            "rule": "vi-serve\\.com\\/playlist\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "539e06fbacf22990f686b794ccdb1300a873053f49dcd40cb4fca4d6231a5039"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00010047221943132724
+            },
             "exampleSites": [
                 "anime-planet.com",
-                "www.anime-planet.com"
+                "www.rogerebert.com"
             ]
         }
     ],
@@ -92,25 +125,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7333333333333333
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "adligature.com",
-            "prevalence": 0.2
+            "prevalence": 0.25925925925925924
+        },
+        {
+            "domain": "outbrain.com",
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.07407407407407407
         }
     ],
     "types": {
-        "Script": 4,
-        "Image": 2
+        "Script": 6,
+        "Image": 3,
+        "XHR": 2
     },
     "nameservers": [
         "ns-976.awsdns-58.net",
-        "ns-1876.awsdns-42.co.uk",
         "ns-1163.awsdns-17.org",
-        "ns-322.awsdns-40.com"
+        "ns-322.awsdns-40.com",
+        "ns-1876.awsdns-42.co.uk"
     ]
 }

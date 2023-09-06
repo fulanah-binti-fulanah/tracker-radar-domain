@@ -4,18 +4,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000303,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "as-aubi",
         "as-cobi",
-        "smb-giga"
+        "smb-giga",
+        "smb-kino"
     ],
     "cnames": [
-        {
-            "original": "pur.autobild.de",
-            "resolved": "as-aubi.pur-pass.net"
-        },
         {
             "original": "pur.computerbild.de",
             "resolved": "as-cobi.pur-pass.net"
@@ -23,27 +19,27 @@
         {
             "original": "pur.giga.de",
             "resolved": "smb-giga.pur-pass.net"
+        },
+        {
+            "original": "pur.kino.de",
+            "resolved": "smb-kino.pur-pass.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "pur-pass\\.net\\/now\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
-                "as-aubi",
                 "as-cobi",
-                "smb-giga"
+                "smb-giga",
+                "smb-kino"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [
-                {
-                    "original": "pur.autobild.de",
-                    "resolved": "as-aubi.pur-pass.net"
-                },
                 {
                     "original": "pur.computerbild.de",
                     "resolved": "as-cobi.pur-pass.net"
@@ -51,51 +47,23 @@
                 {
                     "original": "pur.giga.de",
                     "resolved": "smb-giga.pur-pass.net"
-                }
-            ],
-            "responseHashes": [
-                "50124187e4d1c7e78481c9f485fef7152951c58d29fbdfeaa74f1479c8f5a3c9",
-                "210e9a48e95712976b2134aa20caa0b123bad920a0bf489abbffd171d0504c7c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autobild.de",
-                "www.computerbild.de",
-                "www.giga.de"
-            ]
-        },
-        {
-            "rule": "pur-pass\\.net\\/chunks\\/chunk-cmp-sourcepoint\\.20230414064911-fef17c3efb\\.d50e5dcf9abdcf6e4bfe\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "as-aubi",
-                "as-cobi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "pur.autobild.de",
-                    "resolved": "as-aubi.pur-pass.net"
                 },
                 {
-                    "original": "pur.computerbild.de",
-                    "resolved": "as-cobi.pur-pass.net"
+                    "original": "pur.kino.de",
+                    "resolved": "smb-kino.pur-pass.net"
                 }
             ],
             "responseHashes": [
-                "18bd6dbbd56ef19a778873d214837ad68b185c3c5b7fc2d20f53390235c89ba9"
+                "7de701ef0d754560ff442be6c3a66b7bc006a5cc2f7ee37b45affc8c4763e222",
+                "62e4cf645babdfdc3984c4fa68606b19e92a7c003d8f2905c9cd36384725f7ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autobild.de",
-                "www.computerbild.de"
+                "computerbild.de",
+                "www.giga.de",
+                "www.kino.de"
             ]
         }
     ],
@@ -104,16 +72,12 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "auto-bild.de",
-            "prevalence": 0.5
-        },
-        {
             "domain": "computer-bild.de",
-            "prevalence": 0.5
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 3
     },
     "nameservers": [
         "ns-cloud-d1.googledomains.com",

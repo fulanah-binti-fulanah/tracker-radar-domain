@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000705,
+    "sites": 7,
     "subdomains": [
-        "fox.tagger",
+        "adalliance.profiles.tagger",
+        "pdmp.profiles.tagger",
         "tagger-scmp",
         "tagger"
     ],
@@ -22,26 +23,29 @@
             "resolved": "tagger-scmp.opecloud.com"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
-            "cookies": 0.000201,
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fox.tagger"
+                "adalliance.profiles.tagger",
+                "pdmp.profiles.tagger"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
+            "responseHashes": [
+                "147014224ae9f69f25a69b78513b0791a1bf3ef40261eefb14faf58b48e1ff10"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxsports.com",
-                "www.foxsports.com"
+                "chefkoch.de",
+                "www.salon.com"
             ]
         },
         {
@@ -64,8 +68,8 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.0004027791763165844,
-                "lotame_domain_check": 0.0002013895881582922
+                "_ga": 0.00040257648953301127,
+                "lotame_domain_check": 0.00020128824476650564
             },
             "exampleSites": [
                 "scmp.com",
@@ -87,7 +91,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0002013895881582922
+                "lotame_domain_check": 0.00020128824476650564
             },
             "exampleSites": [
                 "scmp.com",
@@ -97,7 +101,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
@@ -121,12 +125,13 @@
         }
     ],
     "types": {
-        "Image": 6
+        "Fetch": 2,
+        "Image": 4
     },
     "nameservers": [
+        "ns-353.awsdns-44.com",
         "ns-1454.awsdns-53.org",
         "ns-1611.awsdns-09.co.uk",
-        "ns-353.awsdns-44.com",
         "ns-899.awsdns-48.net"
     ]
 }

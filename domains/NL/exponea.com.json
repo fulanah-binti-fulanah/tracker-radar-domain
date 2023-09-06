@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000805,
+    "sites": 8,
     "subdomains": [
+        "api",
         "api.eu1",
         "custom-api",
-        "api.uk",
-        "api"
+        "api.us1",
+        "api.uk"
     ],
     "cnames": [
         {
@@ -24,26 +25,52 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "exponea\\.com\\/js\\/service-worker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71c42774022808c64f3127b3a51a8fcf141f53ce3e0eac7d3b165722d17d50f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fairphone.com",
+                "www.fairphone.com"
+            ]
+        },
+        {
             "rule": "exponea\\.com\\/js\\/exponea\\.min\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000604,
             "fingerprinting": 2,
             "subdomains": [
                 "api.eu1",
                 "custom-api",
+                "api.us1",
                 "api.uk"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.vendor": 3,
-                "window.indexedDB": 3,
-                "window.localStorage": 3,
-                "window.sessionStorage": 3,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.vendor": 7,
+                "window.indexedDB": 7,
+                "window.localStorage": 7,
+                "window.sessionStorage": 7,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.maxTouchPoints": 1
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [
                 {
                     "original": "exp-api.my-jewellery.com",
@@ -51,42 +78,98 @@
                 }
             ],
             "responseHashes": [
-                "d23cc74db612e23bb06a124d77920e436d793a022093e124bcf9038ec29f33fc"
+                "e0bcd1872e0933e98feb8d693e65073d719a3ba9aa1d63d2caad6fa23df50171",
+                "142bd4a94a326e9ab60bf1370f5883f1828ab2435a11720a25903e5c49012623",
+                "43dd05607104e074bf4081084f5d675defec2a86849e763483736a8f32fdbded",
+                "19132bdd6bedb513dc3949fa52ededcd5fcd59e95efd1d0e83bfadf18eba6fd3"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__exponea_etc__": {
                     "ttl": 94608003,
                     "length": 36,
-                    "prevalence": 0.00010067451927917044,
+                    "prevalence": 0.0005034232782923883,
                     "uniqueness": 1
                 },
                 "__exponea_time2__": {
                     "ttl": 3603,
                     "length": 21,
-                    "prevalence": 0.00010067451927917044,
+                    "prevalence": 0.0005034232782923883,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
+                "shop.fairphone.com",
+                "support.fairphone.com",
+                "www.fairphone.com",
                 "www.my-jewellery.com",
+                "www.sheetmusicplus.com",
                 "www.toolstation.nl",
                 "www.toolstation.com"
             ]
         },
         {
+            "rule": "exponea\\.com\\/webxp\\/script\\/4ac19f62-4a6d-11ed-baa7-06f052a58d3f\\/new\\/modifications\\.min\\.js",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.eu1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ce109aee271da8cbfbf4316a8c5714d95cf396bd5a4e5717b41202b81237c1a7",
+                "bf641ac026d719c067bc27c7128efc94be1e69327a0a43457f3bfa49f9352e35"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fairphone.com",
+                "shop.fairphone.com",
+                "www.fairphone.com"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/webxp\\/projects\\/4ac19f62-4a6d-11ed-baa7-06f052a58d3f\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.eu1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "59dbe7d634ad83e4c0a2301f6cedb726975ab032b1ba76dc6f27d18e3c1b67a2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fairphone.com",
+                "shop.fairphone.com",
+                "support.fairphone.com",
+                "www.fairphone.com"
+            ]
+        },
+        {
             "rule": "exponea\\.com\\/bulk",
-            "cookies": 0.000201,
+            "cookies": 0.000503,
             "fingerprinting": 0,
             "subdomains": [
                 "api.eu1",
-                "custom-api"
+                "custom-api",
+                "api.us1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [
                 {
                     "original": "exp-api.my-jewellery.com",
@@ -94,14 +177,21 @@
                 }
             ],
             "responseHashes": [
-                "08c08b145717d2169892c8b8f97c17d02c4c6bccc3a8f2c357b1896ab17590fa"
+                "fea95708f7c6bab82bc5ef52c77d8f7f45bdc63cdb0e57271dd7e4ff5fff28e8",
+                "d0e7f4571f58a87198f16c2d19141fc767cff1e38b79fc2aa2c666d343949749",
+                "2fbaced8e881b111809a60a97a646a5505b42c30780f1dcd375f637e4e8aabca",
+                "549f73ff500f82792df0e23014f49021e4608b0f06f6a88783268fb589bb84e9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "www.my-jewellery.com"
+                "shop.fairphone.com",
+                "support.fairphone.com",
+                "www.fairphone.com",
+                "www.my-jewellery.com",
+                "www.sheetmusicplus.com"
             ]
         },
         {
@@ -110,11 +200,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api.eu1",
-                "custom-api"
+                "custom-api",
+                "api.us1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [
                 {
                     "original": "exp-api.my-jewellery.com",
@@ -122,14 +213,19 @@
                 }
             ],
             "responseHashes": [
-                "7abcfb97f4253e158576aacf0b347612c4aa082f26aa5ae93bdaaeb0a13b6841"
+                "5c858b1c80e2a37e46abc26525a908fe14db93ebdce1dbdbdd2828cd180bbeec",
+                "e0e1436ae27e3dec0175fd3dfe136f7e38acd58f20c3ad3b6925e8fe2c1c3f04"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "www.my-jewellery.com"
+                "shop.fairphone.com",
+                "support.fairphone.com",
+                "www.fairphone.com",
+                "www.my-jewellery.com",
+                "www.sheetmusicplus.com"
             ]
         },
         {
@@ -141,10 +237,10 @@
                 "custom-api"
             ],
             "apis": {
-                "window.indexedDB": 1
+                "window.indexedDB": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "exp-api.my-jewellery.com",
@@ -159,33 +255,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fairphone.com",
-                "www.my-jewellery.com"
-            ]
-        },
-        {
-            "rule": "exponea\\.com\\/webxp\\/script\\/393ef2ce-c701-11e8-9f34-0a580a204b4a\\/new\\/modifications\\.min\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "custom-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "exp-api.my-jewellery.com",
-                    "resolved": "custom-api.exponea.com"
-                }
-            ],
-            "responseHashes": [
-                "6e86d7a3a9251c41f141e71316a12ef7900074221214ef1027e9dee77e887b04"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "my-jewellery.com",
+                "shop.fairphone.com",
+                "www.fairphone.com",
                 "www.my-jewellery.com"
             ]
         },
@@ -194,7 +265,8 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "custom-api"
+                "custom-api",
+                "api.us1"
             ],
             "apis": {},
             "sites": 2,
@@ -206,39 +278,39 @@
                 }
             ],
             "responseHashes": [
-                "f5c1388868f22487ce09932804f0203ff0e4821dc325963da6337358b3c6274f"
+                "7df7a7af91f9e18e734fb84d5292a1582703a3c7ba946014ce49c4482674ec1c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "my-jewellery.com",
-                "www.my-jewellery.com"
+                "www.sheetmusicplus.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9
+            "prevalence": 0.9411764705882353
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.1
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 6,
-        "Fetch": 6,
-        "Other": 2
+        "Script": 13,
+        "Fetch": 18,
+        "Other": 4
     },
     "nameservers": [
+        "ns-cloud-e1.googledomains.com",
         "ns-cloud-e2.googledomains.com",
         "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e4.googledomains.com",
-        "ns-cloud-e1.googledomains.com"
+        "ns-cloud-e4.googledomains.com"
     ]
 }

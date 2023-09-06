@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000948,
-    "sites": 14,
+    "prevalence": 0.000075,
+    "sites": 11,
     "subdomains": [
+        "salesiq",
         "vts",
         "files",
         "forms"
@@ -18,6 +19,40 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "zohopublic\\.eu\\/visitor\\/v2\\/channels\\/website",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "salesiq"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "d56f724dcfd0e22c3f19330c55f3913e01ee7a7253051eae41922ba45d3eaf90",
+                "614eb512a2a44d0b9b8b65616c243664bc040719202c82e18a235e8d7d5bec15",
+                "05a0fbe2bef9939e14438f17daaaaeaa5fcd6301064c6f2a22d1b32132b474af",
+                "669161813e3a78ff9621bb8f42e6b277661c9f63d53eda24eb75d19ad9f1e3cd",
+                "8619ad11743a2b7d305c6350003408f3b68333d0e3e0f9c1e1d1e554e863024e",
+                "d66e9bba214d9ede8f91368edb96721b049e4294e9e7a650eb10d829e30a739c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006816353796027429
+            },
+            "exampleSites": [
+                "clickasnap.com",
+                "wereldhavendagen.nl",
+                "www.aplaceinthesun.com",
+                "www.cruisedirect.co.uk",
+                "www.harzinfo.de",
+                "www.loxone.com",
+                "www.monitoraudio.com"
+            ]
+        },
+        {
             "rule": "zohopublic\\.eu\\/watchws",
             "cookies": 0,
             "fingerprinting": 0,
@@ -25,19 +60,21 @@
                 "vts"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013632707592054858,
+                "videscapelimited-_zldt": 0.000006816353796027429
+            },
             "exampleSites": [
-                "airadvisor.com",
-                "store.leica-camera.com",
+                "clickasnap.com",
+                "blog.clickasnap.com",
                 "www.aplaceinthesun.com",
-                "www.cruisedirect.co.uk",
-                "www.loxone.com"
+                "www.cruisedirect.co.uk"
             ]
         },
         {
@@ -49,7 +86,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "58db697ab96ad9631407574287400a224b7f39b28866bfd048e4d8c17c847c76"
@@ -64,14 +101,14 @@
         },
         {
             "rule": "zohopublic\\.eu\\/tourismebretagne\\/downloadlogoperma",
-            "cookies": 0.0000271,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "forms"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7369a8df62f5da41591c14305ed9a0b6cc090d91eb68348979dc0a23fb3e6f6d"
@@ -81,8 +118,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bretagne-reisen.de",
-                "www.bretagne-reisen.de",
-                "www.brittanytourism.com",
                 "www.tourismebretagne.com"
             ]
         }
@@ -91,33 +126,38 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000406,
+    "cookies": 0.000075,
     "topInitiators": [
         {
             "domain": "zoho.eu",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "privacy-center.org",
-            "prevalence": 0.375
+            "prevalence": 0.7222222222222222
         },
         {
             "domain": "zohocdn.com",
-            "prevalence": 0.125
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "privacy-center.org",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "WebSocket": 5,
-        "Image": 6
+        "XHR": 7,
+        "WebSocket": 4,
+        "Image": 4
     },
     "nameservers": [
-        "ns41.zns-53.net",
-        "pdns90.ultradns.net",
         "ns1.zohocorp.com",
-        "ns21.zns-53.net",
         "pdns90.ultradns.biz",
-        "ns11.zns-53.com",
+        "pdns90.ultradns.net",
         "ns31.zns-53.com",
-        "pdns90.ultradns.com"
+        "ns11.zns-53.com",
+        "ns21.zns-53.net",
+        "pdns90.ultradns.com",
+        "ns41.zns-53.net"
     ]
 }

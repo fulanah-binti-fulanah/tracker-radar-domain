@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "static.toiimg",
+        "jsso.indiatimes",
         "geo.cnbc",
         "www.contact.nespresso"
     ],
@@ -20,6 +21,10 @@
         {
             "original": "geo.cnbc.com",
             "resolved": "geo.cnbc.com-v1.edgekey.net"
+        },
+        {
+            "original": "jsso.indiatimes.com",
+            "resolved": "jsso.indiatimes.com-v1.edgekey.net"
         },
         {
             "original": "static.toiimg.com",
@@ -33,7 +38,7 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "com-v1\\.edgekey\\.net\\/thumb\\/102793102\\.cms",
+            "rule": "com-v1\\.edgekey\\.net\\/thumb\\/103393231\\.cms",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -49,34 +54,7 @@
                 }
             ],
             "responseHashes": [
-                "e6c163b0190231d0f88f338dc54710df970c48eee4bc1cbf04f042afb776f6a9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "indiatimes.com",
-                "photogallery.indiatimes.com"
-            ]
-        },
-        {
-            "rule": "com-v1\\.edgekey\\.net\\/thumb\\/102795155\\.cms",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.toiimg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.toiimg.com",
-                    "resolved": "static.toiimg.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d996cfa4e4b9d65cba8017c325adac7596cb65e8b915f758bc27b19ef28b3b55"
+                "05af88cc51722c42bab330bd5b9040c9a91b98ad3f07b1465ee8982d88e817ea"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -115,25 +93,50 @@
             ]
         },
         {
-            "rule": "com-v1\\.edgekey\\.net\\/photo\\/71149155\\.cms",
-            "cookies": 0,
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "static.toiimg"
+                "jsso.indiatimes"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "static.toiimg.com",
-                    "resolved": "static.toiimg.com-v1.edgekey.net"
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "de4b846f289a63be3f3310afd5bc823396b1ece130838e5e36c8e74cae55b369"
+                "ddfd865e7f12769fb2bda5bcaa84657980cae7117acc679be6877a2d318909b5"
             ],
-            "type": "Image",
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "www.gadgetsnow.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso.indiatimes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -255,31 +258,41 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000806,
+    "cookies": 0.000906,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9468085106382979
+            "prevalence": 0.9411764705882353
         },
         {
             "domain": "disneyworld.co.uk",
-            "prevalence": 0.015957446808510637
+            "prevalence": 0.016042780748663103
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.015957446808510637
-        },
-        {
-            "domain": "cnbcfm.com",
-            "prevalence": 0.010638297872340425
+            "prevalence": 0.016042780748663103
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.010638297872340425
+            "prevalence": 0.0106951871657754
+        },
+        {
+            "domain": "medscapestatic.com",
+            "prevalence": 0.0053475935828877
+        },
+        {
+            "domain": "toiimg.com",
+            "prevalence": 0.0053475935828877
+        },
+        {
+            "domain": "cnbcfm.com",
+            "prevalence": 0.0053475935828877
         }
     ],
     "types": {
-        "Image": 11,
+        "Image": 7,
+        "XHR": 2,
+        "Preflight": 2,
         "Fetch": 5,
         "Script": 2,
         "Stylesheet": 2

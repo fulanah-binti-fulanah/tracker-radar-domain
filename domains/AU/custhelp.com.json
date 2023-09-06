@@ -9,18 +9,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000906,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "brothercustomerservice.widget",
-        "ipoint.widget",
-        "ctshirts-us.widget",
-        "aurcbloodservices.widget",
+        "griffithstudenthelp.widget",
         "myanswers.widget",
         "summitracing.widget",
         "swinburne.widget",
         "tafensw.widget",
         "targetaustralia.widget",
+        "ctshirts-us.widget",
+        "aurcbloodservices.widget",
+        "usqstudy.widget",
         "summitracing",
         "targetaustralia"
     ],
@@ -33,26 +33,36 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "custhelp\\.com\\/ci\\/cache\\/yuiCombo\\/3\\.18\\.1\\/widget-child\\/widget-child-min\\.js",
+            "rule": "custhelp\\.com\\/euf\\/rightnow\\/RightNow\\.Client\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "brothercustomerservice.widget",
-                "ipoint.widget"
+                "griffithstudenthelp.widget",
+                "myanswers.widget",
+                "summitracing.widget",
+                "swinburne.widget",
+                "tafensw.widget",
+                "targetaustralia.widget"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
-                "540234dc9dc20d8562624d1d755178f6d3a8e3e840fa381f83c91667ceb64941"
+                "9a5712d356380aa0a1449496ce889650e6dd72490e6e07b2d3f02b4acc218897"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "brother-usa.com",
-                "ipoint.uwa.edu.au"
+                "griffith.edu.au",
+                "www.murdoch.edu.au",
+                "www.summitracing.com",
+                "www.swinburne.edu.au",
+                "www.tafensw.edu.au",
+                "www.target.com.au"
             ]
         },
         {
@@ -61,11 +71,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ctshirts-us.widget",
-                "aurcbloodservices.widget"
+                "aurcbloodservices.widget",
+                "usqstudy.widget"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "f59cc5b6c659c247936c98d2aba78742a9196ea6b267142cb1b27a437a08d209"
@@ -75,38 +86,88 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "charlestyrwhitt.com",
-                "www.lifeblood.com.au"
+                "www.lifeblood.com.au",
+                "www.unisq.edu.au"
             ]
         },
         {
-            "rule": "custhelp\\.com\\/euf\\/rightnow\\/RightNow\\.Client\\.js",
+            "rule": "custhelp\\.com\\/s\\/oit\\/latest\\/common\\/v0\\/libs\\/oit\\/loader-frame\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "myanswers.widget",
-                "summitracing.widget",
-                "swinburne.widget",
-                "tafensw.widget",
-                "targetaustralia.widget"
+                "aurcbloodservices.widget",
+                "usqstudy.widget"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 5
-            },
-            "sites": 5,
-            "prevalence": 0.000503,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9a5712d356380aa0a1449496ce889650e6dd72490e6e07b2d3f02b4acc218897"
+                "f998ed8a291b60ead6823a23593b0c1d06a4633b29181abad06c4b5a94f629ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "murdoch.edu.au",
-                "www.summitracing.com",
-                "www.swinburne.edu.au",
-                "www.tafensw.edu.au",
-                "www.target.com.au"
+                "lifeblood.com.au",
+                "www.unisq.edu.au"
+            ]
+        },
+        {
+            "rule": "custhelp\\.com\\/s\\/oit\\/latest\\/common\\/v0\\/libs\\/requirejs\\/require\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "aurcbloodservices.widget",
+                "usqstudy.widget"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4dbf60999c3dd241fe0d2dbaafa0b87d76fa43ccc1ea3d115b6aaa613258b79e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lifeblood.com.au",
+                "www.unisq.edu.au"
+            ]
+        },
+        {
+            "rule": "custhelp\\.com\\/s\\/oit\\/latest\\/inlays\\/oracle\\/chat-embedded\\/inlay\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
+            "subdomains": [
+                "aurcbloodservices.widget",
+                "usqstudy.widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f84a632bfaa5a0c10f982a4a81b8afd6e81d59d6d8daa118680daf9b0289a2b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lifeblood.com.au",
+                "www.unisq.edu.au"
             ]
         },
         {
@@ -180,7 +241,7 @@
                 }
             ],
             "responseHashes": [
-                "8f81ab662dd589b958bb4393f99a0eaee4e411ebdcd5a1f97bfca603573e9be2"
+                "17ef5d1b606b7081275cf142318c69a48d9d8e78327db6edfc34279e7f6f588c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -195,35 +256,35 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3888888888888889
+            "prevalence": 0.42105263157894735
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2777777777777778
+            "prevalence": 0.2631578947368421
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.15789473684210525
         },
         {
             "domain": "atgsvcs.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.15789473684210525
         }
     ],
     "types": {
-        "Script": 13,
+        "Script": 19,
         "Stylesheet": 2
     },
     "nameservers": [
-        "ednsac01.rightnowtech.com",
-        "ns1.p201.dns.oraclecloud.net",
-        "ns3.p201.dns.oraclecloud.net",
         "ns4.p201.dns.oraclecloud.net",
         "ednsac02.rightnowtech.com",
-        "ns2.p201.dns.oraclecloud.net"
+        "ednsac01.rightnowtech.com",
+        "ns3.p201.dns.oraclecloud.net",
+        "ns2.p201.dns.oraclecloud.net",
+        "ns1.p201.dns.oraclecloud.net"
     ]
 }

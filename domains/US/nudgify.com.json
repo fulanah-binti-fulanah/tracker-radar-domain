@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [
         "pixel",
         "data"
@@ -15,18 +15,19 @@
     "resources": [
         {
             "rule": "nudgify\\.com\\/pixel\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000409,
             "fingerprinting": 1,
             "subdomains": [
                 "pixel"
             ],
             "apis": {
-                "Document.cookie getter": 4,
-                "Navigator.prototype.language": 3,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 7,
+                "Navigator.prototype.language": 6,
+                "Document.cookie setter": 6,
+                "Date.prototype.getTime": 4
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "11df43aa9bcceaf4213a14ad06d0da47671604123e94128ca74106b8872fe8dc"
@@ -34,18 +35,34 @@
             "type": "Script",
             "firstPartyCookies": {
                 "nudgify-visitor": {
-                    "ttl": 31536005,
+                    "ttl": 31536002,
                     "length": 74,
-                    "prevalence": 0.00001354132813346333,
+                    "prevalence": 0.000040898122776164575,
+                    "uniqueness": 1
+                },
+                "nudgify-site-capping": {
+                    "ttl": 3612,
+                    "length": 1,
+                    "prevalence": 0.000013632707592054858,
+                    "uniqueness": 0.5
+                },
+                "nudgify-purchase-skip-seen": {
+                    "ttl": 3612,
+                    "length": 66,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "farmandranchdepot.com",
                 "megafamous.com",
-                "onthatass.com",
                 "pictory.ai",
-                "www.boatoutfitters.com"
+                "thefundedtraderprogram.com",
+                "www.atticus.io",
+                "www.boatoutfitters.com",
+                "www.kompareit.com",
+                "www.landmarklabs.co"
             ]
         },
         {
@@ -56,20 +73,102 @@
                 "data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-                "db698f2637006392a44356230ef8ab64a11d232f7d7b96c71c165041266b34f1"
+                "46e5ee0e8f77bd21af0fd34ef2b7b126f825ec69861f826f3fd7c4ac9ae50256",
+                "edcb7cfc98cd80da70ceaaaf6e9b4fd03c37e1da5593228d7c1a38f04c374785",
+                "5ddcf6839eb4b25946af729349336d5acd86889607589c85669ff2f1ef0b2701",
+                "e0e8cd778692576be094eb00a11337fe9b0e18a118b7c9c710e388f8b7d61285",
+                "d4d2fb2d10ba8bc3f821ff33b404ab5a96026e760a970edb846e5f641bbee54e",
+                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "farmandranchdepot.com",
                 "megafamous.com",
-                "onthatass.com",
-                "pictory.ai"
+                "pictory.ai",
+                "thefundedtraderprogram.com",
+                "www.atticus.io",
+                "www.kompareit.com",
+                "www.landmarklabs.co"
+            ]
+        },
+        {
+            "rule": "nudgify\\.com\\/purchases\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c56b814acd039cf723870f40824031536138e056aa53c6c39ab34ebf3ecd54b4",
+                "40f13414f639dae599740067baeaceb3a12abee9959df3d008de4c87a4dbf833"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farmandranchdepot.com",
+                "pictory.ai",
+                "www.atticus.io"
+            ]
+        },
+        {
+            "rule": "nudgify\\.com\\/translation\\/en",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fbf6fd1b0a7a5dac1c94660c3dff0cba0ca35541255e49c1ee269e0e85c5d70c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farmandranchdepot.com",
+                "megafamous.com",
+                "pictory.ai",
+                "www.atticus.io",
+                "www.kompareit.com"
+            ]
+        },
+        {
+            "rule": "nudgify\\.com\\/events\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "nudgify-visitor": 0.00003408176898013714
+            },
+            "exampleSites": [
+                "farmandranchdepot.com",
+                "megafamous.com",
+                "pictory.ai",
+                "www.atticus.io",
+                "www.kompareit.com"
             ]
         },
         {
@@ -81,10 +180,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b8b6b69f3a20762d62a9c30678fce31e9c5285d978980384a0ab473d00e71f7d"
+                "1a6ca5ebbee7a0b8dc559c548bd974d09dc051f203445e3fa7267cecd542830d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -95,7 +194,7 @@
             ]
         },
         {
-            "rule": "nudgify\\.com\\/translation\\/en",
+            "rule": "nudgify\\.com\\/visitors\\/count",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -103,43 +202,39 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fbf6fd1b0a7a5dac1c94660c3dff0cba0ca35541255e49c1ee269e0e85c5d70c"
+                "d82220ce2df0bfb2ff5543f4b6901725fe484dc9afefdd8375452ecdb15a550b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "megafamous.com",
-                "pictory.ai"
+                "pictory.ai",
+                "www.kompareit.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000477,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.8
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.125
-        },
-        {
-            "domain": "sentry-cdn.com",
-            "prevalence": 0.125
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 4,
-        "Fetch": 7
+        "Script": 8,
+        "Fetch": 24
     },
     "nameservers": [
-        "paul.ns.cloudflare.com",
-        "penny.ns.cloudflare.com"
+        "penny.ns.cloudflare.com",
+        "paul.ns.cloudflare.com"
     ]
 }

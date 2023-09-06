@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "cdn"
     ],
@@ -13,23 +13,27 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "dnky\\.co\\/widget\\/1\\.0\\.64\\/assets\\/fonts\\/Lato\\/latofonts\\.css",
+            "rule": "dnky\\.co\\/widget\\/bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Stylesheet",
+            "responseHashes": [
+                "ac84ed101573b06cbf353d2981badb083fbbfcae50945d5a5fc2151cc9e9eeb9"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "barbour.com",
-                "www.barbour.com"
+                "www.britanniahotels.com"
             ]
         }
     ],
@@ -39,14 +43,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Stylesheet": 2
+        "Script": 2
     },
     "nameservers": [
-        "vin.ns.cloudflare.com",
-        "lily.ns.cloudflare.com"
+        "lily.ns.cloudflare.com",
+        "vin.ns.cloudflare.com"
     ]
 }

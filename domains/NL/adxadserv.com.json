@@ -7,7 +7,8 @@
     "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "static"
+        "static",
+        "ads"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -28,14 +29,36 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "029b235c453c3002d08b8a68a1d45ab10c07166f9f3907173a525c9ca62a3bcb"
+                "7bccb036fc4379abc145f8e81bdc9ba147157fb772b97b840bb65013226fed53"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mycomicsxxx.com",
-                "porndude.tv"
+                "www.vintagepornfun.com"
+            ]
+        },
+        {
+            "rule": "adxadserv\\.com\\/ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f194c542e2ad7c6f65cd46e3d6ee011ad8c9c5b7acd3b344e456b6e5817d8885"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mycomicsxxx.com",
+                "www.vintagepornfun.com"
             ]
         },
         {
@@ -93,7 +116,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mycomicsxxx.com",
-                "porndude.tv"
+                "www.vintagepornfun.com"
             ]
         },
         {
@@ -111,15 +134,42 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "px_fpid_sa": 0.00020134903855834087,
-                "px_feid": 0.00020134903855834087,
-                "px_sid": 0.00020134903855834087,
-                "px_feid_sa": 0.00020134903855834087,
-                "px_sid_sa": 0.00020134903855834087
+                "px_fpid_sa": 0.0002013693113169553,
+                "px_feid": 0.0002013693113169553,
+                "px_sid": 0.0002013693113169553,
+                "px_feid_sa": 0.0002013693113169553,
+                "px_sid_sa": 0.0002013693113169553
             },
             "exampleSites": [
                 "mycomicsxxx.com",
-                "porndude.tv"
+                "www.vintagepornfun.com"
+            ]
+        },
+        {
+            "rule": "adxadserv\\.com\\/px\\/heartbeat\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "px_fpid_sa": 0.0002013693113169553,
+                "px_feid": 0.0002013693113169553,
+                "px_sid": 0.0002013693113169553,
+                "px_feid_sa": 0.0002013693113169553,
+                "px_sid_sa": 0.0002013693113169553,
+                "px_fpid": 0.00010068465565847765
+            },
+            "exampleSites": [
+                "vintagepornfun.com",
+                "www.vintagepornfun.com"
             ]
         }
     ],
@@ -129,15 +179,13 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
-        },
-        {
-            "domain": "ar732.com",
-            "prevalence": 0.42857142857142855
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "Document": 2,
+        "Ping": 2
     },
     "nameservers": [
         "ns.anycastns1.org",

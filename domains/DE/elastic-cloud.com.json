@@ -20,21 +20,25 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "mpb-production-elk.apm.europe-west2.gcp"
+                "mpb-production-elk.apm.europe-west2.gcp",
+                "98c50a520f5f46a0b347726c26c4d6e4.apm.westeurope.azure",
+                "rightmove-rum-apm.apm.europe-west2.gcp"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mpb.com",
-                "www.mpb.com"
+                "www.mpb.com",
+                "www.remmers.com",
+                "www.rightmove.co.uk"
             ]
         },
         {
@@ -61,29 +65,6 @@
             ]
         },
         {
-            "rule": "elastic-cloud\\.com\\/intake\\/v2\\/rum\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "98c50a520f5f46a0b347726c26c4d6e4.apm.westeurope.azure",
-                "rightmove-rum-apm.apm.europe-west2.gcp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "remmers.com",
-                "www.rightmove.co.uk"
-            ]
-        },
-        {
             "rule": "elastic-cloud\\.com\\/dcom-prod-german\\/_search\\/template",
             "cookies": 0,
             "fingerprinting": 0,
@@ -95,7 +76,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9731c13cd09dc8637869539e6f307decda93cc3deaa1b6e57518301369ed8d72"
+                "5c55677582733d1522247c58dd77dced1f9c8d21dbd44e41ab7907c8e065a9be"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,9 +97,9 @@
         }
     ],
     "types": {
-        "XHR": 4,
+        "Fetch": 4,
         "Preflight": 3,
-        "Fetch": 2
+        "XHR": 2
     },
     "nameservers": [
         "ns-729.awsdns-27.net",

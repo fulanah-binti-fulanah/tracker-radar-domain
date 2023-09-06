@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "analytics",
         "sae.us1app"
@@ -19,31 +19,33 @@
         {
             "rule": "churnzero\\.net\\/churnzero\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "analytics"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 1,
-                "Date.prototype.getTime": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.cookieEnabled": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 3,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.cookieEnabled": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "feeb1303e9b1d82030f8b9da86718faaaa8ce18a1aa21f65edb0ae2be4eb5b7e"
+                "2783eff6a0c3080b35d25199f308f56909030b4e829b41832aa5193ba66b169d",
+                "07ec589381ac6d704136b63c89679f9582ecf652cf6844191b72282bf7746acc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sae.org",
+                "targetsolutions.com",
+                "cloudacademy.com",
                 "www.sae.org"
             ]
         },
@@ -56,10 +58,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6e18db4e6ba5a7bb1bcfed26ab0a4ce76df2159a132919ed8525ff9565ddf29d"
+                "1d42f97944324a1250829c7011e6942a4d8cd8f8b7255f01faad0321d18f25d3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -78,7 +80,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0e25118d0437c5824ded894204110ebd8145479df6b0bfcf159f9ce7aab192d2"
@@ -100,7 +102,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "81437645d3861d151187255a27686f3168bb1179a342bbc5a9e655783c358738"
@@ -122,7 +124,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
@@ -142,18 +144,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
+        "Script": 3,
         "XHR": 4,
         "Stylesheet": 4
     },
     "nameservers": [
-        "ns-1806.awsdns-33.co.uk",
-        "ns-1256.awsdns-29.org",
+        "ns-938.awsdns-53.net",
         "ns-117.awsdns-14.com",
-        "ns-938.awsdns-53.net"
+        "ns-1256.awsdns-29.org",
+        "ns-1806.awsdns-33.co.uk"
     ]
 }

@@ -7,83 +7,140 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
-        "vistaprint-app",
+        "cdn",
+        "ama-app",
         "lenovosupport-app",
         "norton-app",
         "aa-app",
-        "att-sync",
         "beatport-app",
         "christies-app",
         "metmuseum-app",
         "nintendo-app",
         "tmobile-sync",
         "united-app",
-        "comcast-app",
-        "cdn",
-        "ingest",
-        "rl"
+        "vistaprint-app",
+        "rl",
+        "ingest"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-nintendo\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.vendor": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2,
+                "Animation.prototype.currentTime": 1,
+                "BroadcastChannel.prototype.constructor": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "faf60cdca80a9c04784e5f7d8653c86e18e8c1e803bb10fd75ca43c298682a41"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "qm-ssc": {
+                    "ttl": -1693982056,
+                    "length": 4,
+                    "prevalence": 0.0002013693113169553,
+                    "uniqueness": 0.5
+                },
+                "QuantumMetricSessionID": {
+                    "ttl": 1818,
+                    "length": 32,
+                    "prevalence": 0.00010068465565847765,
+                    "uniqueness": 1
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536018,
+                    "length": 32,
+                    "prevalence": 0.00010068465565847765,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nintendo.com",
+                "www.nintendo.com"
+            ]
+        },
+        {
             "rule": "quantummetric\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vistaprint-app",
+                "ama-app",
                 "lenovosupport-app",
                 "norton-app",
                 "aa-app",
-                "att-sync",
                 "beatport-app",
                 "christies-app",
                 "metmuseum-app",
                 "nintendo-app",
                 "tmobile-sync",
                 "united-app",
-                "comcast-app"
+                "vistaprint-app"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.00141,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
-                "ba0e868de9954742afbdbd2a8a62c5d11d6cb6cf024e052342be9900d1e9a9f9",
-                "f2389c0fc31efa3bf6b15869b883cc49203d63205211c2c4b2d03175c074c25b",
-                "9f76b695df403c160af63d7f2a698a7a1bdfea4a3633c9c3ce8bed5596a345d6",
-                "3873faca4a7b946ee7186e6fcf6b07c3fbac8d05004334bd898cc1a6607f8295",
+                "b2e82518d4978ed3e3ce3216145342ab9e61711c0349cf30de495aa0426a9e83",
+                "0e20daf45a725f5a6d95f72a24b3bdb99e1c7b842e58296e6a4279eb4aadbe61",
+                "d24392c754d5b4a3679465624edf3779a515210296b89190a3ed7c3b05289bbb",
+                "da23f609f178f388fbdf6d19327318948bc747ed2d9fdf9a74a84adc07a3d653",
+                "9547ae55c69b620c90dca5b43fd2400a37f13e6fc97682ba32f99be76329c906",
+                "0fea30f6581e1d2e75330cf3bd3c6966d3f05ded031de23ccf10e902186c1c8f",
+                "c9fa27a896db137137aaf4aec4ead046faf6c0bf4d9214363dee27d6382f6fc9",
+                "d967e8cf70805270dbbb287bb9340756a9d2bb618992302e70703c4c9ab09519",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "c42da19d42877679c441af192d4e2673de66ed32d8bec505090366e525b84b6a",
-                "9bbe50bd89773bd4c959b0191cbfe6f4654b33391fb002db13c44c696670daaf",
-                "f7dfd1343586c5bb70eb376ca5f96232e34139b024cb04962235318ce3042e4c",
-                "b45e6e4cd360bb11828ff81dbdf909e4977804d835629972aca2cacfb3a15d25",
-                "815977a31239d98ba47b321f18ac4715042996977923b0b1e3c348a1f2d69904",
-                "188e454b81bc4ac5886964470a75e8f07cb66f79925be241afccbb0bf229a46c"
+                "57fbb8265416a7b972211ade30ce173d194c8f2bf2bef0f8e1ef5f369df941b2",
+                "cff51c73d93f296918162fe6b2a28723261f5381301c652a6409f474357b0dc3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020134903855834087
+                "IR_gbd": 0.0002013693113169553
             },
             "exampleSites": [
-                "99designs.com",
+                "jamanetwork.com",
                 "pcsupport.lenovo.com",
                 "support.lenovo.com",
                 "us.norton.com",
                 "www.aa.com",
-                "www.att.com",
                 "www.beatport.com",
                 "www.christies.com",
                 "www.metmuseum.org",
                 "www.nintendo.com",
                 "www.t-mobile.com",
                 "www.united.com",
-                "www.vistaprint.nl",
-                "www.xfinity.com"
+                "www.vistaprint.nl"
             ]
         },
         {
@@ -94,8 +151,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "07e2a6fb0d22cdbde787ec2941eb285c222861ddc3cbc8903315b6e5942be8cb"
@@ -104,12 +161,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "99designs.com",
+                "jamanetwork.com",
                 "pcsupport.lenovo.com",
                 "support.lenovo.com",
                 "us.norton.com",
                 "www.aa.com",
-                "www.att.com",
                 "www.beatport.com",
                 "www.christies.com",
                 "www.metmuseum.org",
@@ -149,26 +205,26 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dc78e36948540783ef2c6f77ea4befcf3f773d1b1bed0c64567e363e661ec9f5"
+                "5bc8b23a9518e11ffdb1c5162e88dc52e2533b112cace4884cb363711eadccdf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1692284076,
+                    "ttl": -1693982586,
                     "length": 4,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricSessionID": {
-                    "ttl": 1809,
+                    "ttl": 1806,
                     "length": 32,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 1
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536009,
+                    "ttl": 31536006,
                     "length": 32,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 1
                 }
             },
@@ -186,9 +242,9 @@
                 "cdn"
             ],
             "apis": {
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
@@ -211,26 +267,26 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6f0e16ef38caa77910730e3577dc567f1fd99f5a8fbcf1ce0613bf783dd81a6e"
+                "1d8d3be2e5a29224f2f808c4c0980010d467320d5f17014950c968f0f52e94c8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1692284056,
+                    "ttl": -1693981549,
                     "length": 4,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricSessionID": {
-                    "ttl": 1824,
+                    "ttl": 1822,
                     "length": 32,
-                    "prevalence": 0.00010067451927917044,
+                    "prevalence": 0.00010068465565847765,
                     "uniqueness": 1
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536023,
+                    "ttl": 31536018,
                     "length": 32,
-                    "prevalence": 0.00010067451927917044,
+                    "prevalence": 0.00010068465565847765,
                     "uniqueness": 1
                 }
             },
@@ -238,31 +294,6 @@
             "exampleSites": [
                 "norton.com",
                 "us.norton.com"
-            ]
-        },
-        {
-            "rule": "quantummetric\\.com\\/att",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ingest"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "QuantumMetricSessionID": 0.00010067451927917044,
-                "QuantumMetricUserID": 0.00010067451927917044
-            },
-            "exampleSites": [
-                "att.com",
-                "www.att.com"
             ]
         },
         {
@@ -289,101 +320,36 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.connection": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "130ac5ec8bcdd6721453fb630efff4b36295f1ebfd2359cf9e5a1b4302cabd65"
+                "88a00e1730c18777e9203b67029d636166f012e46f40751f92dc104e897c14fa"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1692282127,
+                    "ttl": -1693981466,
                     "length": 4,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricSessionID": {
-                    "ttl": 1830,
+                    "ttl": 1826,
                     "length": 32,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536030,
+                    "ttl": 31536026,
                     "length": 32,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beatport.com",
-                "www.beatport.com"
-            ]
-        },
-        {
-            "rule": "quantummetric\\.com\\/beatport\\/hash-check",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beatport.com",
-                "www.beatport.com"
-            ]
-        },
-        {
-            "rule": "quantummetric\\.com\\/beatport\\/hash-check",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beatport.com",
-                "www.beatport.com"
-            ]
-        },
-        {
-            "rule": "quantummetric\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "beatport-app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "QuantumMetricSessionID": 0.00020134903855834087
-            },
             "exampleSites": [
                 "beatport.com",
                 "www.beatport.com"
@@ -442,12 +408,14 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "QuantumMetricSessionID": 0.00010067451927917044,
-                "QuantumMetricUserID": 0.00010067451927917044
+                "QuantumMetricSessionID": 0.00010068465565847765,
+                "QuantumMetricUserID": 0.00010068465565847765
             },
             "exampleSites": [
                 "t-mobile.com",
@@ -477,14 +445,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "93d4a7bc0c0394e858bb59a44aff519ac9b4965a3539e6c14a10352835bf172f"
+                "1e7ea85157198d4bcc60d8adda30eb6f13341b8b9492f7cbfc962a059f5c320f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1692280201,
+                    "ttl": -1693978489,
                     "length": 4,
-                    "prevalence": 0.00020134903855834087,
+                    "prevalence": 0.0002013693113169553,
                     "uniqueness": 0.5
                 }
             },
@@ -497,43 +465,38 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00171,
+    "cookies": 0.00151,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6458333333333334
+            "prevalence": 0.640625
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.15625
-        },
-        {
-            "domain": "d2wy8f7a9ursnm.cloudfront.net",
-            "prevalence": 0.10416666666666667
+            "prevalence": 0.21875
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.0625
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.020833333333333332
+            "prevalence": 0.03125
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.020833333333333332
+            "prevalence": 0.03125
         },
         {
             "domain": "knotch-cdn.com",
-            "prevalence": 0.010416666666666666
+            "prevalence": 0.015625
         }
     ],
     "types": {
-        "XHR": 22,
-        "Document": 13,
-        "Script": 8,
-        "Preflight": 4,
-        "Ping": 2
+        "Script": 10,
+        "XHR": 16,
+        "Document": 12,
+        "Preflight": 2
     },
     "nameservers": [
         "ian.ns.cloudflare.com",

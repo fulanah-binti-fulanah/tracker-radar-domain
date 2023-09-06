@@ -7,14 +7,16 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.000606,
+    "sites": 6,
     "subdomains": [
         "w",
+        "auth",
+        "js",
         "prof"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "estat\\.com\\/js\\/whap\\.js",
@@ -24,8 +26,8 @@
                 "w"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000708,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -34,11 +36,77 @@
             "exampleSites": [
                 "tomsguide.fr",
                 "forum.tomshardware.fr",
-                "telecharger.logitheque.com",
-                "www.fnaim.fr",
-                "www.jeuxactu.com",
-                "www.motorlegend.com",
-                "www.nrj-play.fr"
+                "www.fnaim.fr"
+            ]
+        },
+        {
+            "rule": "estat\\.com\\/294094205410",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "estat\\.com\\/js\\/mu-7\\.3\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "42cb1711d1b52a751d409f8ea2aad5500792299ca46e6d6dc3dfe0b0040af725"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "estat\\.com\\/215015205406",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "eccbb1a0bdcc66aa0e3106343ea45112c34e649ad03c02663299f13238b28f42"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
             ]
         },
         {
@@ -69,24 +137,22 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "francetv.fr",
+            "prevalence": 0.6428571428571429
         },
         {
-            "domain": "francetv.fr",
-            "prevalence": 0.25
+            "domain": "first party",
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "tagcommander.com",
-            "prevalence": 0.16666666666666666
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 9
+        "Script": 7,
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-374.awsdns-46.com",

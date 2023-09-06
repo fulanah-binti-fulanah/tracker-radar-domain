@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
         "mobilecontent",
-        "geocodeservice"
+        "geocodeservice",
+        "ecom-api"
     ],
     "cnames": [
+        {
+            "original": "ecom-api.costco.com",
+            "resolved": "ecom-api.costco.com.edgekey.net"
+        },
         {
             "original": "geocodeservice.costco.com",
             "resolved": "geocodeservice.costco.com.edgekey.net"
@@ -36,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "mobilecontent.costco.com",
@@ -63,7 +68,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "geocodeservice.costco.com",
@@ -71,7 +76,7 @@
                 }
             ],
             "responseHashes": [
-                "ddeb9638e363a8408385bd80bc97b742c5ce9b0a33c7ce00e681e42158203688",
+                "e6fce2d6d69ddd7e098c412c3b516b4f191d2779c2dbb88c16b51b54409e9db5",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
@@ -82,24 +87,77 @@
                 "www.costco.ca",
                 "www.costco.com"
             ]
+        },
+        {
+            "rule": "costco\\.com\\.edgekey\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecom-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ecom-api.costco.com",
+                    "resolved": "ecom-api.costco.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "481654d847770286f047db12dea270a39247874537a0c2fc03e64e4703539236"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.ca",
+                "www.costco.com"
+            ]
+        },
+        {
+            "rule": "costco\\.com\\.edgekey\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecom-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ecom-api.costco.com",
+                    "resolved": "ecom-api.costco.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.ca",
+                "www.costco.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9156626506024096
+            "prevalence": 0.9113924050632911
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.08433734939759036
+            "prevalence": 0.08860759493670886
         }
     ],
     "types": {
         "Image": 2,
-        "XHR": 3
+        "XHR": 5,
+        "Preflight": 2
     },
     "nameservers": []
 }

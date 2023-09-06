@@ -10,7 +10,9 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "assets"
+        "assets",
+        "trackingapi",
+        "pic"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -27,69 +29,71 @@
                 "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2a003268cfa9e502149fc28a139faa39f50b4dceca2bbcbf8d85ed712a141345"
+                "b98f3383f2620057ebda5fc2aba1882cf44e762482358865dd96975ac9192b98"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "trd_cid": {
-                    "ttl": 31536031,
+                    "ttl": 31536020,
                     "length": 17,
-                    "prevalence": 0.00020126798832645668,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 },
                 "trd_vid_l": {
-                    "ttl": 31536024,
+                    "ttl": 31536023,
                     "length": 24,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 },
                 "trd_vuid_l": {
-                    "ttl": 31536024,
+                    "ttl": 31536023,
                     "length": 20,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 },
                 "trd_first_visit": {
                     "ttl": 31536021,
                     "length": 10,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 },
                 "trd_pw": {
                     "ttl": 31536021,
                     "length": 1,
-                    "prevalence": 0.00010063399416322834,
-                    "uniqueness": 1
+                    "prevalence": 0.0002009444388626545,
+                    "uniqueness": 0.5
                 },
                 "trd_pws": {
                     "ttl": 1821,
                     "length": 1,
-                    "prevalence": 0.00010063399416322834,
-                    "uniqueness": 1
+                    "prevalence": 0.0002009444388626545,
+                    "uniqueness": 0.5
                 },
                 "trd_sid": {
                     "ttl": 1821,
                     "length": 17,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 },
                 "trd_ma_cookie": {
-                    "ttl": 43224,
-                    "length": 74,
-                    "prevalence": 0.00010063399416322834,
+                    "ttl": 43223,
+                    "length": 76,
+                    "prevalence": 0.0002009444388626545,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snyk.io",
-                "www.tenable.com"
+                "www.puppet.com"
             ]
         },
         {
@@ -100,44 +104,190 @@
                 "assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.webdriver": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "window.indexedDB": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.plugins": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getContextAttributes": 1,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.productSub": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.plugins": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1220bdf087a7b3b0f068e1dc2422c361ef11cf999ff8ea343573d9e5a7c19bdc"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snyk.io",
-                "www.tenable.com"
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/Identity\\/me",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1667e46de389591cd19bf14738a7e7a77abf225fea20f714308f78bbe463aca4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_cid": 0.0002009444388626545
+            },
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/events\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_cid": 0.0002009444388626545,
+                "trd_first_visit": 0.0002009444388626545
+            },
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/marketingautomation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "292a48294d8269ab233888cb8163682b9092f094080158fccb576ad94ec82d4f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_cid": 0.0002009444388626545,
+                "trd_ma_cookie": 0.0002009444388626545
+            },
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/experience\\/personal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7d44393bcae5ebebc5f98946150ae0d37d6ba77408a28bb992b80c506fadb64b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_first_visit": 0.00010047221943132724
+            },
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/images\\/closex\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "384f24a122d3d3818a1b477c7d9af49efd9e2d42023a013be9123cca726d3c98"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/experience\\/personal-embedded",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "550bd46f070133fe3c89c8f82dd0786e77e05f93dc33ee27e28a9732d4c1988c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_first_visit": 0.00010047221943132724
+            },
+            "exampleSites": [
+                "snyk.io",
+                "www.puppet.com"
             ]
         }
     ],
@@ -151,10 +301,11 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 12,
+        "Image": 4
     },
     "nameservers": [
-        "ns07.domaincontrol.com",
-        "ns08.domaincontrol.com"
+        "ns08.domaincontrol.com",
+        "ns07.domaincontrol.com"
     ]
 }

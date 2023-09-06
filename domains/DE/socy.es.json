@@ -4,61 +4,105 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "epib.spxl",
-        "uuee.spxl"
+        "uuee.spxl",
+        "epib.spxl"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "socy\\.es\\/pixel\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "socy\\.es\\/pixel\\/js\\/UUEE_234_934_884\\/",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
             "subdomains": [
-                "epib.spxl",
                 "uuee.spxl"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.width": 2,
+                "window.innerWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.height": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
+                "24ca9d852d21a0d4cc80e6728785efd3fd1b57e3103f90be9d1b8df0105cfe5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__bs_id": {
+                    "ttl": 31536004,
+                    "length": 19,
+                    "prevalence": 0.00020161290322580645,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elmundo.es",
+                "www.marca.com"
+            ]
+        },
+        {
+            "rule": "socy\\.es\\/pixel\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uuee.spxl",
+                "epib.spxl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "60607104263c059df3aab5f817f64bace0dbf88110476620bbf9bd90aaa1b613",
                 "1de939044f706f638e45423451b3b077c52c47c71edfe8ed6d42e8902fc87d3f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00020159258139300473,
-                "_gid": 0.00010079629069650237,
-                "__bs_id": 0.00020159258139300473
+                "__bs_id": 0.0003024193548387097,
+                "_ga": 0.00020161290322580645,
+                "_gid": 0.00010080645161290323
             },
             "exampleSites": [
-                "mallorcazeitung.es",
+                "elmundo.es",
+                "www.mallorcazeitung.es",
                 "www.marca.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000302,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "domain": "tiqcdn.com",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.5
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": [
-        "ns1.dondominio.com",
-        "ns2.dondominio.com"
+        "ns2.dondominio.com",
+        "ns1.dondominio.com"
     ]
 }

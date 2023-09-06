@@ -9,11 +9,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "rta2.inews.co",
         "rta2.metro.co",
+        "ted.dailymail.co",
+        "crta.metro.co",
+        "crta.dailymail.co",
         "m.files.bbci.co",
         "static.files.bbci.co",
         "nav.files.bbci.co",
@@ -23,10 +26,17 @@
         "idcta-cdn.api.bbc.co",
         "ichef.bbc.co",
         "static.bbci.co",
-        "emp.bbci.co",
-        "static.nationalgeographic.co"
+        "emp.bbci.co"
     ],
     "cnames": [
+        {
+            "original": "crta.dailymail.co.uk",
+            "resolved": "crta.dailymail.co.uk.edgekey.net"
+        },
+        {
+            "original": "crta.metro.co.uk",
+            "resolved": "crta.metro.co.uk.edgekey.net"
+        },
         {
             "original": "emp.bbc.com",
             "resolved": "emp.bbci.co.uk.edgekey.net"
@@ -80,23 +90,24 @@
             "resolved": "static.files.bbci.co.uk.edgekey.net"
         },
         {
-            "original": "static.nationalgeographic.co.uk",
-            "resolved": "static.nationalgeographic.co.uk.edgekey.net"
+            "original": "ted.dailymail.co.uk",
+            "resolved": "ted.dailymail.co.uk.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "uk\\.edgekey\\.net\\/s\\/3",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "rta2.inews.co",
-                "rta2.metro.co"
+                "rta2.metro.co",
+                "ted.dailymail.co"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "rta2.inews.co.uk",
@@ -105,17 +116,23 @@
                 {
                     "original": "rta2.metro.co.uk",
                     "resolved": "rta2.metro.co.uk.edgekey.net"
+                },
+                {
+                    "original": "ted.dailymail.co.uk",
+                    "resolved": "ted.dailymail.co.uk.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "76398f2eca7ecbb47e5d3812722d26c7d485e610d13a3fe77b0b1dc8dfc003e4"
+                "87d27b1078ef4321da393875c4b9a71bec55ac8fec978eda094855dbcc1e7e74",
+                "7851968f278d55c0cd65c4d2df522bb65de3a7b146b4ead9634e3bd2f21788ec"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "inews.co.uk",
-                "metro.co.uk"
+                "metro.co.uk",
+                "www.dailymail.co.uk"
             ]
         },
         {
@@ -124,11 +141,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "rta2.inews.co",
-                "rta2.metro.co"
+                "rta2.metro.co",
+                "ted.dailymail.co"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "rta2.inews.co.uk",
@@ -137,6 +155,10 @@
                 {
                     "original": "rta2.metro.co.uk",
                     "resolved": "rta2.metro.co.uk.edgekey.net"
+                },
+                {
+                    "original": "ted.dailymail.co.uk",
+                    "resolved": "ted.dailymail.co.uk.edgekey.net"
                 }
             ],
             "responseHashes": [
@@ -147,7 +169,40 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "inews.co.uk",
-                "metro.co.uk"
+                "metro.co.uk",
+                "www.dailymail.co.uk"
+            ]
+        },
+        {
+            "rule": "uk\\.edgekey\\.net\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crta.metro.co",
+                "crta.dailymail.co"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "crta.metro.co.uk",
+                    "resolved": "crta.metro.co.uk.edgekey.net"
+                },
+                {
+                    "original": "crta.dailymail.co.uk",
+                    "resolved": "crta.dailymail.co.uk.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a00fb0c50741f81bb51d35b4475a4357f8039aabd896a21036bc516839401595"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metro.co.uk",
+                "www.dailymail.co.uk"
             ]
         },
         {
@@ -186,7 +241,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -215,7 +270,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -236,7 +291,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/css\\/orbit-v5-ltr\\.min\\.css",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/css\\/orbit-v5-ltr\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -244,7 +299,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -265,7 +320,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/require\\.min\\.js",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/require\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -273,7 +328,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -294,7 +349,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/searchbox\\/653da526c08f643b172a1d3927a7670a\\/css\\/box\\.css",
+            "rule": "uk\\.edgekey\\.net\\/searchbox\\/84eaa590638b0548c30e8526941a5773\\/css\\/box\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -302,7 +357,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "nav.files.bbci.co.uk",
@@ -324,14 +379,14 @@
         },
         {
             "rule": "uk\\.edgekey\\.net\\/cookies\\/1098fb404f038cacf92f0ee250c025a0\\/cookie-banner\\/cookie-library\\.bundle\\.js",
-            "cookies": 0.000403,
+            "cookies": 0.000402,
             "fingerprinting": 1,
             "subdomains": [
                 "static.files.bbci.co"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -344,9 +399,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "": {
-                    "ttl": -1692271045,
+                    "ttl": -1693969314,
                     "length": 7,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -359,7 +414,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/605\\/style\\/id-cta\\.css",
+            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/608\\/style\\/id-cta\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -367,7 +422,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -415,7 +470,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/134CC\\/production\\/_130825097_gettyimages-1604182351\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/4AEB\\/production\\/_130997191_gettyimages-1632948384\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -431,7 +486,7 @@
                 }
             ],
             "responseHashes": [
-                "a64e126775e0c959532122c2cf78f6c4638fbc8f2c626f7faf6a208b1565664f"
+                "f0eb55a403cc5a269b773c78f2372ff8cf5309e911a5e7877d52eab015b639b8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -442,7 +497,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/6D43\\/production\\/_130817972_gettyimages-1602199905\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/6C1E\\/production\\/_130987672_mediaitem130987668\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -458,7 +513,7 @@
                 }
             ],
             "responseHashes": [
-                "9662679e34416cbd5b9efd003d67c569806db0e1f48b09f78d98505f244aec5e"
+                "33b8afa734950140d249e162041dbfd2aae80bc64b63f0cce81ee1fbd0dd5c55"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -469,7 +524,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/183F9\\/production\\/_130812399_gettyimages-145872363-594x594\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/490\\/cpsprodpb\\/B679\\/production\\/_128531764_tiba\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -485,7 +540,7 @@
                 }
             ],
             "responseHashes": [
-                "4f566679f69d07825a9bf0bd973fbbaab168b7728f3a476054e77f33c5362f3f"
+                "4632286c415c5db7a32dff2dd4e9eb247f404a05c8f61ac958b0d7e75d87d9a3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -496,7 +551,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/redirect\\.js",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/redirect\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -504,7 +559,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -525,7 +580,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/performance\\.js",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/performance\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -533,7 +588,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -554,7 +609,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/more-drawer\\.mjs",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/more-drawer\\.mjs",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -562,7 +617,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -583,7 +638,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/orbit\\.mjs",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/orbit\\.mjs",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -591,7 +646,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -599,7 +654,7 @@
                 }
             ],
             "responseHashes": [
-                "012866bbe918d37fb413d568c87aa2e54ef1c5ea5ac7ef0da6fa48aa2b5994db"
+                "ee98b2fdec3b1fd0f91ece545aad2cf9d4440ab8d57c9f50719fb9e75045b014"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -620,7 +675,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "nav.files.bbci.co.uk",
@@ -642,14 +697,14 @@
         },
         {
             "rule": "uk\\.edgekey\\.net\\/cookies\\/1098fb404f038cacf92f0ee250c025a0\\/cookie-banner\\/cookie-banners\\.bundle\\.js",
-            "cookies": 0.000403,
+            "cookies": 0.000402,
             "fingerprinting": 1,
             "subdomains": [
                 "static.files.bbci.co"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -662,21 +717,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ckns_explicit": {
-                    "ttl": 31622402,
+                    "ttl": 31622403,
                     "length": 1,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 },
                 "ckns_policy": {
-                    "ttl": 31622402,
+                    "ttl": 31622403,
                     "length": 3,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 },
                 "ckns_policy_exp": {
-                    "ttl": 34300802,
+                    "ttl": 34214403,
                     "length": 13,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -697,7 +752,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "nav.files.bbci.co.uk",
@@ -726,7 +781,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "mybbc.files.bbci.co.uk",
@@ -774,7 +829,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/605\\/style\\/img\\/account-chameleon-icon-dark\\.svg",
+            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/608\\/style\\/img\\/account-chameleon-icon-dark\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -828,6 +883,35 @@
             ]
         },
         {
+            "rule": "uk\\.edgekey\\.net\\/fonts\\/reith\\/2\\.512\\/BBCReithSerif_W_Bd\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.files.bbci.co"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "static.files.bbci.co.uk",
+                    "resolved": "static.files.bbci.co.uk.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9a18c60bd07814a21b4c6bf78facc91bd943d43963717ef358b9101578234393"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bbc.co.uk",
+                "news.bbc.co.uk",
+                "www.bbc.co.uk",
+                "www.bbc.com"
+            ]
+        },
+        {
             "rule": "uk\\.edgekey\\.net\\/modules\\/bbc-morph-news-navigation-body\\/6\\.0\\.6\\/navigation\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -855,7 +939,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/605\\/modules\\/idcta-v2\\/dist\\/idcta-1\\.min\\.js",
+            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/608\\/modules\\/idcta-v2\\/dist\\/idcta-1\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -863,7 +947,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -871,7 +955,7 @@
                 }
             ],
             "responseHashes": [
-                "8951dc52b4306e8bc73c58aa7e8ebbc0a201d5143dc1b8980f2a6a7d8483c1e3"
+                "b240915200df3cca434d31b22c43aa030c8fd961c86d998916f3d4a79cfb91c8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -911,7 +995,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/6A6F\\/production\\/_130674272_screen_grab_03\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/7FA7\\/production\\/_130997623_izmailgetty\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -927,7 +1011,7 @@
                 }
             ],
             "responseHashes": [
-                "48b325b59d494b1b6dd3f41549ca724b9df0522d0d425aa526d6d81bdf6a4062"
+                "72991b10969e0d6f9f8d0b1da07575eee0a223369193ada97c4cffe4c4bc0dcb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -938,7 +1022,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/72F8\\/production\\/_130823492_gettyimages-1245221461-1\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/16EAD\\/production\\/_130996839_gettyimages-523583178-170667a\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -954,7 +1038,7 @@
                 }
             ],
             "responseHashes": [
-                "a23eb12337d8af54299a050631699f1b8feb6a5821bf9dfab70461e583b98743"
+                "91ba8f306ef8f5f27db451de5b29a8586117eb6970e28201fe2831756b892666"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -965,7 +1049,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/12C7A\\/production\\/_130822967_8_20230816_10_foreign_nationals_offences_forgery_money_launder_est_1_bil_assets\\.png",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/5BB7\\/production\\/_130997432_tarrio123\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -981,7 +1065,7 @@
                 }
             ],
             "responseHashes": [
-                "959bcd9eca2eecbf2cbb4963bff0a7342c45c0b7048e33462698a443df2bb4da"
+                "31ee1609954f34f4686c945d9704a7aa9850400e75368b21731cf461d519aca3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -992,7 +1076,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/B4F2\\/production\\/_130822364_17aa99fdd921b65c34d592cae965f22ff32817fe\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/B52B\\/production\\/_130997364_claude\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1008,7 +1092,7 @@
                 }
             ],
             "responseHashes": [
-                "cb27ab9a64dd4a84e0ce93c2a1d9bcff52f85ccc72b82e5b464ae746c43f2627"
+                "81eae0810f169492318d0a82df95fb0d4f856ed793e12627b4df372c0782678f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1019,7 +1103,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/5732\\/production\\/_130822322_migrants\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/A8FB\\/production\\/_130995234_ukraine-index-getty\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1035,7 +1119,7 @@
                 }
             ],
             "responseHashes": [
-                "278d259e7d6f7f7afbceb54546bb8eb6a44aff39b76a0d506f7c314dc123cf3f"
+                "964c4511e250dd7b9d9ff4e0a390823523251074a8553d45699d96429b5cc2f0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1046,7 +1130,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/339B\\/production\\/_130811231_gettyimages-1186530827-170667a\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/81FF\\/production\\/_130997233_wheatstone-lng-first-cargo-departs-for-japan-d\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1062,7 +1146,7 @@
                 }
             ],
             "responseHashes": [
-                "6bed144ff87c759d0f534e1e14ba98b0fcaae5a3a67f95c9c6cafeed6cad68a3"
+                "1264b039fecb60d9673a4f4072ee5b0d65f63acaae1c2f3230a05c6ebd222a57"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1073,7 +1157,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/175EA\\/production\\/_130822759_gettyimages-1598902888-594x594\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/431B\\/production\\/_130997171_mediaitem130997167\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1089,7 +1173,7 @@
                 }
             ],
             "responseHashes": [
-                "c1a93644f7b724a5c19eb0a426edd970cd3b5a4d7d7c21031bcc9b76aad1ce99"
+                "5ce132a77ef8cd8776bd113e0db27d9af87654c4cd2fbd8c907b3f4965a33f28"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1100,7 +1184,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/FC6E\\/production\\/_130822646_230817argentinabusfirestill3\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/04E4\\/production\\/_118925210_991200b2-e39b-4fc4-b3a7-323949220a01\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1116,7 +1200,7 @@
                 }
             ],
             "responseHashes": [
-                "8f958ea6fa08118da0fb40bf84b11668dbcc53d17695c8df94008128ceeeb0df"
+                "5459d34d7ee5cede3ca7791728caebc8d3373d049739a2ee80e2b71472402a6d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1127,7 +1211,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/5F52\\/production\\/_130820442_cr2gettyimages-1241032190\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/F26A\\/production\\/_128985026_campaignphoto\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1143,7 +1227,7 @@
                 }
             ],
             "responseHashes": [
-                "b27a4c9bf35cb4520d52b1f881419ff8bf0d18a447a7e8cc147b0df0ee885bb1"
+                "a45f3e5ebe676612ef6a5e54dfb9cc037fdee57e9b69aecbb464d1b2f0c1c6e4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1154,7 +1238,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/18486\\/production\\/_130826499_gettyimages-1602419050\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/0649\\/production\\/_130990610_gettyimages-1487241743\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1170,7 +1254,7 @@
                 }
             ],
             "responseHashes": [
-                "c47d15cfa754b0d329db1ddfbf94c88019150b49be4a4db269d76d090ebcdecc"
+                "8983812d36a2e4cd5e49237d16a8a4e7458cd3306870ee050bfc4c889bc808b5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1181,7 +1265,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/A4EE\\/production\\/_130822224_gettyimages-1465679352-1\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/11D48\\/production\\/_107923037_hi055361643\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1197,7 +1281,7 @@
                 }
             ],
             "responseHashes": [
-                "824784fe94b0a3f7b84e01037cd10a203b2c1cc243f4359f21ae770d2db75f14"
+                "18f712e6a4cc21b44ef21945a884e7d8118d360ee52cd5bf212a46737cdf9632"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1208,7 +1292,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/62D5\\/production\\/_130810352_gettyimages-1494015112\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/48BB\\/production\\/_130991681_tv086998300\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1224,7 +1308,7 @@
                 }
             ],
             "responseHashes": [
-                "3493e6e68acc86558f2b551022b3d8bc786263114bf58eb5ba1ac9e60df38b19"
+                "ebe441108d832e507c10d64a60f3cd30e82811c24283b9b4a1a833d3f377bea7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1235,7 +1319,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/91CA\\/production\\/_130822373_gettyimages-1163710142\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/news\\/240\\/cpsprodpb\\/6C79\\/production\\/_130996772_mediaitem130996768\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1251,7 +1335,7 @@
                 }
             ],
             "responseHashes": [
-                "8f0d601827f1a4341fd60de450c596579c70a4efa1d9fdfe524131de9c7bbfda"
+                "51b13e762ce736882d64309e0c3ebf0ab6713f96fbad410908a97e88de695aef"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1262,7 +1346,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/orbit\\/e1b555e03e68e00779d76fd046c84fd5\\/js\\/drawer\\.mjs",
+            "rule": "uk\\.edgekey\\.net\\/orbit\\/121baec9a85265c10e8f0a9d6599d5b6\\/js\\/drawer\\.mjs",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1270,7 +1354,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -1278,7 +1362,7 @@
                 }
             ],
             "responseHashes": [
-                "16ca87efbb1ce038e37aa7b2b66d18e6bd8991acd5cff8ae0dc27edc7ccdcb07"
+                "41d4362ccada1cf6643fa180405193cf202a1e6047a858b8f561577d127259c0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1299,7 +1383,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "idcta.api.bbc.co.uk",
@@ -1307,8 +1391,8 @@
                 }
             ],
             "responseHashes": [
-                "e887b464944fb2cb93ba821bc7ffbbc304f41e7154c91f76348cb011babccf23",
-                "34f6c8dcadbb358d3c33877e7b0ef43594ee7052c9f67d92bf2ddf4d866eeedc"
+                "11acbbf1ed43437e5d13759104f3ebbbba42f63ac3eacf84af33ffeb043bda2b",
+                "ebe55c84aed5123f639890115bbd85616bcd7d847c913d9802760884971293f8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1321,7 +1405,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/605\\/modules\\/idcta-v2\\/statusbar\\.js",
+            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/608\\/modules\\/idcta-v2\\/statusbar\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1329,7 +1413,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "static.files.bbci.co.uk",
@@ -1349,7 +1433,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/5732\\/production\\/_130822322_migrants\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/0D97\\/production\\/_130997430_tarrio123\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1365,7 +1449,7 @@
                 }
             ],
             "responseHashes": [
-                "e2270d1b4d277bf98a5aa5050f21742521e4addd52f11d3561c9ef4111c9102a"
+                "d0e9dde0491ca5190b10adfde73be785a6baaed08848cef887b65872f7a70399"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1376,7 +1460,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/E792\\/production\\/_123728295_parkybbc\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/148D3\\/production\\/_130997148_wagnerre\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1392,7 +1476,7 @@
                 }
             ],
             "responseHashes": [
-                "c09a3fcfb36e1d77d578a095887dc9e5ff264a161ae64eb227331a86a3454a62"
+                "ed29cd5c7ddc7a807affe5969c583fda54c5a4148075307ebd49714ed052ded1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1403,7 +1487,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/7622\\/production\\/_130824203_gettyimages-536024772\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/4AEB\\/production\\/_130997191_gettyimages-1632948384\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1419,7 +1503,7 @@
                 }
             ],
             "responseHashes": [
-                "baf096b1fcafe0cbc3c7e95e1f81d9205e95ca48e8fb04dfbc3a117fd21a1467"
+                "8eb6d25c117b4a02178129fd71fb53989cdb367a08d512fd6012f0c27f16f7c6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1430,7 +1514,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/ibroadcast\\/images\\/live\\/p0\\/g7\\/3p\\/p0g73p0t\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/ibroadcast\\/images\\/live\\/p0\\/g9\\/lv\\/p0g9lvyb\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1446,7 +1530,7 @@
                 }
             ],
             "responseHashes": [
-                "14e01791b3f8b27e59c47c7dd785b553a7e3bfb6c2ab5637738659622241be4d"
+                "dcd5e064925b122f8619216e11f9e05700b868203cbceabb674a01f0232289e3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1457,7 +1541,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/ibroadcast\\/images\\/live\\/p0\\/g6\\/vp\\/p0g6vpxm\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/ibroadcast\\/images\\/live\\/p0\\/g9\\/zv\\/p0g9zv5b\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1473,34 +1557,7 @@
                 }
             ],
             "responseHashes": [
-                "0ab6698151b85f952a36a8f57d8a07f5b875e9cfb0047b94e40d78313cd5db29"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bbc.co.uk",
-                "www.bbc.com"
-            ]
-        },
-        {
-            "rule": "uk\\.edgekey\\.net\\/weather\\/0\\.5\\.284\\/images\\/icons\\/individual_56_icons\\/en_on_light_bg\\/12\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.bbci.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.bbci.co.uk",
-                    "resolved": "static.bbci.co.uk.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d499c17ffe025dcfc742f6583f40f536452b83c04ecaeda5c55c6fa20e07b0d5"
+                "05838cc05587ab929fce92e7c8c16447b2914e6d398e1be752418273be7b8ded"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1538,7 +1595,34 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/15F37\\/production\\/_130811998_he2\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/weather\\/0\\.5\\.284\\/images\\/icons\\/individual_56_icons\\/en_on_light_bg\\/10\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.bbci.co"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.bbci.co.uk",
+                    "resolved": "static.bbci.co.uk.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ac8bd3b10bbfabdfd7f71373596e4009624b1b3727b3ad33c0d1cdb792c126f6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bbc.co.uk",
+                "www.bbc.com"
+            ]
+        },
+        {
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/11994\\/production\\/_130948027_gettyimages-1625960301\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1554,7 +1638,7 @@
                 }
             ],
             "responseHashes": [
-                "2de6eb7e9541c265f829e760f91d6d6028fd87e23b118dca0f5f3e9690f678b9"
+                "8bb00b81516c2022ed4db30c89975f28b33d6a5e20cfed1db9ce5c55dd6da424"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1565,7 +1649,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/17424\\/production\\/_130786259_3bcb7b31cac1277d945c1aacd330e3a451f4cc0f\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/03C4\\/production\\/_130946900_index-3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1581,7 +1665,7 @@
                 }
             ],
             "responseHashes": [
-                "b627a1994c354695b9419d0deb4858e29e61c6a88336ba1082aed097b7fefd4e"
+                "cc38c37bbac907980e560b10431975c52870183d68850c48030c4e57b53a81e5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1592,7 +1676,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/DF99\\/production\\/_130714275_0f6afcee-a0d0-492e-9d88-c6026a3133a3\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/11962\\/production\\/_130943027_78d83e8d-99be-4ac6-a120-d3f53b75c7e7\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1608,7 +1692,7 @@
                 }
             ],
             "responseHashes": [
-                "7bec4b7ec1935ae96849a71b3928921102dcfede206ff20cca536bc8d223da31"
+                "23ae61d18100d56067203673a9ffccafa97cb50c628421b74ac60994ea821d30"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1619,7 +1703,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/11038\\/production\\/_130688696_1920_02-animalbehaviour-specialmention-merche_llobera-1\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/19A4\\/production\\/_130946560_gettyimages-1648502658\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1635,7 +1719,7 @@
                 }
             ],
             "responseHashes": [
-                "11f37695978e9935e087797358fbdae195baba1e26f3d348077d246eeb2602c4"
+                "a6d020b7e353a71d72b36cb3c748f552268bf2b067ce4d87e2bfb4a807f50c3e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1646,7 +1730,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/117AE\\/production\\/_130689517_803c5c03f0efa90aba3e4a85fef0b810c12e772d\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/144\\/cpsprodpb\\/10B6E\\/production\\/_130926486_cf218da4-28b2-4f0c-a15e-6cfbdb284617\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1662,7 +1746,7 @@
                 }
             ],
             "responseHashes": [
-                "eb7b95c001e246b0e1af2c582a1968517d4a9c04f44b1b322b2079cb0acb12ba"
+                "85f7e6bff0a0a23117f41102f9e93e7f6af73b788ff5110b2f64f0fb2a4334af"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1673,7 +1757,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/605\\/style\\/img\\/account-chameleon-icon-light\\.svg",
+            "rule": "uk\\.edgekey\\.net\\/account\\/id-cta\\/608\\/style\\/img\\/account-chameleon-icon-light\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1700,33 +1784,6 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/fonts\\/reith\\/2\\.512\\/BBCReithSerif_W_Bd\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.files.bbci.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.files.bbci.co.uk",
-                    "resolved": "static.files.bbci.co.uk.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "9a18c60bd07814a21b4c6bf78facc91bd943d43963717ef358b9101578234393"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bbc.co.uk",
-                "www.bbc.com"
-            ]
-        },
-        {
             "rule": "uk\\.edgekey\\.net\\/emp\\/bump-4\\/bump-4\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -1743,7 +1800,7 @@
                 }
             ],
             "responseHashes": [
-                "33a3fbbb5f8c05aeba82d37d96bbca726e943c6de004ab5abdc922e8afc8dc02"
+                "a3c4511049fcfb1af19ade2bce8fd56fba055e96f00f0d9d8390ea208a8f0b97"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1754,7 +1811,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/5732\\/production\\/_130822322_migrants\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/0D97\\/production\\/_130997430_tarrio123\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1770,7 +1827,7 @@
                 }
             ],
             "responseHashes": [
-                "ebc88d8dacdc085810aae76752c7d4f8e80308a979847dff876c4c9589a27796"
+                "79bd475108d7e21c609bec3bd59907229d481d0c76b011c8698f6f9f9dade8e8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1781,7 +1838,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/cpsprodpb\\/E792\\/production\\/_123728295_parkybbc\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/cpsprodpb\\/148D3\\/production\\/_130997148_wagnerre\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1797,7 +1854,7 @@
                 }
             ],
             "responseHashes": [
-                "db2c50c5fadf8f05ef52160aa54f9cc2235d7f953324ae4e257a3fa8931e0a0c"
+                "fb016cc6afb1eb0bbe6da9da4a8b5f2e8a0b4696800206c4306705f775ec1383"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1808,7 +1865,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/cpsprodpb\\/7622\\/production\\/_130824203_gettyimages-536024772\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/cpsprodpb\\/4AEB\\/production\\/_130997191_gettyimages-1632948384\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1824,7 +1881,7 @@
                 }
             ],
             "responseHashes": [
-                "901a9462faf21d1946e73d7b91c2ac1211a95114d1eff41497dfe218055e3dd9"
+                "97194289a59739fe45ba40ac40ece746a6528a93c6006d99682ac99849225292"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1835,7 +1892,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/ibroadcast\\/images\\/live\\/p0\\/g7\\/3p\\/p0g73p0t\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/ibroadcast\\/images\\/live\\/p0\\/g9\\/lv\\/p0g9lvyb\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1851,7 +1908,7 @@
                 }
             ],
             "responseHashes": [
-                "9a748b500a99f45bfecd5dc673341aa9e7e45aae2642584e3d306a3102335198"
+                "2299c8580f0546a1003d44def05e46acc668f3de55e2dd8f50519f3898f436e7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1862,7 +1919,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/ibroadcast\\/images\\/live\\/p0\\/g6\\/vp\\/p0g6vpxm\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/304\\/ibroadcast\\/images\\/live\\/p0\\/g9\\/zv\\/p0g9zv5b\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1878,7 +1935,7 @@
                 }
             ],
             "responseHashes": [
-                "ada9aad1a646c49cee311691195bd7b0a5c0cbbd02083a466983f546da6ca38f"
+                "5818aba01907fb1b0260a86092b8c1b2bd2163e9583b76bbf4c20851750795e8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1889,7 +1946,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/134CC\\/production\\/_130825097_gettyimages-1604182351\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/A8FB\\/production\\/_130995234_ukraine-index-getty\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1905,7 +1962,7 @@
                 }
             ],
             "responseHashes": [
-                "8deb0450469a135fb96279e3d48c3327cc51a35bb1e83287858ff24deac23063"
+                "d68bfee461715b05bbdf56e4708af4ca38a9505774f590a387ecdc1d0501875a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1916,7 +1973,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/5F52\\/production\\/_130820442_cr2gettyimages-1241032190\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/431B\\/production\\/_130997171_mediaitem130997167\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1932,7 +1989,7 @@
                 }
             ],
             "responseHashes": [
-                "d2bbcae0a4c5077fe4f2f538d72f9affc5738d9bbdf3b58c1c350d8a8f0275a9"
+                "0f443ceb7354da8e5aea3722b162a0238d929f548eab542b92d3bde5345ee189"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1943,7 +2000,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/6631\\/production\\/_130816162_yellowknife_wildfire_reuters\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/624\\/cpsprodpb\\/105E9\\/production\\/_130994076_p0gbvwpq\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1959,7 +2016,7 @@
                 }
             ],
             "responseHashes": [
-                "5ee01913060ff7b37bc480eaa697aa45a21f868eaa464b01b475f705e8e8dd0e"
+                "213e8edbc6986dfa15c7284151bc69f88aef827cc38fb92a26e5d1c24412e4ac"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1970,7 +2027,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/wwhp\\/800\\/cpsprodpb\\/4CC4\\/production\\/_130825691_063da182-c613-433e-a54e-39b6b92edc0e\\.jpg",
+            "rule": "uk\\.edgekey\\.net\\/wwhp\\/800\\/cpsprodpb\\/14CBB\\/production\\/_130997158_p0gbw91w\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1986,7 +2043,7 @@
                 }
             ],
             "responseHashes": [
-                "9633532253858adaced051e839c8fdf80ca56973bd425dd438d3b177741fb50b"
+                "e5e8fe6b278ec52fd71862408eaf7d83e3f0978abdbe8f32e04d2933b2b7e822"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1997,7 +2054,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/emp\\/SMPj\\/2\\.50\\.2\\/iframe\\.html",
+            "rule": "uk\\.edgekey\\.net\\/emp\\/SMPj\\/2\\.50\\.4\\/iframe\\.html",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -2013,7 +2070,7 @@
                 }
             ],
             "responseHashes": [
-                "faa1f29357fbe715798b95bcd5b32ce6e8a85de8e1a449ade50a5168b4a0f0ff"
+                "c20a5c3ff294507ef655cf27ad3bdecd4565d46aa0d6497bce7b01ad102c4a8b"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -2051,7 +2108,7 @@
             ]
         },
         {
-            "rule": "uk\\.edgekey\\.net\\/emp\\/SMPj\\/2\\.50\\.2\\/modern\\.js",
+            "rule": "uk\\.edgekey\\.net\\/emp\\/SMPj\\/2\\.50\\.4\\/modern\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2103,94 +2160,44 @@
                 "bbc.co.uk",
                 "www.bbc.com"
             ]
-        },
-        {
-            "rule": "uk\\.edgekey\\.net\\/plugins\\/dfpAdsHTML\\/5\\.7\\.0\\/js\\/dfpAds\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "emp.bbci.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "emp.bbci.co.uk",
-                    "resolved": "emp.bbci.co.uk.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "4ed6d02620bd352bd6409e2b41e5d8a8cd43869cc7d151e7c0a086057506c77f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bbc.co.uk",
-                "www.bbc.com"
-            ]
-        },
-        {
-            "rule": "uk\\.edgekey\\.net\\/files\\/styles\\/image_3200\\/public\\/screenshot-2023-04-21-at-171316\\.png\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.nationalgeographic.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.nationalgeographic.co.uk",
-                    "resolved": "static.nationalgeographic.co.uk.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "0dfa2ee11b5123a31dd2dbbba41ddad40c751c0e1c5df053d9a37d334238878a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nationalgeographic.co.uk",
-                "www.nationalgeographic.co.uk"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000603,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.5797101449275363
         },
         {
             "domain": "bbc.com",
-            "prevalence": 0.3238095238095238
+            "prevalence": 0.32367149758454106
         },
         {
             "domain": "bbci.co.uk",
-            "prevalence": 0.06190476190476191
+            "prevalence": 0.06280193236714976
+        },
+        {
+            "domain": "anm.co.uk",
+            "prevalence": 0.01932367149758454
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.009523809523809525
+            "prevalence": 0.00966183574879227
         },
         {
             "domain": "confiant-integrations.net",
-            "prevalence": 0.004761904761904762
+            "prevalence": 0.004830917874396135
         }
     ],
     "types": {
-        "XHR": 6,
-        "Ping": 2,
+        "XHR": 7,
+        "Ping": 5,
         "Stylesheet": 14,
-        "Font": 12,
-        "Script": 69,
-        "Image": 80,
+        "Font": 14,
+        "Script": 67,
+        "Image": 78,
         "Document": 2
     },
     "nameservers": []

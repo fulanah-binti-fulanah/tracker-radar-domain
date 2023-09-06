@@ -4,13 +4,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
+        "frts-tnew-prod",
+        "acts-tnew-prod",
+        "mfah-tnew-prod",
+        "nash-tnew-prod",
         "natt-tnew-prod",
         "nmsc-tnew-test"
     ],
     "cnames": [
+        {
+            "original": "my.mfah.org",
+            "resolved": "mfah-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "secure.act-sf.org",
+            "resolved": "acts-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "secure.thefreight.org",
+            "resolved": "frts-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "tickets.nashvillesymphony.org",
+            "resolved": "nash-tnew-prod.tnhs.cloud"
+        },
         {
             "original": "tickets.nationaltheatre.org.uk",
             "resolved": "natt-tnew-prod.tnhs.cloud"
@@ -19,62 +39,88 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey",
-            "cookies": 0.0000135,
+            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey\\/",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "natt-tnew-prod"
+                "frts-tnew-prod",
+                "acts-tnew-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
+                {
+                    "original": "secure.thefreight.org",
+                    "resolved": "frts-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "secure.act-sf.org",
+                    "resolved": "acts-tnew-prod.tnhs.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e2b0ac4404f38aea9cc3403d14d37a5d66f6f6adc5150fe8a2a0183274ea44f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreight.org",
+                "www.act-sf.org"
+            ]
+        },
+        {
+            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey",
+            "cookies": 0.0000273,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mfah-tnew-prod",
+                "nash-tnew-prod",
+                "natt-tnew-prod"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [
+                {
+                    "original": "my.mfah.org",
+                    "resolved": "mfah-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "tickets.nashvillesymphony.org",
+                    "resolved": "nash-tnew-prod.tnhs.cloud"
+                },
                 {
                     "original": "tickets.nationaltheatre.org.uk",
                     "resolved": "natt-tnew-prod.tnhs.cloud"
                 }
             ],
             "responseHashes": [
-                "88a41592d293c771df7c78f3a2870ae8e692ebaaf019395a2a2858531f77043d"
+                "350fa5b8df042ecaf1961849985be242e8d1482f8434fd7a35f6ac932292ff52",
+                "01d01d7fd3e186ed3a90cd3bc90ddced5bc4f7c3948d5bfff530bbe78383502e",
+                "fb7e3be650d14af6c70f06f28d9485d0bb066fda1e86258e6075ef5c80bbc249"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationaltheatre.org.uk",
+                "mfah.org",
+                "www.mfah.org",
+                "www.nashvillesymphony.org",
                 "www.nationaltheatre.org.uk"
             ]
         },
         {
             "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.0000135,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "nmsc-tnew-test"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nms.ac.uk",
-                "www.nms.ac.uk"
-            ]
-        },
-        {
-            "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nmsc-tnew-test"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -88,22 +134,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000613,
     "topInitiators": [
         {
             "domain": "cloudflare.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "d3hx9w12q7fwqa.cloudfront.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Other": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-477.awsdns-59.com",
         "ns-1438.awsdns-51.org",
-        "ns-885.awsdns-46.net",
-        "ns-1737.awsdns-25.co.uk"
+        "ns-1737.awsdns-25.co.uk",
+        "ns-885.awsdns-46.net"
     ]
 }

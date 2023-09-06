@@ -10,64 +10,43 @@
     "prevalence": 0.000403,
     "sites": 4,
     "subdomains": [
-        "static",
         "sdk",
         "events",
+        "static",
+        "sdk-canary-b",
         "interaction"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
+            "rule": "apester\\.com\\/web-sdk\\.core\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "NavigatorUAData.prototype.platform": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "getemoji.com",
-                "itsfoss.com",
-                "linuxhandbook.com"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.core\\.legacy\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
                 "sdk"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "7541f03a57e14a2afb670c43e3f80f802a5dc754e66fc554111b7bb4b14ac75c"
+                "80b9aaf4e1f3bdea18d3e38247b501deeff0cef21517ec8a734e980362e8d85f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "getemoji.com",
-                "itsfoss.com",
-                "linuxhandbook.com",
-                "www.weltfussball.de"
+                "itsfoss.com"
             ]
         },
         {
@@ -117,7 +96,56 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
+            "rule": "apester\\.com\\/web-sdk\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "398380129db6e1c2499355ba0bccdcfa6d22b72e7e160b275782dd69e408396e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getemoji.com",
+                "itsfoss.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itsfoss.com",
+                "linuxhandbook.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.core\\.legacy\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -128,19 +156,43 @@
             "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
+                "66931291720d7002e3be5a39a40b19141583c8e3c8f194adbf831ef1598cf5f1",
+                "5a24728e31e338991129acce37be21dc38facc4213c6d003bc470fd5d3819e35"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itsfoss.com",
+                "linuxhandbook.com",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk",
+                "sdk-canary-b"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
                 "398380129db6e1c2499355ba0bccdcfa6d22b72e7e160b275782dd69e408396e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "getemoji.com",
                 "linuxhandbook.com",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/interaction-stats\\/6242de8ffb9d86002a4a6b88",
+            "rule": "apester\\.com\\/interaction-stats\\/6160200017e4560026d8532c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -151,7 +203,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "668837c01044421f7f4274a7d33b05aa3a8406d0e903df76f6b0da4ac1c64439"
+                "cce564210e23aa3b3af95e88505b110c92a673e695a6fd94a6471e9ccacfbeab"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -172,15 +224,15 @@
         }
     ],
     "types": {
-        "Script": 10,
+        "Script": 11,
         "Preflight": 4,
         "XHR": 4,
         "Fetch": 2
     },
     "nameservers": [
-        "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c4.googledomains.com"
     ]
 }

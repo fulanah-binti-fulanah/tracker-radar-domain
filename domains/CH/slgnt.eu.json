@@ -10,37 +10,58 @@
     "prevalence": 0.000703,
     "sites": 7,
     "subdomains": [
-        "site-azp",
+        "ashampoo",
+        "cgn",
         "lindt",
-        "unhcr"
+        "unhcr",
+        "site-azp"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "slgnt\\.eu\\/optiext\\/webtracker\\.dll",
+            "cookies": 0.000402,
+            "fingerprinting": 1,
             "subdomains": [
-                "site-azp"
+                "ashampoo",
+                "cgn",
+                "lindt",
+                "unhcr"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "apis": {
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "dc0ba827e34cc6854d5cd9ab6e29b26fd97f02f36d22a58c5700787edd6cccfb",
-                "2570e2bedcf0f8ffe574c960a4ef788a3a3f04f85f15fc9a860905d52c6d51ee"
+                "7e9156fdd78c7fe75abc8074b3a2bed15a7c62de65d772ff0fe0bc58a1678e18",
+                "a0638fefd9c48df22d30f86e9a251b445afd5b303400985f85e33de3439ce99a",
+                "5d83cfb31a025b3ae91eddacf41ad4569c0cefd9c69e71b52c9d5e137d8a9eed"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "m_ses": {
+                    "ttl": null,
+                    "length": 14,
+                    "prevalence": 0.00040180813661476645,
+                    "uniqueness": 1
+                },
+                "m_cnt": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00040180813661476645,
+                    "uniqueness": 0.25
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mediapart.fr",
-                "www.cucchiaio.it",
-                "www.ladepeche.fr",
-                "www.lindependant.fr",
-                "www.midilibre.fr"
+                "ashampoo.com",
+                "www.cgn.ch",
+                "www.lindt.ch",
+                "www.unhcr.org"
             ]
         },
         {
@@ -51,89 +72,75 @@
                 "site-azp"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mediapart.fr",
-                "www.cucchiaio.it",
+                "cucchiaio.it",
                 "www.ladepeche.fr",
-                "www.lindependant.fr",
                 "www.midilibre.fr"
             ]
         },
         {
-            "rule": "slgnt\\.eu\\/optiext\\/webtracker\\.dll",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
+            "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
             "subdomains": [
-                "lindt",
-                "unhcr"
+                "site-azp"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "5d83cfb31a025b3ae91eddacf41ad4569c0cefd9c69e71b52c9d5e137d8a9eed"
+                "2570e2bedcf0f8ffe574c960a4ef788a3a3f04f85f15fc9a860905d52c6d51ee"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "m_ses": {
-                    "ttl": null,
-                    "length": 14,
-                    "prevalence": 0.00020098482564566376,
-                    "uniqueness": 1
-                },
-                "m_cnt": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.00020098482564566376,
-                    "uniqueness": 0.5
-                }
-            },
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lindt.ch",
-                "www.unhcr.org"
+                "cucchiaio.it",
+                "www.ladepeche.fr",
+                "www.midilibre.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000502,
     "topInitiators": [
         {
             "domain": "windows.net",
-            "prevalence": 0.8
+            "prevalence": 0.5555555555555556
         },
         {
             "domain": "first party",
-            "prevalence": 0.1
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "usercentrics.eu",
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Fetch": 5,
-        "Preflight": 5,
-        "Script": 2
+        "Script": 4,
+        "Preflight": 3,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com"
     ]
 }

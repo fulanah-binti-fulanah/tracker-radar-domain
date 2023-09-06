@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000303,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
         "app"
@@ -13,75 +13,63 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "posthog\\.com\\/decide\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "53a09f5564d52c56204a76a307898604d55ea00f289bce1139720c6d138e6004",
-                "6c43ee1377cdb96f7d3ae88971389386cdabbb4ef10982fdbf95df73045639bd"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fontawesome.com",
-                "www.aftership.com",
-                "www.cpap.com"
-            ]
-        },
-        {
             "rule": "posthog\\.com\\/static\\/array\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "app"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.onLine": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.vendor": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "window.innerHeight": 1,
-                "window.innerWidth": 1
+                "Document.cookie setter": 2,
+                "Navigator.prototype.onLine": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "731ebadd1e26e598740a7473d0f98b227a9cbfeff8f5e1601530115e5e90d473"
+                "0c6f75282ea71d87238da2248b7230b5981912eb2e81e93f36b42b25aaea4c13"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "ph_phc_xZ7NxthPfASl1H6hmyTgVFxVzVOXlkmrGNH14HqOf4F_posthog": {
+                    "ttl": 31536001,
+                    "length": 1111,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
+                "__ph_opt_in_out_phc_xZ7NxthPfASl1H6hmyTgVFxVzVOXlkmrGNH14HqOf4F": {
+                    "ttl": -86399,
+                    "length": 6,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                },
                 "ph_phc_dwrpW9yjmYvmt7nCowct1ZjBzmnatpEXuhhbpfogYm7_posthog": {
-                    "ttl": 31536038,
-                    "length": 718,
-                    "prevalence": 0.00010092854259184497,
+                    "ttl": 31536003,
+                    "length": 766,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 },
                 "__ph_opt_in_out_phc_dwrpW9yjmYvmt7nCowct1ZjBzmnatpEXuhhbpfogYm7": {
-                    "ttl": -86393,
+                    "ttl": -86398,
                     "length": 6,
-                    "prevalence": 0.00010092854259184497,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftership.com",
+                "canadacommons.ca",
                 "www.cpap.com"
             ]
         },
@@ -94,7 +82,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7d4afed20a912db310862a5294bcf8fb6269c76a292908ddc1fbd496456eff56"
@@ -103,7 +91,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftership.com",
+                "canadacommons.ca",
+                "www.cpap.com"
+            ]
+        },
+        {
+            "rule": "posthog\\.com\\/decide\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ff0a874f3f1488ddcd1570c2909c2e610cb800a0c4bec29ed282494e4c9a498e",
+                "08fe5c3748c9419141698fd3756620eaa2c9392fc5f96636909c9dcfe12ec160"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadacommons.ca",
+                "fontawesome.com",
+                "www.cpap.com"
+            ]
+        },
+        {
+            "rule": "posthog\\.com\\/static\\/recorder-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b78d4962f4fa583fa18c08f491365232deab248e16bb9fac2596e37056f71628"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadacommons.ca",
                 "www.cpap.com"
             ]
         },
@@ -116,36 +153,30 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "7d4afed20a912db310862a5294bcf8fb6269c76a292908ddc1fbd496456eff56"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cpap.com",
+                "canadacommons.ca",
                 "www.cpap.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8666666666666667
-        },
-        {
-            "domain": "automizely.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 7,
-        "Script": 2
+        "Script": 4,
+        "XHR": 7
     },
     "nameservers": [
         "julissa.ns.cloudflare.com",

@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000404,
-    "sites": 4,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
-        "dal",
         "torontomu",
+        "dal",
         "uoguelph",
-        "yorku"
+        "yorku",
+        "ubc"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,17 +24,18 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dal",
                 "torontomu",
+                "dal",
                 "uoguelph",
                 "yorku"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
                 "a2d624044c06b7ba9d41a1e04661aa1c3365cccb7bdc1c1e44fdce01902ee164",
+                "b5f1906c94ce3548a5c3981c811fe7bed48ebc0d2f84ada0c8d14588d5bf1a20",
                 "2c855d24b010db9b9a3099f2d6c2bc1bc91ea0e80022df92a86487fcfdf5512a",
                 "0da6592f17a19069399d4e08f3b25afc8609fbb2930f3949c9f54b4ca243f26d"
             ],
@@ -41,10 +43,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dal.ca",
+                "torontomu.ca",
+                "continuing.torontomu.ca",
+                "www.dal.ca",
                 "www.torontomu.ca",
                 "www.uoguelph.ca",
                 "www.yorku.ca"
+            ]
+        },
+        {
+            "rule": "apparmor\\.com\\/Notifications\\/Feeds\\/ID\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ubc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "632b9c5a5d2255ecbedde895073df49dbd71fed6f045afb3256c3d14a35ec552"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubc.ca",
+                "students.ok.ubc.ca"
             ]
         }
     ],
@@ -58,12 +84,13 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 6,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1-01.azure-dns.com",
-        "ns2-01.azure-dns.net",
         "ns3-01.azure-dns.org",
+        "ns2-01.azure-dns.net",
+        "ns1-01.azure-dns.com",
         "ns4-01.azure-dns.info"
     ]
 }

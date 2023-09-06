@@ -24,14 +24,14 @@
                 "v2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.mimeTypes": 5
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.mimeTypes": 4
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "dfedcdd2a60dad4561a71b3a6e3f3a24d048351c1d75a0bbdacbeb45f10aacc7"
+                "af8f48a65feb74a8b063d2f3cc86c1e4206f9afa6d4268641e49a1ced22281ac"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,7 +39,6 @@
             "exampleSites": [
                 "splunk.com",
                 "docs.splunk.com",
-                "www.databricks.com",
                 "www.splunk.com",
                 "www.veritas.com"
             ]
@@ -52,8 +51,8 @@
                 "abm2"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "54c92804a5f97113030e5307876352f27f1623775916b78311a3131a6bf89fab"
@@ -64,8 +63,118 @@
             "exampleSites": [
                 "splunk.com",
                 "docs.splunk.com",
-                "www.databricks.com",
                 "www.splunk.com",
+                "www.veritas.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/loop\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "v2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mimeTypes": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c416383a2360f11a9b6e31ebc19b34f652993da163077203d2c2215a4b7f4d44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "confluent.io",
+                "www.veritas.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/organizations\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f4c3f892f29dfc63aca18f40b5474dff3e08cecee8aa524d2436fa07cf975213"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "confluent.io",
+                "www.veritas.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/retargeting_segments",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1cddcd88d3332d560856627ab2cecc7d9aa6c9d616729701ae13902d1671d0b0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "confluent.io",
+                "www.veritas.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/page_views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "73a9a3079dc46fcb343bdcf1c70e6592cb4a1be21f8d8b8323d7c10d549d03b4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "confluent.io",
+                "www.veritas.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/page_views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "confluent.io",
                 "www.veritas.com"
             ]
         }
@@ -75,11 +184,11 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "googletagmanager.com",
             "prevalence": 0.25
         },
         {
-            "domain": "googletagmanager.com",
+            "domain": "ads-twitter.com",
             "prevalence": 0.1875
         },
         {
@@ -91,7 +200,7 @@
             "prevalence": 0.1875
         },
         {
-            "domain": "ads-twitter.com",
+            "domain": "first party",
             "prevalence": 0.125
         },
         {
@@ -100,8 +209,10 @@
         }
     ],
     "types": {
-        "Script": 5,
-        "Fetch": 5
+        "Script": 6,
+        "Fetch": 6,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "cloe.ns.cloudflare.com",

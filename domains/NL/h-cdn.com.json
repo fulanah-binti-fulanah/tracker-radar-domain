@@ -34,8 +34,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hbvl.be",
-                "www.gva.be",
+                "gva.be",
+                "www.hbvl.be",
                 "www.independent.ie",
                 "www.limburger.nl",
                 "www.nieuwsblad.be",
@@ -60,8 +60,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hbvl.be",
-                "www.gva.be",
+                "gva.be",
+                "www.hbvl.be",
+                "www.independent.ie",
+                "www.limburger.nl",
+                "www.nieuwsblad.be",
+                "www.standaard.be"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "link"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [],
+            "responseHashes": [
+                "0f0f34701cfe3b5a603dca9bc07c0c44361ae79f98c4c15e7bd704ddb6291d3f",
+                "1cb2caa78c36c91285999b587ad368ebc6e5290af64ef9f340c8cc04067e077b",
+                "4bda3bddcd619d621f5ea59dbafff85bbaad65119a0b9d6f1e16034456631095",
+                "dc587abfb11e22ee7411139c45be50613647d35aecee784d184ae737dfb6f77d",
+                "9d977dea0d12f6dde088f12b42aafe3676a1c6538ba2406ae26c16b95b4365ab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gva.be",
+                "www.hbvl.be",
                 "www.independent.ie",
                 "www.limburger.nl",
                 "www.nieuwsblad.be",
@@ -84,8 +114,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hbvl.be",
-                "www.gva.be",
+                "gva.be",
+                "www.hbvl.be",
                 "www.independent.ie",
                 "www.limburger.nl",
                 "www.nieuwsblad.be",
@@ -93,33 +123,26 @@
             ]
         },
         {
-            "rule": "h-cdn\\.com\\/get",
+            "rule": "h-cdn\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "link"
+                "player"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000604,
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "c796f92940d201135bba3840df2bbd67f74fb7fbb87a87cb5441368e4bcc9e2f",
-                "54888ef1608e99a0e9c4ed9cf9df22ff6997dd30d3b8ac0830041a07800d0695",
-                "70e07eaabe2b5cf9457b05fdf1ce79d247483ae3ae33006880f6793b779dbf44",
-                "2ab1b4145ca8ad631a0770cc5853bc1c3dcd64c587eb8c2201717492996661f9",
-                "37ba3a87adfe03dd7e05bab8e7742d53c91f5c3f31ddd228a5b79a1fd0b0f579"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hbvl.be",
-                "www.gva.be",
-                "www.independent.ie",
-                "www.limburger.nl",
-                "www.nieuwsblad.be",
-                "www.standaard.be"
+                "tagesschau.de",
+                "www.tagesschau.de"
             ]
         }
     ],
@@ -138,8 +161,9 @@
     ],
     "types": {
         "Stylesheet": 12,
+        "XHR": 6,
         "Preflight": 6,
-        "XHR": 6
+        "Script": 2
     },
     "nameservers": [
         "ns-1405.awsdns-47.org",

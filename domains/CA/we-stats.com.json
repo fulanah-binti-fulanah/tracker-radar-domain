@@ -4,16 +4,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
         "wup-ac77ffef.us.v2",
         "wup-532e636f.us.v2",
         "wup-edc5180c.us.v2",
         "log-ac77ffef.us.v2",
-        "log-edc5180c.us.v2"
+        "log-dfb31537.us.v2",
+        "log-edc5180c.us.v2",
+        "bcdn-dfb31537",
+        "wup-dfb31537.us.v2"
     ],
     "cnames": [
+        {
+            "original": "bcdn.td.com",
+            "resolved": "bcdn-dfb31537.we-stats.com"
+        },
         {
             "original": "bup.bankofamerica.com",
             "resolved": "wup-532e636f.us.v2.we-stats.com"
@@ -31,11 +38,19 @@
             "resolved": "log-ac77ffef.us.v2.we-stats.com"
         },
         {
+            "original": "stat.td.com",
+            "resolved": "log-dfb31537.us.v2.we-stats.com"
+        },
+        {
             "original": "wup-sec.desjardins.com",
             "resolved": "wup-ac77ffef.us.v2.we-stats.com"
+        },
+        {
+            "original": "wup.td.com",
+            "resolved": "wup-dfb31537.us.v2.we-stats.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "we-stats\\.com\\/client\\/v3\\.1\\/web\\/wup",
@@ -48,7 +63,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000504,
             "cnames": [
                 {
                     "original": "wup-sec.desjardins.com",
@@ -64,10 +79,10 @@
                 }
             ],
             "responseHashes": [
-                "70508906af550b14065cee599806923620ccbb408c99355da683d8c036f1b853",
-                "870605e6f1cd23c49bcef77db0e8e237a366ff63344ffac45d82dd9cbc877271",
-                "cbbc80b29a84b37a16abbafbe02431fd9faa625d42680013dccf662adc9e141c",
-                "0873dd5a11664306cbac8579d1911cbd7ff4e7ce81a832554757d8a4ea506985"
+                "b5537a10b16286e9bf4aae8cb8a270d38734f4d450ade9bf85ca2d33dd171bbe",
+                "9fa5920c11bcb2d6f45adae8c3ea4abfcf26289955aa968a6f59d289438fb954",
+                "1875a329c8776ac5a180e12cb797aa8db2885aa1665159a5c5c900132906d6e7",
+                "48b32a7ce6aa7d57a378f2c1d7a33c121b958b6f1942ecb7d19a3e612a2a5012"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,15 +101,20 @@
             "fingerprinting": 0,
             "subdomains": [
                 "log-ac77ffef.us.v2",
+                "log-dfb31537.us.v2",
                 "log-edc5180c.us.v2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "log-sec.desjardins.com",
                     "resolved": "log-ac77ffef.us.v2.we-stats.com"
+                },
+                {
+                    "original": "stat.td.com",
+                    "resolved": "log-dfb31537.us.v2.we-stats.com"
                 },
                 {
                     "original": "contents1.00110.citi.com",
@@ -109,13 +129,71 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "desjardins.com",
+                "banquenet.td.com",
+                "easyweb.td.com",
                 "www.citi.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/scripts\\/dfb31537\\/dfb31537\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "bcdn-dfb31537"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "bcdn.td.com",
+                    "resolved": "bcdn-dfb31537.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "370ae50d75ba8ae403a867926831e9dba2cd6f078e2d1424e13f7c778cd40a0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "td.com",
+                "easyweb.td.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/client\\/v3\\/web\\/wup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wup-dfb31537.us.v2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "wup.td.com",
+                    "resolved": "wup-dfb31537.us.v2.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "716b78e459e240f831b60e866958670f57b2231a7a3c649043bf044fa01c8927",
+                "bde3496f6a6a1883adc20e4392426db81ff3bb5f33e2ef4eb17d002350b0e9a1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "td.com",
+                "banquenet.td.com",
+                "easyweb.td.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "ensighten.com",
@@ -123,12 +201,13 @@
         }
     ],
     "types": {
-        "XHR": 7
+        "XHR": 12,
+        "Script": 2
     },
     "nameservers": [
-        "dns1.p07.nsone.net",
-        "dns2.p07.nsone.net",
+        "dns4.p07.nsone.net",
         "dns3.p07.nsone.net",
-        "dns4.p07.nsone.net"
+        "dns2.p07.nsone.net",
+        "dns1.p07.nsone.net"
     ]
 }

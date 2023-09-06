@@ -10,24 +10,26 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "vts"
+        "salesiq"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "zohopublic\\.eu\\/watchws",
-            "cookies": 0,
+            "rule": "zohopublic\\.eu\\/visitor\\/v2\\/channels\\/website",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "vts"
+                "salesiq"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "59f8ddbec03a7b10938e0ebdffc69dcf67b4fa6ff57195a0d881bdd889355d03"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -40,28 +42,32 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "zoho.eu",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         },
         {
             "domain": "zohocdn.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "WebSocket": 2
+        "XHR": 2
     },
     "nameservers": [
-        "NS1.ZOHOCORP.COM",
-        "PDNS90.ULTRADNS.BIZ",
-        "PDNS90.ULTRADNS.NET",
-        "PDNS90.ULTRADNS.COM",
-        "NS31.ZNS-53.COM",
-        "NS21.ZNS-53.NET",
-        "NS41.ZNS-53.NET",
-        "NS11.ZNS-53.COM"
+        "pdns90.ultradns.net",
+        "pdns90.ultradns.com",
+        "ns1.zohocorp.com",
+        "ns11.zns-53.com",
+        "ns21.zns-53.net",
+        "ns41.zns-53.net",
+        "pdns90.ultradns.biz",
+        "ns31.zns-53.com"
     ]
 }

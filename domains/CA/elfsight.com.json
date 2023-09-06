@@ -7,12 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000706,
-    "sites": 7,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "apps",
         "shy",
-        "static"
+        "static",
+        "core.service",
+        "service-reviews-ultimate"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,10 +28,10 @@
                 "shy"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 8
             },
-            "sites": 6,
-            "prevalence": 0.000606,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "f950cd7338e89507da357380e9fdd90e82a2de58cfe3c0fa598ba086577b25d8",
@@ -41,8 +43,12 @@
             "exampleSites": [
                 "ago.ca",
                 "bonjour-sante.ca",
-                "bikes.com",
+                "bookstore.ubc.ca",
+                "organika.com",
                 "store.theshootingcentre.com",
+                "thecpapstore.ca",
+                "www.gardenworks.ca",
+                "www.newdirectionsaromatics.ca",
                 "www.salutbonjour.ca",
                 "www.silo57.ca"
             ]
@@ -55,10 +61,10 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 6,
-            "prevalence": 0.000606,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "f950cd7338e89507da357380e9fdd90e82a2de58cfe3c0fa598ba086577b25d8"
@@ -69,38 +75,48 @@
             "exampleSites": [
                 "ago.ca",
                 "bonjour-sante.ca",
+                "bookstore.ubc.ca",
                 "cannacabana.com",
+                "revco.ca",
                 "store.theshootingcentre.com",
+                "thecpapstore.ca",
+                "www.gardenworks.ca",
+                "www.newdirectionsaromatics.ca",
                 "www.salutbonjour.ca",
                 "www.silo57.ca"
             ]
         },
         {
             "rule": "elfsight\\.com\\/p\\/boot\\/",
-            "cookies": 0.000404,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
-                "apps"
+                "apps",
+                "core.service"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 9,
+            "prevalence": 0.000906,
             "cnames": [],
             "responseHashes": [
-                "70f8a4623426a289743e73694b7a89ce296dfe66e596587d4786879de481a6e9",
-                "f8cbcf9f173383b7af35b141165a143d2e8d19807a82603cec6a89945d8a48e6",
-                "d330ed618777f61dc21e0b9d6bcd559830f1145d915d63f251e8f59152a46b7d",
-                "e8f79c43404746bf616822b56f2f84491a3c1181c77198e941b9ad660dfe7961"
+                "012786f3cab8be486397d33a7f957a8e7907dda28abd19ffb3bde2dd63ef9a25",
+                "eef5a964dc2e127292fa3b3da0af6f8f62b74b45148968d449b6f27f137e53c5",
+                "aa03169da70f0fec5d6d35f4dae9137354a11ad6e3dd1acb7e79077e356afeb9",
+                "92f1a4a317cec0a4cafa688305b260a8df0f46ba8055e5521d026d721db29f87"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020185708518368994
+                "IR_gbd": 0.00020143015409406788
             },
             "exampleSites": [
                 "ago.ca",
                 "bonjour-sante.ca",
+                "bookstore.ubc.ca",
+                "revco.ca",
                 "store.theshootingcentre.com",
+                "thecpapstore.ca",
+                "www.gardenworks.ca",
                 "www.salutbonjour.ca",
                 "www.silo57.ca"
             ]
@@ -113,16 +129,16 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.product": 3,
-                "window.localStorage": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Date.prototype.getTime": 2,
-                "window.devicePixelRatio": 2
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.product": 4,
+                "window.localStorage": 4,
+                "window.innerWidth": 3,
+                "window.innerHeight": 4,
+                "Date.prototype.getTime": 4,
+                "window.devicePixelRatio": 4
             },
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "7541e73eeae8f1c1a84f2bb67f33aded9729bc0644faad6eafbf411ad1b53ef4"
@@ -132,27 +148,124 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ago.ca",
+                "bookstore.ubc.ca",
+                "www.gardenworks.ca",
                 "www.salutbonjour.ca",
                 "www.silo57.ca"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/apps\\/google-reviews\\/release\\/6dd5e3fbd50114a840baaf2b165d48a679d27377\\/app\\/googleReviews\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.indexedDB": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "da5ab167c10762898b4d403d9ddb808429c16aa1e9be045dad7ffba6dbe43b7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revco.ca",
+                "www.gardenworks.ca"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/icons\\/app-all-in-one-reviews-icons-google-multicolor\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9712c3974a36e28612e73da56860ce6f9f4d78610546c38670fc4dbe65a6e03a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revco.ca",
+                "www.gardenworks.ca"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/data\\/sources",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service-reviews-ultimate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9a77784c3ebcc98b061a7789fd8da9fe56d840a4a98c02fd57144c4058187697"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revco.ca",
+                "www.gardenworks.ca"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/data\\/reviews",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service-reviews-ultimate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5164bb43a22ac90da99606976c1fd45ed2110c11ea2a007092f1ea1ab1c5c5a6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revco.ca",
+                "www.gardenworks.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000505,
+    "cookies": 0.00101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.7575757575757576
         },
         {
             "domain": "bigcommerce.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.24242424242424243
         }
     ],
     "types": {
-        "Script": 15,
-        "XHR": 5
+        "Script": 28,
+        "XHR": 11,
+        "Fetch": 4
     },
     "nameservers": [
         "rihana.ns.cloudflare.com",

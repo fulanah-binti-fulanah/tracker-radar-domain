@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
         "fh-main.measure"
     ],
@@ -20,6 +20,65 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "agilemeasure\\.com\\/lookup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fh-main.measure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "data-fh.ext.hpe.com",
+                    "resolved": "fh-main.measure.agilemeasure.com"
+                }
+            ],
+            "responseHashes": [
+                "a3b39a22f7034c4f009689ca23f72659b5e244c02fe03c05c43d058f89be98b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hpe.com",
+                "www.hpe.com"
+            ]
+        },
+        {
+            "rule": "agilemeasure\\.com\\/data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fh-main.measure"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "data-fh.ext.hpe.com",
+                    "resolved": "fh-main.measure.agilemeasure.com"
+                }
+            ],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "hpaaeid": 0.0003031221582297666,
+                "drift_eid": 0.0003031221582297666,
+                "ca_user_id": 0.0001010407194099222
+            },
+            "exampleSites": [
+                "hpe.com",
+                "buy.hpe.com",
+                "www.hpe.com"
+            ]
+        },
         {
             "rule": "agilemeasure\\.com\\/identity",
             "cookies": 0,
@@ -42,9 +101,9 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "hpaaeid": 0.00020230629172567267,
-                "ca_user_id": 0.00020230629172567267,
-                "drift_eid": 0.00020230629172567267
+                "hpaaeid": 0.0002020814388198444,
+                "drift_eid": 0.0002020814388198444,
+                "ca_user_id": 0.0001010407194099222
             },
             "exampleSites": [
                 "hpe.com",
@@ -52,7 +111,32 @@
             ]
         },
         {
-            "rule": "agilemeasure\\.com\\/data",
+            "rule": "agilemeasure\\.com\\/drift",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fh-main.measure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "data-fh.ext.hpe.com",
+                    "resolved": "fh-main.measure.agilemeasure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hpe.com",
+                "www.hpe.com"
+            ]
+        },
+        {
+            "rule": "agilemeasure\\.com\\/drift",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -68,15 +152,11 @@
                 }
             ],
             "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+                "912d0c07da7bdb22cdae025b96da26d01523aaab7362edb28544e3949deb369d"
             ],
-            "type": "Ping",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "hpaaeid": 0.00020230629172567267,
-                "ca_user_id": 0.00020230629172567267,
-                "drift_eid": 0.00020230629172567267
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hpe.com",
                 "www.hpe.com"
@@ -89,22 +169,25 @@
     "topInitiators": [
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.75
+            "prevalence": 0.7777777777777778
         },
         {
             "domain": "driftt.com",
-            "prevalence": 0.25
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
-        "Ping": 4
+        "Script": 2,
+        "Ping": 5,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns10.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com"
+        "ns15.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com"
     ]
 }

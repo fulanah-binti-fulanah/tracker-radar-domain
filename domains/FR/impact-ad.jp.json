@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
-        "y.one"
+        "y.one",
+        "img.ak",
+        "penta.a.one"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "impact-ad\\.jp\\/h_bid",
@@ -54,11 +56,78 @@
                 "cookpad.com",
                 "www.nicovideo.jp"
             ]
+        },
+        {
+            "rule": "impact-ad\\.jp\\/ut\\/a1\\/tracking\\.min\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img.ak"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "49daf7bddb14b814b7423b31c4ff574e2c73fc909fe098a18acf44c42069e5b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_a1_f": {
+                    "ttl": 63072019,
+                    "length": 36,
+                    "prevalence": 0.0002020814388198444,
+                    "uniqueness": 1
+                },
+                "_a1_i_e8316b39c08029e1": {
+                    "ttl": 3620,
+                    "length": 2,
+                    "prevalence": 0.0002020814388198444,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmoa.jp",
+                "www.dlsite.com"
+            ]
+        },
+        {
+            "rule": "impact-ad\\.jp\\/aud",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "penta.a.one"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "a4d235f939ee36ba9fd355c3ee524384b5f169ce989023208710629f895566d4",
+                "2d6d5e3df8497d60456dd670e3d0f470636ee4169706c20e63a1285ff32d6442"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_a1_f": 0.0003031221582297666
+            },
+            "exampleSites": [
+                "cmoa.jp",
+                "www.cmoa.jp",
+                "www.dlsite.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000404,
     "topInitiators": [
         {
             "domain": "flux-cdn.com",
@@ -69,18 +138,19 @@
             "prevalence": 0.3333333333333333
         },
         {
-            "domain": "demdex.net",
+            "domain": "focas.jp",
             "prevalence": 0.2222222222222222
         }
     ],
     "types": {
         "XHR": 2,
-        "Document": 2
+        "Document": 2,
+        "Script": 5
     },
     "nameservers": [
         "ns-997.awsdns-60.net",
-        "ns-122.awsdns-15.com",
         "ns-1679.awsdns-17.co.uk",
+        "ns-122.awsdns-15.com",
         "ns-1115.awsdns-11.org"
     ]
 }

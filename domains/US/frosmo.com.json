@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000203,
-    "sites": 30,
+    "prevalence": 0.00013,
+    "sites": 19,
     "subdomains": [
-        "us",
-        "fi1",
+        "mdafabetcom.asia",
+        "dafabetcomasia.asia",
         "alehdetfi.fi1",
         "urbanarmorgearcomu.us",
+        "asia",
+        "fi1",
+        "us",
         "common_api",
         "mtv_fi_api",
         "swisslos_api"
@@ -22,16 +25,46 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "frosmo\\.com\\/frosmo\\.xdm\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mdafabetcom.asia",
+                "dafabetcomasia.asia",
+                "alehdetfi.fi1",
+                "urbanarmorgearcomu.us"
+            ],
+            "apis": {
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [
+                "6b65e3870f0c53a1563b29a83330581f3be5b5f809b3105f38390a561ded34a3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dafabet.com",
+                "www.dafabet.com",
+                "www.lily.fi",
+                "www.urbanarmorgear.com"
+            ]
+        },
+        {
             "rule": "frosmo\\.com\\/optimizerApi",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us",
-                "fi1"
+                "asia",
+                "fi1",
+                "us"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000812,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -40,88 +73,16 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eventim.com.br",
-                "www.eventim.com.br",
+                "dafabet.com",
+                "m.dafabet.com",
+                "www.dafabet.com",
                 "www.hankkija.fi",
                 "www.lily.fi",
-                "www.power.no",
+                "www.mediamarkt.se",
                 "www.power.dk",
                 "www.power.fi",
-                "www.puuilo.fi",
-                "www.ruoto.fi",
-                "www.tokmanni.fi",
-                "www.tuontitukku.fi",
-                "www.urbanarmorgear.com"
-            ]
-        },
-        {
-            "rule": "frosmo\\.com\\/location",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us",
-                "fi1"
-            ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventim.com.br",
-                "www.eventim.com.br",
-                "www.hankkija.fi",
-                "www.helsinki.fi",
-                "www.lily.fi",
+                "www.power.se",
                 "www.power.no",
-                "www.power.dk",
-                "www.power.fi",
-                "www.puuilo.fi",
-                "www.ruoto.fi",
-                "www.tokmanni.fi",
-                "www.tuontitukku.fi",
-                "www.urbanarmorgear.com"
-            ]
-        },
-        {
-            "rule": "frosmo\\.com\\/messageApi",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us",
-                "fi1"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
-            "cnames": [],
-            "responseHashes": [
-                "33c7653953f42cfa7c0bdace54482c930a19ff01fc487fc3490af369710d17cf",
-                "2539b7c853bb4fdd2483864a97885fc37fba9eca85e00cc1e061d8b2399de05a",
-                "eff1cfc18672a5e56bbe1cad72b26645dc56ba15a34e64e5e329bbd09ef83473",
-                "f00abc102052703d3a7c4a6c839a1fe518326d178b22b18a8ce0fb9349eaebbc",
-                "6d5f8c6be982a786456d241a37cb3fa4cd34c468d87ae77a6b718ee1d770613f",
-                "9bc5fcaafbca92aa0fbd188d8199d14a7265dd1409b8dace8147ffd04ac49973",
-                "6cee75bf8d02194df804d63d1cbf785f8813612909a066d2b9567fc22fcc24bf",
-                "9f88dc2d0001c762587340544a2925b8bd2612ac47ad970ced407468971294f4",
-                "cdc139122051ce8d17d7b59833bdc85ef961d02071e8fdd88ee434248de19f1d",
-                "5a8b5118bfa9e503a0d842e55926503dc73709f6dc465c0058d0fc14ed90fa26"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventim.com.br",
-                "www.eventim.com.br",
-                "www.hankkija.fi",
-                "www.helsinki.fi",
-                "www.lily.fi",
-                "www.power.fi",
                 "www.puuilo.fi",
                 "www.ruoto.fi",
                 "www.tokmanni.fi",
@@ -134,11 +95,13 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fi1"
+                "asia",
+                "fi1",
+                "us"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
@@ -147,11 +110,91 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hankkija.fi",
+                "dafabet.com",
+                "www.dafabet.com",
                 "www.hankkija.fi",
                 "www.puuilo.fi",
                 "www.ruoto.fi",
-                "www.tuontitukku.fi"
+                "www.tuontitukku.fi",
+                "www.urbanarmorgear.com"
+            ]
+        },
+        {
+            "rule": "frosmo\\.com\\/location",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asia",
+                "fi1",
+                "us"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dafabet.com",
+                "www.dafabet.com",
+                "www.hankkija.fi",
+                "www.helsinki.fi",
+                "www.lily.fi",
+                "www.mediamarkt.se",
+                "www.power.dk",
+                "www.power.fi",
+                "www.power.se",
+                "www.power.no",
+                "www.puuilo.fi",
+                "www.ruoto.fi",
+                "www.tokmanni.fi",
+                "www.tuontitukku.fi",
+                "www.urbanarmorgear.com"
+            ]
+        },
+        {
+            "rule": "frosmo\\.com\\/messageApi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asia",
+                "fi1",
+                "us"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.000075,
+            "cnames": [],
+            "responseHashes": [
+                "09e5ebedf2815a89b4f9927135d6a9472f01d81db6fcfc8ff39186b07194da49",
+                "192f393f1b6a76ea270a9c85c50f9cefec446d505ade3d1df49001e1b88b439a",
+                "1ced5bdda45eb3b420300170e800442c4b0297986b44a28a3d45773e4bc6e4b2",
+                "6d5f8c6be982a786456d241a37cb3fa4cd34c468d87ae77a6b718ee1d770613f",
+                "8a918d3b159e451fd3df30aa085df2d78b34a5b1678c988f371bf5b94cfc15a1",
+                "723b117f4c748f0c089ecde083edc11919cbd2a444d72edd6082472196d2cd18",
+                "7c4215b7175f203f4ec3164cb4b7fa74a98d487557d90ed22b4653e03b1ab614",
+                "40a70d0bee92b4e760a92952e70132bbc2708015deef5a92b85ea13282799f1c",
+                "f93b91c9801e52d262e09132a98e113d998ff6a173cd613fe103228d37cc9b68"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dafabet.com",
+                "www.dafabet.com",
+                "www.hankkija.fi",
+                "www.helsinki.fi",
+                "www.lily.fi",
+                "www.power.fi",
+                "www.puuilo.fi",
+                "www.ruoto.fi",
+                "www.tokmanni.fi",
+                "www.tuontitukku.fi",
+                "www.urbanarmorgear.com"
             ]
         },
         {
@@ -163,18 +206,14 @@
                 "us"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000677,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
             "responseHashes": [
-                "25ac29823ea32c588d7536a57d86d5eca0f9a65b9f951dabc9de7e8c6560ad90",
-                "c627d0dfc939ce61f18abeef0280a9a096a1f6a3d179c3c8cb5c02ecaf2867d5",
-                "8abe2aac89f0ac5cac7d86ea65b91237cd91b210f9bc4412e460d22372f030ab",
-                "d24e9a2d77433a785bf9cb9bf425608fd2c7f9484b817801bbf3302e0c382e88",
-                "df6765a58f13cc7dc439e650304c44960b4903ffd30d6288dba752ca6897baea",
-                "daa27c4f9840e7e95256d4e611d2ec69f40d9c31766975d11bba82864aa9dfc4",
-                "3c3da669b9a61fc7c25b17e9003bd55172071d8628d9b6c9d6bc3889765dae61",
-                "8ad8807df529a48602635e352725f0b9e1e21bd943bf453f39c2e351d9bbb751"
+                "3f870874b964583a9aef2047947081005eb35905b1042ebe5361cb2dd5deec8b",
+                "8be233576bb0ecebe02a78c37138a6e875402e5482d8a043a27b3667250dfbe3",
+                "dfa397fb27e4c9d4b2ea78c36e4501fc8cff292895c0c685a14341e9cec05199",
+                "dd7d8b20926f8abace858e345a6d79ab7b837d3743b3a35998f460b6e5314bf8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -183,12 +222,8 @@
                 "hankkija.fi",
                 "www.hankkija.fi",
                 "www.helsinki.fi",
-                "www.lily.fi",
                 "www.puuilo.fi",
-                "www.ruoto.fi",
-                "www.terve.fi",
                 "www.tokmanni.fi",
-                "www.tuontitukku.fi",
                 "www.urbanarmorgear.com"
             ]
         },
@@ -202,7 +237,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.0000677,
+            "prevalence": 0.0000682,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -213,13 +248,13 @@
             "exampleSites": [
                 "hankkija.fi",
                 "www.hankkija.fi",
-                "www.power.no",
+                "www.mediamarkt.se",
                 "www.power.dk",
                 "www.power.fi",
+                "www.power.se",
+                "www.power.no",
                 "www.puuilo.fi",
-                "www.ruoto.fi",
                 "www.tokmanni.fi",
-                "www.tuontitukku.fi",
                 "www.urbanarmorgear.com"
             ]
         },
@@ -228,12 +263,11 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fi1",
-                "us"
+                "fi1"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -243,37 +277,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hankkija.fi",
-                "www.hankkija.fi",
-                "www.puuilo.fi",
-                "www.ruoto.fi",
-                "www.tokmanni.fi",
-                "www.tuontitukku.fi",
-                "www.urbanarmorgear.com"
-            ]
-        },
-        {
-            "rule": "frosmo\\.com\\/frosmo\\.xdm\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "alehdetfi.fi1",
-                "urbanarmorgearcomu.us"
-            ],
-            "apis": {
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6b65e3870f0c53a1563b29a83330581f3be5b5f809b3105f38390a561ded34a3"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lily.fi",
-                "www.urbanarmorgear.com"
+                "www.puuilo.fi"
             ]
         },
         {
@@ -287,20 +291,20 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "b35b9264b97e135fed319953849ce5e95241f2e836f10e9a73bb7c9689113dba",
                 "339d02faf6c2a0cc37d8bac109a81503bbbb1a97f3e1d885148cd76e252ec3bb",
-                "c1a6afd32fa24b00a8a12b7673b0bedea26c60697d8cbcf049d459664ed2b257"
+                "5d0b96b1a485c64da11fb2fc6d80a7e949a539d47a0e7778ec297d0f81673bd0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.fi",
-                "www.mtv.fi",
+                "mtvuutiset.fi",
                 "www.mtvuutiset.fi",
+                "www.mtv.fi",
                 "www.swisslos.ch"
             ]
         }
@@ -311,39 +315,51 @@
     "topInitiators": [
         {
             "domain": "d2oarllo6tn86.cloudfront.net",
-            "prevalence": 0.6808510638297872
+            "prevalence": 0.5502958579881657
+        },
+        {
+            "domain": "dk0tzorg7uge9.cloudfront.net",
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "first party",
-            "prevalence": 0.1276595744680851
+            "prevalence": 0.11242603550295859
         },
         {
             "domain": "d22j8luu453d90.cloudfront.net",
-            "prevalence": 0.08936170212765958
+            "prevalence": 0.10059171597633136
         },
         {
-            "domain": "ravenjs.com",
-            "prevalence": 0.06808510638297872
+            "domain": "appdynamics.com",
+            "prevalence": 0.023668639053254437
         },
         {
             "domain": "d2wzl9lnvjz3bh.cloudfront.net",
-            "prevalence": 0.02553191489361702
+            "prevalence": 0.023668639053254437
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.023668639053254437
+        },
+        {
+            "domain": "power.se",
+            "prevalence": 0.005917159763313609
         },
         {
             "domain": "inpref.s3.amazonaws.com",
-            "prevalence": 0.00851063829787234
+            "prevalence": 0.005917159763313609
         }
     ],
     "types": {
-        "Ping": 27,
-        "XHR": 38,
-        "Image": 7,
-        "Document": 2
+        "Document": 4,
+        "Ping": 32,
+        "XHR": 36,
+        "Image": 2
     },
     "nameservers": [
         "ns-713.awsdns-25.net",
+        "ns-1288.awsdns-33.org",
         "ns-100.awsdns-12.com",
-        "ns-2017.awsdns-60.co.uk",
-        "ns-1288.awsdns-33.org"
+        "ns-2017.awsdns-60.co.uk"
     ]
 }

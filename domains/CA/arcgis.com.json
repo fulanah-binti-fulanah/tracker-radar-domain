@@ -7,16 +7,58 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000706,
+    "prevalence": 0.000705,
     "sites": 7,
     "subdomains": [
+        "www",
         "static",
-        "services6",
-        "js"
+        "services6"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "arcgis\\.com\\/sharing\\/rest\\/oauth2\\/platformSelf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esri.com",
+                "www.esri.com"
+            ]
+        },
+        {
+            "rule": "arcgis\\.com\\/sharing\\/rest\\/oauth2\\/platformSelf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0ee5187b1e03c5c69d217a8ac26a1a7447976d3b0ae210745a75945806e53332"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esri.com",
+                "www.esri.com"
+            ]
+        },
         {
             "rule": "arcgis\\.com\\/attribution\\/World_Topo_Map",
             "cookies": 0,
@@ -26,7 +68,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7fc5d0baa92e7ba57d29b2d032d1623a7e33a90e6c6455e91fa4b29f6b6b50a2"
@@ -48,10 +90,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f7aaf447dbf20ec3d3ec7dde2e729fda15e3741bf6c6b0c27948b7b0dc25fa39"
+                "21d6e477179e5a4e6ca932b5a8282ae68f5f859a44fdd9195a9a8ca59848d690"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -70,11 +112,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "b7db85cbf727c6e77ab9451deecd3d0f56eebc5d7dd71541006e0b8dd862afca",
-                "d47b1318158ab92e2328f02c06089fddcb401d462a152e3cbd6b0ccfd58429ac"
+                "36006b94e8ff9d8769bec5c138d149ea091257a14289bcca0ab9799a980acd4d",
+                "1afa50302214ab1aeccb778d84c06ea2291fae4d53557626158afdbe43e3b8c2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -94,10 +136,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cfb2abb49745f80197489545d9202e4799754398d648a4850e12e0328a82f63d"
+                "85dec37b78927d455a524332b31e1ad32fb8cac8797c2af82df883bfa9d8ccdb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -105,28 +147,6 @@
             "exampleSites": [
                 "bcfiremap.com",
                 "www.bcfiremap.com"
-            ]
-        },
-        {
-            "rule": "arcgis\\.com\\/4\\.14\\/dojo\\/dojo-lite\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "64105cf664758338061553de831e8ce200286c0907144346f3d26d3ae863ab84"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "congress.gov",
-                "www.congress.gov"
             ]
         }
     ],
@@ -140,17 +160,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9761904761904762
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
-        "XHR": 9,
-        "Other": 2
+        "Preflight": 2,
+        "XHR": 11
     },
     "nameservers": [
-        "ns-423.awsdns-52.com",
-        "ns-982.awsdns-58.net",
+        "ns-1882.awsdns-43.co.uk",
         "ns-1062.awsdns-04.org",
-        "ns-1882.awsdns-43.co.uk"
+        "ns-982.awsdns-58.net",
+        "ns-423.awsdns-52.com"
     ]
 }

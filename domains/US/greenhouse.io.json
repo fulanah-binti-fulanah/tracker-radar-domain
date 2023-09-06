@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "boards",
-        "boards-api"
+        "boards-api",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,12 +25,16 @@
                 "boards"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "e9476801bf95b5a2dd859fc14d4897b2afc89afe251a6690aebb2fb4a81d5b76",
-                "f26c6e9f0046ebd3e3a488ee414f24fc714eeee89f6d754b785477e705240177"
+                "4c499091f4645c5dea6759a3a1c3dacb967fa92f9d75a87adea3c9af4de76075",
+                "4f65daef41f85998f14c10a6e85cf63a964284c90cfadddf25f1bcd584cb2c67",
+                "f26c6e9f0046ebd3e3a488ee414f24fc714eeee89f6d754b785477e705240177",
+                "208a6042359e360db62d287c66b46d0ffb4a8f13a0a4595715ea0377497d1084",
+                "af2a74f227951ae716dc6280cef528c5ea1617170cfb79a3b0e226287443abc5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,7 +42,11 @@
             "exampleSites": [
                 "crooked.com",
                 "havenly.com",
-                "www.culliganwater.com"
+                "mychristiancare.org",
+                "www.acplasticsinc.com",
+                "www.culliganwater.com",
+                "www.timescale.com",
+                "www.zeroacre.com"
             ]
         },
         {
@@ -49,10 +58,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "93e87b43a27cac45d2d8492c20209879fc87157ec4b9d85e559720a485b70a3c"
+                "d3174e908293d9fb98322911330d828ae835cdf407bc9af4a00ba0eb19eb0ba6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -60,6 +69,28 @@
             "exampleSites": [
                 "anaconda.com",
                 "www.anaconda.com"
+            ]
+        },
+        {
+            "rule": "greenhouse\\.io\\/v1\\/boards\\/roundpointmortgageservicingcorporation\\/departments\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e9267e39cc9237d996f13cfd95d96a58bc1da92d59eaa970cb293618edc0ed0b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roundpointmortgage.com",
+                "www.roundpointmortgage.com"
             ]
         }
     ],
@@ -69,24 +100,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
-        },
-        {
-            "domain": "d3e54v103j8qbb.cloudfront.net",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.75
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.125
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.0625
+        },
+        {
+            "domain": "d3e54v103j8qbb.cloudfront.net",
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 9,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1915.awsdns-47.co.uk",
         "ns-1030.awsdns-00.org",
-        "ns-979.awsdns-58.net",
-        "ns-491.awsdns-61.com"
+        "ns-1915.awsdns-47.co.uk",
+        "ns-491.awsdns-61.com",
+        "ns-979.awsdns-58.net"
     ]
 }

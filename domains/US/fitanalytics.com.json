@@ -7,81 +7,82 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000122,
+    "prevalence": 0.000123,
     "sites": 18,
     "subdomains": [
         "widget",
-        "integrations",
         "metrics",
-        "metrics-nl"
+        "metrics-nl",
+        "integrations"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "fitanalytics\\.com\\/widget_pdp\\.js",
-            "cookies": 0.0000271,
+            "cookies": 0.0000273,
             "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 8,
                 "Screen.prototype.width": 8,
                 "Screen.prototype.height": 8,
-                "window.sessionStorage": 7,
-                "Document.cookie getter": 7,
+                "window.sessionStorage": 8,
                 "Event.prototype.timeStamp": 7,
                 "Date.prototype.getTime": 4,
                 "Document.cookie setter": 4
             },
             "sites": 8,
-            "prevalence": 0.0000542,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "b35e2b892ec4756b6ef81e2388e7f8a5392647b89b61653716fed40001d8c2a8"
+                "b35e2b892ec4756b6ef81e2388e7f8a5392647b89b61653716fed40001d8c2a8",
+                "ca83b7b0f2fb3173d133d6cd8633b9a81866c6e3cc061aeafdccf4a0c83572bf"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "fita.sid.carhartt_wip": {
-                    "ttl": 7776009,
+                "fita.sid.aeropostale": {
+                    "ttl": 34160004,
                     "length": 32,
-                    "prevalence": 0.000006770664066731665,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 },
-                "fita.sid.boss": {
-                    "ttl": 2592037,
+                "fita.sid.carhartt_wip": {
+                    "ttl": 7776015,
                     "length": 32,
-                    "prevalence": 0.000006770664066731665,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 },
                 "fita.sid.mammut": {
-                    "ttl": 34160003,
+                    "ttl": 34160007,
                     "length": 32,
-                    "prevalence": 0.000006770664066731665,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 },
                 "fita.sid.patagonia_us": {
-                    "ttl": 34160007,
+                    "ttl": 34160006,
                     "length": 32,
-                    "prevalence": 0.000006770664066731665,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shein.com",
+                "opus-fashion.com",
+                "www.aeropostale.com",
                 "www.carhartt-wip.com",
                 "www.fjallraven.com",
                 "www.hugoboss.com",
                 "www.mammut.com",
                 "www.ochsnersport.ch",
-                "www.patagonia.ca",
-                "www.scott-sports.com"
+                "www.patagonia.ca"
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/shein",
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/opus",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -89,21 +90,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "bi_session_id": 0.00001354132813346333
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shein.com",
-                "es.shein.com"
+                "opus-fashion.com",
+                "de.opus-fashion.com"
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/shein",
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/opus",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -111,137 +110,116 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "68306b8e4e1cbd540ccdbf9584c26d44d1a4201b3aaeee9204ca6c0d23a28861"
+                "d7efc9756433bbbbb06c4b4fb7f7e407dccd791bf7dba64d9191d9b1c82f2a08"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opus-fashion.com",
+                "de.opus-fashion.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/products",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "eaaceee51a575bfa63b01134194794cf3ae0025badfc3db37009ffe153b8f4ff",
+                "e5a7d464a6efbd22512125c101a00bd04bafc864461c0fc989c0446f44089dfb",
+                "594c99cea5ed6ba93d42d83fd3b42b1e49fc54384b2fcf3ff92080b96bb24d5d",
+                "b16831ea396db3c259bee975c819f022c5f766e79252d55185c5fb2c18f9f842",
+                "681a69d993432efb674a402d56a4c7e08a7cc63821bf8bebd67127df16ae08d5",
+                "204ee41205008450fe9dd366c01d27673ad95034ead33bcded74248fa26a5160",
+                "da1a0834d5a1ec338feea681b12e0caf758c62de93860f0223920019aa13ad3e",
+                "ba6159b5dfe338ad3bf4b450c0a36cbc3ae5c7a88e9b0eaa973a7e90a7a9e99c",
+                "e36b929157d6818461c07d5dbc9774202f1ed3612c57f76c847005f13d671f3f",
+                "ee66d68a3ddd0786a2ade7bbcba35c3f8616d9b135efcff36c1f812c837ad513",
+                "bd9d88608b63cdce466a360c1a972fedf6f3a622ce1d4dee73296d510c0068a1",
+                "fe6dfe6101a0c20e3b8bace079b266e384f635faa68d32e74d9647afb888b998",
+                "f42c7379c62e77fc95a937a5a44f37d614ef281556c13b298d59d8d1edaa11bb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "bi_session_id": 0.00001354132813346333
+                "_ga": 0.00003408176898013714,
+                "fita.sid.aeropostale": 0.000006816353796027429,
+                "fita.sid.carhartt_wip": 0.000006816353796027429,
+                "fita.sid.cotswold": 0.000006816353796027429,
+                "fita.sid.icebreaker": 0.000006816353796027429,
+                "fita.sid.mammut": 0.000006816353796027429,
+                "fita.sid.millets": 0.000006816353796027429,
+                "fita.sid.patagonia_us": 0.000006816353796027429,
+                "fita.sid.transa": 0.000006816353796027429,
+                "fita.sid.whbm": 0.000006816353796027429
             },
             "exampleSites": [
-                "shein.com",
-                "es.shein.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget_zepto\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "window.sessionStorage": 4,
-                "Document.cookie getter": 4,
-                "Event.prototype.timeStamp": 4,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "9ce684574ded59f5892c054b2f4eaf58ff603e45d8bb4a6aafcc83941aa70664"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "fita.sid.falabella": {
-                    "ttl": 7776027,
-                    "length": 32,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
-                },
-                "fita.sid.transa": {
-                    "ttl": 34160005,
-                    "length": 32,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "puma.com",
-                "sodimac.falabella.com",
+                "opus-fashion.com",
+                "de.opus-fashion.com",
                 "us.princesspolly.com",
-                "www.falabella.com.pe",
-                "www.falabella.com",
-                "www.transa.ch"
+                "www.aeropostale.com",
+                "www.carhartt-wip.com",
+                "www.cotswoldoutdoor.com",
+                "www.fjallraven.com",
+                "www.icebreaker.com",
+                "www.mammut.com",
+                "www.millets.co.uk",
+                "www.ochsnersport.ch",
+                "www.patagonia.ca",
+                "www.transa.ch",
+                "www.whitehouseblackmarket.com"
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/shop\\/falabella\\/pdp\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "integrations"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "2eceeb5c2d97675b3ce41aa922bcdac998afa1bc29ac8fb43cdedd2e4cc50fbb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "falabella.com",
-                "www.falabella.com.pe",
-                "www.falabella.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/falabella",
-            "cookies": 0,
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/products",
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "a1b93e5531b99573a1096373837726f8deb200c374dc1e98121df23ec6b6532b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "falabella.com",
-                "sodimac.falabella.com",
-                "www.falabella.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/falabella",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 13,
+            "prevalence": 0.0000886,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00003408176898013714,
+                "fita.sid.aeropostale": 0.000006816353796027429,
+                "fita.sid.carhartt_wip": 0.000006816353796027429,
+                "fita.sid.cotswold": 0.000006816353796027429,
+                "fita.sid.icebreaker": 0.000006816353796027429,
+                "fita.sid.mammut": 0.000006816353796027429,
+                "fita.sid.millets": 0.000006816353796027429,
+                "fita.sid.patagonia_us": 0.000006816353796027429,
+                "fita.sid.transa": 0.000006816353796027429,
+                "fita.sid.whbm": 0.000006816353796027429
+            },
             "exampleSites": [
-                "falabella.com",
-                "sodimac.falabella.com",
-                "www.falabella.com"
+                "opus-fashion.com",
+                "us.princesspolly.com",
+                "www.aeropostale.com",
+                "www.carhartt-wip.com",
+                "www.cotswoldoutdoor.com",
+                "www.fjallraven.com",
+                "www.icebreaker.com",
+                "www.mammut.com",
+                "www.millets.co.uk",
+                "www.ochsnersport.ch",
+                "www.patagonia.ca",
+                "www.transa.ch",
+                "www.whitehouseblackmarket.com"
             ]
         },
         {
@@ -253,142 +231,144 @@
                 "metrics-nl"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 14,
+            "prevalence": 0.0000954,
             "cnames": [],
             "responseHashes": [
-                "402479b5902fac9609ca5a43ce91c2c828efdfcf93fc718a78a58e1b132a862f",
-                "366dd91d34291bfee6e8c3e6202a59d0fd3cd6712dc7bb486d08d232d425bad3",
-                "a835d9d587765b3665893aae9df3995a30cc2d8696956bd0c8d2b10cb14d4e82",
-                "49b6ec1a4cb56fab2ea4375c661ff59f112beb266c41c76a30ade5df2bc3b23c",
-                "f76f128532bdeaa82f910ed290cf932129b292c431c465c8e75a57a06e319dd0",
-                "3ca0dac937bd4e032ce01a76fafe1105dd03bf6c12f7c9c785bb427224157d69",
-                "0a67d4558b0006af0f28c7999321f7d4b8b7559655caedb983abeb030dc959d9",
-                "aa6077ac25c9e9e5021e491c90eeb47815028ca315a8c78ebc23f2fe660b42df",
-                "69109421f584e616816cd372432d6ffa714de74f7657aebaadb15054d5b9d70c",
-                "4e04917b8ac036c4ee755df1f0d087061e12d83ba62cc28045da20d3ca67fd2d",
-                "8d23ea39de327c94e64750d088b9bf84fa7e25758b29850203401109ba2c98ae",
-                "e5937b9e801b85d83d790cc7e4ea2f56009c0768c3f308e7628972f1e3454212"
+                "bdaee56f913db7138947a1e19a23a3bfe0ba263f7ab1092c582d5e106c8ffca1",
+                "9091bbf0028c585cdbd5abfecaf0e16d094e7f39dc0714f9673363918195a175",
+                "c7e604ca6eb9d9b4561b614eda099c4fbd29d2d5b0ac5b5b44a031956e8f64b5",
+                "12d41d0111366264d23ba0cb7e081ea7b39c91ff3e52986ebc050433cabcc0f9",
+                "aca82ee0e637ca88001df8d306615d107405d77fb74d9032c4764112f568545e",
+                "8d7062c20b977ae858e39bd19ff7f8eaa1a3b804c35a3726e1eae55d4cc3eee7",
+                "e5ac0628f0b385919bae073dc8891b81a3075fb5dcec555320a5a4163b1a8dcb",
+                "f64ce2b952b6d8794c9b83d519768b209e66b0895d457b41ea332762732fbb74",
+                "28e59fde189656987a8949e003fc50ec6f56669a4789ecad00de4fd34eb75ada",
+                "04773d980953d030025f226f821f7135164d722428a3347d68d62badd4614bd0",
+                "511657a7f5f86028c843cf36e0f631dea7a1967452538418845f75e9c39306bf",
+                "d9c1e7ebd7f4e4dea8a88fdc7ab93c116f74796976a37d63b6300d266c8f179e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000033853320333658324,
-                "fita.sid.carhartt_wip": 0.000006770664066731665,
-                "fita.sid.cotswold": 0.000006770664066731665,
-                "fita.sid.falabella": 0.000006770664066731665,
-                "fita.sid.mammut": 0.000006770664066731665,
-                "fita.sid.millets": 0.000006770664066731665,
-                "fita.sid.patagonia_us": 0.000006770664066731665,
-                "fita.sid.transa": 0.000006770664066731665
+                "_ga": 0.00003408176898013714,
+                "fita.sid.aeropostale": 0.000006816353796027429,
+                "fita.sid.carhartt_wip": 0.000006816353796027429,
+                "fita.sid.cotswold": 0.000006816353796027429,
+                "fita.sid.icebreaker": 0.000006816353796027429,
+                "fita.sid.mammut": 0.000006816353796027429,
+                "fita.sid.millets": 0.000006816353796027429,
+                "fita.sid.patagonia_us": 0.000006816353796027429,
+                "fita.sid.transa": 0.000006816353796027429,
+                "IR_gbd": 0.000006816353796027429,
+                "fita.sid.whbm": 0.000006816353796027429
             },
             "exampleSites": [
-                "falabella.com",
-                "sodimac.falabella.com",
+                "opus-fashion.com",
+                "de.opus-fashion.com",
                 "us.princesspolly.com",
+                "www.aeropostale.com",
                 "www.carhartt-wip.com",
                 "www.cotswoldoutdoor.com",
-                "www.falabella.com",
                 "www.fjallraven.com",
+                "www.icebreaker.com",
                 "www.mammut.com",
                 "www.millets.co.uk",
                 "www.ochsnersport.ch",
                 "www.patagonia.ca",
-                "www.scott-sports.com",
+                "www.transa.ch",
+                "www.whitehouseblackmarket.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget_zepto\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 3,
+                "Event.prototype.timeStamp": 3,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "d37c70863f1a4e19084ed74b193437c7c9ca4ab57bed3ff692d4409b5c94f06a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fita.sid.icebreaker": {
+                    "ttl": 7776015,
+                    "length": 32,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                },
+                "fita.sid.transa": {
+                    "ttl": 34160006,
+                    "length": 32,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puma.com",
+                "us.princesspolly.com",
+                "www.falabella.com.pe",
+                "www.icebreaker.com",
                 "www.transa.ch"
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/products",
-            "cookies": 0.0000609,
-            "fingerprinting": 0,
+            "rule": "fitanalytics\\.com\\/widget\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000033853320333658324,
-                "fita.sid.carhartt_wip": 0.000006770664066731665,
-                "fita.sid.cotswold": 0.000006770664066731665,
-                "fita.sid.falabella": 0.000006770664066731665,
-                "fita.sid.mammut": 0.000006770664066731665,
-                "fita.sid.millets": 0.000006770664066731665,
-                "fita.sid.patagonia_us": 0.000006770664066731665,
-                "fita.sid.transa": 0.000006770664066731665,
-                "fita.sid.whbm": 0.000006770664066731665
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
-            "exampleSites": [
-                "falabella.com",
-                "us.princesspolly.com",
-                "www.carhartt-wip.com",
-                "www.cotswoldoutdoor.com",
-                "www.falabella.com",
-                "www.fjallraven.com",
-                "www.mammut.com",
-                "www.millets.co.uk",
-                "www.ochsnersport.ch",
-                "www.patagonia.ca",
-                "www.scott-sports.com",
-                "www.transa.ch",
-                "www.whitehouseblackmarket.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/products",
-            "cookies": 0.0000406,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "bdfb943081486da3611905e31839682b5c13d970c46bbf7083085a4b06e5bb8d",
-                "05a296a76f75f042e3ab1cf7afc64505d9b0899d8cfa4fcb42e0237c85693730",
-                "12ee35893d65389b3a676e1ce93a9f91fc8039069356a3b2e8b328b777820a64",
-                "200a5c8fda7f6f92db518051081ef7f8bb3d03a95ffb9a522f92acc0623addbb",
-                "c89438fe5fc5af644c3448905522fd319c5930a4e387a2bccd8215565a300dc8",
-                "e3e069b497912a9cf38c60b7ac331813cd4e3ed9f1b0dc462d947868154b35c9",
-                "389394ee60e5822622daa837ab7705508bc0fc0ea8e151cd72e4f31003670e48",
-                "3ff7b5dbcf513ec8359233e44a6ed6dc509f2010c2c683fb1a13fa945fcf1c8c",
-                "486d80447c4048815e8403c6ac55a5014c131e5317054b8cfe745d036958600f",
-                "d89b4343c73fcaf67fb9bd81390bee9dfc8b5b6b437d86382060aba77e34dfff",
-                "b869ed5f17a5ae4a3bf627461a4bbece3ee8652af8bae36c472dbce051889021"
+                "9b22201e9c29ee6c9e69a8dc12bbbd5b335a01c83ffdac79fce140dd8936e66b",
+                "e4f74c04856b41c5c18a4defec7f4e625e7acd8e0282942a57132d5aea1572af"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000033853320333658324,
-                "fita.sid.carhartt_wip": 0.000006770664066731665,
-                "fita.sid.cotswold": 0.000006770664066731665,
-                "fita.sid.falabella": 0.000006770664066731665,
-                "fita.sid.mammut": 0.000006770664066731665,
-                "fita.sid.millets": 0.000006770664066731665,
-                "fita.sid.patagonia_us": 0.000006770664066731665,
-                "fita.sid.transa": 0.000006770664066731665,
-                "fita.sid.whbm": 0.000006770664066731665
+            "type": "Script",
+            "firstPartyCookies": {
+                "fita.sid.cotswold": {
+                    "ttl": 7776004,
+                    "length": 32,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                },
+                "fita.sid.whbm": {
+                    "ttl": 7776028,
+                    "length": 32,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                }
             },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "falabella.com",
-                "us.princesspolly.com",
-                "www.carhartt-wip.com",
+                "yoox.com",
                 "www.cotswoldoutdoor.com",
-                "www.falabella.com",
-                "www.fjallraven.com",
-                "www.mammut.com",
-                "www.millets.co.uk",
-                "www.ochsnersport.ch",
-                "www.patagonia.ca",
-                "www.scott-sports.com",
-                "www.transa.ch",
                 "www.whitehouseblackmarket.com"
             ]
         },
@@ -401,13 +381,13 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004062398440038999
+                "_ga": 0.000040898122776164575
             },
             "exampleSites": [
                 "princesspolly.com",
@@ -423,36 +403,183 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a7896f01fed13cbdda041aacc2eddca7512442de2fd08cc43d1744cb5fdae23b"
+                "db74e9fbcf29b846f939a34662685dfba29640ff88e20639f8c349d28e9bb05d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004062398440038999
+                "_ga": 0.000040898122776164575
             },
             "exampleSites": [
                 "princesspolly.com",
                 "us.princesspolly.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/aeropostale",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropostale.com",
+                "www.aeropostale.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/aeropostale",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c80b5e6a46a9311d5addbbef2f36bdbc014e17b675c0cc0518d9393e9f7feda"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropostale.com",
+                "www.aeropostale.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/assets\\/button\\/ff-icon-black\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "integrations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "af73b8863923fd7cd984c576114435950026dba13269454c4872bdc191bba70c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropostale.com",
+                "www.patagonia.ca"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/images\\/integration\\/smartFeature-close\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "64a3e1b029fe7115aed2d5ddc24771ad8428f8da8d318bb1b419968cf15b604d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropostale.com",
+                "www.fjallraven.com",
+                "www.patagonia.ca"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/recommendations",
+            "cookies": 0.0000273,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "2d127c94c77b9f9dbb360051e6820ffbfd6e1ee160be7cdfadd35871d9c39435"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fita.sid.aeropostale": 0.000006816353796027429,
+                "fita.sid.carhartt_wip": 0.000006816353796027429,
+                "fita.sid.cotswold": 0.000006816353796027429,
+                "fita.sid.mammut": 0.000006816353796027429,
+                "fita.sid.patagonia_us": 0.000006816353796027429
+            },
+            "exampleSites": [
+                "aeropostale.com",
+                "www.carhartt-wip.com",
+                "www.cotswoldoutdoor.com",
+                "www.fjallraven.com",
+                "www.mammut.com",
+                "www.patagonia.ca"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/recommendations",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fita.sid.aeropostale": 0.000006816353796027429,
+                "fita.sid.carhartt_wip": 0.000006816353796027429,
+                "fita.sid.cotswold": 0.000006816353796027429,
+                "fita.sid.mammut": 0.000006816353796027429,
+                "fita.sid.patagonia_us": 0.000006816353796027429
+            },
+            "exampleSites": [
+                "aeropostale.com",
+                "www.carhartt-wip.com",
+                "www.cotswoldoutdoor.com",
+                "www.fjallraven.com",
+                "www.mammut.com",
+                "www.patagonia.ca"
             ]
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/carhartt_wip",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "184d8872b184fb7cac434e3994052d5c2063671ee49e93f3dd5e5e046adcac01"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -462,17 +589,19 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/carhartt_wip",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "d41959fad188d1e6e560266a6e08a505b5190c2a5ecada41f657cff5f5981a13"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -489,7 +618,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9fae0c146d9dc587a44fea7ec8ae214e20869cb8ed3860a558130cc2a5a4800d"
@@ -503,121 +632,20 @@
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/recommendations",
-            "cookies": 0.0000271,
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/cotswold",
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "2d127c94c77b9f9dbb360051e6820ffbfd6e1ee160be7cdfadd35871d9c39435"
+                "f392178517bbbf83e78be57b40edc8f2eb3a3ab2a14c8fd372eb6f05489f5c03"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "fita.sid.carhartt_wip": 0.00001354132813346333,
-                "fita.sid.cotswold": 0.000006770664066731665,
-                "fita.sid.mammut": 0.000006770664066731665,
-                "fita.sid.patagonia_us": 0.000006770664066731665
-            },
-            "exampleSites": [
-                "carhartt-wip.com",
-                "www.carhartt-wip.com",
-                "www.cotswoldoutdoor.com",
-                "www.fjallraven.com",
-                "www.mammut.com",
-                "www.patagonia.ca"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/recommendations",
-            "cookies": 0.0000271,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "fita.sid.carhartt_wip": 0.000006770664066731665,
-                "fita.sid.cotswold": 0.000006770664066731665,
-                "fita.sid.mammut": 0.000006770664066731665,
-                "fita.sid.patagonia_us": 0.000006770664066731665
-            },
-            "exampleSites": [
-                "carhartt-wip.com",
-                "www.cotswoldoutdoor.com",
-                "www.fjallraven.com",
-                "www.mammut.com",
-                "www.patagonia.ca"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9b22201e9c29ee6c9e69a8dc12bbbd5b335a01c83ffdac79fce140dd8936e66b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "fita.sid.cotswold": {
-                    "ttl": 7776004,
-                    "length": 32,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
-                },
-                "fita.sid.whbm": {
-                    "ttl": 7776031,
-                    "length": 32,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cotswoldoutdoor.com",
-                "www.whitehouseblackmarket.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/cotswold",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -627,19 +655,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/cotswold",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "4ec6a3360043a36c82a5eaebdd4e4ae0348e5abd4453f795b2d3769fb27ed658"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -656,12 +682,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "6d7f7c7f503c81214fde9bb5ab6f548f67af89ed3003ee9c560487fe27956dab"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -678,10 +702,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "eae4109f2beceef1e7d7d3e4f414b98e280f76330ca129b017b9c5cb262e47a8"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -690,83 +716,103 @@
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/images\\/integration\\/smartFeature-close\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "64a3e1b029fe7115aed2d5ddc24771ad8428f8da8d318bb1b419968cf15b604d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fjallraven.com",
-                "www.patagonia.ca"
-            ]
-        },
-        {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/boss",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2837fc479988154b267ad26ad7008985121663adcc21750ace2814318eb9a873"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_gid": 0.00001354132813346333
-            },
-            "exampleSites": [
-                "hugoboss.com",
-                "www.hugoboss.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/boss",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gid": 0.00001354132813346333
+                "_gid": 0.000013632707592054858
             },
             "exampleSites": [
                 "hugoboss.com",
                 "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/boss",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da6772afa852db6692d065cade0934af448408475a0e8a9ad3364216a5acac26"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_gid": 0.000013632707592054858
+            },
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/icebreaker",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icebreaker.com",
+                "www.icebreaker.com"
+            ]
+        },
+        {
+            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/icebreaker",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cd62dc61bd12dc68b1b7e55e021b75fd6ff82bc3a3eea4f6d1270913b15bb276"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icebreaker.com",
+                "www.icebreaker.com"
             ]
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/mammut",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -779,17 +825,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/mammut",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cd140d6b2635971447c6db6eeb810d1f4ca1ea490b594989781f4f87dd8a1c55"
+                "40670989cb6af78297f91137976b06f48ad0f0e8492dafa7a54c8108f41ef1a0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -801,14 +847,14 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/millets",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -821,17 +867,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/millets",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4f6406cbbee8c90234bcabfa6cd9394955128e4764aabf0463e84c76dfa4d6ee"
+                "aef36fdeb8245ed3e8a087bc22e6b8d567f67ebcdf1db253f1a319bacd8b07f6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -850,13 +896,13 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00002708265626692666
+                "_ga": 0.000027265415184109715
             },
             "exampleSites": [
                 "ochsnersport.ch",
@@ -872,15 +918,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa258e98220fb6d2e790b8b51564169a392461421b631482cd9afa8d196c8729"
+                "00e05237df2c3263d9c026cfbc7970bbb49f496330b5dedf26a6319c85fd6fda"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00002708265626692666
+                "_ga": 0.000027265415184109715
             },
             "exampleSites": [
                 "ochsnersport.ch",
@@ -888,37 +934,15 @@
             ]
         },
         {
-            "rule": "fitanalytics\\.com\\/assets\\/button\\/ff-icon-red\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "integrations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "909c6e4755cca0d80f8ec8d836a0191250a558f008a8072a6919e3d45b945cd8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ochsnersport.ch",
-                "www.scott-sports.com"
-            ]
-        },
-        {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/patagonia_us",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -931,17 +955,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/patagonia_us",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b54cd493df2227164f26f7323012bf4a60e3c6ae8043eb3451994f29b0783d4b"
+                "7dec0672cd4255df4a1e1e547ab163a072bbd2e03fc8284ef755aead1fb8c701"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -949,82 +973,18 @@
             "exampleSites": [
                 "patagonia.ca",
                 "www.patagonia.ca"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/shop\\/scottsports\\/pdp\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "integrations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "16bd3796e506e4a3652a5501b056b741d25d881cd2b10b12cfe2dea8132ec4a2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scott-sports.com",
-                "www.scott-sports.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/scottsports",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scott-sports.com",
-                "www.scott-sports.com"
-            ]
-        },
-        {
-            "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/scottsports",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "a66695e282c07937a61fa5578babf9a33885c35e15bf8499368ac5b264556c38"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scott-sports.com",
-                "www.scott-sports.com"
             ]
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/transa",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1037,17 +997,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/transa",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8d4abb972b0197d24d834bd5eb189020f36bf86e0805aa5ecd80516ce1bb9732"
+                "f9e2884a4569efc375507ccbf1b6b24996fb393ec9605c558ec8fe109c1ef359"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1059,14 +1019,14 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/whbm",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1079,17 +1039,17 @@
         },
         {
             "rule": "fitanalytics\\.com\\/widget\\/api\\/shops\\/whbm",
-            "cookies": 0.00000677,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "widget"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "33d07e8a99c54ae6c514d4649d42481db8f168f57b7762ad127c2a1f9564d27f"
+                "aca8e6661fe97b0bd5917a23dbe4076e5b1af40aa2af9b5cad68b0679d6eabef"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1102,53 +1062,53 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000677,
+    "cookies": 0.0000682,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8211382113821138
+            "prevalence": 0.8064516129032258
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.04065040650406504
-        },
-        {
-            "domain": "baqend.com",
-            "prevalence": 0.032520325203252036
+            "prevalence": 0.04032258064516129
         },
         {
             "domain": "noibu.com",
-            "prevalence": 0.032520325203252036
+            "prevalence": 0.03225806451612903
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.032520325203252036
+            "prevalence": 0.03225806451612903
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.016260162601626018
+            "prevalence": 0.024193548387096774
         },
         {
-            "domain": "ltwebstatic.com",
-            "prevalence": 0.008130081300813009
+            "domain": "baqend.com",
+            "prevalence": 0.024193548387096774
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.024193548387096774
         },
         {
             "domain": "cookiepro.com",
-            "prevalence": 0.008130081300813009
+            "prevalence": 0.008064516129032258
         },
         {
             "domain": "piwik.pro",
-            "prevalence": 0.008130081300813009
+            "prevalence": 0.008064516129032258
         }
     ],
     "types": {
-        "Script": 34,
+        "Script": 30,
         "Preflight": 47,
         "Fetch": 48,
-        "Image": 6
+        "Image": 7
     },
     "nameservers": [
-        "duke.ns.cloudflare.com",
-        "anna.ns.cloudflare.com"
+        "anna.ns.cloudflare.com",
+        "duke.ns.cloudflare.com"
     ]
 }

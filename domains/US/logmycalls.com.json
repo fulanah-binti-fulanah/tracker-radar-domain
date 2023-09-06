@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
         "dni"
     ],
@@ -14,26 +14,36 @@
     "resources": [
         {
             "rule": "logmycalls\\.com\\/dni\\.js",
-            "cookies": 0,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "dni"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 1,
+                "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "89058be1bdfdddd9da9d4d3b41bd121f33137eaa76ccde580503d928eeae2bfd"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "dni": {
+                    "ttl": 86400,
+                    "length": 36,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "linex.com",
+                "jhu.edu",
+                "www.bayada.com",
                 "www.linex.com"
             ]
         },
@@ -45,33 +55,49 @@
                 "dni"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
+                "772deca4594e0378dd48c9a29cd931e681b73ee9d2c846b39626411a15486762",
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "linex.com",
-                "www.linex.com"
+                "jhu.edu",
+                "www.bayada.com",
+                "www.empireabrasives.com",
+                "www.linex.com",
+                "www.trimlok.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "thomasnet.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 3,
+        "XHR": 5
     },
     "nameservers": [
         "pdns02.domaincontrol.com",

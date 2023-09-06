@@ -9,74 +9,71 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "cointelegraph",
+        "ama",
         "akc",
-        "lenbrook",
         "encyclopediabritannica",
         "cbc",
-        "roularta",
-        "maastrichtuniversity",
-        "advancelocal",
         "telia-no",
-        "ups"
+        "tnf",
+        "ups",
+        "americanmedia",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "blueconic\\.net\\/DG\\/DEFAULT\\/cs",
-            "cookies": 0.00101,
+            "cookies": 0.000907,
             "fingerprinting": 0,
             "subdomains": [
                 "cointelegraph",
+                "ama",
                 "akc",
-                "lenbrook",
                 "encyclopediabritannica",
                 "cbc",
-                "roularta",
-                "maastrichtuniversity",
-                "advancelocal",
                 "telia-no",
-                "ups"
+                "tnf",
+                "ups",
+                "americanmedia"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.00101,
+            "sites": 9,
+            "prevalence": 0.000907,
             "cnames": [],
             "responseHashes": [
-                "ad49891d8ea9f46ed61e3690514d2e1f41a9655b392f3022da395e34d35c0f25",
-                "2b4db132f4c1cec19cec14bdd04aa76dc2ada7cc3ea1d4fd8e9742b122486ce2",
-                "0272321771a3a1dac9285f0a920730c270ec0bf357b8f3a5376dda7af00b0dc1",
-                "61f1bdaf416946a75eb0250172135ec451567a9fc109c2145463ece3886e6f66",
-                "732518a14d8def7ddb990076764737cefddd1675271f614ed0805f09e0156026",
-                "968705be91ed9c3754c7157da8c444cf1a524d651ff6f26a46d3fb7d2fb7d08d",
-                "ed2fdfad728a62df5bf8be37c9c9e51b58a2d8a2139663aeb3e6be06a6c7f405",
-                "42813d76dd926f48e4be48b1bcc639c4e2d84c3803c4867faaab72333e44134c",
-                "8a853ad6277c9177c49431fd53e816cf1aaa2e42a551e3d6328ec985fa64f2ee"
+                "f25a24b735c7f2db801d28c9f80c696201cd4d65449e088f4f60d13e8d77fd18",
+                "ee945db16adb7d54f2e13666e576628b8140257a7b1283a0ba21b39fb41a0a14",
+                "8a4b94f95781593ec2410d59dcde2fc6dd4e1fb0670472a2d5a2c60fefadd6b0",
+                "cce90fcad5501870fe71e15b933ba69df05178ebe19a6ce6283aed7a1dacf104",
+                "fe63c8724936cf132fc1721d5ab0a8c235bf20c421d3e331c1154171c553c33b",
+                "032c97779200ed51c5566540c4ddccec5216c160290bd20447e48bb895b08b2a",
+                "46563e99e6b0d15cdbe39547626fe7f8e7226fe28671d56a4642a77bb8e2aafe",
+                "afa796c477ddf811cddc0c9d51a2f361f6656376ca03559071c607a81bec4c86"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "BCSessionID": 0.00020181634712411706
+                "BCSessionID": 0.0001007759750075582
             },
             "exampleSites": [
                 "cointelegraph.com",
+                "jamanetwork.com",
                 "www.akc.org",
-                "www.bluesound.com",
                 "www.britannica.com",
                 "www.cbc.ca",
-                "www.libelle-lekker.be",
-                "www.maastrichtuniversity.nl",
-                "www.nj.com",
                 "www.telia.no",
-                "www.ups.com"
+                "www.thenorthface.com",
+                "www.ups.com",
+                "www.usmagazine.com"
             ]
         },
         {
-            "rule": "blueconic\\.net\\/DG\\/DEFAULT\\/rest\\/rpc\\/195",
+            "rule": "blueconic\\.net\\/DG\\/DEFAULT\\/rest\\/rpc\\/1071",
             "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
@@ -87,14 +84,14 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "a1cc895e4287f6a7d4a2916f42f84f8bcfe660424e8db863385cd4262f6c188f"
+                "92401f326a04f5e3e841adbcfcf768fe658daaf311edc1759793d4866f78c249"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00020181634712411706,
-                "lotame_domain_check": 0.00020181634712411706,
-                "BCSessionID": 0.00010090817356205853
+                "_li_dcdm_c": 0.0002015519500151164,
+                "lotame_domain_check": 0.0002015519500151164,
+                "BCSessionID": 0.0001007759750075582
             },
             "exampleSites": [
                 "akc.org",
@@ -102,27 +99,45 @@
             ]
         },
         {
-            "rule": "blueconic\\.net\\/DG\\/DEFAULT\\/rest\\/rpc\\/459",
+            "rule": "blueconic\\.net\\/americanmedia\\.js",
             "cookies": 0.000202,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "maastrichtuniversity"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.name": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.vendor": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d447bae40c58fb944f3ea4241d08564af3984b0f592079908e4d5fe8e05be1ee"
+                "8c5f94b74a7720db8976386e833a734e1bf726dec4c2050f25a837452fcacad0"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "BCSessionID": 0.00010090817356205853
+            "type": "Script",
+            "firstPartyCookies": {
+                "bc_tstgrp": {
+                    "ttl": 31536006,
+                    "length": 1,
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 1
+                }
             },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maastrichtuniversity.nl",
-                "www.maastrichtuniversity.nl"
+                "muscleandfitness.com",
+                "www.usmagazine.com"
             ]
         }
     ],
@@ -134,25 +149,33 @@
         "Action Pixels"
     ],
     "performance": {},
-    "cookies": 0.00111,
+    "cookies": 0.00101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8947368421052632
+            "prevalence": 0.7
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.1
+        },
+        {
+            "domain": "px-cloud.net",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "d17tqr44y57o31.cloudfront.net",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 10,
-        "XHR": 4
+        "Script": 11,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1401.awsdns-47.org",
-        "ns-2015.awsdns-59.co.uk",
         "ns-72.awsdns-09.com",
-        "ns-764.awsdns-31.net"
+        "ns-764.awsdns-31.net",
+        "ns-1401.awsdns-47.org",
+        "ns-2015.awsdns-59.co.uk"
     ]
 }

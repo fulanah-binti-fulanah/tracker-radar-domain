@@ -7,12 +7,16 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000605,
-    "sites": 6,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "n95emuhkii-3",
+        "e5y1a9z5et-1",
+        "ujjak2x1py-3",
         "f49rvkeckz-1",
-        "zsujlf71ok-1"
+        "zsujlf71ok-2",
+        "hzoxaduqy8-2",
+        "iem60721xi-3"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,24 +27,96 @@
             "fingerprinting": 0,
             "subdomains": [
                 "n95emuhkii-3",
+                "e5y1a9z5et-1",
+                "ujjak2x1py-3",
                 "f49rvkeckz-1",
-                "zsujlf71ok-1"
+                "zsujlf71ok-2",
+                "hzoxaduqy8-2"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 6,
+            "prevalence": 0.000605,
             "cnames": [],
             "responseHashes": [
-                "07b11ebace87b333462a31210a93976cfe9c734a104cc4b1d8e379ea55be3a5e",
-                "c78ec108253df73d246f57e192ff6a398b680941b04d6d92c427eb6cd6cae2f6"
+                "41c89d30d0b9a43fe41b7307cb9e5cdc9ca27683eb6e82e1662fd5498ebc1b76",
+                "38591beda4a3a99eb5d17fb605b836e60dbbb04458098d8eb8d29dc13b12f6cd",
+                "f21c63c0f217ad88e0001c640aadd8c50de7fe75ff11e769507472fcb7e64763",
+                "230400a356a18f43811bcc1ab3523f56aa4691ee77f4c1a05d014c4d77a8752a",
+                "1cf24566d64a1d5ed9b8e609a04f0bd8b3d781f2217e799f23d93bf64bea6381"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "iwantclips.com",
+                "www.japan.travel",
+                "www.masterclass.com",
                 "www.poetryfoundation.org",
-                "www.twilio.com"
+                "www.twilio.com",
+                "www.wineenthusiast.com"
+            ]
+        },
+        {
+            "rule": "algolianet\\.com\\/1\\/indexes\\/*\\/queries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ujjak2x1py-3",
+                "f49rvkeckz-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masterclass.com",
+                "www.poetryfoundation.org"
+            ]
+        },
+        {
+            "rule": "algolianet\\.com\\/1\\/indexes\\/prod_F30_JADE_NO_NO_V1\\/query",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iem60721xi-3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "593ee557fbc30f62370c2e74c32283af14007c8f2ad6bfbe15590c7a97690abb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "naturkompaniet.no",
+                "www.naturkompaniet.no"
+            ]
+        },
+        {
+            "rule": "algolianet\\.com\\/1\\/indexes\\/prod_F30_JADE_NO_NO_V1\\/query",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iem60721xi-3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "naturkompaniet.no",
+                "www.naturkompaniet.no"
             ]
         }
     ],
@@ -50,19 +126,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "jsdelivr.net",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "signalfx.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
-        "XHR": 3
+        "XHR": 8,
+        "Preflight": 4
     },
     "nameservers": [
         "aiden.ns.cloudflare.com",

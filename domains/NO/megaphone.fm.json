@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "playlist"
+        "playlist",
+        "player"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -15,18 +16,16 @@
         {
             "rule": "megaphone\\.fm\\/",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "playlist"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "a1c6124933310133ff172e132d2820b3898c42a21b2bdd9639bdf27c5fdce065"
+                "bd471e9f36cfd53d9970a5adb1d9706e62fe2b602fa13c5d2a7be4d2bedda7e6"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -59,7 +58,7 @@
             ]
         },
         {
-            "rule": "megaphone\\.fm\\/packs\\/js\\/application-9f410fca141a1e5740ca\\.js",
+            "rule": "megaphone\\.fm\\/packs\\/js\\/application-5d0ad733e07bc79aa8a1\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -68,6 +67,7 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.mimeTypes": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.product": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.language": 2,
@@ -80,7 +80,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "e4c584951588221d069a080bf62308722c83fdafc16650385ca62ca670ff98f8"
+                "1dc951a7e1a55dcf538eab7f87158c4f62809233f0c0660ec5dba5cfa2d4fcb9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -177,6 +177,50 @@
                 "bikeradar.com",
                 "www.tmz.com"
             ]
+        },
+        {
+            "rule": "megaphone\\.fm\\/playlist\\/episode\\/FOXM6816964612",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4ae21a82480323a5ba3233547c164cd4c1b568541f3cb59796bb13f09f2c4835"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tmz.com",
+                "www.tmz.com"
+            ]
+        },
+        {
+            "rule": "megaphone\\.fm\\/playlist\\/episode\\/FOXM2741145010",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "eda7354e4abd881d17b6301c9cfbbf9d5b7b328915c20c050f8cc756cf1cfa54"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tmz.com",
+                "www.tmz.com"
+            ]
         }
     ],
     "categories": [],
@@ -193,12 +237,13 @@
         "Stylesheet": 2,
         "Script": 2,
         "Font": 4,
-        "Image": 4
+        "Image": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-1344.awsdns-40.org",
+        "ns-1732.awsdns-24.co.uk",
         "ns-390.awsdns-48.com",
-        "ns-553.awsdns-05.net",
-        "ns-1732.awsdns-24.co.uk"
+        "ns-553.awsdns-05.net"
     ]
 }

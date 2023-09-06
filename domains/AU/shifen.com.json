@@ -7,10 +7,8 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "reports.a",
         "bkclick.n",
         "static.n",
-        "anti-bot.n",
         "delegation.a",
         "als.e"
     ],
@@ -28,45 +26,12 @@
             "resolved": "delegation.a.shifen.com"
         },
         {
-            "original": "miao.baidu.com",
-            "resolved": "anti-bot.n.shifen.com"
-        },
-        {
             "original": "nsclick.baidu.com",
             "resolved": "static.n.shifen.com"
-        },
-        {
-            "original": "reports.baidu.com",
-            "resolved": "reports.a.shifen.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "shifen\\.com\\/csp-report\\/baike",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reports.a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "reports.baidu.com",
-                    "resolved": "reports.a.shifen.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baidu.com",
-                "baike.baidu.com"
-            ]
-        },
         {
             "rule": "shifen\\.com\\/log\\/index",
             "cookies": 0,
@@ -101,7 +66,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "nsclick.baidu.com",
@@ -117,60 +82,6 @@
             "exampleSites": [
                 "baidu.com",
                 "baike.baidu.com",
-                "tieba.baidu.com"
-            ]
-        },
-        {
-            "rule": "shifen\\.com\\/abdr",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "anti-bot.n"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "miao.baidu.com",
-                    "resolved": "anti-bot.n.shifen.com"
-                }
-            ],
-            "responseHashes": [
-                "275e7a41f2fb69f2076301ff02d8fd7c9c4c66da9c23115af64b1b7bf0493276"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baidu.com",
-                "tieba.baidu.com"
-            ]
-        },
-        {
-            "rule": "shifen\\.com\\/abdr",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "anti-bot.n"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "miao.baidu.com",
-                    "resolved": "anti-bot.n.shifen.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baidu.com",
                 "tieba.baidu.com"
             ]
         },
@@ -235,27 +146,25 @@
     "topInitiators": [
         {
             "domain": "bdstatic.com",
-            "prevalence": 0.6097560975609756
+            "prevalence": 0.65
         },
         {
             "domain": "bdimg.com",
-            "prevalence": 0.34146341463414637
+            "prevalence": 0.275
         },
         {
-            "domain": "bcebos.com",
-            "prevalence": 0.04878048780487805
+            "domain": "baidustatic.com",
+            "prevalence": 0.075
         }
     ],
     "types": {
-        "Other": 2,
         "WebSocket": 2,
-        "Image": 9,
-        "XHR": 2
+        "Image": 7
     },
     "nameservers": [
+        "ns3.baidu.com",
         "ns2.baidu.com",
-        "ns1.baidu.com",
         "ns4.baidu.com",
-        "ns3.baidu.com"
+        "ns1.baidu.com"
     ]
 }

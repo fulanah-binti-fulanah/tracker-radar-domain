@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.000075,
+    "sites": 11,
     "subdomains": [
-        "www54-qa"
+        "www54-qa",
+        "assets.cdn"
     ],
     "cnames": [
+        {
+            "original": "assets.cdn.sap.com",
+            "resolved": "assets.cdn.sap.com.edgekey.net"
+        },
         {
             "original": "www-qa.sap.com",
             "resolved": "www54-qa.sap.com.edgekey.net"
@@ -24,14 +29,14 @@
     "resources": [
         {
             "rule": "sap\\.com\\.edgekey\\.net\\/etc\\/designs\\/sapdx\\/clientlib-ip-detection\\/js\\/getCountryCode\\.json",
-            "cookies": 0.0000339,
+            "cookies": 0.0000477,
             "fingerprinting": 0,
             "subdomains": [
                 "www54-qa"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [
                 {
                     "original": "www-qa.sap.com",
@@ -49,13 +54,67 @@
                 "answers.sap.com",
                 "blogs.sap.com",
                 "help.sap.com",
+                "support.sap.com",
+                "userapps.support.sap.com",
                 "wiki.scn.sap.com"
+            ]
+        },
+        {
+            "rule": "sap\\.com\\.edgekey\\.net\\/sapcom\\/docs\\/2021\\/05\\/809d6198-e27d-0010-bca6-c68f7e60039b\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.cdn.sap.com",
+                    "resolved": "assets.cdn.sap.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d241499578cf59dc0218b1fbd414092e0e31be6023389fe2ebbb1df9cde29872"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sap.com",
+                "www.sap.com"
+            ]
+        },
+        {
+            "rule": "sap\\.com\\.edgekey\\.net\\/sapcom\\/docs\\/2021\\/05\\/809d6198-e27d-0010-bca6-c68f7e60039b\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.cdn.sap.com",
+                    "resolved": "assets.cdn.sap.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sap.com",
+                "www.sap.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000406,
+    "cookies": 0.0000682,
     "topInitiators": [
         {
             "domain": "adobedtm.com",
@@ -63,7 +122,9 @@
         }
     ],
     "types": {
-        "XHR": 5
+        "XHR": 7,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": []
 }

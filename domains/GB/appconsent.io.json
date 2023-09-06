@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "collector"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -61,6 +62,70 @@
                 "bestwordlist.com",
                 "www.marketscreener.com"
             ]
+        },
+        {
+            "rule": "appconsent\\.io\\/hello",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cedf1ca5bd3fb2e566713fdd3d35abb4581edbf33a15ab08a05ff5697853e2fe"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/hello",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "appconsent\\.io\\/t2\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestwordlist.com",
+                "www.lefigaro.fr"
+            ]
         }
     ],
     "categories": [
@@ -75,12 +140,15 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Fetch": 2,
+        "Preflight": 2,
+        "Image": 2
     },
     "nameservers": [
+        "ns-cloud-b1.googledomains.com",
         "ns-cloud-b4.googledomains.com",
         "ns-cloud-b3.googledomains.com",
-        "ns-cloud-b2.googledomains.com",
-        "ns-cloud-b1.googledomains.com"
+        "ns-cloud-b2.googledomains.com"
     ]
 }

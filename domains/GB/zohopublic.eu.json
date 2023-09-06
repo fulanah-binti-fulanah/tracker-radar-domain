@@ -7,14 +7,43 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
+        "salesiq",
         "vts"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "zohopublic\\.eu\\/visitor\\/v2\\/channels\\/website",
+            "cookies": 0.000503,
+            "fingerprinting": 0,
+            "subdomains": [
+                "salesiq"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [],
+            "responseHashes": [
+                "9df6077ce478e56a286394264e58bc3b7e3638cb2390a191533cf3ceacce4c53",
+                "7a5511c7e98c857ad4444bdfac914989bd86229109c236f1b57a90ed44bb17da",
+                "480cc538e64ba66a83b78517d3435f535dc0eee9d1fa406d1e0dfb756c8d970d",
+                "34ed056139b3041166679c665a61f65b43d8370647a39105d249581273279f3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leica-camera.com",
+                "oxbridgehomelearning.uk",
+                "www.aplaceinthesun.com",
+                "www.cruisedirect.co.uk",
+                "www.lightingcompany.co.uk"
+            ]
+        },
         {
             "rule": "zohopublic\\.eu\\/watchws",
             "cookies": 0,
@@ -23,8 +52,8 @@
                 "vts"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -32,6 +61,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "leica-camera.com",
+                "oxbridgehomelearning.uk",
                 "www.aplaceinthesun.com",
                 "www.cruisedirect.co.uk"
             ]
@@ -41,28 +71,33 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "zoho.eu",
-            "prevalence": 0.75
+            "prevalence": 0.8
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.1
         },
         {
             "domain": "zohocdn.com",
-            "prevalence": 0.25
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "WebSocket": 3
+        "XHR": 5,
+        "WebSocket": 4
     },
     "nameservers": [
         "ns1.zohocorp.com",
+        "pdns90.ultradns.biz",
+        "pdns90.ultradns.net",
+        "ns31.zns-53.com",
         "ns11.zns-53.com",
         "ns21.zns-53.net",
-        "ns31.zns-53.com",
-        "ns41.zns-53.net",
-        "pdns90.ultradns.biz",
         "pdns90.ultradns.com",
-        "pdns90.ultradns.net"
+        "ns41.zns-53.net"
     ]
 }

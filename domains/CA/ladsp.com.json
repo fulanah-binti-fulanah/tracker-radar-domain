@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000606,
-    "sites": 6,
+    "prevalence": 0.000806,
+    "sites": 8,
     "subdomains": [
+        "pb",
         "cr-p31",
+        "cr-p1",
         "cr-p10060",
         "cd",
         "px",
@@ -20,15 +22,38 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "ladsp\\.com\\/adrequest\\/prebid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e0b196c41e6df68be6b4602f88b102c3d16abeb22175c3b6d0ea80d4fdaefece"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo.ne.jp",
+                "dictionary.goo.ne.jp",
+                "www.nicovideo.jp"
+            ]
+        },
+        {
             "rule": "ladsp\\.com\\/cookiesender\\/31",
-            "cookies": 0.000202,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "cr-p31"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -38,19 +63,40 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "goo.ne.jp",
-                "dictionary.goo.ne.jp"
+                "dictionary.goo.ne.jp",
+                "www.nicovideo.jp"
+            ]
+        },
+        {
+            "rule": "ladsp\\.com\\/cookiesender\\/1",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cr-p1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kevsbest.ca",
+                "www.oann.com"
             ]
         },
         {
             "rule": "ladsp\\.com\\/pid\\/10060",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "cr-p10060"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -63,14 +109,14 @@
         },
         {
             "rule": "ladsp\\.com\\/cr\\/10060",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "cr-p10060"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -92,7 +138,7 @@
                 "NavigatorUAData.prototype.getHighEntropyValues": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "0f5c1f1b9f41fe0c8a2f9709d09738a55c48be9cac3ba9e6bdb331ef89d04a81"
@@ -113,10 +159,10 @@
                 "cd"
             ],
             "apis": {
-                "NavigatorUAData.prototype.getHighEntropyValues": 2
+                "NavigatorUAData.prototype.getHighEntropyValues": 3
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "afdf299864eab97c1e15580c32b23fb5cc2378435ca5b5b7da8dd42fc3f2315b"
@@ -139,7 +185,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "424da953a071c56f6274ec5303ae946f2f3f3988be32355b2e2cc72c84ca573c"
@@ -154,17 +200,17 @@
         },
         {
             "rule": "ladsp\\.com\\/pixel",
-            "cookies": 0.000303,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "px"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "cca37d85e5f47350dc5e3b4c7acafebc1d7ad8639cb3f0bab0f60f81402c9876"
+                "f8095e925cf11b52a646912f88f472965d38eca51b81da15d70b317ecbe3d96a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -177,18 +223,18 @@
         },
         {
             "rule": "ladsp\\.com\\/pixel_p",
-            "cookies": 0.000303,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "px"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "95e6e74ad13ecd3bdf6295f6877abb265950910c1225bcf307905ba29aa6b4f6",
-                "594a5e5785459362b6cb41acdd3ae5a9ae735ab012647de1eaffed80eb14a2cb"
+                "c8f28451905ce8fa07502f57576e509ec11cd487a88a80386c5dd04517fc9efd",
+                "d6d59e601ad978b111106f96cfdf69d8179793ba9754602974939219c852fcf3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -201,19 +247,19 @@
         },
         {
             "rule": "ladsp\\.com\\/match\\/iframe",
-            "cookies": 0.000404,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "um"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "12821d99434450621af9600090aa9e183b7f95cf3f0024857ff1234519fe1c1d",
-                "e2ffe616b94b07e4ca03cb52d1390c7c15f23fb5a4e6c0281cbc87706a468155",
-                "d8182d45d027b7236e878ed721b9f3533f17b974e64a38b5addc9c3bbaf7b5e2"
+                "8a9bd1bcfb5a7e067dc1998a0615cba0a8d383b429d3e09726b97d31d2dc77b1",
+                "278c487f68ab8955b79907fdc04a960d55eb2da61768d58126bd8dff41540c72",
+                "980e0ad3217067a0ed7bbce11a78f0f2de158d04bb97f47d19e100adc6c6689e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -227,14 +273,14 @@
         },
         {
             "rule": "ladsp\\.com\\/match\\/google",
-            "cookies": 0.000404,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "px"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -248,6 +294,28 @@
                 "www.jal.co.jp",
                 "www.muji.com"
             ]
+        },
+        {
+            "rule": "ladsp\\.com\\/match\\/adgeneration",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ana.co.jp",
+                "www.ana.co.jp"
+            ]
         }
     ],
     "categories": [
@@ -256,46 +324,51 @@
         "Analytics"
     ],
     "performance": {},
-    "cookies": 0.000505,
+    "cookies": 0.000806,
     "topInitiators": [
         {
             "domain": "ensighten.com",
-            "prevalence": 0.30434782608695654
-        },
-        {
-            "domain": "demdex.net",
-            "prevalence": 0.17391304347826086
+            "prevalence": 0.23333333333333334
         },
         {
             "domain": "first party",
-            "prevalence": 0.13043478260869565
-        },
-        {
-            "domain": "yjtag.jp",
-            "prevalence": 0.13043478260869565
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.08695652173913043
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "demdex.net",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "yjtag.jp",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.1
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.08695652173913043
+            "prevalence": 0.06666666666666667
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.08695652173913043
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Image": 10,
+        "XHR": 3,
+        "Image": 15,
         "Script": 13,
         "Document": 4
     },
     "nameservers": [
-        "ns-1255.awsdns-28.org",
         "ns-15.awsdns-01.com",
-        "ns-1972.awsdns-54.co.uk",
-        "ns-886.awsdns-46.net"
+        "ns-1255.awsdns-28.org",
+        "ns-886.awsdns-46.net",
+        "ns-1972.awsdns-54.co.uk"
     ]
 }

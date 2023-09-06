@@ -7,36 +7,61 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "slb-trip-aws"
+        "ubt-sin.tripcdn.com"
     ],
     "cnames": [
         {
-            "original": "m.trip.com",
-            "resolved": "slb-trip-aws.ctripgslb.com"
+            "original": "ubt-sin.tripcdn.com",
+            "resolved": "ubt-sin.tripcdn.com.ctripgslb.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ctripgslb\\.com\\/restapi\\/soa2\\/18088\\/getAppConfig\\.json",
+            "rule": "ctripgslb\\.com\\/bee\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "slb-trip-aws"
+                "ubt-sin.tripcdn.com"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "m.trip.com",
-                    "resolved": "slb-trip-aws.ctripgslb.com"
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "ubt-sin.tripcdn.com.ctripgslb.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ctripgslb\\.com\\/bee\\/collect",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ubt-sin.tripcdn.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "ubt-sin.tripcdn.com.ctripgslb.com"
                 }
             ],
             "responseHashes": [
-                "3dc9a8fb0fe925c1075e9570a119d545b306351f3c85f1ced71f958a6cd71004"
+                "60e8615e87d2df65ffd8c3da1fa942f287f24390207fa31f2dd97fb12f3fcc86"
             ],
-            "type": "Fetch",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -47,7 +72,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "tripcdn.com",
@@ -55,12 +80,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "cns1.zdnscloud.net",
         "vns1.zdnscloud.biz",
-        "ins1.zdnscloud.com",
-        "dns1.zdnscloud.info"
+        "dns1.zdnscloud.info",
+        "cns1.zdnscloud.net",
+        "ins1.zdnscloud.com"
     ]
 }

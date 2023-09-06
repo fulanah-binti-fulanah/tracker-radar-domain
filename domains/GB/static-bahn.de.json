@@ -13,15 +13,17 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "static-bahn\\.de\\/tms\\/bahn-cms-main\\/utag\\.js",
-            "cookies": 0,
+            "rule": "static-bahn\\.de\\/tms\\/next-main\\/utag\\.js",
+            "cookies": 0.000101,
             "fingerprinting": 2,
             "subdomains": [
                 "cms"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
                 "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Screen.prototype.width": 2,
@@ -38,7 +40,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fce1b1b9c57958deb2a92d4430d6a5d03f503c40afcfb1998055284edd7098c8"
+                "89a9d1299ed9da2a2e1326ae9883b83156c1a7b3c2dd83298065856ce8d2af00"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -73,8 +75,8 @@
             ]
         },
         {
-            "rule": "static-bahn\\.de\\/tms\\/bahn-cms-main\\/utag\\.3\\.js",
-            "cookies": 0,
+            "rule": "static-bahn\\.de\\/tms\\/next-main\\/utag\\.1\\.js",
+            "cookies": 0.000101,
             "fingerprinting": 2,
             "subdomains": [
                 "cms"
@@ -85,6 +87,8 @@
                 "Date.prototype.getTime": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.javaEnabled": 2,
@@ -96,29 +100,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d648157a4cb5d2a066fb03d226de684e95c09ac01c6d918ec4fadce2e1f0bd6f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bahn.com",
-                "www.bahn.de"
-            ]
-        },
-        {
-            "rule": "static-bahn\\.de\\/tms\\/bahn-cms-main\\/utag\\.12\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "eff246811fee69c0be2e72741b534c4f205bfec33d536045076c296265a296fb"
+                "ad04f5a9e95f9406287389b0fc9662e7136aa4738c076e59a429b0c816290688"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -197,20 +179,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9259259259259259
+        },
+        {
+            "domain": "bahn.de",
+            "prevalence": 0.07407407407407407
         }
     ],
     "types": {
-        "Script": 14
+        "Script": 12
     },
     "nameservers": [
         "ns-1331.awsdns-38.org",
         "ns-749.awsdns-29.net",
-        "ns-1640.awsdns-13.co.uk",
-        "ns-115.awsdns-14.com"
+        "ns-115.awsdns-14.com",
+        "ns-1640.awsdns-13.co.uk"
     ]
 }

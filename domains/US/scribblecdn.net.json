@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
-        "ionfiles"
+        "ionfiles",
+        "iuploads"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e2457499f511dadf5ae132343312e82a6d89530c7d72bc3a58783a60c490ae57"
@@ -42,10 +43,10 @@
                 "ionfiles"
             ],
             "apis": {
-                "Element.prototype.getClientRects": 2
+                "Element.prototype.getClientRects": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "0925e8ad7bd971391a8b1e98be8e87a6971919eb5b60c196485941c3c1df089a"
@@ -55,7 +56,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blr.com",
-                "hrdailyadvisor.blr.com"
+                "hrdailyadvisor.blr.com",
+                "restaurant.opentable.com"
             ]
         },
         {
@@ -66,8 +68,8 @@
                 "ionfiles"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "540bc6dec1dd4b92ea4d3fb903f69eabf6d919afd48f4e312b163c28cff0f441"
@@ -77,7 +79,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blr.com",
-                "hrdailyadvisor.blr.com"
+                "hrdailyadvisor.blr.com",
+                "restaurant.opentable.com"
+            ]
+        },
+        {
+            "rule": "scribblecdn\\.net\\/scripts\\/ionizer-1\\.4\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ionfiles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c632caf686f56f7355462628a3354d9bfb1ed887cd7276a44175f483d90a3a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opentable.com",
+                "restaurant.opentable.com"
+            ]
+        },
+        {
+            "rule": "scribblecdn\\.net\\/3dd7c9ab-ed9f-4ed5-8559-10b31b0dd0b6\\/global\\/imagelib\\/qs_revamp\\/feature_info_icon-2x\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iuploads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f141f59aa4208eb76fb10daf6745f8f105896aef0469672b6fd4690661012d38"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opentable.com",
+                "restaurant.opentable.com"
             ]
         }
     ],
@@ -87,16 +134,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "postclickmarketing.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10,
+        "Image": 2
     },
     "nameservers": [
+        "ns-795.awsdns-35.net",
         "ns-1319.awsdns-36.org",
         "ns-251.awsdns-31.com",
-        "ns-795.awsdns-35.net",
         "ns-1812.awsdns-34.co.uk"
     ]
 }

@@ -13,7 +13,7 @@
     "sites": 16,
     "subdomains": [
         "afd-b2c-iibozyiouoyi4.z01",
-        "fd-cloudservices-prod-ezcackhbcragdubm.z01",
+        "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01",
         "sd-tagging"
     ],
     "cnames": [
@@ -22,22 +22,22 @@
             "resolved": "afd-b2c-iibozyiouoyi4.z01.azurefd.net"
         },
         {
-            "original": "images.sport1.no",
-            "resolved": "fd-cloudservices-prod-ezcackhbcragdubm.z01.azurefd.net"
+            "original": "id.avinor.no",
+            "resolved": "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01.azurefd.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "azurefd\\.net\\/intelcorpb2c\\.onmicrosoft\\.com\\/B2C_1A_UNIFIEDLOGIN_SISU_STD_OIDC\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.000404,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "afd-b2c-iibozyiouoyi4.z01"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "consumer.intel.com",
@@ -56,30 +56,55 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/getpic\\.php",
-            "cookies": 0,
+            "rule": "azurefd\\.net\\/09f93649-08fb-4f7d-b1cc-bb91d5f298ee\\/B2C_1A_UNIFY_LOGIN\\/v2\\.0\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "fd-cloudservices-prod-ezcackhbcragdubm.z01"
+                "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [
                 {
-                    "original": "images.sport1.no",
-                    "resolved": "fd-cloudservices-prod-ezcackhbcragdubm.z01.azurefd.net"
+                    "original": "id.avinor.no",
+                    "resolved": "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01.azurefd.net"
                 }
             ],
             "responseHashes": [
-                "40e406f3fe99aefb94190939cb7d7d74d06ba68218931175be9dd317cda61d61"
+                "70faced56520076b942507071ca0c14653712a96833a3642e78503194e57519e"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sport1.no",
-                "www.sport1.no"
+                "avinor.no",
+                "www.avinor.no"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/09f93649-08fb-4f7d-b1cc-bb91d5f298ee\\/b2c_1a_unify_login\\/oauth2\\/v2\\.0\\/authorize",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "id.avinor.no",
+                    "resolved": "minprofil-b2c-frontdoor-production-f0bheqfmgyghe4hw.z01.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avinor.no",
+                "www.avinor.no"
             ]
         },
         {
@@ -94,7 +119,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c1ccfbc78c7beb5f152bd6bd2b1918688d3bbb047b5fa299cd58852526686ffd"
+                "b93537a4c0f643d968dad80200201c340080060602dc229aada0b51051e274f8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -129,21 +154,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000807,
+    "cookies": 0.000907,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5263157894736842
+        },
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.47368421052631576
         }
     ],
     "types": {
-        "Document": 4,
-        "Image": 4,
-        "Script": 2
+        "Document": 6,
+        "XHR": 2,
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns2-37.azure-dns.net",
         "ns1-37.azure-dns.com",
+        "ns2-37.azure-dns.net",
         "ns4-37.azure-dns.info",
         "ns3-37.azure-dns.org"
     ]

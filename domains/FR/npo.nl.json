@@ -4,14 +4,60 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "topspin"
+        "topspin",
+        "atconnect"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "npo\\.nl\\/divolte\\/tt\\/dvt\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "topspin"
+            ],
+            "apis": {
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5ca92b6ac864fb6d624895e72cb9bac195372097a7f8f91765ea5f31934d1d7e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_dvs": {
+                    "ttl": 1800,
+                    "length": 43,
+                    "prevalence": 0.0002020814388198444,
+                    "uniqueness": 1
+                },
+                "_dvp": {
+                    "ttl": 31536000,
+                    "length": 43,
+                    "prevalence": 0.0002020814388198444,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nporadio1.nl",
+                "www.npostart.nl"
+            ]
+        },
         {
             "rule": "npo\\.nl\\/divolte\\/tt\\/web-event",
             "cookies": 0,
@@ -30,34 +76,59 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "npostart.nl",
+                "nporadio1.nl",
+                "www.npostart.nl"
+            ]
+        },
+        {
+            "rule": "npo\\.nl\\/h",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "atconnect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cs_fpid": 0.0002020814388198444
+            },
+            "exampleSites": [
+                "nporadio1.nl",
                 "www.npostart.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.7407407407407407
         },
         {
             "domain": "npo-data.nl",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.18518518518518517
         },
         {
             "domain": "aticdn.net",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.07407407407407407
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 2,
+        "Image": 4
     },
     "nameservers": [
+        "ns1.npohosting.nl",
         "ns2.npohosting.eu",
-        "ns3.npohosting.nl",
-        "ns1.npohosting.nl"
+        "ns3.npohosting.nl"
     ]
 }

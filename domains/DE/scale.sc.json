@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
-        "lb.hz"
+        "lb.hz",
+        "de-fsn1.lb"
     ],
     "cnames": [
         {
@@ -17,10 +18,46 @@
         {
             "original": "sst.kirstein.de",
             "resolved": "lb.hz.scale.sc"
+        },
+        {
+            "original": "sst.rofu.de",
+            "resolved": "de-fsn1.lb.scale.sc"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "scale\\.sc\\/gtm\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lb.hz",
+                "de-fsn1.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "sst.kirstein.de",
+                    "resolved": "lb.hz.scale.sc"
+                },
+                {
+                    "original": "sst.rofu.de",
+                    "resolved": "de-fsn1.lb.scale.sc"
+                }
+            ],
+            "responseHashes": [
+                "71bfa38812a160b5014b054e71586a6f77ef8fbcb5f3d4b0670ab22283df1912"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirstein.de",
+                "www.rofu.de"
+            ]
+        },
         {
             "rule": "scale\\.sc\\/merchants\\/14C8A97D281945A5\\/",
             "cookies": 0.000202,
@@ -38,7 +75,7 @@
                 }
             ],
             "responseHashes": [
-                "9f5a075a21cdd02e6e7ec4cd30c0c44ee2e6e96091bc9717b1231bdb453496d4"
+                "48cd233753127e9a80c0ddb1f4ae70c05e15a11330b15b57c8e1b1776978ec9b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,10 +123,11 @@
         }
     ],
     "types": {
+        "Script": 2,
         "XHR": 4
     },
     "nameservers": [
-        "dave.ns.cloudflare.com",
-        "dana.ns.cloudflare.com"
+        "dana.ns.cloudflare.com",
+        "dave.ns.cloudflare.com"
     ]
 }

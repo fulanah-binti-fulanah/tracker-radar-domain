@@ -4,15 +4,63 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "static",
-        "vfr-v3-production"
+        "vfr-v3-production",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "sizebay\\.technology\\/plugin\\/my-product-id",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vfr-v3-production"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f050f9534ea7d8d708cc4a1f58ff50b943cdbad6b9de333c153eea2d9abd7740",
+                "39a2dec4700022b6192dfb061d0e8fa0310d2ea781107e4d472251e3438c0cee"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SIZEBAY_SESSION_ID_V4": 0.000006816353796027429
+            },
+            "exampleSites": [
+                "callawayapparel.com",
+                "www.callawayapparel.com",
+                "www.lojasrenner.com.br"
+            ]
+        },
+        {
+            "rule": "sizebay\\.technology\\/api\\/me\\/session-id",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vfr-v3-production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "061a73316c6185aa6745f9a175723432c9fcc6f82779dfc54b666f29e9fc4ab0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "callawayapparel.com",
+                "www.lojasrenner.com.br"
+            ]
+        },
         {
             "rule": "sizebay\\.technology\\/3019\\/prescript\\.js",
             "cookies": 0,
@@ -22,10 +70,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f582b59aaa9300108514d93355e764309af97eca014a3a20b6b51a63776ed116"
+                "5c9916810b550f2a269a6d801d74d273d4202cbafa509affb70dd28bbf54a676"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,7 +85,7 @@
         },
         {
             "rule": "sizebay\\.technology\\/V4\\/implantation\\/index\\.js",
-            "cookies": 0.0000271,
+            "cookies": 0.0000273,
             "fingerprinting": 1,
             "subdomains": [
                 "vfr-v3-production"
@@ -49,10 +97,9 @@
                 "Document.cookie setter": 1
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "fe98c6140a077cc4ab38d03cfcfc21178de02d61916d4de775bc2259bc46e093",
                 "f87960b41a0e6d2d4b5b3e70d5c25a9a82559ae57382f46b6f68e9d929ce3247"
             ],
             "type": "Script",
@@ -60,7 +107,7 @@
                 "SIZEBAY_SESSION_ID_V4": {
                     "ttl": null,
                     "length": 44,
-                    "prevalence": 0.000006770664066731665,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 }
             },
@@ -81,7 +128,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "699baf95324f882a252b15f8c4628315f1314fc16c047d871e2178f5a8ac4be1"
@@ -97,24 +144,33 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000341,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.47368421052631576
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.75
+            "prevalence": 0.3157894736842105
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.10526315789473684
         },
         {
             "domain": "dynatrace.com",
-            "prevalence": 0.25
+            "prevalence": 0.10526315789473684
         }
     ],
     "types": {
+        "Fetch": 5,
         "Script": 8
     },
     "nameservers": [
-        "ns-1419.awsdns-49.org",
-        "ns-1920.awsdns-48.co.uk",
+        "ns-870.awsdns-44.net",
         "ns-184.awsdns-23.com",
-        "ns-870.awsdns-44.net"
+        "ns-1920.awsdns-48.co.uk",
+        "ns-1419.awsdns-49.org"
     ]
 }

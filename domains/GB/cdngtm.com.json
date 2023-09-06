@@ -7,41 +7,46 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "d1.dhgate.com",
-        "sale.dhgate.com"
+        "abtest.dhgate.com",
+        "asm.dhgate.com",
+        "leoread.dhgate.com"
     ],
     "cnames": [
         {
-            "original": "d1.dhgate.com",
-            "resolved": "d1.dhgate.com.cdngtm.com"
+            "original": "abtest.dhgate.com",
+            "resolved": "abtest.dhgate.com.cdngtm.com"
         },
         {
-            "original": "sale.dhgate.com",
-            "resolved": "sale.dhgate.com.cdngtm.com"
+            "original": "asm.dhgate.com",
+            "resolved": "asm.dhgate.com.cdngtm.com"
+        },
+        {
+            "original": "leoread.dhgate.com",
+            "resolved": "leoread.dhgate.com.cdngtm.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "cdngtm\\.com\\/track\\/tracklog\\.jsp",
+            "rule": "cdngtm\\.com\\/abversion_pv",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "d1.dhgate.com"
+                "abtest.dhgate.com"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "d1.dhgate.com",
-                    "resolved": "d1.dhgate.com.cdngtm.com"
+                    "original": "abtest.dhgate.com",
+                    "resolved": "abtest.dhgate.com.cdngtm.com"
                 }
             ],
             "responseHashes": [
-                "f2f5753ac32e5fe59cf3cb1d18744743648a7eed9123027d0f8cf06b50f79817"
+                "fcb095e3fc2d0b34510a494d5da6abc4f3fd22771080760c7b5c0df731a1ffb2"
             ],
-            "type": "Ping",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,23 +55,52 @@
             ]
         },
         {
-            "rule": "cdngtm\\.com\\/zC9UCN15",
-            "cookies": 0.000201,
+            "rule": "cdngtm\\.com\\/drtPage\\/customProd\\.do",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sale.dhgate.com"
+                "asm.dhgate.com"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "sale.dhgate.com",
-                    "resolved": "sale.dhgate.com.cdngtm.com"
+                    "original": "asm.dhgate.com",
+                    "resolved": "asm.dhgate.com.cdngtm.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Document",
+            "responseHashes": [
+                "6827c83730e5be94c81bc140f0501e085dcd45700a89228adff2c6bc7918e97f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dhgate.com",
+                "www.dhgate.com"
+            ]
+        },
+        {
+            "rule": "cdngtm\\.com\\/couponpromo\\/read\\/search\\/listajax\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "leoread.dhgate.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "leoread.dhgate.com",
+                    "resolved": "leoread.dhgate.com.cdngtm.com"
+                }
+            ],
+            "responseHashes": [
+                "cc95ad95a133233c417b40e6260eb22e50b5ab10e60d1d20464c287991e619df"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -81,22 +115,18 @@
     "topInitiators": [
         {
             "domain": "dhresource.com",
-            "prevalence": 0.9
-        },
-        {
-            "domain": "wihonevi.com",
-            "prevalence": 0.1
+            "prevalence": 1
         }
     ],
     "types": {
-        "Ping": 2,
-        "Document": 2
+        "Script": 2,
+        "XHR": 4
     },
     "nameservers": [
         "dns1.qtlglb.info",
-        "dns2.qtlglb.info",
         "dns3.qtlglb.info",
-        "dns4.qtlglb.info",
-        "dns5.qtlglb.info"
+        "dns5.qtlglb.info",
+        "dns2.speedws.info",
+        "dns4.speedws.info"
     ]
 }

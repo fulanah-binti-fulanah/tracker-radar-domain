@@ -9,52 +9,241 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00252,
-    "sites": 25,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
-        "cs"
+        "cs",
+        "ad",
+        "v",
+        "ssp",
+        "t"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "lkqd\\.net\\/cs",
-            "cookies": 0.00212,
+            "cookies": 0.00141,
             "fingerprinting": 0,
             "subdomains": [
                 "cs"
             ],
             "apis": {},
-            "sites": 24,
-            "prevalence": 0.00242,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.tumblr.com",
-                "www.healthyandnaturalworld.com",
-                "itemlevel.net",
-                "www.exceldemy.com",
-                "www.skinnytaste.com",
-                "www.nationalgeographic.org",
-                "www.wellplated.com",
-                "www.exchange-rates.org",
-                "upgradedhome.com",
-                "foodsguy.com",
-                "www.travelmath.com",
-                "www.longrangehunting.com",
-                "www.trailappliances.com",
-                "www.homebrewtalk.com",
-                "tvovermind.com",
-                "interestingliterature.com",
-                "bgr.com",
-                "www.historyhit.com",
-                "nytcrosswordclue.com",
-                "www.melaniecooks.com"
+                "lawandcrime.com",
+                "www.1001fonts.com",
+                "www.aviva.ca",
+                "www.choicehotels.com",
+                "www.cooperators.ca",
+                "www.drugs.com",
+                "www.ephotozine.com",
+                "www.focusonthefamily.com",
+                "www.healthyplanetcanada.com",
+                "www.keengamer.com",
+                "www.ncaa.com",
+                "www.nowfoods.com",
+                "www.tokyvideo.com",
+                "www.windsorplywood.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/vpaid\\/formats\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.doNotTrack": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "7cfe458faed6fe5c3094bd51f1f10174604be983739ade9d828b0aad190043e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/cookie-sync\\/usync\\.html",
+            "cookies": 0.000302,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "a09fb04841151074c73e8daf6edb12da7ffd8b5e7812492a6d9f3ae977fe3d31"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "csip": {
+                    "ttl": 300,
+                    "length": 4,
+                    "prevalence": 0.00030214523114110184,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/ad",
+            "cookies": 0.000403,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v",
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "45fa735c6df15f15a1293a9cb3125033408874bf284280e8bcac23f95ad8feac",
+                "875594d814edbd38347b5732bd3ca7345cd66a3184ae81233f814660a3598a48",
+                "0863882f1d6ce836e3dcf7123e95e2c188fd7d4eda775c696ded7e1d82c61080"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020143015409406788
+            },
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com",
+                "www.whatfontis.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/vpaid\\/vpaid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.outerWidth": 3,
+                "window.innerWidth": 3,
+                "window.outerHeight": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.doNotTrack": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c0d59afc312f7f1d1346cc4dfdb1463c05b2d334cfa64e7b9240456a48bfcc11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com",
+                "www.tokyvideo.com"
             ]
         }
     ],
@@ -65,47 +254,51 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.00222,
+    "cookies": 0.00151,
     "topInitiators": [
         {
             "domain": "rubiconproject.com",
-            "prevalence": 0.6
+            "prevalence": 0.3888888888888889
         },
         {
-            "domain": "blogherads.com",
-            "prevalence": 0.08
+            "domain": "stickyadstv.com",
+            "prevalence": 0.2777777777777778
         },
         {
-            "domain": "quantumdex.io",
-            "prevalence": 0.08
+            "domain": "vidoomy.com",
+            "prevalence": 0.09259259259259259
         },
         {
-            "domain": "googlesyndication.com",
-            "prevalence": 0.04
-        },
-        {
-            "domain": "contextweb.com",
-            "prevalence": 0.04
+            "domain": "simpli.fi",
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "adform.net",
-            "prevalence": 0.04
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "sportradarserving.com",
+            "prevalence": 0.037037037037037035
+        },
+        {
+            "domain": "contextweb.com",
+            "prevalence": 0.037037037037037035
         },
         {
             "domain": "acuityplatform.com",
-            "prevalence": 0.04
-        },
-        {
-            "domain": "pubmatic.com",
-            "prevalence": 0.04
+            "prevalence": 0.037037037037037035
         },
         {
             "domain": "brainlyads.com",
-            "prevalence": 0.04
+            "prevalence": 0.018518518518518517
         }
     ],
     "types": {
-        "Image": 24
+        "Image": 14,
+        "Script": 6,
+        "Document": 3,
+        "XHR": 7,
+        "Preflight": 6
     },
     "nameservers": [
         "ns-1476.awsdns-56.org",

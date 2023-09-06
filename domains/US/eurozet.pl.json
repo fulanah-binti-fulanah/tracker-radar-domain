@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
-        "starvoice"
+        "starvoice",
+        "voicer"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,8 @@
                 "starvoice"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
@@ -32,7 +33,50 @@
             "exampleSites": [
                 "radiozet.pl",
                 "rozrywka.radiozet.pl",
-                "stylzycia.radiozet.pl"
+                "stylzycia.radiozet.pl",
+                "wiadomosci.radiozet.pl"
+            ]
+        },
+        {
+            "rule": "eurozet\\.pl\\/getVoice",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voicer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "planeta.pl",
+                "zdrowie.radiozet.pl"
+            ]
+        },
+        {
+            "rule": "eurozet\\.pl\\/getVoice",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voicer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c843452b4943c755c020ddc10b156fc78c712a187ce048f9036bda1703e03ef4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "planeta.pl",
+                "zdrowie.radiozet.pl"
             ]
         }
     ],
@@ -46,10 +90,11 @@
         }
     ],
     "types": {
-        "Fetch": 3
+        "Fetch": 6,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns02.eurozet.pl",
-        "ns01.eurozet.pl"
+        "ns01.eurozet.pl",
+        "ns02.eurozet.pl"
     ]
 }

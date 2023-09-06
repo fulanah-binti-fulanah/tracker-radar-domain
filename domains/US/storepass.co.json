@@ -4,27 +4,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "store"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "storepass\\.co\\/dist\\/storepass\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "store"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a0733f5e50828f3a9377f5ca7418bfbd2cec63ce425ff6930d556554704c56f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "storepass_store": {
+                    "ttl": 305,
+                    "length": 131770,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamenerdz.com",
+                "www.gamenerdz.com"
+            ]
+        },
+        {
             "rule": "storepass\\.co\\/saas\\/store\\/settings",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "store"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ad22a794b6377a68aae0b00d3b0599f3d7875f2df1fa8bd84b293cd391647ef8"
+                "a94ac58cdc86302a071b37570e24be1d7a9478b1d77ce6315c379130c8622387"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -36,17 +69,17 @@
         },
         {
             "rule": "storepass\\.co\\/saas\\/search",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "store"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "efc00242e44c12db7478b12f529d71a951b7e2fa874fc3a7927946e8f752922b"
+                "5bce10ac5986c2cd1333720c1e0c7d3f98b1b4fd74c1f937052f924e309bcc32"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -59,20 +92,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "bigcommerce.com",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
+        "Script": 2,
         "Fetch": 4
     },
     "nameservers": [
-        "ns2.dnsimple.com",
-        "ns4.dnsimple-edge.org",
+        "ns1.dnsimple.com",
         "ns3.dnsimple.com",
-        "ns1.dnsimple.com"
+        "ns4.dnsimple-edge.org",
+        "ns2.dnsimple.com"
     ]
 }

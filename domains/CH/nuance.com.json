@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "fedex.digital",
         "media-us2.digital",
@@ -33,7 +33,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "385daf7c4cd2b5290d3381c707045a8bf791a0b19cdc5d5c8e8c3c32b372a783"
+                "d4a8828a12c708f6b223c32cf0f2060ad71d1d6a7b1e2dcdf66bb82a8785d773"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -52,11 +52,11 @@
                 "media-us1.digital"
             ],
             "apis": {
-                "window.name": 3,
-                "Navigator.prototype.userAgent": 3
+                "window.name": 4,
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "bcd5abb78d79504bb8d1ebb5484f950c3b7b273980f757f0a1d861f100e37ed0",
@@ -67,6 +67,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fedex.com",
+                "local.fedex.com",
                 "www.fedex.com",
                 "www.ups.com"
             ]
@@ -79,11 +80,105 @@
                 "media-us2.digital"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4b586e0bd78949e44e6238b089377d1d613afbb83c3bf22c6f9a2a7956b77c66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "local.fedex.com",
+                "www.fedex.com"
+            ]
+        },
+        {
+            "rule": "nuance\\.com\\/media\\/launch\\/site_10006050_default_jssdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-us2.digital"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ebcdeae0b5f172f6549dd6de6f8055b8c20e9525fa7ce2fddc27d238cd4ba2bd"
+                "e3ff8924d77104de3bedfb310e4faab17ef059df4de82b9e624e4ef09b3d138a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "www.fedex.com"
+            ]
+        },
+        {
+            "rule": "nuance\\.com\\/media\\/launch\\/all_10006050\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-us2.digital"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6e269d283a68e7fc58b197aceaef83b9f3118c19c518f0ef04c35caf957c3d8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "www.fedex.com"
+            ]
+        },
+        {
+            "rule": "nuance\\.com\\/media\\/launch\\/tcFramework_jssdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "media-us2.digital"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5c1aee6a710f83e1a1d24891bdc9df783c8d1e6648dbc5cfb234ad4716fb049f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "www.fedex.com"
+            ]
+        },
+        {
+            "rule": "nuance\\.com\\/tagserver\\/js\\/ads-blocking-detector\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fedex.digital"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "78a37757c165e672eda69f69d745ab86d78fd6d9b66b157cb9b032e479faab11"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -100,17 +195,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6111111111111112
+        },
+        {
+            "domain": "inq.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 15,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.dnsmadeeasy.com",
         "ns4.dnsmadeeasy.com",
-        "ns3.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
         "ns2.dnsmadeeasy.com"
     ]
 }

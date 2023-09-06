@@ -4,54 +4,75 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "static",
-        "assets"
+        "assets",
+        "fnacdarty",
+        "gamesworkshop",
+        "vinmonopolet"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "queue.fnac.com",
+            "resolved": "fnacdarty.queue-it.net"
+        },
+        {
+            "original": "queue.games-workshop.com",
+            "resolved": "gamesworkshop.queue-it.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 9,
-            "prevalence": 0.000908,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "944ab414abd7379509535f0f7422544deaf2a4d19b9fbee4ef9bd1b6b02b3dcd"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "QueueITAccepted-SDFrts345E-V3_dysonprod2021": {
+                    "ttl": 1266,
+                    "length": 198,
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 1
+                },
                 "QueueITAccepted-SDFrts345E-V3_prodsafteynet": {
                     "ttl": 1204,
                     "length": 198,
-                    "prevalence": 0.00010090817356205853,
+                    "prevalence": 0.0001007759750075582,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elkjop.no",
-                "www.dsb.dk",
+                "www.dyson.com",
+                "www.dyson.no",
                 "www.elgiganten.dk",
                 "www.elgiganten.se",
                 "www.elkjop.no",
                 "www.gigantti.fi",
                 "www.nationaltheatret.no",
                 "www.nvidia.com",
-                "www.sundhed.dk"
+                "www.sundhed.dk",
+                "www.tate.org.uk",
+                "www.thenorthface.com"
             ]
         },
         {
@@ -62,10 +83,11 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
             },
-            "sites": 9,
-            "prevalence": 0.000908,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "7157deb8ebe872e9ad11477112493ef6d3175123c43073bbbc81954295049f08"
@@ -75,14 +97,17 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elkjop.no",
-                "www.dsb.dk",
+                "www.dyson.com",
+                "www.dyson.no",
                 "www.elgiganten.dk",
                 "www.elgiganten.se",
                 "www.elkjop.no",
                 "www.gigantti.fi",
                 "www.nationaltheatret.no",
                 "www.nvidia.com",
-                "www.sundhed.dk"
+                "www.sundhed.dk",
+                "www.tate.org.uk",
+                "www.thenorthface.com"
             ]
         },
         {
@@ -94,7 +119,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "2b489e0d08d9e2abeeb50db6d18cf9f8b41e36003fb1e4b7cf151eaf0c3a790d"
@@ -109,28 +134,87 @@
                 "www.elkjop.no",
                 "www.gigantti.fi"
             ]
+        },
+        {
+            "rule": "queue-it\\.net\\/dyson\\/integrationconfig\\/javascript\\/queueclientConfig\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a5058e4c0ae31413c4c4abbac73eae6d8a5b3d0f2b4a03c52e634c27070d3225"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dyson.no"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fnacdarty",
+                "gamesworkshop",
+                "vinmonopolet"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "queue.fnac.com",
+                    "resolved": "fnacdarty.queue-it.net"
+                },
+                {
+                    "original": "queue.games-workshop.com",
+                    "resolved": "gamesworkshop.queue-it.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fnac.com",
+                "www.games-workshop.com",
+                "www.vinmonopolet.no"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000605,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9166666666666666
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "dyson.no",
+            "prevalence": 0.12121212121212122
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.06060606060606061
         }
     ],
     "types": {
-        "Script": 23
+        "Script": 31,
+        "Document": 3
     },
     "nameservers": [
-        "ns-1175.awsdns-18.org",
-        "ns-1935.awsdns-49.co.uk",
         "ns-793.awsdns-35.net",
-        "ns-85.awsdns-10.com"
+        "ns-1935.awsdns-49.co.uk",
+        "ns-85.awsdns-10.com",
+        "ns-1175.awsdns-18.org"
     ]
 }

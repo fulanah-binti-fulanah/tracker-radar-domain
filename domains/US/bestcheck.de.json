@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
         "pn"
@@ -16,21 +16,63 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "bestcheck\\.de\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "ratgeber.bunte.de"
+            ]
+        },
+        {
+            "rule": "bestcheck\\.de\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "afcb2b00b576f7347c828751572737e5f04b3195e46f9765e31242f8574edfff"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "ratgeber.bunte.de"
+            ]
+        },
+        {
             "rule": "bestcheck\\.de\\/embed\\/bc110\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000682,
             "fingerprinting": 1,
             "subdomains": [
                 "pn"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "609387d2b2e6b7a07cc2a56324ffbb47768b91cd0dc439e03b10e6dd1dceeb7d"
+                "0a9e6a5b9c5e1060aaa17926add2ac9fa0f4ff1d377560b0dc5c9d41b8531ccf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,51 +81,32 @@
                 "bunte.de",
                 "www.bunte.de"
             ]
-        },
-        {
-            "rule": "bestcheck\\.de\\/embed\\/bc119\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "pn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cbe1c29734f485eeab1617c17a954e91bd80e9041da16ae55fb70f2795c80c47"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "netdoktor.de",
-                "www.netdoktor.de"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "bfops.io",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 4
+        "Preflight": 2,
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "a16-67.akam.net",
-        "a7-67.akam.net",
         "a28-65.akam.net",
         "a2-64.akam.net",
+        "a5-66.akam.net",
+        "a7-67.akam.net",
         "a1-118.akam.net",
-        "a5-66.akam.net"
+        "a16-67.akam.net"
     ]
 }

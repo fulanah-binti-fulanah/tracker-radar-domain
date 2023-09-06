@@ -4,15 +4,43 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "events",
-        "app"
+        "app",
+        "events"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "getmodemagic\\.com\\/api\\/features",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "a18045ef986bfe1236e2b2e9315782213b1873b2389ac05a4adaa71b7e8cba5b",
+                "ab2a1cf04f14501767d3932a14806c6d3c6c274229ff732b84a61f0e49bf8046",
+                "74e360944247268c4ad574a319a12cad68456261301119244ed2d3bd982ba109",
+                "ea990252b484001e0df150bbabff563de2eb7796c70b8139964fd412fc6e3ed9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barproducts.com",
+                "fancysteel.com",
+                "growerssolution.com",
+                "www.garagegrowngear.com",
+                "www.pistolpete.com"
+            ]
+        },
         {
             "rule": "getmodemagic\\.com\\/",
             "cookies": 0,
@@ -21,8 +49,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "912d0c07da7bdb22cdae025b96da26d01523aaab7362edb28544e3949deb369d"
@@ -32,29 +60,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fancysteel.com",
-                "www.garagegrowngear.com"
-            ]
-        },
-        {
-            "rule": "getmodemagic\\.com\\/api\\/features",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "aeccf87bee0625b18434f83e05ad1dce4dbcead3fe03c929381accaf28bed116"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fancysteel.com",
-                "www.garagegrowngear.com"
+                "www.garagegrowngear.com",
+                "www.pistolpete.com"
             ]
         }
     ],
@@ -64,12 +71,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "shopifyorderlimits.s3.amazonaws.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Fetch": 2,
-        "XHR": 2
+        "XHR": 5,
+        "Fetch": 3
     },
     "nameservers": [
         "dale.ns.cloudflare.com",

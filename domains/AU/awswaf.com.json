@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000906,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
+        "c09bc9c04079.edge.sdk",
+        "c09bc9c04079.83e5efcf.ap-southeast-2.token",
         "8b22b9b6100b.edge.sdk",
         "8b22b9b6100b.7747e292.ap-southeast-2.token",
         "c60708c831e2.edge.captcha-sdk",
@@ -14,8 +16,8 @@
         "c60708c831e2.2db5d5f2.ap-southeast-2.token",
         "4e7d2b3cdfc7.edge.sdk",
         "4e7d2b3cdfc7.509920d1.ap-southeast-2.token",
-        "c09bc9c04079.edge.sdk",
-        "c09bc9c04079.83e5efcf.ap-southeast-2.token",
+        "3e6707307d9a.eu-west-1.sdk",
+        "3e6707307d9a.11400fe9.eu-west-1.token",
         "346db344a308.edge.sdk",
         "346db344a308.85426ee6.ap-southeast-2.token",
         "a81eb85f6c63.edge.sdk",
@@ -25,8 +27,108 @@
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/challenge\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "c09bc9c04079.edge.sdk",
+                "c09bc9c04079.83e5efcf.ap-southeast-2.token"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.webdriver": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "357704cbf321e292ddaa4a664072d170cf4368cbea550787c3a4a8f685ce590d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aws-waf-token": {
+                    "ttl": 345610,
+                    "length": 329,
+                    "prevalence": 0.0002009444388626545,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "pdfs.semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c09bc9c04079.83e5efcf.ap-southeast-2.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0c4ba02ad06a23ae40ee0a0bdf746ae8b1230db7317e1206fd946bb1c5cfea77"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/telemetry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c09bc9c04079.83e5efcf.ap-southeast-2.token"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7e24969253df0529bd62942890b17b0adcef13a108f7c5b68479fdc6da4d7ab9",
+                "372230df3039cf7700162a8b323efbd635f2f7ff30e27dd012983ff07f116015"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "pdfs.semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
+        {
             "rule": "awswaf\\.com\\/8b22b9b6100b\\/01063e1e059a\\/challenge\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
                 "8b22b9b6100b.edge.sdk",
@@ -60,14 +162,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "64652833fb2ad1201b9796e943aeebce30890c7b9ba36f19649f65c5ccc6c28e"
+                "effeee19fc2f8ddb7bf55824c5a62e6804f62db837b0da9abee2fd1746693108"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345628,
+                    "ttl": 345627,
                     "length": 320,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -89,7 +191,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "25ef78522a7110c1907698e247cd4731b98fbce4c95c75cb96778314d4ca3cd4"
+                "337d9353fa22a900abf8d0e3cb6fafe85ce790a81c8793389749068f9f21f1a0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -114,7 +216,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "98ca89d3b7fae4f410c000d49f849ed772d2361b8577cd934fff1982e39e5323"
+                "32acfef7bbb76aa4fbbb787a8c3ed1d271e2c80f91cea4d9594841a70d4722a0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -136,7 +238,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "88d2f919350892b9ab8c87b09319edaa6d0e960f63b30b57b084e4983aa9e9c0"
+                "109fd90216dc144c8e33ed8f7a0d3375091a7f3527c1b153819632acdda33177"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -148,7 +250,7 @@
         },
         {
             "rule": "awswaf\\.com\\/4e7d2b3cdfc7\\/6b9a1185127c\\/challenge\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
                 "4e7d2b3cdfc7.edge.sdk",
@@ -182,14 +284,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "12df75473a512d593d4eab91b8a103b43f7e326969c6317df94efed88905ad10"
+                "b03e518dc9ea986fedc3f8c3ee5b0fb0ce283942f2ddb1edbf859c0c83740c64"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345618,
+                    "ttl": 345623,
                     "length": 321,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -211,7 +313,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fdcce5476f1bce0759505f741d43de0c03d30859886b81f08ba7f8fc03f121c9"
+                "8fa0a6dba2a32fe25c29568295a8624132640dd4724e10c1665998501136815c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -222,12 +324,12 @@
             ]
         },
         {
-            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/challenge\\.js",
-            "cookies": 0.000101,
+            "rule": "awswaf\\.com\\/3e6707307d9a\\/ac4f8b2ef5b4\\/challenge\\.js",
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
-                "c09bc9c04079.edge.sdk",
-                "c09bc9c04079.83e5efcf.ap-southeast-2.token"
+                "3e6707307d9a.eu-west-1.sdk",
+                "3e6707307d9a.11400fe9.eu-west-1.token"
             ],
             "apis": {
                 "Navigator.prototype.appName": 1,
@@ -257,48 +359,48 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e8d44cd059519e1757446309292d6f55139bc8875ace911ab004b20c04675a33"
+                "dc29bb7ea17dcc217faa66e6d3cbf89dc65135ce8361c3b695898ba29095cd41"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345610,
-                    "length": 329,
-                    "prevalence": 0.00010063399416322834,
+                    "ttl": 345615,
+                    "length": 316,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "semanticscholar.org",
-                "www.semanticscholar.org"
+                "trustedhousesitters.com",
+                "www.trustedhousesitters.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/telemetry",
+            "rule": "awswaf\\.com\\/3e6707307d9a\\/ac4f8b2ef5b4\\/telemetry",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "c09bc9c04079.83e5efcf.ap-southeast-2.token"
+                "3e6707307d9a.11400fe9.eu-west-1.token"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4c65983071b08dc26c2f0df8ac162d448cfc22676587e89331c42ca5712b3e1d"
+                "7598ee5789ece37500116ae759e60cb037234c344f2de04c602eb754ce0de2ed"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "semanticscholar.org",
-                "www.semanticscholar.org"
+                "trustedhousesitters.com",
+                "www.trustedhousesitters.com"
             ]
         },
         {
             "rule": "awswaf\\.com\\/346db344a308\\/59f5f7fe30cf\\/challenge\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
                 "346db344a308.edge.sdk",
@@ -332,14 +434,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "723e855917966cd19a3d97da92094b68c83fee300815ca6bd76131af367dc0ac"
+                "4d8cd1ead2e323d7a6b7a5985b0d58d4e6f3cc1003e1362c20313448ff082c15"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345618,
+                    "ttl": 345628,
                     "length": 301,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -361,7 +463,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "596addebd520246525d8798adb7c3f0623ebf8a384bf94e5c83e5a44e9f4194c"
+                "6ff365798df2cc06b9e5123b5d1abfd3f09715191055d9c2509234a266a7e010"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -373,7 +475,7 @@
         },
         {
             "rule": "awswaf\\.com\\/a81eb85f6c63\\/7b7e58b00363\\/challenge\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
                 "a81eb85f6c63.edge.sdk",
@@ -407,14 +509,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e471d10ec1e0dfca36fc86cd4c5d6181b985511c364193bba58b5221129aca8d"
+                "15faa28e7cc5670a17c6a3ec16fd4e469e97a4cdbd3dbc03314ec9ad51751712"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345607,
                     "length": 301,
-                    "prevalence": 0.00010063399416322834,
+                    "prevalence": 0.00010047221943132724,
                     "uniqueness": 1
                 }
             },
@@ -436,7 +538,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d61e948936082e3e2273a36735eadc063066813773a96f15645302781a863597"
+                "2cfd902933f431836d925c65feed63d9aff46b3dcca8b10d9734802e4910fef7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -449,29 +551,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000906,
+    "cookies": 0.001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.868421052631579
-        },
-        {
-            "domain": "kxcdn.com",
-            "prevalence": 0.07894736842105263
+            "prevalence": 0.9
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.05
+        },
+        {
+            "domain": "kxcdn.com",
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Script": 12,
-        "Fetch": 12
+        "Script": 15,
+        "Fetch": 17
     },
     "nameservers": [
-        "ns-1878.awsdns-42.co.uk",
+        "ns-43.awsdns-05.com",
         "ns-759.awsdns-30.net",
         "ns-1121.awsdns-12.org",
-        "ns-43.awsdns-05.com"
+        "ns-1878.awsdns-42.co.uk"
     ]
 }

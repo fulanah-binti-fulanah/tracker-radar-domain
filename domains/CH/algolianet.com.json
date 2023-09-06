@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "e5y1a9z5et-3",
-        "f49rvkeckz-1"
+        "e5y1a9z5et-1",
+        "ujjak2x1py-1",
+        "f49rvkeckz-3"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,16 +22,18 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "e5y1a9z5et-3",
-                "f49rvkeckz-1"
+                "e5y1a9z5et-1",
+                "ujjak2x1py-1",
+                "f49rvkeckz-3"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "c13c527c58b923c1dad0a671e4b00f1d7c5729571d7c4179b1775703cef277c4",
-                "f5fe1890bc3ad5fa627edbed9f2abfd4fb6523414caabe6a917ac284b00aeb33"
+                "e5e2421c9327d30514ac3733e4e8567305a18b51e13594cb379d44bb2169376c",
+                "150e3d6c6c10eabff4d0b9061d184fa088700ee596ea6f4c64e79dcad8ca666a",
+                "f610e6b7f8c202c25a9e2a6bc8598ab8d59b6fad212d8272ce6419681f1be044"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -38,6 +41,28 @@
             "exampleSites": [
                 "japan.travel",
                 "www.japan.travel",
+                "www.masterclass.com",
+                "www.poetryfoundation.org"
+            ]
+        },
+        {
+            "rule": "algolianet\\.com\\/1\\/indexes\\/*\\/queries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ujjak2x1py-1",
+                "f49rvkeckz-3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masterclass.com",
                 "www.poetryfoundation.org"
             ]
         }
@@ -48,14 +73,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "XHR": 3
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "jocelyn.ns.cloudflare.com",
-        "aiden.ns.cloudflare.com"
+        "aiden.ns.cloudflare.com",
+        "jocelyn.ns.cloudflare.com"
     ]
 }

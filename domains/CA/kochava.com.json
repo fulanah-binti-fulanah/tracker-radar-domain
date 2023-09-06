@@ -7,33 +7,53 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
+        "assets",
         "web-sdk.control"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "kochava\\.com\\/track\\/json",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "kochava\\.com\\/kochava\\.js\\/v2\\.1\\/kochava\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
-                "web-sdk.control"
+                "assets"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "apis": {
+                "window.localStorage": 3,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.availWidth": 3,
+                "Screen.prototype.availHeight": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+                "46e2c38b8432b13d035a2e7dab094b52a594a47191abdb6dc0d5c98544c9b6e3"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "kv_id": {
+                    "ttl": 315360002,
+                    "length": 15,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "nfl.com",
+                "littlecaesars.ca",
                 "www.weatherbug.com"
             ]
         },
@@ -45,36 +65,165 @@
                 "web-sdk.control"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [],
+            "responseHashes": [
+                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfl.com",
+                "fantasy.nfl.com",
+                "littlecaesars.ca",
+                "moviesanywhere.com",
+                "www.cbs.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/track\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "nfl.com",
+                "fantasy.nfl.com",
+                "littlecaesars.ca",
+                "moviesanywhere.com",
+                "www.cbs.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/kochava\\.js\\/v2\\.2\\/kochava\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2773bebe58754475ba386259a546e1f57b60f8fab64c99ddb1c46e76b668d374"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "kv_id": {
+                    "ttl": 315360002,
+                    "length": 15,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                },
+                "kv_install_sent": {
+                    "ttl": 315360002,
+                    "length": 13,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                },
+                "c_trt": {
+                    "ttl": 315360002,
+                    "length": 66,
+                    "prevalence": 0.00010071507704703394,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviesanywhere.com",
+                "www.cbs.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/v1\\/cpi\\/identityLink\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviesanywhere.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/v1\\/cpi\\/identityLink\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviesanywhere.com",
                 "www.weatherbug.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8461538461538461
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 5,
+        "XHR": 8,
+        "Preflight": 8
     },
     "nameservers": [
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a3.googledomains.com",
+        "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a2.googledomains.com",
         "ns-cloud-a4.googledomains.com"
     ]
 }

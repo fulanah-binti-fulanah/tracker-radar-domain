@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000404,
+    "prevalence": 0.000403,
     "sites": 4,
     "subdomains": [
         "assets",
         "direct",
+        "resizer",
         "tracker"
     ],
     "cnames": [],
@@ -26,10 +27,10 @@
                 "Date.prototype.getTime": 3,
                 "window.innerWidth": 3,
                 "window.localStorage": 3,
-                "window.innerHeight": 1
+                "window.innerHeight": 2
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "4cc1aeb0f2c24f6f504ef28689f95946157bdcc243893095d65099072eddb2e2"
@@ -45,26 +46,48 @@
         },
         {
             "rule": "mantisadnetwork\\.com\\/website\\/ads",
-            "cookies": 0.000303,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "direct"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "8beb87560d34f38f4191181b83058c26dc0a93f43dd21f27a291952d3ae3e26e"
+                "51c5ca39007baf558a0411dd31a6af5d9e618698c3046789b4f2dffbc925a9c4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020185708518368994
+                "lotame_domain_check": 0.00020143015409406788
             },
             "exampleSites": [
                 "cannigma.com",
                 "forum.grasscity.com",
+                "www.allbud.com"
+            ]
+        },
+        {
+            "rule": "mantisadnetwork\\.com\\/mantis-ad-network\\/image\\/fetch\\/f_jpg,q_90\\/https:\\/\\/images\\.mantisadnetwork\\.com\\/f4ff2c33a59c7d724e7cf17ee89d5748\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resizer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7d6317848f107ad9148f578a195581d347ded2e399e32d40347f5fb2b9907644"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grasscity.com",
                 "www.allbud.com"
             ]
         },
@@ -76,8 +99,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "013638477bb88378604d1b89467d4d6d5634f0ecccf188515d612264b48d5590"
@@ -87,7 +110,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grasscity.com",
-                "forum.grasscity.com"
+                "forum.grasscity.com",
+                "www.allbud.com"
             ]
         },
         {
@@ -98,8 +122,8 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -109,7 +133,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grasscity.com",
-                "forum.grasscity.com"
+                "forum.grasscity.com",
+                "www.allbud.com"
             ]
         },
         {
@@ -120,8 +145,8 @@
                 "tracker"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -129,18 +154,41 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00010092854259184497
+                "lotame_domain_check": 0.00010071507704703394
             },
             "exampleSites": [
                 "grasscity.com",
                 "forum.grasscity.com",
+                "www.allbud.com",
                 "www.royalqueenseeds.com"
+            ]
+        },
+        {
+            "rule": "mantisadnetwork\\.com\\/track\\/visible",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grasscity.com",
+                "www.allbud.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000404,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
@@ -149,10 +197,10 @@
     ],
     "types": {
         "Script": 6,
-        "Image": 7
+        "Image": 14
     },
     "nameservers": [
-        "brad.ns.cloudflare.com",
-        "pat.ns.cloudflare.com"
+        "pat.ns.cloudflare.com",
+        "brad.ns.cloudflare.com"
     ]
 }

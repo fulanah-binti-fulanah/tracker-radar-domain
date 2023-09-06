@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "api.svt"
     ],
@@ -48,6 +48,58 @@
                 "svt.se",
                 "www.svt.se"
             ]
+        },
+        {
+            "rule": "se\\.edgekey\\.net\\/contento\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.svt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.svt.se",
+                    "resolved": "api.svt.se.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "802f15ebb44c9dc823ed676d191546dad4940029d26e0729555b8287ae487d6f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "svtplay.se",
+                "www.svtplay.se"
+            ]
+        },
+        {
+            "rule": "se\\.edgekey\\.net\\/contento\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.svt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.svt.se",
+                    "resolved": "api.svt.se.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "svtplay.se",
+                "www.svtplay.se"
+            ]
         }
     ],
     "categories": [],
@@ -56,11 +108,16 @@
     "topInitiators": [
         {
             "domain": "svtstatic.se",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": []
 }

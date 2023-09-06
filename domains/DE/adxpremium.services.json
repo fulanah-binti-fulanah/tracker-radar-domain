@@ -7,7 +7,8 @@
     "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "rtb"
+        "rtb",
+        "user-sync"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,42 +25,66 @@
             "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "90a8ad36bd9fb820037c541aad866d4220b83c05f8c0753724dea6b9aefe1e60"
+                "7d8ed2a9ba97497b0964565ce123130667d1c775a8f399616537bc3f8a5c4f71",
+                "da4bc2a10e825e476b4deafbdf569695e568a06a99260f8fd8fd611f7c396b98"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "press24.net",
-                "www.c-sharpcorner.com",
-                "www.picuki.com"
+                "wordlegame.org",
+                "www.c-sharpcorner.com"
+            ]
+        },
+        {
+            "rule": "adxpremium\\.services\\/setuid",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user-sync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wordlegame.org",
+                "www.c-sharpcorner.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "topInitiators": [
         {
-            "domain": "stpd.cloud",
-            "prevalence": 0.5
+            "domain": "adxbid.info",
+            "prevalence": 0.4
         },
         {
-            "domain": "adxbid.info",
-            "prevalence": 0.375
+            "domain": "stpd.cloud",
+            "prevalence": 0.3
         },
         {
             "domain": "ezodn.com",
-            "prevalence": 0.125
+            "prevalence": 0.3
         }
     ],
     "types": {
-        "XHR": 3
+        "XHR": 3,
+        "Image": 2
     },
     "nameservers": [
+        "ns1.exoscale.com",
         "ns1.exoscale.ch",
         "ns1.exoscale.io",
-        "ns1.exoscale.com",
         "ns1.exoscale.net"
     ]
 }

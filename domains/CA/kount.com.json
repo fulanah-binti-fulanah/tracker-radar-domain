@@ -9,15 +9,57 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000404,
-    "sites": 4,
+    "prevalence": 0.000705,
+    "sites": 7,
     "subdomains": [
-        "sg-staples",
-        "api"
+        "api",
+        "sg-staples"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "kount\\.com\\/shopify\\/js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 7,
+            "prevalence": 0.000705,
+            "cnames": [],
+            "responseHashes": [
+                "515c937580026078038ec1a28617d9758a64ae49b8d35d714a45ce0343d8fa38",
+                "ead184401c5b9c3a5c0491fe8059f2c0f5582d6e32efc81c91215aa45ee9f56d",
+                "cf56c1c5e19ba5f5ef719843972c4a20a45a012d1014854075acb288ea8b0032",
+                "4183bbf03b33575096f266da35dca28eec69257beb1ce2574d174570596a2dd6",
+                "614fb9ed32d9120c681a05ad894b6956340083a71d1d7735155fa5a4efd7d7ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "KountCookie": {
+                    "ttl": 86429,
+                    "length": 32,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wyze.com",
+                "snugglebugz.ca",
+                "www.bureauengros.com",
+                "www.coastappliances.ca",
+                "www.lorex.ca",
+                "www.staples.ca",
+                "www.wyze.com"
+            ]
+        },
         {
             "rule": "kount\\.com\\/js",
             "cookies": 0,
@@ -27,7 +69,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -37,48 +79,11 @@
                 "bureauengros.com",
                 "www.staples.ca"
             ]
-        },
-        {
-            "rule": "kount\\.com\\/shopify\\/js",
-            "cookies": 0.000101,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 4,
-            "prevalence": 0.000404,
-            "cnames": [],
-            "responseHashes": [
-                "cf56c1c5e19ba5f5ef719843972c4a20a45a012d1014854075acb288ea8b0032",
-                "ead184401c5b9c3a5c0491fe8059f2c0f5582d6e32efc81c91215aa45ee9f56d",
-                "614fb9ed32d9120c681a05ad894b6956340083a71d1d7735155fa5a4efd7d7ac"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "KountCookie": {
-                    "ttl": 86413,
-                    "length": 32,
-                    "prevalence": 0.00010092854259184497,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bureauengros.com",
-                "www.coastappliances.ca",
-                "www.staples.ca",
-                "www.wyze.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -86,7 +91,7 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 9
     },
     "nameservers": [
         "ns-662.awsdns-18.net",

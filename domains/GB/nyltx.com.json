@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nyltx\\.com\\/lib\\/1\\.0\\/ra-tracker\\.js\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "4f897b6bbeedaeee8db66e7ef50a5413d30ddc230d8280de905aa02cd8451ae4",
+                "f26dd2df1f27b234f87c0b319e4d015ea4843b9d3a70e26c7bed2f6b0e707a36"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__rafm": 0.00010064412238325282
+            },
+            "exampleSites": [
+                "brighthr.com",
+                "www.brighthr.com",
+                "www.hedgesdirect.co.uk"
+            ]
+        },
         {
             "rule": "nyltx\\.com\\/lib\\/2\\.0\\/ra-collect",
             "cookies": 0,
@@ -20,8 +46,8 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -30,7 +56,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hedgesdirect.co.uk",
+                "brighthr.com",
+                "www.brighthr.com",
                 "www.hedgesdirect.co.uk"
             ]
         }
@@ -40,12 +67,17 @@
     "cookies": 0.000101,
     "topInitiators": [
         {
+            "domain": "ruleranalytics.com",
+            "prevalence": 0.7142857142857143
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Ping": 2
+        "Script": 3,
+        "Ping": 3
     },
     "nameservers": [
         "ns-538.awsdns-03.net",

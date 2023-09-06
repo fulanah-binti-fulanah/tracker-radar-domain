@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "track"
     ],
@@ -20,27 +20,123 @@
                 "track"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.colorDepth": 1
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.availWidth": 3,
+                "Screen.prototype.availHeight": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.language": 3,
+                "Screen.prototype.colorDepth": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+                "26bb5be43e80bb11352c38c711807e06838e25940b58e137537caf9a8afaa2d4",
+                "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+                "b1c33cb2b5ffa50e45f74be15709c1c662c1d791a888622f1e7f408671de6ff5",
+                "ca4456cdcac3450ab45ab06be6f54fbecac7412fbe22c7bd4c68f09eaca3492a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "medifyair.com",
                 "onpay.com",
-                "www.emerson.com"
+                "www.emerson.com",
+                "www.inspirato.com",
+                "www.protocol.com",
+                "www.xcelsolutions.com",
+                "www.yext.com"
+            ]
+        },
+        {
+            "rule": "cbdatatracker\\.com\\/api\\/tracker\\/Post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onpay.com",
+                "www.inspirato.com",
+                "www.xcelsolutions.com"
+            ]
+        },
+        {
+            "rule": "cbdatatracker\\.com\\/api\\/tracker\\/Post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onpay.com",
+                "www.inspirato.com",
+                "www.xcelsolutions.com"
+            ]
+        },
+        {
+            "rule": "cbdatatracker\\.com\\/api\\/tracker\\/PostPing",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onpay.com",
+                "www.inspirato.com",
+                "www.xcelsolutions.com"
+            ]
+        },
+        {
+            "rule": "cbdatatracker\\.com\\/api\\/tracker\\/PostPing",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onpay.com",
+                "www.inspirato.com",
+                "www.xcelsolutions.com"
             ]
         }
     ],
@@ -49,20 +145,26 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.36363636363636365
         },
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "googletagmanager.com",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7,
+        "XHR": 6,
+        "Preflight": 6
     },
     "nameservers": [
-        "ns3.systemdns.com",
         "ns1.systemdns.com",
+        "ns3.systemdns.com",
         "ns2.systemdns.com"
     ]
 }

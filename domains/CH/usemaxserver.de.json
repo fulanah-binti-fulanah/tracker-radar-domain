@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "www"
     ],
@@ -17,56 +17,89 @@
     "resources": [
         {
             "rule": "usemaxserver\\.de\\/d\\.php",
-            "cookies": 0.0001,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 4,
+                "window.innerWidth": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.innerHeight": 4,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "c4987d81d1412425bb0e39ef87d8e96829b5f1eecb6dbf19f615da6c3fbbb812"
+                "5f2ba985df933cb49d0aa079094883ba56551734cb80a08b725caa6d28e5d331",
+                "1c6624d331a32e50b13fa645bc0f2aa348b8b2f8c4db3f3b565893c8986819e4",
+                "5482a222b3727c21b37ed6d941fac90f111fc6be409c4d9d5242a0a524dc0a26"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "usm_um_rt": {
-                    "ttl": 31536010,
+                    "ttl": 31536007,
                     "length": 10,
-                    "prevalence": 0.00010049241282283188,
+                    "prevalence": 0.00030135610246107485,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "orellfuessli.ch",
-                "www.orellfuessli.ch"
+                "www.orellfuessli.ch",
+                "www.peterhahn.ch",
+                "www.thalia.de"
+            ]
+        },
+        {
+            "rule": "usemaxserver\\.de\\/rt\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "69a334ce0433dbb1162804e3c11838aaae6298144293b358bc69196c2a502782",
+                "1aba7e3f12ea42b8c1bc07b50f419293e25c6433ef76c44f491c66fdf28ad83d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orellfuessli.ch",
+                "www.peterhahn.ch",
+                "www.thalia.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "dwin1.com",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Document": 3
     },
     "nameservers": [
-        "dns.dns2.de",
         "dns.dns4.de",
+        "dns.dns2.de",
         "dns.dns1.de",
         "dns.dns3.de"
     ]

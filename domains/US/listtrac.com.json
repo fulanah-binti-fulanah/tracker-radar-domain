@@ -14,28 +14,29 @@
     "resources": [
         {
             "rule": "listtrac\\.com\\/monitor\\.ashx",
-            "cookies": 0.0000677,
+            "cookies": 0.000075,
             "fingerprinting": 1,
             "subdomains": [
                 "code"
             ],
             "apis": {
                 "Date.prototype.getTime": 8,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 10,
-            "prevalence": 0.0000677,
+            "sites": 11,
+            "prevalence": 0.000075,
             "cnames": [],
             "responseHashes": [
-                "0008b490d35fd6ec27a418c22f1b92993e457e921b6fe21270c719f587db24bc",
-                "6158909d0b051c51224e92973cf64f57a7789000df4d2222ee1a64fa986a5512",
-                "7a83d3178dea1bfd9637fba3239eb977b168096cced2aaf6a2b9fa57fb23b331",
-                "c9362c3273d3178a8554d8c723972f523025e75395cbb62cf442e9f0fcdaa1c7",
-                "8fa739003af4bcecf65696b81eb5629f4bac802033b2f3988eba4ffbe4760c79",
-                "ca4b0bf0cb426e27856a2ff70224c916324f95b947d92b5ca0b85ed16d2cfe7b",
-                "ad1d4acc4626bbef0a235db28083bf5b1a78f65fb67f2bc0e74996821b497987",
-                "be6c1989ea97ea3f6a61c8df006dbe962d94db157160efc43f6a14e183c1c2a1",
-                "5112d5d7b1d054a3b49bcb79b5d02a7ed368d99b33ea01e6120624e1946d9d5e"
+                "b042ea28ef0b54534e6a0dd61e4e4dc4273ca619b5effa495c5ed0c56a5a8112",
+                "b9b7b185039f1e88f6d11097a2b463986c44ce90d352757c84fe9661b153f4e6",
+                "d6cb53515fa86bf3908d38e4d00b8d174f472bd561fe87641e6a426e61064d0e",
+                "b8c093bb652b6f03fc2e0089f9512d0db5332b2b472464efb85de4f66a02c7f2",
+                "f46e44bd282e13997306d12b49c83c59e4d693596fe6c4f6d234d507559d09c5",
+                "3c5e3075d93a50f7bda08016a8ab4f0b66cc83129ef26f206ccc2fa670a85e54",
+                "08c94a53d9dd21c607a26a14f441675aa56691ab154ea98b585308965e7d1bc5",
+                "dbe67802fc5398ac6622f025e635b5b96e3c22a8e5207557db8a44be0aedbc6b",
+                "cc81a66ceec24057b44abe8f897d2724a64838d352465747044b0abe35ecb8a7",
+                "a2927b1ae6cd43758ae17e5a1ed0d1a00e403e5246054006fa662242b1d45a3c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,11 +47,34 @@
                 "propertylistings.ft.com",
                 "www.century21.com",
                 "www.christiesrealestate.com",
+                "www.corcoran.com",
                 "www.georgiamls.com",
                 "www.lakehomes.com",
                 "www.remax.ca",
                 "www.sothebysrealty.com",
                 "www.valleymls.com"
+            ]
+        },
+        {
+            "rule": "listtrac\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corcoran.com",
+                "www.remax.ca"
             ]
         }
     ],
@@ -60,28 +84,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.47058823529411764
+            "prevalence": 0.6
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.3
         },
         {
             "domain": "gtsstatic.net",
-            "prevalence": 0.11764705882352941
-        },
-        {
-            "domain": "d3alzn55ieatqj.cloudfront.net",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 11,
+        "XHR": 2
     },
     "nameservers": [
         "ns4-02.azure-dns.info",
-        "ns2-02.azure-dns.net",
         "ns1-02.azure-dns.com",
+        "ns2-02.azure-dns.net",
         "ns3-02.azure-dns.org"
     ]
 }

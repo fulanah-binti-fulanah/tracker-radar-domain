@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "api-prod"
+        "api-prod",
+        "api-forums"
     ],
     "cnames": [
+        {
+            "original": "api-forums.nvidia.com",
+            "resolved": "api-forums.nvidia.com.edgekey.net"
+        },
         {
             "original": "api-prod.nvidia.com",
             "resolved": "api-prod.nvidia.com.edgekey.net"
@@ -31,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api-prod.nvidia.com",
@@ -48,13 +53,73 @@
                 "nvidia.com",
                 "developer.nvidia.com"
             ]
+        },
+        {
+            "rule": "nvidia\\.com\\.edgekey\\.net\\/forums-api\\/1\\.0\\/communities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-forums"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-forums.nvidia.com",
+                    "resolved": "api-forums.nvidia.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nvidia.com",
+                "www.nvidia.com"
+            ]
+        },
+        {
+            "rule": "nvidia\\.com\\.edgekey\\.net\\/forums-api\\/1\\.0\\/communities",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-forums"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-forums.nvidia.com",
+                    "resolved": "api-forums.nvidia.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9a9abb9753676b389cdd947bf9d5c965026ce435808190a16cddbb395939c379"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nvidia.com",
+                "www.nvidia.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "bizible.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

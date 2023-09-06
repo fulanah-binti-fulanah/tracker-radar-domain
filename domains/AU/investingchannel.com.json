@@ -7,10 +7,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "uat5-b"
+        "uat5-a"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,14 +20,36 @@
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "uat5-b"
+                "uat5-a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barchart.com",
+                "www.barchart.com"
+            ]
+        },
+        {
+            "rule": "investingchannel\\.com\\/user\\/sync\\/pubmatic",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uat5-a"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -38,15 +60,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Document": 2
     },
     "nameservers": [
         "ns-1314.awsdns-36.org",

@@ -4,14 +4,101 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "utils-tcncomments"
+        "matomo",
+        "utils-tcncomments",
+        "vcdn",
+        "nolink-vcdn01"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "gruppocdt\\.ch\\/\\/matomo\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d7fc375178c93a2fc15fd888e30170eedf4ef3d04497e7f951ab7bfe0c921693"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.1.94ae": {
+                    "ttl": 33955203,
+                    "length": 28,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1.94ae": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pk_id.4.56bb": {
+                    "ttl": 33955204,
+                    "length": 28,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pk_ses.4.56bb": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdt.ch",
+                "www.ticinonews.ch"
+            ]
+        },
+        {
+            "rule": "gruppocdt\\.ch\\/\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdt.ch",
+                "www.ticinonews.ch"
+            ]
+        },
         {
             "rule": "gruppocdt\\.ch\\/comment\\/getCounts",
             "cookies": 0.000201,
@@ -44,7 +131,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "84b0f086ed25661fcbb12f2880de88792af2b6bc1152ac8126af49b2da62b900"
+                "e3cbd783434a2463af153e2502485db84cb198949ba82f0526ed524113ca8108"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -55,18 +142,40 @@
             ]
         },
         {
-            "rule": "gruppocdt\\.ch\\/socket\\.io\\/",
+            "rule": "gruppocdt\\.ch\\/api\\/v1\\/videos\\/c9502d9a-8e9d-4b70-b82c-8c60443975c3\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "utils-tcncomments"
+                "vcdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "WebSocket",
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticinonews.ch",
+                "www.ticinonews.ch"
+            ]
+        },
+        {
+            "rule": "gruppocdt\\.ch\\/ticinonews\\/2023\\/09\\/05\\/c9502d9a-8e9d-4b70-b82c-8c60443975c3\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nolink-vcdn01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f1668e2d5f642e60394621d0674acd8e8044667b25786a6d8c6f5404a6ca72b1"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -77,20 +186,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.993103448275862
+        },
+        {
+            "domain": "jwpcdn.com",
+            "prevalence": 0.006896551724137931
         }
     ],
     "types": {
+        "Script": 2,
+        "Ping": 2,
         "Preflight": 2,
         "XHR": 2,
-        "WebSocket": 2
+        "Media": 4
     },
     "nameservers": [
-        "b7.uberns.com",
-        "a7.uberns.com"
+        "a7.uberns.com",
+        "b7.uberns.com"
     ]
 }

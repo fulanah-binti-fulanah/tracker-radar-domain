@@ -7,15 +7,90 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "go",
+        "white-label",
         "creative"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "creative.live.missav.com",
+            "resolved": "white-label.stripchat.com"
+        },
+        {
+            "original": "go.live.missav.com",
+            "resolved": "white-label.stripchat.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "stripchat\\.com\\/api\\/models",
+            "cookies": 0.000504,
+            "fingerprinting": 0,
+            "subdomains": [
+                "go",
+                "white-label"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [
+                {
+                    "original": "go.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
+            "responseHashes": [
+                "4a20dee22146ca7da0b86f0631e1d8c1a624fa93334a31d561f93ec09b4b6aee",
+                "ec41f1a46ae39bf11631d62e828727dcb3ce352f738d1074fd0f3b1eb1dd0b76",
+                "22593cac9136c78b62cfc7d1a72641a9742f4326bedb6cb956e3e1c57eeaa3ae",
+                "f35d4855ab4b73858e369bed60c763e03ab2293f908e215eaa2489307e11da3b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "celebgate.org",
+                "fapality.com",
+                "hdporncomics.com",
+                "missav.com",
+                "mylust.com"
+            ]
+        },
+        {
+            "rule": "stripchat\\.com\\/abc\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "go",
+                "white-label"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [
+                {
+                    "original": "go.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "celebgate.org",
+                "fapality.com",
+                "hdporncomics.com",
+                "missav.com",
+                "mylust.com"
+            ]
+        },
         {
             "rule": "stripchat\\.com\\/api\\/external\\/v3\\/auth\\/check",
             "cookies": 0.000504,
@@ -32,90 +107,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "camporn.to",
                 "camseek.tv",
                 "camstreams.tv",
+                "camporn.to",
                 "nudespree.com",
                 "theporngod.com"
             ]
         },
         {
-            "rule": "stripchat\\.com\\/api\\/models",
-            "cookies": 0.000403,
-            "fingerprinting": 0,
-            "subdomains": [
-                "go"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
-            "cnames": [],
-            "responseHashes": [
-                "0e8a7f276ba9fc57302692986ea823710d4ac33cf6b4938b2625341bb2854384",
-                "4eae25b7693ee04db14e38a90a85024a7d08dd8ede01d380a44dee73f4b38081",
-                "5b93cb0ef5266202a51353c8e1d302fcfbd25f122f7b5bc63b76ec181ede287f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "celebgate.org",
-                "fapality.com",
-                "hdporncomics.com",
-                "mylust.com"
-            ]
-        },
-        {
-            "rule": "stripchat\\.com\\/abc\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "go"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "celebgate.org",
-                "fapality.com",
-                "hdporncomics.com",
-                "mylust.com"
-            ]
-        },
-        {
-            "rule": "stripchat\\.com\\/checkUrl",
-            "cookies": 0.000302,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [
-                "e78008828abaa93c4462e326ef384dcda1443352a0f24bdeedada6a6fdbfd1d5"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chyoa.com",
-                "sukebei.nyaa.si",
-                "xxxdl.net"
-            ]
-        },
-        {
             "rule": "stripchat\\.com\\/widgets\\/Spot\\/lib\\.js",
-            "cookies": 0.000302,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "creative"
+                "creative",
+                "white-label"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
@@ -127,11 +132,16 @@
                 "MediaSource.isTypeSupported": 3,
                 "HTMLMediaElement.prototype.canPlayType": 3
             },
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "creative.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
             "responseHashes": [
-                "ffd6ec7885b7165737a061c2d301c85aadd69a9ca74450889b5053f2899448f8"
+                "b9900dd8c6d71e53b275066d41daabc154532df5d95b34027aca5c91a3097f96"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -139,23 +149,31 @@
             "exampleSites": [
                 "fapality.com",
                 "hdporncomics.com",
+                "missav.com",
                 "mylust.com"
             ]
         },
         {
             "rule": "stripchat\\.com\\/config",
-            "cookies": 0.000302,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "go"
+                "go",
+                "white-label"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "go.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
             "responseHashes": [
-                "29be9daca71c03edbd9db66a5830f4ab299356a9b9bb2ad2475dc0bb0ecdbdb7",
-                "e064d10a4dea756d0a22c5309469c514751730c6ebea73da2fd3fec4feae6758"
+                "a1876aef0fa7b1028addc6771ba690ae33bccc5582fc041f8423e89810b4aaa5",
+                "3ce4795e5cf498640427202a7b75291ea5ec57b7b02c59f9258af4e302c3e463",
+                "d156114ddfbf04cf574a6cabd22824e72889621eed7c853d33a26493e14aed82"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -163,20 +181,27 @@
             "exampleSites": [
                 "fapality.com",
                 "hdporncomics.com",
+                "missav.com",
                 "mylust.com"
             ]
         },
         {
             "rule": "stripchat\\.com\\/widgets\\/Spot\\/lang\\/de\\.json",
-            "cookies": 0.000302,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
-                "creative"
+                "creative",
+                "white-label"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "creative.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
             "responseHashes": [
                 "4295b514cd4ea858363fc6b05ea32b6867f49b6e48620bbe644f1067c7a24fb0"
             ],
@@ -186,23 +211,31 @@
             "exampleSites": [
                 "fapality.com",
                 "hdporncomics.com",
+                "missav.com",
                 "mylust.com"
             ]
         },
         {
             "rule": "stripchat\\.com\\/thumbs\\/view",
-            "cookies": 0.000302,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
-                "go"
+                "go",
+                "white-label"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "go.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
             "responseHashes": [
-                "2b22b9c5d39350036043a32c2147607a70d2a77bd870c9809b9bbae9033a2437",
-                "38ea0c101d1e909f81d5844f27444bb2761a5b039bcf76566fe279a2f805d0f6"
+                "7c5d01b453cdb76bd4a5bb219308e8ca5f9c3c5ba3658ee6030616cff89867cf",
+                "6a56dd0f1fdddfbbf6f9ef175547aa2ebeb4ab131fa7bb62a2af36ac45a73c53",
+                "9d62be8343061c1e8c351ec389b4f016333499005216bed20b567f2f954149aa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -210,20 +243,51 @@
             "exampleSites": [
                 "fapality.com",
                 "hdporncomics.com",
+                "missav.com",
                 "mylust.com"
             ]
         },
         {
+            "rule": "stripchat\\.com\\/checkUrl",
+            "cookies": 0.000605,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000605,
+            "cnames": [],
+            "responseHashes": [
+                "e78008828abaa93c4462e326ef384dcda1443352a0f24bdeedada6a6fdbfd1d5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fapality.com",
+                "javhub.net",
+                "milf300.com",
+                "spankbang.com",
+                "www.porntrex.com",
+                "www.xxbrits.com"
+            ]
+        },
+        {
             "rule": "stripchat\\.com\\/checkDomainResult",
-            "cookies": 0.000302,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
-                "go"
+                "go",
+                "white-label"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "go.live.missav.com",
+                    "resolved": "white-label.stripchat.com"
+                }
+            ],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
@@ -233,43 +297,48 @@
             "exampleSites": [
                 "fapality.com",
                 "hdporncomics.com",
+                "missav.com",
                 "mylust.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00151,
+    "cookies": 0.00161,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6764705882352942
+            "prevalence": 0.6388888888888888
         },
         {
             "domain": "xlviiirdr.com",
-            "prevalence": 0.14705882352941177
+            "prevalence": 0.1388888888888889
+        },
+        {
+            "domain": "kbnmnl.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "bbrdbr.com",
+            "prevalence": 0.027777777777777776
+        },
+        {
+            "domain": "xlviirdr.com",
+            "prevalence": 0.027777777777777776
+        },
+        {
+            "domain": "xxxjmp.com",
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "xlivrdr.com",
-            "prevalence": 0.058823529411764705
-        },
-        {
-            "domain": "xlirdr.com",
-            "prevalence": 0.058823529411764705
-        },
-        {
-            "domain": "xlrdr.com",
-            "prevalence": 0.029411764705882353
-        },
-        {
-            "domain": "erohub.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
-        "Image": 9,
-        "Fetch": 19,
-        "Script": 3
+        "Fetch": 27,
+        "Image": 10,
+        "Script": 4
     },
     "nameservers": [
         "amy.ns.cloudflare.com",

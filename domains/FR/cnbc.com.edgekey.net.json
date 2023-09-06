@@ -12,9 +12,14 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
+        "gdsapi",
         "quote"
     ],
     "cnames": [
+        {
+            "original": "gdsapi.cnbc.com",
+            "resolved": "gdsapi.cnbc.com.edgekey.net"
+        },
         {
             "original": "quote.cnbc.com",
             "resolved": "quote.cnbc.com.edgekey.net"
@@ -23,23 +28,23 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "cnbc\\.com\\.edgekey\\.net\\/quote-html-webservice\\/restQuote\\/symbolType\\/symbol",
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/market-mover\\/groupMover\\/MAJOR\\/CHANGE_PCT\\/BOTH\\/5\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "quote"
+                "gdsapi"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [
                 {
-                    "original": "quote.cnbc.com",
-                    "resolved": "quote.cnbc.com.edgekey.net"
+                    "original": "gdsapi.cnbc.com",
+                    "resolved": "gdsapi.cnbc.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "8d841277981835bd13c46e2a07c97f6736564a2c0161f7d179aee83dfa554f5f"
+                "fe19eaffc520bfda17c7b317bc3bdd68bd99280a4e83c83566fc1b97bc56b595"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -66,7 +71,34 @@
                 }
             ],
             "responseHashes": [
-                "f900bdb1619d382dac74044bdd51cc2465acb2c46fd1c04974f4fc9fa7c42cac"
+                "76b8233f464d14040c6272244a42ec6a7054040a102c8db13e0f1c4a4bc37517"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.cnbc.com"
+            ]
+        },
+        {
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/quote-html-webservice\\/restQuote\\/symbolType\\/symbol",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "quote"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "quote.cnbc.com",
+                    "resolved": "quote.cnbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "13edc2c98d29494d0358af5b9d38fd1c568a1c276f3da54d8efc6c554290b36b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -87,7 +119,7 @@
         }
     ],
     "types": {
-        "XHR": 2,
+        "XHR": 4,
         "Fetch": 2
     },
     "nameservers": []

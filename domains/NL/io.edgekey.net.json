@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
-        "c.oracleinfinity"
+        "c.oracleinfinity",
+        "static-mh.content.disney"
     ],
     "cnames": [
         {
             "original": "c.oracleinfinity.io",
             "resolved": "c.oracleinfinity.io.edgekey.net"
+        },
+        {
+            "original": "static-mh.content.disney.io",
+            "resolved": "static-mh.content.disney.io.edgekey.net"
         }
     ],
     "fingerprinting": 2,
@@ -44,9 +49,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ORA_FPC": {
-                    "ttl": 63113856,
+                    "ttl": 63113857,
                     "length": 2,
-                    "prevalence": 0.00040269807711668175,
+                    "prevalence": 0.0004027386226339106,
                     "uniqueness": 0.25
                 }
             },
@@ -57,6 +62,35 @@
                 "forums.oracle.com",
                 "www.java.com"
             ]
+        },
+        {
+            "rule": "io\\.edgekey\\.net\\/matterhorn\\/assets\\/application-ee424be29434\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-mh.content.disney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static-mh.content.disney.io",
+                    "resolved": "static-mh.content.disney.io.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "614bfd25291efb8db3d64f7d9803ae305a6eb5ffc62dd310e2e831da7722a36f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "s_ensPortal": 0.0002013693113169553
+            },
+            "exampleSites": [
+                "starwars.com",
+                "www.starwars.com"
+            ]
         }
     ],
     "categories": [],
@@ -65,11 +99,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9285714285714286
+        },
+        {
+            "domain": "espn.com",
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Stylesheet": 2
     },
     "nameservers": []
 }

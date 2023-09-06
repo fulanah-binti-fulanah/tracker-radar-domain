@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
         "tg1",
-        "servt"
+        "servt",
+        "serv",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,10 +24,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "636238d3844ac3de1951033e922a4df7559760b3653500526e056691aca93414"
+                "dff8fe4660c9be3ab128860d65aa9d3a4b6aa70ab2cb72b3e0b93ebe9d510bea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,14 +39,14 @@
         },
         {
             "rule": "vidcrunch\\.com\\/track",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "servt"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -52,47 +54,136 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00010092854259184497
+                "lotame_domain_check": 0.00020143015409406788
             },
             "exampleSites": [
                 "investguiding.com",
+                "www.gmanetwork.com"
+            ]
+        },
+        {
+            "rule": "vidcrunch\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aeb09a64370aa0bf2e3beab7929a2652d820408f316177aa7f1bb6b5fca9dd9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020143015409406788
+            },
+            "exampleSites": [
+                "investguiding.com",
+                "www.gmanetwork.com"
+            ]
+        },
+        {
+            "rule": "vidcrunch\\.com\\/track",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020143015409406788
+            },
+            "exampleSites": [
+                "investguiding.com",
+                "www.gmanetwork.com"
+            ]
+        },
+        {
+            "rule": "vidcrunch\\.com\\/static\\/img\\/logo_white\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6cae4a2526ee6f3002b1cc1f2e86adfc67b8073d990e2d7313609be1cbfd007a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmanetwork.com",
+                "www.gmanetwork.com"
+            ]
+        },
+        {
+            "rule": "vidcrunch\\.com\\/integrations\\/63fde487a4e05ddd840af308\\/63fe0b3da4e05d21070b28f3\\/fa865e42c4fa88d545ab176fda6db850\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmanetwork.com",
                 "www.gmanetwork.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "aniview.com",
-            "prevalence": 0.5
+            "prevalence": 0.5384615384615384
         },
         {
             "domain": "ngontinh24.com",
-            "prevalence": 0.2
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "avplayer.com",
-            "prevalence": 0.15
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.1
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "first party",
-            "prevalence": 0.05
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
         "Script": 2,
-        "Image": 2
+        "Image": 4,
+        "XHR": 2,
+        "Ping": 2,
+        "Media": 2
     },
     "nameservers": [
-        "ns-1033.awsdns-01.org",
-        "ns-2008.awsdns-59.co.uk",
         "ns-56.awsdns-07.com",
-        "ns-964.awsdns-56.net"
+        "ns-964.awsdns-56.net",
+        "ns-1033.awsdns-01.org",
+        "ns-2008.awsdns-59.co.uk"
     ]
 }

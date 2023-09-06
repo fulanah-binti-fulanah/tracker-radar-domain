@@ -9,40 +9,53 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "adserver",
-        "js"
+        "js",
+        "adserver"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "juicyads\\.com\\/adshow\\.php",
-            "cookies": 0.000303,
-            "fingerprinting": 0,
+            "rule": "juicyads\\.com\\/jp\\.php",
+            "cookies": 0,
+            "fingerprinting": 3,
             "subdomains": [
-                "adserver"
+                "js"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.mimeTypes": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "window.screenX": 6,
+                "window.screenLeft": 6,
+                "window.screenY": 6,
+                "window.screenTop": 6,
+                "Date.prototype.getTime": 6,
+                "window.localStorage": 6
+            },
             "sites": 6,
-            "prevalence": 0.000607,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
-                "d5617134c3422ec407381fac235e96610a7b07f5d7b27da5aec5665276611599",
-                "5887506c8c4daace58c0c1d2f6b8b8044c4056d38e6d153bffe219eacffab3f5"
+                "55fa31a500c0b9d4435417cf70bdad0af29b1899bf9e5ce5c8cb93295ed5c81e",
+                "761dd257705fa6d857f9ed5178317e7d7748649a6802e51062f1f3dfd8d597b8",
+                "5c3c46a67b7b789020e11974ec27987069049105444a6021e7740643998fcbf6",
+                "7ceb33aef3cae3c9482cae37522b9ba91fa8c93790a8e2d43754e7d0c82b12f1"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "zzup.com",
-                "archive.zzup.com",
-                "e-hentai.org",
-                "www.e-hentai.org",
-                "www.faproulette.co",
-                "www.iafd.com"
+                "bacolviral.pro",
+                "en8.pornhd8k.net",
+                "gayforfans.com",
+                "komikdewasa.lat",
+                "www.shemale6.com",
+                "www.showcamrips.com"
             ]
         },
         {
@@ -71,42 +84,27 @@
             ]
         },
         {
-            "rule": "juicyads\\.com\\/jp\\.php",
+            "rule": "juicyads\\.com\\/adshow\\.php",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 0,
             "subdomains": [
-                "js"
+                "adserver"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.mimeTypes": 5,
-                "window.innerWidth": 5,
-                "window.innerHeight": 5,
-                "window.screenX": 5,
-                "window.screenLeft": 5,
-                "window.screenY": 5,
-                "window.screenTop": 5,
-                "Date.prototype.getTime": 5,
-                "window.localStorage": 5
-            },
-            "sites": 5,
-            "prevalence": 0.000506,
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "19dbf6195b54b9e9b6e6b9a4fbb40a371beb22db7ccc5e13ff5e648d88d8a064",
-                "44a6a894ab28eb44e3fe273eff70bdbc783536b24ccd03a5ae8be5b289332ae9",
-                "21c16fd24c0be26b7d4ac5cd3355d626ef7a2f6f1bf55dd249b161614edd0e2f",
-                "f4a74db525e6e2335eab5557309609e57a0dad7659f90e5d3268704609a57fdb"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "familypornhd.com",
-                "gayforfans.com",
-                "www.jeux-sexe-gratuit.com",
-                "www.shemale6.com",
-                "www.showcamrips.com"
+                "e-hentai.org",
+                "www.e-hentai.org",
+                "www.faproulette.co",
+                "www.iafd.com"
             ]
         }
     ],
@@ -116,21 +114,25 @@
         "Malware"
     ],
     "performance": {},
-    "cookies": 0.000506,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9523809523809523
+        },
+        {
+            "domain": "jads.co",
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Document": 6,
-        "Script": 8
+        "Script": 9,
+        "Document": 4
     },
     "nameservers": [
-        "dns1.p07.nsone.net",
+        "dns4.p07.nsone.net",
         "dns2.p07.nsone.net",
         "dns3.p07.nsone.net",
-        "dns4.p07.nsone.net"
+        "dns1.p07.nsone.net"
     ]
 }

@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000405,
-    "sites": 4,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
         "1c18135b.with",
         "with",
+        "387681b8.with",
         "6a759aa9.with",
         "d14d2899.with"
     ],
@@ -23,6 +24,10 @@
         {
             "original": "cp.gutefrage.net",
             "resolved": "with.contentpass.net"
+        },
+        {
+            "original": "cp.hoerzu.de",
+            "resolved": "387681b8.with.contentpass.net"
         },
         {
             "original": "cp.schulferien.org",
@@ -42,12 +47,13 @@
             "subdomains": [
                 "1c18135b.with",
                 "with",
+                "387681b8.with",
                 "6a759aa9.with",
                 "d14d2899.with"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000405,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [
                 {
                     "original": "cp.climate-data.org",
@@ -56,6 +62,10 @@
                 {
                     "original": "cp.gutefrage.net",
                     "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.hoerzu.de",
+                    "resolved": "387681b8.with.contentpass.net"
                 },
                 {
                     "original": "cp.schulferien.org",
@@ -67,7 +77,7 @@
                 }
             ],
             "responseHashes": [
-                "9b7eb4d2d33f18dc05373b5da1c24aa6081e02e4a40b148b8f674e95c197dbdd"
+                "74de8fd36e577e8ad630f5411cd58ea0abda3797916c226858402b612dd9c8cd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -75,12 +85,70 @@
             "exampleSites": [
                 "climate-data.org",
                 "www.gutefrage.net",
+                "www.hoerzu.de",
                 "www.schulferien.org",
                 "www.wetter.com"
             ]
         },
         {
-            "rule": "contentpass\\.net\\/chunks\\/chunk-cmp-sourcepoint\\.20230816124210-a5202e2df4\\.391a09e3b5289e6fa6db\\.js",
+            "rule": "contentpass\\.net\\/chunks\\/chunk-cmp-consentmanager\\.20230825085929-99f9bf8aec\\.c0b184d0d208667e4a92\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1c18135b.with",
+                "387681b8.with"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "cp.climate-data.org",
+                    "resolved": "1c18135b.with.contentpass.net"
+                },
+                {
+                    "original": "cp.hoerzu.de",
+                    "resolved": "387681b8.with.contentpass.net"
+                }
+            ],
+            "responseHashes": [
+                "5c4bcff98514e59a0995dbfb4ec99a14679ea22641c23a7d4e79609f259f3c26"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "climate-data.org",
+                "www.hoerzu.de"
+            ]
+        },
+        {
+            "rule": "contentpass\\.net\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "with"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "cp.gutefrage.net",
+                    "resolved": "with.contentpass.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gutefrage.net",
+                "www.gutefrage.net"
+            ]
+        },
+        {
+            "rule": "contentpass\\.net\\/chunks\\/chunk-cmp-sourcepoint\\.20230825085929-99f9bf8aec\\.657d831549cc8ad0e837\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -122,7 +190,8 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 9,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-d1.googledomains.com",

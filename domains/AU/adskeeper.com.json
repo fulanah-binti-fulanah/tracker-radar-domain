@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "c",
         "cm"
@@ -13,6 +13,28 @@
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "adskeeper\\.com\\/c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123moviesgo.su",
+                "vidmax.com"
+            ]
+        },
         {
             "rule": "adskeeper\\.com\\/pv\\/",
             "cookies": 0,
@@ -25,19 +47,19 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rawconfessions.com",
-                "www.theburningplatform.com"
+                "vidmax.com",
+                "www.rawconfessions.com"
             ]
         },
         {
             "rule": "adskeeper\\.com\\/i\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "cm"
@@ -53,13 +75,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rawconfessions.com",
-                "www.theburningplatform.com"
+                "vidmax.com",
+                "www.rawconfessions.com"
             ]
         },
         {
             "rule": "adskeeper\\.com\\/i-noref\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "cm"
@@ -75,8 +97,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rawconfessions.com",
-                "www.theburningplatform.com"
+                "vidmax.com",
+                "www.rawconfessions.com"
             ]
         }
     ],
@@ -86,15 +108,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "wpushsdk.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "whizzco.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Image": 2,
+        "Image": 4,
         "Script": 4
     },
     "nameservers": [
-        "gordon.ns.cloudflare.com",
-        "fiona.ns.cloudflare.com"
+        "fiona.ns.cloudflare.com",
+        "gordon.ns.cloudflare.com"
     ]
 }

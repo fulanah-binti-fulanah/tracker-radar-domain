@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
         "ad",
         "ssl",
@@ -17,22 +17,26 @@
         {
             "rule": "sitemaji\\.com\\/ysm_ikanman\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "ad"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5a702d743ccdd15ef8e03fdbda44817edaf9a09bfa33030ea9a74962a309fc90"
+                "766770dbdf58ec569ec9cee227e669e11f562747ff4c60c6c8e429e2a6e236e2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "manhuagui.com",
+                "tw.manhuagui.com",
                 "www.manhuagui.com"
             ]
         },
@@ -44,10 +48,11 @@
                 "ssl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
+                "a736a221af11c68451960f6fd70f968edb1886c9e9c9065750a0beec942819b7",
                 "f0cd2a4c12308f3cce2af296bc46c9db54fa13f9f1cde5ac765b960b56a04ef9"
             ],
             "type": "Script",
@@ -55,6 +60,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "manhuagui.com",
+                "tw.manhuagui.com",
                 "www.manhuagui.com"
             ]
         },
@@ -67,7 +73,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ac161ea6ec6d48adf59fd988981ce9cbb1de4ad6004bea8d0f9ac30fa8c5df4a"
@@ -82,7 +88,7 @@
             ]
         },
         {
-            "rule": "sitemaji\\.com\\/ysm_jkforum\\.js",
+            "rule": "sitemaji\\.com\\/fsa\\/fsa-sdk\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -90,26 +96,24 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ae9e0663576081db87843ff34afb05136c32251067be86124ecb3884489d5389"
+                "3e36b107901af933c0d5ca53fc8d65d2c13e47de03f291bd876d1fed1ceb850e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jkforum.net",
-                "www.jkforum.net"
+                "manhuagui.com",
+                "tw.manhuagui.com"
             ]
         },
         {
-            "rule": "sitemaji\\.com\\/ypa\\/jkforum\\.js",
+            "rule": "sitemaji\\.com\\/fsa\\/fsa-core\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -117,17 +121,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9a216552b215e014d16098de220d4b23a44c359bd89420384bb060e9d387c5d4"
+                "5a15455fe3da947cc5c9c9da9c919defd4d709b3735ac080aca4eae399b35387"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jkforum.net",
-                "www.jkforum.net"
+                "manhuagui.com",
+                "tw.manhuagui.com"
             ]
         }
     ],
@@ -137,15 +141,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "aralego.com",
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "mhgui.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 8,
+        "Script": 10,
         "XHR": 3
     },
     "nameservers": [

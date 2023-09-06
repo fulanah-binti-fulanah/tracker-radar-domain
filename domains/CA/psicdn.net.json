@@ -4,16 +4,21 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "cs550162656.adn",
-        "cs95619.adn"
+        "cs95619.adn",
+        "cs95619.wpc"
     ],
     "cnames": [
         {
             "original": "consent.cmp.oath.com",
             "resolved": "cs550162656.adn.psicdn.net"
+        },
+        {
+            "original": "dlcdnrog.asus.com",
+            "resolved": "cs95619.wpc.psicdn.net"
         },
         {
             "original": "odinapi.asus.com",
@@ -31,7 +36,7 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.000807,
+            "prevalence": 0.000806,
             "cnames": [
                 {
                     "original": "consent.cmp.oath.com",
@@ -46,7 +51,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "ca.news.yahoo.com",
+                "ca.finance.yahoo.com",
                 "ca.sports.yahoo.com",
                 "finance.yahoo.com",
                 "football.fantasysports.yahoo.com",
@@ -57,7 +62,7 @@
         },
         {
             "rule": "psicdn\\.net\\/cmp\\.js",
-            "cookies": 0.00101,
+            "cookies": 0.00111,
             "fingerprinting": 1,
             "subdomains": [
                 "cs550162656.adn"
@@ -79,33 +84,33 @@
                 "cmp": {
                     "ttl": 31536003,
                     "length": 1,
-                    "prevalence": 0.0010092854259184498,
+                    "prevalence": 0.0010071507704703395,
                     "uniqueness": 0.1
                 },
                 "gpp": {
                     "ttl": 86403,
                     "length": 4,
-                    "prevalence": 0.0010092854259184498,
+                    "prevalence": 0.0010071507704703395,
                     "uniqueness": 0.1
                 },
                 "gpp_sid": {
                     "ttl": 86403,
                     "length": 2,
-                    "prevalence": 0.0010092854259184498,
+                    "prevalence": 0.0010071507704703395,
                     "uniqueness": 0.1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "ca.news.yahoo.com",
+                "ca.finance.yahoo.com",
                 "ca.sports.yahoo.com",
                 "finance.yahoo.com",
                 "football.fantasysports.yahoo.com",
                 "sports.yahoo.com",
                 "techcrunch.com",
-                "www.aol.ca",
                 "www.aol.com",
+                "www.aol.ca",
                 "www.autoblog.com",
                 "www.engadget.com"
             ]
@@ -119,7 +124,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "odinapi.asus.com",
@@ -136,29 +141,84 @@
                 "asus.com",
                 "rog.asus.com"
             ]
+        },
+        {
+            "rule": "psicdn\\.net\\/rog\\/font\\/robotocondensed-regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs95619.wpc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dlcdnrog.asus.com",
+                    "resolved": "cs95619.wpc.psicdn.net"
+                }
+            ],
+            "responseHashes": [
+                "a60e015bad6a4300527fa226a7248e9fa33aebc0e4732cdc87b42235ddd4b9be"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asus.com",
+                "rog.asus.com"
+            ]
+        },
+        {
+            "rule": "psicdn\\.net\\/rog\\/font\\/tradegothicltpro-bold\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs95619.wpc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dlcdnrog.asus.com",
+                    "resolved": "cs95619.wpc.psicdn.net"
+                }
+            ],
+            "responseHashes": [
+                "fad848ea5fbdcbacddc73844976d0c3e4c93029222ed1c6b06d9718901883797"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asus.com",
+                "rog.asus.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00111,
+    "cookies": 0.00121,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.967741935483871
+            "prevalence": 0.9761904761904762
         },
         {
             "domain": "aol.ca",
-            "prevalence": 0.03225806451612903
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
         "Script": 19,
-        "XHR": 2
+        "XHR": 2,
+        "Font": 4
     },
     "nameservers": [
-        "ns1.psicdn.net",
+        "ns4.psicdn.net",
         "ns2.psicdn.net",
-        "ns3.psicdn.net",
-        "ns4.psicdn.net"
+        "ns1.psicdn.net",
+        "ns3.psicdn.net"
     ]
 }

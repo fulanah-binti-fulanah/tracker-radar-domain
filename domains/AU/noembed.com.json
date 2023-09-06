@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -16,18 +16,42 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "cb4f8aa8d4782e78d741c6bf504a811ddae6ce97a5e9a2b734085ee14538e1e2"
+                "924f51ad17b217fb5f98a7b5126cacd699dae3472b9e709b7eb39b7d16f6af02",
+                "089b9d3c0b08c5a40a1bf713a8ab9de6ec2b409d1d5d3952294495a8cd35b8d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "koinly.io",
+                "winefolly.com",
+                "www.airwallex.com"
+            ]
+        },
+        {
+            "rule": "noembed\\.com\\/embed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1cdafb1e2a225e7adafcf0b092a3e26f43c73c3a736e837b99c52f257947866d",
+                "f08238d1170d1d409d222b7faf5b4384523022fd59a9cc487c7c3df4dbbed257"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "piaustralia.com.au",
-                "www.mountainwatch.com"
+                "www.everythingcaravans.com.au",
+                "www.honeyflow.com.au"
             ]
         }
     ],
@@ -37,15 +61,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "XHR": 2
+        "Fetch": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns-154-a.gandi.net",
-        "ns-193-b.gandi.net",
-        "ns-64-c.gandi.net"
+        "ns-64-c.gandi.net",
+        "ns-193-b.gandi.net"
     ]
 }

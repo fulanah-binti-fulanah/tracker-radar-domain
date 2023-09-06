@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "code"
+        "code",
+        "telemetry"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,11 +21,11 @@
                 "code"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "98791e2314b2fa1f701990ed53f6385471fed2de8e7ff1d163a22907f86bcaab"
+                "eaffaddd0f48738df27857990c680aac877d45a0bd8cee86e9adab342639039a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -32,29 +33,54 @@
             "exampleSites": [
                 "attwoolls.co.uk",
                 "www.cliftoncameras.co.uk",
-                "www.directstoves.com"
+                "www.directstoves.com",
+                "www.direct-fireplaces.com"
             ]
         },
         {
-            "rule": "jivosite\\.com\\/css\\/8b3986d\\/widget\\.css",
+            "rule": "jivosite\\.com\\/css\\/bfc1ea1\\/widget\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "code"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "f4b47d66653a9a127779bed839580a83f6f99eb34a7ee2e8b2eed591619333f0"
+                "7da82c76ea37bbd66ca86b6ca4aff59901e6ac930c2ace7618d2cd862ae1a9d2"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "attwoolls.co.uk",
-                "www.directstoves.com"
+                "www.cliftoncameras.co.uk",
+                "www.directstoves.com",
+                "www.direct-fireplaces.com"
+            ]
+        },
+        {
+            "rule": "jivosite\\.com\\/w",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "telemetry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "attwoolls.co.uk",
+                "www.attwoolls.co.uk"
             ]
         }
     ],
@@ -64,19 +90,20 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.75
         },
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 3,
-        "Stylesheet": 2
+        "Script": 4,
+        "Stylesheet": 4,
+        "Ping": 2
     },
     "nameservers": [
-        "ns2.edgedns.world",
-        "ns1.edgedns.world"
+        "ns1.edgedns.ru",
+        "ns2.edgedns.world"
     ]
 }

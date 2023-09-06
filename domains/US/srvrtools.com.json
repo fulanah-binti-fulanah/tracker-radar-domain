@@ -4,23 +4,55 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000677,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "srvrtools\\.com\\/t\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "83f5608c938a8c06b7dee5f9469e19790024559d0e8077a307124a7e371ec9f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amchords.com",
+                "www.amchords.com",
+                "www.bzi.ro"
+            ]
+        },
+        {
+            "rule": "srvrtools\\.com\\/c\\/e69esea8rvue68gzlo1mc\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -35,16 +67,21 @@
     "topInitiators": [
         {
             "domain": "confiant-integrations.net",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1029.awsdns-00.org",
-        "ns-855.awsdns-42.net",
         "ns-226.awsdns-28.com",
-        "ns-1555.awsdns-02.co.uk"
+        "ns-855.awsdns-42.net",
+        "ns-1555.awsdns-02.co.uk",
+        "ns-1029.awsdns-00.org"
     ]
 }

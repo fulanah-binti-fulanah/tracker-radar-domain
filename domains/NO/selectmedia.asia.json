@@ -4,46 +4,106 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "sm1"
+        "s.hb",
+        "sync.hb"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "selectmedia\\.asia\\/cdn\\/files\\/54458869-b203-4248-b9a8-ab4383fb5f45",
+            "rule": "selectmedia\\.asia\\/sync\\.html",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.hb"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3655f84f1241867fc56356ab19f3da821403a6d15a313bbc41729d67e6fe2cab"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imgur.com",
+                "worldstarhiphop.com"
+            ]
+        },
+        {
+            "rule": "selectmedia\\.asia\\/csync",
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "sm1"
+                "sync.hb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imgur.com",
+                "worldstarhiphop.com"
+            ]
+        },
+        {
+            "rule": "selectmedia\\.asia\\/csync",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync.hb"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "soccerstreams100.io",
-                "pl.soccerstreams100.io"
+                "imgur.com",
+                "worldstarhiphop.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000302,
     "topInitiators": [
         {
-            "domain": "serv-selectmedia.com",
-            "prevalence": 1
+            "domain": "d3c8j8snkzfr1n.cloudfront.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "media-lab.ai",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 2
+        "Document": 4,
+        "Image": 2
     },
     "nameservers": [
         "joan.ns.cloudflare.com",

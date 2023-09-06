@@ -4,17 +4,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
+        "api",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anbernic.com",
+                "urbanedcsupply.com"
+            ]
+        },
+        {
+            "rule": "seel\\.com\\/gateway\\/tracking-service\\/api\\/tracking-event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anbernic.com",
+                "urbanedcsupply.com"
+            ]
+        },
+        {
             "rule": "seel\\.com\\/prod\\/scripts\\/garmentory\\/1\\.0\\.0\\/marketplace-embedded\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "cdn"
@@ -50,7 +93,7 @@
                 "WebGLRenderingContext.prototype.getParameter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "dfb0acabecd3d98e1e8d194da688b5086b4397d48e167458ba93ec76be85b315"
@@ -58,9 +101,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1692825991,
+                    "ttl": -1693889807,
                     "length": 1,
-                    "prevalence": 0.00001354132813346333,
+                    "prevalence": 0.000013632707592054858,
                     "uniqueness": 0.5
                 }
             },
@@ -73,7 +116,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000341,
     "topInitiators": [
         {
             "domain": "first party",
@@ -81,12 +124,14 @@
         }
     ],
     "types": {
+        "Fetch": 2,
+        "Preflight": 2,
         "Script": 2
     },
     "nameservers": [
-        "ns-994.awsdns-60.net",
-        "ns-1814.awsdns-34.co.uk",
         "ns-1209.awsdns-23.org",
+        "ns-1814.awsdns-34.co.uk",
+        "ns-994.awsdns-60.net",
         "ns-164.awsdns-20.com"
     ]
 }

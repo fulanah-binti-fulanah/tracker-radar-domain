@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000542,
+    "prevalence": 0.0000545,
     "sites": 8,
     "subdomains": [
         "widgets",
-        "media"
+        "media",
+        "static-ui-public"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "reputation\\.com\\/lib\\/widgets\\.css",
@@ -25,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "24700c57be1788997331540578c7f9a5e0a05b3371cb8e1c551d798cfd1b77d8"
@@ -48,7 +49,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "999746ed2cd4d1ecde53327fa441785d9c54bddced6fdd1540675a63bcbf7b68",
@@ -59,9 +60,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petco.com",
+                "www.autonationusa.com",
                 "www.chefandbrewer.com",
                 "www.havertys.com",
-                "www.lookers.co.uk",
                 "www.medivet.co.uk"
             ]
         },
@@ -70,11 +71,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "widgets"
+                "widgets",
+                "static-ui-public"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0ccb81ff94ebc8b9c55a9e3ac5a768b494725d12f7eeefa174a228a1d016bedf"
@@ -84,7 +86,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petco.com",
-                "www.sutterhealth.org"
+                "www.autonationusa.com"
+            ]
+        },
+        {
+            "rule": "reputation\\.com\\/libcss\\/lib\\.2371372b\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-ui-public"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8f3ea6c53ac0abdf39a6c75bdb9168f46f48d2f08f615e8069804bf535b529aa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "associaonline.com",
+                "www.associaonline.com",
+                "www.autonationusa.com"
+            ]
+        },
+        {
+            "rule": "reputation\\.com\\/css\\/widgets\\/widgets-app\\.de3b3073\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-ui-public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24700c57be1788997331540578c7f9a5e0a05b3371cb8e1c551d798cfd1b77d8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "associaonline.com",
+                "www.autonationusa.com"
             ]
         }
     ],
@@ -94,22 +141,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9375
+            "prevalence": 0.8
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.15
         },
         {
             "domain": "trackjs.com",
-            "prevalence": 0.0625
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Stylesheet": 3,
+        "Stylesheet": 8,
         "Image": 5,
         "Font": 2
     },
     "nameservers": [
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c4.googledomains.com"
+        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c4.googledomains.com",
+        "ns-cloud-c2.googledomains.com"
     ]
 }

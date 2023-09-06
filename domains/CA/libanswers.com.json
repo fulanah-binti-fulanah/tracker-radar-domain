@@ -4,50 +4,73 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "region-ca"
+        "region-ca",
+        "chat-ca"
     ],
     "cnames": [
         {
-            "original": "contact.epl.ca",
+            "original": "unequestion.bib.umontreal.ca",
             "resolved": "region-ca.libanswers.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "libanswers\\.com\\/load_chat\\.php",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "region-ca"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "contact.epl.ca",
+                    "original": "unequestion.bib.umontreal.ca",
                     "resolved": "region-ca.libanswers.com"
                 }
             ],
             "responseHashes": [
-                "7b2ad8f4e5348c3445a18cbd732daadc9c4736b4abbd8f2684782f995fc6a546"
+                "861ba37e4f3bab35fe7f38566818ecad19e55471cec861f77321165bf614e881"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "epl.ca",
+                "umontreal.ca",
+                "www.epl.ca"
+            ]
+        },
+        {
+            "rule": "libanswers\\.com\\/widget_status",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat-ca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e8fc2ee4c6756d4123a52c0ce0ea26e8316185d6c14c9c08b179c2dde7edec10"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "umontreal.ca",
                 "www.epl.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -55,12 +78,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
+        "ns-140.awsdns-17.com",
         "ns-591.awsdns-09.net",
         "ns-1830.awsdns-36.co.uk",
-        "ns-1474.awsdns-56.org",
-        "ns-140.awsdns-17.com"
+        "ns-1474.awsdns-56.org"
     ]
 }

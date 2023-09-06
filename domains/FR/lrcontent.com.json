@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000506,
+    "prevalence": 0.000505,
     "sites": 5,
     "subdomains": [
         "auth",
@@ -30,7 +30,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "279e747cff38f395e407803cc28009a6d29d078f931691f9ec249c7412cf4ffb"
+                "6b724128d513fe8a2abe466b9eea06f1c4ec5899f4cf302a4d1963f463caa347"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,6 +41,48 @@
             ]
         },
         {
+            "rule": "lrcontent\\.com\\/ciam\\/appInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.hola.com"
+            ]
+        },
+        {
+            "rule": "lrcontent\\.com\\/ciam\\/appInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4ddbee3cd0079bd2010004e1272a0a6f07fbf6de7a3efdc04b0bc84c9e7f22e0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.hola.com"
+            ]
+        },
+        {
             "rule": "lrcontent\\.com\\/ciam\\/consent",
             "cookies": 0,
             "fingerprinting": 0,
@@ -48,8 +90,8 @@
                 "config"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -57,7 +99,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "express.co.uk",
-                "www.liverpoolecho.co.uk",
                 "www.mirror.co.uk"
             ]
         },
@@ -69,8 +110,8 @@
                 "config"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "f9b58fd40e2b3ae1a0ccbcd4369afbcb8e39073016622c550077c63e0799363f"
@@ -80,7 +121,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "express.co.uk",
-                "www.liverpoolecho.co.uk",
                 "www.mirror.co.uk"
             ]
         }
@@ -91,17 +131,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "viafoura.net",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Script": 2,
-        "Preflight": 3,
-        "Fetch": 3
+        "Preflight": 4,
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "noah.ns.cloudflare.com",

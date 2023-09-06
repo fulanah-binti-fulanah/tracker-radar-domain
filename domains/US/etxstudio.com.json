@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
-        "developer"
+        "developer",
+        "dailyup-api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,12 +21,12 @@
                 "developer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 2
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "7ae979f7117e6c94854a0fd9d719f10aa1b4e207e6916ec4f17b2f90949dbf8d"
@@ -36,8 +37,50 @@
             "exampleSites": [
                 "lefigaro.fr",
                 "www.latribune.fr",
-                "www.lindependant.fr",
+                "www.lefigaro.fr",
                 "www.midilibre.fr"
+            ]
+        },
+        {
+            "rule": "etxstudio\\.com\\/url-to-audio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dailyup-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "etxstudio\\.com\\/url-to-audio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dailyup-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e2d85ddec56af5a6cdc7ebd80a9bcfd1a95bdd24187ce631c0fc90222a3ab14"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         }
     ],
@@ -51,12 +94,14 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-273.awsdns-34.com",
         "ns-1643.awsdns-13.co.uk",
+        "ns-889.awsdns-47.net",
         "ns-1036.awsdns-01.org",
-        "ns-889.awsdns-47.net"
+        "ns-273.awsdns-34.com"
     ]
 }

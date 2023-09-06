@@ -4,20 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000136,
     "sites": 2,
-    "subdomains": [],
+    "subdomains": [
+        "event"
+    ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "secureanalytic\\.com\\/scripts\\/push\\/script\\/z0gr1nodx9",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Notification.permission": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "09d052cc433de7cd3f504b074cbbc2e7cbef45f06a53b52adf70070e4baccff0"
@@ -25,9 +30,101 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pg_utm_source": 0.000006770664066731665,
-                "pg_utm_content": 0.000006770664066731665
+                "pg_utm_source": 0.000013632707592054858,
+                "pg_utm_content": 0.000013632707592054858,
+                "pg_dts_utm_source": 0.000013632707592054858,
+                "pg_dts_utm_content": 0.000013632707592054858
             },
+            "exampleSites": [
+                "dmv.com",
+                "www.dmv.com"
+            ]
+        },
+        {
+            "rule": "secureanalytic\\.com\\/scripts\\/ext\\/script\\/z0gr1nodx9",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db5e53b027cd7c137297ad34475cfd2c4cee47710932f5e58b33034748895426"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "pg_utm_source": 0.000013632707592054858,
+                "pg_utm_content": 0.000013632707592054858,
+                "pg_dts_utm_source": 0.000013632707592054858,
+                "pg_dts_utm_content": 0.000013632707592054858
+            },
+            "exampleSites": [
+                "dmv.com",
+                "www.dmv.com"
+            ]
+        },
+        {
+            "rule": "secureanalytic\\.com\\/scripts\\/sw\\/script\\/z0gr1nodx9",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f15faf382dba45a1f9d0d18e4213729d0c5f4feecb9c6d1c72d1845e761bb20"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "pg_utm_source": 0.000013632707592054858,
+                "pg_utm_content": 0.000013632707592054858,
+                "pg_dts_utm_source": 0.000013632707592054858,
+                "pg_dts_utm_content": 0.000013632707592054858
+            },
+            "exampleSites": [
+                "dmv.com",
+                "www.dmv.com"
+            ]
+        },
+        {
+            "rule": "secureanalytic\\.com\\/register\\/event_log\\/48epy24e5x",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmv.com",
+                "www.dmv.com"
+            ]
+        },
+        {
+            "rule": "secureanalytic\\.com\\/register\\/event_log\\/48epy24e5x",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dmv.com",
                 "www.dmv.com"
@@ -44,10 +141,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Other": 4,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "erin.ns.cloudflare.com",
-        "coby.ns.cloudflare.com"
+        "coby.ns.cloudflare.com",
+        "erin.ns.cloudflare.com"
     ]
 }

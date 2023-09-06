@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "a80a9201ee101bbc3",
         "ae6b5a65c402225de"
@@ -22,6 +22,31 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a80a9201ee101bbc3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "collector.cdp.cnn.com",
+                    "resolved": "a80a9201ee101bbc3.awsglobalaccelerator.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.cnn.com"
+            ]
+        },
         {
             "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
             "cookies": 0.000301,
@@ -51,57 +76,6 @@
             ]
         },
         {
-            "rule": "awsglobalaccelerator\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a80a9201ee101bbc3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "collector.cdp.cnn.com",
-                    "resolved": "a80a9201ee101bbc3.awsglobalaccelerator.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cnn.com",
-                "edition.cnn.com",
-                "www.cnn.com"
-            ]
-        },
-        {
-            "rule": "awsglobalaccelerator\\.com\\/fr24\\.feed\\.api\\.v1\\.Feed\\/LiveFeed",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ae6b5a65c402225de"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "data-feed.flightradar24.com",
-                    "resolved": "ae6b5a65c402225de.awsglobalaccelerator.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "flightradar24.com",
-                "www.flightradar24.com"
-            ]
-        },
-        {
             "rule": "awsglobalaccelerator\\.com\\/fr24\\.feed\\.api\\.v1\\.Feed\\/LiveFeed",
             "cookies": 0,
             "fingerprinting": 0,
@@ -118,7 +92,7 @@
                 }
             ],
             "responseHashes": [
-                "465562698ace08f9014ab270860092d9275f5aa09dfdc8bef4fc6f0ebef5800f"
+                "e0eb1035afc34496a079400d274e99e3b940358dbe7b983d9e195b5e0be2270a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -131,7 +105,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "google.com",
@@ -139,13 +113,13 @@
         }
     ],
     "types": {
-        "XHR": 5,
-        "Preflight": 5
+        "Preflight": 2,
+        "XHR": 5
     },
     "nameservers": [
         "ns-1484.awsdns-57.org",
         "ns-1949.awsdns-51.co.uk",
-        "ns-409.awsdns-51.com",
-        "ns-609.awsdns-12.net"
+        "ns-609.awsdns-12.net",
+        "ns-409.awsdns-51.com"
     ]
 }

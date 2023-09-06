@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "static"
+        "static",
+        "stats"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -28,10 +29,10 @@
                 "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ae50bd49a8cabfd7aaa553343e5b0c997ede89e7031faff70869ad33fea27270"
+                "47bfda5bfe006e33f1430dce1d8d7d95c29682842899667446fcf9787a4aafee"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -40,27 +41,99 @@
                 "renogy.com",
                 "ca.renogy.com"
             ]
+        },
+        {
+            "rule": "zotabox\\.com\\/__oyosgrv\\/asset\\/script\\/jquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "619a035de7b3f415690b001ae63128f8d68cd71ecd6bbd59791a8d7fa40bdf9d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renogy.com",
+                "ca.renogy.com"
+            ]
+        },
+        {
+            "rule": "zotabox\\.com\\/api\\/1\\.0\\/event\\/multi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renogy.com",
+                "ca.renogy.com",
+                "www.petland.ca"
+            ]
+        },
+        {
+            "rule": "zotabox\\.com\\/__gwlvgn\\/asset\\/script\\/jquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "619a035de7b3f415690b001ae63128f8d68cd71ecd6bbd59791a8d7fa40bdf9d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "petland.ca",
+                "www.petland.ca"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "bolt.com",
-            "prevalence": 0.625
+            "domain": "first party",
+            "prevalence": 0.42857142857142855
         },
         {
-            "domain": "first party",
-            "prevalence": 0.25
+            "domain": "bolt.com",
+            "prevalence": 0.38095238095238093
         },
         {
             "domain": "bigcommerce.com",
-            "prevalence": 0.125
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "XHR": 3
     },
     "nameservers": [
         "aida.ns.cloudflare.com",

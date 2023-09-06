@@ -4,13 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
         "video-api.shdsvc",
+        "streamer.conibdprod",
         "shared-data"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "streamer-dj.investors.com",
+            "resolved": "streamer.conibdprod.dowjones.io"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -21,20 +27,94 @@
                 "video-api.shdsvc"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "e2efc3276bf335060b0a428cd06f1d77914c91958fc11574ddee18f84a369295",
-                "a76eb0a69546ffbee2c74a74f486aa0b3837e6c94e7e4108db60ebbf799790a7"
+                "2295502d0c15f41e2ac50b8e19432d254cf0635b245b0219e9fd9169bf630d2c",
+                "e996b5e875741dc315cedebfb9841529d41c5e63790636a5a25e8a152c514dad",
+                "2d271a89408b80afde2040230590c4fbd834ef93c81e994d8aa2e42d6bfe5112"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mansionglobal.com",
+                "marketwatch.com",
+                "wsj.com",
+                "www.mansionglobal.com",
                 "www.marketwatch.com",
                 "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/api\\/time",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.shdsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff7bf640ff34299750b88c2a04cde0be3760455391030d9f0ed350478be9e425"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/api\\/legacy\\/find-all-videos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.shdsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa04219041a0c1ae9863736c7bc2e0e4ef5ae112b5c4b507612e573f0c0ee70d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/websync\\.ashx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "streamer.conibdprod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "streamer-dj.investors.com",
+                    "resolved": "streamer.conibdprod.dowjones.io"
+                }
+            ],
+            "responseHashes": [
+                "51569b46a0b09ff7f5d18d37c1408b2138b145ff43d4bb927203cf8506bccd4e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "investors.com",
+                "www.investors.com"
             ]
         },
         {
@@ -46,7 +126,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -66,56 +146,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7dd16a53a358621dcc264a4596d61e5d9e3de599c6a0f942582e120358126166"
+                "918f36cfe1db5f50ed9ab3ad0c55bb24237a24814aacf34676a51cb6742064ea"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wsj.com",
-                "www.wsj.com"
-            ]
-        },
-        {
-            "rule": "dowjones\\.io\\/api\\/time",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api.shdsvc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e464d2a886d65857b5f29917ff8f956d36d937ef4ba87e49b0f469c5b96f2d10"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wsj.com",
-                "www.wsj.com"
-            ]
-        },
-        {
-            "rule": "dowjones\\.io\\/api\\/legacy\\/find-all-videos",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api.shdsvc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3906e60535620d448e6b5aa5f21ff3a082acce85a682d8f8946aeba4a57dc4b1"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -126,7 +162,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000682,
     "topInitiators": [
         {
             "domain": "first party",
@@ -134,14 +170,14 @@
         }
     ],
     "types": {
-        "Fetch": 7,
-        "Preflight": 2,
-        "XHR": 2
+        "Fetch": 9,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1824.awsdns-36.co.uk",
-        "ns-1288.awsdns-33.org",
         "ns-320.awsdns-40.com",
-        "ns-801.awsdns-36.net"
+        "ns-801.awsdns-36.net",
+        "ns-1288.awsdns-33.org",
+        "ns-1824.awsdns-36.co.uk"
     ]
 }

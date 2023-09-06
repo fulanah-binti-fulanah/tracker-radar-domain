@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "www"
+        "www",
+        "outlet"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,31 +24,100 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 11,
+                "Navigator.prototype.userAgent": 13,
                 "window.innerWidth": 1,
                 "window.innerHeight": 1
             },
-            "sites": 11,
-            "prevalence": 0.00111,
+            "sites": 13,
+            "prevalence": 0.00131,
             "cnames": [],
             "responseHashes": [
-                "a22b1ce795d214b8cd6ed922a45dcf7a9003bfe62fb7c66b100a206050d2b5ab"
+                "75bc6c46e55da616e6c305507e1ebf97359469bc29033d2068896b5ecdbb87bc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "renogy.com",
                 "barbecuesgalore.ca",
+                "ca.renogy.com",
                 "culturesforhealth.com",
+                "ebikebc.com",
                 "gourmetwarehouse.ca",
                 "houseofknives.ca",
                 "hush.ca",
+                "theknittingloft.ca",
                 "vinylsound.ca",
+                "www.911supply.ca",
                 "www.celestron.com",
-                "www.corlanes.com",
-                "www.trailheadpaddleshack.ca",
+                "www.fendrihan.ca",
                 "www.wineenthusiast.com"
+            ]
+        },
+        {
+            "rule": "powr\\.io\\/social-feed\\/u\\/sharethis-social-feed-63d5888f576edb001943b23c",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c9e089ed10c16d01c974437651ff775dc177ddc0d6eabbb569c9a57d34090394"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "novascotiawebcams.com",
+                "www.novascotiawebcams.com"
+            ]
+        },
+        {
+            "rule": "powr\\.io\\/social-feed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "outlet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5781689b60a866d1ed089964f854ef56c302349fd18252d690936adf90835861"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "novascotiawebcams.com",
+                "www.novascotiawebcams.com"
+            ]
+        },
+        {
+            "rule": "powr\\.io\\/social-feed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "outlet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "novascotiawebcams.com",
+                "www.novascotiawebcams.com"
             ]
         }
     ],
@@ -57,18 +127,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9
+            "prevalence": 0.6875
         },
         {
             "domain": "powrcdn.com",
-            "prevalence": 0.1
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "sharethis.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 11
+        "Script": 13,
+        "Document": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "jill.ns.cloudflare.com",
-        "major.ns.cloudflare.com"
+        "major.ns.cloudflare.com",
+        "jill.ns.cloudflare.com"
     ]
 }

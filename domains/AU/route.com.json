@@ -4,17 +4,83 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000302,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "protection-widget",
-        "shopify"
+        "bigcommerce",
+        "protection-widget"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "route\\.com\\/protect\\.core\\.js",
+            "rule": "route\\.com\\/checkout\\/routeimg\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fce5270feb8bfbcde1fecd994d48a05d186efd33ba7565d5541fba1fd835154d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megaofficesupplies.com.au",
+                "superpharmacyplus.com.au"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/checkout\\/listener\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9c292a71f2a3ed22c46d4bb592705747b4ffac3bb430ca8970e14f4946c39aee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megaofficesupplies.com.au",
+                "superpharmacyplus.com.au"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/css\\/custom\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bigcommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "92cc6ca2c255085b726fbf567aeff34df5d21951aebaef0e269b0fbad22777c2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megaofficesupplies.com.au",
+                "superpharmacyplus.com.au"
+            ]
+        },
+        {
+            "rule": "route\\.com\\/route-protection-widget\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -22,9 +88,7 @@
             ],
             "apis": {
                 "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -36,52 +100,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "labyrinthos.co",
-                "www.minimax.com.au"
-            ]
-        },
-        {
-            "rule": "route\\.com\\/v1\\/merchant-info\\/minimaxau\\.myshopify\\.com",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "shopify"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "fa55facd0af9135c01e2197ddc4cb101518f9cce6e55f72f8a09e43c6a5a4661"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "minimax.com.au",
-                "www.minimax.com.au"
+                "megaofficesupplies.com.au",
+                "superpharmacyplus.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.8
         },
         {
             "domain": "routeapp.io",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 6,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "jim.ns.cloudflare.com",
-        "grace.ns.cloudflare.com"
+        "grace.ns.cloudflare.com",
+        "jim.ns.cloudflare.com"
     ]
 }

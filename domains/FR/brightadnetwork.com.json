@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,23 +16,26 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 2,
+                "window.innerWidth": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.mimeTypes": 1,
+                "window.innerHeight": 1
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "310cd30cca469491ae7c78be617ac0791f43c8f5c35b6790ba340ad61b79cfcc"
+                "3cbd012027e3f7e1910868bd678baaf5e022346d02c64b3dcebd77796fba5a49"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fourtoutici.click",
-                "www.fourtoutici.click"
+                "www.fourtoutici.click",
+                "www.fourtoutici.pro"
             ]
         },
         {
@@ -50,7 +53,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fourtoutici.click",
-                "www.fourtoutici.click"
+                "www.fourtoutici.pro"
             ]
         }
     ],
@@ -60,11 +63,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "fourtoutici.click",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2,
+        "Script": 3,
         "Document": 2
     },
     "nameservers": [

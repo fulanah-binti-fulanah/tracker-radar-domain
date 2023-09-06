@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
-        "cfcdn"
+        "cfcdn",
+        "www",
+        "profiles"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "dc2d24d6dfa8baed1984601d832b38a5cb9cdc5546dfd418a843e87d2512dfd6"
@@ -43,8 +45,8 @@
                 "cfcdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "457000938bec270b50e9464759ef593db481b9ad844f26ad77295057d8ce80eb"
@@ -55,13 +57,100 @@
             "exampleSites": [
                 "oregonstate.edu",
                 "extension.oregonstate.edu",
+                "studentservices.ncsu.edu",
                 "www.uakron.edu"
+            ]
+        },
+        {
+            "rule": "digitalmeasures\\.com\\/services\\/self-service-reporting\\/profiles\\/api",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oregonstate.edu",
+                "extension.oregonstate.edu",
+                "www.uakron.edu"
+            ]
+        },
+        {
+            "rule": "digitalmeasures\\.com\\/services\\/self-service-reporting\\/profiles\\/api",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b8f26ea92d77d9acb01ea31348970d834b9eab2c05f69ff47944649d21d40864"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oregonstate.edu",
+                "extension.oregonstate.edu",
+                "www.uakron.edu"
+            ]
+        },
+        {
+            "rule": "digitalmeasures\\.com\\/clients\\/2cfeb85a-dd60-5a8e-ac02-f152b05d8056",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "47c1525e3ffa50b817af3137a12a76c2e61cece68599e3575bceeb4aa45fc5b3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oregonstate.edu",
+                "extension.oregonstate.edu"
+            ]
+        },
+        {
+            "rule": "digitalmeasures\\.com\\/clients\\/2cfeb85a-dd60-5a8e-ac02-f152b05d8056",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oregonstate.edu",
+                "extension.oregonstate.edu"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -70,11 +159,13 @@
     ],
     "types": {
         "Stylesheet": 3,
-        "Script": 3
+        "Script": 4,
+        "Preflight": 5,
+        "Fetch": 5
     },
     "nameservers": [
-        "ns-13.awsdns-01.com",
         "ns-840.awsdns-41.net",
+        "ns-13.awsdns-01.com",
         "ns-1630.awsdns-11.co.uk",
         "ns-1364.awsdns-42.org"
     ]

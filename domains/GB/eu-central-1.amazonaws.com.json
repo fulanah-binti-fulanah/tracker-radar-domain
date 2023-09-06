@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "fraaws-public-slb-ec53ddffde80b088.elb",
         "cognito-identity"
@@ -23,6 +23,33 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fraaws-public-slb-ec53ddffde80b088.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "chloro.trip.com",
+                    "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "826f3ccefb6fe9e43624264914fbd58de31f662840b3a16a55b679c524340115"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
             "cookies": 0.000201,
@@ -40,9 +67,9 @@
                 }
             ],
             "responseHashes": [
-                "e409c50eb306a822acb5ae815b36cc320790308b8061713278b21ca18d5734f7"
+                "826f3ccefb6fe9e43624264914fbd58de31f662840b3a16a55b679c524340115"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,37 +88,15 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "radmoretucker.co.uk",
-                "www.shadestation.co.uk"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
             "responseHashes": [
-                "c94791199fd714cddb59cfc66b852e159e5d2b7a0086c67ac9f0e09c942330f0",
-                "01ea791ff7bba2b42b41f5528be4c867cfa9d88fe98d44af47d8ef5f3e978f9d"
+                "445c9f003e5847461bbd7e23295b6034e3648e22a7c048aef7c35c8a7a9e5003"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "radmoretucker.co.uk",
-                "www.radmoretucker.co.uk",
-                "www.shadestation.co.uk"
+                "www.radmoretucker.co.uk"
             ]
         }
     ],
@@ -102,26 +107,26 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "sooqr.com",
+            "domain": "tripcdn.com",
             "prevalence": 0.6666666666666666
         },
         {
-            "domain": "tripcdn.com",
+            "domain": "sooqr.com",
             "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 5,
-        "Preflight": 2
+        "XHR": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1.amzndns.co.uk",
-        "ns1.amzndns.com",
-        "ns1.amzndns.net",
-        "ns1.amzndns.org",
-        "ns2.amzndns.co.uk",
-        "ns2.amzndns.com",
         "ns2.amzndns.net",
-        "ns2.amzndns.org"
+        "ns2.amzndns.org",
+        "ns2.amzndns.com",
+        "ns1.amzndns.co.uk",
+        "ns1.amzndns.net",
+        "ns1.amzndns.com",
+        "ns2.amzndns.co.uk",
+        "ns1.amzndns.org"
     ]
 }

@@ -7,11 +7,54 @@
     "prevalence": 0.000403,
     "sites": 4,
     "subdomains": [
+        "api",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "flip-pay\\.com\\/v1\\/access",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heavy.com",
+                "www.thedailymash.co.uk"
+            ]
+        },
+        {
+            "rule": "flip-pay\\.com\\/v1\\/access",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "974f8359360d382bac6b0b846f8b0b007069a2b2537d6400acf9115cf0cc9fad"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heavy.com",
+                "www.thedailymash.co.uk"
+            ]
+        },
         {
             "rule": "flip-pay\\.com\\/clients\\/mh\\/inm\\/13\\/flip-pay\\.js",
             "cookies": 0,
@@ -45,10 +88,12 @@
         }
     ],
     "types": {
+        "Preflight": 2,
+        "XHR": 2,
         "Script": 2
     },
     "nameservers": [
-        "bella.ns.cloudflare.com",
-        "woz.ns.cloudflare.com"
+        "woz.ns.cloudflare.com",
+        "bella.ns.cloudflare.com"
     ]
 }

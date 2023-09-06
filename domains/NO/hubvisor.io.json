@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000706,
+    "prevalence": 0.000705,
     "sites": 7,
     "subdomains": [
         "cdn",
+        "client-context",
+        "c.client-context",
         "beam"
     ],
     "cnames": [],
@@ -15,7 +17,7 @@
     "resources": [
         {
             "rule": "hubvisor\\.io\\/wrapper\\/01BYK28ENND8X5G8K0AJ2DPK9E\\/hubvisor\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000202,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -26,37 +28,101 @@
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.appName": 2,
-                "window.innerWidth": 1,
+                "window.innerWidth": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Document.cookie setter": 1,
-                "window.innerHeight": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.platform": 1
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.platform": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 1
             },
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4a88b8976550c672d886e2cf26274e8fc8c915887830159d402b534e8b969f65"
+                "72e4e55fb1002e74295540a92d2e1952ca77b9887670c2cbecb05d961b1dfeaf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592006,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.00010090817356205853,
-                    "uniqueness": 1
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 0.5
+                },
+                "_lr_retry_request": {
+                    "ttl": 3609,
+                    "length": 4,
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 0.5
+                },
+                "_lr_env_src_ats": {
+                    "ttl": 2592009,
+                    "length": 5,
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 0.5
+                },
+                "_lr_sampling_rate": {
+                    "ttl": 86413,
+                    "length": 3,
+                    "prevalence": 0.0002015519500151164,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "journaldesfemmes.fr",
-                "www.lachainemeteo.com"
+                "sante.journaldesfemmes.fr"
+            ]
+        },
+        {
+            "rule": "hubvisor\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-context"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ab95af8d851f02c7a86ee54bef27fb948d9cfbae0ea89005be3d68c1dbcfdeaf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr"
+            ]
+        },
+        {
+            "rule": "hubvisor\\.io\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c.client-context"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "6dccceeac7330d4a1da059c86519d6f19ce4ed8e34f8ace10b143adc239f54fd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr"
             ]
         },
         {
@@ -76,7 +142,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "journaldesfemmes.fr",
-                "meteofrance.com"
+                "sante.journaldesfemmes.fr"
             ]
         },
         {
@@ -129,41 +195,45 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eurosport.com",
-                "www.eurosport.no"
+                "eurosport.no",
+                "www.eurosport.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.2
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "eurosport.no",
-            "prevalence": 0.2
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "ccmbg.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "dmcdn.net",
-            "prevalence": 0.1
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
         "Script": 4,
-        "Fetch": 2,
+        "Fetch": 6,
         "Other": 2
     },
     "nameservers": [
+        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c2.googledomains.com",
         "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c3.googledomains.com"
+        "ns-cloud-c2.googledomains.com"
     ]
 }

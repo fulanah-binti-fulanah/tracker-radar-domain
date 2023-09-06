@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "i.auto-bild",
         "img.ui-portal",
+        "js.ui-portal",
         "gateway.kleinanzeigen"
     ],
     "cnames": [
@@ -22,53 +22,78 @@
             "resolved": "gateway.kleinanzeigen.de.edgekey.net"
         },
         {
-            "original": "i.auto-bild.de",
-            "resolved": "i.auto-bild.de.edgekey.net"
-        },
-        {
             "original": "img.ui-portal.de",
             "resolved": "img.ui-portal.de.edgekey.net"
+        },
+        {
+            "original": "js.ui-portal.de",
+            "resolved": "js.ui-portal.de.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "de\\.edgekey\\.net\\/ir_img\\/3\\/2\\/6\\/1\\/4\\/3\\/3\\/cc9cd75f6e6f3430\\.jpg",
+            "rule": "de\\.edgekey\\.net\\/pos-cdn\\/tracklib\\/4\\.7\\.3\\/tracklib\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i.auto-bild"
+                "img.ui-portal"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [
                 {
-                    "original": "i.auto-bild.de",
-                    "resolved": "i.auto-bild.de.edgekey.net"
+                    "original": "img.ui-portal.de",
+                    "resolved": "img.ui-portal.de.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "94c04846f7346e925718465bd3c4f6b254a84c9eec46f33504c7fc2020702360"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autobild.de",
-                "www.autobild.de"
+                "web.de",
+                "www.gmx.net"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/tamago\\/1\\.4\\.12\\/tamago\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.ui-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js.ui-portal.de",
+                    "resolved": "js.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "185b3b6794b7a741ddbbcee24dc645bb8b28ef4433e6470f8d1d0b31bc220e3c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.net"
             ]
         },
         {
             "rule": "de\\.edgekey\\.net\\/pos-cdn\\/tracklib\\/4\\.3\\.0\\/tracklib\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "img.ui-portal"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "img.ui-portal.de",
@@ -82,9 +107,117 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gmx.net",
+                "web.de",
                 "www.gmx.com",
-                "www.mail.com"
+                "www.gmx.net"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/netid\\/permission-service\\/release\\/v1\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.ui-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js.ui-portal.de",
+                    "resolved": "js.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d68b3761597c50810589121e42b397f6b5ecf80e5ffd1ec9105cd3e5a32eb66e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.net"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/netid\\/consensu\\/v2\\/latest\\/vendor-list\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js.ui-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js.ui-portal.de",
+                    "resolved": "js.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3fec0ae62ea4d7ffaf93b8b789cc5efa9534e84626c173d17e276db4ac6ac8a0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.net"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/netid\\/consensu\\/v2\\/latest\\/purposes-de\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js.ui-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js.ui-portal.de",
+                    "resolved": "js.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "21c3426e196ca8d625eb000db8fb1757bf44bc59151df03fcd1a2471fbdc9592"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.net"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/netid\\/cmp\\/assets\\/img\\/spinner\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js.ui-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js.ui-portal.de",
+                    "resolved": "js.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bb930e674501a8a860a5fe90d82b52ae5f977eced410ad4cb76cea7dfaf22a2c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.net"
             ]
         },
         {
@@ -104,7 +237,7 @@
                 }
             ],
             "responseHashes": [
-                "bd2daeb05394319a12c6b46e715e61494c07a514b0be0509daadef1c52a20cda"
+                "2ba1f5bea3ee56d2de9ac993a1a0503563cfe431778857525abcb7adddd69c33"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -117,24 +250,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000504,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9655172413793104
+            "prevalence": 0.75
         },
         {
             "domain": "uicdn.com",
-            "prevalence": 0.027586206896551724
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "classistatic.de",
-            "prevalence": 0.006896551724137931
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
+        "Script": 9,
+        "XHR": 4,
         "Image": 2,
-        "Script": 3,
         "Fetch": 2
     },
     "nameservers": []

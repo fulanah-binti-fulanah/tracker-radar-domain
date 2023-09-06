@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.000907,
+    "sites": 9,
     "subdomains": [
         "ws",
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +22,8 @@
                 "ws"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000706,
+            "sites": 6,
+            "prevalence": 0.000605,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -30,80 +31,113 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bakerenogkokken.no",
+                "www.follestad.no",
                 "www.kitchentime.no",
+                "www.maxgaming.com",
                 "www.maxgaming.no",
-                "www.odla.nu",
-                "www.oscarjacobson.com",
-                "www.plantasjen.no",
-                "www.zoo.no"
+                "www.plantasjen.no"
             ]
         },
         {
             "rule": "depict\\.ai\\/v2\\/recommend\\/products\\/general",
-            "cookies": 0.000303,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "b9e55faa52eb1120f1ff1488812c5f67a98b8c044018cc78d1a0b9d93ddea220",
-                "c3f0d362b0ec82b213bf16f2836b0530d7293c6948443bf6865e03899ac07a61"
+                "417581290de8b4751c9f9533213c1361a532d719431064c6178c61d34989b786",
+                "49669a9ea7fbfb9acef2f8677af9a96fc05559628c3e44f6b2240d79e59de9df",
+                "d96e1e006b48741ab69a6905b0bada9c8dc242e72a9d49fa4c32fa41dbf0c33c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bakerenogkokken.no",
+                "www.maxgaming.com",
                 "www.maxgaming.no",
                 "www.plantasjen.no"
             ]
         },
         {
+            "rule": "depict\\.ai\\/maxgaming\\/depict-ai\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "228e327c44ad49190fb30c21edcba4a680af7f4d28c859e7e0b713c72d1ec3bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maxgaming.com",
+                "www.maxgaming.no"
+            ]
+        },
+        {
             "rule": "depict\\.ai\\/v2\\/recommend\\/products\\/product",
-            "cookies": 0.000202,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "d8b3edc3e78c0bd67181c94ae318562189b31986f55d47df3000ff5e4129e752"
+                "f8b0077d41dc2bf0f843b21afc5fa6ebc812ee30e15552fa6c424ae7a292f467",
+                "7c19a0509671476c9e670e3cba85120f2b93e44856b2fbc2391fe7f542f9a1c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maxgaming.no",
-                "www.maxgaming.no"
+                "maxgaming.com",
+                "www.maxgaming.com",
+                "www.maxgaming.no",
+                "www.plantasjen.no"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9230769230769231
+            "prevalence": 0.9090909090909091
         },
         {
             "domain": "kitchentime.se",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "WebSocket": 7,
-        "Fetch": 5
+        "WebSocket": 6,
+        "Fetch": 8,
+        "Script": 2
     },
     "nameservers": [
-        "clayton.ns.cloudflare.com",
-        "rosa.ns.cloudflare.com"
+        "rosa.ns.cloudflare.com",
+        "clayton.ns.cloudflare.com"
     ]
 }

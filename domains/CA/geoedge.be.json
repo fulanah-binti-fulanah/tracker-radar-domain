@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00474,
-    "sites": 47,
+    "prevalence": 0.00443,
+    "sites": 44,
     "subdomains": [
         "rumcdn",
-        "wrappers",
-        "gw"
+        "gw",
+        "protect",
+        "wrappers"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -28,10 +29,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "649c937aa09a423947b473150880a77ca3c75e58c547e11d425325110e3f9420"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,7 +51,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "4ba750c2c40902859af1339e2d8bb949cfd927bb167f487f760db876cd78a511"
@@ -72,10 +73,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "72f6451a8f78fcf95fa008ba4009f4b2828180588c420cd5ce8f39cbab289662"
+                "699d9ed4ddf13db8bfecf780ea77e4b10230b46a5c32922f2fcdd3a275673795"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -86,32 +87,6 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/wrapper\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wrappers"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000606,
-            "cnames": [],
-            "responseHashes": [
-                "8265c5aec9ae3882691303cec1b6993e75b12e8071fe6710826f7fc6b5cbccdb"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bdocodex.com",
-                "picrew.me",
-                "www.budgetyourtrip.com",
-                "www.gmanetwork.com",
-                "www.indiatimes.com",
-                "www.lewrockwell.com"
-            ]
-        },
-        {
             "rule": "geoedge\\.be\\/grumi-ip\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -119,24 +94,27 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
             },
-            "sites": 7,
-            "prevalence": 0.000706,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
-                "649c937aa09a423947b473150880a77ca3c75e58c547e11d425325110e3f9420"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boats.com",
-                "wccftech.com",
-                "www.boattrader.com",
                 "www.boats.com",
+                "www.boattrader.com",
                 "www.comingsoon.net",
                 "www.jpost.com",
+                "www.motor1.com",
+                "www.rideapart.com",
                 "www.yachtworld.com"
             ]
         },
@@ -148,22 +126,22 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "97d0b063e80322e3e43c1aa36ef4ee5b7532744a095737f0d597f893983d4f14",
-                "b7ea98cf0ed340b7146193e27c1c811aeb0a5b78f71288806ebd8fcc034554b6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "7070691576caea7b8b1e798d67808c53c223b6589918a8b3f9250142cae121fe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boats.com",
-                "www.boattrader.com",
                 "www.boats.com",
+                "www.boattrader.com",
                 "www.yachtworld.com"
             ]
         },
@@ -175,15 +153,15 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "86c9b562505f16d5da92f3c2a07d5ed75a9810ae9e3835d3530b5fc694836b53",
-                "fd1725fccd87a872e8fcaf951bfd547f6b05940e114a15b089f09a822205e76b",
-                "7858b793fb2bc821b8822e72d556f372b16f6331c57371545962e69bed9af6cf"
+                "f4ccb06d6f4776440f9e7b016197349136d5c2c751645b39630a3dfeb5e4cf26",
+                "028de78dfc578696b45a2f9cc6e4ba694d148b241f527df67e03f50347eb610b",
+                "25b9dc9fa291e37487bbd5082252f9a778b7df78dcda87e151e189451a9f7425"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -197,6 +175,64 @@
             ]
         },
         {
+            "rule": "geoedge\\.be\\/api\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 18,
+            "prevalence": 0.00181,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golf.com",
+                "hiddenremote.com",
+                "insideevs.com",
+                "netflixlife.com",
+                "www.comingsoon.net",
+                "www.haaretz.com",
+                "www.jlconline.com",
+                "www.macworld.com",
+                "www.motor1.com",
+                "www.npr.org",
+                "www.pcworld.com",
+                "www.planetf1.com",
+                "www.rideapart.com",
+                "www.sherdog.com",
+                "www.techhive.com",
+                "www.techadvisor.com",
+                "www.todaysparent.com",
+                "www.yachtworld.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golf.com",
+                "www.planetf1.com"
+            ]
+        },
+        {
             "rule": "geoedge\\.be\\/88548f72-daef-4151-a115-1c124613fd1e\\/grumi-ip\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -204,22 +240,20 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "649c937aa09a423947b473150880a77ca3c75e58c547e11d425325110e3f9420"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fansided.com",
                 "hiddenremote.com",
                 "netflixlife.com",
-                "www.90min.com",
                 "www.mentalfloss.com"
             ]
         },
@@ -231,61 +265,75 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
             },
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "6ebf096ffe61b06afb0194786692febd13dbb1fa032f595bf8efa64aec221a93",
-                "fc3802cc34460d195da4133909e4f15f7a82875d64e45acdbbec9bdfd464cb3d",
-                "4df7352c3a2be329b27fdb7ec23bae72009fcb4422f3764a74c369b636ab4436"
+                "4acdd9db57d7b66a5f827c670481568bec857244035c96f20b5d6fc57a61af0c",
+                "94a946037bcbb5c3b28a410898bd41315d0eb4b89a565b453f5a04974ac1f1ae"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fansided.com",
                 "hiddenremote.com",
                 "netflixlife.com",
-                "www.90min.com",
                 "www.mentalfloss.com"
             ]
         },
         {
-            "rule": "geoedge\\.be\\/api\\/init",
+            "rule": "geoedge\\.be\\/4f7650cc-a02d-4912-81aa-4cbe6ff03114\\/grumi-ip\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "gw"
+                "rumcdn"
             ],
-            "apis": {},
-            "sites": 16,
-            "prevalence": 0.00161,
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fansided.com",
-                "fr.chatelaine.com",
-                "hiddenremote.com",
-                "netflixlife.com",
-                "torontolife.com",
-                "wccftech.com",
-                "www.boattrader.com",
-                "www.comingsoon.net",
-                "www.jlconline.com",
-                "www.jpost.com",
-                "www.mentalfloss.com",
-                "www.pcworld.com",
-                "www.planetf1.com",
-                "www.sherdog.com",
-                "www.todaysparent.com",
-                "www.yachtworld.com"
+                "insideevs.com",
+                "www.motor1.com",
+                "www.rideapart.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/4f7650cc-a02d-4912-81aa-4cbe6ff03114\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "8b60da1a266045465df8adde77689f77667c746929674fd00fb4ed8bf1fb61e3",
+                "cdea315fa7dc0beac5af3e2fbd41f447e0fe7533c867436cfd49486209013249"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "insideevs.com",
+                "www.motor1.com",
+                "www.rideapart.com"
             ]
         },
         {
@@ -296,8 +344,8 @@
                 "gw"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -307,7 +355,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "netflixlife.com",
-                "torontolife.com"
+                "www.comingsoon.net",
+                "www.planetf1.com"
             ]
         },
         {
@@ -315,11 +364,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gw"
+                "gw",
+                "protect"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -329,37 +379,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "netflixlife.com",
-                "torontolife.com",
-                "www.comingsoon.net"
+                "www.boattrader.com",
+                "www.comingsoon.net",
+                "www.jpost.com"
             ]
         },
         {
             "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi-ip\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "rumcdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "649c937aa09a423947b473150880a77ca3c75e58c547e11d425325110e3f9420"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nypost.com",
-                "pagesix.com",
-                "religionnews.com"
-            ]
-        },
-        {
-            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -367,17 +393,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6e0fa3fc62b04cccd48e6244396fda0e7b17f11955fb1941089abf5ddfaadfb6"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nypost.com",
-                "religionnews.com"
+                "pagesix.com"
             ]
         },
         {
@@ -389,7 +415,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "4ba750c2c40902859af1339e2d8bb949cfd927bb167f487f760db876cd78a511"
@@ -413,10 +439,10 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "1ad398b226953183a9f0fa67780d56aa3eadc6ff17898c48423213046101078e"
+                "4f35bbe82e33098361d849f61e45e9732b8ea4faed26f9792989fde229379e72"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -428,6 +454,75 @@
             ]
         },
         {
+            "rule": "geoedge\\.be\\/wrapper\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wrappers"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "8265c5aec9ae3882691303cec1b6993e75b12e8071fe6710826f7fc6b5cbccdb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmanetwork.com",
+                "www.lewrockwell.com",
+                "www.thefreshloaf.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/eb22baca-8600-4c9f-9593-e39b553b5cdb\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8f1bef3a2334fc7e6059213e79fec5215b3956acb21767dc782b32d942f9d8b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/rbu\\/popup\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8496667e6ca10b43d843e825b1f87efa7afc417328b26f815c1b3c5b533ec1a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.npr.org"
+            ]
+        },
+        {
             "rule": "geoedge\\.be\\/2314a8ce-c925-42d9-9e38-592f0d465726\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -435,14 +530,13 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0f7603ce523f9887ff57a914f30e7b05d53e885194a735402bb0fb9d5d8403ca"
+                "4343db19f9f7be27cf7ca3d6414bfbbccac6bfa345e5dd8a6470caf30777a01e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -455,18 +549,16 @@
         {
             "rule": "geoedge\\.be\\/f7ae3efe-f9e8-44be-8cf9-3b564afd5f4b\\/grumi\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "rumcdn"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d3d0b7db6fa3267ca5aa1c9c45aeca9f7550923e644e72135d2bdf8243b0d2cc"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -487,10 +579,10 @@
                 "Navigator.prototype.userAgent": 4
             },
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "649c937aa09a423947b473150880a77ca3c75e58c547e11d425325110e3f9420"
+                "21de32a31b934126535d48ccc684d18827d937d7e08d68cb68149a894b914d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -498,8 +590,8 @@
             "exampleSites": [
                 "macworld.com",
                 "www.pcworld.com",
-                "www.techadvisor.com",
-                "www.techhive.com"
+                "www.techhive.com",
+                "www.techadvisor.com"
             ]
         },
         {
@@ -510,24 +602,48 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "7335d1f9f3594ac237b455adff25cc1f1f34e68d446a6101438d45ea941f5d5b",
-                "9dd47aabe0ad5d92296a69ef756101d7a41402a96e013f919606082a242b79c6",
-                "e3910eb265bf272c2f28f9d412d1f93932d304d32e65b87c615b52e5ab60fb74"
+                "a255434e79e344d0dc8be4a32c2caeb8c6dc2b1ed22e01af49f8fb7a456abb20",
+                "3d3999bc67064b34c88f065d7f06fca147c41d41f29f7adbb442f9d7ec54b368"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "macworld.com",
+                "www.macworld.com",
                 "www.pcworld.com",
-                "www.techadvisor.com",
-                "www.techhive.com"
+                "www.techhive.com",
+                "www.techadvisor.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/880a45f2-0015-49d2-b38f-2d26be44ae09\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c86c3233e051ba8433db05c23a230eb5e52b93a34360bebeb1a0ce11cd262228"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "npr.org",
+                "www.npr.org"
             ]
         },
         {
@@ -541,10 +657,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6ba8814a336c9b184de017858651644ef8f39d2c42febd39c1dc20d5b6f64e4f"
+                "52bd65e8e5997f0bcbfca8f755da37711baf2a61a8bb63fb41451c66750d0b7c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -565,10 +681,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c77440e377b42c6b781f966ddb473ff9cb6514615da89d080c878e8cddf6d6c7"
+                "b69a59e2b68c9b00c6e57258305f6529c3c82e5cb75fea73e375cf6f63c6df37"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -585,54 +701,55 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.3113207547169811
+            "prevalence": 0.41284403669724773
         },
         {
             "domain": "first party",
-            "prevalence": 0.24528301886792453
-        },
-        {
-            "domain": "mblycdn.com",
-            "prevalence": 0.07547169811320754
+            "prevalence": 0.28440366972477066
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.07547169811320754
+            "prevalence": 0.08256880733944955
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.05660377358490566
+            "prevalence": 0.03669724770642202
         },
         {
-            "domain": "spotim.market",
-            "prevalence": 0.05660377358490566
-        },
-        {
-            "domain": "spot.im",
-            "prevalence": 0.03773584905660377
+            "domain": "mblycdn.com",
+            "prevalence": 0.03669724770642202
         },
         {
             "domain": "d3b02estmut877.cloudfront.net",
-            "prevalence": 0.02830188679245283
+            "prevalence": 0.027522935779816515
         },
         {
             "domain": "boatwizard.com",
-            "prevalence": 0.018867924528301886
+            "prevalence": 0.01834862385321101
+        },
+        {
+            "domain": "spot.im",
+            "prevalence": 0.01834862385321101
+        },
+        {
+            "domain": "spotim.market",
+            "prevalence": 0.01834862385321101
         },
         {
             "domain": "dtyry4ejybx0.cloudfront.net",
-            "prevalence": 0.018867924528301886
+            "prevalence": 0.01834862385321101
         }
     ],
     "types": {
-        "Script": 58,
-        "XHR": 24,
-        "Ping": 3
+        "Script": 63,
+        "XHR": 26,
+        "Ping": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1097.awsdns-09.org",
-        "ns-1611.awsdns-09.co.uk",
         "ns-189.awsdns-23.com",
-        "ns-880.awsdns-46.net"
+        "ns-1097.awsdns-09.org",
+        "ns-880.awsdns-46.net",
+        "ns-1611.awsdns-09.co.uk"
     ]
 }

@@ -4,47 +4,133 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "static"
+        "static",
+        "client"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "memberstack\\.com\\/scripts\\/v1\\/memberstack\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.localStorage": 3,
                 "Navigator.prototype.product": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "ad3bcf76c6a7bb4acefa08ca0c8369edca9516350a8e9b56b11dcd2d45c32274"
+                "7a601fc34e2ae0b8d29fdd68762b15df128885248ef2709e0f2d7e07aca443df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dimensions.com",
+                "www.gardenista.com",
                 "www.mtlblog.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/app-member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dimensions.com",
+                "www.gardenista.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/app-member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "52746a68300d092dd2fcd40ab947d11d1d534de39412ad4ca378492aeeb24031"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dimensions.com",
+                "www.gardenista.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gardenista.com",
+                "www.gardenista.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gardenista.com",
+                "www.gardenista.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,7 +138,9 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "nick.ns.cloudflare.com",

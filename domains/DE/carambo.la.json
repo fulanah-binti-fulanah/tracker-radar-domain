@@ -4,14 +4,214 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "psa"
+        "route",
+        "logging",
+        "cdata",
+        "analytics",
+        "xtr",
+        "psa",
+        "media"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "carambo\\.la\\/inimage\\/getlayer",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "route"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 2,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/AddLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logging"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/external\\/CarambolaIdentityHub\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "39b5c105cd65060927aad01b113caf07f2d9fb38f23161119529f99415d06b7b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/external_js\\/prebid\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "6b115334eae697e2d8ccf6a16d4abbb2045744d9e745e658e7223cab76eafc82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageRequestGeo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a3b59cf3c15a5896f4224c367d24e647fe14e411b8024dcc87aa37783e0cf110"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageElementsRequestNew",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetAds",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xtr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "bdd50ed2c9f2731a4600b1fd24f7fe35f5cf2f922f0754137d1a6ab61fb4f76d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/getPsa",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "psa"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "abced2511042947e50ff9bbe7cd4f769630567b3c11d90f191a6ab199d305d77",
+                "d316b13d62321c9159ad054a5c37bb10abbe66c26e1387dda162ce1eeb150702"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com",
+                "www.toytowngermany.com"
+            ]
+        },
         {
             "rule": "carambo\\.la\\/getPsa",
             "cookies": 0,
@@ -24,14 +224,80 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9a31275da624f570e4b90341c798cdbdd3eb0c0daa25bfa247815fe1c3edb863"
+                "223776f0850167ff676703b38d89e76b6c5ac32f64de8739105287fc2787c776"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "thefreedictionary.com",
                 "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetLastMile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/PSA2\\/adc_fcn_canoe_728x90\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "899205118daee7192131c3347fa3495e0d34fbb16c85eabfb2eec3d5a39ffe45"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/PSA2\\/frog2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d2251a6e622d503e7cf01298e777a8259416543d37920238c1da9ece8346d0a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toytowngermany.com",
+                "www.toytowngermany.com"
             ]
         }
     ],
@@ -40,17 +306,24 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.5714285714285714
+        },
+        {
             "domain": "farlex.com",
-            "prevalence": 1
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
-        "Fetch": 2
+        "Script": 10,
+        "XHR": 3,
+        "Fetch": 9,
+        "Image": 4
     },
     "nameservers": [
+        "ns-264.awsdns-33.com",
         "ns-1002.awsdns-61.net",
         "ns-1183.awsdns-19.org",
-        "ns-1630.awsdns-11.co.uk",
-        "ns-264.awsdns-33.com"
+        "ns-1630.awsdns-11.co.uk"
     ]
 }

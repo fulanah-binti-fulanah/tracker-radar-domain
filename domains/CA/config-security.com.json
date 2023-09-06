@@ -4,15 +4,37 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "conf",
-        "api"
+        "api",
+        "conf"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "config-security\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "culturesforhealth.com",
+                "gshock.ca",
+                "hush.ca",
+                "winefolly.com"
+            ]
+        },
         {
             "rule": "config-security\\.com\\/model",
             "cookies": 0,
@@ -21,20 +43,22 @@
                 "conf"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "89442a99c2e8d147fb20ea8dbccda387fbdc395278424afc69d720eb2111fe31",
-                "12c2d66bf3476b6e294977c60626e264bee2e0f9224f650ca4b6811304a21558"
+                "a81dc9725b81f3bbb93f2727bed3b763f88529a18e4dcc80f46362617840193e",
+                "a7376ddd9596fb26ac9d078f0522c747d53107a06c4db9cd12b6ec3f736e04e8",
+                "d70620ab31b59e3f0e80347e2028a384bff6c33d0fdd4e50b3a7e3538ac6f636"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "culturesforhealth.com",
+                "gshock.ca",
                 "hush.ca",
-                "www.thehockeyshop.com"
+                "winefolly.com"
             ]
         },
         {
@@ -45,11 +69,12 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "5f9131160e1bd6634b13071e4e3428b91c9b322953bedf2eec064b949cb21fc9",
+                "14bd7cda4c5da459582818205a468a1c0d353d1ba2728a2fbede84a1aad0c2f8",
+                "4a20e601e91ebf1e1fb15128ddb7507b7b3ff7939b7f339d74c03dba55751b7a",
                 "98c4922bb641c65c7a30b7bcafdf230b9b00b6693631c56146ab25b2786ee4a3"
             ],
             "type": "XHR",
@@ -57,29 +82,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "culturesforhealth.com",
+                "gshock.ca",
                 "hush.ca",
-                "www.thehockeyshop.com"
-            ]
-        },
-        {
-            "rule": "config-security\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "culturesforhealth.com",
-                "hush.ca",
-                "www.thehockeyshop.com"
+                "winefolly.com"
             ]
         }
     ],
@@ -89,12 +94,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "minmaxify.com",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "XHR": 6,
-        "Preflight": 3
+        "Preflight": 4,
+        "XHR": 8
     },
     "nameservers": [
         "grace.ns.cloudflare.com",

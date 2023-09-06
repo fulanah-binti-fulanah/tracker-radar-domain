@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
+        "bitrefill.cname",
         "onrunning.cname",
         "wwinternational.cname"
     ],
@@ -21,6 +22,10 @@
             "resolved": "wwinternational.cname.getrockerbox.com"
         },
         {
+            "original": "rbgu1rfy.bitrefill.com",
+            "resolved": "bitrefill.cname.getrockerbox.com"
+        },
+        {
             "original": "shz64n.on-running.com",
             "resolved": "onrunning.cname.getrockerbox.com"
         }
@@ -28,17 +33,22 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "getrockerbox\\.com\\/integrations",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "getrockerbox\\.com\\/assets\\/wxyz\\.rb\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
+                "bitrefill.cname",
                 "onrunning.cname",
                 "wwinternational.cname"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
+                {
+                    "original": "rbgu1rfy.bitrefill.com",
+                    "resolved": "bitrefill.cname.getrockerbox.com"
+                },
                 {
                     "original": "shz64n.on-running.com",
                     "resolved": "onrunning.cname.getrockerbox.com"
@@ -49,15 +59,55 @@
                 }
             ],
             "responseHashes": [
-                "3a955d33c353b273213a649dfc023b0f803483a55dfe099f8f6c2c1005945dd7",
-                "a6e9e1722cffa254dc5061e3d89fc40a4faec0cd7d44819923657d498e8df822",
-                "33babc1f1c3f3df05b6c568aad93b01ff977992f43e22d0cac7bdcc5b79aafe2"
+                "c2ef2043586db9f63e87edabd4a7e2254ebd2a4585c351834a3bc6bc4dc40123",
+                "d22bb4ede2da53b7f55c1d1d7e989696d8e80d2b224a8ac435e96bc7e994d766"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "codecademy.com",
+                "bitrefill.com",
+                "www.on-running.com",
+                "www.weightwatchers.com"
+            ]
+        },
+        {
+            "rule": "getrockerbox\\.com\\/integrations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bitrefill.cname",
+                "onrunning.cname",
+                "wwinternational.cname"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "rbgu1rfy.bitrefill.com",
+                    "resolved": "bitrefill.cname.getrockerbox.com"
+                },
+                {
+                    "original": "shz64n.on-running.com",
+                    "resolved": "onrunning.cname.getrockerbox.com"
+                },
+                {
+                    "original": "rb87ymi4.weightwatchers.com",
+                    "resolved": "wwinternational.cname.getrockerbox.com"
+                }
+            ],
+            "responseHashes": [
+                "a6e9e1722cffa254dc5061e3d89fc40a4faec0cd7d44819923657d498e8df822",
+                "3a955d33c353b273213a649dfc023b0f803483a55dfe099f8f6c2c1005945dd7",
+                "bf4b48d437c9e626bc53f50f674428df128b5cb088ccea7065f2411b8abf3821"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitrefill.com",
+                "www.codecademy.com",
                 "www.on-running.com",
                 "www.usps.com",
                 "www.weightwatchers.com"
@@ -65,23 +115,25 @@
         },
         {
             "rule": "getrockerbox\\.com\\/jpuid",
-            "cookies": 0.000403,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8716a067a1e81dc34d854855dc9498c4ce80f91eba3eaa66f7cb7261daea26eb",
-                "af0a3ae8d544abdd942ea83962e172e592212838438a6057aa372269d51a1b1e",
-                "f40ccd38f3834290513e24c78bfd3ae57a05b03df05008850b5ce60cc786490b"
+                "1f1b4d3165f373d764d44be95f88894d8a20b5c35d2ae47274f3a59c13d731ca",
+                "4b24a9491898e9d42a2ac39b5ee7adf67376568529182e536ea6b1952a996ce0",
+                "9cfb33c3b8ec3f5d83f3c1fe09403d4aec3d929d0af8606de280af47cd3964a1",
+                "60c62974cee5626800222b95df2965e2c745ca9c4bdeb4cc094aba1e389badfe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "codecademy.com",
+                "bitrefill.com",
+                "www.codecademy.com",
                 "www.on-running.com",
                 "www.usps.com",
                 "www.weightwatchers.com"
@@ -89,16 +141,21 @@
         },
         {
             "rule": "getrockerbox\\.com\\/v2\\/rb",
-            "cookies": 0.000403,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
+                "bitrefill.cname",
                 "onrunning.cname",
                 "wwinternational.cname"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
+                {
+                    "original": "rbgu1rfy.bitrefill.com",
+                    "resolved": "bitrefill.cname.getrockerbox.com"
+                },
                 {
                     "original": "shz64n.on-running.com",
                     "resolved": "onrunning.cname.getrockerbox.com"
@@ -114,46 +171,14 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rbuid": 0.00020126798832645668,
-                "ajs_user_id": 0.00010063399416322834,
-                "IR_gbd": 0.00010063399416322834
+                "rbuid": 0.0003014166582939817,
+                "IR_gbd": 0.00010047221943132724
             },
             "exampleSites": [
-                "codecademy.com",
+                "bitrefill.com",
+                "www.bitrefill.com",
                 "www.codecademy.com",
                 "www.on-running.com",
-                "www.weightwatchers.com"
-            ]
-        },
-        {
-            "rule": "getrockerbox\\.com\\/assets\\/wxyz\\.rb\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "onrunning.cname",
-                "wwinternational.cname"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "shz64n.on-running.com",
-                    "resolved": "onrunning.cname.getrockerbox.com"
-                },
-                {
-                    "original": "rb87ymi4.weightwatchers.com",
-                    "resolved": "wwinternational.cname.getrockerbox.com"
-                }
-            ],
-            "responseHashes": [
-                "d22bb4ede2da53b7f55c1d1d7e989696d8e80d2b224a8ac435e96bc7e994d766"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "on-running.com",
                 "www.weightwatchers.com"
             ]
         },
@@ -170,7 +195,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rbuid": 0.00020126798832645668
+                "rbuid": 0.0002009444388626545
             },
             "exampleSites": [
                 "usps.com",
@@ -180,32 +205,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000502,
     "topInitiators": [
         {
-            "domain": "segment.com",
-            "prevalence": 0.3
-        },
-        {
             "domain": "getrockerbox.com",
-            "prevalence": 0.3
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.2
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.1
+            "prevalence": 0.4
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1
+            "prevalence": 0.2
+        },
+        {
+            "domain": "segment.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Script": 10,
-        "Image": 6
+        "Script": 13,
+        "Image": 7
     },
     "nameservers": [
         "brad.ns.cloudflare.com",

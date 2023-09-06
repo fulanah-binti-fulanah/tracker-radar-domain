@@ -18,6 +18,30 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "cbsi\\.com\\/dist\\/optanon-v1\\.1\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-cmp.isgprivacy"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "81da2aeb4b437b965aa2e486c07dcfb6ec91bc08bb75cc79d1cb77e5801413f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.showtime.com"
+            ]
+        },
+        {
             "rule": "cbsi\\.com\\/cps\\/shamanNotifier\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -39,7 +63,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "paramountplus.com",
-                "www.southparkstudios.com"
+                "www.showtime.com"
             ]
         }
     ],
@@ -49,15 +73,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "southparkstudios.nu",
-            "prevalence": 0.5
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
         "dns1.p09.nsone.net",

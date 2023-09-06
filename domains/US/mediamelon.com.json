@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
-        "beacons"
+        "beacons",
+        "register"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,8 @@
                 "beacons"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -30,6 +31,7 @@
             "exampleSites": [
                 "globalgrind.com",
                 "hiphopwired.com",
+                "newsone.com",
                 "of.tv"
             ]
         },
@@ -41,8 +43,8 @@
                 "beacons"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "a12b7cb43c9d9134b5bb1b35e9096b66775d9e92e7611d1cc92b02edd6782a87"
@@ -53,7 +55,30 @@
             "exampleSites": [
                 "globalgrind.com",
                 "hiphopwired.com",
+                "newsone.com",
                 "of.tv"
+            ]
+        },
+        {
+            "rule": "mediamelon\\.com\\/mm-apis\\/register\\/6882644510",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "register"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d38838765ff699f018d8e0a728f87e1f93ba89f8e4c0c946028bb84ba6b5d293"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hughhewitt.com",
+                "thecharliekirkshow.com"
             ]
         }
     ],
@@ -63,12 +88,16 @@
     "topInitiators": [
         {
             "domain": "mediamelon-builds.s3.amazonaws.com",
-            "prevalence": 1
+            "prevalence": 0.7857142857142857
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.21428571428571427
         }
     ],
     "types": {
-        "Preflight": 3,
-        "XHR": 3
+        "Preflight": 4,
+        "XHR": 6
     },
     "nameservers": [
         "ns38.domaincontrol.com",

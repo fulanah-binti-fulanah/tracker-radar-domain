@@ -18,6 +18,30 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "servedby-buysellads\\.com\\/monetization\\.it\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "m"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "27e174e9d1c3874094075ee70dff3b66ec1504d51d7444e6a175c8981699c66a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonarsource.com",
+                "www.sonarsource.com"
+            ]
+        },
+        {
             "rule": "servedby-buysellads\\.com\\/monetization\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -26,10 +50,10 @@
             ],
             "apis": {
                 "Document.cookie getter": 6,
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "07660b972cfa44d1e6daf4ff7a73c834ed25f16a648fca77a14b7c7bcfc1d274"
@@ -39,13 +63,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fontawesome.com",
+                "medevel.com",
                 "nascompares.com",
                 "ruby-doc.org",
                 "vitux.com",
                 "www.coingecko.com",
-                "www.howtoforge.com",
-                "www.onlinegdb.com",
-                "www.pewpewtactical.com"
+                "www.howtoforge.com"
             ]
         }
     ],
@@ -55,7 +78,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "cookiebot.com",
@@ -64,14 +91,10 @@
         {
             "domain": "cookiebot.eu",
             "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 9
     },
     "nameservers": [
         "dns3.easydns.org",

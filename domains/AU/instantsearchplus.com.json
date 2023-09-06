@@ -4,15 +4,40 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "shopify",
         "magento",
         "bigcommerce"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "instantsearchplus\\.com\\/js\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "shopify"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7c1bd2ef545339ff99aa00b38164607bf58efe65ff0ea6cbdb5ef85929501fbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "petalandpup.com.au",
+                "www.nutritionwarehouse.com.au"
+            ]
+        },
         {
             "rule": "instantsearchplus\\.com\\/js\\/acp-magento\\.js",
             "cookies": 0,
@@ -28,7 +53,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ce562aa37c7cd0d08e6068c4ff91e1d62399b2b31c515c985339d601dae2c891"
+                "7c1bd2ef545339ff99aa00b38164607bf58efe65ff0ea6cbdb5ef85929501fbe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -49,7 +74,7 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
         "ns-453.awsdns-56.com",

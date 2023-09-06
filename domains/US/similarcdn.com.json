@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
-        "site-images"
+        "site-images",
+        "static-us-east-1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,11 +22,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "735ef8bbc5d981117324d481503d4da5bb4dbeb325f3ad4a042df0f93cfac597",
-                "033d8a64595eed206453b608d645f8ae012acfe637aad7776dde583c52b3ce16"
+                "dbb7218d98d9087ad5f4686b9aa2c9c8c370da9274ec7c21f80c75c20aa0bfae",
+                "a3807cb0101bc10125fa8c9fc5480b5d16cdc829cfa8d98c9599f3b09e08f6da"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -35,11 +36,36 @@
                 "www.similarsites.com",
                 "www.similarweb.com"
             ]
+        },
+        {
+            "rule": "similarcdn\\.com\\/build\\/20230903\\.master\\.4602d69\\/dist\\/scripts\\/lite-app\\/client\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-us-east-1"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f5339032166c1d9548756a934aeab0ad0e5bc7e0f702934f5a3c038b2bd9875"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "similarweb.com",
+                "www.similarweb.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -47,11 +73,12 @@
         }
     ],
     "types": {
-        "Image": 3
+        "Image": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns-2019.awsdns-60.co.uk",
         "ns-1330.awsdns-38.org",
+        "ns-2019.awsdns-60.co.uk",
         "ns-933.awsdns-52.net",
         "ns-341.awsdns-42.com"
     ]

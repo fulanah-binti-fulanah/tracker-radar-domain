@@ -4,31 +4,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
+        "edco-sh",
+        "rodswsternccaas",
         "freetime"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "mycontactcenter\\.net\\/chatex\\/script\\/chat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edco-sh",
+                "rodswsternccaas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c52f6e3fb0197188377bfee9c9577bf95a0144444208395e064a8162bd83b7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edcodisposal.com",
+                "www.rods.com"
+            ]
+        },
+        {
             "rule": "mycontactcenter\\.net\\/chatex\\/manage",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "edco-sh",
+                "rodswsternccaas",
                 "freetime"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "voordeeluitjes.nl",
+                "edcodisposal.com",
+                "www.rods.com",
                 "www.voordeeluitjes.nl"
             ]
         }
@@ -39,15 +67,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "serverdata.net",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Document": 2
+        "Script": 2,
+        "Document": 3
     },
     "nameservers": [
-        "ns-1036.awsdns-01.org",
         "ns-754.awsdns-30.net",
+        "ns-1036.awsdns-01.org",
         "ns-1910.awsdns-46.co.uk",
         "ns-197.awsdns-24.com"
     ]

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
+    "prevalence": 0.000806,
+    "sites": 8,
     "subdomains": [
         "s",
         "i",
@@ -23,8 +23,8 @@
                 "s"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
                 "9e85759d30a414d1de4440413ee83aaa9913b40f26a706ccf4799ad8686ec4ff"
@@ -36,8 +36,11 @@
                 "brp.com",
                 "www.dyson.com",
                 "www.dysoncanada.ca",
+                "www.games-workshop.com",
                 "www.henrys.com",
-                "www.sea-doo.com"
+                "www.sea-doo.com",
+                "www.selfridges.com",
+                "www.thebodyshop.com"
             ]
         },
         {
@@ -48,11 +51,11 @@
                 "s"
             ],
             "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 5
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 6
             },
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [],
             "responseHashes": [
                 "1fd264d67637e3f2de02f9560747f1dbfd7ae4d3d51607b09e2ce3adc73077c9"
@@ -64,8 +67,11 @@
                 "brp.com",
                 "www.dyson.com",
                 "www.dysoncanada.ca",
+                "www.games-workshop.com",
                 "www.henrys.com",
-                "www.sea-doo.com"
+                "www.sea-doo.com",
+                "www.selfridges.com",
+                "www.thebodyshop.com"
             ]
         },
         {
@@ -76,8 +82,8 @@
                 "i"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -89,6 +95,7 @@
                 "brp.com",
                 "www.dyson.com",
                 "www.dysoncanada.ca",
+                "www.games-workshop.com",
                 "www.henrys.com",
                 "www.sea-doo.com"
             ]
@@ -114,10 +121,10 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4e80684e8b84c7b505cd84e35e6a821c1a9446172b2a324e0fe0b5d74831ee58"
+                "d71fdfb9ab990cb001e73aa328b63788bdaee349bc0a05caeb36d058f087822a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -136,7 +143,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -156,7 +163,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -166,7 +173,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dyson.com",
-                "www.dysoncanada.ca"
+                "www.games-workshop.com"
+            ]
+        },
+        {
+            "rule": "salecycle\\.com\\/error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "selfridges.com",
+                "www.thebodyshop.com"
             ]
         }
     ],
@@ -176,28 +205,36 @@
     "topInitiators": [
         {
             "domain": "d16fk4ms6rqz1v.cloudfront.net",
-            "prevalence": 0.375
-        },
-        {
-            "domain": "dysoncanada.ca",
-            "prevalence": 0.3125
+            "prevalence": 0.34782608695652173
         },
         {
             "domain": "first party",
-            "prevalence": 0.3125
+            "prevalence": 0.34782608695652173
+        },
+        {
+            "domain": "dysoncanada.ca",
+            "prevalence": 0.21739130434782608
+        },
+        {
+            "domain": "cookiepro.com",
+            "prevalence": 0.043478260869565216
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.043478260869565216
         }
     ],
     "types": {
-        "Document": 5,
-        "Script": 7,
-        "Ping": 5,
+        "Document": 8,
+        "Script": 10,
+        "Ping": 8,
         "WebSocket": 2,
         "XHR": 2
     },
     "nameservers": [
         "ns-91.awsdns-11.com",
-        "ns-616.awsdns-13.net",
         "ns-1560.awsdns-03.co.uk",
+        "ns-616.awsdns-13.net",
         "ns-1440.awsdns-52.org"
     ]
 }

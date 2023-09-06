@@ -14,12 +14,12 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "firstimpression\\.io\\/fi_client\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "ecdn"
             ],
@@ -29,14 +29,14 @@
                 "Date.prototype.getTime": 3,
                 "window.innerHeight": 3,
                 "window.innerWidth": 3,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 3,
             "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "7eb80265f5f0ea10f72e7c0efcf86739683869c42ddb22ab1130b8178f825ea4",
-                "be05f1ab56d0b6c460350672aff9048406e1a082f7a64c1ade48f8daf4a70ab4"
+                "2604634eeb8f486db6aa49b17fc983d11180c9046d5a6dbdf981913fdd63d211"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,12 +44,12 @@
             "exampleSites": [
                 "archdaily.com",
                 "www.bleepingcomputer.com",
-                "www.onthemarket.com"
+                "www.haaretz.com"
             ]
         },
         {
             "rule": "firstimpression\\.io\\/delivery\\/spc_fi\\.php",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
@@ -59,42 +59,105 @@
             "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "e26003223426374bf69a1ed64163ac9dea868a9c8122d1e5df8e2272b8e47b6a",
-                "29ebdf16218c3118307559cef8560fab112f03b4a78f83e754defd51c6ed9058"
+                "aaeca35bc81d4fb71dd91c46630fc0158593378d43f8d592a248736baf0f5e64",
+                "570bf006d3d3d9ce65dab6f57482fc93467c60a0411f255900890cc02be87974"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020134903855834087
+                "lotame_domain_check": 0.0002013693113169553
             },
             "exampleSites": [
                 "archdaily.com",
                 "www.bleepingcomputer.com",
-                "www.onthemarket.com"
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/static\\/js\\/prebidamp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ecdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d75469cc2ac7f959e2c765c2dccc9884c09457cc3f1c9c17457d195593f76744"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/delivery\\/lg\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.haaretz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.4
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "domain": "geoedge.be",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 3,
-        "XHR": 3
+        "Script": 5,
+        "XHR": 3,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-1564.awsdns-03.co.uk",
-        "ns-711.awsdns-24.net",
         "ns-303.awsdns-37.com",
-        "ns-1137.awsdns-14.org"
+        "ns-711.awsdns-24.net",
+        "ns-1137.awsdns-14.org",
+        "ns-1564.awsdns-03.co.uk"
     ]
 }

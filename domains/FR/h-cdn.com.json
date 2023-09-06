@@ -10,35 +10,65 @@
     "prevalence": 0.000202,
     "sites": 2,
     "subdomains": [
-        "player"
+        "player",
+        "zagent4",
+        "zagent1912"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "h-cdn\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "player"
             ],
             "apis": {
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "window.sessionStorage": 1,
+                "MediaSource.isTypeSupported": 1,
+                "Navigator.prototype.connection": 1
             },
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "932775c9f624bc134c59e7beba7c7ab24ef0b5d32ba24b5ebb20ed05bd02382e"
+                "62848e07a8cbe674b5cdcfa0e4ca33bfd295c02e65dd6ad735d9b190cbe46407"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sportschau.de",
-                "www.sportschau.de",
-                "www.tagesschau.de"
+                "tagesschau.de",
+                "www.tuttosport.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/cmd\\/get_geoip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zagent4",
+                "zagent1912"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4f18d38cdec1b936481639976359711149fc9694ea74886d7c7584f082b9c9d6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tuttosport.com",
+                "www.tuttosport.com"
             ]
         }
     ],
@@ -52,12 +82,13 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-43.awsdns-05.com",
-        "ns-661.awsdns-18.net",
         "ns-1554.awsdns-02.co.uk",
-        "ns-1405.awsdns-47.org"
+        "ns-661.awsdns-18.net",
+        "ns-1405.awsdns-47.org",
+        "ns-43.awsdns-05.com"
     ]
 }

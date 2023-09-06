@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "counter"
+        "counter",
+        "apv-static"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,13 +24,36 @@
                 "counter"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpin.de",
+                "www.alpin.de",
+                "www.usopen.org"
+            ]
+        },
+        {
+            "rule": "tldw\\.me\\/videos\\/v-0ccbc6a5-a0c4-4bd2-3044238-8364-0645dee9c195-s0\\.0-8\\.0tvs\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7a39d8e7a4431e872f7537038305706c8ffe77256c61428a1ccfe51b39f04df3"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -44,11 +68,16 @@
     "topInitiators": [
         {
             "domain": "minute.ly",
-            "prevalence": 1
+            "prevalence": 0.7
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 3,
+        "Media": 2
     },
     "nameservers": [
         "ray.ns.cloudflare.com",

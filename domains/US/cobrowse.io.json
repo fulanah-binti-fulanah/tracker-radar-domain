@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [
         "js",
         "api"
@@ -15,27 +15,27 @@
     "resources": [
         {
             "rule": "cobrowse\\.io\\/CobrowseIO\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "Navigator.prototype.language": 5,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
-                "Navigator.prototype.platform": 5,
-                "Navigator.prototype.languages": 5,
-                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7,
+                "Navigator.prototype.language": 7,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 7,
+                "Navigator.prototype.platform": 7,
+                "Navigator.prototype.languages": 7,
+                "Date.prototype.getTime": 5,
                 "Document.cookie setter": 2
             },
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "59c4a00a208a27a65709fd50abb9b7afcf8f18f5133b87d949c5abc12cbef237",
-                "0189489b3350e9dd88972a868b98807fe4b8af5478cd568fded48405ce3e3c40"
+                "aaa590525f3cb10c0cd0308d3ca37ee5a492fb9afb7315b345b6e6f00db7d9be",
+                "422b1b5acb1856b4e2753388bbcefe84f80eeb3b39f53e5a54fdb031c565ac53"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,9 +43,12 @@
             "exampleSites": [
                 "tiaa.org",
                 "auth.tiaa.org",
+                "theworknumber.com",
                 "www.americanstandard-us.com",
                 "www.delonghi.com",
-                "www.grohe.us"
+                "www.envelopes.com",
+                "www.grohe.us",
+                "www.tiaa.org"
             ]
         },
         {
@@ -56,8 +59,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "51b2cbb0c77c1095237c19e603599f09419e34a7880a81ac8ac42ed455d47068"
@@ -67,7 +70,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "auth.tiaa.org"
+                "auth.tiaa.org",
+                "theworknumber.com"
             ]
         },
         {
@@ -76,10 +80,11 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "83bc22b4bfe0667a819eeb4f7a3df30f6c2b60d95eab6828bc1f4df1cf935489"
@@ -89,7 +94,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "auth.tiaa.org"
+                "auth.tiaa.org",
+                "theworknumber.com"
+            ]
+        },
+        {
+            "rule": "cobrowse\\.io\\/sockets\\/1\\/ws",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theworknumber.com",
+                "www.americanstandard-us.com",
+                "www.delonghi.com",
+                "www.envelopes.com",
+                "www.grohe.us"
             ]
         },
         {
@@ -101,7 +130,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -122,11 +151,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "7f371a2dd5b7532653d0a79e7b773675d2f1cb8a76bd31777adcc4b69561eeae",
-                "dd20dec5aeab4bfe65cc29e59576275da467814939fd6e749d23bba24353de3e"
+                "391071577782afa1778e0478ee4e901d8c37006edfacc7cf8f9ac49946b61888",
+                "9978030cbc193535590d8d7d478d1477624d0f8fbf3f28e702fd01cafa8b247f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -138,56 +167,64 @@
             ]
         },
         {
-            "rule": "cobrowse\\.io\\/sockets\\/1\\/ws",
+            "rule": "cobrowse\\.io\\/api\\/1\\/devices\\/a0c186d7-351d-4df7-ad30-5097e5f136fa",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "47430e7458eb34d05f176f3b6df75ecc13f36a0383080dbdb75570604cf85d7d"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "americanstandard-us.com",
-                "www.americanstandard-us.com",
-                "www.delonghi.com",
-                "www.grohe.us"
+                "envelopes.com",
+                "www.envelopes.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000273,
     "topInitiators": [
         {
             "domain": "do5nkkzntcenb.cloudfront.net",
-            "prevalence": 0.6896551724137931
+            "prevalence": 0.5128205128205128
         },
         {
             "domain": "first party",
-            "prevalence": 0.20689655172413793
+            "prevalence": 0.3076923076923077
         },
         {
             "domain": "d2tnd5rm3qyjbv.cloudfront.net",
-            "prevalence": 0.10344827586206896
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "zdassets.com",
+            "prevalence": 0.02564102564102564
         }
     ],
     "types": {
-        "Script": 7,
-        "Document": 2,
+        "Script": 11,
+        "Document": 3,
+        "WebSocket": 5,
         "Preflight": 3,
-        "Fetch": 3,
-        "WebSocket": 4
+        "Fetch": 5
     },
     "nameservers": [
+        "ns-3.awsdns-00.com",
         "ns-1467.awsdns-55.org",
         "ns-1914.awsdns-47.co.uk",
-        "ns-521.awsdns-01.net",
-        "ns-3.awsdns-00.com"
+        "ns-521.awsdns-01.net"
     ]
 }

@@ -4,20 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
+        "gw-assets",
         "ow-shadow",
         "ow-api",
         "service.matomo.aws",
         "owedit",
-        "www",
-        "gw-assets",
         "webservices.globalweb.aws"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "assaabloy\\.com\\/s7viewers\\/html5\\/js\\/SmartCropVideoViewer\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e70327f3df7d44c50427b08e55df853d8a9a7970e6cd48126a307990962b191"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amarr.com",
+                "www.yalehome.com"
+            ]
+        },
         {
             "rule": "assaabloy\\.com\\/shadow",
             "cookies": 0,
@@ -27,7 +48,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a29ee2b15c494311c52521766e44af56a3ad2248e7a8ab465e5206463c13d288"
@@ -49,7 +70,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "903d4ca663f1d945d3e3bc54c5edcee09f0d375be6f24a68fe58e4035bd51f5a"
@@ -71,23 +92,23 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.vendor": 2,
-                "Document.cookie getter": 2,
-                "window.name": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.vendor": 3,
+                "Document.cookie getter": 3,
+                "window.name": 3,
+                "NavigatorUAData.prototype.brands": 3,
+                "NavigatorUAData.prototype.platform": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6fb145f1185850a1f9937c5d5afb3260adbcef791d0a94e1c09b54aa00808982"
@@ -103,14 +124,14 @@
         },
         {
             "rule": "assaabloy\\.com\\/Other\\/Corbin%20Russwin\\/assets\\/img\\/icons\\/window-close-regular\\.svg",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "owedit"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d9030e22b7de7d79fc3852b04b26c90792dc5b79a5997a3ec0f7af7eaed20c72"
@@ -132,7 +153,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -155,11 +176,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "72953b76d761e0a96705ec30571c24b9fdef1b12a3560b514473b1595c1d665d",
-                "a99f31fc4153689f4eea20f05e21e5368703553425a1cd1ef1a9208d43323a0b"
+                "c54a250dca10b8a5c7695fbac0f6a8defba07365629055a24ef19d150d6cd6c2",
+                "e22052d7ac7989ed549f7d51b53847a81bb5df69026a6ceb2e27050b5d8a88a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -171,49 +192,88 @@
             ]
         },
         {
-            "rule": "assaabloy\\.com\\/static-content\\/www\\.yalehome\\.com\\/gw_geo_na\\/gw_geo_na_b201f7b6580903269bc399205911d54ad0b95152\\.js",
+            "rule": "assaabloy\\.com\\/matomo\\/matomo\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
-                "www"
+                "webservices.globalweb.aws"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 1
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.vendor": 3,
+                "Document.cookie getter": 3,
+                "window.name": 3,
+                "NavigatorUAData.prototype.brands": 3,
+                "NavigatorUAData.prototype.platform": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "fcfcadb668cab8b4cdc21034595b9c408cfe721761f75471cb4762751052efd3"
+                "6fb145f1185850a1f9937c5d5afb3260adbcef791d0a94e1c09b54aa00808982"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yalehome.com",
+                "hesinnovations.com",
+                "www.sargentlock.com",
                 "www.yalehome.com"
             ]
         },
         {
-            "rule": "assaabloy\\.com\\/s7viewers\\/html5\\/js\\/SmartCropVideoViewer\\.js",
+            "rule": "assaabloy\\.com\\/matomo\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gw-assets"
+                "webservices.globalweb.aws"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "1e70327f3df7d44c50427b08e55df853d8a9a7970e6cd48126a307990962b191"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hesinnovations.com",
+                "www.sargentlock.com",
+                "www.yalehome.com"
+            ]
+        },
+        {
+            "rule": "assaabloy\\.com\\/matomo\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webservices.globalweb.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3bf77e11e4f512b83865b5ea6625cec29b0e007e99a15f0a3865eb7f4942a04a",
+                "f50db70b9cf95b39c22709f5a8134499110da6a4a37881ca12dd1cb8920aab58"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yalehome.com",
+                "hesinnovations.com",
+                "www.sargentlock.com",
                 "www.yalehome.com"
             ]
         },
@@ -226,7 +286,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "903d4ca663f1d945d3e3bc54c5edcee09f0d375be6f24a68fe58e4035bd51f5a"
@@ -238,108 +298,26 @@
                 "yalehome.com",
                 "www.yalehome.com"
             ]
-        },
-        {
-            "rule": "assaabloy\\.com\\/matomo\\/matomo\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "webservices.globalweb.aws"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.vendor": 2,
-                "Document.cookie getter": 2,
-                "window.name": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6fb145f1185850a1f9937c5d5afb3260adbcef791d0a94e1c09b54aa00808982"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yalehome.com",
-                "www.yalehome.com"
-            ]
-        },
-        {
-            "rule": "assaabloy\\.com\\/matomo\\/matomo\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webservices.globalweb.aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yalehome.com",
-                "www.yalehome.com"
-            ]
-        },
-        {
-            "rule": "assaabloy\\.com\\/matomo\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webservices.globalweb.aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0f25b9a04e07eb9fc144304fcb1df17a5ea062c667a64aaab20b84b4d5c1cb27"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yalehome.com",
-                "www.yalehome.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6190476190476191
         },
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.38095238095238093
         }
     ],
     "types": {
-        "XHR": 6,
         "Script": 14,
+        "XHR": 6,
         "Image": 2,
-        "Ping": 5
+        "Ping": 6
     },
     "nameservers": [
         "dns1.cscdns.net",

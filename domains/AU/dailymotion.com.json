@@ -7,26 +7,27 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000503,
+    "prevalence": 0.000502,
     "sites": 5,
     "subdomains": [
         "geo",
         "speedtest",
-        "st.sv4"
+        "st.sv4",
+        "graphql.api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "dailymotion\\.com\\/cookie\\.js",
-            "cookies": 0.000302,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "geo"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "407c0ea74212ba3a966ae1d7cf3c8ecf68e6071c8b6194fa830e4560ec13635b"
@@ -37,6 +38,33 @@
             "exampleSites": [
                 "asiaone.com",
                 "www.cycleworld.com",
+                "www.lavuelta.es",
+                "www.scotsman.com"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/latencies\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "speedtest"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "72b2181e58d5c45800d66d36702794ca5ae5bf1fbc20f106442b7eac3191a623"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cycleworld.com",
+                "www.lavuelta.es",
                 "www.scotsman.com"
             ]
         },
@@ -49,8 +77,8 @@
                 "st.sv4"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -58,7 +86,92 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cycleworld.com",
-                "www.cycleworld.com"
+                "www.cycleworld.com",
+                "www.lavuelta.es"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/oauth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cycleworld.com",
+                "www.lavuelta.es"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/oauth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b4a2c4765ac65ebc0fe2592e639e958eb68ecb5f4ed92c994c3d9e2c44172e3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cycleworld.com",
+                "www.lavuelta.es"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "305676bc81cfde78538556d201a79eb6a7fcace5b5b5a677c9ade7586a0d2a68"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cycleworld.com",
+                "www.lavuelta.es"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cycleworld.com",
+                "www.lavuelta.es"
             ]
         }
     ],
@@ -67,27 +180,25 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000502,
     "topInitiators": [
         {
             "domain": "dmcdn.net",
-            "prevalence": 0.5
+            "prevalence": 0.5882352941176471
         },
         {
             "domain": "first party",
-            "prevalence": 0.4166666666666667
-        },
-        {
-            "domain": "sportslocalmedia.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.4117647058823529
         }
     ],
     "types": {
-        "Script": 3,
-        "WebSocket": 2
+        "Script": 7,
+        "WebSocket": 3,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
-        "b.dailymotion.com",
-        "a.dailymotion.com"
+        "a.dailymotion.com",
+        "b.dailymotion.com"
     ]
 }

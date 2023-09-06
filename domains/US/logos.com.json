@@ -7,16 +7,146 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000818,
+    "sites": 12,
     "subdomains": [
+        "www",
+        "auth",
+        "sermons",
         "bible"
     ],
-    "cnames": [],
-    "fingerprinting": 0,
+    "cnames": [
+        {
+            "original": "auth.faithlife.com",
+            "resolved": "auth.logos.com"
+        }
+    ],
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "logos\\.com\\/images\\/Corporate\\/LibronixLink_dark\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6514cbcb002ec082c7ec1d383d1c81a1ced08b4c30f0f8d5945f1e5d1c8c400b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dougwils.com",
+                "www.bennyhinn.org",
+                "www.steppesoffaith.com"
+            ]
+        },
+        {
+            "rule": "logos\\.com\\/v1\\/users\\/autosignin",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.faithlife.com",
+                    "resolved": "auth.logos.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faithlife.com",
+                "sermons.faithlife.com"
+            ]
+        },
+        {
+            "rule": "logos\\.com\\/v1\\/users\\/credentials",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.faithlife.com",
+                    "resolved": "auth.logos.com"
+                }
+            ],
+            "responseHashes": [
+                "c4903308dbc6f63985c57c51c6762aa7b619fc7bc13d35f4a0c9febab971653b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faithlife.com",
+                "sermons.faithlife.com"
+            ]
+        },
+        {
+            "rule": "logos\\.com\\/",
+            "cookies": 0.00000682,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sermons"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3a24e85746069730746cc6bd032a5aa18d9249b8348c7db9443ba71f4645f06e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faithlife.com",
+                "sermons.faithlife.com"
+            ]
+        },
+        {
             "rule": "logos\\.com\\/jsapi\\/referencetagging\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bible"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biblestudyguide.org",
+                "www.faithwriters.com",
+                "www.theologyofwork.org"
+            ]
+        },
+        {
+            "rule": "logos\\.com\\/util\\/v2\\/log",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,36 +154,52 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7ddcf6d96661c5cc13e052f505201f3eea698868c4796f9c85a9ab6f38918e1a"
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "dlv-leadlandurl": 0.000006816353796027429
+            },
             "exampleSites": [
-                "theologyofwork.org",
-                "www.theologyofwork.org"
+                "ltw.org",
+                "www.ltw.org"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5454545454545454
+        },
+        {
+            "domain": "reftagger.com",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "logos.com",
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "raygun.io",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 2
+        "Image": 5,
+        "Document": 4,
+        "Script": 5
     },
     "nameservers": [
         "ns-335.awsdns-41.com",
-        "ns-1022.awsdns-63.net",
         "ns-1086.awsdns-07.org",
-        "ns-1754.awsdns-27.co.uk"
+        "ns-1754.awsdns-27.co.uk",
+        "ns-1022.awsdns-63.net"
     ]
 }

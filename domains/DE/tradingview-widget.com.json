@@ -4,14 +4,38 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "tradingview-widget\\.com\\/embed-widget\\/market-overview\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8146555b0d6599b5c2b52852bfdcb0e592d9ba8718bc59ab5b69bce0a32be151"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bachheimer.com",
+                "www.mmnews.de"
+            ]
+        },
         {
             "rule": "tradingview-widget\\.com\\/sheriff\\/api\\/v1\\/rules\\/search",
             "cookies": 0,
@@ -20,8 +44,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -29,7 +53,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bachheimer.com",
-                "www.investopedia.com"
+                "www.investopedia.com",
+                "www.mmnews.de"
             ]
         }
     ],
@@ -43,12 +68,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Document": 2,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns-175.awsdns-21.com",
         "ns-604.awsdns-11.net",
         "ns-1258.awsdns-29.org",
+        "ns-175.awsdns-21.com",
         "ns-1992.awsdns-57.co.uk"
     ]
 }

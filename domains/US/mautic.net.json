@@ -4,14 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000682,
+    "sites": 10,
     "subdomains": [
         "sideline",
         "bsnsports",
+        "combe",
         "costa-rica-tourism"
     ],
     "cnames": [
+        {
+            "original": "go.sfcc.edu",
+            "resolved": "mautic.net"
+        },
         {
             "original": "landing-sideline.bsnsports.com",
             "resolved": "sideline.mautic.net"
@@ -29,25 +34,27 @@
     "resources": [
         {
             "rule": "mautic\\.net\\/mtc\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "sideline",
                 "bsnsports",
+                "combe",
                 "costa-rica-tourism"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.localStorage": 1
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [
                 {
                     "original": "landing.bsnsports.com",
@@ -55,35 +62,62 @@
                 },
                 {
                     "original": "your.etsu.edu",
+                    "resolved": "mautic.net"
+                },
+                {
+                    "original": "go.sfcc.edu",
                     "resolved": "mautic.net"
                 }
             ],
             "responseHashes": [
                 "dae968fdceadd8802cdab432c4f19408a12996af01c4360e748695f456cff5a3",
-                "e98cf78c0ba7e8d45de14ecd4ccdf42ea4df2df9f33002c66c38aa4b2ec1287b",
+                "4170feb3ead543b7e8e09d92dfbf6c44da7073c29e05f16fb6a923dc61c5c522",
+                "8ed9742069e94d844cffd62a023fd2803c542663b48b365258e646368b1eb742",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000006816353796027429,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bsnsports.com",
                 "www.bsnsports.com",
                 "www.etsu.edu",
+                "www.justformen.com",
+                "www.sfcc.edu",
                 "www.visitcostarica.com"
             ]
         },
         {
             "rule": "mautic\\.net\\/mtc\\/event",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "sideline",
-                "bsnsports"
+                "bsnsports",
+                "combe"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [
                 {
                     "original": "landing-sideline.bsnsports.com",
@@ -94,13 +128,13 @@
                     "resolved": "bsnsports.mautic.net"
                 },
                 {
-                    "original": "your.etsu.edu",
+                    "original": "go.sfcc.edu",
                     "resolved": "mautic.net"
                 }
             ],
             "responseHashes": [
-                "6f6a16a906d7ba9519a7797acb9af0ca594ef8058d17f14d5c7d050ee9649b25",
-                "45b151a1ccf026180325e77c35accea34c299f23735ad3754800affefcdddde2"
+                "7dece691f6e667eefafa26499dbb809f270693985efa45fd65bd99192007809f",
+                "395f43bcb37a252351e0f27d417fa959268aa8e5366113dd01eed544bb8f0a3b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -108,7 +142,8 @@
             "exampleSites": [
                 "bsnsports.com",
                 "www.bsnsports.com",
-                "www.etsu.edu"
+                "www.justformen.com",
+                "www.sfcc.edu"
             ]
         },
         {
@@ -117,11 +152,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "sideline",
-                "bsnsports"
+                "bsnsports",
+                "combe"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [
                 {
                     "original": "landing-sideline.bsnsports.com",
@@ -132,7 +168,7 @@
                     "resolved": "bsnsports.mautic.net"
                 },
                 {
-                    "original": "your.etsu.edu",
+                    "original": "go.sfcc.edu",
                     "resolved": "mautic.net"
                 }
             ],
@@ -143,84 +179,73 @@
             "exampleSites": [
                 "bsnsports.com",
                 "www.bsnsports.com",
-                "www.etsu.edu"
+                "www.justformen.com",
+                "www.sfcc.edu"
             ]
         },
         {
-            "rule": "mautic\\.net\\/dwc\\/mautic_dwc_focusItemsONLY",
-            "cookies": 0,
+            "rule": "mautic\\.net\\/mtracking\\.gif",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
-            "subdomains": [],
+            "subdomains": [
+                "sideline"
+            ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "your.etsu.edu",
+                    "original": "landing-sideline.bsnsports.com",
+                    "resolved": "sideline.mautic.net"
+                },
+                {
+                    "original": "go.sfcc.edu",
                     "resolved": "mautic.net"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "etsu.edu",
-                "www.etsu.edu"
-            ]
-        },
-        {
-            "rule": "mautic\\.net\\/dwc\\/mautic_dwc_focusItemsONLY",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "your.etsu.edu",
-                    "resolved": "mautic.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "etsu.edu",
-                "www.etsu.edu"
+                "bsnsports.com",
+                "www.sfcc.edu"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000339,
+    "cookies": 0.0000341,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5714285714285714
-        },
-        {
-            "domain": "mautic.net",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.4
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.3
+        },
+        {
+            "domain": "mautic.net",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "asisonline.org",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 5,
-        "Preflight": 5
+        "Script": 6,
+        "XHR": 4,
+        "Preflight": 4,
+        "Image": 2
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e4.googledomains.com",
-        "ns-cloud-e3.googledomains.com"
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
     ]
 }

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00553,
-    "sites": 55,
+    "prevalence": 0.00583,
+    "sites": 58,
     "subdomains": [
-        "tag"
+        "tag",
+        "ssp"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,13 +21,13 @@
                 "tag"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "c538f6ddd092129cbfe4dedaae9305932d84fae303a06102064c01ab788b941d"
+                "1786f9c6c90ef4816d622bad4aae5422bfae2bdef997ab98d8028a786fa6de30"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -34,8 +35,93 @@
             "exampleSites": [
                 "inews.co.uk",
                 "metro.co.uk",
+                "www.dailymail.co.uk",
                 "www.gbnews.com",
                 "www.newscientist.com"
+            ]
+        },
+        {
+            "rule": "wknd\\.ai\\/acuity\\/video",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonichits.com",
+                "www.deseret.com"
+            ]
+        },
+        {
+            "rule": "wknd\\.ai\\/acuity\\/video",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonichits.com",
+                "www.deseret.com"
+            ]
+        },
+        {
+            "rule": "wknd\\.ai\\/acuity\\/banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonichits.com",
+                "www.deseret.com"
+            ]
+        },
+        {
+            "rule": "wknd\\.ai\\/acuity\\/banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonichits.com",
+                "www.deseret.com"
             ]
         }
     ],
@@ -44,53 +130,55 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.2786885245901639
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2537313432835821
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.2459016393442623
+            "domain": "first party",
+            "prevalence": 0.22388059701492538
         },
         {
             "domain": "d1oykxszdrgjgl.cloudfront.net",
-            "prevalence": 0.19672131147540983
+            "prevalence": 0.14925373134328357
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.11475409836065574
+            "prevalence": 0.11940298507462686
         },
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.08196721311475409
+            "prevalence": 0.08955223880597014
+        },
+        {
+            "domain": "bounceexchange.com",
+            "prevalence": 0.05970149253731343
+        },
+        {
+            "domain": "script.ac",
+            "prevalence": 0.029850746268656716
         },
         {
             "domain": "d1je72vo6cxqo9.cloudfront.net",
-            "prevalence": 0.01639344262295082
+            "prevalence": 0.014925373134328358
         },
         {
             "domain": "ziffstatic.com",
-            "prevalence": 0.01639344262295082
+            "prevalence": 0.014925373134328358
         },
         {
             "domain": "prebidwrapper.com",
-            "prevalence": 0.01639344262295082
-        },
-        {
-            "domain": "adobedtm.com",
-            "prevalence": 0.01639344262295082
-        },
-        {
-            "domain": "mediatradecraft.com",
-            "prevalence": 0.01639344262295082
+            "prevalence": 0.014925373134328358
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 5,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
+        "ns-cloud-b3.googledomains.com",
         "ns-cloud-b2.googledomains.com",
         "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b4.googledomains.com",
-        "ns-cloud-b3.googledomains.com"
+        "ns-cloud-b4.googledomains.com"
     ]
 }

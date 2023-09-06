@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000606,
+    "prevalence": 0.000604,
     "sites": 6,
     "subdomains": [
         "consents.cuisineactuelle",
         "consents.femmeactuelle",
+        "embed-v2.francetv",
+        "live.francetvinfo",
         "static-lefigaro"
     ],
     "cnames": [
@@ -26,6 +28,14 @@
             "resolved": "consents.femmeactuelle.fr.edgekey.net"
         },
         {
+            "original": "embed.francetv.fr",
+            "resolved": "embed-v2.francetv.fr.edgekey.net"
+        },
+        {
+            "original": "live.francetvinfo.fr",
+            "resolved": "live.francetvinfo.fr.edgekey.net"
+        },
+        {
             "original": "static.lefigaro.fr",
             "resolved": "static-lefigaro.fr.edgekey.net"
         }
@@ -34,7 +44,7 @@
     "resources": [
         {
             "rule": "fr\\.edgekey\\.net\\/v2",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "consents.cuisineactuelle",
@@ -42,7 +52,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "consents.cuisineactuelle.fr",
@@ -63,6 +73,60 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/d22f40b0e158bf10ad8da4713e3f92ce",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed-v2.francetv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "embed.francetv.fr",
+                    "resolved": "embed-v2.francetv.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "10f5278de4e583bd083c620dbfde2b166fe650a6212cf98bcf1efefb28990547"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/2023\\/9\\/5\\/20\\/64f779da4bfd255f66df770b\\.PNG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5bce420b845effb0bd5cfddf521a383606459a068e7c5caaeb5effe3c5298709"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/common\\/fonts\\/SourceSansPro\\/sourcesanspro-semibold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -71,7 +135,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -96,7 +160,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -115,19 +179,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.7
+        },
+        {
+            "domain": "francetv.fr",
+            "prevalence": 0.1
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2
+            "prevalence": 0.1
+        },
+        {
+            "domain": "privacy-center.org",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Document": 2,
+        "Document": 4,
+        "Image": 2,
         "Font": 4
     },
     "nameservers": []

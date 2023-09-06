@@ -37,6 +37,30 @@
             ]
         },
         {
+            "rule": "2trk\\.info\\/aud\\/clientjs\\/ptag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a8109f49b12d61712857c0fcec9b0ea354f5257459badbb82bb0da4d41869595"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
             "rule": "2trk\\.info\\/aud\\/clientjs\\/1305\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -56,9 +80,39 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2b56d975200b9a5ffc7a6b6d6ba7600310cf659a3bcde9de1aa07879a700a741"
+                "36b9c38ef4896f4bb791ebf3afc923267762e214174de2a7d0e0e99572cb61a0"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "2trk\\.info\\/aud\\/clientjs\\/1305\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.outerHeight": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "36b9c38ef4896f4bb791ebf3afc923267762e214174de2a7d0e0e99572cb61a0"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -72,19 +126,24 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "tripcdn.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.2857142857142857
         },
         {
             "domain": "preciso.net",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Fetch": 4
     },
     "nameservers": [
-        "coleman.ns.cloudflare.com",
-        "walk.ns.cloudflare.com"
+        "walk.ns.cloudflare.com",
+        "coleman.ns.cloudflare.com"
     ]
 }

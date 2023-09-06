@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "tagdelivery",
+        "event.lib",
+        "track.api",
         "contents"
     ],
     "cnames": [],
@@ -24,13 +26,45 @@
                 "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a4f2b6c8dc910226e7cbf20230e3d474e091875c06c9149b27c188949de475ea"
+                "13147e522a37988b2e7668aa310a13ccf7e1e355e4f6dd40432c1ec1a498200c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mizuno.com",
+                "workman.jp"
+            ]
+        },
+        {
+            "rule": "visumo\\.io\\/js\\/hbn_track\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "event.lib"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "03d796fa38b5615bb3b6c2bbba58c74523f3844e1a52e3ecfce2d7e71c00da28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "vsm_session_key": {
+                    "ttl": null,
+                    "length": 73,
+                    "prevalence": 0.000013632707592054858,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mizuno.com",
@@ -57,10 +91,10 @@
                 "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "125d1e99d14906107d37f53dc8189eaaf30f934dd8a91bf5477b71d759aa8774"
+                "02e84dda7475778f19dedf4bacb17672b2c7248d18d2ad2d7c2542dec4755ab3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -71,15 +105,39 @@
             ]
         },
         {
-            "rule": "visumo\\.io\\/delivery\\/v1\\/videos",
+            "rule": "visumo\\.io\\/session",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "contents"
+                "track.api"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0ccd33d4c4901196c7b315ac4ab3653752b9ba1c396663618b248bfd6ad8757d",
+                "c874da3c2f038ba135033ec4ff942425abd1411dc4528c65e51556b3dfb5da72"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mizuno.com",
+                "jpn.mizuno.com",
+                "workman.jp"
+            ]
+        },
+        {
+            "rule": "visumo\\.io\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -100,7 +158,28 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mizuno.com",
+                "jpn.mizuno.com",
+                "workman.jp"
+            ]
+        },
+        {
+            "rule": "visumo\\.io\\/delivery\\/v1\\/videos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "contents"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "20383d4fd02a0da4b69fc0b7944b5e04edb91099d70fc69401b0bebc5cc83dcb",
@@ -118,26 +197,22 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "d1azc7p86lac4h.cloudfront.net",
-            "prevalence": 0.5
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 4,
-        "Preflight": 3,
-        "Fetch": 3
+        "Script": 6,
+        "Fetch": 6,
+        "Preflight": 6
     },
     "nameservers": [
-        "ns-1146.awsdns-15.org",
         "ns-1604.awsdns-08.co.uk",
-        "ns-534.awsdns-02.net",
-        "ns-479.awsdns-59.com"
+        "ns-1146.awsdns-15.org",
+        "ns-479.awsdns-59.com",
+        "ns-534.awsdns-02.net"
     ]
 }

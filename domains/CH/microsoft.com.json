@@ -9,16 +9,41 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
+        "wcpstatic",
         "browser.pipe.aria",
-        "edge-auth",
+        "adsdk",
         "browser.events.data"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c688d3f2135b6b51617a306a0b1a665324402a00a6bceba475881af281503ad9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "microsoft.github.io",
+                "www.minecraft.net"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -42,25 +67,31 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "rule": "microsoft\\.com\\/native-to-display\\/sdk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "edge-auth"
+                "adsdk"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "60858ac4eee78c3815d57d6ce7941b5bd338033a39d7bcb796caeb46a87f4184"
+                "26f53181978b273915caf52ede12168abd6685f9e56acbc985ed2415cfd779d6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "benzinga.com",
-                "www.salon.com"
+                "office-skill.site",
+                "www.definitions.net",
+                "www.rogerebert.com"
             ]
         },
         {
@@ -75,7 +106,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "eedc265f6f737de9f2353133e3b1ea1dd205b37811fa35a471ba890bd1766319",
+                "93140bbb29dce28dca9501b99d479326b8e63d95cd0ebc89c211a1668fe09294",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -99,20 +130,28 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7272727272727273
+            "prevalence": 0.5333333333333333
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.2
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.06666666666666667
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "XHR": 5,
-        "Script": 2
+        "Script": 5,
+        "XHR": 5
     },
     "nameservers": [
         "ns1-39.azure-dns.com",

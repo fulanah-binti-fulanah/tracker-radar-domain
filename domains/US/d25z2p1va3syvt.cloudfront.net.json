@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [],
     "cnames": [
@@ -22,12 +22,12 @@
     "resources": [
         {
             "rule": "d25z2p1va3syvt\\.cloudfront\\.net\\/api\\/tooltips",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www-api.dji.com",
@@ -35,9 +35,34 @@
                 }
             ],
             "responseHashes": [
-                "a4f3359a4133591f827f4f8bd6bf6ec439637d84ada0c11f8cc4371f123119e2"
+                "9de722114e6cce90ea3cd8294367fc76ea553136872b865a948a596f2851fc42"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dji.com",
+                "www.dji.com"
+            ]
+        },
+        {
+            "rule": "d25z2p1va3syvt\\.cloudfront\\.net\\/api\\/prophet",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www-api.dji.com",
+                    "resolved": "d25z2p1va3syvt.cloudfront.net"
+                }
+            ],
+            "responseHashes": [
+                "d736c16f643de0891039f68f87e398e64e1381858e28ba23d6393133e5939132"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,15 +75,20 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000203,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "djicdn.com",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "alicdn.com",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1257.awsdns-29.org",

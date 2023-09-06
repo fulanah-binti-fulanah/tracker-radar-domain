@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "public-api",
         "r-login",
@@ -21,26 +21,30 @@
     "resources": [
         {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
-            "cookies": 0.000202,
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "public-api"
             ],
             "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.vendor": 1,
                 "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "82d7db2beaf0bed1398411ac2509f5fb4ca0564af181a066c77bec4b835b93bb"
+                "55453ebd247510fae564fd214b6693ea2f85de95e304376b5fb0ae4f0e9e9caf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bikexchange.com",
-                "sunnysjournal.com"
+                "ourduty.group",
+                "roserambles.org"
             ]
         },
         {
@@ -52,17 +56,39 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2f022c26faec665e9d0d0be2dad65ac90bca21333494cb8374793fb9fff710f1"
+                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "massagebyclaire.com",
-                "sunnysjournal.com"
+                "roserambles.org"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/rest\\/v1\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a476545bfa0dc0e1ad34a4aa4e844816a04b1b9f3a20eb2fe590df0f4193cc7f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ourduty.group",
+                "roserambles.org"
             ]
         },
         {
@@ -74,7 +100,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "3cdb7236c8193429d85969e2f72cecdfddb889185ab09ce0f636b5b7e82bde3b"
@@ -96,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "8b72f81781b517c411e85130c07b1c3f4dc660131cc4ef163b8de4371e682179"
@@ -115,30 +141,35 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7083333333333334
+            "prevalence": 0.6470588235294118
         },
         {
             "domain": "wp.com",
-            "prevalence": 0.25
+            "prevalence": 0.29411764705882354
+        },
+        {
+            "domain": "pubmine.com",
+            "prevalence": 0.029411764705882353
         },
         {
             "domain": "videopress.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
-        "Document": 4,
+        "Document": 5,
+        "XHR": 2,
         "Image": 2,
         "Media": 2
     },
     "nameservers": [
-        "ns1.wordpress.com",
-        "ns2.wordpress.com",
         "ns3.wordpress.com",
+        "ns2.wordpress.com",
+        "ns1.wordpress.com",
         "ns4.wordpress.com"
     ]
 }

@@ -9,24 +9,70 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000607,
-    "sites": 6,
+    "prevalence": 0.000808,
+    "sites": 8,
     "subdomains": [
+        "static",
         "pixel"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "sojern\\.com\\/idsync\\/apn",
-            "cookies": 0.000506,
+            "rule": "sojern\\.com\\/cip\\/hasher\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "ded6dff29c705adb48c831fe4a652814472affd0e7164d66832b00f594573b7f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com",
+                "www.virail.fr"
+            ]
+        },
+        {
+            "rule": "sojern\\.com\\/utils\\/create_params\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3107e5779ba7aef5eb3d38abf73567905761c49a6da871adb8798425745d49db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com"
+            ]
+        },
+        {
+            "rule": "sojern\\.com\\/idSync\\/AdX",
+            "cookies": 0.000606,
             "fingerprinting": 0,
             "subdomains": [
                 "pixel"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000506,
+            "sites": 6,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
@@ -35,7 +81,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avis.com",
+                "airtransat.com",
+                "www.avis.com",
                 "www.metmuseum.org",
                 "www.moma.org",
                 "www.monnuage.fr",
@@ -43,15 +90,15 @@
             ]
         },
         {
-            "rule": "sojern\\.com\\/idSync\\/AdX",
-            "cookies": 0.000506,
+            "rule": "sojern\\.com\\/idsync\\/apn",
+            "cookies": 0.000606,
             "fingerprinting": 0,
             "subdomains": [
                 "pixel"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000506,
+            "sites": 6,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
@@ -60,7 +107,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avis.com",
+                "airtransat.com",
+                "www.avis.com",
                 "www.metmuseum.org",
                 "www.moma.org",
                 "www.monnuage.fr",
@@ -69,14 +117,14 @@
         },
         {
             "rule": "sojern\\.com\\/idsync\\/adf",
-            "cookies": 0.000202,
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -85,7 +133,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metmuseum.org",
+                "airtransat.com",
+                "www.devenirpolicier.fr",
+                "www.metmuseum.org",
                 "www.moma.org"
             ]
         }
@@ -95,27 +145,28 @@
         "Advertising"
     ],
     "performance": {},
-    "cookies": 0.000506,
+    "cookies": 0.000606,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5714285714285714
-        },
-        {
-            "domain": "mnstatic.com",
-            "prevalence": 0.14285714285714285
-        },
-        {
-            "domain": "googlesyndication.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.6
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.2
+        },
+        {
+            "domain": "adform.net",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "mnstatic.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Image": 12
+        "Script": 5,
+        "Image": 16
     },
     "nameservers": [
         "ns-cloud-a1.googledomains.com",

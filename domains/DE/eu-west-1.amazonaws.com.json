@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00202,
+    "sites": 20,
     "subdomains": [
         "carwow-photos.s3",
         "cognito-identity",
+        "q6p3fvajj5b7darbmdq5hkuhzm.appsync-api",
+        "en3iv5ytonhezdiby7tgnhqbfi.appsync-api",
         "sqs",
         "s3"
     ],
@@ -96,7 +98,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9df1da0f8e601aa30368b73481a45a555a6a27ce3abe6d809b497b106a5ce6e1"
+                "045466032c4c250eed76303613098b610b32c7cca15ee4914c1cc9cb8632cec0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -104,6 +106,27 @@
             "exampleSites": [
                 "miro.com",
                 "www.siemens.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "q6p3fvajj5b7darbmdq5hkuhzm.appsync-api",
+                "en3iv5ytonhezdiby7tgnhqbfi.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecycleverse.com",
+                "worldathletics.org"
             ]
         },
         {
@@ -118,10 +141,10 @@
             "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "61f6f8aa9b894fb533297b228c80f6bb16c6614a244c5f49e172f757f79e9ed9",
-                "4d6d55bc96f01ec282758747e130a9f6e4687e3196f1bae0c8cfb4ba66d4f1b9",
-                "92148d1785b4c9681eab7d6b4e2bf8af14ceebebadc9181f2e7fa73a45582e03",
-                "e76dfeed212f3e4c4ebf932ca0d435f781d083131f150c1e71914ba3e2ac605d"
+                "6911b4a71305024496e9099ef03f1506313521e88f5c095ae9c82e3307791459",
+                "cbe33fb16c0b63855760644efc5cd366b2c83842b26d67180bca91af818d2492",
+                "315d6f24b5c2d1714e4d87a427b9651c008a27a0316dd8c31ee317b5ae0b0086",
+                "da1148d5e492038f037735b3add5cabf90cff07cde2ae4207a77406772840214"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -187,52 +210,56 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.43333333333333335
+            "prevalence": 0.5
         },
         {
             "domain": "conative.network",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.13157894736842105
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.10526315789473684
         },
         {
             "domain": "podigee-cdn.net",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "optimizely.com",
+            "prevalence": 0.05263157894736842
         },
         {
             "domain": "d3odp2r1osuwn0.cloudfront.net",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.02631578947368421
+        },
+        {
+            "domain": "osp.live",
+            "prevalence": 0.02631578947368421
         },
         {
             "domain": "hijiffy.com",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.02631578947368421
         },
         {
             "domain": "uqd.io",
-            "prevalence": 0.03333333333333333
-        },
-        {
-            "domain": "nmo.at",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
         "Image": 4,
-        "Preflight": 2,
+        "Preflight": 4,
         "Fetch": 2,
         "XHR": 7,
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns2.amzndns.com",
-        "ns1.amzndns.org",
-        "ns1.amzndns.net",
         "ns1.amzndns.co.uk",
-        "ns2.amzndns.net",
         "ns1.amzndns.com",
+        "ns1.amzndns.net",
+        "ns1.amzndns.org",
         "ns2.amzndns.co.uk",
+        "ns2.amzndns.com",
+        "ns2.amzndns.net",
         "ns2.amzndns.org"
     ]
 }

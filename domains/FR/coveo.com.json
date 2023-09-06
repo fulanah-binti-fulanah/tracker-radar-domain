@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00152,
+    "sites": 15,
     "subdomains": [
         "static.cloud",
         "analytics.cloud",
-        "analytics-eu.cloud"
+        "analytics-eu.cloud",
+        "platform.cloud"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -46,9 +47,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "coveo_visitorId": {
-                    "ttl": 31556931,
+                    "ttl": 31556932,
                     "length": 36,
-                    "prevalence": 0.00020230629172567267,
+                    "prevalence": 0.0002020814388198444,
                     "uniqueness": 1
                 }
             },
@@ -72,7 +73,7 @@
             "cnames": [],
             "responseHashes": [
                 "8f96ddfb0fd20c7e89979956c968a0c727d398e9f9e19695007676e2210c21fa",
-                "bebf1f37ec86eecb7cbc9e6779aaa1a1fe1cdb5dbb4781693f545b6a5ce05ad5"
+                "552ff138f12408f4aca3b217b8eae9ea0cb9667db2450c8aaf9547125547c319"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -104,34 +105,76 @@
                 "help.dropbox.com",
                 "www.nespresso.com"
             ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/querySuggest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "help.salesforce.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/querySuggest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "da06bd3c79e0fff228ffba68f1afb3945df7080e47d3fc26838a9c0be1f5b1d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "help.salesforce.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000708,
+    "cookies": 0.000808,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9466666666666667
+            "prevalence": 0.9493670886075949
         },
         {
             "domain": "zdassets.com",
-            "prevalence": 0.04
+            "prevalence": 0.0379746835443038
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.013333333333333334
+            "prevalence": 0.012658227848101266
         }
     ],
     "types": {
         "Script": 2,
-        "Fetch": 3,
-        "Preflight": 3
+        "Fetch": 5,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns-412.awsdns-51.com",
-        "ns-790.awsdns-34.net",
+        "ns-1245.awsdns-27.org",
         "ns-1562.awsdns-03.co.uk",
-        "ns-1245.awsdns-27.org"
+        "ns-412.awsdns-51.com",
+        "ns-790.awsdns-34.net"
     ]
 }

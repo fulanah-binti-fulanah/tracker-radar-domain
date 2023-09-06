@@ -7,16 +7,150 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000404,
-    "sites": 4,
+    "prevalence": 0.000705,
+    "sites": 7,
     "subdomains": [
+        "static",
         "sdk",
         "events",
-        "static"
+        "sdk-canary-b"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "NavigatorUAData.prototype.platform": 5,
+                "Navigator.prototype.platform": 5,
+                "Navigator.prototype.language": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookriot.com",
+                "itsfoss.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.tnp.no"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.core\\.legacy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000605,
+            "cnames": [],
+            "responseHashes": [
+                "66931291720d7002e3be5a39a40b19141583c8e3c8f194adbf831ef1598cf5f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookriot.com",
+                "itsfoss.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.tnp.no",
+                "www.yachtingmonthly.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000705,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookriot.com",
+                "getemoji.com",
+                "itsfoss.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.tnp.no",
+                "www.yachtingmonthly.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000705,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookriot.com",
+                "getemoji.com",
+                "itsfoss.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.tnp.no",
+                "www.yachtingmonthly.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [],
+            "responseHashes": [
+                "398380129db6e1c2499355ba0bccdcfa6d22b72e7e160b275782dd69e408396e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookriot.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.tnp.no",
+                "www.yachtingmonthly.com"
+            ]
+        },
         {
             "rule": "apester\\.com\\/web-sdk\\.core\\.min\\.js",
             "cookies": 0,
@@ -37,7 +171,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d63dc43003ede04ff0dd5b030dc3dfd3278c5113ce10d9e25c04ea602bb11b0f"
+                "80b9aaf4e1f3bdea18d3e38247b501deeff0cef21517ec8a734e980362e8d85f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,52 +179,6 @@
             "exampleSites": [
                 "getemoji.com",
                 "itsfoss.com"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "getemoji.com",
-                "itsfoss.com",
-                "linuxhandbook.com",
-                "www.tnp.no"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "getemoji.com",
-                "itsfoss.com",
-                "linuxhandbook.com",
-                "www.tnp.no"
             ]
         },
         {
@@ -98,6 +186,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "sdk-canary-b",
                 "sdk"
             ],
             "apis": {},
@@ -113,79 +202,6 @@
             "exampleSites": [
                 "getemoji.com",
                 "itsfoss.com"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "NavigatorUAData.prototype.platform": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "itsfoss.com",
-                "linuxhandbook.com",
-                "www.tnp.no"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.core\\.legacy\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "7541f03a57e14a2afb670c43e3f80f802a5dc754e66fc554111b7bb4b14ac75c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "itsfoss.com",
-                "linuxhandbook.com",
-                "www.tnp.no"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "398380129db6e1c2499355ba0bccdcfa6d22b72e7e160b275782dd69e408396e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "linuxhandbook.com",
-                "www.tnp.no"
             ]
         }
     ],
@@ -195,13 +211,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 12,
-        "Preflight": 4,
-        "XHR": 4
+        "Script": 20,
+        "Preflight": 7,
+        "XHR": 7
     },
     "nameservers": [
         "ns-cloud-c1.googledomains.com",

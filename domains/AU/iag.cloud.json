@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
         "webdata"
@@ -26,10 +26,50 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "britishairways.com",
+                "www.britishairways.com"
+            ]
+        },
+        {
+            "rule": "iag\\.cloud\\/api\\/grant",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "c2f73f517bcae418913d93cd84c649f33745323a1e70daa1a69c3b083d36ff45"
+                "d90d9319320401a8dcab2e2180e585727595f83dc8bae240afa5e4035074b856"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "britishairways.com",
+                "www.britishairways.com"
+            ]
+        },
+        {
+            "rule": "iag\\.cloud\\/api\\/streams\\/webdatastream\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -70,12 +110,13 @@
         }
     ],
     "types": {
+        "Preflight": 4,
         "XHR": 4
     },
     "nameservers": [
-        "ns-852.awsdns-42.net",
         "ns-1210.awsdns-23.org",
         "ns-1823.awsdns-35.co.uk",
-        "ns-346.awsdns-43.com"
+        "ns-346.awsdns-43.com",
+        "ns-852.awsdns-42.net"
     ]
 }

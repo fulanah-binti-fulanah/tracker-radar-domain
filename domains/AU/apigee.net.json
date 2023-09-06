@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "accor-group-prod-prod",
         "cisco-dsc-prod",
@@ -128,6 +128,31 @@
             ]
         },
         {
+            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
+        {
             "rule": "apigee\\.net\\/v1\\/netid",
             "cookies": 0,
             "fingerprinting": 0,
@@ -144,9 +169,34 @@
                 }
             ],
             "responseHashes": [
-                "a4fb3ab5eb7a9587b12c126835d0ebcf1800789b939a509b96f32d71f8a4efa7"
+                "29ce155a65fea43defa9bc45177c1e9f117cfb95a00db5416089ae7bd5fa9285"
             ],
-            "type": "Script",
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cisco.com",
+                "www.cisco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/netid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cisco-dsc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dsc.cisco.com",
+                    "resolved": "cisco-dsc-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -180,83 +230,6 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/trade\\/search\\/recommendation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "trade.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/trade\\/search\\/recommendation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "bfc8406b2988e0b82db8797ceaaefafc8b9a709f592f86ef2ea6f4c024beb07e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "trade.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
             "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -273,7 +246,7 @@
                 }
             ],
             "responseHashes": [
-                "a6d589b9635fd16d29e9d339bf689176cdf26ff5f795fc95924e849cd77797e8"
+                "825d897218b3e77c91837df602247b6412706324193f57690849c64b47c7f317"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -284,7 +257,7 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
+            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -324,8 +297,33 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.com.au",
+                "www.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bgl-web-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.prod.bunnings.com.au",
+                    "resolved": "bgl-web-prod.apigee.net"
+                }
+            ],
             "responseHashes": [
-                "920962b802a8979ec1f67c3900cf8e20166b3f47be40476408c8baa64308587d"
+                "586952ea95a2afef0c6bab24d5bc9aef6adfeff4fb8aa48e71e96e40a5624f80"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -424,7 +422,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f8a18c4a9c62abb010fb1263d34600100c2bd7afcb4b64420a6e4e8d9c5bd4a9"
+                "0086cc4bba96929df25999902c5d74fb40b3cdd73a46619c12fd5837ce43d5f2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -446,7 +444,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "819d2575b51f8536e6c985e072bbd1cce0193940e51fbe420e521985e350be99"
+                "e3ab4991ecb3f4ae44c076c2f3e2cff4c9377c1d22d68f7f23d92071e85c45a8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -461,40 +459,39 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000502,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.375
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.3125
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.125
         },
         {
             "domain": "mparticle.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.125
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Preflight": 10,
-        "Fetch": 4,
-        "Script": 2,
+        "Preflight": 12,
+        "Fetch": 6,
         "Document": 2,
-        "XHR": 14
+        "XHR": 12
     },
     "nameservers": [
-        "ns-116.awsdns-14.com",
-        "ns-1441.awsdns-52.org",
         "ns-1907.awsdns-46.co.uk",
+        "ns-1441.awsdns-52.org",
+        "ns-116.awsdns-14.com",
         "ns-670.awsdns-19.net"
     ]
 }

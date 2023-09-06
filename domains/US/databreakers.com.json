@@ -4,33 +4,34 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000129,
-    "sites": 19,
+    "prevalence": 0.0000886,
+    "sites": 13,
     "subdomains": [
         "www",
         "download",
+        "us-individualizer",
+        "individualizer",
         "us-publicapi",
         "publicapi",
         "us-api",
-        "api",
-        "individualizer"
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
             "rule": "databreakers\\.com\\/cookie-maker",
-            "cookies": 0.0000271,
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "Document.cookie setter": 4
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 10,
-            "prevalence": 0.0000677,
+            "sites": 11,
+            "prevalence": 0.000075,
             "cnames": [],
             "responseHashes": [
                 "a66a4234a18b524b8faabaf4948005802ad4ce37e7ab65e9c210252be8c7657c"
@@ -40,7 +41,7 @@
                 "db_ui": {
                     "ttl": 157680000,
                     "length": 36,
-                    "prevalence": 0.00002708265626692666,
+                    "prevalence": 0.000020449061388082287,
                     "uniqueness": 1
                 }
             },
@@ -52,6 +53,7 @@
                 "www.groupon.co.uk",
                 "www.groupon.com.au",
                 "www.groupon.de",
+                "www.livingsocial.com",
                 "www.notino.co.uk",
                 "www.notino.de",
                 "www.notino.pl",
@@ -60,22 +62,23 @@
         },
         {
             "rule": "databreakers\\.com\\/clients\\/groupon_us\\/default\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "download"
             ],
             "apis": {
+                "Date.prototype.getTime": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
-                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
                 "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "window.localStorage": 2,
                 "Screen.prototype.orientation": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.getBattery": 2,
-                "window.sessionStorage": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "window.devicePixelRatio": 2,
@@ -86,23 +89,23 @@
                 "Navigator.prototype.connection": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bd6d6fba330b6785c49db4d3d65ab99ede5452fe8eec257465ebebce96e6010a"
+                "b466a6a319f5e1ca3ed3fb65f2e4687d374a986f5d766dfaff43f96cca4faeff"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "db_uicd": {
                     "ttl": 63072000,
                     "length": 36,
-                    "prevalence": 0.00001354132813346333,
+                    "prevalence": 0.000013632707592054858,
                     "uniqueness": 1
                 },
                 "db_ui": {
                     "ttl": 63072000,
                     "length": 36,
-                    "prevalence": 0.00001354132813346333,
+                    "prevalence": 0.000006816353796027429,
                     "uniqueness": 1
                 }
             },
@@ -110,6 +113,35 @@
             "exampleSites": [
                 "groupon.com",
                 "www.groupon.com"
+            ]
+        },
+        {
+            "rule": "databreakers\\.com\\/v1\\/individualizer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-individualizer",
+                "individualizer"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fca891fe25d2a781a3cba63bbf627d01fe757f3e7f7b1bd347374489c7904bd9",
+                "7f4792e27a3a61caaf8a3549bceebd38e609821421cfc5100eaca4eef67047ea",
+                "23e06e662101300bf0632ac413a68898988c2936d9fe097f4d1db68d4679bc4e",
+                "13abbfbed27e36f05cb148059d123b2bb7338273553b87a46fda2cdd75c49ceb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com",
+                "www.groupon.com.au",
+                "www.groupon.de",
+                "www.livingsocial.com"
             ]
         },
         {
@@ -121,12 +153,13 @@
                 "publicapi"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000609,
+            "sites": 10,
+            "prevalence": 0.0000682,
             "cnames": [],
             "responseHashes": [
-                "58dba815c68c7871b8c9fed8b4b1140ae2f610f10a04f01b2343b93573da423c",
-                "7313fc7952b1dad5a1d77b43d242498cc1128fc41093a5cafecc548b7c15553b"
+                "0428a1312fd0bcf1af45b5fe49aed5851453701dac7afa556bd967dade4c6697",
+                "7313fc7952b1dad5a1d77b43d242498cc1128fc41093a5cafecc548b7c15553b",
+                "89bd5fa0084e2c532bc15fa048c00456d216da786833ff2c04280d946ce5418e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -137,6 +170,7 @@
                 "www.groupon.co.uk",
                 "www.groupon.com.au",
                 "www.groupon.de",
+                "www.livingsocial.com",
                 "www.notino.co.uk",
                 "www.notino.de",
                 "www.notino.pl",
@@ -152,7 +186,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
@@ -166,8 +200,8 @@
             ]
         },
         {
-            "rule": "databreakers\\.com\\/clients\\/groupon_uk\\/default\\.js",
-            "cookies": 0.0000135,
+            "rule": "databreakers\\.com\\/clients\\/groupon_au\\/default\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "download"
@@ -177,8 +211,6 @@
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
                 "Document.cookie setter": 2,
                 "Screen.prototype.orientation": 2,
                 "Screen.prototype.width": 2,
@@ -190,129 +222,30 @@
                 "window.devicePixelRatio": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "03a4d55cd07dd718013430f888e8ba041f30ee5ded841acf8eee3f3403deac3d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "db_ui": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "groupon.co.uk",
-                "www.groupon.co.uk"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/v1\\/groupon_uk\\/dataPoint",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "groupon.co.uk",
-                "www.groupon.co.uk"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/v1\\/individualizer",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "individualizer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "e98be12b7b620f6ff9c16945a14522251564b6989abfe8d41b3658efdae5c000",
-                "52797890135afc5280e877edc74e8cf201c69c3041a49c6e41dc28c995c1b2d4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "groupon.co.uk",
-                "www.groupon.com.au",
-                "www.groupon.de"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/clients\\/groupon_au\\/default\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.getBattery": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.connection": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "window.devicePixelRatio": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "Document.cookie setter": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c19d58059465c8995b79a6b84c5eb0cd72f9d43329193aacba9738410449d76c"
+                "4a364b3e07368f1b6596a23854bf4842e5eb135478b5413bbc56b0088e659ddb"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
                 "db_ui": {
                     "ttl": 63072000,
                     "length": 36,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
+                    "prevalence": 0.000013632707592054858,
+                    "uniqueness": 0.5
+                },
+                "db_uicd": {
+                    "ttl": 63072000,
+                    "length": 36,
+                    "prevalence": 0.000013632707592054858,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -330,7 +263,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
@@ -344,61 +277,6 @@
             ]
         },
         {
-            "rule": "databreakers\\.com\\/clients\\/groupon_de\\/default\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.getBattery": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "window.devicePixelRatio": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "88464a52c619607229dd6d1338153de7c38f98d7f590cd3f9805192b23d30f45"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "db_ui": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "groupon.de",
-                "www.groupon.de"
-            ]
-        },
-        {
             "rule": "databreakers\\.com\\/v1\\/groupon_de\\/dataPoint",
             "cookies": 0,
             "fingerprinting": 0,
@@ -407,7 +285,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
@@ -421,69 +299,15 @@
             ]
         },
         {
-            "rule": "databreakers\\.com\\/clients\\/notino_de\\/default\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.getBattery": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "window.devicePixelRatio": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e872cc2b1346296422ef5bcb4f2f6f27ec6d90360fc77aab452de54e9bc5c2ba"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "db_ui": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "notino.de",
-                "www.notino.de"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/v1\\/notino_de\\/dataPoint",
+            "rule": "databreakers\\.com\\/v1\\/livingsocial_us\\/dataPoint",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "us-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
@@ -492,192 +316,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "notino.de",
-                "www.notino.de"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/clients\\/notino_pl\\/default\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.getBattery": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "window.devicePixelRatio": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4c825182b1d959f6eaffd2f8cc3b06f7e2083813718cd5c9153bdbd0322959bb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "db_ui": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "notino.pl",
-                "www.notino.pl"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/v1\\/notino_pl\\/dataPoint",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "notino.pl",
-                "www.notino.pl"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/clients\\/notino_ro\\/default\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.orientation": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.getBattery": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "window.devicePixelRatio": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "16486e525b2af35209701fbd655a0c43319b1272c2d3782d95cff457af5d1bf1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "db_ui": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                },
-                "db_uicd": {
-                    "ttl": 63072000,
-                    "length": 36,
-                    "prevalence": 0.00001354132813346333,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "notino.ro",
-                "www.notino.ro"
-            ]
-        },
-        {
-            "rule": "databreakers\\.com\\/v1\\/notino_ro\\/dataPoint",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "notino.ro",
-                "www.notino.ro"
+                "livingsocial.com",
+                "www.livingsocial.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000129,
+    "cookies": 0.0000886,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.625
+            "prevalence": 0.5151515151515151
         },
         {
             "domain": "notinoimg.com",
-            "prevalence": 0.22916666666666666
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "recombee.com",
-            "prevalence": 0.08333333333333333
-        },
-        {
-            "domain": "privacy-center.org",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.06060606060606061
         },
         {
             "domain": "grouponcdn.com",
-            "prevalence": 0.020833333333333332
+            "prevalence": 0.06060606060606061
+        },
+        {
+            "domain": "privacy-center.org",
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "Document": 10,
-        "Script": 14,
-        "XHR": 26
+        "Document": 11,
+        "Script": 4,
+        "XHR": 23
     },
     "nameservers": [
         "ns2.ignum.cz",

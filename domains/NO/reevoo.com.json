@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
         "widgets"
     ],
@@ -13,7 +13,34 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "reevoo\\.com\\/api-feefo\\/api\\/10\\/reviews\\/summary\\/product",
+            "rule": "reevoo\\.com\\/register-feefo\\/feefo-widgets-app\\/feefo_loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "dad002cb3a2031365ca45633c9289565de28c38a6f99a40aa8ef9bb84e2a2220"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eiendomsmegler.no",
+                "www.dewalt.no"
+            ]
+        },
+        {
+            "rule": "reevoo\\.com\\/api-feefo\\/api\\/merchants\\/widgetintegration\\/all",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,13 +51,37 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9859e55e95433e4dca519cc649ad6a47c9cde74f2672dfd3b90d97b7596a6cf1"
+                "932cad33ff25e38cc0366af832c58879a2e18ba99f47784773f026817dfc3fb0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dewalt.no",
+                "eiendomsmegler.no",
+                "www.dewalt.no"
+            ]
+        },
+        {
+            "rule": "reevoo\\.com\\/register-feefo\\/badge-ui\\/feefo_adaptive_badges\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "066c2b54fc6a9df297a23157304f7bc37377b4f16dd4bd405572a3692176d321"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eiendomsmegler.no",
                 "www.dewalt.no"
             ]
         },
@@ -50,7 +101,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dewalt.no",
+                "eiendomsmegler.no",
                 "www.dewalt.no"
             ]
         },
@@ -72,6 +123,28 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "eiendomsmegler.no",
+                "www.dewalt.no"
+            ]
+        },
+        {
+            "rule": "reevoo\\.com\\/api-feefo\\/api\\/10\\/reviews\\/summary\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9859e55e95433e4dca519cc649ad6a47c9cde74f2672dfd3b90d97b7596a6cf1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "dewalt.no",
                 "www.dewalt.no"
             ]
@@ -87,13 +160,14 @@
         }
     ],
     "types": {
-        "Fetch": 4,
+        "Script": 4,
+        "Fetch": 6,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-1588.awsdns-06.co.uk",
         "ns-161.awsdns-20.com",
-        "ns-1365.awsdns-42.org",
-        "ns-978.awsdns-58.net"
+        "ns-1588.awsdns-06.co.uk",
+        "ns-978.awsdns-58.net",
+        "ns-1365.awsdns-42.org"
     ]
 }

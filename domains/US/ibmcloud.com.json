@@ -9,22 +9,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000088,
-    "sites": 13,
+    "prevalence": 0.0000954,
+    "sites": 14,
     "subdomains": [
-        "fcis.ice"
+        "fcis.ice",
+        "milogin.ice"
     ],
     "cnames": [
+        {
+            "original": "miloginci.michigan.gov",
+            "resolved": "milogin.ice.ibmcloud.com"
+        },
         {
             "original": "sso.ci.ford.ca",
             "resolved": "fcis.ice.ibmcloud.com"
         },
         {
             "original": "sso.ci.ford.com",
-            "resolved": "fcis.ice.ibmcloud.com"
-        },
-        {
-            "original": "sso.ci.ford.com.au",
             "resolved": "fcis.ice.ibmcloud.com"
         },
         {
@@ -40,14 +41,14 @@
     "resources": [
         {
             "rule": "ibmcloud\\.com\\/oidc\\/endpoint\\/default\\/authorize",
-            "cookies": 0.0000406,
+            "cookies": 0.0000477,
             "fingerprinting": 0,
             "subdomains": [
                 "fcis.ice"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [
                 {
                     "original": "sso.ci.ford.com",
@@ -74,6 +75,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ford.com",
+                "accountmanager.ford.com",
                 "shop.ford.com",
                 "www.ford.ca",
                 "www.ford.com",
@@ -82,19 +84,19 @@
             ]
         },
         {
-            "rule": "ibmcloud\\.com\\/\\/oidc\\/endpoint\\/default\\/authorize",
-            "cookies": 0.0000135,
+            "rule": "ibmcloud\\.com\\/idaas\\/mtfim\\/sps\\/idaas\\/login",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "fcis.ice"
+                "milogin.ice"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "sso.ci.ford.com.au",
-                    "resolved": "fcis.ice.ibmcloud.com"
+                    "original": "miloginci.michigan.gov",
+                    "resolved": "milogin.ice.ibmcloud.com"
                 }
             ],
             "responseHashes": [],
@@ -102,14 +104,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com.au",
-                "www.ford.com.au"
+                "michigan.gov",
+                "milogin.michigan.gov"
+            ]
+        },
+        {
+            "rule": "ibmcloud\\.com\\/QkXKSTapl\\/fU2Tm\\/ED9yI\\/sDSMgwh8\\/NOh5mrbwhm1iaS\\/DRYkP2YC\\/ZE9TZgg-\\/QDo",
+            "cookies": 0.00000682,
+            "fingerprinting": 0,
+            "subdomains": [
+                "milogin.ice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "miloginci.michigan.gov",
+                    "resolved": "milogin.ice.ibmcloud.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michigan.gov",
+                "milogin.michigan.gov"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000088,
+    "cookies": 0.0000954,
     "topInitiators": [
         {
             "domain": "ford.com",
@@ -117,16 +144,17 @@
         }
     ],
     "types": {
-        "Document": 8
+        "Document": 9,
+        "Script": 2
     },
     "nameservers": [
-        "usc2.akam.net",
-        "eur5.akam.net",
         "ns1-99.akam.net",
-        "asia3.akam.net",
-        "usw2.akam.net",
         "usc3.akam.net",
+        "eur5.akam.net",
+        "ns1-206.akam.net",
+        "usw2.akam.net",
         "eur2.akam.net",
-        "ns1-206.akam.net"
+        "asia3.akam.net",
+        "usc2.akam.net"
     ]
 }

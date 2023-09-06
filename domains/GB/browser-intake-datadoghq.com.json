@@ -11,6 +11,7 @@
     "sites": 16,
     "subdomains": [
         "rum",
+        "session-replay",
         "logs"
     ],
     "cnames": [],
@@ -24,39 +25,63 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
-                "f3021ae506b9072981f0a7356159f097ea15807ccdff9077f243683ae71d3cc5",
-                "b7705dd21f855017d31c3e2925b3643560d9abbdda11e7133db0bcea94ecb1d3",
-                "25b218a63e015a71f224c0fb07690dc8a2628800798855c9eb9d40298ce6cca0",
-                "ba96eaa1daecee82cc095ce6399735d56f319ed3f1276ce93896e3de577641c8",
-                "afc7f784efea269ea8f127bc5812ae01d52fa0e6bc597b757678e853ea3a66fb",
-                "ea0013c820c6d90e77b43ca738251090c2702883d6ce51dc22e4adafdc232ed0",
-                "d86f1f50fec88db397fca94fbe693ada37b50e55eed7064c7ca8fcf1d8ef4d21",
-                "14bd90833c49e64a4a678ba0c9e12f5bda6a45bdc35cff205dca6004aa9f0334",
-                "d14b3b803b00856af99928d374f1dba6f2137b347952ac9bc855fd9c74192c3d",
-                "63f8fa0ca83f643e03866f90fdb30d9eca592f15bd670be1edf931be62cd9d7a",
-                "2c02635bee71715fbd58d465540ad7138518587c66e41700fc04ad7ddf08a352",
-                "fb4afe1431f669de0e526b3032f2e77167f38c77231da859aff39fca21910220"
+                "1ad48c1ea89f18052f5cf676e8a18dd377cf4cd1abf0e11f35b35f5608bf80a0",
+                "9b8adc88030ace15d10a6c7622597d27681d3b8f9e5d032f3abeb077741f4bf6",
+                "f2ad370dbc12077b485e5aa35e2c313652424d45399fe55a9820930677e95f23",
+                "f76e47d77560fbf5bbe949016cf8d515cd1dcacf392f519833a3dc5a04a60854",
+                "4a4deee4706e4efe26202b8662e51d63b1791ec2165828ab7a9775e1ecec72e9",
+                "a0d2e849e778de058b26dd749ba3dfb3910598844d264d763fc85bdf07521a43",
+                "739481f47643a0d9e691436d11511a5b7c192f9098224e4c896c337a11ed24f1",
+                "d7a07a5fdcf350a1f557b8eb805ecdd57b359fea9cc04d556dd327ce97cbdbb6",
+                "99c2b9abc6936ee41a9338a5609a2c04246bb9bd0fa9a3a9c31ab1c6b9ec0c1b",
+                "0a4bf2315a975b5360cb5cf8c784b0d39c338c2e3c5f3c18bd7ef1ee047bf1e1",
+                "afff314c3454104aeac85e03737c1a26f41dfdcbb3a3d3bb607b9f603de96a9f",
+                "582d6ec299414a4551881242102732ca0760bd10affde02a53996600b5311d7f",
+                "e27eead61f7cc682a52c5e65cdf9b4ab6be8f6734e7af22af20e30950600cad2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asana.com",
+                "hashicorp.com",
                 "developer.hashicorp.com",
+                "gb.readly.com",
                 "piratebayproxy.net",
                 "splice.com",
                 "uk.practicallaw.thomsonreuters.com",
-                "www.airtasker.com",
-                "www.experian.com",
-                "www.foxsports.com",
+                "www.dunelm.com",
                 "www.letsdothis.com",
-                "www.myfitnesspal.com",
                 "www.netlify.com",
-                "www.padi.com",
+                "www.roofingmegastore.co.uk",
+                "www.today.com",
+                "www.united.com",
+                "www.whoop.com",
+                "www.wish.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-replay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "31db64f6393358a89d43420e2fc32019962777b143fd35a7144632741f766745"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "readly.com",
                 "www.roofingmegastore.co.uk"
             ]
         },
@@ -68,20 +93,24 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "930a6dafc4fed94c15c4a6726913403d8722470287d299c9a3be76f0e691cb18",
-                "7eaa04fa134ef4d29533a27a962012e62b158345a3a486dd738d8c23115929a5"
+                "a93f552fbbbcb375fdf54f6463b4352b461f70bc6ecb7fa50d94e10e54bd27b3",
+                "686771575c1a46e1c229f7e28b4f7467de15f692acea0f78e3dcc59490713c4f",
+                "090b2cf2369def61df00008635e73639696c7b4274c074b6fc2169086cbc26e2",
+                "54f16717788dd87024cfe0c32c9d0033017cb1469444defce93b06437a721435"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asana.com",
+                "piratebayproxy.net",
                 "www.codecademy.com",
-                "www.foxsports.com"
+                "www.today.com",
+                "www.united.com",
+                "www.wish.com"
             ]
         },
         {
@@ -96,7 +125,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "849eca9443ff21353d91fd8f966584fcf6045b15d4b393464291c155a3b0524b"
+                "a23f7e6f6b6c1cebd8382654af4d0f4b02a288685b856d64cd26aee5b5657e54"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -135,26 +164,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6230769230769231
+            "prevalence": 0.6573033707865169
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.36923076923076925
+            "prevalence": 0.24719101123595505
+        },
+        {
+            "domain": "nbcnews.com",
+            "prevalence": 0.0898876404494382
         },
         {
             "domain": "d1eh9yux7w8iql.cloudfront.net",
-            "prevalence": 0.007692307692307693
+            "prevalence": 0.0056179775280898875
         }
     ],
     "types": {
-        "Fetch": 15,
-        "XHR": 3,
+        "Fetch": 16,
+        "XHR": 7,
         "Ping": 2
     },
     "nameservers": [
-        "ns-1907.awsdns-46.co.uk",
-        "ns-128.awsdns-16.com",
         "ns-1264.awsdns-30.org",
+        "ns-128.awsdns-16.com",
+        "ns-1907.awsdns-46.co.uk",
         "ns-560.awsdns-06.net"
     ]
 }

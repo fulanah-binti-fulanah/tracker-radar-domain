@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "sentry.fabrique"
+        "sentry.fabrique",
+        "matomo.fabrique"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,38 +21,131 @@
                 "sentry.fabrique"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "273f0c79c8a46d1f97738cba1e06e190f0383a09b8854dc09933b03ae674b249"
+                "9403f61fc7b7d428904b9f29435ed909d48e30aba3512db200b87df08ebb8c7f",
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "travail.gouv.fr",
-                "code.travail.gouv.fr"
+                "code.travail.gouv.fr",
+                "travail-emploi.gouv.fr"
+            ]
+        },
+        {
+            "rule": "social\\.gouv\\.fr\\/matomo\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "matomo.fabrique"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "d7fc375178c93a2fc15fd888e30170eedf4ef3d04497e7f951ab7bfe0c921693"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.4.ef54": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.0001010407194099222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.4.ef54": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.0001010407194099222,
+                    "uniqueness": 1
+                },
+                "_pk_id.59.1a03": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.0001010407194099222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.59.1a03": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.0001010407194099222,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travail.gouv.fr",
+                "monparcourspsy.sante.gouv.fr",
+                "travail-emploi.gouv.fr"
+            ]
+        },
+        {
+            "rule": "social\\.gouv\\.fr\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo.fabrique"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travail.gouv.fr",
+                "monparcourspsy.sante.gouv.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "travail.gouv.fr",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 3,
+        "Script": 3,
+        "Ping": 2
     },
     "nameservers": [
+        "nsc.perf1.com",
+        "nsa.perf1.fr",
         "a.ns.developpement-durable.gouv.fr",
         "b.ns.developpement-durable.gouv.fr",
-        "nsa.perf1.fr",
-        "nsb.perf1.com",
-        "nsc.perf1.com"
+        "nsb.perf1.com"
     ]
 }

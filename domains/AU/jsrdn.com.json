@@ -4,14 +4,73 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "i"
+        "c",
+        "s",
+        "i",
+        "a"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "jsrdn\\.com\\/s\\/cs\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "253e1b537be3002bedc17fd291a3b3e1bbb1f0f3ca23f2f776fb187cb2d6088e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.muscleandfitness.com"
+            ]
+        },
+        {
+            "rule": "jsrdn\\.com\\/s\\/1\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "48e33aed525c7652fcb7011d638d401e2c6aae0f3bf0cf925563c321331870de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.muscleandfitness.com"
+            ]
+        },
         {
             "rule": "jsrdn\\.com\\/i\\/1\\.gif",
             "cookies": 0,
@@ -33,28 +92,58 @@
                 "muscleandfitness.com",
                 "www.muscleandfitness.com"
             ]
+        },
+        {
+            "rule": "jsrdn\\.com\\/videos\\/22513\\/dgv_muscleandfitness\\/20230905052019_64f6b637e6e5a\\/dgv_muscleandfitness_trending_articles_20230905052019_64f6b637e6e5a_new\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muscleandfitness.com",
+                "www.muscleandfitness.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
+            "domain": "first party",
             "prevalence": 0.5
         },
         {
+            "domain": "hwcdn.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
+        },
+        {
             "domain": "htlbid.com",
-            "prevalence": 0.5
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 4,
+        "Image": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns-745.awsdns-29.net",
-        "ns-1345.awsdns-40.org",
         "ns-436.awsdns-54.com",
-        "ns-1941.awsdns-50.co.uk"
+        "ns-1941.awsdns-50.co.uk",
+        "ns-1345.awsdns-40.org"
     ]
 }

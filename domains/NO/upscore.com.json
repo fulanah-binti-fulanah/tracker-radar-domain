@@ -10,13 +10,63 @@
     "prevalence": 0.000202,
     "sites": 2,
     "subdomains": [
-        "hl",
         "files",
-        "hit-pool"
+        "hit-pool",
+        "hl"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "upscore\\.com\\/async\\/upScore\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c5fddc9ffd9099524a2fad6dab9603f139c233db387bceab4f3508b5affcdf48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "www.heise.de"
+            ]
+        },
+        {
+            "rule": "upscore\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hit-pool"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a12b7cb43c9d9134b5bb1b35e9096b66775d9e92e7611d1cc92b02edd6782a87"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "www.heise.de"
+            ]
+        },
         {
             "rule": "upscore\\.com\\/config\\/heise\\.de\\.js",
             "cookies": 0,
@@ -39,58 +89,6 @@
                 "heise.de",
                 "www.heise.de"
             ]
-        },
-        {
-            "rule": "upscore\\.com\\/async\\/upScore\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "files"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.innerHeight": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.innerWidth": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "85b7ecb01f0849e0a92eda24ec8aa6b84b349e5bd3b069789243436edad500ad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heise.de",
-                "www.stern.de"
-            ]
-        },
-        {
-            "rule": "upscore\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hit-pool"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "a12b7cb43c9d9134b5bb1b35e9096b66775d9e92e7611d1cc92b02edd6782a87"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heise.de",
-                "www.heise.de",
-                "www.stern.de"
-            ]
         }
     ],
     "categories": [],
@@ -104,10 +102,10 @@
     ],
     "types": {
         "Script": 4,
-        "Ping": 3
+        "Ping": 2
     },
     "nameservers": [
-        "duke.ns.cloudflare.com",
-        "dorthy.ns.cloudflare.com"
+        "dorthy.ns.cloudflare.com",
+        "duke.ns.cloudflare.com"
     ]
 }

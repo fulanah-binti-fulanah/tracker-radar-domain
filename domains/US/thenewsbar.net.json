@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "pw"
+        "pw",
+        "metrics"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -26,12 +27,58 @@
                 "Navigator.prototype.platform": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "1ad26e2c61fcba663df8dfe5d7e870b2b6333d960fcf0ffc6b654a861184a87c"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freiepresse.de",
+                "www.zvw.de"
+            ]
+        },
+        {
+            "rule": "thenewsbar\\.net\\/static\\/offer_iframe_script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pw"
+            ],
+            "apis": {
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7ebde690a7ec14740dff9b8b853e55d66ca0eb4e0f25dcc601843bb2251bbacd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freiepresse.de",
+                "www.zvw.de"
+            ]
+        },
+        {
+            "rule": "thenewsbar\\.net\\/metrics\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,10 +97,11 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Ping": 2
     },
     "nameservers": [
-        "dorthy.ns.cloudflare.com",
-        "duke.ns.cloudflare.com"
+        "duke.ns.cloudflare.com",
+        "dorthy.ns.cloudflare.com"
     ]
 }

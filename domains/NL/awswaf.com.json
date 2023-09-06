@@ -7,17 +7,117 @@
     "prevalence": 0.000403,
     "sites": 4,
     "subdomains": [
+        "c09bc9c04079.edge.sdk",
+        "c09bc9c04079.163f2b53.eu-central-1.token",
         "c60708c831e2.edge.captcha-sdk",
         "c60708c831e2.e253bde8.eu-central-1.captcha",
         "c60708c831e2.e253bde8.eu-central-1.token",
-        "c09bc9c04079.edge.sdk",
-        "c09bc9c04079.163f2b53.eu-central-1.token",
         "a81eb85f6c63.edge.sdk",
         "a81eb85f6c63.7438b4fd.eu-central-1.token"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/challenge\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "c09bc9c04079.edge.sdk",
+                "c09bc9c04079.163f2b53.eu-central-1.token"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.webdriver": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "c0c0182770fa9db2e3fda201732c5a4efea79ba94e0ee3255823967b91fe905c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aws-waf-token": {
+                    "ttl": 345607,
+                    "length": 329,
+                    "prevalence": 0.0002013693113169553,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "pdfs.semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c09bc9c04079.163f2b53.eu-central-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0d085c362a0b24edb5bf65e37e29a0c42e144dabae09c016f89000862a30dff0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/telemetry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c09bc9c04079.163f2b53.eu-central-1.token"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "cdd8e481646f7f9315260b571b88c651aa968f0ac3bb6468325bd6165244f2d0",
+                "ff412b880692db05053344f879921fb39f6f4cd7dca870e8ad53c2f218a35172"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semanticscholar.org",
+                "pdfs.semanticscholar.org",
+                "www.semanticscholar.org"
+            ]
+        },
         {
             "rule": "awswaf\\.com\\/c60708c831e2\\/_\\/jsapi\\.js",
             "cookies": 0,
@@ -33,7 +133,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7e290ddffde882a7b33701b6337bd7bb5d7a8b10ae9c034470956c4c0052a4f9"
+                "5d760cd5f179ff2774372b668d5779c0c991c4dce062239c7304f09edb0cb197"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -55,7 +155,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8af57e00f8139c876ada4a8312178165741f9ef113ff5493a5b1d8b242eb8807"
+                "d3dfffafde5c56ed966205f65fd02b7db04deb92dd3efe4d170f075c01d76494"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -63,81 +163,6 @@
             "exampleSites": [
                 "geogebra.org",
                 "www.geogebra.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/challenge\\.js",
-            "cookies": 0.000101,
-            "fingerprinting": 3,
-            "subdomains": [
-                "c09bc9c04079.edge.sdk",
-                "c09bc9c04079.163f2b53.eu-central-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.webdriver": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.colorDepth": 1,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "MediaSource.isTypeSupported": 1,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "CanvasRenderingContext2D.prototype.getImageData": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "a0f61e014f2358e17b735b08e29648f763fb0a97e1ef3000082a173d86ee6cb3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345605,
-                    "length": 329,
-                    "prevalence": 0.00010067451927917044,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "semanticscholar.org",
-                "www.semanticscholar.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/c09bc9c04079\\/4996efde3854\\/telemetry",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c09bc9c04079.163f2b53.eu-central-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "d55bea6e37030fe1b829ace8a8d00a220a48930440f0d3a473a9d1d677984bbc"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "semanticscholar.org",
-                "www.semanticscholar.org"
             ]
         },
         {
@@ -176,14 +201,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "44cd3ca67b412732c56dff4d83545b6c01badad9042d908100d84d17995e4ab3"
+                "8ded72b3f3fc70497f2d3c9db3a743fe727568c7635a0edfb80b4aa968eb5c41"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345603,
                     "length": 301,
-                    "prevalence": 0.00010067451927917044,
+                    "prevalence": 0.00010068465565847765,
                     "uniqueness": 1
                 }
             },
@@ -205,7 +230,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ee8d531b9035eaf4e1e9f46cfad03d657856b7a3ba5813de0579c60f539abce5"
+                "ee2f71bd56cfd90e02001ca92d88033bf12b9bd0403c6b662703eb5cf4f7660a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -222,16 +247,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7857142857142857
+            "prevalence": 0.7272727272727273
         },
         {
             "domain": "kxcdn.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Script": 6,
-        "Fetch": 6
+        "Script": 7,
+        "Fetch": 9
     },
     "nameservers": [
         "ns-43.awsdns-05.com",

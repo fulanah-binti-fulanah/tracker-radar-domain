@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "new-hq",
-        "new-edge"
+        "new-edge",
+        "user-tracking-api.dgt-digital-marketing"
     ],
     "cnames": [
         {
@@ -23,13 +24,17 @@
         {
             "original": "hq.xero.com",
             "resolved": "new-hq.xero.com.edgekey.net"
+        },
+        {
+            "original": "user-tracking-api.dgt-digital-marketing.xero.com",
+            "resolved": "user-tracking-api.dgt-digital-marketing.xero.com.edgekey.net"
         }
     ],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "xero\\.com\\.edgekey\\.net\\/cb-tvwGKSWVCj\\/_X_JF\\/X7M5UhjB4\\/7caNrDmXG7iXz5\\/GgwNV3ll\\/ChsJS0t\\/paQMB",
-            "cookies": 0.000101,
+            "rule": "xero\\.com\\.edgekey\\.net\\/I2VOwz\\/OQ\\/C0\\/NLCg\\/S1Hj7iZ2EeCMw\\/Y5huNbNfEN9Eh1\\/KBQRAQ\\/Vz43D\\/nAzYjg",
+            "cookies": 0.0001,
             "fingerprinting": 3,
             "subdomains": [
                 "new-hq"
@@ -78,7 +83,7 @@
             ]
         },
         {
-            "rule": "xero\\.com\\.edgekey\\.net\\/cb-tvwGKSWVCj\\/_X_JF\\/X7M5UhjB4\\/7caNrDmXG7iXz5\\/GgwNV3ll\\/ChsJS0t\\/paQMB",
+            "rule": "xero\\.com\\.edgekey\\.net\\/I2VOwz\\/OQ\\/C0\\/NLCg\\/S1Hj7iZ2EeCMw\\/Y5huNbNfEN9Eh1\\/KBQRAQ\\/Vz43D\\/nAzYjg",
             "cookies": 0.000201,
             "fingerprinting": 3,
             "subdomains": [
@@ -103,11 +108,38 @@
                 "xero.com",
                 "client.xero.com"
             ]
+        },
+        {
+            "rule": "xero\\.com\\.edgekey\\.net\\/query",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user-tracking-api.dgt-digital-marketing"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "user-tracking-api.dgt-digital-marketing.xero.com",
+                    "resolved": "user-tracking-api.dgt-digital-marketing.xero.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xero.com",
+                "www.xero.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
@@ -116,7 +148,8 @@
     ],
     "types": {
         "Script": 4,
-        "XHR": 2
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

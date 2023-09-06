@@ -9,14 +9,57 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "eg2o7r7cs9.execute-api",
         "bd46ots9ed.execute-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "us-west-2\\.amazonaws\\.com\\/prod\\/api\\/v2\\/viewer-events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eg2o7r7cs9.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "earjobs.com.au",
+                "www.earjobs.com.au"
+            ]
+        },
+        {
+            "rule": "us-west-2\\.amazonaws\\.com\\/prod\\/api\\/v2\\/viewer-events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eg2o7r7cs9.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "600ad4d99b0dea6c48cf866a0928984725064662b5d8f7f3192fbec99bcdd5b8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "earjobs.com.au",
+                "www.earjobs.com.au"
+            ]
+        },
         {
             "rule": "us-west-2\\.amazonaws\\.com\\/production\\/com\\.google\\.analytics\\/v1",
             "cookies": 0,
@@ -44,36 +87,37 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7058823529411765
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "google-analytics.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "discourse-cdn.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "XHR": 2
+        "Preflight": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "ns1.amzndns.co.uk",
-        "ns1.amzndns.com",
-        "ns1.amzndns.net",
         "ns1.amzndns.org",
-        "ns2.amzndns.co.uk",
+        "ns1.amzndns.co.uk",
         "ns2.amzndns.com",
+        "ns2.amzndns.org",
+        "ns1.amzndns.com",
         "ns2.amzndns.net",
-        "ns2.amzndns.org"
+        "ns1.amzndns.net",
+        "ns2.amzndns.co.uk"
     ]
 }

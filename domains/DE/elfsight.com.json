@@ -11,7 +11,6 @@
     "sites": 9,
     "subdomains": [
         "apps",
-        "core.service",
         "static",
         "storage",
         "service-reviews-ultimate"
@@ -21,31 +20,24 @@
     "resources": [
         {
             "rule": "elfsight\\.com\\/p\\/boot\\/",
-            "cookies": 0.000605,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "apps",
-                "core.service"
+                "apps"
             ],
             "apis": {},
             "sites": 7,
             "prevalence": 0.000706,
             "cnames": [],
-            "responseHashes": [
-                "381f1f247727837465ee6d17c8b300b5d9014fe0f98368e2c61fae29abbc58ab",
-                "5bfbd205523157ed274e0bf623ed935ff52f2f4ba3e6259ec12c3a730537fd56",
-                "a6b797befe372012fb8a4d9871143763b661e3b90fa77dfe37f9da141ce40570",
-                "35991b6edf59c9ae296cfd856e0973d19d5d9671b44c4a346a1b4b83c389cda4",
-                "3936427c62483a7d710206a9abd60d9f8a0dbd8226d585c4b364ba164e2553b3"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "beauty-report.de",
-                "www.domradio.de",
                 "www.energiespeicher-online.shop",
                 "www.knipex.de",
+                "www.marcelpaa.com",
                 "www.radonline.de",
                 "www.suedtirol.com",
                 "xvideos-germany.com"
@@ -59,16 +51,16 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.product": 3,
-                "window.localStorage": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Date.prototype.getTime": 2,
-                "window.devicePixelRatio": 2
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.product": 4,
+                "window.localStorage": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Date.prototype.getTime": 3,
+                "window.devicePixelRatio": 3
             },
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "7541e73eeae8f1c1a84f2bb67f33aded9729bc0644faad6eafbf411ad1b53ef4"
@@ -79,6 +71,7 @@
             "exampleSites": [
                 "beauty-report.de",
                 "www.knipex.de",
+                "www.marcelpaa.com",
                 "www.suedtirol.com"
             ]
         },
@@ -90,50 +83,18 @@
                 "storage"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "cf8fcb87bb2def546896ed907a9f5eaf29eb081023694d79fc412a13773bbc52",
-                "d39fffa593bbb1ca9475e26ab71737b86451e7cdd92cd00d877814d17ec02290"
+                "e28446b83db9a83c89fc91fc53acce4e080f8667cd29bae4bf137a2318c9fa00"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "beauty-report.de",
-                "www.domradio.de",
                 "www.suedtirol.com"
-            ]
-        },
-        {
-            "rule": "elfsight\\.com\\/platform\\/platform\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 8,
-            "prevalence": 0.000806,
-            "cnames": [],
-            "responseHashes": [
-                "f950cd7338e89507da357380e9fdd90e82a2de58cfe3c0fa598ba086577b25d8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "domradio.de",
-                "www.energiespeicher-online.shop",
-                "www.knipex.de",
-                "www.radonline.de",
-                "www.steico.com",
-                "www.suedtirol.com",
-                "www.travelcircus.de",
-                "xvideos-germany.com"
             ]
         },
         {
@@ -164,24 +125,48 @@
             ]
         },
         {
-            "rule": "elfsight\\.com\\/apps\\/popup\\/release\\/07f83659af1aad1957331923701424b24ba9f051\\/app\\/popup\\.js",
+            "rule": "elfsight\\.com\\/platform\\/platform\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000706,
+            "cnames": [],
+            "responseHashes": [
+                "f950cd7338e89507da357380e9fdd90e82a2de58cfe3c0fa598ba086577b25d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "energiespeicher-online.shop",
+                "www.knipex.de",
+                "www.radonline.de",
+                "www.steico.com",
+                "www.suedtirol.com",
+                "www.travelcircus.de",
+                "xvideos-germany.com"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/apps\\/popup\\/release\\/468c48212627f1718eea4e1866336798fba3a2d0\\/app\\/popup\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "window.localStorage": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "2fae7662dda2414cec8f0ccd8774222557b4071ed5ed6c2dd6df433b64867a7b"
+                "dcd811a034f60c007fd7bd0c0b31aac79c75688cd3acb51cc5e009899e64517c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -203,7 +188,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "93352bf1ebd3fad4af04a2d3328795dbe5712ca609399ff4ed98f38b7a4b44f7"
+                "e25578fd01da5a2f05a783d51fc7a5fbfabe0588663c365bc119a951a54ff3b7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -225,7 +210,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "cae9d7b9521fbd3ad3753e81cc1c8e4f5e79412d1df1d8691a1719855d52e133"
+                "67c25f1d9988fb1cbd73e72762290550a828f29f54d7fa325c0a77e4986d3ed0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -233,6 +218,28 @@
             "exampleSites": [
                 "energiespeicher-online.shop",
                 "www.energiespeicher-online.shop"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/api\\/youtube",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a5924546c862cb7cdd578e13e85c1014774226b0b645a513f6e2c69104ddc0d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "knipex.de",
+                "www.knipex.de"
             ]
         }
     ],
@@ -242,20 +249,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9523809523809523
+            "prevalence": 0.9166666666666666
         },
         {
             "domain": "travel-cdn.net",
-            "prevalence": 0.047619047619047616
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
         "XHR": 7,
-        "Script": 20,
-        "Fetch": 7
+        "Script": 22,
+        "Fetch": 6
     },
     "nameservers": [
-        "dilbert.ns.cloudflare.com",
-        "rihana.ns.cloudflare.com"
+        "rihana.ns.cloudflare.com",
+        "dilbert.ns.cloudflare.com"
     ]
 }

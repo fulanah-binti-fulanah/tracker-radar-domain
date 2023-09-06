@@ -7,16 +7,39 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "cdnapisec",
         "analytics",
-        "cfvod"
+        "cfvod",
+        "cdnapi"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.101\\/\\/modules\\/MwEmbedSupport\\/skins\\/common\\/images\\/player_big_play_button\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "484095ed2bb8d5abca59f850df293ee9126daf32fb669bcf74ba5e60376c4333"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sap.com",
+                "www.vocabulary.com"
+            ]
+        },
         {
             "rule": "kaltura\\.com\\/api_v3\\/service\\/multirequest",
             "cookies": 0,
@@ -49,7 +72,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "52ad4dd2db0af227dec58b6c58acdccfc2b1b608cd699d6f45bb17e15b048244"
+                "41d32d1790eb4323d95ff7d3af78e7140c1dc8f23f438d7e1d9773828983ec5e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -88,16 +111,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "c5145b41a6f21e08a74527da0524c2a55c11bd57396c852ef5fc4a83d8afcc68",
-                "5c9ed62225f5802db0211b4bd6d4a97c6244fc8c69b3f9127a1d2c10e9ed79b4"
+                "a6b139f474116cc002b3ab8d0711672f4537e63436f9032f3722c0c7fd624afd",
+                "3271d21a2306f5f9eacdd4210678fde5ddaae0feda7249f32e1de70bc94bccc5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010063399416322834
+                "IR_gbd": 0.00010047221943132724
             },
             "exampleSites": [
                 "castrol.com",
@@ -137,7 +160,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cbd2736e3e1fab084f664dbbaa77bc62a8eb52dd0ebc3f6c1b2066079efa5e28"
+                "0047e454cb8201cfc2d3f19457a6b3f8d4c392a7a27f64347b660c23abec39bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -179,6 +202,28 @@
                 "oreilly.com",
                 "www.oreilly.com"
             ]
+        },
+        {
+            "rule": "kaltura\\.com\\/api_v3\\/index\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f4108993a1c236d7861139cb032b04d09b0673bc7d989acb286dc6490531fc04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vmware.com",
+                "www.vmware.com"
+            ]
         }
     ],
     "categories": [],
@@ -187,22 +232,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5777777777777777
+            "prevalence": 0.5772357723577236
         },
         {
             "domain": "yotpo.com",
-            "prevalence": 0.2777777777777778
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.14444444444444443
+            "prevalence": 0.08943089430894309
         }
     ],
     "types": {
+        "Image": 2,
         "Preflight": 4,
         "XHR": 5,
         "Media": 2,
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
         "a10-65.akam.net",

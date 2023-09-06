@@ -4,15 +4,38 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000505,
+    "prevalence": 0.000504,
     "sites": 5,
     "subdomains": [
+        "pie-cdn.bf-sugarless-production.aws",
         "cdn.bf-sugarless-production.aws",
         "demographics.bf-sugarless-production.aws"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "bfops\\.io\\/client\\/integration\\/v1\\.0\\.0\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pie-cdn.bf-sugarless-production.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4906a663697d7d0013d7a5921790f2cd1eb11656a4964110f1b02bc069a89668"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chip.de",
+                "praxistipps.focus.de"
+            ]
+        },
         {
             "rule": "bfops\\.io\\/pearpie\\/client\\/1\\.0\\.0\\/index\\.min\\.js",
             "cookies": 0,
@@ -22,7 +45,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "54c85a7746719fb833c374bb082f33b110d332b4269afe56c25213e766a367bc"
@@ -32,8 +55,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chip.de",
+                "praxistipps.focus.de",
                 "www.chip.de",
-                "www.focus.de",
                 "www.tvspielfilm.de"
             ]
         },
@@ -46,7 +69,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "16fd3163352b68cbca998aadf5c7afb58814f8cbc185dcbf538a18052d4ed9f7",
@@ -56,9 +79,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
+                "focus.de",
+                "praxistipps.chip.de",
                 "www.chip.de",
-                "www.focus.de",
                 "www.tvspielfilm.de"
             ]
         },
@@ -71,16 +94,16 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
+                "focus.de",
+                "praxistipps.chip.de",
                 "www.chip.de",
-                "www.focus.de",
                 "www.tvspielfilm.de"
             ]
         }
@@ -91,28 +114,28 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6363636363636364
         },
         {
             "domain": "bf-tools.net",
-            "prevalence": 0.25
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "atf-tagmanager.de",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Fetch": 4,
         "Preflight": 4
     },
     "nameservers": [
         "a7-67.akam.net",
         "a1-118.akam.net",
-        "a2-64.akam.net",
-        "a28-65.akam.net",
         "a16-67.akam.net",
+        "a28-65.akam.net",
+        "a2-64.akam.net",
         "a5-66.akam.net"
     ]
 }

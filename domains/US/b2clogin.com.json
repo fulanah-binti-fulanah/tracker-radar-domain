@@ -9,31 +9,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "myiuhealthidp",
-        "analogb2c",
-        "waresourcesidp"
+        "mozaikb2c"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "b2clogin\\.com\\/myiuhealthidp\\.onmicrosoft\\.com\\/B2C_1A_Portal_Signin_SAML\\/samlp\\/sso\\/login",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
                 "myiuhealthidp"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.cookieEnabled": 1,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.onLine": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5410169f6e80b69dcb4252191085b7b77232028881fa71ec96977177c2a9665c"
+                "4ce91faa1cbc21fafc4d7d4ae997831df55005e9993294e7ce86708d72491d4c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -52,7 +54,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -66,94 +68,80 @@
             ]
         },
         {
-            "rule": "b2clogin\\.com\\/tfp\\/analogb2c\\.onmicrosoft\\.com\\/\\/b2c_1a_adi_signuporsigninsocial\\/v2\\.0\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "rule": "b2clogin\\.com\\/mozaikb2c\\.onmicrosoft\\.com\\/B2C_1_Legacy_SignInOrUpFr\\/oauth2\\/v2\\.0\\/authorize",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "analogb2c"
+                "mozaikb2c"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d2db9632159a21f8423d3dc563c36773da1df396457e1c3ca8c2e3b8959a79d7"
+                "33d03820278d6127e6fb0d2b2333f354c4fff78cd060170935b75604e327643f"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "analog.com",
-                "www.analog.com"
-            ]
-        },
-        {
-            "rule": "b2clogin\\.com\\/analogb2c\\.onmicrosoft\\.com\\/b2c_1a_adi_signuporsigninsocial\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analogb2c"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gpv_Page": 0.000006770664066731665
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "analog.com",
-                "www.analog.com"
+                "mozaikportail.ca",
+                "portailparents.ca"
             ]
         },
         {
-            "rule": "b2clogin\\.com\\/89425fd0-c16a-4605-8605-77c155c2ab6e\\/b2c_1a_signup_signin\\/discovery\\/v2\\.0\\/keys",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "rule": "b2clogin\\.com\\/static\\/bundles\\/jquery-bundle-1\\.10\\.2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "waresourcesidp"
+                "mozaikb2c"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "483a7382be315eba40eba9437a2fe3abd89b6d186e2ade15c6a1694f755c3e0c"
+                "a035f5bc873960a65bcb6493b4d18782247a5a5d8cad443d297c853b09ea7bb4"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fuelwatch.wa.gov.au",
-                "www.fuelwatch.wa.gov.au"
+                "mozaikportail.ca",
+                "portailparents.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000474,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "mozaikportail.ca",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
         "Document": 4,
-        "XHR": 4,
-        "Fetch": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "eur2.akam.net",
+        "ns3-35.azure-dns.org",
+        "ns1-169.akam.net",
         "usw1.akam.net",
         "ns1-35.azure-dns.com",
-        "ns2-35.azure-dns.net",
         "ns4-35.azure-dns.info",
-        "ns1-169.akam.net",
-        "use2.akam.net",
-        "ns3-35.azure-dns.org"
+        "ns2-35.azure-dns.net",
+        "eur2.akam.net",
+        "use2.akam.net"
     ]
 }

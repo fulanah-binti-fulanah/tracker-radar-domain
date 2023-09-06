@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "rum",
-        "session-replay"
+        "session-replay",
+        "logs"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -28,32 +29,32 @@
             "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
-                "c1cfc327223e1431ed71746f512ec53fef484b8fd43c5d7a2e2d4ddf6a333e0c",
-                "e21516b984068a176cc7802c62e35c68b2d491db6b50de9c80cb67bb7f6e9f9a",
-                "4029f8c67bf836a14513e65b1d1d137f4f39cfb83271f4dfdc7cabcb273cc319",
-                "f1845ddae6548bad326515eb26810545d1a1d23f0cc88a430fb9a7acf63b5bb5",
-                "4e03b3b81104482ed89c8d0d228b281b82d4e31a62a771fab2ab9dcb8fa141e0",
-                "e6d9354fbba0f87c7c5a2d1c9ab34141eb61538e2da34f13af4dc6d505187ec2",
-                "c7c5b3258a723aa4f2a1097e895f2198f16dab12fdfb3e5ecea8345a1f7ab52e",
-                "a0e133d01ea8eb0de237901ae3ca3fdf9b88d64bd3e4fd15255721413f171cb4",
-                "a553f43f8fb244b80a781e75be0e1846adb61575b92f0bca3f19b90346e0d82f",
-                "2deae30059c5e63c30df274d17aca10d4ca935cff3fada3be8db4f7f28e71801"
+                "700a54e49ea63bce57621357b8e5f3b044ab4c10b8d9e763886d7d5e8fa715b0",
+                "52a5eb520bf7d928a5731fc22658022d5dbc868febc5ca679fd0030df82421d1",
+                "04ca268192dc5143ee90683c0e8c9986c9e5afd256d68676a9543429b29104fe",
+                "f4dfb5681ffc769bdad82dc9edb7b177f7ef61233736c261307e5cccb87d9664",
+                "8688f24bc463e852a872b3e3eca9d23b45ca7c2789bfeb4827b92bbab27fe01c",
+                "2d6e6e18e0d4a12984b7de8ea10ee09cfe259824a91586b1fd720a3e0d75cd17",
+                "32e7eef846135d4dc0669b98d7107cbb23bbaed135649cc9489a055be08aa38b",
+                "98eca19630218798ae76e4755268146b36b2a14ec21f2ff339cfb77150f42bc8",
+                "3c6bbbe8e19be91919f8fac1e5899b014a78382d7b2aa78b484f4ba477475aba",
+                "d4e9b484fe25944b3ba4fcac170acb0e295e64cd114c1f8df96ecdfb047e496c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asana.com",
+                "islcollective.com",
+                "de.islcollective.com",
                 "developer.hashicorp.com",
-                "simplywall.st",
-                "www.dataquest.io",
-                "www.digikey.de",
+                "en.islcollective.com",
+                "fr.islcollective.com",
+                "piratebayproxy.net",
+                "www.digikey.ch",
                 "www.digikey.com",
-                "www.gartentraum.de",
-                "www.midjourney.com",
+                "www.expedia.com",
+                "www.myfitnesspal.com",
                 "www.padi.com",
-                "www.slideshare.net",
-                "www.viki.com",
                 "www.wish.com"
             ]
         },
@@ -65,20 +66,52 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [],
             "responseHashes": [
-                "1363c49b59a66e74dcb2e58da3ba0b620ef0b0c6d36e04f6b965a0472600e1ae",
-                "734f060fd33916db1cffa8d170219ca64b5fa6cecd0dec092b98bb5574e8db7b"
+                "ec76e364ded4ee6f0dddaeb9e797b35e1c087a190d6263ae90e4139bbf2a4356",
+                "5204167e71f3cb174c221323df178b8367eee1423eb71b00417b7a7a910289c5",
+                "3d4fc3bf5560803a61cc6d665c87d20046896dfbbe82979c34046b60a89b2ae7",
+                "0932b8f88640ff70b378ddea18a995ea18bfd399f0aba0af65870734bf568437",
+                "1e1a7003d3ce7b2ca9bbacdfa356533f2855c0c2a51e9e0ed3da6afa98bcdac7",
+                "e654fa74dff2dd66355c880c4b74badaa0ed827e8ca44cc223ff6754aae2b1e4",
+                "129f17e78442aa453b61ece5012f95782504c9b5658b7288d6f2f97c5b436d0e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asana.com",
+                "islcollective.com",
+                "de.islcollective.com",
+                "en.islcollective.com",
+                "fr.islcollective.com",
                 "www.codecademy.com",
+                "www.digikey.ch",
+                "www.expedia.com",
                 "www.wish.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-replay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ff32a763fecea675c2a1dc41e6becb95f8cb005427c9d7d917f8a463c58a7edf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "islcollective.com",
+                "www.digikey.ch"
             ]
         },
         {
@@ -105,27 +138,24 @@
             ]
         },
         {
-            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/logs",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "session-replay"
+                "logs"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "2b801beb66894ada7b2b87a855b663f9a1450274a8263c6cf6d7653f25981569",
-                "7f6966162bc5abf54eaa62d1157229ccea80c30021a38f88d79df42c60822a52"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dataquest.io",
-                "www.digikey.de",
-                "www.gartentraum.de"
+                "replit.com",
+                "www.allure.com",
+                "www.wired.com"
             ]
         }
     ],
@@ -134,35 +164,27 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "travel-assets.com",
+            "prevalence": 0.47044334975369456
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.7446808510638298
+            "prevalence": 0.4605911330049261
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.19680851063829788
-        },
-        {
-            "domain": "viki.io",
-            "prevalence": 0.03723404255319149
-        },
-        {
-            "domain": "sentry-cdn.com",
-            "prevalence": 0.010638297872340425
-        },
-        {
-            "domain": "slidesharecdn.com",
-            "prevalence": 0.010638297872340425
+            "prevalence": 0.06896551724137931
         }
     ],
     "types": {
-        "Fetch": 12,
-        "XHR": 6,
+        "Fetch": 15,
+        "XHR": 10,
         "Ping": 3
     },
     "nameservers": [
+        "ns-560.awsdns-06.net",
         "ns-1264.awsdns-30.org",
-        "ns-128.awsdns-16.com",
         "ns-1907.awsdns-46.co.uk",
-        "ns-560.awsdns-06.net"
+        "ns-128.awsdns-16.com"
     ]
 }

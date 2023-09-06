@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000542,
-    "sites": 8,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
-        "public"
+        "public",
+        "apigw"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "zoorix\\.com\\/sdk\\.min\\.js",
@@ -20,8 +21,8 @@
                 "public"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "a7526c1c241bf82c5e5ac081e6897e6270ff13e6245b7177ad19e7ff43d5c185"
@@ -30,9 +31,63 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "enfemmestyle.com",
+                "godivassecretwigs.com",
                 "saltandstraw.com",
+                "us.huntbikewheels.com",
+                "us.targus.com",
                 "www.edenpure.com",
-                "www.evenflo.com"
+                "www.evenflo.com",
+                "www.outdooredge.com",
+                "www.radiomasterrc.com"
+            ]
+        },
+        {
+            "rule": "zoorix\\.com\\/shopify-hybrid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apigw"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [
+                "0819b1aafba1f4a1af907ac2871ed59fb74f0650663c00b2dddbca951ac8dc88",
+                "9e9674bee0164a3c08fe461888661b56d5ba655caabcca8744a6f6284c9092ec",
+                "34ebf4de7eba0f071011d30c63266ca2ab2ae58a36b8b0064028c893b0a9a141"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godivassecretwigs.com",
+                "www.evenflo.com",
+                "www.outdooredge.com",
+                "www.radiomasterrc.com"
+            ]
+        },
+        {
+            "rule": "zoorix\\.com\\/shopify-hybrid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apigw"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000273,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godivassecretwigs.com",
+                "www.evenflo.com",
+                "www.outdooredge.com",
+                "www.radiomasterrc.com"
             ]
         },
         {
@@ -44,10 +99,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "74b9fca1facc8f3725efc5d19cd25e990c9835ce004d6d4a4220fcc52b13ecfe"
+                "a67cae9d5ec5a9d1a140ef48b0226b188856b78da3d4bbf0be4ab1a9f905c7dc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -55,6 +110,50 @@
             "exampleSites": [
                 "edenpure.com",
                 "www.edenpure.com"
+            ]
+        },
+        {
+            "rule": "zoorix\\.com\\/domains\\/evenflobaby\\.myshopify\\.com\\/zoorix\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "556f7d9cda2c709556ca43c19d3d3e95bf5235176aae86d2d4fc4c6c05adb364"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "evenflo.com",
+                "www.evenflo.com"
+            ]
+        },
+        {
+            "rule": "zoorix\\.com\\/domains\\/outdooredge\\.myshopify\\.com\\/zoorix\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "389d59c5c65f4c78d108ad6edd59c09b184132defe02e2ab950c7cf86cd6d5f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outdooredge.com",
+                "www.outdooredge.com"
             ]
         }
     ],
@@ -64,20 +163,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.9411764705882353
         },
         {
             "domain": "reamaze.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 15,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns-349.awsdns-43.com",
         "ns-711.awsdns-24.net",
-        "ns-1207.awsdns-22.org",
-        "ns-1712.awsdns-22.co.uk"
+        "ns-349.awsdns-43.com",
+        "ns-1712.awsdns-22.co.uk",
+        "ns-1207.awsdns-22.org"
     ]
 }

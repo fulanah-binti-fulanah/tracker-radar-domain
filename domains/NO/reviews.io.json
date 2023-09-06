@@ -7,14 +7,106 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
+        "assets",
+        "widget",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "reviews\\.io\\/css\\/widgets\\/carousel-widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "409cc538e66d415fdfe44ec1606ef45b08983a1d3425c8654db1ba88ed19b1d6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.janus.no"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/iconfont\\/reviewsio-icons\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "773f276bbe2baa05cb28b2cf0d4f251292841ac6e9b90b76b054126603fec4e7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.janus.no"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/carousel-inline-iframeless\\/dist\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "da1d24fdf5e9f1ee8703a6523537e109996c90c9561b2a6ead3bc0b2a245e776"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.janus.no"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/timeline\\/data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "80ee19b802e34acf4627f51a7f7f98c6dc7f37b6be5f9a0becf0c2e2f56c4a1c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.janus.no"
+            ]
+        },
         {
             "rule": "reviews\\.io\\/product\\/rating-batch",
             "cookies": 0,
@@ -36,6 +128,50 @@
                 "bildeler.no",
                 "www.bildeler.no"
             ]
+        },
+        {
+            "rule": "reviews\\.io\\/iconfont\\/reviewsio-icons\\/fonts\\/reviewsio-font\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3eef7b1cc92715b47bbcd98f803527f7c04d48927900cfeecc0e213e87728156"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.janus.no"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/rating-snippet\\/dist\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "10a248d01a6ee882a492c24ced5ed9c56b96410659f4e587c511cf0f5d82c665"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "janus.no",
+                "www.janus.no"
+            ]
         }
     ],
     "categories": [],
@@ -44,14 +180,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8636363636363636
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.13636363636363635
         }
     ],
     "types": {
-        "Fetch": 2
+        "Stylesheet": 4,
+        "Script": 4,
+        "XHR": 2,
+        "Fetch": 2,
+        "Font": 2
     },
     "nameservers": [
-        "adrian.ns.cloudflare.com",
-        "jeremy.ns.cloudflare.com"
+        "jeremy.ns.cloudflare.com",
+        "adrian.ns.cloudflare.com"
     ]
 }

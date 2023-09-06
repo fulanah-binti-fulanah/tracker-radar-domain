@@ -7,24 +7,71 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "logging"
+        "psa",
+        "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "carambo\\.la\\/AddLogs",
+            "rule": "carambo\\.la\\/getPsa",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "logging"
+                "psa"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "responseHashes": [
+                "f4a0e770a4f074287ef6c3fd33e89a0fa82448892d14ac9a131f912c8e398f62"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/getPsa",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "psa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "02bf497d5dfedc35a4a6f81544d0755de2a20b9fc66dc83893cfc2c2844abd3a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetLastMile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -35,7 +82,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "farlex.com",
@@ -43,12 +90,13 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "Fetch": 2,
+        "Script": 4
     },
     "nameservers": [
         "ns-264.awsdns-33.com",
-        "ns-1002.awsdns-61.net",
         "ns-1183.awsdns-19.org",
-        "ns-1630.awsdns-11.co.uk"
+        "ns-1630.awsdns-11.co.uk",
+        "ns-1002.awsdns-61.net"
     ]
 }

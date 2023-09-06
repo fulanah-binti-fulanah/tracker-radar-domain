@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000505,
+    "prevalence": 0.000504,
     "sites": 5,
     "subdomains": [
-        "socket"
+        "socket",
+        "code"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,19 +24,42 @@
                 "socket"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "heimdalsecurity.com",
-                "vapenorge.no",
-                "www.anycubic.com",
+                "bitchemic.com",
                 "www.combatstore.no",
+                "www.mazemap.com",
                 "www.urmaker-bjerke.no"
+            ]
+        },
+        {
+            "rule": "tidio\\.co\\/l4khnndvsj3ztixvcoqzdcxeg3ldosdc\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f494772ac25d77aab5c3adb0ecbcceff0f6490115b6699a0ee319c13cd2b7fbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mazemap.com",
+                "www.mazemap.com"
             ]
         }
     ],
@@ -44,23 +68,24 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "tidiochat.com",
+            "domain": "first party",
             "prevalence": 0.5
         },
         {
-            "domain": "first party",
+            "domain": "tidiochat.com",
             "prevalence": 0.4
         },
         {
-            "domain": "googletagmanager.com",
+            "domain": "cookiebot.com",
             "prevalence": 0.1
         }
     ],
     "types": {
-        "WebSocket": 5
+        "WebSocket": 4,
+        "Script": 2
     },
     "nameservers": [
-        "zara.ns.cloudflare.com",
-        "amir.ns.cloudflare.com"
+        "amir.ns.cloudflare.com",
+        "zara.ns.cloudflare.com"
     ]
 }

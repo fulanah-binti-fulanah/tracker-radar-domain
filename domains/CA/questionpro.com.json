@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000303,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
         "embed",
@@ -18,7 +18,7 @@
     "resources": [
         {
             "rule": "questionpro\\.com\\/javascript\\/min\\/in\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "embed"
@@ -27,10 +27,11 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "4bfdc2113f4ec3ff1e9c14eb112a8b162d8b866cc849dcabd360d0da7bc0e073"
+                "4bfdc2113f4ec3ff1e9c14eb112a8b162d8b866cc849dcabd360d0da7bc0e073",
+                "9901e1c89725a6c821743d2e278d1a2d11592a20fceff82f977207f4204ae078"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,7 +51,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "0c01ef266c3619eec8dc25bb339f3a13d394cc199b85af4b871a38f3d5bbfc2a"
@@ -75,7 +76,7 @@
                 "Event.prototype.timeStamp": 3
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "a0fe8723dcf55da64d06b25446d0a8513e52527c45afcb37073465f9c6f352af"
@@ -100,7 +101,7 @@
                 "Document.cookie getter": 3
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "b38d7bcb5025bc7ff5b70052e6acdbbc9cfc4969c11c9bffaa5e869725e28592"
@@ -123,7 +124,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "627c367aff9164e89d59cde3de4f18ad0b984334b757b0e93e5c5f0668b82390"
@@ -146,7 +147,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e74952eb2d0b9ec57137f30dd8ae5035fd275f7f284bf8fc53ce89429bb23409"
@@ -162,27 +163,33 @@
         },
         {
             "rule": "questionpro\\.com\\/javascript\\/intercept\\/interceptCommon\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
             },
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "c3ee9b56e192dabb434f3e5a24fddd7d69459a4a6e24de874a7d83c0b07e0eeb"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "fcnt": {
+                    "ttl": 86432,
+                    "length": 1,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
+                },
                 "pcnt": {
                     "ttl": 86403,
                     "length": 1,
-                    "prevalence": 0.00010092854259184497,
+                    "prevalence": 0.00010071507704703394,
                     "uniqueness": 1
                 }
             },
@@ -195,14 +202,14 @@
         },
         {
             "rule": "questionpro\\.com\\/a\\/t\\/fX8HFZBhE",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "embed"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -215,18 +222,18 @@
         },
         {
             "rule": "questionpro\\.com\\/a\\/intercept",
-            "cookies": 0.000303,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "bb3132ca80a220841a4265153efa0fe9284e0db9695ac01ea6acee313accc85a",
-                "9b38a00b04b9941ff35e50a1a83f9aef3e2eb0128f95c7ae16bb81d522c6d866"
+                "8fdeac313d216048fbbc80d7bdd9cb01b4170f293c54b2fb1a041a39fbe934d0",
+                "7eb8715eebefe028e0081591a1f49fd9baab2f9f6d5e20fff8d032392e9d7c4a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -236,24 +243,69 @@
                 "orthoinfo.aaos.org",
                 "www.telus.com"
             ]
+        },
+        {
+            "rule": "questionpro\\.com\\/javascript\\/intercept\\/feedbackIntercept\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fbc63a8360b9b4141c20f5a243edf1e800fdbb2229fb60dd34353d9a974ceebd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telus.com",
+                "www.telus.com"
+            ]
+        },
+        {
+            "rule": "questionpro\\.com\\/images\\/qsample\\/slider\\/feedback-preloader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "14ce4bc8df22e1cbc0836e827dc34a9dcdcc39de615420158fa2bc340c29ef97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telus.com",
+                "www.telus.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000302,
     "topInitiators": [
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.6666666666666666
+            "domain": "first party",
+            "prevalence": 0.6
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "domain": "adobedtm.com",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 23,
-        "Stylesheet": 3
+        "Script": 25,
+        "Stylesheet": 3,
+        "Image": 2
     },
     "nameservers": [
         "greg.ns.cloudflare.com",

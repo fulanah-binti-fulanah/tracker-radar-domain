@@ -4,14 +4,89 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
+        "scripts",
+        "us",
         "analytics-sdk-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "pumpjackdataworks\\.com\\/us\\/v2\\/pjdw-sdk\\.umd\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2bda8dfdf33e1c2035be7b34c2e576238231be4210f112273c26baeffe716a54"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcdallas.com",
+                "www.masters.com"
+            ]
+        },
+        {
+            "rule": "pumpjackdataworks\\.com\\/api\\/sdk\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee51894ebbdbf5d02a81f22d1f4ece1b34ce181baf54002e35c30d972bac229f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcdallas.com",
+                "www.mavs.com"
+            ]
+        },
+        {
+            "rule": "pumpjackdataworks\\.com\\/api\\/sdk\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcdallas.com",
+                "www.mavs.com"
+            ]
+        },
         {
             "rule": "pumpjackdataworks\\.com\\/events",
             "cookies": 0,
@@ -21,7 +96,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -34,14 +109,14 @@
         },
         {
             "rule": "pumpjackdataworks\\.com\\/events",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "analytics-sdk-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -55,16 +130,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
+            "domain": "mavs.wpenginepowered.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2222222222222222
+        },
+        {
             "domain": "unpkg.com",
-            "prevalence": 1
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 2,
+        "Fetch": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "desi.ns.cloudflare.com",

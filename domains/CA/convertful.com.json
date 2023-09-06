@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
         "app"
     ],
@@ -14,20 +14,22 @@
     "resources": [
         {
             "rule": "convertful\\.com\\/Convertful\\.js",
-            "cookies": 0.000202,
+            "cookies": 0.000403,
             "fingerprinting": 1,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.width": 2
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Screen.prototype.width": 4,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "99475a603969ff00fb09bc2beec2e3f0cf66d8bea8f16f78719edb344ade2dc7"
@@ -35,69 +37,75 @@
             "type": "Script",
             "firstPartyCookies": {
                 "conv_person": {
-                    "ttl": 63072002,
+                    "ttl": 63072003,
                     "length": 36,
-                    "prevalence": 0.00020185708518368994,
+                    "prevalence": 0.00040286030818813577,
                     "uniqueness": 1
                 },
                 "conv_session": {
-                    "ttl": 63072003,
-                    "length": 143,
-                    "prevalence": 0.00020185708518368994,
+                    "ttl": 63072004,
+                    "length": 136,
+                    "prevalence": 0.00040286030818813577,
                     "uniqueness": 1
                 },
-                "conv_lastEvents": {
-                    "ttl": 63072003,
-                    "length": 23,
-                    "prevalence": 0.00010092854259184497,
-                    "uniqueness": 1
+                "conv_geoip": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.00020143015409406788,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arthritis.ca",
+                "nofilmschool.com",
+                "www.agingcare.com",
                 "www.blackcircles.ca"
             ]
         },
         {
             "rule": "convertful\\.com\\/api\\/widget\\/export",
-            "cookies": 0.000202,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "cc9ae3d75aaef72e0f962e78338006eda9715f8d83e0d734fda76415b4f3eba1"
+                "246ea1ca641414a15cec1def40d6c727eac00d4ac26afb51b567f2407a1608f2",
+                "4c775d714319917f751d8c47e82eb0b7dc24af92a8118db1b06f6e2b8a5d074b",
+                "c188fec40b23e68d60ab0b5eb25fdb094e578d81e431a9894433e3c0fad81def"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arthritis.ca",
+                "nofilmschool.com",
+                "www.agingcare.com",
                 "www.blackcircles.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000403,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "googletagmanager.com",
+            "prevalence": 0.75
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": [
         "drew.ns.cloudflare.com",

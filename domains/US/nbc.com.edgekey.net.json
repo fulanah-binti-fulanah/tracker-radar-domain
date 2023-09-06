@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
+    "prevalence": 0.0000613,
     "sites": 9,
     "subdomains": [
         "id",
+        "static",
+        "img",
         "api"
     ],
     "cnames": [
@@ -23,20 +25,55 @@
         {
             "original": "id.nbc.com",
             "resolved": "id.nbc.com.edgekey.net"
+        },
+        {
+            "original": "img.nbc.com",
+            "resolved": "img.nbc.com.edgekey.net"
+        },
+        {
+            "original": "static.nbc.com",
+            "resolved": "static.nbc.com.edgekey.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "nbc\\.com\\.edgekey\\.net\\/websdk\\/config\\/nbcagts18vote\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "id.nbc.com",
+                    "resolved": "id.nbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "24ee31799da81ca5155d26ecfdfe373431477839dd8a1628e63a64e5c3645c76"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "agt.vote.nbc.com"
+            ]
+        },
+        {
             "rule": "nbc\\.com\\.edgekey\\.net\\/websdk\\/v2\\/identity-sdk\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "id"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "id.nbc.com",
@@ -63,7 +100,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "id.nbc.com",
@@ -82,25 +119,25 @@
             ]
         },
         {
-            "rule": "nbc\\.com\\.edgekey\\.net\\/preview\\/api\\/get_hashes\\.php",
+            "rule": "nbc\\.com\\.edgekey\\.net\\/prod\\/vpg\\.5\\.11\\.6\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "static"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api.nbc.com",
-                    "resolved": "api.nbc.com.edgekey.net"
+                    "original": "static.nbc.com",
+                    "resolved": "static.nbc.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "6d80d37b232676f187af2404ca8fd446b3323f601b915b476bac8d96fc264961"
+                "27defb0ec9a97e22b895435b859609c4eea60467b51067c6c4af0e49029fbb8f"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -109,55 +146,138 @@
             ]
         },
         {
-            "rule": "nbc\\.com\\.edgekey\\.net\\/status\\/",
+            "rule": "nbc\\.com\\.edgekey\\.net\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/peacock_preview\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "id"
+                "img"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "id.nbc.com",
-                    "resolved": "id.nbc.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nbcnews.com",
-                "www.nbcnews.com"
-            ]
-        },
-        {
-            "rule": "nbc\\.com\\.edgekey\\.net\\/status\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "id"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "id.nbc.com",
-                    "resolved": "id.nbc.com.edgekey.net"
+                    "original": "img.nbc.com",
+                    "resolved": "img.nbc.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "da06b44a77468ba555179b7ed473b3bf5450df567064b496fae9c36966d5efd9"
+                "bedb299ee5d91d8e778a10ac0c2cdf8938fddbe38e5fd7d09c832cffe1fd8fa0"
             ],
-            "type": "Fetch",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nbcnews.com",
-                "www.nbcnews.com"
+                "nbc.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\.edgekey\\.net\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/elements-search-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.nbc.com",
+                    "resolved": "img.nbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "cd472145c89700883cccc846a8e42c68b29da31b367e13a913177fcfc7f8503d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\.edgekey\\.net\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/30\\/elements-search-rollover-hover\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.nbc.com",
+                    "resolved": "img.nbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7c5fab75bffab8bd3951c6dffa311dab13065978ab575f970bdb0c1fcb62fd99"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\.edgekey\\.net\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/elements-search-icon-active\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.nbc.com",
+                    "resolved": "img.nbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5e347d0f41b71ac004d3f341b81445d457563d0baa913044211ea19512a5ae54"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\.edgekey\\.net\\/preview\\/api\\/get_hashes\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.nbc.com",
+                    "resolved": "api.nbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5ef567d4407ae236528f470d744d2efdca56f9d8ffa98c1e98884f97e72c6bbd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
             ]
         },
         {
@@ -169,14 +289,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "id.nbc.com",
                     "resolved": "id.nbc.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "1bc3ac80e05168933f05fb30046acb8e2109e8a81874087d30c50014e672a437"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -188,26 +310,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7
-        },
-        {
-            "domain": "nbcnews.com",
-            "prevalence": 0.2
+            "prevalence": 0.5555555555555556
         },
         {
             "domain": "nbcuni.com",
-            "prevalence": 0.1
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "nbcnews.com",
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
-        "Script": 2,
         "Fetch": 6,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 4,
+        "Image": 8,
+        "XHR": 2
     },
     "nameservers": []
 }

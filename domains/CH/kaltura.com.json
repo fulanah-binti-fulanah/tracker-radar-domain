@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "cdnapisec",
         "analytics",
+        "cfvod",
         "cdnapi"
     ],
     "cnames": [],
@@ -20,11 +21,14 @@
         {
             "rule": "kaltura\\.com\\/p\\/3197943\\/sp\\/319794300\\/embedIframeJs\\/uiconf_id\\/49248343\\/partner_id\\/3339523",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdnapisec"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -40,6 +44,28 @@
             ]
         },
         {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.101\\/\\/modules\\/MwEmbedSupport\\/skins\\/common\\/images\\/player_big_play_button\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "484095ed2bb8d5abca59f850df293ee9126daf32fb669bcf74ba5e60376c4333"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sap.com",
+                "www.vocabulary.com"
+            ]
+        },
+        {
             "rule": "kaltura\\.com\\/api_v3\\/index\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -52,16 +78,36 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "528918892764c61076388ff76ca238db0647d50d232d870f8707f09c63d78aa0"
+                "e15b253619ed181906326a7a3bbcf787076ba844ead37fbee7ffde06b63c91a4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010049241282283188
+                "IR_gbd": 0.00010045203415369161
             },
             "exampleSites": [
                 "ibm.com",
                 "www.oreilly.com"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/pd\\/p\\/1825021\\/sp\\/182502100\\/serveFlavor\\/entryId\\/1_mjf14a1e\\/v\\/1\\/flavorId\\/1_jtaulkv8\\/name\\/a\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cfvod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mayoclinic.org",
+                "www.mayoclinic.org"
             ]
         },
         {
@@ -76,7 +122,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4f0fc04f52830854fc79fc1be3b2a47959f59c7c9e3fd246b61418688cfc2785"
+                "0047e454cb8201cfc2d3f19457a6b3f8d4c392a7a27f64347b660c23abec39bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -131,7 +177,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e10542569f02986590c183f94fb074483c5c8def4cecaebe8aaff1027dec018b"
+                "2f02a06fc6bbfb65862a5d8f2973d030a3e721ccb88100b3b2ba1e52d5fd0d23"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -148,27 +194,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5945945945945946
+            "prevalence": 0.6904761904761905
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.35135135135135137
+            "prevalence": 0.2619047619047619
         },
         {
             "domain": "s81c.com",
-            "prevalence": 0.05405405405405406
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
         "Script": 8,
-        "XHR": 2
+        "Image": 2,
+        "XHR": 2,
+        "Media": 2
     },
     "nameservers": [
-        "a10-65.akam.net",
         "a8-65.akam.net",
         "a1-65.akam.net",
-        "a28-65.akam.net",
         "a7-65.akam.net",
+        "a10-65.akam.net",
+        "a28-65.akam.net",
         "a3-65.akam.net"
     ]
 }

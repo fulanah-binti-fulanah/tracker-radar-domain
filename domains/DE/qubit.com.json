@@ -7,15 +7,57 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "gong-eb",
-        "api"
+        "api",
+        "gong-eb"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "qubit\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nh-hotels.com",
+                "www.tkmaxx.com"
+            ]
+        },
+        {
+            "rule": "qubit\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ff6f06143d027b43ff44c3244590a94654c32bc2b6f01b8f7887592d99b3a272"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nh-hotels.com",
+                "www.tkmaxx.com"
+            ]
+        },
         {
             "rule": "qubit\\.com\\/events\\/deflate\\/tkmaxxde_prod",
             "cookies": 0,
@@ -50,7 +92,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "12c95a0ca808ead8b5e58b2a429fc8a9be1631de1789c1df74c173dc94296dbf"
+                "08685d4983b96c16d41d3fda990d436579577215548ef73846639b546553850d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -87,11 +129,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7272727272727273
+        },
+        {
+            "domain": "goqubit.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "XHR": 2,
+        "Preflight": 2,
+        "XHR": 4,
         "Fetch": 4
     },
     "nameservers": [

@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000303,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
         "aliant.bell",
@@ -25,7 +25,7 @@
             "resolved": "beacon-cdn.walmart.ca.akadns.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ca\\.akadns\\.net\\/",
@@ -36,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "aliant.bell.ca",
@@ -54,26 +54,26 @@
         },
         {
             "rule": "ca\\.akadns\\.net\\/rum\\.gif",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "beacon-cdn.walmart"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "beacon.walmart.ca",
                     "resolved": "beacon-cdn.walmart.ca.akadns.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Image",
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gpv_Page": 0.00010092854259184497
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "walmart.ca",
                 "www.walmart.ca"
@@ -84,10 +84,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000302,
+    "topInitiators": [
+        {
+            "domain": "walmartimages.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Document": 2,
-        "Image": 2
+        "Ping": 2
     },
     "nameservers": []
 }

@@ -9,14 +9,60 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000303,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
+        "apm-digitalgate-serverless-v1-prd-ol",
+        "apm-publicapps-v1-pro-crd-hd",
         "sharkninja-prd-cus-001"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "azure-api\\.net\\/digitalgate-logs\\/Save",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm-digitalgate-serverless-v1-prd-ol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "950b4875ba0631d05d5375dc19b488dcc38279d0fa41b92f2561b565decac224"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avianca.com",
+                "www.avianca.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/digital-gate\\/digitalGateApi\\/accountwithchannels",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm-publicapps-v1-pro-crd-hd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "309d454b9a96354be5140eb1264ee1e8db3b30011cf46cb0a709189451c30882"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avianca.com",
+                "www.avianca.com"
+            ]
+        },
         {
             "rule": "azure-api\\.net\\/icm\\/b2c\\/SharkNinja-CA-Site\\/ninjaca",
             "cookies": 0,
@@ -26,12 +72,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "4dc02ec1134b765290b59ac06d7248a22b4a0b4085116a045ce1155ae7005721"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -48,10 +92,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "c328638bb0983fed05e1cc4e6525beb4b5d2923836d1f5f9b975ce1ecdefc051"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -68,10 +114,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c18517b20de616e3667a3f550efef24d1eb2f3fbec4ed9f7c9980f10d69453f5"
+                "ead8798d5ed3655a84d0ee2a161e0aaab5c68ba1edb727005b0b9b80ba3b445c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -90,7 +136,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -108,21 +154,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9746835443037974
+            "prevalence": 0.9518072289156626
         },
         {
             "domain": "app-digitalgate-prd-ol.azurewebsites.net",
-            "prevalence": 0.02531645569620253
+            "prevalence": 0.04819277108433735
         }
     ],
     "types": {
-        "XHR": 4,
-        "Preflight": 4
+        "Fetch": 4,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns1-05.azure-dns.com",
-        "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
+        "ns2-05.azure-dns.net",
         "ns4-05.azure-dns.info"
     ]
 }

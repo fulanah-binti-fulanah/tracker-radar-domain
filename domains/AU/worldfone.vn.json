@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
         "worldchatbox"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "worldfone\\.vn\\/assets\\/js\\/widget\\.js",
@@ -26,7 +26,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5783452e0d7a110ff1fd229083d5ba9056e162faaebd562ec3e8c9a6fb412392"
+                "9114b3ee2c30b3a597e457683ac603c189654b3aacfae43ceeb078c9b27286f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -48,7 +48,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7822221f40260eb073e38f8f10a694750b984ac5ed0bcd9e5975bc4ed599962a"
+                "82e84914a00fb3607b0b9e519abb5a5add322f6a1e473937134b4c11390dd72d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -103,21 +103,21 @@
             ]
         },
         {
-            "rule": "worldfone\\.vn\\/view\\/js\\/app\\.61983240\\.js",
+            "rule": "worldfone\\.vn\\/view\\/js\\/app\\.9be24b97\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "worldchatbox"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1cb4e1fff91a2057d000f78c3b05af4898101372c1389b59cb30a99fa9fd83b9"
+                "0edec96adb6a60774181ad146718b164e6dd96408b1e7cf026f398297ff8ddad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -130,11 +130,16 @@
         {
             "rule": "worldfone\\.vn\\/view\\/js\\/chunk-vendors\\.a5843d63\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "worldchatbox"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -208,7 +213,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "63bb0c994449a58810ab1850046b3512b444dbf8ded6f6f8f4ccdc959e5860e2"
+                "8708ed148510880d538de9ded700df1641d78e086db4f5c4019d0e9d79c839e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -247,11 +252,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.8888888888888888
         },
         {
             "domain": "cloudflareinsights.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {

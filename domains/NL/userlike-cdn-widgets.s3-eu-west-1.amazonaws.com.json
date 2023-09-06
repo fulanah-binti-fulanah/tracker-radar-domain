@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,19 +21,45 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "e4b26c02e1e4218f6f6b8d5fcfbe99940fb4d5ceed37ca35da46b34095e2744d"
+                "5ca01b33c22f6ca7b7a58ee70e3c5961bfcf88b6aad2d1267321d0ea89a537b3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bonusan.com",
+                "www.boomhogeronderwijs.nl",
+                "www.hsleiden.nl",
                 "www.nt2.nl",
+                "www.nt2school.nl",
                 "www.statista.com"
+            ]
+        },
+        {
+            "rule": "userlike-cdn-widgets\\.s3-eu-west-1\\.amazonaws\\.com\\/8fb8f346cff58ab68dd5fbee46f60d762cc1c109919501d834a01664bbff3787\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4091001199095940a0f400ebe8b87131bf488f31fe6613055dd10f872f92ab09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nt2.nl",
+                "www.nt2school.nl"
             ]
         }
     ],
@@ -45,16 +71,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.875
+        },
+        {
+            "domain": "b-cdn.net",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Fetch": 3
+        "Fetch": 6,
+        "Script": 2
     },
     "nameservers": [
+        "ns-1228.awsdns-25.org",
         "ns-1961.awsdns-53.co.uk",
         "ns-56.awsdns-07.com",
-        "ns-777.awsdns-33.net",
-        "ns-1228.awsdns-25.org"
+        "ns-777.awsdns-33.net"
     ]
 }

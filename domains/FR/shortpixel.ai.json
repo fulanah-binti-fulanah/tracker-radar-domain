@@ -4,16 +4,44 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000809,
-    "sites": 8,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
+        "cdn",
         "sp-ao"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "shortpixel\\.ai\\/client\\/q_glossy,ret_img\\/https:\\/\\/www\\.selection\\.ca\\/wp-content\\/uploads\\/2023\\/08\\/Thermostat-chaleur-extreme-chiffres-aiguille-1200px\\.jpg",
+            "rule": "shortpixel\\.ai\\/assets\\/js\\/bundles\\/spai-lib-bg\\.1\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e41b237b337854e1aa1806ad9090e675d37f483b48dcc430eceb35939d51e252"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linuxiac.com",
+                "marsactu.fr"
+            ]
+        },
+        {
+            "rule": "shortpixel\\.ai\\/client\\/q_glossy,ret_img\\/https:\\/\\/www\\.selection\\.ca\\/wp-content\\/uploads\\/2023\\/08\\/1-Discours-negatif-homme-miroir-1200px\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -23,9 +51,7 @@
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [
-                "1a68955cc2a2f9afcf4ce2deffbce74dde6ff3395e896995662ec3dc48303d54"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -45,10 +71,11 @@
         }
     ],
     "types": {
+        "Script": 2,
         "Image": 2
     },
     "nameservers": [
-        "pam.ns.cloudflare.com",
-        "phil.ns.cloudflare.com"
+        "phil.ns.cloudflare.com",
+        "pam.ns.cloudflare.com"
     ]
 }

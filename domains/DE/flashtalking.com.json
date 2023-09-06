@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "servedby"
+        "servedby",
+        "cdn",
+        "stat",
+        "ad-events"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "flashtalking\\.com\\/map\\/",
@@ -23,18 +26,91 @@
                 "servedby"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "samsung.com",
+                "delta.com",
+                "eu.community.samsung.com",
                 "stock.adobe.com",
                 "support.hp.com",
                 "www.hilton.com"
+            ]
+        },
+        {
+            "rule": "flashtalking\\.com\\/pageFold\\/ftpagefold_v4\\.7\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "04a4ec051482dbeac84bf68c61fe3abc1cd91a21d49527e14521723bd7606d94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-wirtschafts-nachrichten.de",
+                "www.4teachers.de"
+            ]
+        },
+        {
+            "rule": "flashtalking\\.com\\/reportV3\\/ft\\.stat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-wirtschafts-nachrichten.de",
+                "www.4teachers.de"
+            ]
+        },
+        {
+            "rule": "flashtalking\\.com\\/state\\/7322748",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4teachers.de",
+                "www.4teachers.de"
             ]
         }
     ],
@@ -52,24 +128,29 @@
     "cookies": 0.000403,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        },
+        {
             "domain": "demdex.net",
-            "prevalence": 0.4
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.3
+            "prevalence": 0.16666666666666666
         },
         {
-            "domain": "first party",
-            "prevalence": 0.2
+            "domain": "googlesyndication.com",
+            "prevalence": 0.08333333333333333
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Image": 4
+        "Image": 9,
+        "Script": 2
     },
     "nameservers": [
         "dns1.p02.nsone.net",

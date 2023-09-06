@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
-        "c.oracleinfinity"
+        "c.oracleinfinity",
+        "static-mh.content.disney"
     ],
     "cnames": [
         {
             "original": "c.oracleinfinity.io",
             "resolved": "c.oracleinfinity.io.edgekey.net"
+        },
+        {
+            "original": "static-mh.content.disney.io",
+            "resolved": "static-mh.content.disney.io.edgekey.net"
         }
     ],
     "fingerprinting": 2,
@@ -46,7 +51,7 @@
                 "ORA_FPC": {
                     "ttl": 63113855,
                     "length": 2,
-                    "prevalence": 0.000303459437588509,
+                    "prevalence": 0.0003031221582297666,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -56,6 +61,35 @@
                 "docs.oracle.com",
                 "www.java.com"
             ]
+        },
+        {
+            "rule": "io\\.edgekey\\.net\\/matterhorn\\/assets\\/application-ee424be29434\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-mh.content.disney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "static-mh.content.disney.io",
+                    "resolved": "static-mh.content.disney.io.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "614bfd25291efb8db3d64f7d9803ae305a6eb5ffc62dd310e2e831da7722a36f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "s_ensPortal": 0.0002020814388198444
+            },
+            "exampleSites": [
+                "disney.fr",
+                "www.disney.fr"
+            ]
         }
     ],
     "categories": [],
@@ -64,11 +98,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "espn.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 3,
+        "Stylesheet": 2
     },
     "nameservers": []
 }

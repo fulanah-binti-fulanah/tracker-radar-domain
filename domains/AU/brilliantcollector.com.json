@@ -4,12 +4,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "lib-ap-1",
-        "lib-us-1",
-        "lib-us-3"
+        "lib-us-1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,7 +23,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -53,7 +52,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.000906,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
                 "1d4fdec9bbde03db70d2add577e12d713e8cceb38fb75ba13df9c89252475f60"
@@ -74,40 +73,6 @@
             ]
         },
         {
-            "rule": "brilliantcollector\\.com\\/common\\/ubx\\/UBX\\.js",
-            "cookies": 0.000101,
-            "fingerprinting": 1,
-            "subdomains": [
-                "lib-us-3"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c1ec8602436e94ab1276f8a07d37e09b3cf315b648558c74849e7e633eece819"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "WCXSID_expiry": {
-                    "ttl": null,
-                    "length": 13,
-                    "prevalence": 0.00010063399416322834,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fishersci.com",
-                "www.reece.com.au"
-            ]
-        },
-        {
             "rule": "brilliantcollector\\.com\\/collector\\/collectorPost",
             "cookies": 0,
             "fingerprinting": 0,
@@ -116,9 +81,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
+                "7d963613e8fdcce6183dcdf8999b43d27ee594fe7524dd327a3f866979c826af",
                 "1d4fdec9bbde03db70d2add577e12d713e8cceb38fb75ba13df9c89252475f60"
             ],
             "type": "XHR",
@@ -133,39 +99,42 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.5294117647058824
         },
         {
             "domain": "content-cms.com",
-            "prevalence": 0.1875
+            "prevalence": 0.14705882352941177
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.15625
+            "prevalence": 0.14705882352941177
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.09375
+            "prevalence": 0.08823529411764706
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.0625
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "site24x7rum.com",
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
         "Preflight": 10,
         "Fetch": 9,
-        "Script": 2,
         "XHR": 3
     },
     "nameservers": [
-        "ns1.acoustic-adm.com",
-        "ns2.acoustic-adm.com",
         "ns3.acoustic-adm.com",
-        "ns4.acoustic-adm.com"
+        "ns4.acoustic-adm.com",
+        "ns1.acoustic-adm.com",
+        "ns2.acoustic-adm.com"
     ]
 }

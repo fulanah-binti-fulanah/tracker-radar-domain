@@ -4,36 +4,104 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.00000682,
+    "sites": 1,
     "subdomains": [
-        "manjushri-sdxl-1-0",
-        "runwayml-stable-diffusion-v1-5"
+        "gradio-pictionary",
+        "hysts-sd-xl",
+        "gradio-timeseries-forecasting-with-prophet",
+        "gradio-xgboost-income-prediction-with-explainability",
+        "ysharma-explore-llamav2-with-tgi"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "hf\\.space\\/",
+            "rule": "hf\\.space\\/config",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "manjushri-sdxl-1-0",
-                "runwayml-stable-diffusion-v1-5"
+                "gradio-pictionary",
+                "hysts-sd-xl"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "c4858c976a48dbdfcf941d96adc5cad7ede65d8c64e1ef8db35340372ffa3f3f"
-            ],
-            "type": "Document",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stablediffusionxl.com",
-                "stablediffusionweb.com"
+                "gradio.app",
+                "www.gradio.app"
+            ]
+        },
+        {
+            "rule": "hf\\.space\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gradio-pictionary",
+                "gradio-timeseries-forecasting-with-prophet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "102ff791490eb6db99aef6a5b937f6f3db370750ddc6b01df61ea8359e48f64b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradio.app",
+                "www.gradio.app"
+            ]
+        },
+        {
+            "rule": "hf\\.space\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gradio-pictionary",
+                "gradio-timeseries-forecasting-with-prophet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradio.app",
+                "www.gradio.app"
+            ]
+        },
+        {
+            "rule": "hf\\.space\\/theme\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gradio-xgboost-income-prediction-with-explainability",
+                "ysharma-explore-llamav2-with-tgi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73fa2a213c99194f8c4c16558f017a5e2171f85f35979599922a8d5ca26eb826"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradio.app",
+                "www.gradio.app"
             ]
         }
     ],
@@ -43,16 +111,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "gradio.s3-us-west-2.amazonaws.com",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Document": 2
+        "Fetch": 4,
+        "Preflight": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns-637.awsdns-15.net",
         "ns-1714.awsdns-22.co.uk",
         "ns-210.awsdns-26.com",
-        "ns-637.awsdns-15.net",
         "ns-1422.awsdns-49.org"
     ]
 }

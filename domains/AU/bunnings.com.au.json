@@ -7,17 +7,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "media.prod"
+        "media.prod",
+        "api.prod"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "bunnings\\.com\\.au\\/api\\/public\\/content\\/afe5b466f52040a384e3a97cb1786777",
-            "cookies": 0.000101,
+            "rule": "bunnings\\.com\\.au\\/api\\/public\\/content\\/9b46009297ca477a865b7ea581679d9f",
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "media.prod"
@@ -27,9 +28,93 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8418c37883c4acd4d0a4053d0d898fe8190ef2e98c0a970f6551c6fb47735c8c"
+                "412b47400e2fb03f8aff61adcbcbb0a63e3199ccdb1fffdc3dee62bc0821ad98"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.co.nz",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
+            "rule": "bunnings\\.com\\.au\\/v1\\/stores\\/checkActiveStore",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1b6d3ba00de364c80e7dc29e07b9d15e69c1421aae879d8ae8d5d492a5fedea5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.co.nz",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
+            "rule": "bunnings\\.com\\.au\\/v1\\/stores\\/checkActiveStore",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.co.nz",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
+            "rule": "bunnings\\.com\\.au\\/v1\\/search\\/recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.co.nz",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
+            "rule": "bunnings\\.com\\.au\\/v1\\/search\\/recommendation",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6871750295c83e5f3032b84f6800212949992953aaf634eab446d64cdebc48ff"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -40,7 +125,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
@@ -48,12 +133,14 @@
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns2-07.azure-dns.net",
         "ns1-07.azure-dns.com",
-        "ns4-07.azure-dns.info",
-        "ns3-07.azure-dns.org"
+        "ns2-07.azure-dns.net",
+        "ns3-07.azure-dns.org",
+        "ns4-07.azure-dns.info"
     ]
 }

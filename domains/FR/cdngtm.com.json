@@ -7,36 +7,100 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "d1.dhgate.com"
+        "abtest.dhgate.com",
+        "asm.dhgate.com",
+        "leoread.dhgate.com"
     ],
     "cnames": [
         {
-            "original": "d1.dhgate.com",
-            "resolved": "d1.dhgate.com.cdngtm.com"
+            "original": "abtest.dhgate.com",
+            "resolved": "abtest.dhgate.com.cdngtm.com"
+        },
+        {
+            "original": "asm.dhgate.com",
+            "resolved": "asm.dhgate.com.cdngtm.com"
+        },
+        {
+            "original": "leoread.dhgate.com",
+            "resolved": "leoread.dhgate.com.cdngtm.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "cdngtm\\.com\\/track\\/tracklog\\.jsp",
+            "rule": "cdngtm\\.com\\/abversion_pv",
             "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "d1.dhgate.com"
+                "abtest.dhgate.com"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [
                 {
-                    "original": "d1.dhgate.com",
-                    "resolved": "d1.dhgate.com.cdngtm.com"
+                    "original": "abtest.dhgate.com",
+                    "resolved": "abtest.dhgate.com.cdngtm.com"
                 }
             ],
             "responseHashes": [
-                "f2f5753ac32e5fe59cf3cb1d18744743648a7eed9123027d0f8cf06b50f79817"
+                "28cf12bad28de345db7f1074c0b8e7283746ec65505252761e010a2e4180d9ee"
             ],
-            "type": "Ping",
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dhgate.com",
+                "fr.dhgate.com"
+            ]
+        },
+        {
+            "rule": "cdngtm\\.com\\/drtPage\\/customProd\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asm.dhgate.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "asm.dhgate.com",
+                    "resolved": "asm.dhgate.com.cdngtm.com"
+                }
+            ],
+            "responseHashes": [
+                "1e594c9576b5870074f58f3d0ab605eec34e149c016a6245abd1385b2e15b0c5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dhgate.com",
+                "fr.dhgate.com"
+            ]
+        },
+        {
+            "rule": "cdngtm\\.com\\/couponpromo\\/read\\/search\\/listajax\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "leoread.dhgate.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "leoread.dhgate.com",
+                    "resolved": "leoread.dhgate.com.cdngtm.com"
+                }
+            ],
+            "responseHashes": [
+                "e87ecd9e116f2db1493763a20cb73db0e99e9466d83de0a2492dd3b8bf0760c3"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -55,13 +119,14 @@
         }
     ],
     "types": {
-        "Ping": 2
+        "Script": 2,
+        "XHR": 4
     },
     "nameservers": [
         "dns1.qtlglb.info",
-        "dns2.qtlglb.info",
         "dns3.qtlglb.info",
-        "dns4.qtlglb.info",
-        "dns5.qtlglb.info"
+        "dns5.qtlglb.info",
+        "dns2.speedws.info",
+        "dns4.speedws.info"
     ]
 }

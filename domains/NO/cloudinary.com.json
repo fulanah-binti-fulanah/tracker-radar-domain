@@ -9,20 +9,22 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.013,
-    "sites": 129,
+    "prevalence": 0.0141,
+    "sites": 140,
     "subdomains": [
-        "puma-global.multicdn",
         "res",
+        "media.formula1.com.multicdn",
+        "upload-widget",
         "rsc.san",
-        "onecms-res",
+        "reviewed-com-res",
         "assets.corsair.com.multicdn",
         "img.fiskerinc.com.san",
         "res-3",
         "res-4",
-        "res-5",
         "res-1",
+        "res-5",
         "res-2",
+        "images.barrons.com.multicdn",
         "images.mansionglobal.com.multicdn"
     ],
     "cnames": [
@@ -31,16 +33,20 @@
             "resolved": "assets.corsair.com.multicdn.cloudinary.com"
         },
         {
+            "original": "images.barrons.com",
+            "resolved": "images.barrons.com.multicdn.cloudinary.com"
+        },
+        {
             "original": "images.mansionglobal.com",
             "resolved": "images.mansionglobal.com.multicdn.cloudinary.com"
         },
         {
-            "original": "images.puma.com",
-            "resolved": "puma-global.multicdn.cloudinary.com"
-        },
-        {
             "original": "img.fiskerinc.com",
             "resolved": "img.fiskerinc.com.san.cloudinary.com"
+        },
+        {
+            "original": "media.formula1.com",
+            "resolved": "media.formula1.com.multicdn.cloudinary.com"
         },
         {
             "original": "media.rs-online.com",
@@ -50,28 +56,146 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "cloudinary\\.com\\/video\\/fetch\\/q_auto\\/https:\\/\\/videos\\.puma\\.net\\/videos\\/fn\\/~regional~EEA~others~23AW_TS_Football_AC-Milan_Third_Launch-Film_1x1_30s\\.mp4",
+            "rule": "cloudinary\\.com\\/obosit-prd-ch-clry\\/image\\/upload\\/q_auto\\/v1619689575\\/OBOS%20Merkevare\\/OBOS\\/Liggende\\/obos_liggende_hus_hvit\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "puma-global.multicdn"
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c57004aa040d11ba3978bd263d64f77d7dcf215b6b7028f0f08507b40c087e44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obos.no",
+                "www.obos.no"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/common\\/logos\\/f1_logo_red\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.formula1.com.multicdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [
                 {
-                    "original": "images.puma.com",
-                    "resolved": "puma-global.multicdn.cloudinary.com"
+                    "original": "media.formula1.com",
+                    "resolved": "media.formula1.com.multicdn.cloudinary.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Media",
+            "responseHashes": [
+                "a4d452b7d5c69e345a07cd5a458164fd4dede9689a298a8d202d005aa980bca5"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "puma.com",
-                "eu.puma.com"
+                "formula1.com",
+                "www.formula1.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/global\\/all\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "upload-widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "fffdf823387448d06fea83298320a218376648739f281f58c350cfc946c07c67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frivillig.no",
+                "ut.no",
+                "www.rivalry.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/2\\.8\\.20\\/global\\/all\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "upload-widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "9c731812b7967075146b3ab417aa03572ad6616976598be1d1db76416a21d568"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frivillig.no",
+                "ut.no",
+                "www.rivalry.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/utmb-world\\/image\\/upload\\/if_w_gt_400\\/c_scale,h_267,w_400\\/if_end\\/e_blur\\/v1\\/montblanc\\/Races\\/UTMB\\/utmb23_utmb_pb_00_0005_3746aa323f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8d10139a47b6e0c5e940eb26508deb795e7c8dff77e566f04f459208121c3f59"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "utmb.world",
+                "montblanc.utmb.world"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/utmb-world\\/image\\/upload\\/if_w_gt_400\\/c_scale,h_267,w_400\\/if_end\\/e_blur\\/v1\\/montblanc\\/Races\\/ETC\\/utmb23_etc_mac_00_0134_76bfcd97ce",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "cc37af6c4d2f202e35a1ca8eee06e76394ca7bd40c86984879db2280d7230199"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "utmb.world",
+                "montblanc.utmb.world"
             ]
         },
         {
@@ -384,28 +508,6 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/rspoc\\/image\\/upload\\/w_176,h_50,c_crop,c_pad,b_white,f_auto,q_auto\\/dpr_auto\\/v1677167275\\/RS%20CONTENTFUL\\/France\\/Homepage\\/Logos\\/2023\\/janvier\\/Schneider-Electric\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "2ab27390f3a6cd390277339ae37e7f3e1caa0e081f98634b64a944d56b3cf5c0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rs-online.com",
-                "uk.rs-online.com"
-            ]
-        },
-        {
             "rule": "cloudinary\\.com\\/rspoc\\/image\\/upload\\/w_176,h_50,c_crop,c_pad,b_white,f_auto,q_auto\\/dpr_auto\\/v1687429470\\/RS%20CONTENTFUL\\/Homepage\\/brand-full-width-block%20-%20176%20\\(w\\)%20x%2050%20\\(h\\)\\/M1644-01\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -418,28 +520,6 @@
             "cnames": [],
             "responseHashes": [
                 "59f5ce62e9c8a1f48374792a303468c487e573c30a4e85b9572eb1b2cd600e26"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rs-online.com",
-                "uk.rs-online.com"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/rspoc\\/image\\/upload\\/f_auto\\/q_auto\\/v1645084430\\/RS%20CONTENTFUL\\/South%20Africa\\/Commercial%20Programmes\\/Automotive\\/3M\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "d3cf62376c1f943b0426db45a25ef6173b3c38f630ec5ebf1c8647800143b1e3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -626,7 +706,7 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/nafmedier\\/image\\/upload\\/dpr_3\\.0\\/q_auto:eco\\/f_auto\\/v1\\/Elbil\\/Elbiltester\\/2023\\/Sommertest%202023\\/Kj%C3%B8rebilder%20\\(foto:%20Tomm%20W\\.%20Christiansen\\)\\/Xpeng-g9-vei-tomm-w-christiansen\\._xzspoo",
+            "rule": "cloudinary\\.com\\/nafmedier\\/image\\/upload\\/c_fill,h_432,w_768\\/q_auto\\/f_auto\\/v1\\/Politikk%20og%20samfunn\\/NAF_E16_aksjon_vei",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -637,7 +717,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "ee75f8bf10d57d8eb5e58b07fab95db4dd3bcdaa83c8747f14769bd864eec46d"
+                "44c08cdfc9525ef68bc62668b097167ed8b872dc7c7834caf3660cc697d5183d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -692,7 +772,7 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/nafmedier\\/image\\/upload\\/c_fill,h_432,w_768\\/q_auto\\/f_auto\\/20230523_110218-2_kll9gx",
+            "rule": "cloudinary\\.com\\/nafmedier\\/image\\/upload\\/dpr_3\\.0\\/q_auto:eco\\/f_auto\\/v1\\/NAF%20Senter\\/NAF_senter_mekaniker_n5c3nv",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -703,7 +783,7 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "b084af08f386c67ef01f877cd940b77259ca6efd2e03834b546f5b42ca1dae27"
+                "92d14006bc8751a6e1fe2364ae3481a4094d99ea86f0bcf40a38dbb3194598a0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1000,6 +1080,116 @@
             ]
         },
         {
+            "rule": "cloudinary\\.com\\/image\\/fetch\\/s--4OLUf6ar--\\/b_white,c_limit,cs_srgb,f_auto,fl_progressive\\.strip_profile,g_center,q_auto,w_972\\/https:\\/\\/reviewed-production\\.s3\\.amazonaws\\.com\\/1693600373664\\/bollandbranch\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reviewed-com-res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c9d3b29c1ad441ffea185daaceb8d641b0d9742b32724daa8f25826078ae9032"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "reviewed.usatoday.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/image\\/fetch\\/s--3l5u_n12--\\/b_white,c_limit,cs_srgb,f_auto,fl_progressive\\.strip_profile,g_center,h_210,q_auto,w_320\\/https:\\/\\/reviewed-production\\.s3\\.amazonaws\\.com\\/1693325896144\\/70560940007-littlemermaid-1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reviewed-com-res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9778fb0c62ef00ca5d5946740fa44ea8e4615d242f90787db6c27a2b4a2e5c4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "reviewed.usatoday.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/image\\/fetch\\/s--bfnTg0Jy--\\/b_white,c_limit,cs_srgb,f_auto,fl_progressive\\.strip_profile,g_center,h_210,q_auto,w_320\\/https:\\/\\/reviewed-production\\.s3\\.amazonaws\\.com\\/1693933105374\\/ld-hero\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reviewed-com-res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7640ca4c1c767e44501a932eaa7d11cd73d6771d8f18fe0e02950afe905d021e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "reviewed.usatoday.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/image\\/fetch\\/s--N5qMI_J8--\\/b_white,c_limit,cs_srgb,f_auto,fl_progressive\\.strip_profile,g_center,h_210,q_auto,w_320\\/https:\\/\\/reviewed-production\\.s3\\.amazonaws\\.com\\/1693011242000\\/hpzbook_hero\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reviewed-com-res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ff04fedfaa1af256086cd026957299b9ce587fc2a3807d19b5faa143297bff9b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "reviewed.usatoday.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/image\\/fetch\\/s--12Z4cW5l--\\/b_white,c_limit,cs_srgb,f_auto,fl_progressive\\.strip_profile,g_center,h_210,q_auto,w_320\\/https:\\/\\/reviewed-production\\.s3\\.amazonaws\\.com\\/1649717180000\\/Hair-Waver-Hero-GOLDWASSER\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reviewed-com-res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b74a311fc1b63b7ce6d7209e111a39434fe304d896c5845243e99b00f7a03871"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "reviewed.usatoday.com"
+            ]
+        },
+        {
             "rule": "cloudinary\\.com\\/anker-dtc\\/video\\/upload\\/c_scale,w_800\\/v1\\/anker\\/home-charger\\/charge-pc\\.webm",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1020,7 +1210,7 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/baardsen-no\\/image\\/upload\\/c_pad,h_200,q_auto,w_200\\/p_ST1001625003_default_1\\.png",
+            "rule": "cloudinary\\.com\\/baardsen-no\\/image\\/upload\\/c_pad,h_200,q_auto,w_200\\/p_ST1001883034_default_1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1042,403 +1232,2053 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--HDBsL09l--\\/fl_relative,g_south_east,l_one-cms:core:watermark:afp_watermark,w_0\\.1\\/f_auto,q_auto\\/c_fill,g_auto,h_181,w_313\\/v1\\/one-cms\\/core\\/6078fffa7307cdc66eaf76916b7a48ea11f864f6\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_148,c_scale\\/contributors\\/41316\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "0589e491f71a34f86417b61ef8c98fe58ce39ab84d8846e198d9b13887d157fc"
+                "90e4dc9ea5eb12f73eabbad69f61521d761db618b307fe133bd883a39791fb69"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--jbXECw9q--\\/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0\\.1\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/16\\/singapore_deputy_prime_minister_shares_insights_on_the_functions_of_the_reserves\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_148,c_scale\\/contributors\\/38974\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4cbfe19f8dcd251c4d7521982fa7f97c3b8bad5d14e5f22ac206e9c4bea3125b"
+                "c8e3d6cdf42193540b2edbfe750fe1501410660bdecf4ea912de62c9d2dcf28b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--gj3BCD_D--\\/c_crop,h_840,w_1494,x_5,y_151\\/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0\\.1\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2022\\/10\\/18\\/parliament_cbd_skyline_file_photo_sep_23_20222\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526662460\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d6aa48de58590c92b268a0fc2ea36d0234f177cc981d6e53fdb239ed91d11bfe"
+                "8eb41221efee6a9cf6ace727ee783b6e3796f17a683198cfcd9c86509ad74217"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--yRaUgYxQ--\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/16\\/GCB%20raid%20comp%20\\(1\\)_0\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526660664\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "97f136f62154f5dc5303193c93d7ccbb3843c59dfa64a795fdd847d7d0f2a7a1"
+                "81071c179fc835acb492f9204ef4161ecd8bbb247bb9b6e3ef718b578312053a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--vSfvCsIR--\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/16\\/goods%20seized%20by%20police\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526661760\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "5cc124190eb73dfc351afceaa7ba3ae7be96a1b4f7191998377901d39c4ef6dd"
+                "d9c055f4e04cc78291d40ba4676ed5ce70081b9324d26e7c67ce1d11d5c0f81c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--q5_M67Kc--\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/02\\/02\\/photo1675349883\\.jpeg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526646897\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "521f421c1e67b6530d0d13760e221ed6728aefd57432395d079ce807522eeed1"
+                "5638e0ab087149620f34df487ffd376391beea8148324cd0afb88080fcb1f098"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--gVxYSRKc--\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2022\\/06\\/24\\/shopback\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526656858\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "65e9bbf6f1f15028142e37cec16829269b25ee836604a90eefb29af40b35b45f"
+                "4fbc81077b8725e21ce4bbedec534378fe7cbf674245a022b29b919be52010f6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--sN8Fe50d--\\/c_crop,h_1193,w_2121,x_1,y_22\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/07\\/28\\/chest_pain_in_women_-_istock\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526626523\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d35e89a19672ed14e27dc90436aa2588612b094230ac8bcdaa86b6ecb86d8413"
+                "5a65a7a3888ddd59b01b125195e15a5b39cc00c9ba0ebe546ac87f29273c41a8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--BVEou4Wq--\\/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0\\.1\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/one-cms\\/core\\/2023-06-20t001433z_2_lynxmpej5j003_rtroptp_3_climate-change-himalaya-glaciers\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526660312\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "479487a9e465a2d007d13322049fe0b48ce1186307a591b6c264978044d15de8"
+                "8867154d552530cb40bc8af535fac6e0f12189b06c991bcda3421a035b45d027"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--imxJVYVf--\\/fl_relative,g_south_east,l_one-cms:core:watermark:afp_watermark,w_0\\.1\\/f_auto,q_auto\\/c_fill,g_auto,h_338,w_600\\/v1\\/one-cms\\/core\\/939d3e6004a6f5dad987ba7428c84da0a390e716\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526625601\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "04fd4974048b7d9fe3e62e6607f6ce5a2ec77b83756739710da2904915bd5b97"
+                "69d10e5c5fdfcdb593c83dd338c390d03ff5e6aecee1a4af3b380fc0fc8b3bef"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--t4Eio5ue--\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0\\.1\\/f_auto,q_auto\\/v1\\/one-cms\\/core\\/2023-08-16t033710z_1_lynxmpej7f03a_rtroptp_3_thailand-election\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526635853\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "0703c8c22dc75180d004c61f2bfaa564b69df28e184a6cfd1ccd1cc6e1845cc8"
+                "506f3b31ebbe5f4402b3dd28c2fea7f384ff7a29bc596af08f7b539a1399b034"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--UfZu9bhW--\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0\\.1\\/f_auto,q_auto\\/v1\\/one-cms\\/core\\/2023-08-16t044946z_1_lynxmpej7f045_rtroptp_3_indonesia-president\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526654403\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "f640e42e8df4373ee73102ddbccff45579415a9b28abe129026652c20ed09d74"
+                "8426b41e72686838d3754ed7dae64a2c9c0b444789f7fd0fb1b28148780dcf20"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--jNTSCk1K--\\/c_crop,h_900,w_1600,x_0,y_125\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0\\.1\\/f_auto,q_auto\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/12\\/FDZ_3766_0\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526653680\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "6b9e0acf14e572442ecaa837092d892a4fb806f8e5208af7ffce04cedd724371"
+                "63ae1628849bfa6aeb79530b058d93bf97eb6110650b9f24d274337798ca89f3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--fwEbwnfZ--\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_one-cms:core:watermark:afp_watermark,w_0\\.1\\/f_auto,q_auto\\/v1\\/one-cms\\/core\\/610e890f16faa1e34bad33d28f9cd66dbf1ec088\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526650498\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "cd11896fe5a0859b52e7c952c9a243b3031e9899f567b6fce68218545c92df40"
+                "c382222a3533dea8126710197b0d90f04f0f8432191373f909d7bf920fa7451e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--BDx4MfBq--\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_one-cms:core:watermark:ap_data-1,w_0\\.1\\/f_auto,q_auto\\/v1\\/one-cms\\/core\\/thailand_kings_son_68470\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526663597\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "78cf0629bdde696684d4516a8f55a76fe665ad4cbbdabc9c217aba7a2729e152"
+                "a195430e7105002e569814a910f6238cd8297eb8c5695cded101e9e89dddecfe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--RVjMjzwi--\\/c_crop,h_297,w_528,x_0,y_195\\/c_fill,g_auto,h_361,w_642\\/f_auto,q_auto\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/17\\/save_gvf\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781789940756\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "8c54f7d9e3829dc30bc34c157dc03149979b1a2888d81c4ef4ed2bd44a3511f0"
+                "8cf793fc58b2733a5b527c750907cd8e066b0b9db80960ea149390ea20f0652a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s--RWfsafML--\\/c_crop,h_900,w_1600,x_0,y_0\\/c_fill,g_auto,h_361,w_642\\/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:mediacorp,w_0\\.1\\/f_auto,q_auto\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/17\\/saza_bjorn_spit_2\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526630407\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "3086e38dd1ea813e2e2925d0c3f359486c259f1ee062d241087cb41972202936"
+                "9c2ad3ab54677179f8f198b38e2b9963c5c706cfa0b2a6c72a0044afe3279159"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/image\\/upload\\/s---2ouQGOR--\\/c_crop,h_819,w_1456,x_14,y_159\\/c_fill,g_auto,h_361,w_642\\/f_auto,q_auto\\/v1\\/mediacorp\\/cna\\/image\\/2023\\/08\\/15\\/hero-guide_to_rhone_red_syrah_wine\\.jpg",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399406253\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onecms-res"
+                "res"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "33216fa962765a672e3ec92c0871e16208917d45413666386d02c9de19e74ff8"
+                "c22441e2c84093e19fc0338e0a69bebe23d82b1986b6b89ddf5f0c4e69b1530e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "channelnewsasia.com",
-                "www.channelnewsasia.com"
+                "bloomsbury.com",
+                "www.bloomsbury.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/video\\/upload\\/f_auto\\/q_auto\\/v1682708286\\/akamai\\/hybris\\/homepage\\/videos\\/CorsairHomepageHero_K100\\.mp4",
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526668578\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "6fafaedc721c45732d876b7454ab65cce60455520e2917492559446b1bb9aed4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399409711\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f82fd6dc9a2730851b1b2d2e5d27476cd3a80924ecb967613b3b2110278aecdf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399406857\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2621c2ef9c7ae61f4da9ec30b935c40a855557819032882c9d712f392277e5db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526658753\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "408028a282a3090f47131b19236a499a742a4fbad003e28d148a4ccea3e32557"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526623812\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9bc55576ea17569c704e34963e6ebe04e282d5430ca6682bc66ab69f5e02cbe4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526642554\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c48ec11dea5f8aa028d66cf0c92a02bd013064128fc236cd871dac4bacd442ff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408883495\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a3e48ed30fc2ccf44ca91153e1561c17ead81483abefdab0f32eb800eb2e5b22"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399406147\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a98d4ecdc804c9372a7db7e9f97f97d76d208a5970dfa062e235c601a26a6e26"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781472981653\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e46a97c82b881ccb15e35bfce6e2998d66233be2e4ef148add9a058c6090831e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526664105\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7cfcfbb52275e4a9dacc6302dfadf1fefc64ccf440d0a65801b960ae8f777b19"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526640130\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "352376e5e7e88e8fdc6b022a985e6b60243a631ac3fa5576e9a974c8db0b1e80"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526655837\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f1d4d07bb3b4be69c559936e372657c00458f0feb7f918bb514363bb3878c2ed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526657886\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "feb3f2960c79bcdc5620c1a6faac71d19be7f4eb7b6a320cb8f4a851f65d4a96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526650153\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b2b6d7b0d4e44b1a4980dd53e4dac27ef6c274b17cd49e28d45f30c74ffd9ec3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526606334\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "46f4bdfa40d2dcdc83ed98471a659ca96d8b21b47290ba84eff245800fbe87a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526653185\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5b8fb20a842711f0e350a1f8f86dde0dcee6a99203416a27dc77fa9d5880c4fb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526641687\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4d18fdacedef74673ba66f1b84680c7e44997a8e24dde0b9bec57de78cfa214e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526650078\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "83e56981f9514674c018edc2c138cc21f063ebf9773408472fedbd2e4a8f5fc7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526647719\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ab3762627627411db533a87668daa6d92b2190e786c4e18db2175ac837bc52d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526651228\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "96c6d51ad62737daa27197da4363e870b4f61a32696e308c778a1b927963ca32"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526636447\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3c85e6c72cd82d3bca5c55c9cf94b72a97d18d46ccb036d64655fea8793dfb7b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526634573\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "01ea5a2035694bf56ee74c831dae6fbaed6250c8a39ab4593caa36ca345e8f8e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526659699\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9d0a9d2d1c471a0dbf6adad4367018927725c24273891d5b238f5ba27462c8ae"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526634306\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "477453158e2ef152008cc77eb14390229025e8b7d6b46c521f8fb8046532a2ca"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526631756\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2218899df41566e242a4e457153648965f544e5f75c9b597fd9219e1798460b0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781472977403\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d0f3f74f4df0b3f1cf052bfca770167f8178480a2a17aa4d73a64d4c59ee86a7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408856291\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "7cadccb522ac87203370a723a222714e30f843a104b0134768bc84d8f0c835d1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526649676\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "33ff841865c9fde2952e9d97f4c9090e9718c78fe061c0cf4ad46722cbc0241a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399408899\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "64cbcdc948bb5cd951965863ec8c8ec083b930b999f60df26d8606e9502ee3d8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781399408929\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "46d49277c907eb4a3b2a43400e1ca982a073b71bbef80c88ecf20abbe39ece58"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526648099\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a05b8bc578beced888c54ad155f5381b9d24c8cc0290dedaf09634d525d5a6ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526618993\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3ef6d0a29de293bbad4e7c39d671df8cdfef1cfc4244165b28d62a06317f74e4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526658388\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "89184ee7f72329222d9773229d86e2b6ab83a3e568840b63c1d69d65002740ac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781472986238\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b43adf5b51930d8dbd666465e1dd36c274536f4b800daff4c19d32c57e2f11bb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781472994820\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "645960c8fd4ac74fa17a873eaab16c7171e8170727ee093edb3a1a4d0959e03a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408884447\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "fc218e3c2abfccd479d1d6273edfa24a041face45297a2bff222258eda2101aa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526628220\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8ac52798719710ab1f3f81e44b2dab04639012153c99bf1301684a8b3fb2b6db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526663559\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "dfb53c717231ccae9387865db23cc8ee0dfa2b9d9967e1e4c2f40e9cecac203e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526662156\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0e8899e9b5d39df6af3592435bc41c6e212bb296a669b1c0749386bfb1cf7f4d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526619792\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9472abcb85082ab40c23c31fdf02e8554b6723feb9541cbf046611fd066329b7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408883358\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a824d6dbba9418e4a3b4c342fee84ca7b162cae6e9e304d53778b4523c67e266"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639731084\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d539f4a370cef8c0be4d0ce117b1118f96ec049d1f4c584377264859fc1d786e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639730940\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "889086f40719dfb63815043a70fd883fd5f80689410fa122234c9b23fbd2473a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639730964\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f82fb4b306d506294b8012c964139c7fb21cc892d1c1e1bfe208b8095f543e87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639730988\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "72dc865803120b668049af1bd44122f4c6ed6879ff9374fdb8c8b7ae81f81602"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639731008\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c9d5865f69c1103c045a5efdd24c17b83e4d4b6ecd230552c604e2d0aec86e0f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639731022\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "1fc333bfdbc48a2688287eaab696000b48c1029334c4f1583420310c3ba71b39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639731046\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ca8de330047424dc288ca6050c0b19b80d7207d36ef9c7555a6ee12cc6eecf93"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781639731060\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "42432502ab1ba3fa7d7e8ec3f91cd84c65ed25b85df47a99101d955a778c518e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408884171\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "5a2bb79b5bfeed03b2594b811b509d7e86fe26b267fe23c9487254f3159719c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408882528\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ccb54ebafec4e6ad829da5244b67c891aaa7855c96471be74f0698116642fc1b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408882511\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4facc5ee8f002c7b41d1877230f08600328db459ebbabab9e871dd2052615790"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408877838\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c7ad7f26a8a86609bb7b19a9547b9290454e7333c38e1e161f1c0e5900ef10a7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526608482\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "548d29d12c60c69c2015f55c70acb6e16bfed3788322580c96800d8576f796b7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408865583\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "cbebc94285995bcdce9bc3ddf4b0f538373631c30e9a9c63c2a38385925d3ecc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781408897416\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "cc4945e1c12f6724994930e5ffa1909488accf593e2d7588ce00c9c116e9b88c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526640444\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "21edacc144e3b185d9c5f658b8c2936d4eb5440fbb1df2441491ebd30ee88381"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526655974\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "200eef05e0f53a85d5ef8fca48ae7ce67852ffbb22e17dc15c741180b3ea7165"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526651396\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "af116098eef66df09ec1173c229b73c47dd3667cf46659def30956770cd2009d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526660404\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "be7bc39730a48757a2d81cc747e395e669775a877ff616f373e93c67494d28a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526615435\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a1da68926ef975ac3250ebc579526087fe95542844b47cced7fd97d12c4bef3d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526635716\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2738b1707aed3b4d5e1a2342afa08b5232ffa22f0ec57d63630384314b106389"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526648549\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "97674f459adc167a7b313419f9406de405e62cbf7ef7332da001376ba2305476"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526658463\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b98180ab7090e3c83b3844f0b9df25f536adb2369ec0334232e39e228d166c29"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526622983\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "582f63bf6304b5ac22b7af8ceb816f0224e50fc906884776cc6474631817a81d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781526659934\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "152c23134bddcee90ccdddf66b087b23f6738f029b83288c5ea45d0546de6a75"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9780567705747\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3232dde022931bcddab9318c4004afa8cc24224d416e80a29b5cf661bf0a360c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781350330191\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "caefd931a7d1c248ef79f4e0d1f1a50e1aa955d6e4412e9f57b2aa4670b9187c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781501389238\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "fcfa49cd72e4098d6b1a0f277eccc62048480cb1b53d8dae1aa2ae169fd36d7e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781350266476\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b96576f202469285bd3cfd6ab759687357e45e4749f1d4a6fc418fadd2cbf6d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781440875915\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "92418455db8283ebd9683feebbf3d754b0c01d10700cc9a1f75601150cb83577"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781350263635\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "731219c73a3d1362a3e1b3016d73036193fa64317cb7961fb17ab8e89d33505c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781839025259\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9480f4c5d02be7492c76720a56abd826be27a3c64e8e7e13611a0e71d9c4279e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781350212015\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0d4acd65b373997c32387230d2640a8b2bee27a57e282c1cbc9caffa24a62a07"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/bloomsbury-atlas\\/image\\/upload\\/w_360,c_scale\\/jackets\\/9781350289659\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9f121c6e4abc18e5debca38b98990c4b14386736d44f1c30e5f6d78c3efaf24f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomsbury.com",
+                "www.bloomsbury.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/video\\/upload\\/f_auto\\/q_auto\\/v1690999777\\/akamai\\/pdp\\/headsets\\/hs80-max-wireless\\/Corsair_HS80_Max_PDP_Loop\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1463,7 +3303,7 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/video\\/upload\\/f_auto\\/q_auto\\/v1685037753\\/akamai\\/hybris\\/homepage\\/images\\/hero-banner\\/hp-hero-icue-link\\.mp4",
+            "rule": "cloudinary\\.com\\/video\\/upload\\/f_auto\\/q_auto\\/v1692390033\\/Homepage%20Assets\\/Hero-Banners\\/hp_icue-link-hx\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1485,6 +3325,28 @@
             "exampleSites": [
                 "corsair.com",
                 "www.corsair.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/prod-f2f3\\/ar_16:9,c_fill,dpr_1\\.0,f_auto,g_auto,h_450,w_800\\/v1\\/f2\\/global\\/articles\\/2023\\/09_September\\/F2_WeekendWrapUp023-Rd13ITA",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "res"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "9e06e79382cccddabed208bd54f1a35ca19714de6743e46e70f6839370148560"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiaformula2.com",
+                "www.fiaformula2.com"
             ]
         },
         {
@@ -1560,18 +3422,18 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/o-kavli-as\\/image\\/upload\\/c_lfill,w_1770\\/q_auto:eco\\/Banner_Utfordrerlaget_v02_qlng9v_png_hbqdzpme0t",
+            "rule": "cloudinary\\.com\\/o-kavli-as\\/image\\/upload\\/c_lfill,w_1770\\/q_auto:eco\\/QForsidebanner_01_jpg_hh966g0f64",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "res-4"
+                "res-3"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c5006a9de4ecd45bfd8bb8339ee0d6d768f0cd42ef1cbbc260973b81e832f3e2"
+                "4e9bfff05632259e486675d1162a5c9d8c23451b581d739fec6f1c86c6982e8a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1582,18 +3444,18 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/o-kavli-as\\/image\\/upload\\/c_lfill,w_1770\\/q_auto:eco\\/Bokstavkr%C3%B8ll_BRUK_jpg_hfk33sjv9c",
+            "rule": "cloudinary\\.com\\/o-kavli-as\\/image\\/upload\\/c_lfill,w_1770\\/q_auto:eco\\/Banner_Utfordrerlaget_v03_png_hh95hl38i4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "res-5"
+                "res-4"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "a9b823d6091f50468f539114da6b32ed026ab2cbaef3e41c863471cf30274bdc"
+                "063a96b5c91e81da507e2808f93d88d9b3233c47e607fe68d5ab10d5aa0935cc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2132,359 +3994,34 @@
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_462,w_406,f_auto\\/f_auto\\/q_auto\\/v1690887859\\/Illustrasjonsbilder%20Even%20Lundefaret%202023\\/Vestfold\\/vestfold_utend%C3%B8rs-0029_xf6lip\\.jpg",
+            "rule": "cloudinary\\.com\\/im-74315841",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "res"
+                "images.barrons.com.multicdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "images.barrons.com",
+                    "resolved": "images.barrons.com.multicdn.cloudinary.com"
+                }
+            ],
             "responseHashes": [
-                "490c5a154e08538839e6a98fb7eace514bce58bd3910eb181ab8447efb92c5c9"
+                "69a15fc6fb8fcf5ef541de216f011709eb00cf2ee56010b10f6ddd0049ede8ee"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
+                "wsj.com",
+                "www.wsj.com"
             ]
         },
         {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_387,w_616,f_auto\\/f_auto\\/q_auto\\/v1690887574\\/Illustrasjonsbilder%20Even%20Lundefaret%202023\\/Vestfold\\/vestfold_utend%C3%B8rs-1883_aoj9bx\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "0021e11e5c4ab2cc9f7378dc575f9a1adba2edfbc6877b3a9590f4bdc6528998"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_550,w_420,f_auto\\/f_auto\\/q_auto\\/v1691497806\\/SSN-illustrasjoner\\/NYE%20ssn\\.no-illustrasjoner\\/SSN_Illustrasjoner__Jubel_rvodwo\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "3dc70c18cb4251c1c4fd9a7535048d2026e11c382b5ce36f0b42652a437f9a13"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_550,w_420,f_auto\\/f_auto\\/q_auto\\/v1629980649\\/Film%202021%20-%20Helsefremmende\\/SSN-film_-_Helse_Still015_geztyc\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "4b3ce0c0c5605df42737e58b6a8db765eddbc5eeaee836d343cd8bf5061aadbb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_550,w_420,f_auto\\/f_auto\\/q_auto\\/v1687892838\\/Studiestart\\/Gullkoppen\\/Gullkopppen_ssn\\.no_bilde_forsiden_rdabmx\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "a27d3fd077e135ecbe1b34adc1c4c602d042daf101ee1ef03efa521afe6ce7b8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_379,w_330,f_auto\\/f_auto\\/q_auto\\/v1635929512\\/Mat%20og%20drikke\\/Haspa%2C%20Kongsberg\\/Haspa-8399_var0pr\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "6a01daff886bef9b9cf201b00e83a38c8b59a7d5e13e7b0c59817e11588cff24"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_379,w_330,f_auto\\/f_auto\\/q_auto\\/v1634731199\\/Mat%20og%20drikke\\/Studenten%2C%20B%C3%B8\\/kafe_studenten-3829_etwmaz\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "48e086e62f50c2985f25f7f43205f014f570f575144a5719d534c2484c3aa957"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_379,w_330,f_auto\\/f_auto\\/q_auto\\/v1669371789\\/Helse\\/Bra%20for%20deg\\/ella-olsson-P4jRJYN33wE-unsplash_vhetrq-stempel_ocosod\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "2d11d900eaa5e76fd662a04dd23169daa3ca70e1ce6ffbab677155dc43b691fe"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_379,w_330,f_auto\\/f_auto\\/q_auto\\/v1674550810\\/Helse\\/Bra%20for%20deg\\/Supersalat_Brafordeg_fwqguc\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "8a31de9a07bc051491d87dde0db69a863d122bcc706c42e49bb63a99fd00f7c1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_550,w_420,f_auto\\/f_auto\\/q_auto\\/v1687893079\\/Brage%20Bok\\/Pensumpakker\\/ssn-no_forsiden_c4ltje\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "50ddcca22a23cd0cde37e3a9f37bd0ddb2dbf936a2cc1859ff77b7b84b956664"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1692104640\\/Mat%20og%20drikke\\/Vestfold\\/Jord\\/jord_for_apning-0188_x6v2tv\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "659e2290bb83fbab1d6ac5f287b3174765fd93486192d877f0b892e8a6b4e4c0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1691049573\\/Studentbolig\\/Rauland\\/Studenthuset%20Yggdrasil\\/Overblikk_cejvty\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "3f4a1e5862407846c15d3a577a6e7fb85bec7f0cec57c56f3d0731dd939557b4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1634731199\\/Mat%20og%20drikke\\/Studenten%2C%20B%C3%B8\\/kafe_studenten-3827_jhkvnu\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "5203fa31064ba1f3e9c7cd7ad4d1a8000d4940cbd272a762622572353e27fd43"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1679042427\\/Studentbolig\\/Diverse%20illustrasjonsfoto\\/Kampanjer\\/lars-kristian-nilsen-2_vjq1wb\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "68ec459894cfc587238239ef2e7100293aeba3054cc1970766c8ffdb2ee23b2e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1677590179\\/Om%20SSN\\/Strategi\\/fox_dtrsir\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "3a698bffc1e86d41d502c7ef9b4a7cc6ca12a832daa726792a06cc53f30eeb64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/studentsamskipnaden-i-s-r-st-norge\\/image\\/upload\\/c_lfill,g_auto,h_400,w_667,f_auto\\/f_auto\\/q_auto\\/v1647436221\\/Om%20SSN\\/Stillingsutlysninger\\/foynhagen_7_bciy5u\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "7af402831384a795f86fb6442da63f4f0598da1b9b739c8110cf3a809247fb15"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ssn.no",
-                "www.ssn.no"
-            ]
-        },
-        {
-            "rule": "cloudinary\\.com\\/im-86451843",
+            "rule": "cloudinary\\.com\\/im-83798498",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2500,7 +4037,34 @@
                 }
             ],
             "responseHashes": [
-                "1614dd03c73b99e83305f4227d7335270f18d67aaa9f7292298964fccdae2735"
+                "dea7bf65d9754f7442558782e8bd2a055669d372900770d2cb1500fa9c2db231"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "cloudinary\\.com\\/im-37967753",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images.barrons.com.multicdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "images.barrons.com",
+                    "resolved": "images.barrons.com.multicdn.cloudinary.com"
+                }
+            ],
+            "responseHashes": [
+                "d0522442eeaac2e3ddaa4b55d209af3f064cf4e5ef956092cd10ed682ed7ac85"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2519,53 +4083,54 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8769149498151083
-        },
-        {
-            "domain": "adidas.no",
-            "prevalence": 0.025356576862123614
+            "prevalence": 0.9192727272727272
         },
         {
             "domain": "d1pna5l3xsntoj.cloudfront.net",
-            "prevalence": 0.02377179080824089
+            "prevalence": 0.01927272727272727
+        },
+        {
+            "domain": "adidas.no",
+            "prevalence": 0.01890909090909091
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.02271526677231907
+            "prevalence": 0.009818181818181818
         },
         {
             "domain": "prokomcdn.no",
-            "prevalence": 0.01162176439513999
+            "prevalence": 0.00909090909090909
         },
         {
             "domain": "zapier-deployment.com",
-            "prevalence": 0.005810882197569995
+            "prevalence": 0.0047272727272727275
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.005282620179609086
-        },
-        {
-            "domain": "unpkg.com",
-            "prevalence": 0.005282620179609086
-        },
-        {
-            "domain": "raygun.io",
-            "prevalence": 0.004754358161648178
+            "prevalence": 0.0036363636363636364
         },
         {
             "domain": "fiverrcdn.com",
-            "prevalence": 0.004226096143687269
+            "prevalence": 0.002909090909090909
+        },
+        {
+            "domain": "mutinycdn.com",
+            "prevalence": 0.002909090909090909
+        },
+        {
+            "domain": "uri.sh",
+            "prevalence": 0.002181818181818182
         }
     ],
     "types": {
-        "Media": 12,
-        "Image": 206
+        "Image": 344,
+        "Script": 6,
+        "Media": 10
     },
     "nameservers": [
-        "ns-31.awsdns-03.com",
-        "ns-1712.awsdns-22.co.uk",
+        "ns-1002.awsdns-61.net",
         "ns-1383.awsdns-44.org",
-        "ns-1002.awsdns-61.net"
+        "ns-1712.awsdns-22.co.uk",
+        "ns-31.awsdns-03.com"
     ]
 }

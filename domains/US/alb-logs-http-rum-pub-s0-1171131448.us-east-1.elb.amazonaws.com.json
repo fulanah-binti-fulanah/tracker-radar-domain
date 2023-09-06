@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [],
     "cnames": [
@@ -27,7 +27,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "iam-rum-intake.datadoghq.com",
@@ -35,8 +35,8 @@
                 }
             ],
             "responseHashes": [
-                "2e91ee213b30a999f2fe577608881b49321520deb4fcbb9813f04aee409f902d",
-                "c2593b1d3024b4ebc5798aa2cb94efd3cb4653ac00c73139d0e39ad4cca11777"
+                "c8fdf04859133ac498829bdd521e8a77aeea53e53894991aa0f115690a4e1118",
+                "55a97917a14a7a9c04544d1befeca62b898f84e62d7c197c1ad4e9a771ca1953"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -48,13 +48,13 @@
             ]
         },
         {
-            "rule": "alb-logs-http-rum-pub-s0-1171131448\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/v2\\/rum",
+            "rule": "alb-logs-http-rum-pub-s0-1171131448\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/v2\\/replay",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "iam-rum-intake.datadoghq.com",
@@ -62,8 +62,33 @@
                 }
             ],
             "responseHashes": [
-                "6247973ecb483c15bafc7715159b806adaeef0b94a29f569edc4faa8f401d802",
-                "cca57edd6f005fe7b07407f6fd594b551d528c29155d330b24d08d46d0c7480f"
+                "f4a822490d0dcccc928a3eb8f2681dfb283224f30f0f0e1eb5958d12e8fa81bf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "datadoghq.com",
+                "www.datadoghq.com"
+            ]
+        },
+        {
+            "rule": "alb-logs-http-rum-pub-s0-1171131448\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "iam-rum-intake.datadoghq.com",
+                    "resolved": "alb-logs-http-rum-pub-s0-1171131448.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e5dbb877ea67cd43f623239763d2cad41f7c70d61aac33a63c0fefafc755f275",
+                "dabb4e17f910917208f46a0609a9255d1b42a42e0eece7db8d4944d51a5a02e1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -83,16 +108,12 @@
     "topInitiators": [
         {
             "domain": "mplat-ppcprotect.com",
-            "prevalence": 0.8
-        },
-        {
-            "domain": "google-analytics.com",
-            "prevalence": 0.2
+            "prevalence": 1
         }
     ],
     "types": {
         "Fetch": 3,
-        "XHR": 3
+        "XHR": 5
     },
     "nameservers": []
 }

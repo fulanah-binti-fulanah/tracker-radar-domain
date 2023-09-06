@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
-    "subdomains": [],
+    "prevalence": 0.000705,
+    "sites": 7,
+    "subdomains": [
+        "cdn"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -19,19 +21,21 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "372b401f8d24540fccc7eecebdf29184e59dcb367502eba456bd14c1910e57e9",
-                "b192d6c8aa32a0a99370d2c0377a1727c6996333e9b29b94081823ae729400cd",
-                "8624059dee0ffc4b48d111cdb805593126ca57c1afbc78713b23e4f895a45208"
+                "f0cac88abe4e96eb8f09846ea2189a2fdf21be0446d6d15214138af5bbc596db",
+                "1ccf8af59c3927243e3bfc9b3cfcdba2858dd93d81fd5f271aadc9d6d3bebe85",
+                "f22d4c97400518fcd091b2eee382547ff9b4c091084e24a79f9f86d1d6901349",
+                "1db56eacbe8d6144121f97956100db5434897dbceb57a7e30e3c9f95cf1a151e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abbotsford.ca",
+                "www.cda-adc.ca",
                 "www.delta.ca",
                 "www.sans.org",
                 "www.thinkinsure.ca"
@@ -43,22 +47,94 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "b5d737b5fd90f4cb56545be4528405dbf7f633fc2ba0d0bcc011921c566a6f7a",
-                "e538407d04b211ad49e7382f7dfc92e5a72956169ea5484cc313d3c3ba2ff01e",
-                "7612dc53f6addfe87ad1f32a26cdce491bc992287848ff1907e84a4efc9c7247"
+                "a0f1d10c15386edd8cedefa9ea4d874fbbba91d2e33ccc9f095092c916aaa530",
+                "f8acb96bf00bb407d575c7874732050a44fecc47dbaa2a827bd81f250b000f3c",
+                "f356d6d9881d7d190b6dfc37d3b3190416ef63ce1dc972fbe1b5116fa34c90ab",
+                "97982a1cd2e4153e7c8568c954d8f56034e1330bfbfe63e19bb401a43a9d07b7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abbotsford.ca",
+                "www.cda-adc.ca",
                 "www.delta.ca",
                 "www.sans.org",
                 "www.thinkinsure.ca"
+            ]
+        },
+        {
+            "rule": "addsearch\\.com\\/v5\\/addsearch-ui\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "04ed8e8eff616f08c8b425150bf1f1b0b12482a9806f97c8f27deffeb844b27d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crowdstrike.com",
+                "www.oldscollege.ca"
+            ]
+        },
+        {
+            "rule": "addsearch\\.com\\/v5\\/addsearch-ui\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "70a0e53ed134bb5f21cc03d8ca3f0256e9f20fd09261bce0202443138f1c5a7d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crowdstrike.com",
+                "www.oldscollege.ca"
+            ]
+        },
+        {
+            "rule": "addsearch\\.com\\/v4\\/assets\\/logo-red\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bee78f076d7ef9d9be92fb1f293909e529c5b61891a52557d51e7183971e02cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crowdstrike.com",
+                "www.oldscollege.ca"
             ]
         }
     ],
@@ -72,12 +148,14 @@
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 12,
+        "Stylesheet": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns-1812.awsdns-34.co.uk",
-        "ns-1211.awsdns-23.org",
         "ns-516.awsdns-00.net",
-        "ns-406.awsdns-50.com"
+        "ns-406.awsdns-50.com",
+        "ns-1812.awsdns-34.co.uk",
+        "ns-1211.awsdns-23.org"
     ]
 }

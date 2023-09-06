@@ -14,8 +14,8 @@
     "subdomains": [
         "ad",
         "v",
-        "cs",
-        "t"
+        "t",
+        "cs"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -71,7 +71,7 @@
                 "csip": {
                     "ttl": 300,
                     "length": 4,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020128824476650564,
                     "uniqueness": 0.5
                 }
             },
@@ -93,29 +93,9 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2c93340ee5b4bc7ea0e55571c078cb02e94110403f8963da66629fae32e9a97f"
+                "4d4bf63eecec717b56aecafc038437ad022474b7cc73bd15c83bdf46fdb8cb9d"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ephotozine.com",
-                "www.ephotozine.com"
-            ]
-        },
-        {
-            "rule": "lkqd\\.net\\/cs",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -164,6 +144,78 @@
                 "ephotozine.com",
                 "www.ephotozine.com"
             ]
+        },
+        {
+            "rule": "lkqd\\.net\\/vpaid\\/vpaid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.outerHeight": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c0d59afc312f7f1d1346cc4dfdb1463c05b2d334cfa64e7b9240456a48bfcc11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/cs",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com"
+            ]
+        },
+        {
+            "rule": "lkqd\\.net\\/ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ephotozine.com",
+                "www.ephotozine.com"
+            ]
         }
     ],
     "categories": [
@@ -177,20 +229,24 @@
     "topInitiators": [
         {
             "domain": "vidoomy.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "springserve.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2,
+        "Script": 4,
         "Document": 2,
         "XHR": 4,
-        "Image": 2,
-        "Preflight": 2
+        "Preflight": 4,
+        "Image": 2
     },
     "nameservers": [
         "ns-60.awsdns-07.com",
-        "ns-1476.awsdns-56.org",
         "ns-730.awsdns-27.net",
-        "ns-1836.awsdns-37.co.uk"
+        "ns-1836.awsdns-37.co.uk",
+        "ns-1476.awsdns-56.org"
     ]
 }

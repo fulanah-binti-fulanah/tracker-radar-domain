@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "adcdn.goo.ne",
         "nhk.or"
     ],
     "cnames": [
+        {
+            "original": "adcdn.goo.ne.jp",
+            "resolved": "adcdn.goo.ne.jp.edgekey.net"
+        },
         {
             "original": "location.nhk.or.jp",
             "resolved": "nhk.or.jp.edgekey.net"
@@ -22,6 +27,33 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "jp\\.edgekey\\.net\\/images\\/0common\\/house_ad_rotation_728x90\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adcdn.goo.ne"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "adcdn.goo.ne.jp",
+                    "resolved": "adcdn.goo.ne.jp.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "de412ad0d8c48559f0edbfe36684d11044beefe264cb06167c1d02ab02e81394"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo.ne.jp",
+                "dictionary.goo.ne.jp"
+            ]
+        },
         {
             "rule": "jp\\.edgekey\\.net\\/geoip\\/area\\.json",
             "cookies": 0,
@@ -52,8 +84,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7727272727272727
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.22727272727272727
+        }
+    ],
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": []

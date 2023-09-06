@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
-        "formbuilder"
+        "formbuilder",
+        "reorder-master"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -37,11 +38,55 @@
                 "www.mountain-equipment.co.uk",
                 "www.toa.st"
             ]
+        },
+        {
+            "rule": "hulkapps\\.com\\/reorderjs\\/re-order\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reorder-master"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "851b7fedce01effbb336bada06bc3185772d1422241fafcdce55f924261be340"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "british-supplements.net",
+                "www.shipton-mill.com"
+            ]
+        },
+        {
+            "rule": "hulkapps\\.com\\/api\\/get-banner-settings",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reorder-master"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3f1a29f59a32256e36aa29446e6da1db070a3c50cbd02074f2ab39973df3b204"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "british-supplements.net",
+                "www.shipton-mill.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -49,7 +94,8 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "dorthy.ns.cloudflare.com",

@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000302,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
         "fraaws-public-slb-ec53ddffde80b088.elb",
@@ -49,6 +49,33 @@
             ]
         },
         {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fraaws-public-slb-ec53ddffde80b088.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "chloro.trip.com",
+                    "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "26619c45e97bc54e5bbcdb2a11c70a1917fc78be3f63552116e9a0a9ab39a1dd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -60,7 +87,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e7edd13567269ab8a23a8f2feb3011c7042a74a254799d86fe4c9f0c7ff3aaa5"
+                "ce18b9ca2487ec5c4a1d39d554bc14fba78b4dcfe039936f5546a9ee3617d022"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -75,28 +102,29 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "tripcdn.com",
-            "prevalence": 0.5
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "sooqr.com",
-            "prevalence": 0.5
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1.amzndns.net",
-        "ns2.amzndns.com",
         "ns1.amzndns.co.uk",
-        "ns2.amzndns.org",
         "ns1.amzndns.com",
-        "ns2.amzndns.net",
+        "ns1.amzndns.net",
         "ns1.amzndns.org",
-        "ns2.amzndns.co.uk"
+        "ns2.amzndns.co.uk",
+        "ns2.amzndns.com",
+        "ns2.amzndns.net",
+        "ns2.amzndns.org"
     ]
 }

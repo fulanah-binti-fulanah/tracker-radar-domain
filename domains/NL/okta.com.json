@@ -10,55 +10,62 @@
     "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "sas.customdomains",
-        "churchofjesuschrist.customdomains"
+        "login"
     ],
-    "cnames": [
-        {
-            "original": "auth.sas.com",
-            "resolved": "sas.customdomains.okta.com"
-        },
-        {
-            "original": "id.churchofjesuschrist.org",
-            "resolved": "churchofjesuschrist.customdomains.okta.com"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
+            "rule": "okta\\.com\\/discovery\\/iframe\\.html",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sas.customdomains",
-                "churchofjesuschrist.customdomains"
+                "login"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "auth.sas.com",
-                    "resolved": "sas.customdomains.okta.com"
-                },
-                {
-                    "original": "id.churchofjesuschrist.org",
-                    "resolved": "churchofjesuschrist.customdomains.okta.com"
-                }
+            "cnames": [],
+            "responseHashes": [
+                "312961c3e2abd191b80c96dc095382f8a09226a70ea00dbccc20ee26a67ced59"
             ],
-            "responseHashes": [],
-            "type": "Fetch",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sas.com",
-                "www.churchofjesuschrist.org"
+                "eneco.nl",
+                "inloggen.oxxio.nl"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/lib\\/discoveryIframe-88dc7396afa19c320b05\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ccf6add544df0956a4db5ffeab1cd89d06f63c7f5ec8081b4584d948cdb6604c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oxxio.nl",
+                "inloggen.eneco.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "oktacdn.com",
@@ -66,7 +73,8 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Document": 2,
+        "Script": 2
     },
     "nameservers": [
         "edns5.ultradns.biz",

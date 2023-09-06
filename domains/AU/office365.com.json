@@ -9,17 +9,17 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
         "outlook"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "office365\\.com\\/owa\\/calendar\\/BetterMusic3@bettermusic\\.com\\.au\\/bookings\\/",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "outlook"
@@ -28,8 +28,30 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettermusic.com.au",
+                "www.bettermusic.com.au"
+            ]
+        },
+        {
+            "rule": "office365\\.com\\/book\\/BetterMusic3@bettermusic\\.com\\.au\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "outlook"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "044f346665606cc7d1c6e815533ee26b014ce236d86c10b4802f35d9ed219d0d"
+                "a4ac604a77fab5ad20aa696818f95c22d042adcc5f53886d49e26b75bc7333ba"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -42,15 +64,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
+            "domain": "office.net",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 4
     },
     "nameservers": [
         "nse12.o365filtering.com",

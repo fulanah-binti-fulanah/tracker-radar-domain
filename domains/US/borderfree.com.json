@@ -7,35 +7,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000345,
-    "sites": 51,
+    "prevalence": 0.000436,
+    "sites": 64,
     "subdomains": [
         "cross-border-tag",
         "global.prd",
+        "wm.prd",
+        "wm.sbx",
         "bfx-objects.prd",
         "bfx-objects",
         "depot.prd",
         "bfx-objects.sbx",
-        "wm.sbx",
-        "wm.prd"
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "borderfree\\.com\\/v1\\/dist\\/cbt\\.js",
-            "cookies": 0.0000474,
+            "cookies": 0.0000682,
             "fingerprinting": 1,
             "subdomains": [
                 "cross-border-tag"
             ],
             "apis": {
-                "window.sessionStorage": 7,
-                "Document.cookie getter": 7,
-                "Document.cookie setter": 7
+                "window.sessionStorage": 10,
+                "Document.cookie getter": 10,
+                "Document.cookie setter": 10
             },
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 10,
+            "prevalence": 0.0000682,
             "cnames": [],
             "responseHashes": [
                 "23a7aa9047fcee14768bfdbd96f38aed3c87591bbbe1006b8ab4403450991ed2"
@@ -43,16 +44,19 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cbt-consent-banner": {
-                    "ttl": 157680013,
+                    "ttl": 157680016,
                     "length": 31,
-                    "prevalence": 0.000047394648467121655,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.00006816353796027429,
+                    "uniqueness": 0.1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chicos.com",
                 "containerstore.com",
+                "soma.com",
+                "tommybahama.com",
+                "whitehouseblackmarket.com",
                 "www.chicos.com",
                 "www.containerstore.com",
                 "www.soma.com",
@@ -62,7 +66,7 @@
         },
         {
             "rule": "borderfree\\.com\\/cdn\\/cbt\\/v1\\/dist\\/cbt\\.js",
-            "cookies": 0.0000542,
+            "cookies": 0.0000818,
             "fingerprinting": 1,
             "subdomains": [
                 "global.prd"
@@ -70,10 +74,10 @@
             "apis": {
                 "window.sessionStorage": 1,
                 "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
-            "sites": 8,
-            "prevalence": 0.0000542,
+            "sites": 12,
+            "prevalence": 0.0000818,
             "cnames": [],
             "responseHashes": [
                 "23a7aa9047fcee14768bfdbd96f38aed3c87591bbbe1006b8ab4403450991ed2"
@@ -81,19 +85,23 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cbt-consent-banner": {
-                    "ttl": 157680004,
+                    "ttl": 157680009,
                     "length": 31,
-                    "prevalence": 0.000006770664066731665,
-                    "uniqueness": 1
+                    "prevalence": 0.000013632707592054858,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chicos.com",
                 "containerstore.com",
+                "soma.com",
+                "tommybahama.com",
+                "whitehouseblackmarket.com",
                 "www.chicos.com",
                 "www.containerstore.com",
                 "www.eileenfisher.com",
+                "www.ritani.com",
                 "www.soma.com",
                 "www.tommybahama.com",
                 "www.whitehouseblackmarket.com"
@@ -101,48 +109,23 @@
         },
         {
             "rule": "borderfree\\.com\\/cbtapi\\/merchants\\/merchant-settings",
-            "cookies": 0.0000542,
+            "cookies": 0.0000818,
             "fingerprinting": 0,
             "subdomains": [
                 "global.prd"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000542,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chicos.com",
-                "containerstore.com",
-                "www.chicos.com",
-                "www.containerstore.com",
-                "www.eileenfisher.com",
-                "www.soma.com",
-                "www.tommybahama.com",
-                "www.whitehouseblackmarket.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/cbtapi\\/merchants\\/merchant-settings",
-            "cookies": 0.0000542,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global.prd"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000542,
+            "sites": 12,
+            "prevalence": 0.0000818,
             "cnames": [],
             "responseHashes": [
                 "b1be63a852073b6144c3be13c0d1c63f44ffbce1beea86e6c51d40336e2015f8",
-                "c2c5537093aeda77b84cfa36d3d93aa00074a0c9c1f5f90f460819a1b9a6ffef",
-                "854b69b73c144398c53beddac23b93cd2055ff9b16a38d096432dd6f7153f6cf",
                 "d128a0e91e7dde345160a36849bd5e1bc09773190ff11ed83fdf780ad5228550",
                 "791164f11c0f1b49d40837e66f91542abcaa74e57f19df830fde191d3aee78db",
-                "afd5093ef33aebf3da8c7c3435ca85fa00c0a47a79d0f90b7cbe45dd957f6119"
+                "afd5093ef33aebf3da8c7c3435ca85fa00c0a47a79d0f90b7cbe45dd957f6119",
+                "c2c5537093aeda77b84cfa36d3d93aa00074a0c9c1f5f90f460819a1b9a6ffef",
+                "854b69b73c144398c53beddac23b93cd2055ff9b16a38d096432dd6f7153f6cf",
+                "f7da3e52b68b39d0ca6618f1ec3e197cb5923fe88e55b3978966ddac98e44d03"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -150,397 +133,59 @@
             "exampleSites": [
                 "chicos.com",
                 "containerstore.com",
+                "soma.com",
+                "tommybahama.com",
+                "whitehouseblackmarket.com",
                 "www.chicos.com",
                 "www.containerstore.com",
                 "www.eileenfisher.com",
+                "www.ritani.com",
                 "www.soma.com",
                 "www.tommybahama.com",
                 "www.whitehouseblackmarket.com"
             ]
         },
         {
-            "rule": "borderfree\\.com\\/v1\\/dist\\/bfx\\.js",
-            "cookies": 0.000129,
-            "fingerprinting": 1,
-            "subdomains": [
-                "bfx-objects.prd",
-                "bfx-objects"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 19,
-                "Document.cookie setter": 16,
-                "Document.cookie getter": 17,
-                "Event.prototype.timeStamp": 14,
-                "window.sessionStorage": 15,
-                "PerformanceTiming.prototype.navigationStart": 10,
-                "Navigator.prototype.userAgent": 13
-            },
-            "sites": 19,
-            "prevalence": 0.000129,
-            "cnames": [],
-            "responseHashes": [
-                "20ae2933261e4ad2aa439b020079f700636572c93d8152dc5b810ef851a53d29"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "bfx.sessionId": {
-                    "ttl": 86404,
-                    "length": 36,
-                    "prevalence": 0.00008801863286751165,
-                    "uniqueness": 1
-                },
-                "bfx.country": {
-                    "ttl": 86405,
-                    "length": 2,
-                    "prevalence": 0.00008801863286751165,
-                    "uniqueness": 0.07692307692307693
-                },
-                "bfx.currency": {
-                    "ttl": 86404,
-                    "length": 3,
-                    "prevalence": 0.00008801863286751165,
-                    "uniqueness": 0.07692307692307693
-                },
-                "bfx.language": {
-                    "ttl": 86404,
-                    "length": 2,
-                    "prevalence": 0.00008801863286751165,
-                    "uniqueness": 0.07692307692307693
-                },
-                "bfx.isInternational": {
-                    "ttl": 86404,
-                    "length": 5,
-                    "prevalence": 0.00008801863286751165,
-                    "uniqueness": 0.07692307692307693
-                },
-                "bfx.apiKey": {
-                    "ttl": 86403,
-                    "length": 36,
-                    "prevalence": 0.00005416531253385332,
-                    "uniqueness": 1
-                },
-                "bfx.env": {
-                    "ttl": 86403,
-                    "length": 4,
-                    "prevalence": 0.00005416531253385332,
-                    "uniqueness": 0.25
-                },
-                "bfx.logLevel": {
-                    "ttl": 86403,
-                    "length": 5,
-                    "prevalence": 0.00004062398440038999,
-                    "uniqueness": 0.3333333333333333
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kipling-usa.com",
-                "www.kipling.com",
-                "www.lanebryant.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.ruelala.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/cart\\/create",
-            "cookies": 0.000129,
+            "rule": "borderfree\\.com\\/cbtapi\\/merchants\\/merchant-settings",
+            "cookies": 0.0000818,
             "fingerprinting": 0,
             "subdomains": [
-                "depot.prd"
+                "global.prd"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
+            "sites": 12,
+            "prevalence": 0.0000818,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
+                "chicos.com",
+                "containerstore.com",
+                "soma.com",
+                "tommybahama.com",
+                "whitehouseblackmarket.com",
+                "www.chicos.com",
+                "www.containerstore.com",
                 "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kipling-usa.com",
-                "www.kipling.com",
-                "www.lanebryant.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.ruelala.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/cart\\/create",
-            "cookies": 0.000129,
-            "fingerprinting": 0,
-            "subdomains": [
-                "depot.prd"
-            ],
-            "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
-            "cnames": [],
-            "responseHashes": [
-                "cbd66006af68132a954547c2f3c674c67c83690542de24b35c949ab6a6da36e3",
-                "dbbdc21d662c18752a4b2b35e2359ecb3d5f64890cff1e8c3d37a2d190c3b5df",
-                "65dfccc683aa36e02889fc90e7b03e4f8b76672b9397148acdb5eb1669bddc23",
-                "6d740946d3865b8d516d4e0ec7c58598a27e2f22acfba637e2766ed3b8b6b50c",
-                "decb5acaf60af2fa073eb2b0a196b205625f6432ea993337005a8cedd6f2a5c9",
-                "150ea62852b0184f8c93d72d7e615401bf4649999337df34db4a47dd22c55037",
-                "3a40df2e87b40ceac03875ec7adca873978141042e615fd48995220dddf0b749",
-                "c6ae6acedf91d2ca1b081c1dad48e92bd80d1205302314592b636e7bbdb39656",
-                "89d8e954858faebe5468f722d74b6303bbc0aeff02705304c0cc5f727381efbe",
-                "1acfd114ecb59a63bfcaa113b5071d2771d242d5ccccf6e1281eb5e731b6cab7",
-                "cb4cab85db13257e1df65eb5f887a2e2b0841857551c15a5ac56f161dcdb3ef5",
-                "08cd847933428591a0ea1e856782ccc77c0ee8081a7b436e8fd42947dc04bf2f",
-                "d21f2a61b8dc562bc292f13ea4f407a037215778d1ab9dad98b7369a6fdd7db1",
-                "a75cf2bfb297ca2860a744d4822439424de13aead64143c53cf500cab383e812",
-                "b8b1671fc3a386326f7c57e323837942d915058cdf6d250e51f409077b66bc9a",
-                "ff3899f5717f05a09dd519e5f5051ebf76de214301c3656b59f39891ac898dce",
-                "0dabb1d216d4b92506bbf597164050fc2fed53d5569bb456d6a5f1c62a8ef519",
-                "626ac47065af3d92d9f9c14064c2c4d90c323779290deabd0edd7405a03a9c77"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kipling-usa.com",
-                "www.kipling.com",
-                "www.lanebryant.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.ruelala.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/country",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "depot.prd"
-            ],
-            "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
-            "cnames": [],
-            "responseHashes": [
-                "249ebf1eb1fc80e7a293654a79fa9f72be2d757013bf97d202d6b51e9eb62a33",
-                "08800bfbe9b8289baaf0caa7c1877c32f277806db0d3864241d45959b8b60e54",
-                "f4590438dc612b5d08ac6efda036dead42a3c7562be32716ba3b42a896ef84bc",
-                "ab427ca28d47b211f3face860ce00d9e4949c00fc216a53d3710c7fd486d04b7",
-                "258a49bde5297dfc14917f7c883ba23de46c9fd74de799668ad1e82c6f15cc09",
-                "350b81bc8e76b32f22d4a63d09d67ae07def4414571a59f3a605caa09242ff2a",
-                "e8b443f9f3c1f6226e2c09cecf8deec7bcb2a63c149c8c7f338fa6c9fe417162",
-                "fa0348cdcaafe90a8541ff47c546a7572f1a3b781429a0939666ac65f88a01e3",
-                "386c391ee538a578f292b264032a2147d9f4e771243ea5d45297f7b87355b103",
-                "cd15aa9b675ba7a24e8e01f3bae44ffc2a0af446e06c63d1cefc60ba0bf2c4e4",
-                "9864071a2c5163acadd8c50c3be15667642b10ff701196cb6bb957ad3ac2c9ad",
-                "1425c82e44ab988bfb65fd8fc4bdef374f7461fbee19ec6f88e7be4798171eef",
-                "4ab6352b2fc5a8d56b4c5cff17fb6cac7e11dc2b48351e355915e09f41f028fc",
-                "cbe4a5c259e208edb558d4cd1b18b660b7240ae9b8c4e049733265b0e1960604",
-                "dbbde53332ac587c6ff5ce1e34ba78cb7ded8cfad13e8cc89fb0437ba9bf7507",
-                "a2546ea61f8d4f59ca334e0e50384c521b0a8da41d7c8752d23cf09a67d0c01d",
-                "0630595e5d2af8ce96e5c6c6b55f9cb26bb4b4053df569fcc2439c4f92c6f966"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "bfx.apiKey": 0.000047394648467121655
-            },
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kipling-usa.com",
-                "www.kipling.com",
-                "www.lanebryant.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/merchants\\/config",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "depot.prd"
-            ],
-            "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
-            "cnames": [],
-            "responseHashes": [
-                "aa55c9e3c264aeaa1398cee984be2cd74eb9704b3d5da59b8a7f7ee32a23dd40",
-                "9ffa8f965da49f73f547bffc91d40605c9bb8e1d6d7d878acbce81f5d00e1fe3",
-                "5094e858e90254676360df0f26d567367e98d6c7c9ddf84f632f904cccde09a5",
-                "9f80593f368313944a53ceb6a812e3084eb9c583d5cd48392e279e7dd6606581",
-                "3d7c5cccc4c3423f6fad9e1d6a1cdae2eabbb418b0e2fdebb329d45446119082",
-                "c0246e4fcb1071440909f3d4f4b49f7bff186d14711897837bb85e069e1fb17f",
-                "cae975261fbaa362de24f35c6c45292e132f0ebe55ed4172a32273faacebe461",
-                "0df7c5a37178374a45145ed1d8117240a7f6a5801c694481e002586b09d9979e",
-                "fe701b52442690c247fd2062131391161c156e59a44d01e07e05a1444da98634",
-                "ab759e7f88437969ee3a344c1819a59d1c7616dbc3b818425b8f11cbecb2d692",
-                "9665b26d31beda6f5980b521f8226b4e8a52f5f20a899608407f4f6d5ef87742",
-                "bbeb68ed71f0ac7972801243fc4f8c72fa6c7112decd0731734f19279679ab6d",
-                "0b89ea778ae7ddc9d1fb19d353da531c72e2700999f46847a9e336f6c75e2124",
-                "1e8ded665701cbf82bf70552ba60729804a75d4bd6c16cc2b8eb53bf02d8d7c9",
-                "e2153c5e158d7f32b0643d51babbf43a93754a3b8f0f38de3a8ca2d65456843c",
-                "fd2ced715702d021d650c99252879746714bcfb03d252cbb1525f1a0eb29d472",
-                "0022ea89887136c718975d2f5429adf137f17aa599005d606df1af9da4b9b411",
-                "309e0359d8901859f6108600864685800ef7f83326c83c4201a3468a7e84fa94"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "bfx.apiKey": 0.00005416531253385332
-            },
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kipling-usa.com",
-                "www.kipling.com",
-                "www.lanebryant.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.ruelala.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_popup\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfx-objects.prd"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
-            "cnames": [],
-            "responseHashes": [
-                "320681d94df85142785ad543523dc85af276bbf86387928615da1dc72b9a24c2"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.naturalizer.com",
-                "www.rockyboots.com",
-                "www.samedelman.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/US\\.gif",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfx-objects.prd",
-                "bfx-objects.sbx",
-                "bfx-objects"
-            ],
-            "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
-            "cnames": [],
-            "responseHashes": [
-                "b7dba81ec95035b09ae15f6d13d4e86513633cab394ff4b678a215c231d6ae7f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allenedmonds.com",
-                "www.allenedmonds.com",
-                "www.ariat.com",
-                "www.davidsbridal.com",
-                "www.dooney.com",
-                "www.eileenfisher.com",
-                "www.kegworks.com",
-                "www.kendrascott.com",
-                "www.kipling.com",
-                "www.naturalizer.com",
-                "www.pgatoursuperstore.com",
-                "www.rockyboots.com",
-                "www.ruelala.com",
-                "www.saksoff5th.com",
-                "www.samedelman.com",
-                "www.sasshoes.com",
-                "www.savagex.com",
-                "www.tequipment.net",
-                "www.underarmour.com"
+                "www.ritani.com",
+                "www.soma.com",
+                "www.tommybahama.com",
+                "www.whitehouseblackmarket.com"
             ]
         },
         {
             "rule": "borderfree\\.com\\/welcome\\/welcome\\.srv",
-            "cookies": 0.0000271,
+            "cookies": 0.0000273,
             "fingerprinting": 0,
             "subdomains": [
-                "wm.sbx",
-                "wm.prd"
+                "wm.prd",
+                "wm.sbx"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -548,86 +193,111 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "bfx.apiKey": 0.000006770664066731665
+                "bfx.apiKey": 0.000006816353796027429
             },
             "exampleSites": [
-                "ariat.com",
+                "dxl.com",
                 "www.ariat.com",
                 "www.dxl.com",
                 "www.tequipment.net"
             ]
         },
         {
-            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_bar\\.css",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
+            "rule": "borderfree\\.com\\/v1\\/dist\\/bfx\\.js",
+            "cookies": 0.00017,
+            "fingerprinting": 1,
             "subdomains": [
-                "bfx-objects.prd"
+                "bfx-objects.prd",
+                "bfx-objects"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 22,
+                "Navigator.prototype.userAgent": 23,
+                "Date.prototype.getTime": 25,
+                "Document.cookie getter": 24,
+                "window.sessionStorage": 24,
+                "Document.cookie setter": 22,
+                "Event.prototype.timeStamp": 22
+            },
+            "sites": 25,
+            "prevalence": 0.00017,
             "cnames": [],
             "responseHashes": [
-                "8e2eb60cd281dede69082573375dfa0e074b8332e4c08b0a8b7e8949ad64c99d"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ariat.com",
-                "www.ariat.com",
-                "www.eileenfisher.com",
-                "www.pgatoursuperstore.com",
-                "www.sasshoes.com",
-                "www.underarmour.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/cdn\\/checkout\\/v5\\/dist\\/merchant\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global.prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4c1fe95179f7ba2a9417be9149df6a76acebc3538de3e1247d188c22332ce2c1"
+                "20ae2933261e4ad2aa439b020079f700636572c93d8152dc5b810ef851a53d29"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "bfx.apiKey": {
+                    "ttl": 86403,
+                    "length": 36,
+                    "prevalence": 0.00013632707592054857,
+                    "uniqueness": 0.85
+                },
+                "bfx.env": {
+                    "ttl": 86403,
+                    "length": 4,
+                    "prevalence": 0.00013632707592054857,
+                    "uniqueness": 0.1
+                },
+                "bfx.logLevel": {
+                    "ttl": 86403,
+                    "length": 5,
+                    "prevalence": 0.00010906166073643886,
+                    "uniqueness": 0.125
+                },
+                "bfx.sessionId": {
+                    "ttl": 86404,
+                    "length": 36,
+                    "prevalence": 0.00014995978351260345,
+                    "uniqueness": 1
+                },
+                "bfx.country": {
+                    "ttl": 86404,
+                    "length": 2,
+                    "prevalence": 0.00013632707592054857,
+                    "uniqueness": 0.05
+                },
+                "bfx.currency": {
+                    "ttl": 86405,
+                    "length": 3,
+                    "prevalence": 0.00014995978351260345,
+                    "uniqueness": 0.045454545454545456
+                },
+                "bfx.language": {
+                    "ttl": 86405,
+                    "length": 2,
+                    "prevalence": 0.00014995978351260345,
+                    "uniqueness": 0.09090909090909091
+                },
+                "bfx.isInternational": {
+                    "ttl": 86405,
+                    "length": 5,
+                    "prevalence": 0.00014995978351260345,
+                    "uniqueness": 0.045454545454545456
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "davidsbridal.com",
-                "www.davidsbridal.com"
-            ]
-        },
-        {
-            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_panel\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfx-objects.prd"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "1bbf7dac60576f0049b88ca61415a74e0d22607c71aff250c60de9ff18233036"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kegworks.com",
-                "www.kegworks.com",
-                "www.ruelala.com",
+                "www.pgatoursuperstore.com",
+                "www.samedelman.com",
+                "www.ariat.com",
+                "www.davidsbridal.com",
+                "www.gilt.com",
+                "www.lanebryant.com",
+                "lanebryant.com",
+                "www.stance.com",
+                "www.sasshoes.com",
+                "www-prod.underarmour.com",
+                "www.elizabetharden.com",
+                "www.underarmour.com",
                 "www.saksoff5th.com",
-                "www.savagex.com"
+                "www.rockyboots.com",
+                "www.kegworks.com",
+                "www.dooney.com",
+                "www.eileenfisher.com",
+                "www.naturalizer.com",
+                "pgatoursuperstore.com",
+                "www.kipling-usa.com"
             ]
         },
         {
@@ -645,7 +315,7 @@
                 "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -657,60 +327,583 @@
                 "lanebryant.com",
                 "www.lanebryant.com"
             ]
+        },
+        {
+            "rule": "borderfree\\.com\\/cart\\/create",
+            "cookies": 0.00017,
+            "fingerprinting": 0,
+            "subdomains": [
+                "depot.prd"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.sasshoes.com",
+                "www.kipling-usa.com",
+                "www.elizabetharden.com",
+                "www.savagex.com",
+                "www.lanebryant.com",
+                "www-prod.underarmour.com",
+                "lanebryant.com",
+                "www.stance.com",
+                "www.dooney.com",
+                "www.gilt.com",
+                "www.kegworks.com",
+                "www.samedelman.com",
+                "saksoff5th.com",
+                "www.eileenfisher.com",
+                "www.pgatoursuperstore.com",
+                "www.underarmour.com",
+                "www.ruelala.com",
+                "www.rockyboots.com",
+                "www.saksoff5th.com",
+                "www.naturalizer.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/cart\\/create",
+            "cookies": 0.00017,
+            "fingerprinting": 0,
+            "subdomains": [
+                "depot.prd"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [
+                "333b70a3318997b6f75f0b4f741c9d95ffc6b789fde177c332cbaff0ae7ef295",
+                "889360ef7582ace65b61d28db3b063c03959f8b873178aae0b52e41d2e2c954e",
+                "acde75a191399d6b5ad0293570a184170f9f177e10e6a1a7d5ebd628de602e60",
+                "cb0db5789a395d9a263f1fd8da8ad7090f977f2f7431ebe7c4f98125d5ec24fa",
+                "f276bb89df85b51a332272eb683df20d5850dc0e413f5f67da43711df6e0ad7e",
+                "e693767136997fdf8e6e36af39041ff8ab0ad1408382a8c8c1faed4f29f012e2",
+                "7807df2125b70aeb3eb1df14dd5d2a7e6c3b7332f10e1780e307b8e5b8626c19",
+                "3f3943cc83d1518f813066bc574897b30c7721207bedb2ecb3072eaa879b58d9",
+                "8ae34a27a6e133ed99562a408d05931a8e87ad713c05a095d1a1c6188a1b5b25",
+                "5ec96b88d37a8677d37b642f40c4abd4a98d7e60b8f0ca947161e07316389f06",
+                "5875bcaac37a6cc3ad81257eb4c7b5a00294850afd0a2d1c6cf6e0a8bf048470",
+                "6a3c733ec9a758b2b8ab471aec03c78c78e2f079d61ea0b9d6294b0e7512ced4",
+                "75612ea3fb6ea5a969e20c9423dd749bcac1d1bceffad942dfe776fd0dc60047",
+                "05a713822a7f321eac2c44ac2bdee2d2fc18fc93feb6a50ecae512de86d7a99a",
+                "81374a8b050fdddc490c3404a0d7ac2a22a4bc3d1a8cc668fe5a72c07c7c6384",
+                "15aeb37ee0bb6b5e1be2b07793a3498137950bfcca70e6f9ef21a0cd489c9176",
+                "b40c6fe26d67f7671e956ba94a24b9e4de1d899745ed2caa37bde533cd274ed2",
+                "ecf993cadaddfe5fa8d508e950b86bb2e7df0ed5d0948bfa999311f8514fa48e",
+                "90cfb33fa75f5b994000981105e10553f83ea88ba82399067da9c54e2434415f",
+                "da7439d86ed6c91e6ead324e711c45c8e156926e158eefee40554fa2a94238e8",
+                "4ff15a7c37d4e6bd7b5f84b2c61fd91d1385aa7896a5dad4ffab8d67f1a59df4",
+                "ed9d6797c34a16ede2f1a67ab9e1bb08e9991eee84f836804898c1c8ceca350f",
+                "6a65ac64a6c9defb97e60910ebfed4dbc2f44aac66be3a3f24528ed6166b883e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.rockyboots.com",
+                "www-prod.underarmour.com",
+                "lanebryant.com",
+                "www.saksoff5th.com",
+                "saksoff5th.com",
+                "www.gilt.com",
+                "www.allenedmonds.com",
+                "www.pgatoursuperstore.com",
+                "www.underarmour.com",
+                "www.dooney.com",
+                "www.eileenfisher.com",
+                "www.sasshoes.com",
+                "www.elizabetharden.com",
+                "www.samedelman.com",
+                "www.kegworks.com",
+                "www.ariat.com",
+                "www.naturalizer.com",
+                "pgatoursuperstore.com",
+                "www.georgiaboot.com",
+                "www.ruelala.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/country",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "depot.prd"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.00015,
+            "cnames": [],
+            "responseHashes": [
+                "422997fdcede26e823b69304be307a3e4070c6309570b58912c38493e341102a",
+                "8f18e3bc378029128ad6fb3656efde561b00ffe4a3d36edb1157807e84369a1d",
+                "cba2b832c5522fe4b9553ce79b700dbd4135872849b1021300fb092e80f1b36d",
+                "68bbf8f271b5f1596be675f520438fe2d29e51b85de4b59ac636cca0576bf423",
+                "6743d9e2db1b5f1b0778e380071021191e59b955df2d7d02c6f027257a955797",
+                "9a466c28bb472747fb04f8ca45bd42f2a9bd187506b324c5a687d0156d1c00f9",
+                "26f5625e7261def5a8847b5f13167fdaf5b2aab8cc374dc9c880d0e18c63edce",
+                "8c8e78deeb134295bd01a1bb68377297d514ca494b50431591f2a6ca773725d7",
+                "b16798588597a513b75fcfc5af68e6d52dab63a2483d9db17ba69be262e49f5f",
+                "53f233a4f2799a242b4185e67c57e80de1c019db055c2f75c0074418d19ea1fb",
+                "dd2c90f69e1a891d3c551ce91d4f3537640527a50431d1cfce270948f2897c1d",
+                "a6cb42640f381500dcff6e56701d4880c7e2568217ccd759a539ab356daa526b",
+                "2eee87c68bfcb4c3bbb2bea0d8cc7dbf556234617a01a8fbd2755310618e20ab",
+                "8325b02e4c835709277fd20edf21406f5a87e5cd8ad448ea8dcc1966e2d9ca1c",
+                "0e610ab34934a00a07e59606a71cbb473dab5a20c77efb6ce4910491a65e98e8",
+                "b5f71d67c530d1c9109c0a6133dd5e20381337bc0a05a275ed176e3b97ee9806",
+                "57633a1335a0dda608829ae1ed7fff2c292f327a4c5fca907c957ca30f94480d",
+                "bd0cbaa2dfbb14db25b93f3a3d7b57fb11060b43c9ce88d65df2ecf91b9e2df3",
+                "1f781361081ba1154a6598015ae57650eed661d206171da5f6738e262df0e7ff",
+                "8ea02325574a2e629da76170abf8310a967dcf06ff07e8f1119ffd6ee71163a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bfx.apiKey": 0.0001158780145324663
+            },
+            "exampleSites": [
+                "www.sasshoes.com",
+                "www.kegworks.com",
+                "www.rockyboots.com",
+                "saksoff5th.com",
+                "www.georgiaboot.com",
+                "www.allenedmonds.com",
+                "www.pgatoursuperstore.com",
+                "www.stance.com",
+                "www.davidsbridal.com",
+                "www.saksoff5th.com",
+                "www.naturalizer.com",
+                "www.underarmour.com",
+                "www.kipling-usa.com",
+                "www.samedelman.com",
+                "lanebryant.com",
+                "www.elizabetharden.com",
+                "pgatoursuperstore.com",
+                "www.lanebryant.com",
+                "www.savagex.com",
+                "www.dooney.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/merchants\\/config",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "depot.prd"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [
+                "1122037ea2c1b1db3312543bc7860d6e3d1ce91aad329f3b2b5dcaa0555d759c",
+                "fd4a36323e17baa38c4fec5ffc65936e1d392454a11d3ca80a065f5e9b58a7b1",
+                "97793d172be0873dd9e2a8b78fb4ae10f5a32342d2ae421815d1b4364fe16918",
+                "5b8d900a82301c13b68f0789d0ffbfe49e1cdd4dcdec2bab6a3a8a191f42b72a",
+                "06c06c301640fe37ca8a4ac1280ff26fe0a000920fd5916538cfd8cb46fd8747",
+                "5094e858e90254676360df0f26d567367e98d6c7c9ddf84f632f904cccde09a5",
+                "2e503988d400e74a1b8e35daa0e45a774fe60ee2c24138face6bc9c22e468433",
+                "33769dd79610ec12eb8c8bae8659c52025bcc7d7074ec4a9e9a1cca6876a2724",
+                "127a15aa143cb6c8f2ba4c1cee193911b8875447de8beb5b77adda04f9dc4524",
+                "7e754d98f289ab509eb27e5df99deb0b4c203c8adf42e93de8d0e704935d0795",
+                "431b9ec28e78ffc77e8a1ec9f97c58e4fb9250249625054f19ac7fdf390cc11f",
+                "494b68ca255c2dc60f7713789c9a7c51ccb50b84df95e78f1d519a87f93ce27f",
+                "9b291793e8e94a0c4144edcd189cf1a07a5de60d1fe006b71d54fa04d3d38583",
+                "fcf99f590612b095847de90be172fb61c269ca81e9eacd565d682e5f6fbc3693",
+                "6289dfcfffc4a7589884f6761fc751fd1675b19bd02a87b4f21613196551daa7",
+                "fb4a1083b08f7fa3dc4977acdb7306da5155519af2f020a36b91dc02fde1b000",
+                "4999adfdcc9872d090a0e7df6fc77c608dd42a5a767d0d7dd6b4155ea6b393da",
+                "533b1714ed79596a6b07a315d7b62e04c6931317b31e390430e887970cadaff1",
+                "02fa269b7cbcfe3d658ab233258756f49e22e442742f54105b25533be81405bd",
+                "948bb0649250e75fd6a8855199c91d84c3a6cf1d9f541dba626009c51a76b128",
+                "b09ccf54a6166b9733a29581d96c8ccd6720d8da58f3bdce5cdd9155f83b846e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bfx.apiKey": 0.00013632707592054857
+            },
+            "exampleSites": [
+                "www.naturalizer.com",
+                "www.davidsbridal.com",
+                "www.pgatoursuperstore.com",
+                "www.allenedmonds.com",
+                "saksoff5th.com",
+                "www.stance.com",
+                "www.kegworks.com",
+                "www-prod.underarmour.com",
+                "lanebryant.com",
+                "pgatoursuperstore.com",
+                "www.elizabetharden.com",
+                "www.georgiaboot.com",
+                "www.savagex.com",
+                "www.ruelala.com",
+                "www.dooney.com",
+                "www.eileenfisher.com",
+                "www.rockyboots.com",
+                "www.ariat.com",
+                "www.gilt.com",
+                "www.samedelman.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_bar\\.css",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "8e2eb60cd281dede69082573375dfa0e074b8332e4c08b0a8b7e8949ad64c99d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pgatoursuperstore.com",
+                "www-prod.underarmour.com",
+                "www.ariat.com",
+                "www.eileenfisher.com",
+                "www.pgatoursuperstore.com",
+                "www.sasshoes.com",
+                "www.underarmour.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/US\\.gif",
+            "cookies": 0.0000273,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd",
+                "bfx-objects.sbx",
+                "bfx-objects"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [
+                "b7dba81ec95035b09ae15f6d13d4e86513633cab394ff4b678a215c231d6ae7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.kendrascott.com",
+                "www.kipling-usa.com",
+                "www.savagex.com",
+                "www.davidsbridal.com",
+                "www.ariat.com",
+                "www.dooney.com",
+                "www.naturalizer.com",
+                "www.ruelala.com",
+                "www.gilt.com",
+                "www.samedelman.com",
+                "www.georgiaboot.com",
+                "www.pgatoursuperstore.com",
+                "saksoff5th.com",
+                "www.tequipment.net",
+                "www.kegworks.com",
+                "www.saksoff5th.com",
+                "www.elizabetharden.com",
+                "www.rockyboots.com",
+                "www.eileenfisher.com",
+                "www.stance.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_panel\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "1bbf7dac60576f0049b88ca61415a74e0d22607c71aff250c60de9ff18233036"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saksoff5th.com",
+                "www.elizabetharden.com",
+                "www.gilt.com",
+                "www.kegworks.com",
+                "www.ruelala.com",
+                "www.saksoff5th.com",
+                "www.savagex.com",
+                "www.stance.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_popup\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "320681d94df85142785ad543523dc85af276bbf86387928615da1dc72b9a24c2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com",
+                "www.davidsbridal.com",
+                "www.dooney.com",
+                "www.georgiaboot.com",
+                "www.naturalizer.com",
+                "www.rockyboots.com",
+                "www.samedelman.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/cdn\\/checkout\\/v5\\/dist\\/merchant\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c1fe95179f7ba2a9417be9149df6a76acebc3538de3e1247d188c22332ce2c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "davidsbridal.com",
+                "www.davidsbridal.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/styles\\/contextChooser_band\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4ba1de1a9a862bb2474fe40c59bcafc540bf912389546ab6505f1106df9a22f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kipling-usa.com",
+                "www.kipling-usa.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/web\\/v2\\/localization\\/context",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ritani.com",
+                "www.ritani.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/web\\/v2\\/localization\\/context",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d95a5f75189ff465f83afddece0a619dce59871ba2fbf8e04708656fdc49bc41"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ritani.com",
+                "www.ritani.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/AU\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8be2b36d6ca53a1567f87340a7a68598375ecc7e59bf498d2212aace3a4ee39c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruelala.com",
+                "www.ruelala.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/CA\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "68262270725a310a7515ec659e68e04879a39444949310a5233b3b4841b632c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruelala.com",
+                "www.ruelala.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/HK\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bfd005977d8aadc8d2215de92c23e20cd12ccc2327cc400fa1395d2d67490f54"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruelala.com",
+                "www.ruelala.com"
+            ]
+        },
+        {
+            "rule": "borderfree\\.com\\/v1\\/dist\\/images\\/context-chooser\\/flags\\/GB\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfx-objects.prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f259e8736d7e2afb3bb3e5525847ec50498115f4032b7053f842c7c4b4d65571"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruelala.com",
+                "www.ruelala.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000345,
+    "cookies": 0.000436,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8143712574850299
+            "prevalence": 0.8341232227488151
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.04790419161676647
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.023952095808383235
+            "prevalence": 0.04265402843601896
         },
         {
             "domain": "quadpay.com",
-            "prevalence": 0.023952095808383235
+            "prevalence": 0.02843601895734597
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.023952095808383235
-        },
-        {
-            "domain": "rkdms.com",
-            "prevalence": 0.011976047904191617
+            "prevalence": 0.018957345971563982
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.011976047904191617
-        },
-        {
-            "domain": "noibu.com",
-            "prevalence": 0.011976047904191617
-        },
-        {
-            "domain": "sentry-cdn.com",
-            "prevalence": 0.011976047904191617
+            "prevalence": 0.014218009478672985
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.011976047904191617
+            "prevalence": 0.014218009478672985
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.014218009478672985
+        },
+        {
+            "domain": "rkdms.com",
+            "prevalence": 0.009478672985781991
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.009478672985781991
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.009478672985781991
         }
     ],
     "types": {
-        "Script": 77,
-        "Preflight": 27,
-        "XHR": 27,
-        "Stylesheet": 18,
-        "Image": 19,
-        "Other": 2
+        "Script": 100,
+        "XHR": 37,
+        "Preflight": 39,
+        "Other": 2,
+        "Stylesheet": 25,
+        "Image": 33,
+        "Fetch": 2
     },
     "nameservers": [
         "alexis.ns.cloudflare.com",

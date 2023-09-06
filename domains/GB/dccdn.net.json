@@ -4,16 +4,99 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "ca1-peak-district",
+        "ia1-newcastle-gateshead",
         "ia1-peak-district",
-        "ia1-york"
+        "ia1-york",
+        "ca1-peak-district"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "dccdn\\.net\\/assets\\/css\\/dc\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ia1-newcastle-gateshead",
+                "ia1-peak-district"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "620d21ad7f05f46b577f7c40ce70b091566b89309cd7617fd297f56504e34b23"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newcastlegateshead.com",
+                "www.visitpeakdistrict.com"
+            ]
+        },
+        {
+            "rule": "dccdn\\.net\\/assets\\/js\\/dependencies\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ia1-newcastle-gateshead",
+                "ia1-peak-district"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 1,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1d6c23392ccd910794640fee1a12f5ed1e7dd22627db0761744674d42139e6cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newcastlegateshead.com",
+                "www.visitpeakdistrict.com"
+            ]
+        },
+        {
+            "rule": "dccdn\\.net\\/assets\\/js\\/dc\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ia1-newcastle-gateshead",
+                "ia1-peak-district",
+                "ia1-york"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "463db6beaf96204f977d5abb75080f15a09b98c35925cfd8ab805ee77f9d2d88",
+                "43265ad6f13bc75f3d0c7bedb5c9bfd0fbca7246095cb667ea4faa519c8b8a26"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newcastlegateshead.com",
+                "www.visitpeakdistrict.com",
+                "www.visityork.org"
+            ]
+        },
         {
             "rule": "dccdn\\.net\\/Icons\\/_AUTOx50_crop_center-center_90_none\\/family-friendly-icon\\.svg",
             "cookies": 0,
@@ -277,71 +360,25 @@
                 "visitpeakdistrict.com",
                 "www.visitpeakdistrict.com"
             ]
-        },
-        {
-            "rule": "dccdn\\.net\\/assets\\/js\\/dc\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ia1-peak-district",
-                "ia1-york"
-            ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "43265ad6f13bc75f3d0c7bedb5c9bfd0fbca7246095cb667ea4faa519c8b8a26"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "visitpeakdistrict.com",
-                "www.visityork.org"
-            ]
-        },
-        {
-            "rule": "dccdn\\.net\\/assets\\/js\\/filter-refresh\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ia1-peak-district"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "7e4efa6cd685f9bab0dd37acceff729f2e83e31c2273fabcafaf1821982d3cec"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "visitpeakdistrict.com",
-                "www.visitpeakdistrict.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8433734939759037
+            "prevalence": 0.8651685393258427
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.1566265060240964
+            "prevalence": 0.1348314606741573
         }
     ],
     "types": {
-        "Image": 24,
-        "Script": 4
+        "Stylesheet": 2,
+        "Script": 5,
+        "Image": 24
     },
     "nameservers": [
         "adele.ns.cloudflare.com",

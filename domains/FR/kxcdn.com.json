@@ -9,21 +9,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00334,
-    "sites": 33,
+    "prevalence": 0.00354,
+    "sites": 35,
     "subdomains": [
+        "searchanise-ef84",
         "cfi-9858",
         "frenchmac-13d74",
         "cdnlive-76f9",
+        "yogasita-13d74",
         "static-d8a0",
-        "gm-163ba",
-        "assets-4851"
+        "gm-163ba"
     ],
     "cnames": [
-        {
-            "original": "assets.static-nzz.ch",
-            "resolved": "assets-4851.kxcdn.com"
-        },
         {
             "original": "cdn.corporatefinanceinstitute.com",
             "resolved": "cfi-9858.kxcdn.com"
@@ -37,12 +34,123 @@
             "resolved": "cdnlive-76f9.kxcdn.com"
         },
         {
+            "original": "cdn.yogasita.fr",
+            "resolved": "yogasita-13d74.kxcdn.com"
+        },
+        {
             "original": "static.userbenchmark.com",
             "resolved": "static-d8a0.kxcdn.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kxcdn\\.com\\/results_big_pictures\\.23051\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchanise-ef84"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "871586a728267296899b76a11d188fb1e942353dda5539fd739f89d453a6ed8b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apoticaria.com",
+                "lacompagniedescartes.fr"
+            ]
+        },
+        {
+            "rule": "kxcdn\\.com\\/recommendation\\.23051\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchanise-ef84"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "275a08eb123a12e7fd48e6516f62a4d436201318d1c9c04a2c6e3e8f0290b032"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apoticaria.com",
+                "fr.puressentiel.com",
+                "lacompagniedescartes.fr",
+                "www.nu3.fr"
+            ]
+        },
+        {
+            "rule": "kxcdn\\.com\\/widgets\\.23051\\.min\\.js",
+            "cookies": 0.000404,
+            "fingerprinting": 1,
+            "subdomains": [
+                "searchanise-ef84"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "23addb3255d48c1091a8bd8d638939c49ae63de18bfc275e6528b00745a735a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "snize-recommendation": {
+                    "ttl": -747249293,
+                    "length": 11,
+                    "prevalence": 0.0004041628776396888,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apoticaria.com",
+                "fr.puressentiel.com",
+                "lacompagniedescartes.fr",
+                "www.nu3.fr"
+            ]
+        },
+        {
+            "rule": "kxcdn\\.com\\/snize-autocomplete\\.23051\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchanise-ef84"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "59ef68260890af7230f4cb30302f0f584f4d63e01bd311b390759bca5bd50c4f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apoticaria.com",
+                "fr.puressentiel.com",
+                "lacompagniedescartes.fr",
+                "www.nu3.fr"
+            ]
+        },
         {
             "rule": "kxcdn\\.com\\/wp-content\\/plugins\\/wp-rocket\\/assets\\/js\\/lazyload\\/17\\.8\\.3\\/lazyload\\.min\\.js",
             "cookies": 0,
@@ -50,11 +158,12 @@
             "subdomains": [
                 "cfi-9858",
                 "frenchmac-13d74",
-                "cdnlive-76f9"
+                "cdnlive-76f9",
+                "yogasita-13d74"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [
                 {
                     "original": "cdn.corporatefinanceinstitute.com",
@@ -67,6 +176,10 @@
                 {
                     "original": "cdn.lelynx.fr",
                     "resolved": "cdnlive-76f9.kxcdn.com"
+                },
+                {
+                    "original": "cdn.yogasita.fr",
+                    "resolved": "yogasita-13d74.kxcdn.com"
                 }
             ],
             "responseHashes": [
@@ -78,7 +191,40 @@
             "exampleSites": [
                 "corporatefinanceinstitute.com",
                 "frenchmac.com",
-                "www.lelynx.fr"
+                "www.lelynx.fr",
+                "yogasita.fr"
+            ]
+        },
+        {
+            "rule": "kxcdn\\.com\\/wp-content\\/et-cache\\/global\\/et-divi-customizer-global\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frenchmac-13d74",
+                "yogasita-13d74"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "cdn.frenchmac.com",
+                    "resolved": "frenchmac-13d74.kxcdn.com"
+                },
+                {
+                    "original": "cdn.yogasita.fr",
+                    "resolved": "yogasita-13d74.kxcdn.com"
+                }
+            ],
+            "responseHashes": [
+                "c5e47281f3dfe2364f77c5622983803dfae5b433fca09aa7f1393c10b8a7d7f0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frenchmac.com",
+                "yogasita.fr"
             ]
         },
         {
@@ -106,6 +252,28 @@
             "exampleSites": [
                 "userbenchmark.com",
                 "www.userbenchmark.com"
+            ]
+        },
+        {
+            "rule": "kxcdn\\.com\\/items_multicolumn_light\\.23051\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchanise-ef84"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b2093bdb15719b2d78596a79baf7b7bd783cd312d92abb9326d68c22f3ceef12"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lacompagniedescartes.fr",
+                "www.nu3.fr"
             ]
         },
         {
@@ -173,68 +341,41 @@
                 "grands-meres.net",
                 "www.grands-meres.net"
             ]
-        },
-        {
-            "rule": "kxcdn\\.com\\/nzz\\/11\\.15\\.11\\/static\\/css\\/print\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets-4851"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "assets.static-nzz.ch",
-                    "resolved": "assets-4851.kxcdn.com"
-                }
-            ],
-            "responseHashes": [
-                "6e6b0a7380e5f5c9a7a5ad88e423ff23dbf3a7f53ab80e6837704c46bd533a49"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nzz.ch",
-                "www.nzz.ch"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000506,
+    "cookies": 0.000707,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9561752988047809
+            "prevalence": 0.8068181818181818
         },
         {
             "domain": "searchserverapi.com",
-            "prevalence": 0.03187250996015936
+            "prevalence": 0.17613636363636365
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.00796812749003984
+            "prevalence": 0.011363636363636364
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.00398406374501992
+            "prevalence": 0.005681818181818182
         }
     ],
     "types": {
-        "Script": 3,
+        "Stylesheet": 10,
+        "Script": 12,
         "Image": 2,
-        "Fetch": 6,
-        "Stylesheet": 2
+        "Fetch": 6
     },
     "nameservers": [
-        "ns-1318.awsdns-36.org",
+        "ns-572.awsdns-07.net",
         "ns-1756.awsdns-27.co.uk",
         "ns-437.awsdns-54.com",
-        "ns-572.awsdns-07.net"
+        "ns-1318.awsdns-36.org"
     ]
 }

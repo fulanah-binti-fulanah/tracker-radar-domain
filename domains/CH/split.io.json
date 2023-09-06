@@ -11,13 +11,32 @@
     "sites": 9,
     "subdomains": [
         "sdk",
-        "auth",
-        "streaming"
+        "auth"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "split\\.io\\/api\\/mySegments\\/unknown",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familysearch.org",
+                "www.familysearch.org"
+            ]
+        },
+        {
             "rule": "split\\.io\\/api\\/splitChanges",
             "cookies": 0,
             "fingerprinting": 0,
@@ -33,15 +52,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "immoscout24.ch",
+                "familysearch.org",
                 "miro.com",
                 "www.crunchbase.com",
                 "www.familysearch.org",
                 "www.immoscout24.ch",
                 "www.leafly.com",
                 "www.mentimeter.com",
-                "www.motoscout24.ch",
+                "www.nationalgeographic.org",
                 "www.vivino.com"
+            ]
+        },
+        {
+            "rule": "split\\.io\\/api\\/mySegments\\/unknown",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "2070e9ec5ea66461693a174cf782efa1090e0ca1988968cc1115d019e7b80a95"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familysearch.org",
+                "ancestors.familysearch.org",
+                "www.familysearch.org"
             ]
         },
         {
@@ -52,124 +94,32 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
-                "b682fc783d26074df30a66aa6b8c614cb5cebc0dc016bdf6b67d88ae80ac1a11",
-                "7304c2f22f79c2014ddef448513ec42219a1b006d6486c3b561286fdcd96ae37",
-                "4d06599ad1459669edf9c2278e61869287566a43aa8e14184468b233efb8aef8",
-                "ef132e63c43716df0220a8b6d2eea3eb45acc3d99dfc38c3f750fa8520d71b25",
-                "4f01e1ca6d18a7e4ebcd05ef63ae7e9aff9ab89d7f4352c9825d590a250d4837",
-                "d624025efbd06470efbaa737d6c27c89a9d73c42f01fa579fb0bfa82a55d47e1",
-                "f8fd36d93719aa77341c724d82566e525f5528737a52ab858377b9894490124d",
-                "17ac11d0093751a16cb90820a82b08eec839843e4cf3d54f1955319d7adf9e84"
+                "ffef2067b55d23a75395522d02f7e2a8fb1c11ffceb20c51d60c366d9bb5de7f",
+                "3d336bf43b08a60105905708f33d3ad06aa0a7a49f82c98c7edf5ea77fa36b50",
+                "8b8281d4924d3aa5c3d9a383f5dd0c1d9848c670d58d0fd4b14ecd2937fbef09",
+                "b7552a51816459fd16d375ae5bc184ecdedde2730c1500ab46101511523a0d79",
+                "f0e148bee48e292d9dab93dbc9192789d912a51fa7edf35122251650b144ebda",
+                "f7f8e7bcc48435bfc90dc3da91514f00010285aa5843f08a06450f5909d5e2ff",
+                "459e1b611f1bcc0fda56d4f6e83f7400e07f1fe6a199645dc36753957e090796",
+                "0e178d98b2fbc3b35b82a36a51abe484e0cad9e9cb913bfb49074c28b67763be"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "immoscout24.ch",
+                "familysearch.org",
+                "ancestors.familysearch.org",
                 "miro.com",
                 "www.crunchbase.com",
                 "www.familysearch.org",
                 "www.immoscout24.ch",
                 "www.leafly.com",
                 "www.mentimeter.com",
-                "www.motoscout24.ch",
-                "www.vivino.com"
-            ]
-        },
-        {
-            "rule": "split\\.io\\/api\\/auth",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ccdaeb0738b2bebb5126bdd60d4b5da9fd42f1bf97943ed46fbbe73143feb545"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "immoscout24.ch",
-                "www.immoscout24.ch"
-            ]
-        },
-        {
-            "rule": "split\\.io\\/api\\/auth",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "immoscout24.ch",
-                "www.immoscout24.ch"
-            ]
-        },
-        {
-            "rule": "split\\.io\\/sse",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "streaming"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "EventSource",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "immoscout24.ch",
-                "www.immoscout24.ch"
-            ]
-        },
-        {
-            "rule": "split\\.io\\/api\\/v2\\/auth",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [],
-            "responseHashes": [
-                "eff09beeafcd09660347f33c1b14f6f259f4eaa666b930d73d061afd868d8f2e",
-                "b33b7981ac24861c46d9c59c74e8eb561da801a229554a40b15fc2a8714c9c13",
-                "3b63e50b417fb05d6fd50ff3137e70002e75bfb97903d90271524fc65164ac62",
-                "0cbbdb92dfae8a7d492266c05ebf9e18929fa450871c07949a22f8315e4bc13d",
-                "1a37bdb12346004caba0cb1da6e996c0a27b1cba285eeafac491267960decb48"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "miro.com",
-                "www.crunchbase.com",
-                "www.familysearch.org",
-                "www.leafly.com",
-                "www.mentimeter.com",
-                "www.motoscout24.ch",
+                "www.nationalgeographic.org",
                 "www.vivino.com"
             ]
         },
@@ -181,25 +131,63 @@
                 "auth"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 9,
+            "prevalence": 0.000904,
+            "cnames": [],
+            "responseHashes": [
+                "a12cff3aa93cd2d9161146dc19923ab4c435bf450b781ec03fc720b919ecbfa2",
+                "20b636624ace83eaf7ff17c6db20ae2592923ad6c88d0ecbe3d19168403cdd97",
+                "21cd3ce07a3ed821fb3f160ac277e7eb798c4c566382120a7bddf54682044a9f",
+                "c93c1be90e77173d41123ee137bf5dbd36929a0c176a72aa3c4f3e36122b455d",
+                "514e53e8d2041d5a3a233a452306c68f86421d0dd9ea5bf35eac35ef38f500c9",
+                "4fce97e763275cd333babce7e5e0eeb005d9e4ad78e21f96432d1f960bdb3e13",
+                "6bba014fc5798d093aea13ee4bfe78891408e94ae62e1235576deb2fc3369d67",
+                "6ac7815dd7ea565949a99ece60e4479c9f8001097cf68052087e0ecb817b29e1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familysearch.org",
+                "ancestors.familysearch.org",
+                "miro.com",
+                "www.crunchbase.com",
+                "www.familysearch.org",
+                "www.leafly.com",
+                "www.mentimeter.com",
+                "www.nationalgeographic.org",
+                "www.vivino.com"
+            ]
+        },
+        {
+            "rule": "split\\.io\\/api\\/v2\\/auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "familysearch.org",
+                "ancestors.familysearch.org",
                 "miro.com",
                 "www.crunchbase.com",
                 "www.familysearch.org",
                 "www.leafly.com",
                 "www.mentimeter.com",
-                "www.motoscout24.ch",
+                "www.nationalgeographic.org",
                 "www.vivino.com"
             ]
         },
         {
-            "rule": "split\\.io\\/api\\/mySegments\\/f0fcd181-0449-4092-91e5-9c9b332ac9ac",
+            "rule": "split\\.io\\/api\\/mySegments\\/0064a21b-dbc0-4bbe-8b34-1b5174e83af9",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -221,7 +209,7 @@
             ]
         },
         {
-            "rule": "split\\.io\\/api\\/mySegments\\/53a522db-66fb-4822-8fe5-b5359256b69f",
+            "rule": "split\\.io\\/api\\/mySegments\\/e451e9ba-9a09-4b6a-a0d9-bea7c25c3777",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -241,7 +229,7 @@
             ]
         },
         {
-            "rule": "split\\.io\\/api\\/mySegments\\/53a522db-66fb-4822-8fe5-b5359256b69f",
+            "rule": "split\\.io\\/api\\/mySegments\\/e451e9ba-9a09-4b6a-a0d9-bea7c25c3777",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -269,22 +257,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9183673469387755
+            "prevalence": 0.7358490566037735
         },
         {
             "domain": "fscdn.org",
-            "prevalence": 0.08163265306122448
+            "prevalence": 0.2641509433962264
         }
     ],
     "types": {
-        "Preflight": 20,
-        "Fetch": 22,
-        "EventSource": 2
+        "Preflight": 22,
+        "Fetch": 26
     },
     "nameservers": [
+        "ns-877.awsdns-45.net",
         "ns-1842.awsdns-38.co.uk",
         "ns-335.awsdns-41.com",
-        "ns-877.awsdns-45.net",
         "ns-1183.awsdns-19.org"
     ]
 }

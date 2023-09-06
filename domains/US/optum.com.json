@@ -7,35 +7,61 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000745,
-    "sites": 11,
+    "prevalence": 0.000116,
+    "sites": 17,
     "subdomains": [
+        "sso",
         "smetrics"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "optum\\.com\\/ext\\/as\\/authorization\\.oauth2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myuhcvision.com",
+                "www.optumrx.com"
+            ]
+        },
+        {
             "rule": "optum\\.com\\/id",
-            "cookies": 0.0000271,
+            "cookies": 0.0000409,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
             "responseHashes": [
-                "f86c033c444db1d0081c6d005d6d224dc0d437460c08b709334f96160af1369b",
-                "74c23ed4968ad9670eb0241d87bebbd6b268f01980f57e9f9cc109882b1de97f"
+                "a4edc513243120e7bfabd965c862c359d9174b7c4465bbd0b15187959cf48e33",
+                "4fd2458c1f93046644c7dd53bf14c7dc724d84a30acab9c8e6112776c7f73411",
+                "74134046141354126ed293ee086ce031957f7559af17bfa6fb1105d148b6cdcb",
+                "54e57b2ff296088303581a25b5b24835999eb50f0d537d90d7cca03283d84bcb",
+                "94b80ce9954843d57ebdf404fdd0d694e5ba4e30f90a626c9563f45bab9c3707"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "optumrx.com",
+                "specialty.optumrx.com",
                 "www.optumrx.com",
+                "www.uhcdental.com",
                 "www.uhcprovider.com",
                 "www.unitedhealthgroup.com"
             ]
@@ -43,34 +69,39 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000406,
+    "cookies": 0.0000682,
     "topInitiators": [
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.3448275862068966
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "first party",
-            "prevalence": 0.3448275862068966
+            "prevalence": 0.3055555555555556
         },
         {
             "domain": "healthsafe-id.com",
-            "prevalence": 0.1724137931034483
+            "prevalence": 0.1388888888888889
         },
         {
             "domain": "gbqofs.com",
-            "prevalence": 0.10344827586206896
+            "prevalence": 0.08333333333333333
         },
         {
             "domain": "akamaized.net",
-            "prevalence": 0.034482758620689655
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
-        "XHR": 4
+        "Document": 2,
+        "XHR": 6
     },
     "nameservers": [
         "epla2.corpnamesvcs.com",
-        "epla1.corpnamesvcs.com"
+        "epla1.corpnamesvcs.com",
+        "edns4.ultradns.net",
+        "edns4.ultradns.com",
+        "edns4.ultradns.biz",
+        "edns4.ultradns.org"
     ]
 }

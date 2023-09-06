@@ -4,14 +4,57 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000405,
-    "sites": 4,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
+        "api-eu",
         "insights"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "decathlon\\.net\\/activities\\/v2\\/activities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.fr",
+                "activites.decathlon.fr"
+            ]
+        },
+        {
+            "rule": "decathlon\\.net\\/activities\\/v2\\/activities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "dd56ff1bace9013e737ee33c1aaa81ddb24662469e667ffce644550c7465a73d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.fr",
+                "activites.decathlon.fr"
+            ]
+        },
         {
             "rule": "decathlon\\.net\\/v1\\/configs",
             "cookies": 0,
@@ -20,22 +63,25 @@
                 "insights"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000405,
+            "sites": 6,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "7b1e4e0805ac00c3fd549485aec695c1c9b2bce5eeb18c43f982c8641d1e4a35",
-                "c20ceef06eb7dbf342a2e7931fc1272f6ed2cee3b4935fd6aec7fe06b4c39bd2",
-                "f9bd6023f70591a13e1699733767c4bff168680368c8f02863da7ae02cf44826"
+                "f9bd6023f70591a13e1699733767c4bff168680368c8f02863da7ae02cf44826",
+                "c20ceef06eb7dbf342a2e7931fc1272f6ed2cee3b4935fd6aec7fe06b4c39bd2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "decathlon.fr",
+                "activites.decathlon.fr",
+                "conseilsport.decathlon.fr",
                 "support.decathlon.fr",
-                "www.decathlon.fr",
-                "www.decathlon.be"
+                "www.decathlon.be",
+                "www.decathlon.fr"
             ]
         },
         {
@@ -46,8 +92,8 @@
                 "insights"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000405,
+            "sites": 6,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
                 "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
@@ -57,9 +103,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "decathlon.fr",
+                "activites.decathlon.fr",
+                "conseilsport.decathlon.fr",
                 "support.decathlon.fr",
-                "www.decathlon.fr",
-                "www.decathlon.be"
+                "www.decathlon.be",
+                "www.decathlon.fr"
             ]
         },
         {
@@ -70,8 +118,8 @@
                 "insights"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000405,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -79,9 +127,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "decathlon.fr",
+                "conseilsport.decathlon.fr",
                 "support.decathlon.fr",
-                "www.decathlon.fr",
-                "www.decathlon.be"
+                "www.decathlon.be",
+                "www.decathlon.fr"
             ]
         }
     ],
@@ -91,16 +140,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.8666666666666667
         },
         {
             "domain": "decathlon.io",
-            "prevalence": 0.5
+            "prevalence": 0.1
+        },
+        {
+            "domain": "dynatrace.com",
+            "prevalence": 0.03333333333333333
         }
     ],
     "types": {
-        "Fetch": 8,
-        "Preflight": 4
+        "Preflight": 7,
+        "XHR": 2,
+        "Fetch": 12
     },
     "nameservers": [
         "udns1.cscdns.net",

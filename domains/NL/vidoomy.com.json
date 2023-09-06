@@ -7,15 +7,15 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "d",
         "a-prebid",
         "vid",
         "a",
-        "vpaid",
-        "aws"
+        "vast",
+        "video"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -28,8 +28,8 @@
                 "d"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,21 +37,78 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_sharedid": 0.00010067451927917044
+                "lotame_domain_check": 0.00010068465565847765
             },
             "exampleSites": [
                 "appleinsider.com",
                 "arcadespot.com",
-                "huurportaal.nl",
+                "krunker.io",
+                "www.duplichecker.com",
                 "www.metrotimes.com"
             ]
         },
         {
             "rule": "vidoomy\\.com\\/setuid",
-            "cookies": 0.000302,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "a-prebid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arcadespot.com",
+                "www.metrotimes.com"
+            ]
+        },
+        {
+            "rule": "vidoomy\\.com\\/sync",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "vid"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Screen.prototype.availTop": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availLeft": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.availHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wordlegame.org",
+                "www.c-sharpcorner.com"
+            ]
+        },
+        {
+            "rule": "vidoomy\\.com\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vid"
             ],
             "apis": {},
             "sites": 3,
@@ -64,36 +121,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "appleinsider.com",
-                "huurportaal.nl",
-                "www.metrotimes.com"
-            ]
-        },
-        {
-            "rule": "vidoomy\\.com\\/sync",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vid"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_uc_referrer": 0.00010067451927917044
-            },
-            "exampleSites": [
-                "guides4gamers.com",
-                "loremipsum.io",
-                "readcomiconline.li",
+                "worldstarhiphop.com",
                 "www.mangaread.org",
-                "www.sqlitetutorial.net"
+                "www.statisticshowto.com"
             ]
         },
         {
@@ -114,251 +144,100 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "inspanje.nl",
-                "www.refoweb.nl",
+                "ephotozine.com",
+                "www.groot-waterland.nl",
                 "www.transport-online.nl"
             ]
         },
         {
-            "rule": "vidoomy\\.com\\/sync",
-            "cookies": 0.000101,
-            "fingerprinting": 3,
-            "subdomains": [
-                "vid"
-            ],
-            "apis": {
-                "Navigator.prototype.vendor": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "Screen.prototype.availTop": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availLeft": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "AudioBuffer.prototype.getChannelData": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.languages": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "window.indexedDB": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.plugins": 1,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1
-            },
-            "sites": 4,
-            "prevalence": 0.000403,
-            "cnames": [],
-            "responseHashes": [
-                "4cd9d7fe6bef9e82616b20d2c4a7a9842652ed469b704922e4c682f209754768"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1692284050,
-                    "length": 1,
-                    "prevalence": 0.00010067451927917044,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rentola.nl",
-                "wordlegame.org",
-                "www.c-sharpcorner.com",
-                "www.picuki.com"
-            ]
-        },
-        {
-            "rule": "vidoomy\\.com\\/player\\/latest\\/vidoomy-player\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 3,
-            "subdomains": [
-                "vpaid"
-            ],
-            "apis": {
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.vendor": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
-                "Screen.prototype.availTop": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availLeft": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.languages": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.plugins": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "Date.prototype.getTime": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "5d78fe9d4935227a06ef15d31370ff066ae10cc819b8e8da87a0d425b8f6b063"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1692281995,
-                    "length": 1,
-                    "prevalence": 0.00020134903855834087,
-                    "uniqueness": 0.5
-                },
-                "vido_visitor_id": {
-                    "ttl": 86408,
-                    "length": 32,
-                    "prevalence": 0.00020134903855834087,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ephotozine.com",
-                "www.refoweb.nl"
-            ]
-        },
-        {
-            "rule": "vidoomy\\.com\\/api\\/adserver\\/ad\\/get",
+            "rule": "vidoomy\\.com\\/pro\\/ftp-pro\\/864\\/88E68_031693393683\\.xml",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "aws"
+                "vast"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "48fb3d64ac9235990b929f081c5c25a7c7c219de74037041d785d4df1de87865"
+                "e31218d5aecb62b2fd03da30bdbf1b0cdad9552531ca476f740a79b137cc1ee2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ephotozine.com",
-                "www.refoweb.nl"
+                "groot-waterland.nl",
+                "www.groot-waterland.nl"
             ]
         },
         {
-            "rule": "vidoomy\\.com\\/api\\/rtbserver\\/pbscookie",
+            "rule": "vidoomy\\.com\\/pro\\/ftp-pro\\/864\\/76Q64_1693399446_vast_video\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "a"
+                "video"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Document",
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "picuki.com",
-                "www.picuki.com"
-            ]
-        },
-        {
-            "rule": "vidoomy\\.com\\/api\\/adserver\\/tracking\\/e",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "912d0c07da7bdb22cdae025b96da26d01523aaab7362edb28544e3949deb369d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "refoweb.nl",
-                "www.refoweb.nl"
+                "groot-waterland.nl",
+                "www.groot-waterland.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000604,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "lkqd.net",
-            "prevalence": 0.225
+            "prevalence": 0.2619047619047619
+        },
+        {
+            "domain": "adpushup.com",
+            "prevalence": 0.19047619047619047
         },
         {
             "domain": "bidmatic.io",
-            "prevalence": 0.15
-        },
-        {
-            "domain": "ezodn.com",
-            "prevalence": 0.1
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.1
-        },
-        {
-            "domain": "adxbid.info",
-            "prevalence": 0.1
-        },
-        {
-            "domain": "pubmatic.com",
-            "prevalence": 0.1
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "m2.ai",
-            "prevalence": 0.075
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "frvr.com",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "adxbid.info",
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "adtelligent.com",
-            "prevalence": 0.075
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "h12-media.com",
-            "prevalence": 0.05
-        },
-        {
-            "domain": "stickyadstv.com",
-            "prevalence": 0.025
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
-        "XHR": 11,
-        "Image": 8,
-        "Document": 6,
-        "Script": 2
+        "XHR": 10,
+        "Image": 5,
+        "Document": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns7.dondominio.com",

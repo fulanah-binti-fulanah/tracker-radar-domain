@@ -9,14 +9,42 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
         "service"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "maxymiser\\.net\\/api\\/us\\/ferguson\\.com\\/4488bd\\/mmapi\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "service"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7f729c4748418881af3c330c2c49a9bd67cdd4c5e3e4b642ec9dd019d943abe8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ferguson.com",
+                "www.ferguson.com"
+            ]
+        },
         {
             "rule": "maxymiser\\.net\\/cg\\/v5us\\/",
             "cookies": 0,
@@ -26,12 +54,13 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
-                "2215375f87081ebb4ea311df28f0b40f7858bcf04d8858f0cadd7a6b1ef82df0",
-                "ac054ade09eab7c42c2a44176697a775c7d7f84235cd83a6952453fd032058d7",
-                "720c30aa7865f8706a1b3693ab3e9288ccd57c409b2ccc0f1dc2d2be4cb68801"
+                "273b64e45c21c6f7fbf3b8cf0b92bf1aa10e5873f29ed042c24a4308e4dc5ca8",
+                "9aab39352ee496ba3e8123f43bfb785d7ec0c3a1577cf297979993728300f59a",
+                "adc0e198dab3f865325cc0447197adec1a535ed94cb5300a7d4ee6d55669ed07",
+                "add9a1c52519eebeed5f3a9ed7bdf86104fc0ec24ba9578b4fb79b48c749fb67"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -52,12 +81,11 @@
                 "service"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "5baccf38e1c7e2c823a87d69d55b1d68f6db0bbf11ade1386fcd97c19fab20b2"
@@ -69,6 +97,28 @@
                 "healthgrades.com",
                 "www.spirit.com"
             ]
+        },
+        {
+            "rule": "maxymiser\\.net\\/cg\\/v5\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a74ccc204fa20d1c1962367ddc939b4892a2534b8c909cf1fb14371201656aa1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaspersky.com",
+                "www.selfridges.com"
+            ]
         }
     ],
     "categories": [
@@ -77,40 +127,44 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000302,
     "topInitiators": [
         {
-            "domain": "oracleinfinity.io",
-            "prevalence": 0.4
+            "domain": "first party",
+            "prevalence": 0.5555555555555556
         },
         {
-            "domain": "first party",
-            "prevalence": 0.26666666666666666
+            "domain": "oracleinfinity.io",
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "site_spareactclutch.js",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "kaspersky.ca",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "npo_ca_validated_changes_serving_mod_moveksk.js",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "site_pagetypedetect_cdapi.js",
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 11
     },
     "nameservers": [
-        "ns1.p201.dns.oraclecloud.net",
         "ns2.p201.dns.oraclecloud.net",
-        "ns3.p201.dns.oraclecloud.net",
-        "ns4.p201.dns.oraclecloud.net"
+        "ns1.p201.dns.oraclecloud.net",
+        "ns4.p201.dns.oraclecloud.net",
+        "ns3.p201.dns.oraclecloud.net"
     ]
 }

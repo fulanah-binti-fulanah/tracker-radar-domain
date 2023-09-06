@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000806,
-    "sites": 8,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
         "collector.abc.net",
+        "carsguide.com",
         "images.sbs.com"
     ],
     "cnames": [
@@ -23,6 +24,10 @@
         {
             "original": "images.sbs.com.au",
             "resolved": "images.sbs.com.au.edgekey.net"
+        },
+        {
+            "original": "resources.carsguide.com.au",
+            "resolved": "carsguide.com.au.edgekey.net"
         }
     ],
     "fingerprinting": 2,
@@ -52,6 +57,60 @@
             "exampleSites": [
                 "abc.net.au",
                 "www.abc.net.au"
+            ]
+        },
+        {
+            "rule": "au\\.edgekey\\.net\\/gtm\\/dmp-dil-script\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "carsguide.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "resources.carsguide.com.au",
+                    "resolved": "carsguide.com.au.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f8bca0dbc7009a3977e34282b5dd40139b5df81a2fc078ad927c40d911713a61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carsguide.com.au",
+                "www.carsguide.com.au"
+            ]
+        },
+        {
+            "rule": "au\\.edgekey\\.net\\/dims4\\/default\\/abd8d12\\/2147483647\\/strip\\/true\\/crop\\/1280x720+0+0\\/resize\\/1280x720!\\/quality\\/90\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images.sbs.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "images.sbs.com.au",
+                    "resolved": "images.sbs.com.au.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f5feaf7c5ded0a7d8c91926c78b46df8e539bd0b78901877f5e4ad085299b66c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sbs.com.au",
+                "www.sbs.com.au"
             ]
         },
         {
@@ -115,36 +174,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.6111111111111112
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.16666666666666666
-        },
-        {
-            "domain": "ts2020-indies-client.web.app",
-            "prevalence": 0.11904761904761904
+            "prevalence": 0.19444444444444445
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "newscdn.com.au",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "newscgp.com",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "reagroupdata.com.au",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
         "XHR": 2,
-        "Image": 4
+        "Script": 2,
+        "Image": 6
     },
     "nameservers": []
 }

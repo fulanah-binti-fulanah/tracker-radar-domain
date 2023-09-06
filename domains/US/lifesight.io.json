@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
         "app",
-        "developer"
+        "developer",
+        "fms"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,8 +22,8 @@
                 "app"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6d29b4436a0e8316b7c09aa3f92dd404b99a19f7b232f7c1e64b02f9f97ee321"
@@ -33,7 +34,6 @@
             "exampleSites": [
                 "cosmo.ph",
                 "www.cosmo.ph",
-                "www.dyson.com.au",
                 "www.newzealand.com"
             ]
         },
@@ -46,40 +46,67 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eb30fbdc3fd71b76aab53a43d89610482b47b42e2f2d5a50c3da368d68ce35c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lifesight_sid": 0.000013632707592054858
+            },
             "exampleSites": [
                 "newzealand.com",
                 "www.newzealand.com"
+            ]
+        },
+        {
+            "rule": "lifesight\\.io\\/forms\\/dest-urls",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2dc88e4a4e35bc6af484d27a2e0f62f8e6c7576c5a196b85e75e942304e15980"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000013632707592054858
+            },
+            "exampleSites": [
+                "trueclassictees.com",
+                "www.trueclassictees.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.4444444444444444
-        },
-        {
             "domain": "tiqcdn.com",
-            "prevalence": 0.4444444444444444
+            "prevalence": 0.5
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.1111111111111111
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "d2fj3s7h83rb61.cloudfront.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 4,
-        "Fetch": 2
+        "Script": 3,
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-cloud-c1.googledomains.com",

@@ -7,37 +7,172 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "sdk",
-        "api"
+        "user",
+        "api",
+        "collections"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "conscent\\.in\\/",
+            "rule": "conscent\\.in\\/user-status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d4d84b96d46735fb0fc79bfd6795ec2f3c22317d846483c4de029c9da91179f9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/css\\/main\\.a598b399\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3d717b527dca00150003b7304bacf041f8bd52101f40f8d1ee308e5f2d4e98a7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/js\\/8\\.d523f86f\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "sdk",
-                "api"
+                "user"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.platform": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1e68cef1d360583bae50cf427c584e87f5d72212bf5774cec8fa99342edb3be7"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indiatoday.in",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/static\\/js\\/main\\.2417c1fb\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "94420e34b72b8ba42771c35024e6d33e82ba90b6f40f2c688a4bb43a8ba1c665"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/api\\/v1\\/user\\/validate-sessionId",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aa477ec82adf12afb24cda07a032b48382cbac70a53ab3ad550241727ba4a722"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatoday.in",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/collect\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collections"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "92a271d4cac1f467862a096a34b083a8a9bafaeb363fc4ad68f60a31dd1a75fa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outlookindia.com",
+                "www.outlookindia.com"
+            ]
+        },
+        {
+            "rule": "conscent\\.in\\/collect\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collections"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outlookindia.com",
                 "www.outlookindia.com"
             ]
         }
@@ -47,21 +182,25 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "domain": "tosshub.com",
+            "prevalence": 0.5
         },
         {
-            "domain": "tosshub.com",
-            "prevalence": 0.3333333333333333
+            "domain": "first party",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Document": 2,
+        "Stylesheet": 2,
+        "Script": 4,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1537.awsdns-00.co.uk",
-        "ns-469.awsdns-58.com",
         "ns-625.awsdns-14.net",
-        "ns-1506.awsdns-60.org"
+        "ns-1506.awsdns-60.org",
+        "ns-1537.awsdns-00.co.uk",
+        "ns-469.awsdns-58.com"
     ]
 }

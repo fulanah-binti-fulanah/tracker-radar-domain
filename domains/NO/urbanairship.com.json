@@ -7,14 +7,42 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "web-sdk"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "urbanairship\\.com\\/notify\\/v1\\/ua-sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "web-sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Notification.permission": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "687c587332e319146dd4374b8a7e9415ec0b0a318020241283427b95085a11ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guitarcenter.com",
+                "www.manutd.com"
+            ]
+        },
         {
             "rule": "urbanairship\\.com\\/notify\\/v1\\/ua-sdk\\.min\\.js",
             "cookies": 0,
@@ -33,14 +61,14 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c88b3c77a5db97a0d0dc21c33599ff3671962387df930098218119c6a8689b3e"
+                "687c587332e319146dd4374b8a7e9415ec0b0a318020241283427b95085a11ca"
             ],
-            "type": "Script",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "guitarcenter.com",
-                "www.manutd.com"
+                "www.nzz.ch"
             ]
         }
     ],
@@ -54,12 +82,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Other": 2
     },
     "nameservers": [
         "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d4.googledomains.com",
         "ns-cloud-d1.googledomains.com",
-        "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d4.googledomains.com"
+        "ns-cloud-d3.googledomains.com"
     ]
 }
